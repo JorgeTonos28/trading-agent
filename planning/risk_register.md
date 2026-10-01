@@ -35,5 +35,7 @@ Escala inicial cualitativa: `Alta/Media/Baja`; se calibrará después. Dueño in
 | K-029 | P1 | Una propuesta shadow cruza por error la frontera hacia `TradeIntent`, órdenes o asignaciones | Media/Alta | Aislamiento por permisos/esquema/canal, pruebas negativas, auditoría y alerta; D-034/ADR-001 | Security/Architecture |
 | K-030 | P1 | Comparación del shadow usa datos posteriores, fills ideales o contexto distinto y exagera utilidad | Alta/Alta | Contexto pareado PIT, costes/fills hipotéticos versionados, protocolo preregistrado y replay; R-026 | Quant/Data |
 | K-031 | P0 | Una entrada ejecuta sin protección aceptada o un cancel/replace elimina stop existente y deja exposición inadvertida | Media/Alta | ADR-002 conserva protección bajo G2; estado explícito, reconciliación y runbook D-012/013; probes D-030 | Risk/Execution |
+| K-032 | P0 | Congelar runtime/topología/plugin por inercia antes de descubrir Skills, conectores y workflows reutilizables | Alta/Alta | Agent Capability Gate en AGENTS.md; R-006/D-020 P0, D-024 abierto hasta fichas, coste/licencia, probes y revisión crítica | Plan Architect/Architecture |
+| K-033 | P1 | Portar Skill financiera de tercero con recomendaciones operativas, datos no PIT o permisos excesivos | Media/Alta | Auditar licencia, instrucciones, dependencias y tool scopes; probe de inyección/no autoridad; ADR-001/004/006 y D-027 | Security/Research |
 
 Todos los riesgos salvo K-018 siguen `OPEN`; una arquitectura aprobada aún requiere datos, parámetros y pruebas para mitigar riesgo operativo.

@@ -15,6 +15,8 @@
 
 **Enmienda de riesgo PAPER V1 — 1 de octubre de 2026:** el propietario aprobó la opción B de D-012 en `planning/decisions/ADR-006-composite-risk-architecture.md`: Risk Engine determinístico con controles independientes y límite más restrictivo entre exposición/cash, riesgo estimado al stop/protección, escenarios de gap/slippage, liquidez y reservas concurrentes. Los valores de §11.3 y el sizing de MATR_V1 no constituyen umbrales aprobados para Strategy V1. Fórmulas, escenarios numéricos, broker, tecnología y estrategia siguen abiertos; G3 y liquidación automática general permanecen no autorizados.
 
+**Enmienda Agent Capability Gate — 1 de octubre de 2026:** por instrucción del propietario, R-006/D-020 se prioriza inmediatamente antes de congelar la arquitectura agéntica. D-024, el runtime, la topología multiagente, Skills, plugins, MCP, subagentes y estructura final del Trading OS Plugin permanecen abiertos hasta alcanzar madurez documentada de Capability Discovery con acceso, licencias, costes, comparativa y probes prioritarios. Los invariantes y contratos financieros abstractos pueden avanzar sin seleccionar tecnología. Véase `planning/research/R-006_agentic_capability_discovery_plan.md`.
+
 ---
 
 ## 0. Resumen ejecutivo

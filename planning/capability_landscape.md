@@ -1,8 +1,8 @@
 # Capability Landscape — plantilla de investigación inicial
 
-Estado 2026-10-01: **investigación parcial**, sin selección. No interpretar una mención como confirmación de disponibilidad, compatibilidad, licencia o precio. Método completo en [R-006](research_backlog.md).
+Estado 2026-10-01: **investigación parcial**, sin selección. R-006/D-020 es ahora P0 y gate de D-024. No interpretar una mención como confirmación de disponibilidad, compatibilidad, licencia o precio. Método y criterios de madurez en [plan R-006](research/R-006_agentic_capability_discovery_plan.md); [inventario y probes iniciales](research/R-006_initial_findings_2026-10-01.md).
 
-Actualización 2026-10-01: comenzó la verificación de fuentes primarias para OpenAI y Anthropic. `SELECTED=false` para todos los candidatos; acceso real a servicios de terceros, costes y licencia de cada componente siguen `UNKNOWN`. Las fichas iniciales están abajo.
+Actualización 2026-10-01: comenzó la verificación de fuentes primarias para OpenAI y Anthropic y se sondearon Skills, plugins y paquetes visibles en este entorno. `SELECTED=false` para todos los candidatos del Trading OS; acceso real a servicios de terceros, costes y licencia de cada componente siguen `UNKNOWN` donde no haya evidencia. Las fichas C-001–009 son primeras notas; las C-010–024 y probes están en el inventario R-006 enlazado arriba.
 
 | Familia | Candidatos a verificar (no seleccionados) | Caso de uso / evidencia requerida |
 |---|---|---|

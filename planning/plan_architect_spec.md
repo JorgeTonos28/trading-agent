@@ -12,6 +12,7 @@ Transformar la hoja en `MASTER_PLAN_v1.0.md` investigado, consistente, revisado 
 2. Identificar gate P0/P1/P2/P3/P4 y dependencia. Priorizar P0/P1; conservar P2 con procedimiento explícito para el DoR.
 3. Buscar evidencia primaria actual; guardar URL, fecha de consulta, versión, perfil/región y pruebas. Separar hecho, supuesto, hipótesis y recomendación.
 4. Comparar opciones con criterios previos; para capacidad significativa comprobar Build vs. Reuse y licencia, disponibilidad y autoridad.
+   R-006/D-020 tiene prioridad P0: antes de cerrar D-024 debe pasar el Agent Capability Gate documentado en `research/R-006_agentic_capability_discovery_plan.md`. Codex como herramienta de planificación no implica seleccionarlo como runtime PAPER.
 5. Preparar decision package: problema, criterios ponderados, opciones, evidencias, costes, riesgos, incertidumbre, recomendación, reversibilidad y decisión exacta solicitada.
 6. Obtener aprobación humana para categorías `human_approval_required_for` del perfil. Decisiones menores documentadas pueden cerrarse técnicamente.
 7. Registrar ADR, actualizar artefactos afectados y ejecutar consistency check; una revisión crítica independiente intenta invalidar P0/P1 críticos.

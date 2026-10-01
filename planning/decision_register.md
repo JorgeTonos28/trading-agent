@@ -15,7 +15,7 @@ Fecha: 2026-10-01. Fuente base: [hoja de ruta v0.2](../docs/master/hoja_de_ruta_
 | D-009 | Extracción funcional del video: capacidades, mecanismos, estrategias y pedagogía | P0 | RESEARCHING | Transcripción primaria revisada; cerrar con mapa conservar/modificar/separar/descartar, sin auditar claims promocionales salvo necesidad decisoria |
 | D-010 | Especificación de MATR_V1 como candidato/benchmark | P0 | RESEARCHING | RC0 en `02_MATR_V1_spec.md`; no es contrato de implementación salvo selección D-008 |
 | D-011 | Metodología de backtest: datos point-in-time, OOS, costes, benchmark, sesgos | P0 | RESEARCHING | RC0 en `02_MATR_V1_spec.md`; protocolo reproducible y revisión crítica |
-| D-012 | Arquitectura conceptual de riesgo compuesto para PAPER V1 | P0 | DECIDED | Propietario aprobó opción B el 2026-10-01 en ADR-006: mínimo entre exposición/cash, stop estimado, gap/slippage, liquidez y reservas; fórmulas/umbrales/escenarios D-031 y detalles D-021/026/030 abiertos |
+| D-012 | Arquitectura conceptual de riesgo compuesto para PAPER V1 | P0 | DECIDED | Propietario aprobó opción B el 2026-10-01 en ADR-006: mínimo entre exposición/cash, stop estimado, gap/slippage, liquidez y reservas; fórmulas D-035, umbrales/escenarios D-031 y detalles D-021/026/030 abiertos |
 | D-013 | Contrato abstracto de órdenes, `TradeIntent`, autorización, idempotencia y reconciliación | P0 | DECIDED | ADR-003 y `04_order_contract_RC1.md`: identidad interna, eventos, `UNKNOWN`, G2; mapeo broker D-021, pruebas D-030/031 |
 | D-014 | Semántica abstracta de datos y linaje PIT: clocks, revisiones, ajustes as-of y snapshots | P0 | DECIDED | ADR-004 y `05_data_contract_RC1.md`; pruebas/delays por dataset/proveedor siguen R-021/D-022/D-033 |
 | D-015 | Límites de componentes y autoridad; papel de Portfolio Manager, Signal y Execution | P0 | DECIDED | ADR-001 aprobado por el propietario 2026-10-01: A+; Champion/intent determinísticos, Portfolio Manager Agent SHADOW sin ruta operativa |
@@ -23,11 +23,11 @@ Fecha: 2026-10-01. Fuente base: [hoja de ruta v0.2](../docs/master/hoja_de_ruta_
 | D-017 | Fronteras de autonomía PAPER V1 ante incidentes | P0 | DECIDED | Propietario aprobó G1+G2 y reanudación humana tras pausa material el 2026-10-01; ADR-002; G3/liquidación general no autorizados; umbrales D-031 abiertos |
 | D-018 | Roles y gates abstractos de Smart Money/señales externas en Research/Strategy/Pedagogical | P0 | DECIDED | ADR-005 y `06_external_signal_admission_RC1.md`; ninguna familia/dataset admitido automáticamente, PIT/selección concreta D-008/022/033 |
 | D-019 | Contrato del Pedagogical Agent y aprendizaje sin alterar Champion | P0 | DECIDED | ADR-001 aprobado: factual desde B4 y completo antes de DoD, sin autoridad financiera; formato/evals P1 pendientes |
-| D-020 | Stack de capacidades, licencias y clasificación Build vs. Reuse | P1 | RESEARCHING | Fichas C-001–009 y contrato RC0 §7; faltan landscape completo, scorecards y decisión por capacidad |
+| D-020 | Stack de capacidades, licencias y clasificación Build vs. Reuse | P0 | RESEARCHING | Agent Capability Gate: R-006 maduro antes de D-024; fichas, disponibilidad real, coste/licencia, probes y recomendación comparativa; ninguna selección automática |
 | D-021 | Broker PAPER y elegibilidad real para residente de RD | P1 | OPEN | Gates B1–B5, pruebas API y aprobación humana |
 | D-022 | Proveedor de históricos y datos para candidatos Strategy V1; validador secundario | P1 | OPEN | Cobertura, PIT, ajustes, licencia, coste y benchmark |
 | D-023 | Motor(es) de investigación/backtest event-driven | P1 | OPEN | Comparativa y replay mínimo contra D-008/011 |
-| D-024 | Runtime de Plan Architect/agentes y diseño del Trading OS Plugin | P1 | OPEN | Capacidades, permisos, portabilidad, evals y coste |
+| D-024 | Runtime de Plan Architect/agentes y diseño del Trading OS Plugin | P1 | OPEN | **BLOQUEADO por madurez R-006/D-020**; no cerrar/freeze de runtime, topología, Skills, plugins, MCP, subagentes o plugin final antes de scorecards y probes; decisión material reservada a gobierno humano |
 | D-025 | Workflow durable, scheduler y política de recuperación | P1 | OPEN | Fallos, persistencia, complejidad y benchmark |
 | D-026 | Almacenamiento, eventos, identidad/versionado y audit trail | P1 | OPEN | Esquemas, retención, replay y recuperación |
 | D-027 | Modelo de seguridad: secretos, entornos, permisos, supply chain, prompt injection | P1 | OPEN | Threat model y aprobación humana de arquitectura material |

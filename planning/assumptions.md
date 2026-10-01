@@ -1,19 +1,19 @@
 # Assumptions Register — 2026-10-01
 
-Las hipótesis siguientes **no** son decisiones aprobadas. Su posible falsedad tiene que evaluarse antes del gate señalado. Estado inicial `UNVERIFIED`.
+Las hipótesis siguientes **no** son decisiones aprobadas. Su posible falsedad tiene que evaluarse antes del gate señalado. Estado inicial `UNVERIFIED`, salvo filas marcadas `REFUTADO`.
 
 | ID | P | Supuesto / prueba de falsación | Impacto si es falso |
 |---|---|---|---|
 | A-001 | P0 | MATR_V1 puede especificarse sin optimización retrospectiva y ejecutarse a frecuencia diaria **si resulta seleccionada**; preregistro + replay. | Rediseñar el candidato o descartarlo en Strategy V1 Selection. |
 | A-002 | P0 | La división 2005–2018 / 2019–2022 / 2023–2026 puede servir como protocolo OOS tras seleccionar entre candidatos; preregistrar comparación. El propietario confirma cero backtests de MATR_V1 consultados hasta 2026-10-01. | Nueva política OOS/forward si la comparación contamina el período. |
 | A-003 | P0 | Close/SMA/ROC/ATR pueden calcularse con una única convención consistente de ajustes y disponibilidad; comparar data vendors. | Cambian señales/resultados. |
-| A-004 | P0 | El stop `3×ATR20` limita pérdidas conforme al budget 0.5%; modelar gaps, overnight y fill. | Risk policy debe tratar riesgo no acotado. |
+| A-004 | P0 | **REFUTADO:** un stop `3×ATR20` no garantiza pérdida ≤ budget 0.5%; gaps/overnight/fills pueden excederla. ADR-006 trata stop-risk como estimación y añade escenarios independientes. | D-035/031 aún deben definir fórmulas y escenarios; no presentar stop como límite real garantizado. |
 | A-005 | P0 | Se puede proteger cada orden con autorización/versión verificable sin crear carrera entre risk y execution; prototipo de secuencia. | Rediseño de contratos. |
 | A-006 | P1 | Un residente de RD con el perfil concreto del propietario puede obtener paper API y, después, live donde corresponda; confirmación oficial. | Candidato broker inviable. |
 | A-007 | P1 | Históricos de ETFs 2005–2026 con timestamps, ajustes y derechos de uso son obtenibles dentro de presupuesto; muestras y cotización. | Cambia dataset/ventana/coste. |
 | A-008 | P1 | Un motor reutilizable puede representar estrategia, órdenes y stops con fidelidad suficiente; benchmark. | BUILD/ADAPT más costoso. |
-| A-009 | P1 | Agents SDK/Temporal y stack Python preliminar reducen complejidad total; scorecard operativo. | Elegir alternativas más simples. |
-| A-010 | P1 | Skills/plantillas de terceros pueden usarse legal y técnicamente en Codex; auditoría de licencia/formatos/permisos. | REFERENCE_ONLY o REJECT. |
+| A-009 | P0 | Agents SDK/Temporal y stack Python preliminar reducen complejidad total; **sin preselección**: scorecard R-006 compara alternativas, coste y operación. | Elegir alternativas más simples o de otro lab; D-024 permanece abierto. |
+| A-010 | P0 | Skills/plantillas de terceros pueden usarse legal y técnicamente en Codex; auditoría de licencia/formatos/permisos y probe real de portabilidad. | REFERENCE_ONLY o REJECT; formato similar no basta. |
 | A-011 | P1 | Dos fuentes permiten detectar errores materiales sin discrepancias irreconciliables; cross-check. | Más controles o cambio proveedor. |
 | A-012 | P2 | Paper fills representan suficientemente la mecánica requerida para validar ejecución; shadow quotes y gap analysis. | Mayor fase shadow/limitaciones. |
 | A-013 | P2 | Los límites PAPER 25%/0.5%/2% y soft/hard son coherentes con volatilidad y gaps; stress. | Recalibración humana. |
@@ -25,6 +25,7 @@ Las hipótesis siguientes **no** son decisiones aprobadas. Su posible falsedad t
 | A-019 | P0 | Una interfaz común puede representar fuentes externas heterogéneas sin borrar su fecha real de disponibilidad, revisiones y nivel de confianza. R-023/004 prueban semántica. | Contratos por familia y adaptación del diseño de datos. |
 | A-020 | P1 | Uno o varios proveedores especializados permitirán cubrir señales externas con derechos y coste razonables. R-025 compara contra fuentes oficiales. | Reducir alcance de fuentes V1 o construir normalización propia. |
 | A-021 | P1 | El Portfolio Manager Agent shadow podrá recibir un contexto elegible comparable al del Champion y producir propuestas reproducibles sin información futura ni efecto operativo. R-026 debe probarlo. | Limitar la comparación a contextos pareados disponibles; corregir aislamiento/evaluación antes del DoD. |
+| A-022 | P0 | **REFUTADO como inferencia válida:** la mera visibilidad de un plugin/MCP en documentación o catálogo no implica acceso a datos ni licencia para backtest. Verificar entitlement, costes y probe por dataset. | `AVAILABLE_TO_US` o `ECONOMICALLY_REASONABLE` queda NO/UNKNOWN hasta evidencia; buscar API/fuente alternativa. |
 
 ## Hechos de baseline, no supuestos
 

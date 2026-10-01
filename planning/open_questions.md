@@ -15,11 +15,11 @@ Estados: cada Q muestra su prioridad; Q-030–Q-037 incluyen estado explícito. 
 | Q-007 | P0 | D-015 | `DECIDED`: el propietario aprobó A+ (ADR-001); Portfolio Manager Agent produce propuestas shadow auditables sin alterar intents operativos. |
 | Q-008 | P0 | D-016 | `DECIDED`: un Champion operativo inicial puede combinar fuentes/señales; shadow y pedagogía factual desde B4; contrato completo pedagógico antes de DoD. Traceability detallada sigue en P1. |
 | Q-009 | P0 | D-017 | `DECIDED`: propietario aprobó G1+G2, conservación de protección y reanudación humana tras pausa material en ADR-002; G3/liquidación automática no autorizados. Umbrales/clasificación detallada continúan D-031. |
-| Q-010 | P1 | D-020 | ¿Qué capacidades existen, están disponibles a esta cuenta/región, son compatibles, asequibles y seleccionables? Evidencia de fuente primaria, licencia, prueba y clasificación. |
+| Q-010 | P0 | D-020 | ¿Qué capacidades existen, están disponibles a esta cuenta/región, son compatibles, asequibles y seleccionables? Evidencia de fuente primaria, licencia, coste, permisos, probes y clasificación; gate de D-024. |
 | Q-011 | P1 | D-021 | ¿Qué broker PAPER admite el perfil real del dueño desde RD, los ETFs/órdenes necesarios, datos/stream y pruebas de recuperación? Verificación oficial y probes. |
 | Q-012 | P1 | D-022 | ¿Qué proveedor cubre historia 2005–2026, ajustes, delistings/cambios, timestamps, uso automatizado y costes? Muestra comparada. |
 | Q-013 | P1 | D-023 | ¿LEAN, NautilusTrader, vectorbt u otra solución reproduce las semánticas de los candidatos viables y sus fallos con coste razonable? Benchmark. |
-| Q-014 | P1 | D-024 | ¿Qué Skills, plugins, MCP y frameworks sirven al Plan Architect y agentes operativos sin delegar autoridad de órdenes? Pruebas de permiso/evals. |
+| Q-014 | P1 | D-024 | `OPEN / GATED_BY_R-006`: ¿Qué Skills, plugins, MCP y frameworks sirven al Plan Architect y agentes operativos sin delegar autoridad de órdenes? La arquitectura/runtime no puede cerrarse antes de madurez R-006, pruebas de permiso/evals y aprobación material. |
 | Q-015 | P1 | D-025 | ¿Temporal, otra solución o scheduler simple cumple recovery, replays e idempotencia a la escala V1? Prueba de fallos y coste operativo. |
 | Q-016 | P1 | D-026 | ¿Qué repositorios de datos y eventos preservan decisiones, versiones, P&L y audit trail reconstruible? Esquemas y restore. |
 | Q-017 | P1 | D-027 | ¿Qué aislamiento evita que prompt injection, plugin, dependencia o credencial paper alcancen ejecución/secretos live? Threat model. |

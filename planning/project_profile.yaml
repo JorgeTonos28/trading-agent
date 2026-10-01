@@ -107,8 +107,8 @@ system_design:
   risk_numeric_policy_status: OPEN_D_031
   risk_architecture_decision_package: planning/research/D-012_risk_budget_architecture_decision_RC0.md
 open_decision_ids:
-  P0: [D-008, D-009, D-010, D-011]
-  P1: [D-020, D-021, D-022, D-023, D-024, D-025, D-026, D-027, D-028, D-029, D-033, D-034, D-035]
+  P0: [D-008, D-009, D-010, D-011, D-020]
+  P1: [D-021, D-022, D-023, D-024, D-025, D-026, D-027, D-028, D-029, D-033, D-034, D-035]
   P2: [D-030, D-031, D-032]
   P3: [D-040, D-041, D-042]
   P4: [D-050, D-051]
@@ -127,6 +127,10 @@ required_specialties:
   - pedagogy_and_explainability
 capability_discovery:
   required: true
+  current_focus: R-006_D-020_D-024
+  agent_capability_gate: D-024_must_remain_open_until_R-006_maturity_review
+  no_final_runtime_or_agent_plugin_selection_before_gate: true
+  research_plan: planning/research/R-006_agentic_capability_discovery_plan.md
   dimensions: [EXISTS, AVAILABLE_TO_US, TECHNICALLY_COMPATIBLE, ECONOMICALLY_REASONABLE, SELECTED]
   dispositions: [REUSE_AS_IS, ADAPT, PORT, WRAP, REFERENCE_ONLY, BUILD, REJECT]
   families:
@@ -160,6 +164,7 @@ governance:
     - material_security_architecture
     - major_scope_changes
     - promotion_of_shadow_portfolio_manager_to_operational_authority
+    - final_agent_runtime_topology_skills_plugins_mcp_and_plugin_architecture_D_024
   closure_rule: No P0/P1 open, every Definition of Ready gate evidenced, independent critical review, owner approval and plan freeze
   source_of_truth: planning/ registers plus approved master plan and ADRs
   creator_performance_claims: Record as unverified when applicable; no dedicated audit unless necessary for a project decision

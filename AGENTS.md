@@ -113,6 +113,10 @@ This includes, when relevant:
 
 Do not select technologies simply because they appeared in a tutorial or previous draft.
 
+## Agent Capability Gate
+
+R-006 / D-020 Agentic Capability Discovery is an architecture prerequisite for D-024. Do not close D-024 or freeze the final agent runtime, multiagent topology, Skills, plugins, MCP integrations, subagent design, or Trading OS Plugin structure until R-006 has a documented maturity review: relevant capability coverage, access/license/cost checks, practical probes for priority candidates when feasible, permission and financial-authority tests, and a comparative recommendation. Financial contracts independent of technology may continue. A candidate's existence or current availability never implies selection.
+
 ## Financial architecture invariant
 
 No LLM or agent may have unrestricted authority to place financial orders.
