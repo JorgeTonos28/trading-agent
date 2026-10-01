@@ -13,6 +13,8 @@
 
 **Enmienda de incidentes PAPER V1 — 1 de octubre de 2026:** el propietario aprobó G1+G2 en `planning/decisions/ADR-002-paper-v1-incident-autonomy.md`. Ante incertidumbre material se bloquean nuevas entradas y se reconcilia. Solo pueden cancelarse automáticamente entradas pendientes identificadas y verificadas; las órdenes protectoras se conservan salvo regla específica documentada, probada y aprobada. G3, `REDUCE_EXPOSURE` general y `CLOSE_ALL` automático no están autorizados. La reanudación después de una pausa por incidente material exige aprobación humana registrada. §5 y §11.4 enumeran capacidades o acciones posibles; esta enmienda fija la frontera aprobada para PAPER V1. Umbrales numéricos y reglas de liquidación automática siguen abiertos.
 
+**Enmienda de riesgo PAPER V1 — 1 de octubre de 2026:** el propietario aprobó la opción B de D-012 en `planning/decisions/ADR-006-composite-risk-architecture.md`: Risk Engine determinístico con controles independientes y límite más restrictivo entre exposición/cash, riesgo estimado al stop/protección, escenarios de gap/slippage, liquidez y reservas concurrentes. Los valores de §11.3 y el sizing de MATR_V1 no constituyen umbrales aprobados para Strategy V1. Fórmulas, escenarios numéricos, broker, tecnología y estrategia siguen abiertos; G3 y liquidación automática general permanecen no autorizados.
+
 ---
 
 ## 0. Resumen ejecutivo

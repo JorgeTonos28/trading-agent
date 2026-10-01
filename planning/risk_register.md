@@ -6,9 +6,9 @@ Escala inicial cualitativa: `Alta/Media/Baja`; se calibrará después. Dueño in
 |---|---|---|---|---|---|
 | K-001 | P0 | Look-ahead por cierres, ajustes, releases o timestamps | Alta/Alta | ADR-004 fija `eligible_from`/revisiones as-of; faltan muestras PIT y pruebas por dataset D-018/022/033 | Data/Quant |
 | K-002 | P0 | Holdout contaminado y overfitting por búsqueda agéntica masiva | Alta/Alta | Registro de experimentos, holdout sellado/forward, multiple testing | Quant |
-| K-003 | P0 | Riesgo de gap excede `0.5%` pese a stop teórico | Alta/Alta | Paquete D-012 recomienda control compuesto stop + gap/slippage; requiere aprobación humana, escenarios/umbrales y probes de orden D-030/031 | Risk |
+| K-003 | P0 | Riesgo de gap excede `0.5%` pese a stop teórico | Alta/Alta | ADR-006 aprueba controles compuestos como arquitectura; riesgo residual abierto hasta escenarios/umbrales aprobados y probes de orden D-030/031 | Risk |
 | K-004 | P0 | Duplicación u omisión de orden tras timeout, DB/stream caída | Media/Alta | ADR-003 fija identidad interna, `UNKNOWN` y ledger; faltan probes broker y replay/chaos D-021/030 | Execution |
-| K-005 | P0 | Autoridad ambigua de agente sobre qty, liquidación o reanudación | Media/Alta | ADR-001/002 fijan A+, G1+G2 y reanudación humana; faltan state machine y pruebas D-012/013 | Architecture/Risk |
+| K-005 | P0 | Autoridad ambigua de agente sobre qty, liquidación o reanudación | Media/Alta | ADR-001/002/006 fijan A+, G1+G2, control compuesto y reanudación humana; faltan especificación/pruebas D-035/013 | Architecture/Risk |
 | K-006 | P1 | Broker no elegible para dueño RD o paper/live difieren | Media/Alta | Confirmación de elegibilidad y probes antes de selección | Broker research |
 | K-007 | P1 | Licencia/coste/derechos de mercado impiden uso de datos | Media/Alta | Due diligence contractual, coste y alternativas | Data research |
 | K-008 | P1 | Datos ajustados/total return o dividendos mal tratados | Alta/Alta | Reconciliación entre fuentes y casos corporativos | Data/Quant |
@@ -36,4 +36,4 @@ Escala inicial cualitativa: `Alta/Media/Baja`; se calibrará después. Dueño in
 | K-030 | P1 | Comparación del shadow usa datos posteriores, fills ideales o contexto distinto y exagera utilidad | Alta/Alta | Contexto pareado PIT, costes/fills hipotéticos versionados, protocolo preregistrado y replay; R-026 | Quant/Data |
 | K-031 | P0 | Una entrada ejecuta sin protección aceptada o un cancel/replace elimina stop existente y deja exposición inadvertida | Media/Alta | ADR-002 conserva protección bajo G2; estado explícito, reconciliación y runbook D-012/013; probes D-030 | Risk/Execution |
 
-Todos los riesgos salvo K-018 siguen `OPEN`; no se presume mitigación por la mera presencia de una idea de control en la hoja.
+Todos los riesgos salvo K-018 siguen `OPEN`; una arquitectura aprobada aún requiere datos, parámetros y pruebas para mitigar riesgo operativo.

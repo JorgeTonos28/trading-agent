@@ -60,6 +60,8 @@ baseline_decisions:
     result: Point-in-time observations carry distinct clocks, channel-specific availability evidence and eligible_from; replay uses as-of revisions and snapshots, with raw tradable price separate from as-of adjusted views
   - id: ADR-005
     result: External data families begin as research only; promotion to operational Champion input requires semantic, PIT, quality, license, OOS, risk and human-governance gates; no family or provider selected
+  - id: ADR-006
+    result: PAPER V1 deterministic risk uses the most restrictive applicable independent exposure/cash, estimated protection, gap/slippage, liquidity and concurrent-reservation constraints; no numerical policy approved
 strategy_v1:
   selection_status: OPEN
   priority: P0
@@ -101,11 +103,12 @@ system_design:
   data_pit_contract_scope: abstract_semantics_decided_dataset_admission_open
   external_signal_contract: planning/06_external_signal_admission_RC1.md
   external_signal_families_selected: []
-  risk_architecture_method_status: READY_FOR_DECISION
+  risk_architecture_method_status: DECIDED_CONCEPTUAL_OPTION_B
+  risk_numeric_policy_status: OPEN_D_031
   risk_architecture_decision_package: planning/research/D-012_risk_budget_architecture_decision_RC0.md
 open_decision_ids:
-  P0: [D-008, D-009, D-010, D-011, D-012]
-  P1: [D-020, D-021, D-022, D-023, D-024, D-025, D-026, D-027, D-028, D-029, D-033, D-034]
+  P0: [D-008, D-009, D-010, D-011]
+  P1: [D-020, D-021, D-022, D-023, D-024, D-025, D-026, D-027, D-028, D-029, D-033, D-034, D-035]
   P2: [D-030, D-031, D-032]
   P3: [D-040, D-041, D-042]
   P4: [D-050, D-051]

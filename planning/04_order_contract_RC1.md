@@ -40,7 +40,7 @@ Si falla el proceso después de enviar y antes de guardar respuesta, el recovere
 | Recuperación auditada | Se conserva comando, autorización, intento de envío, respuestas, eventos crudos, normalización y reconciliación con clocks/versiones |
 | Shadow aislado | `ShadowPortfolioProposal` no satisface tipos/autorizaciones de `TradeIntent`, `RiskDecision` ni `IncidentActionAuthorization` |
 
-La reserva de presupuesto se libera solo al conciliar fill/cancel/reject terminal y cantidad pendiente. Los detalles de fórmula y simultaneidad son D-012; las garantías de almacenamiento y durabilidad son D-026. La interfaz del broker no se declara idempotente sin probe.
+La reserva de presupuesto se libera solo al conciliar fill/cancel/reject terminal y cantidad pendiente. ADR-006 fija el control compuesto; los detalles de fórmula/simultaneidad son D-035 y las garantías de almacenamiento/durabilidad son D-026. La interfaz del broker no se declara idempotente sin probe.
 
 ## 4. Escenarios de aceptación del contrato
 
@@ -58,4 +58,4 @@ La reserva de presupuesto se libera solo al conciliar fill/cancel/reject termina
 
 Las APIs/SDKs oficiales de brokers son candidatos a `WRAP`, no gateways de riesgo. [Alpaca Orders](https://docs.alpaca.markets/us/docs/orders-at-alpaca) muestra ID cliente y stream; [IBKR TWS API](https://interactivebrokers.github.io/tws-api/order_submission.html) usa `orderId` y eventos distintos. Ambas quedan `REFERENCE_ONLY` para este contrato hasta D-021; no se elige broker por facilidad de documentación. Frameworks de workflow, esquema/validación y ledger se comparan en D-020/025/026 antes de `BUILD`. Ninguna Skill, plugin, MCP ni LLM recibe endpoint genérico de orden.
 
-**D-013 queda cerrado solo como contrato abstracto.** La selección de broker y mapeo de IDs/estados/tipos de orden se resuelve en D-021 (P1); reservas cuantitativas en D-012 (P0); clocks en D-014 (P0); persistencia en D-026 (P1); probes de cancel/replace/stop, paper fills y failure recovery en D-030/031 (P2). Una dependencia que no cumpla estas garantías reabre D-013 por change record, no se omite silenciosamente.
+**D-013 queda cerrado solo como contrato abstracto.** La selección de broker y mapeo de IDs/estados/tipos de orden se resuelve en D-021 (P1); arquitectura de reservas en D-012/ADR-006 y semántica de fórmulas en D-035 (P1); clocks en D-014 (P0); persistencia en D-026 (P1); probes de cancel/replace/stop, paper fills y failure recovery en D-030/031 (P2). Una dependencia que no cumpla estas garantías reabre D-013 por change record, no se omite silenciosamente.

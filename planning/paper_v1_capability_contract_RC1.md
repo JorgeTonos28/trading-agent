@@ -1,6 +1,6 @@
 # PAPER V1 — contrato de capacidades y autoridad RC1 (A+)
 
-**Fecha:** 2026-10-01. **Estado:** alcance/autoridad funcional **aprobados como A+** en [ADR-001](decisions/ADR-001-paper-v1-authority.md), frontera G1+G2 en [ADR-002](decisions/ADR-002-paper-v1-incident-autonomy.md), orden abstracta en [ADR-003](decisions/ADR-003-order-identity-and-recovery.md), datos PIT en [ADR-004](decisions/ADR-004-point-in-time-data-lineage.md) y roles de señales externas en [ADR-005](decisions/ADR-005-external-signal-admission.md); D-012 y DoR aún abiertos. **Bloqueo:** `implementation_locked=true`. **Decisiones:** D-013/D-014/D-015/D-016/D-017/D-018/D-019 `DECIDED`; D-008 y P1 de stack abiertos. **Fuentes:** [hoja de ruta §4–9, §55–57](../docs/master/hoja_de_ruta_sistema_trading_agentes_ia_v0.2.md), [mapa funcional](research/system_capability_map.md), [video descompuesto](research/video_inspired_strategy.md). Este documento especifica **qué debe poder hacer** PAPER V1 y quién tiene autoridad; ninguna tecnología, broker, proveedor o estrategia queda seleccionada.
+**Fecha:** 2026-10-01. **Estado:** alcance/autoridad funcional **aprobados como A+** en [ADR-001](decisions/ADR-001-paper-v1-authority.md), frontera G1+G2 en [ADR-002](decisions/ADR-002-paper-v1-incident-autonomy.md), orden abstracta en [ADR-003](decisions/ADR-003-order-identity-and-recovery.md), datos PIT en [ADR-004](decisions/ADR-004-point-in-time-data-lineage.md), roles de señales externas en [ADR-005](decisions/ADR-005-external-signal-admission.md) y arquitectura de riesgo B en [ADR-006](decisions/ADR-006-composite-risk-architecture.md); umbrales/escenarios y DoR aún abiertos. **Bloqueo:** `implementation_locked=true`. **Decisiones:** D-012–019 `DECIDED` en alcance abstracto; D-008 y P1 de stack abiertos. **Fuentes:** [hoja de ruta §4–9, §55–57](../docs/master/hoja_de_ruta_sistema_trading_agentes_ia_v0.2.md), [mapa funcional](research/system_capability_map.md), [video descompuesto](research/video_inspired_strategy.md). Este documento especifica **qué debe poder hacer** PAPER V1 y quién tiene autoridad; ninguna tecnología, broker, proveedor o estrategia queda seleccionada.
 
 ## 1. Objetivo y límites de la versión
 
@@ -31,7 +31,7 @@ Audit/Performance ──> Monitoring + Pedagogical Agent + Research
 5. Datos externos se consumen con licencia, origen y disponibilidad temporal explícitos. Un dato retrospectivamente enriquecido no se usa como si hubiera existido en tiempo real.
 6. `ShadowPortfolioProposal` usa el **mismo contexto elegible** al tiempo de decisión que el camino Champion, cuando corresponde, pero vive en un canal separado: no se convierte en `TradeIntent`, no llega a Risk/Execution/Broker y no modifica posiciones, Champion, riesgo ni asignaciones. Su captura y evaluación son auditables.
 
-Estos puntos desarrollan D-002/D-005 ya `DECIDED`. D-017 fija G1+G2 y reanudación humana tras pausa material; las reglas cuantitativas D-012 siguen abiertas.
+Estos puntos desarrollan D-002/D-005 ya `DECIDED`. D-017 fija G1+G2 y reanudación humana tras pausa material. D-012 fija el mínimo de controles independientes en ADR-006; fórmulas, escenarios y umbrales cuantitativos siguen abiertos en D-031 y gates relacionados.
 
 ## 3. Matriz de responsabilidad y permiso aprobada en alcance
 
@@ -87,7 +87,7 @@ El modelo abstracto de identidad/estados se fija en D-013/ADR-003 y los clocks/r
 
 ## 6. Fallos y límites de autoridad que el plan debe probar
 
-| Escenario | Resultado requerido conforme a D-013/D-017; detalle cuantitativo D-012 y broker D-021/030 pendiente |
+| Escenario | Resultado requerido conforme a D-012/013/017; fórmulas D-035, parámetros D-031 y broker D-021/030 pendientes |
 |---|---|
 | Datos stale, timestamp PIT desconocido o calidad insuficiente | No nueva señal/entrada dependiente; alerta y rastro de rechazo |
 | Dos señales o intents concurrentes consumen mismo presupuesto | Reserva/serialización determinística; nunca exposición superior al límite |

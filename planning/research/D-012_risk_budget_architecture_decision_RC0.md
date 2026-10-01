@@ -1,6 +1,6 @@
 # D-012 — Paquete de decisión: arquitectura del presupuesto de riesgo PAPER V1
 
-**Fecha:** 2026-10-01. **Estado:** `READY_FOR_DECISION` sobre **método de control**, no umbrales. **Aprobador requerido:** propietario (política de riesgo). **No implementa Trading OS.** Baseline: [hoja §11 y ejemplo MATR §18.7–18.8](../../docs/master/hoja_de_ruta_sistema_trading_agentes_ia_v0.2.md), [riesgo RC1](../03_risk_policy_RC1.md), [ADR-002 G1+G2](../decisions/ADR-002-paper-v1-incident-autonomy.md), [orden ADR-003](../decisions/ADR-003-order-identity-and-recovery.md).
+**Fecha:** 2026-10-01. **Estado:** paquete histórico de alternativas; **opción B aprobada** el 2026-10-01 en [ADR-006](../decisions/ADR-006-composite-risk-architecture.md), sin umbrales. **No implementa Trading OS.** Baseline: [hoja §11 y ejemplo MATR §18.7–18.8](../../docs/master/hoja_de_ruta_sistema_trading_agentes_ia_v0.2.md), [riesgo RC1](../03_risk_policy_RC1.md), [ADR-002 G1+G2](../decisions/ADR-002-paper-v1-incident-autonomy.md), [orden ADR-003](../decisions/ADR-003-order-identity-and-recovery.md).
 
 ## 1. Decisión exacta
 
@@ -50,12 +50,12 @@ Un hard daily loss/drawdown, una posición incierta o falta de protección activ
 | Pendiente | Gate | Evidencia |
 |---|---|---|
 | Valores de 25%/0.50%/2% y soft/hard o alternativas | D-031 P2; aprobación humana | Stress sobre Strategy V1 y paper, sensibilidad a gap/volatilidad y capital real previsto |
-| Scenarios de shock/gap, slippage, liquidez, correlación | D-012 detalle + D-031 calibración | Datos históricos PIT, régimen adverso y criterios preregistrados; no usar holdout contaminado |
+| Scenarios de shock/gap, slippage, liquidez, correlación | D-035 semántica + D-031 calibración | Datos históricos PIT, régimen adverso y criterios preregistrados; no usar holdout contaminado |
 | Stop/orden protectora concreta y semántica broker | D-021 P1, D-030 P2 | API oficial, probes paper, paridad/backtest; stop ≠ pérdida garantizada |
-| Referencia de equity/mark/cash y simultaneidad | D-012/D-026 | Reconciliación, reservas atómicas, fills parciales, cancelaciones y replay |
+| Referencia de equity/mark/cash y simultaneidad | D-035/D-026 | Reconciliación, reservas atómicas, fills parciales, cancelaciones y replay |
 | Estrategia y salida autorizada | D-008 P0 | Reglas falsables y aprobación humana; no asumir MATR_V1 |
 
-La **aprobación solicitada ahora** elige el marco B y la regla de fallar cerrado ante cualquier control necesario no evaluable. No aprueba los parámetros de ingeniería de §11.3 como límites operativos definitivos. Si el propietario prefiere A o C, el Plan Architect debe actualizar D-012 y evaluar consecuencias en backtest, riesgo y ejecución antes de cerrar el ADR.
+**Resultado:** el propietario eligió B y la regla de fallar cerrado ante un control necesario no evaluable. No aprobó los parámetros de ingeniería de §11.3 como límites operativos definitivos. Cualquier cambio posterior de arquitectura de riesgo requiere nuevo registro y aprobación humana.
 
 ## 6. Build vs. Reuse y verificación
 

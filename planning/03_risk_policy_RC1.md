@@ -1,6 +1,6 @@
 # Política de riesgo PAPER V1 — contrato P0 RC1
 
-**Estado:** D-017 `DECIDED` en [ADR-002](decisions/ADR-002-paper-v1-incident-autonomy.md): G1+G2 para PAPER V1; D-012 `READY_FOR_DECISION` **solo en método** en [paquete de riesgo RC0](research/D-012_risk_budget_architecture_decision_RC0.md), sin aprobar umbrales. **Fecha:** 2026-10-01. `implementation_locked=true`. Baseline: [hoja §7, §11–12, §32–33 y §54](../docs/master/hoja_de_ruta_sistema_trading_agentes_ia_v0.2.md), [ADR-001](decisions/ADR-001-paper-v1-authority.md).
+**Estado:** D-017 `DECIDED` en [ADR-002](decisions/ADR-002-paper-v1-incident-autonomy.md): G1+G2 para PAPER V1; D-012 `DECIDED` **solo en arquitectura conceptual** (opción B) en [ADR-006](decisions/ADR-006-composite-risk-architecture.md), sin aprobar umbrales ni escenarios numéricos. **Fecha:** 2026-10-01. `implementation_locked=true`. Baseline: [hoja §7, §11–12, §32–33 y §54](../docs/master/hoja_de_ruta_sistema_trading_agentes_ia_v0.2.md), [ADR-001](decisions/ADR-001-paper-v1-authority.md).
 
 ## 1. Hechos, hipótesis y decisiones reservadas
 
@@ -8,7 +8,7 @@ El baseline exige `TradeIntent → Deterministic Risk Engine → Execution Engin
 
 **Hecho externo relevante:** un stop activado puede ejecutar lejos del precio stop en volatilidad; un stop-limit puede no ejecutar. No se debe presentar `distancia al stop × cantidad` como pérdida máxima garantizada. [FINRA, Stop Orders: Factors to Consider During Volatile Markets, 2025](https://www.finra.org/investors/insights/stop-orders-factors-consider-during-volatile-markets); [Investor.gov, Executing an Order](https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work/executing-order).
 
-## 2. Reglas de diseño propuestas, aún sin política cuantitativa aprobada
+## 2. Arquitectura conceptual aprobada, aún sin política cuantitativa
 
 1. **Precedencia:** integridad de cuenta/reconciliación y estado de suspensión; habilitación de Champion/instrumento; frescura/calidad PIT; límites de cuenta/cartera; límites de estrategia/posición; protección de ejecución. Un fallo o `UNKNOWN` en un control necesario deniega **nueva exposición**. Una salida ordinaria de un Champion aprobado sigue su propio `TradeIntent → Risk → Execution`; esto no autoriza reducción automática general por incidente.
 2. **Estado que se cuenta:** posición reconciliada + órdenes vivas + reservas de intents aprobados y no finalizados. El presupuesto se reserva de forma atómica antes de emitir autorización; expiración, rechazo y fill parcial liberan o ajustan reserva solo después de evento/reconciliación verificable. Dos intents simultáneos no pueden consumir el mismo presupuesto.
@@ -17,7 +17,7 @@ El baseline exige `TradeIntent → Deterministic Risk Engine → Execution Engin
 5. **Protección y fallos:** un stop broker-side, bracket u OCO es candidato sujeto a soporte y semántica del broker; no sustituye supervisión, reconciliación ni escenario de gap. G2 conserva órdenes protectoras; su cancelación/reemplazo necesita regla específica documentada, probada y aprobada.
 6. **Reanudación:** tras pausa material no se vuelve a `NORMAL` por heartbeat o reconexión aislados. Se requieren diagnóstico, reconciliación, fuentes frescas, ausencia de órdenes `UNKNOWN`, registro de causa y autorización humana registrada.
 
-G1+G2 y reanudación humana tras pausa material están aprobados por ADR-002; las fórmulas, umbrales y demás reglas de D-012 continúan como diseño pendiente. No se fija broker ni tipo de orden.
+La opción B de D-012 está aprobada en ADR-006: el mínimo entre controles independientes de exposición/cash, stop/protección estimada, gap/slippage, liquidez y reservas concurrentes. Los puntos anteriores detallan consecuencias de diseño aún sujetas a especificación y pruebas; no fijan fórmulas ni valores. G1+G2 y reanudación humana tras pausa material están aprobados por ADR-002. No se fija broker ni tipo de orden.
 
 ## 3. Máquina de estados candidata
 
@@ -60,7 +60,7 @@ La tabla autoriza G1+G2 dentro de sus condiciones; no autoriza `REDUCE_EXPOSURE`
 
 ## 6. Evidencia de cierre y pruebas exigidas
 
-- D-012: tabla de precedencia, fórmula de riesgo y reservas, referencia de equity/clock, límites tras escenarios gap/partial fill y justificación/calibración de umbrales; aprobación del propietario.
+- D-012: arquitectura conceptual B aprobada por propietario en ADR-006. La semántica de fórmulas, unidades y redondeos es D-035 P1; reservas y referencia de cuenta D-026; broker/protección D-021/030; escenarios y umbrales numéricos D-031 P2 con aprobación humana.
 - D-017: frontera aprobada en ADR-002. Los runbooks y pruebas de carreras cancel/fill, outage, protección y límite hard deben demostrar conformidad antes de PAPER autónomo; no reabren autoridad sin nuevo ADR.
 - D-013: contrato abstracto de orden cerrado en ADR-003; mapeo broker, pruebas de cancel/replace/protección y recuperación siguen D-021/D-030. D-014 fija semántica PIT en ADR-004 y D-018 roles/gates en ADR-005; muestras y frescura por dataset siguen R-021/D-022/D-033. Umbrales PAPER calibrados siguen D-031.
 - Build vs. Reuse: [Open Policy Agent](https://www.openpolicyagent.org/docs/policy-language) puede expresar reglas y [registrar decisiones](https://www.openpolicyagent.org/docs/management-decision-logs); bibliotecas de validación y controles broker son candidatos a comparar. Ninguno sustituye reserva atómica, reconciliación o autorización vinculada al estado. OPA queda `REFERENCE_ONLY / CANDIDATE`, no seleccionado; el evaluador financiero definitivo sigue D-020.
