@@ -105,13 +105,17 @@ This includes, when relevant:
 - Codex capabilities
 - MCP servers
 - Anthropic financial-services Skills/templates
-- other AI-lab agentic solutions
-- open-source frameworks
+- public Anthropic financial-services Skills, prompts, templates and reference workflows for porting or adaptation into OpenAI/Codex
+- open-source quantitative and technical frameworks outside the agentic AI layer
 - broker APIs
 - financial-data providers
 - quantitative libraries
 
 Do not select technologies simply because they appeared in a tutorial or previous draft.
+
+For R-006/D-020 and D-024 in PAPER V1, investigate the **AI/agentic layer only within OpenAI and Anthropic**. Do not evaluate other AI Labs or third-party agent frameworks/runtimes, including Google ADK, Microsoft Agent Framework, LangGraph and PydanticAI. This restriction does not narrow separate broker, market-data, alternative-data, quantitative-engine, database or infrastructure research.
+
+Prioritize zero or near-zero incremental cost: Tier 0 = included ChatGPT Plus/Codex capabilities or public reusable assets; Tier 1 = free-limited/free-account or low-cost local open source; Tier 2 = separate OpenAI/Anthropic API billing, Claude Managed Agents, added subscriptions, enterprise tools, premium financial connectors or recurring spend. Tier 2 is excluded by default for PAPER V1. Reconsider it only after documenting the lack of a reasonable Tier 0/1 alternative, material benefit, costs and trade-offs, and obtaining explicit owner approval to consider that expense. A public SDK does not imply Plus entitlement; never activate paid API usage as a probe without that approval. See ADR-007.
 
 ## Agent Capability Gate
 

@@ -62,6 +62,8 @@ baseline_decisions:
     result: External data families begin as research only; promotion to operational Champion input requires semantic, PIT, quality, license, OOS, risk and human-governance gates; no family or provider selected
   - id: ADR-006
     result: PAPER V1 deterministic risk uses the most restrictive applicable independent exposure/cash, estimated protection, gap/slippage, liquidity and concurrent-reservation constraints; no numerical policy approved
+  - id: ADR-007
+    result: R-006 agentic layer limited to OpenAI and Anthropic, with Plus/Codex and public reusable assets preferred; separately billed services excluded by default for PAPER V1
 strategy_v1:
   selection_status: OPEN
   priority: P0
@@ -128,6 +130,16 @@ required_specialties:
 capability_discovery:
   required: true
   current_focus: R-006_D-020_D-024
+  agentic_provider_scope: [OpenAI, Anthropic]
+  other_agentic_frameworks_in_scope: false
+  target_subscription: ChatGPT_Plus_owner_reported
+  plus_entitlements_require_empirical_verification: true
+  api_billing_separate_from_plus: true
+  paper_v1_cost_preference: [Tier_0, Tier_1]
+  tier_0: included_Plus_or_Codex_and_public_reusable_assets
+  tier_1: free_limited_free_account_or_local_open_source_without_material_cost
+  tier_2_excluded_by_default: true
+  tier_2_exception: no_reasonable_Tier_0_or_1_plus_material_benefit_plus_documented_cost_benefit_plus_explicit_owner_approval_to_consider_expense
   agent_capability_gate: D-024_must_remain_open_until_R-006_maturity_review
   no_final_runtime_or_agent_plugin_selection_before_gate: true
   research_plan: planning/research/R-006_agentic_capability_discovery_plan.md
@@ -136,8 +148,6 @@ capability_discovery:
   families:
     - OpenAI_Skills_Plugins_Codex_MCP_Agents_and_financial_analysis
     - Anthropic_Financial_Services_Skills_templates_connectors_workflows
-    - other_AI_labs
-    - open_source_agent_and_workflow_frameworks
     - quantitative_frameworks_and_backtest_engines
     - broker_APIs
     - market_data_providers

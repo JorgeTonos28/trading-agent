@@ -12,7 +12,7 @@ Las hipótesis siguientes **no** son decisiones aprobadas. Su posible falsedad t
 | A-006 | P1 | Un residente de RD con el perfil concreto del propietario puede obtener paper API y, después, live donde corresponda; confirmación oficial. | Candidato broker inviable. |
 | A-007 | P1 | Históricos de ETFs 2005–2026 con timestamps, ajustes y derechos de uso son obtenibles dentro de presupuesto; muestras y cotización. | Cambia dataset/ventana/coste. |
 | A-008 | P1 | Un motor reutilizable puede representar estrategia, órdenes y stops con fidelidad suficiente; benchmark. | BUILD/ADAPT más costoso. |
-| A-009 | P0 | Agents SDK/Temporal y stack Python preliminar reducen complejidad total; **sin preselección**: scorecard R-006 compara alternativas, coste y operación. | Elegir alternativas más simples o de otro lab; D-024 permanece abierto. |
+| A-009 | P0 | **SUPERSEDED por ADR-007:** que Agents SDK/Temporal y stack Python reduzcan complejidad no justifica su selección. Agents SDK/API son referencia Tier 2; Temporal pertenece a infraestructura R-011, no al comparativo agéntico R-006. | Evaluar rutas Codex/Skills y contenido Anthropic Tier 0/1 antes de D-024; el stack sigue abierto. |
 | A-010 | P0 | Skills/plantillas de terceros pueden usarse legal y técnicamente en Codex; auditoría de licencia/formatos/permisos y probe real de portabilidad. | REFERENCE_ONLY o REJECT; formato similar no basta. |
 | A-011 | P1 | Dos fuentes permiten detectar errores materiales sin discrepancias irreconciliables; cross-check. | Más controles o cambio proveedor. |
 | A-012 | P2 | Paper fills representan suficientemente la mecánica requerida para validar ejecución; shadow quotes y gap analysis. | Mayor fase shadow/limitaciones. |
@@ -26,6 +26,7 @@ Las hipótesis siguientes **no** son decisiones aprobadas. Su posible falsedad t
 | A-020 | P1 | Uno o varios proveedores especializados permitirán cubrir señales externas con derechos y coste razonables. R-025 compara contra fuentes oficiales. | Reducir alcance de fuentes V1 o construir normalización propia. |
 | A-021 | P1 | El Portfolio Manager Agent shadow podrá recibir un contexto elegible comparable al del Champion y producir propuestas reproducibles sin información futura ni efecto operativo. R-026 debe probarlo. | Limitar la comparación a contextos pareados disponibles; corregir aislamiento/evaluación antes del DoD. |
 | A-022 | P0 | **REFUTADO como inferencia válida:** la mera visibilidad de un plugin/MCP en documentación o catálogo no implica acceso a datos ni licencia para backtest. Verificar entitlement, costes y probe por dataset. | `AVAILABLE_TO_US` o `ECONOMICALLY_REASONABLE` queda NO/UNKNOWN hasta evidencia; buscar API/fuente alternativa. |
+| A-023 | P0 | **UNVERIFIED:** las capacidades de Codex observadas en este chat estarán disponibles para el runtime PAPER V1 con la suscripción Plus del propietario, sin factura adicional ni límite operativo incompatible. Verificar cuenta, límites y modo de ejecución; no inferirlo por visibilidad local. | Rediseñar la arquitectura Tier 0/1 o llevar excepción Tier 2 al propietario con coste/beneficio. |
 
 ## Hechos de baseline, no supuestos
 

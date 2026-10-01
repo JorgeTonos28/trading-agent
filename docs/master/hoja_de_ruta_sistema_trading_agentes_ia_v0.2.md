@@ -17,6 +17,8 @@
 
 **Enmienda Agent Capability Gate — 1 de octubre de 2026:** por instrucción del propietario, R-006/D-020 se prioriza inmediatamente antes de congelar la arquitectura agéntica. D-024, el runtime, la topología multiagente, Skills, plugins, MCP, subagentes y estructura final del Trading OS Plugin permanecen abiertos hasta alcanzar madurez documentada de Capability Discovery con acceso, licencias, costes, comparativa y probes prioritarios. Los invariantes y contratos financieros abstractos pueden avanzar sin seleccionar tecnología. Véase `planning/research/R-006_agentic_capability_discovery_plan.md`.
 
+**Enmienda R-006 y coste PAPER V1 — 1 de octubre de 2026:** el propietario acotó la investigación de la capa de IA/agentes/Skills/templates/plugins/MCP a **OpenAI y Anthropic** (ADR-007). Las referencias posteriores a otros AI Labs, LangGraph, PydanticAI, Google ADK o Microsoft Agent Framework ya no son candidatos activos para esta capa en PAPER V1. La pregunta rectora es cómo aprovechar ChatGPT Plus/Codex y activos públicos gratuitos de Anthropic dentro de OpenAI/Codex. Se prefieren Tier 0 (incluido en Plus/Codex o público reutilizable) y Tier 1 (gratuito o local sin coste relevante); Tier 2 (API con facturación separada, Claude Managed Agents, suscripciones, enterprise, conectores premium o gasto recurrente) queda excluido por defecto salvo análisis de necesidad/beneficio/coste y autorización expresa del propietario para considerarlo. Brokers, datos de mercado/alternativos, motores quant, bases de datos e infraestructura siguen sus investigaciones separadas. Esta enmienda prevalece sobre listas amplias de candidatos agénticos y ejemplos de stack del borrador; no selecciona tecnología ni desbloquea implementación.
+
 ---
 
 ## 0. Resumen ejecutivo
