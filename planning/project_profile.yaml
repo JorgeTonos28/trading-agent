@@ -56,6 +56,8 @@ baseline_decisions:
     result: G1+G2 PAPER V1 incident boundary; block new entries and reconcile, cancel only verified pending entries, preserve protection, require human resume after material pause; G3 not authorized
   - id: ADR-003
     result: Broker-independent internal order identity, durable command before send, event ledger and reconciliation; UNKNOWN never permits blind resend; G2 cancellation has separate deterministic risk authorization
+  - id: ADR-004
+    result: Point-in-time observations carry distinct clocks, channel-specific availability evidence and eligible_from; replay uses as-of revisions and snapshots, with raw tradable price separate from as-of adjusted views
 strategy_v1:
   selection_status: OPEN
   priority: P0
@@ -93,8 +95,10 @@ system_design:
   automatic_general_reduction_or_liquidation: false
   protective_orders_preserved_on_incident: true
   human_resume_after_material_pause: true
+  data_pit_contract: planning/05_data_contract_RC1.md
+  data_pit_contract_scope: abstract_semantics_decided_dataset_admission_open
 open_decision_ids:
-  P0: [D-008, D-009, D-010, D-011, D-012, D-014, D-018]
+  P0: [D-008, D-009, D-010, D-011, D-012, D-018]
   P1: [D-020, D-021, D-022, D-023, D-024, D-025, D-026, D-027, D-028, D-029, D-033, D-034]
   P2: [D-030, D-031, D-032]
   P3: [D-040, D-041, D-042]

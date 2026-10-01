@@ -7,7 +7,7 @@
 | Capacidad | Entrada → salida verificable | Frontera/decisión aún abierta |
 |---|---|---|
 | Descubrimiento e investigación | Fuentes/hipótesis → dossier con origen, timestamps, limitaciones y experimento | Research Agents solo lectura; no promueven Champion ni alteran riesgo |
-| Ingestión y normalización | Market/alternative data → snapshots versionados con `event_at`, `published_at`, `received_at`, `available_at` cuando apliquen | Proveedor y contrato PIT D-014/D-033; calidad y licencias |
+| Ingestión y normalización | Market/alternative data → snapshots versionados con clocks separados, `availability_evidence`, `eligible_from` y revisiones as-of | Semántica D-014/ADR-004; proveedor/admisión D-018/D-022/D-033, calidad y licencias |
 | Strategy Lab y backtest | Hipótesis versionada → reglas falsables, replay, OOS y comparadores | Selección D-008; motor D-023; acceso al holdout |
 | Signal Engine | Datos elegibles + reglas Champion → señal rastreable | Agente vs lógica determinística; autoridad D-015 |
 | Portfolio/intent | Señal + cartera reconciliada → `TradeIntent` operativo versionado, ensamblado determinísticamente | Reglas exactas de sizing/prioridad D-012/013; un Champion puede combinar señales |

@@ -4,7 +4,7 @@ Escala inicial cualitativa: `Alta/Media/Baja`; se calibrará después. Dueño in
 
 | ID | P | Riesgo | Prob./Impacto | Control o evidencia exigida | Dueño funcional |
 |---|---|---|---|---|---|
-| K-001 | P0 | Look-ahead por cierres, ajustes, releases o timestamps | Alta/Alta | Contrato PIT, datasets versionados, tests de disponibilidad | Data/Quant |
+| K-001 | P0 | Look-ahead por cierres, ajustes, releases o timestamps | Alta/Alta | ADR-004 fija `eligible_from`/revisiones as-of; faltan muestras PIT y pruebas por dataset D-018/022/033 | Data/Quant |
 | K-002 | P0 | Holdout contaminado y overfitting por búsqueda agéntica masiva | Alta/Alta | Registro de experimentos, holdout sellado/forward, multiple testing | Quant |
 | K-003 | P0 | Riesgo de gap excede `0.5%` pese a stop teórico | Alta/Alta | Stress de overnight, orden/stop real y política de pérdidas | Risk |
 | K-004 | P0 | Duplicación u omisión de orden tras timeout, DB/stream caída | Media/Alta | ADR-003 fija identidad interna, `UNKNOWN` y ledger; faltan probes broker y replay/chaos D-021/030 | Execution |
