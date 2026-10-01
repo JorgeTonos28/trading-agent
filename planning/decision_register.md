@@ -18,12 +18,12 @@ Fecha: 2026-10-01. Fuente base: [hoja de ruta v0.2](../docs/master/hoja_de_ruta_
 | D-012 | Arquitectura de riesgo: precedencia de reglas, estados, reserva de presupuesto, protección y acciones ante fallos | P0 | OPEN | Política determinística; aprobación humana de cambios materiales |
 | D-013 | Contratos de órdenes, `TradeIntent`, autorización, idempotencia y reconciliación | P0 | OPEN | Modelos, secuencias de fallos y criterios verificables |
 | D-014 | Contrato de datos y linaje: timestamps, ajustes, corporate actions, snapshots | P0 | OPEN | Esquemas y pruebas de no look-ahead |
-| D-015 | Límites de componentes y autoridad; papel de Portfolio Manager, Signal y Execution | P0 | OPEN | Diagrama de permisos, propietarios y fronteras |
-| D-016 | Alcance exacto PAPER V1 y gates de aceptación frente a fases B0–B7 | P0 | OPEN | Requisitos trazables y plan de etapas |
+| D-015 | Límites de componentes y autoridad; papel de Portfolio Manager, Signal y Execution | P0 | READY_FOR_DECISION | `paper_v1_capability_contract_RC0.md` §2–3/8; opción A recomendada; falta aprobación humana de frontera operativa |
+| D-016 | Alcance exacto PAPER V1 y gates de aceptación frente a fases B0–B7 | P0 | READY_FOR_DECISION | Contrato RC0 §1/5/8 concilia B4/B5/DoD y régimen observador; falta aprobación humana de alcance |
 | D-017 | Fronteras de autonomía: suspender, cancelar, reducir o liquidar ante incidentes | P0 | OPEN | Política aprobada por humano; failure-mode review |
 | D-018 | Papel de Smart Money y señales externas en Research/Strategy/Pedagogical, con contrato PIT y admisión | P0 | RESEARCHING | R-023; Congreso, Form 4, 13F, options flow, dark pool, revisions, flows y otros separados |
-| D-019 | Contrato del Pedagogical Agent y aprendizaje sin alterar Champion | P0 | OPEN | R-024; explicaciones trazables a datos/intents/fills/resultados y currículo §55 |
-| D-020 | Stack de capacidades, licencias y clasificación Build vs. Reuse | P1 | RESEARCHING | Fichas C-001–006 iniciales; faltan landscape completo, scorecards y decisión por capacidad |
+| D-019 | Contrato del Pedagogical Agent y aprendizaje sin alterar Champion | P0 | READY_FOR_DECISION | Contrato RC0 §3–5/8; explicación factual B4 y completa antes de DoD; formato/evals P1 pendientes |
+| D-020 | Stack de capacidades, licencias y clasificación Build vs. Reuse | P1 | RESEARCHING | Fichas C-001–009 y contrato RC0 §7; faltan landscape completo, scorecards y decisión por capacidad |
 | D-021 | Broker PAPER y elegibilidad real para residente de RD | P1 | OPEN | Gates B1–B5, pruebas API y aprobación humana |
 | D-022 | Proveedor de históricos y datos para candidatos Strategy V1; validador secundario | P1 | OPEN | Cobertura, PIT, ajustes, licencia, coste y benchmark |
 | D-023 | Motor(es) de investigación/backtest event-driven | P1 | OPEN | Comparativa y replay mínimo contra D-008/011 |

@@ -12,8 +12,8 @@ Estados: cada Q muestra su prioridad; Q-030–Q-037 incluyen estado explícito. 
 | Q-004 | P0 | D-012 | ¿Cómo interactúan stop estratégico, broker-side stop, gap, capital reservado, posiciones existentes y varios intents concurrentes? Tabla de precedencias y escenarios. |
 | Q-005 | P0 | D-013 | ¿Qué sucede si broker acepta una orden pero DB/stream falla, o si llegan eventos duplicados/desordenados? Máquina de estados y replay. |
 | Q-006 | P0 | D-014 | ¿Qué timestamp significa observado, publicado, disponible, recibido y utilizable? Contrato de barras, corporate actions, snapshots y lineage. |
-| Q-007 | P0 | D-015 | ¿Quién crea el intent final: estrategia determinística o Portfolio Manager Agent? ¿Puede un agente alterar cantidad o prioridad? Matriz de autoridad. |
-| Q-008 | P0 | D-016 | ¿Qué funciones son indispensables para PAPER V1 y cuáles son B5–B7? Traceability de requisitos y acceptance gates. |
+| Q-007 | P0 | D-015 | `READY_FOR_DECISION`: ¿aprueba el propietario la opción A del contrato RC0, donde un ensamblador determinístico crea el intent y Portfolio Manager Agent asesora sin alterar cantidad/prioridad en PAPER V1? |
+| Q-008 | P0 | D-016 | `READY_FOR_DECISION`: ¿aprueba el propietario el alcance de un Champion inicial, la conciliación B4/B5/DoD pedagógico y Regime Detection solo observador del contrato RC0? Traceability detallada sigue después. |
 | Q-009 | P0 | D-017 | ¿En qué condiciones se bloquea, cancela, reduce o liquida y quién puede reanudar? Matriz incidente→acción y aprobación. |
 | Q-010 | P1 | D-020 | ¿Qué capacidades existen, están disponibles a esta cuenta/región, son compatibles, asequibles y seleccionables? Evidencia de fuente primaria, licencia, prueba y clasificación. |
 | Q-011 | P1 | D-021 | ¿Qué broker PAPER admite el perfil real del dueño desde RD, los ETFs/órdenes necesarios, datos/stream y pruebas de recuperación? Verificación oficial y probes. |
@@ -46,6 +46,6 @@ Estados: cada Q muestra su prioridad; Q-030–Q-037 incluyen estado explícito. 
 - Q-032 (P0, D-009/012, `OPEN`): ¿Existe alguna regla coherente de stop, reentrada y tamaño para VID-TS, dado que el video alterna stop inicial 10/20%, compra tras caída ~20% y deja al agente elegir cantidad? Pantallas originales, especificación explícita y escenarios de conflicto.
 - Q-033 (P0, D-008/014, `OPEN`): ¿Puede VID-CONG o VID-ALERT obtener historia con timestamp de publicación/recepción y derechos de uso suficientes para test PIT? Evaluación R-021; los dashboards del video no bastan.
 - Q-034 (P0, D-018, `RESEARCHING`): ¿Qué papel puede tener cada familia Smart Money (Congreso, Form 4, 13F/hedge funds, options flow, block/dark pool, revisions, fund flows) en research, señales o pedagogía? Contrato PIT y gates de admisión R-023.
-- Q-035 (P0, D-019, `OPEN`): ¿Qué hechos y trazas debe explicar el Pedagogical Agent, cómo marca incertidumbre y cómo se impide que su aprendizaje altere un Champion? Contrato y evaluación R-024.
+- Q-035 (P0, D-019, `READY_FOR_DECISION`): ¿Aprueba el propietario explicación factual mínima B4 y reporte completo antes de DoD, ambos derivados de traza real y sin autoridad de trading? Contrato RC0; formato/evals detallados P1 después.
 - Q-036 (P1, D-033, `RESEARCHING`): ¿Qué combinación de Quiver, Unusual Whales, Capitol Trades, SEC/EDGAR y otros proveedores entrega cada dataset con historia PIT, API, latencia, licencia, calidad y coste adecuados? Scorecard R-025.
 - Q-037 (P1, D-021, `OPEN`): ¿Qué broker es elegible para RD y sirve a equities PAPER con API, streams y órdenes protectoras, manteniendo opciones futuras sin imponer derivados en V1? Comparación R-007; Alpaca no está seleccionado.

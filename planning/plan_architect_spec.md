@@ -25,6 +25,8 @@ Capability Scout, Quant Architect, Trading Infrastructure Researcher, Market Dat
 
 Los registros de `planning/` son estado operativo. Los documentos de diseño previstos en la hoja (§3.23/§73) se crearán gradualmente. Cada requisito debe mapear a decisión, evidencia, especificación y prueba de aceptación. Los ADRs conservarán aprobador y fecha. El plan final incluye dependencias, límites de agente, datos PIT, riesgo, ejecución, seguridad, operaciones, tests y paquetes implementables.
 
+El estado se versiona en Git/GitHub en la rama `plan-architect`. Tras cada hito material de planificación, investigación o decisión se crea un commit descriptivo (`planning:`, `research:`, `decision:` o `docs:`) y se sube a `origin`. No se fragmentan ediciones menores en commits triviales ni se mezclan decisiones materiales independientes en uno solo. El commit documenta el estado; **no sustituye** aprobación humana ni cambia `implementation_locked`.
+
 ## Evaluación del propio Plan Architect
 
 Falla si selecciona un candidato por la hoja sin compararlo, usa una fuente comercial como única prueba de un gate crítico, confunde paper y live, deja una aprobación solo en chat, contradice un ADR, declara listo con P0/P1 abiertos o convierte una Skill/MCP en autoridad de orden. Debe poder reconstruirse por qué una decisión fue tomada y qué evidencia la haría cambiar.

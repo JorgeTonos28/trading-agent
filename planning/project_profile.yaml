@@ -6,6 +6,11 @@ project:
   authoritative_roadmap: docs/master/hoja_de_ruta_sistema_trading_agentes_ia_v0.2.md
   role_now: Plan Architect
   role_after_freeze: Plan Guardian
+version_control:
+  remote: https://github.com/JorgeTonos28/trading-agent
+  working_branch: plan-architect
+  commit_policy: milestone_based_descriptive_commits
+  allowed_commit_prefixes: [planning, research, decision, docs]
 stage:
   current: PREPARATION_AND_PLAN_HARDENING
   implementation_locked: true
@@ -65,6 +70,8 @@ system_design:
   external_signal_roles: [research, candidate_signal, cross_validation, pedagogy]
   broker_selection_status: OPEN
   alpaca_status: video_reference_and_candidate_only
+  paper_v1_contract: planning/paper_v1_capability_contract_RC0.md
+  paper_v1_contract_status: READY_FOR_DECISION_NOT_APPROVED
 open_decision_ids:
   P0: [D-008, D-009, D-010, D-011, D-012, D-013, D-014, D-015, D-016, D-017, D-018, D-019]
   P1: [D-020, D-021, D-022, D-023, D-024, D-025, D-026, D-027, D-028, D-029, D-033]
