@@ -1,6 +1,6 @@
 # R-022 — Mapa funcional del Trading OS (RC0)
 
-**Fecha:** 2026-10-01. **Estado:** mapa completado; [contrato PAPER V1 RC1](../paper_v1_capability_contract_RC1.md) y ADR-001 aprueban A+ para D-015/016/019; D-018 sigue en investigación. **Prioridad:** P0. **Decisiones:** D-015, D-016, D-018, D-019. Este mapa convierte la inspiración del video y la [hoja v0.2](../../docs/master/hoja_de_ruta_sistema_trading_agentes_ia_v0.2.md) en requisitos de **nuestro** sistema. No fija stack, broker ni Strategy V1; no autoriza implementación.
+**Fecha:** 2026-10-01. **Estado:** mapa completado; [contrato PAPER V1 RC1](../paper_v1_capability_contract_RC1.md) y ADR-001 aprueban A+ para D-015/016/019; ADR-005 cierra roles/admisión abstracta D-018. **Prioridad:** P0. **Decisiones:** D-015, D-016, D-018, D-019. Este mapa convierte la inspiración del video y la [hoja v0.2](../../docs/master/hoja_de_ruta_sistema_trading_agentes_ia_v0.2.md) en requisitos de **nuestro** sistema. No fija stack, broker ni Strategy V1; no autoriza implementación.
 
 ## Capacidades y fronteras
 

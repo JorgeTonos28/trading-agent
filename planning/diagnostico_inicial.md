@@ -16,7 +16,7 @@ La hoja fija bien el propósito de **sistema agéntico de trading** (investigaci
 | Datos | PIT y lineage son principios explícitos | Qué instante se considera disponible; ajustes/corporate actions; snapshots, revisiones y permisos; D-014/022 |
 | Plataformas | Candidatos y gates de broker/data descritos | Elegibilidad del perfil real, coste/licencias actuales, probes, scorecards y ADR; D-021/022/023 |
 | Agentes/capacidades | Separación conceptual de Skills/tools/risk | Inventario de disponibilidad real, licencias, permisos, runtime y evals; D-020/024 |
-| Smart Money | Fuentes alternativas mencionadas | Taxonomía amplia y contrato PIT por familia; proveedores especializados comparados por dataset, no Congreso como sinónimo; D-018/033 |
+| Smart Money | Fuentes alternativas mencionadas | Taxonomía/roles/gates abstractos cerrados en ADR-005; proveedores especializados, PIT y utilidad por dataset siguen D-022/033/R-021; Congreso no es sinónimo |
 | Pedagogía | §55 propone currículo y V1 exige explicación de cada operación | Contrato de evidencia, niveles, incertidumbre y límites del Pedagogical Agent; D-019 |
 | Operaciones/seguridad | Secretos, idempotencia, runbooks y chaos nombrados | Threat model, SLO, restore, incident actions, aceptación verificable; D-027/028/029 |
 | Alcance | Fases A/B y DoR descritos | PAPER V1 frente a componentes B5–B7 y Definition of Done no tienen trazabilidad completa; D-016 |

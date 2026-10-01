@@ -58,6 +58,8 @@ baseline_decisions:
     result: Broker-independent internal order identity, durable command before send, event ledger and reconciliation; UNKNOWN never permits blind resend; G2 cancellation has separate deterministic risk authorization
   - id: ADR-004
     result: Point-in-time observations carry distinct clocks, channel-specific availability evidence and eligible_from; replay uses as-of revisions and snapshots, with raw tradable price separate from as-of adjusted views
+  - id: ADR-005
+    result: External data families begin as research only; promotion to operational Champion input requires semantic, PIT, quality, license, OOS, risk and human-governance gates; no family or provider selected
 strategy_v1:
   selection_status: OPEN
   priority: P0
@@ -97,8 +99,10 @@ system_design:
   human_resume_after_material_pause: true
   data_pit_contract: planning/05_data_contract_RC1.md
   data_pit_contract_scope: abstract_semantics_decided_dataset_admission_open
+  external_signal_contract: planning/06_external_signal_admission_RC1.md
+  external_signal_families_selected: []
 open_decision_ids:
-  P0: [D-008, D-009, D-010, D-011, D-012, D-018]
+  P0: [D-008, D-009, D-010, D-011, D-012]
   P1: [D-020, D-021, D-022, D-023, D-024, D-025, D-026, D-027, D-028, D-029, D-033, D-034]
   P2: [D-030, D-031, D-032]
   P3: [D-040, D-041, D-042]

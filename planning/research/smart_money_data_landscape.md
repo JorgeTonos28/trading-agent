@@ -1,6 +1,6 @@
 # R-023/R-025 — Smart Money y proveedores de datos alternativos
 
-**Fecha:** 2026-10-01. **Estado:** RESEARCHING. **Prioridades:** contrato de señales P0 (R-023); comparación de proveedores P1 (R-025). **Decisiones:** D-014, D-018 y D-033. Ninguna familia de señales ni proveedor está seleccionado. «Smart Money» es una etiqueta de investigación, **no una señal homogénea ni sinónimo de operaciones congresuales**.
+**Fecha:** 2026-10-01. **Estado:** roles/admisión P0 cerrados en [ADR-005](../decisions/ADR-005-external-signal-admission.md) y [contrato RC1](../06_external_signal_admission_RC1.md); proveedores y datasets P1 `RESEARCHING` en R-025/D-033. **Decisiones:** D-014/D-018 `DECIDED` en semántica abstracta, D-033 abierta. Ninguna familia de señales ni proveedor está seleccionado. «Smart Money» es una etiqueta de investigación, **no una señal homogénea ni sinónimo de operaciones congresuales**.
 
 ## Familias de señales a investigar
 
@@ -50,4 +50,4 @@ El resultado puede ser **varios proveedores especializados** o fuentes oficiales
 3. Verificar que el histórico conserva el primer momento público y no solo el estado actual enriquecido.
 4. Medir cobertura/latencia y estimar esfuerzo de integración; decidir qué familias son factibles para V1, research-only o futuras.
 
-**Gate:** D-018 define el papel de señales externas y contrato PIT; D-033 selecciona proveedor(es) solo después del scorecard, o deja una familia diferida con razón explícita. No se requiere demostrar o refutar las cifras del video.
+**Gate:** D-018/ADR-005 define roles y admisión abstracta; ADR-004 fija semántica PIT. D-033 selecciona proveedor(es) solo después del scorecard, o deja una familia diferida con razón explícita. D-008 aprueba cualquier uso operativo en Strategy V1. No se requiere demostrar o refutar las cifras del video.
