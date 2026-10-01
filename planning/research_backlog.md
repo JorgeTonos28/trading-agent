@@ -7,14 +7,14 @@ Prioridad: P0 arquitectura, P1 implementación, P2 paper autónomo, P3 live, P4 
 | R-019 | P0 | D-009 | RESEARCHING: transcripción primaria revisada; usar `research/video_inspired_strategy.md` para extraer capacidades y reglas útiles. Más pantallas/prompts solo si aclaran nuestro diseño; claims de retorno `NO VERIFICADO`, sin auditoría dedicada. |
 | R-020 | P0 | D-008/011 | Preregistrar criterios y comparar variantes video viables, MATR_V1 y otros candidatos; el sistema y contratos comunes gobiernan admisión. No seleccionar por aparecer en el video; `02_strategy_v1_selection.md` y aprobación humana. |
 | R-021 | P0 | D-014/018/008 | Factibilidad PIT para **familias de señales externas** que puedan alimentar V1: timestamps de evento/publicación/recepción, cobertura histórica, derechos y primera operación posible. Congreso y alertas de terceros son casos, no el conjunto completo; coordinar con R-023/025. |
-| R-022 | P0 | D-015/016/018/019 | READY_FOR_DECISION para D-015/016/019: `paper_v1_capability_contract_RC0.md` fija capacidades, matriz de autoridad, interfaces, fases y alternativas; D-018 PIT por familia sigue R-023/021. |
+| R-022 | P0 | D-015/016/018/019 | DECIDED para D-015/016/019: `paper_v1_capability_contract_RC1.md` registra A+ y ADR-001; D-018 PIT por familia sigue R-023/021. |
 | R-023 | P0 | D-018/014 | RESEARCHING: taxonomía y contrato de señales Smart Money/alternative data; separar Congreso, Form 4, 13F, hedge funds, options flow, block/dark pool, analyst revisions, fund flows y nuevos datos; `research/smart_money_data_landscape.md`. |
-| R-024 | P0 | D-019/015/016 | READY_FOR_DECISION en alcance funcional: contrato RC0 vincula explicación a rastro y currículo §55 sin autoridad financiera; formato detallado, privacidad y evals se completarán como P1. |
+| R-024 | P0 | D-019/015/016 | DECIDED en alcance funcional: contrato RC1 vincula explicación a rastro y currículo §55 sin autoridad financiera; formato detallado, privacidad y evals se completarán como P1. |
 | R-001 | P0 | D-010/011 | RESEARCHING: MATR_V1 RC0 es ficha candidata, no Strategy V1 seleccionada; faltan convenciones, datos, timing y protocolo OOS comparativo. |
 | R-002 | P0 | D-012/017 | Política de riesgo y autoridad: estados, límites, concurrencia, gaps, stops, kill-switch, reapertura y escenarios; `03_risk_policy.md`. |
 | R-003 | P0 | D-013/015 | Contratos de TradeIntent, aprobación firmada, order state, idempotencia, reconciliación, ownership y fallos; `04_system_architecture.md`. |
 | R-004 | P0 | D-014 | Semántica point-in-time, ajustes, eventos corporativos, snapshots y lineage; `05_data_architecture.md`. |
-| R-005 | P0 | D-016 | READY_FOR_DECISION en alcance: contrato RC0 §5 mapea B0–B7 y §57; traceability requisito→test y umbrales detallados permanecen P1/P2 antes del DoR. |
+| R-005 | P0 | D-016 | DECIDED en alcance: contrato RC1 §5 mapea B0–B7 y §57; traceability requisito→test y umbrales detallados permanecen P1/P2 antes del DoR. |
 | R-006 | P1 | D-020/024 | RESEARCHING: ver fichas iniciales C-001–006 en `capability_landscape.md`; faltan Codex/otras capacidades financieras, otros labs, open source, quant, brokers, datos, acceso/coste/licencias y clasificación final. |
 | R-007 | P1 | D-021 | OPEN (marco RC0): Alpaca/IBKR/Tradier/tastytrade/TradeStation/otros, todos abiertos. API, PAPER, paridad live, streaming, stops/brackets/trailing, estabilidad, RD, equities, opciones futuras, costes y seguridad; `research/broker_selection.md`, scorecard y ADR humano. |
 | R-008 | P1 | D-022 | Market data primario/validador: broker-native, Databento, Massive, Nasdaq Data Link, Tiingo, Alpha Vantage y nuevos candidatos; timestamps, ajustes, históricos, licencia, precios y muestras cruzadas. |
@@ -28,6 +28,7 @@ Prioridad: P0 arquitectura, P1 implementación, P2 paper autónomo, P3 live, P4 
 | R-016 | P3 | D-040/041/042 | Broker live, jurisdicción, costos, impuestos/documentación, capital, disaster recovery y gates paper→shadow→live. |
 | R-017 | P4 | D-050 | Investigación **incremental futura** de alpha/Challengers para familias externas que no entren en alcance V1; factibilidad arquitectónica y selección de fuentes V1 se adelantan a R-021/023/025. |
 | R-025 | P1 | D-033/020/022 | RESEARCHING: proveedores Smart Money/alternative data (Quiver, Unusual Whales, Capitol Trades, SEC/EDGAR directo y especialistas adicionales); API, historia, PIT, latencia, cobertura, coste, restricciones, calidad y backtesting por dataset; `research/smart_money_data_landscape.md`. |
+| R-026 | P1 | D-034 | OPEN: esquema y aislamiento técnico del Portfolio Manager shadow; comparación pareada PIT con Champion, métricas preregistradas, costes/fills hipotéticos, reproducibilidad y errores. Descubrir frameworks/evals reutilizables antes de BUILD. |
 | R-018 | P4 | D-051 | Opciones/short/leverage/cripto/futuros/regímenes avanzados: investigar solo tras alcance PAPER. |
 
 ## Protocolo de Capability Discovery (R-006)

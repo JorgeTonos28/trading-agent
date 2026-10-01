@@ -24,6 +24,7 @@ Las hipótesis siguientes **no** son decisiones aprobadas. Su posible falsedad t
 | A-018 | P0 | Una variante de copy trading congresual o de alertas puede reconstruirse con tiempo de publicación/recepción y universo histórico suficientes. R-021 debe intentar falsarlo antes de backtest. | Diferir la variante V1 aunque el tutorial muestre dashboards atractivos. |
 | A-019 | P0 | Una interfaz común puede representar fuentes externas heterogéneas sin borrar su fecha real de disponibilidad, revisiones y nivel de confianza. R-023/004 prueban semántica. | Contratos por familia y adaptación del diseño de datos. |
 | A-020 | P1 | Uno o varios proveedores especializados permitirán cubrir señales externas con derechos y coste razonables. R-025 compara contra fuentes oficiales. | Reducir alcance de fuentes V1 o construir normalización propia. |
+| A-021 | P1 | El Portfolio Manager Agent shadow podrá recibir un contexto elegible comparable al del Champion y producir propuestas reproducibles sin información futura ni efecto operativo. R-026 debe probarlo. | Limitar la comparación a contextos pareados disponibles; corregir aislamiento/evaluación antes del DoD. |
 
 ## Hechos de baseline, no supuestos
 

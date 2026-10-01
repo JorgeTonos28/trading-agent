@@ -9,6 +9,8 @@
 
 **Enmienda de gobernanza — 1 de octubre de 2026:** por decisión explícita del propietario, la selección de la primera estrategia queda **OPEN (P0)**. MATR_V1 conserva su valor como candidato y benchmark, pero no es el Champion ni la primera estrategia seleccionada. Se reconstruirá primero el enfoque del [video de origen](https://www.youtube.com/watch?v=2Et4Ao6usbA), separando infraestructura, señales, trailing stops, copy trading y opciones, y se comparará con MATR_V1 y otros candidatos. Las referencias posteriores a MATR_V1 como primera implementación son ejemplos **condicionados a su selección futura**. Véase `planning/decisions/ADR-000-strategy-v1-selection-scope.md`; los invariantes de riesgo y gobierno no cambian.
 
+**Enmienda PAPER V1 — 1 de octubre de 2026:** el propietario aprobó **A+ / Shadow Portfolio Manager** en `planning/decisions/ADR-001-paper-v1-authority.md`. Habrá inicialmente una sola configuración Champion operativa, que puede combinar varias fuentes/señales. La señal operativa y el `TradeIntent` serán determinísticos; Risk Engine seguirá siendo la única autoridad financiera. Portfolio Manager Agent producirá propuestas estructuradas y auditadas en shadow mode desde B4, sin convertirlas en intents ni afectar órdenes, posiciones, Champion, riesgo o asignaciones. Pedagogical Agent explicará hechos desde B4 y completará su contrato antes del DoD de PAPER V1. Esta enmienda acota la autoridad descrita más adelante en §8.1 solo para PAPER V1; cualquier ampliación posterior requiere decisión y aprobación humana. No selecciona Strategy V1, broker, proveedor, runtime ni umbrales de riesgo.
+
 ---
 
 ## 0. Resumen ejecutivo

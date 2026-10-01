@@ -15,10 +15,10 @@
 
 | Orden | Decisión | Evidencia de cierre | Intervención humana |
 |---|---|---|---|
-| 1 — P0 | D-015/016/018/019: límites del sistema, PAPER V1, papel de señales externas y Pedagogical Agent | R-022/023/024: mapa de permisos, contratos, taxonomía PIT, entradas/salidas y acceptance gates | Dueño revisa alcance/arquitectura final; detalles documentales pueden cerrarse técnicamente |
+| 1 — P0 | D-015/016/019 DECIDED con A+; D-018 sigue RESEARCHING | ADR-001 y contrato RC1; taxonomía y admisión PIT de señales externas en R-023/021 | Dueño aprobó alcance A+; ninguna fuente específica aprobada |
 | 2 — P0 | D-012/013/014/017: riesgo, TradeIntent/órdenes, datos PIT y autonomía ante fallos | R-002/003/004/021: estados, secuencias de fallo, timestamps, controles y pruebas especificadas | Aprobación del dueño para política de riesgo y límites de autonomía |
 | 3 — P1, investigación temprana | D-020/033/021: Build vs. Reuse, proveedores Smart Money y broker PAPER | R-006/025/007: documentación oficial, scorecards, elegibilidad RD, historia PIT, licencia, precio y probes | Broker y gasto material requieren aprobación; ningún candidato preseleccionado por el video |
 | 4 — P0 | D-008/010/011: Strategy V1 y validación | R-019/020/001: variantes video separadas, MATR y otros candidatos, reglas falsables, protocolo OOS antes de resultados | Selección/arquitectura final aprobada por dueño |
 | 5 — P1 | D-022–029: datos de mercado, backtest, runtime, workflow, storage, seguridad, pruebas y operación | R-008–014: benchmarks/probes, coste, threat model y criterios verificables | Seguridad material y datos costosos al dueño; resto por ADR técnico |
 
-**Hito alcanzado 2026-10-01:** R-022 produjo el [contrato PAPER V1 RC0](paper_v1_capability_contract_RC0.md) con alternativas y recomendación. D-015/016/019 están `READY_FOR_DECISION`; antes de cerrar esos límites materiales se requiere decisión explícita del propietario. R-023/R-025 y R-007 siguen como líneas de investigación independientes para continuar tras esa decisión, sin gasto ni selección prematura.
+**Hito alcanzado 2026-10-01:** el propietario aprobó A+ en [ADR-001](decisions/ADR-001-paper-v1-authority.md) y [contrato PAPER V1 RC1](paper_v1_capability_contract_RC1.md). D-015/016/019 están `DECIDED`; D-018 sigue abierto. El siguiente bloque P0 es D-012/013/014/017: riesgo, órdenes, datos PIT e incidentes. R-026 detalla y evalúa el canal shadow como P1. R-023/R-025 y R-007 siguen abiertos sin selección ni gasto prematuro.

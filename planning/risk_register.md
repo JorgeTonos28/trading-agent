@@ -32,5 +32,7 @@ Escala inicial cualitativa: `Alta/Media/Baja`; se calibrará después. Dueño in
 | K-026 | P0 | Reducir Smart Money a Congreso crea arquitectura de datos estrecha y obliga a rediseño al añadir Form 4, 13F u otras fuentes | Alta/Media | Taxonomía R-023, contrato común con extensiones y mapa de capacidades R-022 | Architecture/Data |
 | K-027 | P1 | Seleccionar agregador por marketing sin comprobar timestamp PIT, licencia o backfill histórico | Alta/Alta | R-025: scorecard por dataset, comparación con fuente oficial y probes; ninguna selección por presencia en video | Data/Procurement |
 | K-028 | P0 | Pedagogical Agent explica causas inventadas o transforma aprendizaje en cambio no aprobado de Champion | Media/Alta | Trazas verificables, incertidumbre explícita y separación estricta de autoridad D-019/D-005 | Pedagogy/Architecture |
+| K-029 | P1 | Una propuesta shadow cruza por error la frontera hacia `TradeIntent`, órdenes o asignaciones | Media/Alta | Aislamiento por permisos/esquema/canal, pruebas negativas, auditoría y alerta; D-034/ADR-001 | Security/Architecture |
+| K-030 | P1 | Comparación del shadow usa datos posteriores, fills ideales o contexto distinto y exagera utilidad | Alta/Alta | Contexto pareado PIT, costes/fills hipotéticos versionados, protocolo preregistrado y replay; R-026 | Quant/Data |
 
 Todos los riesgos salvo K-018 siguen `OPEN`; no se presume mitigación por la mera presencia de una idea de control en la hoja.

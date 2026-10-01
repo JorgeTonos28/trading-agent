@@ -1,14 +1,14 @@
-# PAPER V1 — contrato de capacidades y autoridad RC0
+# PAPER V1 — contrato de capacidades y autoridad RC1 (A+)
 
-**Fecha:** 2026-10-01. **Estado:** `READY_FOR_DECISION` para alcance y autoridad material; **no aprobado ni congelado**. **Bloqueo:** `implementation_locked=true`. **Decisiones:** D-015/D-016/D-018/D-019, con dependencias D-008/D-012–014/D-017 y P1 de stack. **Fuentes:** [hoja de ruta §4–9, §55–57](../docs/master/hoja_de_ruta_sistema_trading_agentes_ia_v0.2.md), [mapa funcional](research/system_capability_map.md), [video descompuesto](research/video_inspired_strategy.md). Este documento especifica **qué debe poder hacer** PAPER V1 y quién tiene autoridad; ninguna tecnología, broker, proveedor o estrategia queda seleccionada.
+**Fecha:** 2026-10-01. **Estado:** alcance/autoridad funcional **aprobados como A+** en [ADR-001](decisions/ADR-001-paper-v1-authority.md); contrato detallado aún sujeto a D-012–014/D-017 y DoR. **Bloqueo:** `implementation_locked=true`. **Decisiones:** D-015/D-016/D-019 `DECIDED`, D-018 `RESEARCHING`; D-008 y P1 de stack abiertos. **Fuentes:** [hoja de ruta §4–9, §55–57](../docs/master/hoja_de_ruta_sistema_trading_agentes_ia_v0.2.md), [mapa funcional](research/system_capability_map.md), [video descompuesto](research/video_inspired_strategy.md). Este documento especifica **qué debe poder hacer** PAPER V1 y quién tiene autoridad; ninguna tecnología, broker, proveedor o estrategia queda seleccionada.
 
 ## 1. Objetivo y límites de la versión
 
-PAPER V1 debe operar **una estrategia Champion aprobada**, sobre instrumentos long-only del alcance que se defina al seleccionar Strategy V1, desde datos disponibles y versionados hasta órdenes paper reconciliadas. Debe poder investigar y ensayar Challengers sin darles autoridad operativa. Cada señal, decisión de riesgo, orden, fill, resultado y explicación pedagógica debe poder reconstruirse por identificador y versión. La autonomía por operación existe **solo dentro** de estrategia, capital, riesgo y estado aprobados; no requiere aprobación humana para cada orden válida. El propietario gobierna promoción, cambios centrales, ampliación de límites, broker, derivados y paso a LIVE.
+PAPER V1 debe operar **una configuración/estrategia Champion aprobada inicialmente**, sobre instrumentos long-only del alcance que se defina al seleccionar Strategy V1, desde datos disponibles y versionados hasta órdenes paper reconciliadas. Un Champion puede consumir **varias fuentes o familias de señales**. Debe poder investigar y ensayar Challengers y mantener Portfolio Manager Agent en shadow sin darles autoridad operativa. Cada señal, decisión de riesgo, orden, fill, resultado, propuesta shadow y explicación pedagógica debe poder reconstruirse por identificador y versión. La autonomía por operación existe **solo dentro** de estrategia, capital, riesgo y estado aprobados; no requiere aprobación humana para cada orden válida. El propietario gobierna promoción, cambios centrales, ampliación de límites, broker, derivados y paso a LIVE.
 
-**Propuesta de alcance mínimo:** un Champion a la vez; un broker PAPER; un universo acotado según Strategy V1; una fuente primaria de market data y validación suficiente; fuentes Smart Money opcionales como entradas de investigación hasta que una estrategia seleccionada las requiera. El contrato de datos admite familias heterogéneas desde el inicio. La cantidad de agentes, procesos o servicios no se fija aquí. Una funcionalidad puede ser un componente sin LLM.
+**Alcance mínimo aprobado:** un Champion operativo a la vez; un Portfolio Manager Agent en shadow; un broker PAPER aún por seleccionar; universo acotado según Strategy V1; market data y validación suficientes. Fuentes Smart Money pueden alimentar research o la estrategia seleccionada si pasan sus gates; no se exige ni se excluye una fuente específica. El contrato de datos admite familias heterogéneas. La cantidad de procesos o servicios no se fija aquí. Una funcionalidad puede ser un componente sin LLM.
 
-**Fuera de PAPER V1:** dinero real, leverage, short selling, opciones/futuros/cripto, autopromoción de Challenger, autoedición de política de riesgo o de Champion, y LLM/MCP/plugin con credenciales de broker o herramienta genérica de órdenes. La preparación solo produce documentos y probes desechables.
+**Fuera de PAPER V1:** dinero real, leverage, short selling, opciones/futuros/cripto, autopromoción de Challenger, autoedición de política de riesgo o de Champion, conversión de propuestas shadow en intents operativos, y LLM/MCP/plugin con credenciales de broker o herramienta genérica de órdenes. La preparación solo produce documentos y probes desechables.
 
 ## 2. Fronteras invariantes
 
@@ -18,6 +18,8 @@ Market/Data Snapshot ──> Champion Signal ──> Portfolio/Intent
                       ──> TradeIntent ──> Deterministic Risk Engine
                       ──> autorización vinculada al intento ──> Execution Engine
                       ──> Broker Adapter ──> PAPER Broker
+Contexto elegible ──> Portfolio Manager Agent SHADOW
+                  ──> ShadowPortfolioProposal ──> Audit/Evaluation ONLY
 Broker Events ──> Reconciliation ──> Audit/Performance
 Audit/Performance ──> Monitoring + Pedagogical Agent + Research
 ```
@@ -27,12 +29,13 @@ Audit/Performance ──> Monitoring + Pedagogical Agent + Research
 3. Execution valida que autorización, intent, versión de riesgo/estrategia, estado de cuenta y vencimiento sigan vigentes. Ante discrepancia o incertidumbre, no crea una nueva orden y reconcilia.
 4. Research, backtest, pedagogy, monitoring generativo y Challengers pueden **proponer** o explicar; no cambian Champion ni parámetros activos. Promoción y cambios materiales requieren registro y aprobación humana.
 5. Datos externos se consumen con licencia, origen y disponibilidad temporal explícitos. Un dato retrospectivamente enriquecido no se usa como si hubiera existido en tiempo real.
+6. `ShadowPortfolioProposal` usa el **mismo contexto elegible** al tiempo de decisión que el camino Champion, cuando corresponde, pero vive en un canal separado: no se convierte en `TradeIntent`, no llega a Risk/Execution/Broker y no modifica posiciones, Champion, riesgo ni asignaciones. Su captura y evaluación son auditables.
 
 Estos puntos desarrollan D-002/D-005 ya `DECIDED`. Los detalles de política D-012/D-017 siguen abiertos y no se sustituyen por este contrato.
 
-## 3. Matriz de responsabilidad y permiso propuesta
+## 3. Matriz de responsabilidad y permiso aprobada en alcance
 
-`R` lectura; `P` propuesta/artefacto sin efecto financiero; `I` crea intent; `A` autoriza/rechaza determinísticamente; `E` ejecuta solo autorización válida; `S` solicita suspensión; `H` aprueba gobierno. Un guion significa permiso ausente. Los permisos son **capacidades**, no acceso directo a tablas, claves o endpoints.
+`R` lectura; `P` propuesta/artefacto sin efecto financiero; `I` crea intent; `A` autoriza/rechaza determinísticamente; `E` ejecuta solo autorización válida; `S` solicita suspensión; `H` aprueba gobierno. Un guion significa permiso ausente. Los permisos son **capacidades**, no acceso directo a tablas, claves o endpoints. El canal shadow no posee ruta técnica a `TradeIntent`.
 
 | Rol/componente | Datos/estado | Research/Challenger | Señal | TradeIntent | RiskDecision | Orden broker | Suspensión | Cambio Champion/política |
 |---|---|---|---|---|---|---|---|---|
@@ -40,6 +43,7 @@ Estos puntos desarrollan D-002/D-005 ya `DECIDED`. Los detalles de política D-0
 | Data Quality | R, marca calidad | P | — | — | — | — | S si dato crítico | — |
 | Champion Signal Engine | R snapshot elegible | — | P versionada | — | — | — | — | — |
 | Portfolio/Intent assembler | R estado reconciliado | — | R | **I** según Champion y presupuesto | — | — | — | — |
+| Portfolio Manager Agent **SHADOW** | R contexto elegible sin secretos | P `ShadowPortfolioProposal` | R, puede proponer señal shadow | **—** | — | **—** | — | — |
 | Risk Agent explicativo | R | P | — | — | — | — | S | — |
 | **Deterministic Risk Engine** | R estado y política | — | R | R | **A** | — | A/S según política | — |
 | Execution Engine/Broker adapter | R mínimo | — | — | R autorizado | R | **E** | ejecuta cancelación/liquidación solo según política | — |
@@ -49,7 +53,7 @@ Estos puntos desarrollan D-002/D-005 ya `DECIDED`. Los detalles de política D-0
 | Pedagogical Agent | R auditado y filtrado | P educativa | — | — | — | — | — | — |
 | Humano propietario | R | P | — | — | política aprobada | — en el flujo autónomo | H para reanudación material | **H** |
 
-**Decisión material pendiente D-015:** confirmar si en V1 el Portfolio Manager Agent es solo asesor/observador y un ensamblador determinístico crea el `TradeIntent` (recomendación), o si el agente puede decidir prioridad/notional dentro de límites que el riesgo valida. Con un Champion, la asignación multi-estrategia no aporta valor inicial y aumenta la superficie de autoridad. Ninguna opción permite saltarse Risk Engine.
+**D-015 aprobado:** un ensamblador determinístico crea el `TradeIntent` operativo; Portfolio Manager Agent produce propuestas estructuradas **shadow**. Puede expresar prioridad y notional hipotéticos, pero no modifica cantidad/prioridad del Champion ni el presupuesto real. La futura autoridad limitada tipo opción B necesita evidencia y un nuevo ADR aprobado. Ninguna modalidad permite saltarse Risk Engine.
 
 ## 4. Contratos de información, todavía independientes del stack
 
@@ -58,13 +62,14 @@ Estos puntos desarrollan D-002/D-005 ya `DECIDED`. Los detalles de política D-0
 | `DataObservation` / snapshot | fuente, dataset/versión, instrumento/entidad, `event_at`, `published_at`, `received_at`, `available_at` o desconocido, revisión, calidad, licencia, hash | Ingestión → research/signal | Si falta momento operable o calidad requerida, no habilita señal Champion |
 | `ResearchHypothesis` / `ChallengerSpec` | hipótesis falsable, universo, entradas/salidas, sizing, costes, benchmark, datos PIT, autor/versión | Agents → Strategy Lab | Sin capacidad de orden ni promoción automática |
 | `Signal` | Champion/version, instrumento, decisión, puntuación/razones medibles, snapshot ID, reloj de decisión, vigencia | Signal Engine → Portfolio/Intent | Replay con mismo snapshot y versión produce mismo resultado o divergencia explicada |
+| `ShadowPortfolioProposal` | ID, versión del agente/modelo/prompt/política shadow, `decision_time`, context/snapshot IDs y data cut-off, posiciones hipotéticas a abrir/cerrar/mantener, prioridad, notional/sizing, señales, razones estructuradas, confianza calibrada o `NOT_APPLICABLE`, fuentes, supuestos y limitaciones | Portfolio Manager Agent → **Shadow Audit/Evaluation solamente** | Nunca se acepta como `Signal`/`TradeIntent` operativo; no comparte credenciales ni endpoint de Execution; rechazo automático de cualquier intento de cruzar frontera |
 | `TradeIntent` | ID único, signal ID, estrategia/version, instrumento, lado, notional/cantidad deseada, razón, política de stop, expiración, cuenta/estado de referencia | Portfolio/Intent → Risk | No es orden; inválido sin snapshot, estrategia habilitada y estado fresco |
 | `RiskDecision` | intent ID + hash, política/version, cuenta/posición/version, checks y motivos, notional autorizado, expiración, firma/verificador | Risk → Execution | No reusarse con intent o estado modificado; denegación registrada |
 | `OrderCommand` / `BrokerEvent` | idempotency key/client ID, autorización, tipo/TIF, broker/account, aceptación, parcial, fill, cancel/reject y timestamps | Execution ↔ Broker | Duplicados y eventos fuera de orden no crean posiciones fantasma |
 | `ReconciliationRecord` | estado interno vs broker, diferencias, acción y estado de bloqueo | Reconciliation → Risk/monitoring | Incertidumbre material bloquea nuevas entradas hasta resolver |
 | `PedagogicalReport` | trade/intent/decision/order/fill IDs, explicación factual, conceptos §55, incertidumbre, links a fuente y versión | Pedagogical → propietario | No inventa causa, precio/fill ni rendimiento; distingue plan, autorización y resultado |
 
-Los esquemas definitivos, clocks, corporate actions y modelo de estados se cierran en D-013/D-014. No se confunde `published_at` de una fuente con `event_at` del hecho económico; un campo desconocido permanece desconocido.
+Los esquemas definitivos, clocks, corporate actions y modelo de estados se cierran en D-013/D-014. No se confunde `published_at` de una fuente con `event_at` del hecho económico; un campo desconocido permanece desconocido. El snapshot shadow debe corresponder al mismo instante de decisión y datos disponibles del Champion para que la comparación sea justa; puede registrar diferencias explícitas de contexto.
 
 ## 5. Capacidad por etapa y criterio observable
 
@@ -73,12 +78,12 @@ Los esquemas definitivos, clocks, corporate actions y modelo de estados se cierr
 | B0/B1 — research y validación | Datos versionados; Strategy V1 seleccionada; backtest reproducible, OOS, costes y benchmarks | Spec, datasets/snapshots, experiment IDs y replay documentados |
 | B2 — core financiero | `TradeIntent`, política determinística, estados y autorización vinculante | Casos válidos e inválidos: rechazo, reducción, stale, gap y conflicto; sin broker directo |
 | B3 — integración paper | Una orden de prueba autorizada, eventos, parciales, cancelación, reinicio y reconciliación | Replay sin orden duplicada; diferencias bloquean nueva entrada |
-| B4 — paper autónomo controlado | Señal Champion, schedule/event trigger, riesgo, ejecución, monitor y cierre diario | Opera sin aprobación por trade, pero dentro de límites; kill switch probado; data/broker outage falla cerrado |
-| B5 — agentes/capa de capacidades | Research/quant/monitor/attribution/pedagogy aprobados; plugin/Skills/MCP solo si scorecard los justifica | Reporte por operación trazable y útil; ninguna herramienta de investigación puede cursar orden |
+| B4 — paper autónomo controlado | Señal Champion, schedule/event trigger, riesgo, ejecución, monitor y cierre diario; **Portfolio Manager shadow produce propuestas auditadas** y Pedagogical Agent explica hechos | Opera sin aprobación por trade dentro de límites; shadow aislado; kill switch probado; data/broker outage falla cerrado |
+| B5 — agentes/capa de capacidades | Research/quant/monitor/attribution/pedagogy aprobados; plugin/Skills/MCP solo si scorecard los justifica | Reporte pedagógico completo, comparación Champion vs shadow; ninguna herramienta de investigación puede cursar orden |
 | B6 — Champion/Challenger | Pipeline formal y comparación sin autoridad de promoción automática | Challenger produce evidencia/shadow, propietario aprueba promoción |
 | B7+ — fuentes nuevas/LIVE | Fuentes externas adicionales, shadow/live según gates separados | No bloquean la primera operación PAPER salvo que Strategy V1 dependa de ellas |
 
-**Conciliación de la hoja:** §8.6 pide Regime Detection en modo observación «desde el principio» y aclara que no es obligatorio para la primera operación. La propuesta incluye su contrato y trabajo observador temprano en B1/B2, permite estado `UNKNOWN` en la primera orden de B3 y exige observación activa antes de declarar terminada PAPER V1; nunca cambia parámetros Champion. §56 ubica agentes/plugin ricos en B5 después de B4, mientras §57 exige informe pedagógico para el **Definition of Done final** de PAPER V1. Se propone una explicación factual mínima desde B4 y el informe completo en B5 antes de declarar PAPER V1 terminada. §4 exige ensayar Challengers sin autoridad de capital: el aislamiento/pipeline B6 también es requisito del V1 funcional final, aunque no impida la primera operación B3/B4. Esto es interpretación para aprobación, no modificación silenciosa del roadmap.
+**Conciliación aprobada de la hoja:** §8.6 pide Regime Detection en modo observación «desde el principio» y aclara que no es obligatorio para la primera operación. Su contrato y trabajo observador se ubican temprano en B1/B2; puede estar `UNKNOWN` en la primera orden B3 y debe observar antes del DoD. §56 ubica agentes/plugin ricos en B5 después de B4, mientras §57 exige informe pedagógico para el **Definition of Done final**. La explicación factual empieza en B4 y el informe completo llega en B5 antes de declarar PAPER V1 terminada. §4 exige ensayar Challengers sin autoridad de capital: el aislamiento/pipeline B6 también es requisito del V1 funcional final, aunque no impida la primera operación B3/B4. El Portfolio Manager Agent opera en shadow desde B4. Estos hitos no autorizan una tecnología concreta.
 
 ## 6. Fallos y límites de autoridad que el plan debe probar
 
@@ -93,6 +98,8 @@ Los esquemas definitivos, clocks, corporate actions y modelo de estados se cierr
 | Prompt injection en fuente, correo, Skill o MCP | Contenido de datos no adquiere permisos; aislamiento/validación y logging |
 | Agente propone cambio de Champion, riesgo o broker | Solicitud de gobierno; no desplegar ni ejecutar hasta aprobación registrada |
 | Reporte pedagógico sin causalidad verificable | Explicar solo hechos observados y marcar interpretación/incertidumbre |
+| Shadow intenta emitir un intent/usar broker o cambiar asignaciones | Frontera técnica deniega, registra intento y alerta; no basta una instrucción de prompt |
+| Shadow usa datos posteriores o evalúa con fill perfecto | Invalidar comparación; replay PIT y modelo de costes/fills hipotéticos versionados |
 
 ## 7. Build vs. Reuse como puerta de diseño permanente
 
@@ -108,14 +115,15 @@ Los esquemas definitivos, clocks, corporate actions y modelo de estados se cierr
 
 Cada capacidad mayor recibe ficha R-006 con `EXISTS`, `AVAILABLE_TO_US`, `TECHNICALLY_COMPATIBLE`, `ECONOMICALLY_REASONABLE`, `SELECTED` y una disposición `REUSE_AS_IS / ADAPT / PORT / WRAP / REFERENCE_ONLY / BUILD / REJECT` antes de ADR técnico. La documentación oficial de OpenAI confirma la separación Skill (workflow) / MCP (acciones) y que los guardrails del SDK tienen alcance específico por entrada/salida/herramienta; la inferencia arquitectónica del proyecto es exigir autorización financiera **fuera** del agente, en el gateway determinístico.
 
-## 8. Paquete de decisión material pendiente
+## 8. Decisión A+ y futura evaluación de autoridad
 
 | Opción | Alcance/autoridad | Ventaja | Coste/riesgo |
 |---|---|---|---|
-| A — **recomendada** | Un Champion; Signal e intent assembly determinísticos; Portfolio Manager Agent solo asesor; investigación/Smart Money opcional en read-only; reporte pedagógico factual mínimo en B4 y completo antes del DoD | Frontera financiera simple, reproducible y coherente con la hoja; conserva camino de expansión | Menos discreción agéntica inicial; cambios de estrategia pasan por gobierno |
+| A — propuesta inicial | Un Champion; Signal e intent assembly determinísticos; Portfolio Manager Agent asesor conceptual | Frontera financiera simple | No genera evidencia estructurada del valor del agente |
+| **A+ — aprobada** | A más Portfolio Manager Agent en shadow con propuesta versionada y evaluación PIT, sin ruta a intent/órdenes | Evidencia para futura decisión con frontera financiera intacta | Requiere aislamiento y medición reproducible |
 | B | Portfolio Manager Agent prioriza y ajusta notional dentro de límites; Risk lo reduce/rechaza | Más flexibilidad con señales múltiples desde inicio | Mayor superficie de no determinismo y de pruebas, conflictos/versionado adicionales |
 | C | Agente opera vía broker/CLI y guarda stops/monitor mediante automations, como en el video | Demostración rápida | **Inadmisible** bajo D-002, D-005 y AGENTS.md sin cambio explícito de invariante; no recomendada |
 
-**Recomendación técnica:** A para PAPER V1. Decisión exacta requerida del propietario: aprobar o modificar **(i)** un Champion único inicial, **(ii)** autoridad de Signal/Portfolio/Intent determinística en operación, **(iii)** separación research/Smart Money sin orden directa y **(iv)** calendario de pedagogía B4/B5. La aprobación no selecciona Strategy V1, broker, proveedor, umbrales de riesgo ni runtime; esos expedientes conservan sus gates.
+**Decisión registrada:** A+ fue aprobada explícitamente por el propietario. Evaluar coincidencias/divergencias con Champion determinístico, riesgo propuesto, rendimiento hipotético neto de costes, estabilidad, reproducibilidad, errores y utilidad incremental. Las métricas y ventanas se preregistrarán antes de mirar resultados; ninguna métrica promueve autoridad automáticamente. Esta aprobación no selecciona Strategy V1, broker, proveedor, umbrales de riesgo ni runtime.
 
-**Estado registrado:** D-015/D-016/D-019 están `READY_FOR_DECISION` con este paquete; formato/evals pedagógicos P1 pendientes. D-018 continúa `RESEARCHING` hasta contrato PIT por familia. Ningún cambio de autoridad se activa durante preparación.
+**Estado registrado:** D-015/D-016/D-019 están `DECIDED` en el alcance funcional A+; detalles de riesgo, esquemas, formato/evals y tecnología continúan en sus decisiones propias. D-018 continúa `RESEARCHING` hasta contrato PIT por familia. `implementation_locked=true` durante preparación.

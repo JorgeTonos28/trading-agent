@@ -18,11 +18,11 @@ Fecha: 2026-10-01. Fuente base: [hoja de ruta v0.2](../docs/master/hoja_de_ruta_
 | D-012 | Arquitectura de riesgo: precedencia de reglas, estados, reserva de presupuesto, protección y acciones ante fallos | P0 | OPEN | Política determinística; aprobación humana de cambios materiales |
 | D-013 | Contratos de órdenes, `TradeIntent`, autorización, idempotencia y reconciliación | P0 | OPEN | Modelos, secuencias de fallos y criterios verificables |
 | D-014 | Contrato de datos y linaje: timestamps, ajustes, corporate actions, snapshots | P0 | OPEN | Esquemas y pruebas de no look-ahead |
-| D-015 | Límites de componentes y autoridad; papel de Portfolio Manager, Signal y Execution | P0 | READY_FOR_DECISION | ADR-001 propuesto + contrato RC0; opción A restringe temporalmente §8.1; falta aprobación humana |
-| D-016 | Alcance exacto PAPER V1 y gates de aceptación frente a fases B0–B7 | P0 | READY_FOR_DECISION | ADR-001 propuesto + contrato RC0 concilian B4/B5/DoD/Challenger/régimen; falta aprobación humana |
+| D-015 | Límites de componentes y autoridad; papel de Portfolio Manager, Signal y Execution | P0 | DECIDED | ADR-001 aprobado por el propietario 2026-10-01: A+; Champion/intent determinísticos, Portfolio Manager Agent SHADOW sin ruta operativa |
+| D-016 | Alcance exacto PAPER V1 y gates de aceptación frente a fases B0–B7 | P0 | DECIDED | ADR-001 y contrato RC1: un Champion operativo puede combinar fuentes/señales; shadow y explicación factual desde B4, pedagogía completa antes de DoD |
 | D-017 | Fronteras de autonomía: suspender, cancelar, reducir o liquidar ante incidentes | P0 | OPEN | Política aprobada por humano; failure-mode review |
 | D-018 | Papel de Smart Money y señales externas en Research/Strategy/Pedagogical, con contrato PIT y admisión | P0 | RESEARCHING | R-023; Congreso, Form 4, 13F, options flow, dark pool, revisions, flows y otros separados |
-| D-019 | Contrato del Pedagogical Agent y aprendizaje sin alterar Champion | P0 | READY_FOR_DECISION | ADR-001 propuesto + contrato RC0; factual B4 y completo antes de DoD; formato/evals P1 pendientes |
+| D-019 | Contrato del Pedagogical Agent y aprendizaje sin alterar Champion | P0 | DECIDED | ADR-001 aprobado: factual desde B4 y completo antes de DoD, sin autoridad financiera; formato/evals P1 pendientes |
 | D-020 | Stack de capacidades, licencias y clasificación Build vs. Reuse | P1 | RESEARCHING | Fichas C-001–009 y contrato RC0 §7; faltan landscape completo, scorecards y decisión por capacidad |
 | D-021 | Broker PAPER y elegibilidad real para residente de RD | P1 | OPEN | Gates B1–B5, pruebas API y aprobación humana |
 | D-022 | Proveedor de históricos y datos para candidatos Strategy V1; validador secundario | P1 | OPEN | Cobertura, PIT, ajustes, licencia, coste y benchmark |
@@ -33,6 +33,7 @@ Fecha: 2026-10-01. Fuente base: [hoja de ruta v0.2](../docs/master/hoja_de_ruta_
 | D-027 | Modelo de seguridad: secretos, entornos, permisos, supply chain, prompt injection | P1 | OPEN | Threat model y aprobación humana de arquitectura material |
 | D-028 | Observabilidad, alertas, runbooks, backups y despliegue PAPER | P1 | OPEN | SLO/criterios y pruebas de recuperación |
 | D-029 | Estrategia de tests y evals de agentes con criterios de aceptación | P1 | OPEN | Cobertura de invariantes y fallos, reviewer independiente |
+| D-034 | Esquema detallado, aislamiento y evaluación PIT de `ShadowPortfolioProposal` | P1 | OPEN | ADR-001 fija obligación funcional; R-026 define comparador, métricas preregistradas, contexto pareado y pruebas de no autoridad |
 | D-033 | Proveedores Smart Money/alternative data y clasificación Build vs. Reuse por dataset | P1 | RESEARCHING | R-025; scorecards PIT, API, cobertura, calidad, latencia, licencia y coste; aprobación humana si gasto material |
 | D-030 | Ejecución PAPER concreta: tipo de orden, stops, slippage y fill parity | P2 | OPEN | Protocolo antes de paper autónomo; decisión puede afectar D-010/011 |
 | D-031 | Umbrales PAPER calibrados y kill switches ensayados | P2 | OPEN | Evidencia backtest/paper y aprobación humana de política |
