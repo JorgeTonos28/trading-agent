@@ -1,0 +1,13 @@
+# Change Log de planificación
+
+| Fecha | Cambio | Razón | Efecto arquitectónico |
+|---|---|---|---|
+| 2026-10-01 | Inicializados perfil, registros, diagnóstico, backlog y secuencia en `.project/` | Primera ejecución del Plan Architect | Ninguno; baseline v0.2 preservado |
+| 2026-10-01 | Se usa como baseline el archivo `docs/master/hoja_de_ruta_sistema_trading_agentes_ia_v0.2.md` indicado por el usuario | El nombre citado en `AGENTS.md` no existe | Corrección de referencia pendiente; sin cambio de contenido |
+| 2026-10-01 | Por instrucción posterior del propietario, estado movido de `.project/` a `planning/`; `AGENTS.md` corregido para referir al roadmap existente y a `planning/` | Seguir la estructura de la hoja de ruta | Sin cambio de arquitectura; Q-028/029 resueltas |
+| 2026-10-01 | Creado `02_MATR_V1_spec.md` RC0 y D-010/011 pasan a RESEARCHING | Iniciar R-001 con evidencia primaria sobre sesgos, ajustes y stops | Sin cambio de estrategia aprobada; recomendaciones provisionales |
+| 2026-10-01 | Capability Discovery R-006 iniciada con fichas C-001–006 de OpenAI y Anthropic | Cumplir investigación Build vs. Reuse antes de selección de stack | Ninguna capacidad seleccionada |
+| 2026-10-01 | ADR-000: propietario confirma que no vio backtests de MATR_V1 y reabre Strategy V1 Selection (D-008 P0); D-006 pasa a SUPERSEDED | MATR era candidato técnico, no selección; video de origen debe reconstruirse | Roadmap enmendado; R-019/020 abiertos; MATR queda candidato/benchmark; invariantes financieros intactos |
+| 2026-10-01 | Revisada transcripción automática completa del video original y creado análisis temporal R-019; separados VID-TS, VID-CONG, VID-ALERT, VID-WHEEL, infraestructura y SIGNAL | La fuente primaria muestra varias técnicas, parámetros ambiguos y claims sin auditoría | D-008 permanece OPEN; D-009 sigue RESEARCHING por pantallas/artefactos faltantes; ningún rendimiento ni tecnología seleccionado |
+| 2026-10-01 | Reorientado R-019 como inspiración funcional/arquitectónica; sin investigación principal para auditar porcentajes del creador | Instrucción explícita del propietario: diseñar Trading OS propio, robusto y pedagógico | Claims `NO VERIFICADO`; prioridad del mapa de sistema, contratos y Capability Discovery; D-008 OPEN |
+| 2026-10-01 | Abiertos R-022/023/024/025 y D-018/019/033; creado mapa funcional, taxonomía Smart Money, scorecard de proveedores y marco de broker | Smart Money abarca múltiples fuentes; broker Alpaca es referencia, no selección; Pedagogical Agent es capacidad central | R-017 queda P4 solo para alpha incremental futuro; factibilidad PIT/proveedores V1 asciende a P0/P1; ningún proveedor ni broker elegido |

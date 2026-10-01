@@ -1,0 +1,123 @@
+schema_version: 1
+updated_on: 2026-10-01
+project:
+  name: Trading OS
+  purpose: auditable_agentic_quantitative_trading_platform
+  authoritative_roadmap: docs/master/hoja_de_ruta_sistema_trading_agentes_ia_v0.2.md
+  role_now: Plan Architect
+  role_after_freeze: Plan Guardian
+stage:
+  current: PREPARATION_AND_PLAN_HARDENING
+  implementation_locked: true
+  ready_for_implementation: false
+  plan_version: draft_v0.2
+  next_target: MASTER_PLAN_v1.0.md
+objective:
+  preparation: Evidence-backed, internally consistent, approved implementation contract
+  product: Agentic Trading OS that researches, ingests diverse sources, develops and evaluates strategies, signals, controls risk, executes, monitors, measures, learns by Champion/Challenger and teaches the owner
+  first_operating_mode: PAPER
+constraints:
+  no_production_implementation_before_ready: true
+  no_real_money_before_live_gates_and_human_approval: true
+  llm_direct_broker_order_authority: false
+  deterministic_risk_gateway: true
+  per_trade_human_approval_for_approved_strategy: false
+  research_cannot_promote_or_modify_champion: true
+  point_in_time_research: true
+  auditable_and_versioned_decisions: true
+  no_leverage_short_options_futures_crypto_in_v1: true
+  strategy_agent_to_trade_intent_to_risk_to_execution_to_broker: true
+baseline_decisions:
+  - id: D-001
+    result: Preparation Program and formal Definition of Ready precede implementation
+  - id: D-002
+    result: Strategy/Agent -> TradeIntent -> deterministic Risk Engine -> Execution Engine -> Broker
+  - id: D-003
+    result: First operating version is paper trading; live needs separate gates and human approval
+  - id: D-004
+    result: Approved strategies may trade without per-order human approval inside fixed limits
+  - id: D-005
+    result: Research and production separated through Champion/Challenger and human promotion
+  - id: D-007
+    result: Trading OS Plugin is an intended capability layer; final runtime and contents remain open
+  - id: ADR-000
+    result: Strategy V1 selection is OPEN; MATR_V1 remains a candidate and benchmark, not the selected Champion
+strategy_v1:
+  selection_status: OPEN
+  priority: P0
+  selected_strategy: null
+  candidate_minimum: [VIDEO_INSPIRED_V1, MATR_V1]
+  first_to_decompose: VIDEO_INSPIRED_V1
+  video_is_functional_and_architectural_inspiration: true
+  literal_replication_required: false
+  creator_performance_audit_required: false
+  video_source: https://www.youtube.com/watch?v=2Et4Ao6usbA
+  video_decomposition_required: true
+  owner_reported_MATR_backtests_seen: false
+system_design:
+  focus: end_to_end_agentic_trading_os
+  capability_map: planning/research/system_capability_map.md
+  research_to_champion_promotion_requires_human: true
+  pedagogical_agent_required: true
+  pedagogical_explanations_require_audited_trace: true
+  smart_money_is_multiple_signal_families: true
+  smart_money_families: [congressional_disclosures, SEC_form_4, institutional_13F, hedge_fund_holdings, unusual_options_activity, block_dark_pool, analyst_revisions, fund_flows, other_alternative_data]
+  external_signal_roles: [research, candidate_signal, cross_validation, pedagogy]
+  broker_selection_status: OPEN
+  alpaca_status: video_reference_and_candidate_only
+open_decision_ids:
+  P0: [D-008, D-009, D-010, D-011, D-012, D-013, D-014, D-015, D-016, D-017, D-018, D-019]
+  P1: [D-020, D-021, D-022, D-023, D-024, D-025, D-026, D-027, D-028, D-029, D-033]
+  P2: [D-030, D-031, D-032]
+  P3: [D-040, D-041, D-042]
+  P4: [D-050, D-051]
+required_specialties:
+  - quantitative_finance_and_backtesting
+  - market_microstructure_and_execution
+  - portfolio_risk
+  - broker_apis_and_eligibility
+  - market_and_alternative_data_governance
+  - alternative_signal_research_and_provider_due_diligence
+  - agent_architecture_and_evaluation
+  - workflow_and_distributed_systems
+  - security_and_threat_modeling
+  - testing_observability_and_operations
+  - financial_legal_and_tax_research
+  - pedagogy_and_explainability
+capability_discovery:
+  required: true
+  dimensions: [EXISTS, AVAILABLE_TO_US, TECHNICALLY_COMPATIBLE, ECONOMICALLY_REASONABLE, SELECTED]
+  dispositions: [REUSE_AS_IS, ADAPT, PORT, WRAP, REFERENCE_ONLY, BUILD, REJECT]
+  families:
+    - OpenAI_Skills_Plugins_Codex_MCP_Agents_and_financial_analysis
+    - Anthropic_Financial_Services_Skills_templates_connectors_workflows
+    - other_AI_labs
+    - open_source_agent_and_workflow_frameworks
+    - quantitative_frameworks_and_backtest_engines
+    - broker_APIs
+    - market_data_providers
+    - alternative_data_providers
+    - smart_money_congress_insider_13F_options_flow_dark_pool_revisions_fund_flows
+    - storage_observability_and_security_tools
+governance:
+  decision_states: [OPEN, RESEARCHING, READY_FOR_DECISION, DECIDED, DEFERRED, SUPERSEDED]
+  priority_meanings:
+    P0: blocks_architecture
+    P1: blocks_implementation
+    P2: required_before_autonomous_paper
+    P3: required_before_live
+    P4: future_or_optional
+  owner: Human project owner; identity and approval workflow to be confirmed
+  human_approval_required_for:
+    - final_production_strategy_architecture
+    - broker_selection
+    - materially_costly_live_data_provider
+    - risk_policy_changes
+    - autonomous_execution_boundaries
+    - live_trading
+    - leverage_short_selling_derivatives
+    - material_security_architecture
+    - major_scope_changes
+  closure_rule: No P0/P1 open, every Definition of Ready gate evidenced, independent critical review, owner approval and plan freeze
+  source_of_truth: planning/ registers plus approved master plan and ADRs
+  creator_performance_claims: Record as unverified when applicable; no dedicated audit unless necessary for a project decision
