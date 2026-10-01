@@ -9,7 +9,7 @@ Estados: cada Q muestra su prioridad; Q-030–Q-037 incluyen estado explícito. 
 | Q-001 | P0 | D-008/010 | ¿Debe MATR_V1 ser Strategy V1 o un benchmark/candidato descartado tras comparación? El propietario confirmó que **no está seleccionada**; faltan reglas de candidato, evidencia y decisión humana final. |
 | Q-002 | P0 | D-011 | El propietario confirma que **nunca se ejecutaron ni vieron backtests de MATR_V1**. ¿Qué política OOS preserva independencia al comparar varios candidatos y cómo se preregistra antes de consultar resultados? |
 | Q-003 | P0 | D-011 | ¿Qué costes, spreads, slippage, parciales, dividendos e impuestos de transacción se modelan por escenario? Datos y test de sensibilidad. |
-| Q-004 | P0 | D-012 | ¿Cómo interactúan stop estratégico, broker-side stop, gap, capital reservado, posiciones existentes y varios intents concurrentes? Tabla de precedencias y escenarios. |
+| Q-004 | P0 | D-012 | `READY_FOR_DECISION`: ¿aprueba el propietario arquitectura B de controles independientes (stop estimado + escenarios gap/slippage + exposición/liquidez + reservas), con umbrales D-031 posteriores? Comparativa y ejemplo en `research/D-012_risk_budget_architecture_decision_RC0.md`. |
 | Q-005 | P0 | D-013 | `DECIDED` en contrato abstracto ADR-003: persistir antes de enviar, `UNKNOWN` sin reenvío, ledger de eventos y reconciliación de órdenes/fills/posición; mapeo y probes por broker D-021/030. |
 | Q-006 | P0 | D-014 | `DECIDED` en ADR-004: clocks separados, evidencia por canal, `eligible_from`, revisiones as-of y snapshot inmutable; retrasos/muestras concretos D-018/022/033. |
 | Q-007 | P0 | D-015 | `DECIDED`: el propietario aprobó A+ (ADR-001); Portfolio Manager Agent produce propuestas shadow auditables sin alterar intents operativos. |

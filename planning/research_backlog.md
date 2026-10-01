@@ -11,7 +11,7 @@ Prioridad: P0 arquitectura, P1 implementación, P2 paper autónomo, P3 live, P4 
 | R-023 | P0 | D-018/014 | DECIDED en contrato abstracto ADR-005/`06_external_signal_admission_RC1.md`: familias separadas, roles graduados y gates PIT/licencia/OOS; R-021 y R-025 siguen pruebas por dataset/proveedor. |
 | R-024 | P0 | D-019/015/016 | DECIDED en alcance funcional: contrato RC1 vincula explicación a rastro y currículo §55 sin autoridad financiera; formato detallado, privacidad y evals se completarán como P1. |
 | R-001 | P0 | D-010/011 | RESEARCHING: MATR_V1 RC0 es ficha candidata, no Strategy V1 seleccionada; faltan convenciones, datos, timing y protocolo OOS comparativo. |
-| R-002 | P0 | D-012/017 | D-017 DECIDED en ADR-002: G1+G2 y reanudación humana tras pausa material. `03_risk_policy_RC1.md` conserva D-012 RESEARCHING para precedencia, reservas, clasificación, umbrales y pruebas. |
+| R-002 | P0 | D-012/017 | D-017 DECIDED en ADR-002: G1+G2 y reanudación humana tras pausa material. D-012 READY_FOR_DECISION en método mediante `research/D-012_risk_budget_architecture_decision_RC0.md`; umbrales, escenarios y pruebas específicos siguen D-031/otros gates. |
 | R-003 | P0 | D-013/015 | DECIDED en contrato abstracto: `04_order_contract_RC1.md` y ADR-003 fijan identidades, eventos, autorización, `UNKNOWN` y G2; semántica/probes del broker candidato siguen D-021/030/031. |
 | R-004 | P0 | D-014 | DECIDED en contrato abstracto: `05_data_contract_RC1.md` y ADR-004 fijan clocks por canal, `eligible_from`, revisiones y ajustes as-of; muestras/delays/proveedor siguen R-021/025/008. |
 | R-005 | P0 | D-016 | DECIDED en alcance: contrato RC1 §5 mapea B0–B7 y §57; traceability requisito→test y umbrales detallados permanecen P1/P2 antes del DoR. |

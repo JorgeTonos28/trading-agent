@@ -6,7 +6,7 @@ Escala inicial cualitativa: `Alta/Media/Baja`; se calibrará después. Dueño in
 |---|---|---|---|---|---|
 | K-001 | P0 | Look-ahead por cierres, ajustes, releases o timestamps | Alta/Alta | ADR-004 fija `eligible_from`/revisiones as-of; faltan muestras PIT y pruebas por dataset D-018/022/033 | Data/Quant |
 | K-002 | P0 | Holdout contaminado y overfitting por búsqueda agéntica masiva | Alta/Alta | Registro de experimentos, holdout sellado/forward, multiple testing | Quant |
-| K-003 | P0 | Riesgo de gap excede `0.5%` pese a stop teórico | Alta/Alta | Stress de overnight, orden/stop real y política de pérdidas | Risk |
+| K-003 | P0 | Riesgo de gap excede `0.5%` pese a stop teórico | Alta/Alta | Paquete D-012 recomienda control compuesto stop + gap/slippage; requiere aprobación humana, escenarios/umbrales y probes de orden D-030/031 | Risk |
 | K-004 | P0 | Duplicación u omisión de orden tras timeout, DB/stream caída | Media/Alta | ADR-003 fija identidad interna, `UNKNOWN` y ledger; faltan probes broker y replay/chaos D-021/030 | Execution |
 | K-005 | P0 | Autoridad ambigua de agente sobre qty, liquidación o reanudación | Media/Alta | ADR-001/002 fijan A+, G1+G2 y reanudación humana; faltan state machine y pruebas D-012/013 | Architecture/Risk |
 | K-006 | P1 | Broker no elegible para dueño RD o paper/live difieren | Media/Alta | Confirmación de elegibilidad y probes antes de selección | Broker research |

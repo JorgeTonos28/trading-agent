@@ -1,6 +1,6 @@
 # Política de riesgo PAPER V1 — contrato P0 RC1
 
-**Estado:** D-017 `DECIDED` en [ADR-002](decisions/ADR-002-paper-v1-incident-autonomy.md): G1+G2 para PAPER V1; D-012 `RESEARCHING` para reglas y umbrales. **Fecha:** 2026-10-01. `implementation_locked=true`. Baseline: [hoja §7, §11–12, §32–33 y §54](../docs/master/hoja_de_ruta_sistema_trading_agentes_ia_v0.2.md), [ADR-001](decisions/ADR-001-paper-v1-authority.md).
+**Estado:** D-017 `DECIDED` en [ADR-002](decisions/ADR-002-paper-v1-incident-autonomy.md): G1+G2 para PAPER V1; D-012 `READY_FOR_DECISION` **solo en método** en [paquete de riesgo RC0](research/D-012_risk_budget_architecture_decision_RC0.md), sin aprobar umbrales. **Fecha:** 2026-10-01. `implementation_locked=true`. Baseline: [hoja §7, §11–12, §32–33 y §54](../docs/master/hoja_de_ruta_sistema_trading_agentes_ia_v0.2.md), [ADR-001](decisions/ADR-001-paper-v1-authority.md).
 
 ## 1. Hechos, hipótesis y decisiones reservadas
 
