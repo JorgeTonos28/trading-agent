@@ -34,5 +34,6 @@ Escala inicial cualitativa: `Alta/Media/Baja`; se calibrará después. Dueño in
 | K-028 | P0 | Pedagogical Agent explica causas inventadas o transforma aprendizaje en cambio no aprobado de Champion | Media/Alta | Trazas verificables, incertidumbre explícita y separación estricta de autoridad D-019/D-005 | Pedagogy/Architecture |
 | K-029 | P1 | Una propuesta shadow cruza por error la frontera hacia `TradeIntent`, órdenes o asignaciones | Media/Alta | Aislamiento por permisos/esquema/canal, pruebas negativas, auditoría y alerta; D-034/ADR-001 | Security/Architecture |
 | K-030 | P1 | Comparación del shadow usa datos posteriores, fills ideales o contexto distinto y exagera utilidad | Alta/Alta | Contexto pareado PIT, costes/fills hipotéticos versionados, protocolo preregistrado y replay; R-026 | Quant/Data |
+| K-031 | P0 | Una entrada ejecuta sin protección aceptada o un cancel/replace elimina stop existente y deja exposición inadvertida | Media/Alta | Estado de protección explícito, reconciliación broker y runbook aprobado D-012/013/017; probes D-030 | Risk/Execution |
 
 Todos los riesgos salvo K-018 siguen `OPEN`; no se presume mitigación por la mera presencia de una idea de control en la hoja.

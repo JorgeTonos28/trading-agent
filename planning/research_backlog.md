@@ -11,9 +11,9 @@ Prioridad: P0 arquitectura, P1 implementación, P2 paper autónomo, P3 live, P4 
 | R-023 | P0 | D-018/014 | RESEARCHING: taxonomía y contrato de señales Smart Money/alternative data; separar Congreso, Form 4, 13F, hedge funds, options flow, block/dark pool, analyst revisions, fund flows y nuevos datos; `research/smart_money_data_landscape.md`. |
 | R-024 | P0 | D-019/015/016 | DECIDED en alcance funcional: contrato RC1 vincula explicación a rastro y currículo §55 sin autoridad financiera; formato detallado, privacidad y evals se completarán como P1. |
 | R-001 | P0 | D-010/011 | RESEARCHING: MATR_V1 RC0 es ficha candidata, no Strategy V1 seleccionada; faltan convenciones, datos, timing y protocolo OOS comparativo. |
-| R-002 | P0 | D-012/017 | Política de riesgo y autoridad: estados, límites, concurrencia, gaps, stops, kill-switch, reapertura y escenarios; `03_risk_policy.md`. |
-| R-003 | P0 | D-013/015 | Contratos de TradeIntent, aprobación firmada, order state, idempotencia, reconciliación, ownership y fallos; `04_system_architecture.md`. |
-| R-004 | P0 | D-014 | Semántica point-in-time, ajustes, eventos corporativos, snapshots y lineage; `05_data_architecture.md`. |
+| R-002 | P0 | D-012/017 | RESEARCHING: `03_risk_policy_RC0.md` define precedencia, reservas, estados y matriz incidente→acción; D-017 preparado para decisión de autoridad G1/G2/G3, D-012 requiere calibración y aprobación. |
+| R-003 | P0 | D-013/015 | RESEARCHING: `04_order_contract_RC0.md` define identidades, autorización, idempotencia y fallos; faltan máquina formal y pruebas contra broker. |
+| R-004 | P0 | D-014 | RESEARCHING: `05_data_contract_RC0.md` define clocks, revisiones, snapshots y gates PIT; faltan muestras y convenciones por proveedor/estrategia. |
 | R-005 | P0 | D-016 | DECIDED en alcance: contrato RC1 §5 mapea B0–B7 y §57; traceability requisito→test y umbrales detallados permanecen P1/P2 antes del DoR. |
 | R-006 | P1 | D-020/024 | RESEARCHING: ver fichas iniciales C-001–006 en `capability_landscape.md`; faltan Codex/otras capacidades financieras, otros labs, open source, quant, brokers, datos, acceso/coste/licencias y clasificación final. |
 | R-007 | P1 | D-021 | OPEN (marco RC0): Alpaca/IBKR/Tradier/tastytrade/TradeStation/otros, todos abiertos. API, PAPER, paridad live, streaming, stops/brackets/trailing, estabilidad, RD, equities, opciones futuras, costes y seguridad; `research/broker_selection.md`, scorecard y ADR humano. |
