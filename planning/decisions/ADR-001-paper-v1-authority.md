@@ -34,7 +34,7 @@ PAPER V1 se considerará funcional solo cuando, además de autonomía paper cont
 
 - La [hoja §8.1](../../docs/master/hoja_de_ruta_sistema_trading_agentes_ia_v0.2.md) es fuente normativa de la responsabilidad original del Portfolio Manager Agent; §7 y §5 son fuente del invariante y aprobación humana.
 - [OpenAI Agents SDK](https://developers.openai.com/api/docs/guides/agents/sdk) ofrece orquestación, tools y tracing, pero la aplicación conserva deployment, estado y decisiones de aprobación. [Guardrails/human review](https://developers.openai.com/api/docs/guides/agents/guardrails-approvals) no protegen automáticamente todas las llamadas en una cadena; por ello el control financiero se ubica en el gateway determinístico. Esto justifica la **frontera funcional**, no selecciona SDK ni decide construir un runtime.
-- Skills, Plugins, MCP, backtest frameworks y APIs existentes permanecen en R-006 antes de decidir `BUILD` para cualquier capacidad mayor. El contrato RC0 §7 registra opciones reutilizables; ninguna disposición final ni proveedor queda seleccionado.
+- Skills, Plugins, MCP, backtest frameworks y APIs existentes permanecen en R-006 antes de decidir `BUILD` para cualquier capacidad mayor. El contrato RC1 §7 registra opciones reutilizables; ninguna disposición final ni proveedor queda seleccionado.
 
 ## Evaluación shadow exigida
 
@@ -44,4 +44,4 @@ Esta aprobación cierra solo el **alcance y las fronteras de autoridad** D-015/0
 
 ## Consecuencias y estado
 
-ADR-001 queda `DECIDED`; D-015/016/019 se cierran en el alcance funcional aprobado. `implementation_locked=true` y la hoja v0.2 se conserva como baseline con esta decisión documentada. La promoción de autoridad del Portfolio Manager Agent exige nuevo ADR y gobierno humano; los umbrales cuantitativos para considerar esa promoción permanecen investigación posterior.
+ADR-001 queda `DECIDED`; D-015/016/019 se cierran en el alcance funcional aprobado. La [frontera de incidentes D-017](ADR-002-paper-v1-incident-autonomy.md) fue aprobada después y no concede autoridad de orden al shadow. `implementation_locked=true` y la hoja v0.2 se conserva como baseline con estas decisiones documentadas. La promoción de autoridad del Portfolio Manager Agent exige nuevo ADR y gobierno humano; los umbrales cuantitativos para considerar esa promoción permanecen investigación posterior.

@@ -12,9 +12,9 @@
 | Signal Engine | Datos elegibles + reglas Champion → señal rastreable | Agente vs lógica determinística; autoridad D-015 |
 | Portfolio/intent | Señal + cartera reconciliada → `TradeIntent` operativo versionado, ensamblado determinísticamente | Reglas exactas de sizing/prioridad D-012/013; un Champion puede combinar señales |
 | Portfolio Manager shadow | Mismo contexto elegible cuando corresponda → `ShadowPortfolioProposal` auditada | Sin ruta a `TradeIntent`/Execution; detalle y evaluación PIT D-034 |
-| Risk Engine | Intent + estado + presupuesto → aprobar/reducir/rechazar con motivo | **Determinístico**; precedencia y kill switch D-012/D-017 |
+| Risk Engine | Intent + estado + presupuesto → aprobar/reducir/rechazar con motivo | **Determinístico**; precedencia/umbrales D-012; incidente G1+G2 D-017/ADR-002 |
 | Execution/Broker adapter | Autorización válida → órdenes, eventos, fills, reconciliación | Broker D-021; idempotencia/recuperación D-013; sin acceso directo del LLM |
-| Monitorización | Datos, posiciones, órdenes, salud y desempeño → alerta/acción definida | SLO, runbooks y autoridad de suspensión D-017/D-028 |
+| Monitorización | Datos, posiciones, órdenes, salud y desempeño → alerta/solicitud de suspensión | G1+G2 y reanudación humana tras pausa material aprobados; SLO/runbooks D-028 |
 | Champion/Challenger | Evidencia de experimentos → comparación y solicitud de promoción | Solo humano aprueba promoción/cambios centrales; D-005/D-016 |
 | Pedagogical Agent | Hechos auditados sobre señal, riesgo, orden, fill y resultado → explicación con fuente y nivel de aprendizaje | No inventa razones, altera operaciones ni divulga secretos; contrato D-019 |
 | Gobierno y auditoría | Decisión, versión, autorización y resultado → rastro reproducible | Retención, seguridad y revisión D-026/D-027 |

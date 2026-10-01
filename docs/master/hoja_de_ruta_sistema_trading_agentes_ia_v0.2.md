@@ -11,6 +11,8 @@
 
 **Enmienda PAPER V1 — 1 de octubre de 2026:** el propietario aprobó **A+ / Shadow Portfolio Manager** en `planning/decisions/ADR-001-paper-v1-authority.md`. Habrá inicialmente una sola configuración Champion operativa, que puede combinar varias fuentes/señales. La señal operativa y el `TradeIntent` serán determinísticos; Risk Engine seguirá siendo la única autoridad financiera. Portfolio Manager Agent producirá propuestas estructuradas y auditadas en shadow mode desde B4, sin convertirlas en intents ni afectar órdenes, posiciones, Champion, riesgo o asignaciones. Pedagogical Agent explicará hechos desde B4 y completará su contrato antes del DoD de PAPER V1. Esta enmienda acota la autoridad descrita más adelante en §8.1 solo para PAPER V1; cualquier ampliación posterior requiere decisión y aprobación humana. No selecciona Strategy V1, broker, proveedor, runtime ni umbrales de riesgo.
 
+**Enmienda de incidentes PAPER V1 — 1 de octubre de 2026:** el propietario aprobó G1+G2 en `planning/decisions/ADR-002-paper-v1-incident-autonomy.md`. Ante incertidumbre material se bloquean nuevas entradas y se reconcilia. Solo pueden cancelarse automáticamente entradas pendientes identificadas y verificadas; las órdenes protectoras se conservan salvo regla específica documentada, probada y aprobada. G3, `REDUCE_EXPOSURE` general y `CLOSE_ALL` automático no están autorizados. La reanudación después de una pausa por incidente material exige aprobación humana registrada. §5 y §11.4 enumeran capacidades o acciones posibles; esta enmienda fija la frontera aprobada para PAPER V1. Umbrales numéricos y reglas de liquidación automática siguen abiertos.
+
 ---
 
 ## 0. Resumen ejecutivo

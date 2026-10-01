@@ -1,6 +1,6 @@
 # PAPER V1 — contrato de capacidades y autoridad RC1 (A+)
 
-**Fecha:** 2026-10-01. **Estado:** alcance/autoridad funcional **aprobados como A+** en [ADR-001](decisions/ADR-001-paper-v1-authority.md); contrato detallado aún sujeto a D-012–014/D-017 y DoR. **Bloqueo:** `implementation_locked=true`. **Decisiones:** D-015/D-016/D-019 `DECIDED`, D-018 `RESEARCHING`; D-008 y P1 de stack abiertos. **Fuentes:** [hoja de ruta §4–9, §55–57](../docs/master/hoja_de_ruta_sistema_trading_agentes_ia_v0.2.md), [mapa funcional](research/system_capability_map.md), [video descompuesto](research/video_inspired_strategy.md). Este documento especifica **qué debe poder hacer** PAPER V1 y quién tiene autoridad; ninguna tecnología, broker, proveedor o estrategia queda seleccionada.
+**Fecha:** 2026-10-01. **Estado:** alcance/autoridad funcional **aprobados como A+** en [ADR-001](decisions/ADR-001-paper-v1-authority.md) y frontera de incidentes G1+G2 aprobada en [ADR-002](decisions/ADR-002-paper-v1-incident-autonomy.md); detalle D-012–014 y DoR aún abierto. **Bloqueo:** `implementation_locked=true`. **Decisiones:** D-015/D-016/D-017/D-019 `DECIDED`, D-018 `RESEARCHING`; D-008 y P1 de stack abiertos. **Fuentes:** [hoja de ruta §4–9, §55–57](../docs/master/hoja_de_ruta_sistema_trading_agentes_ia_v0.2.md), [mapa funcional](research/system_capability_map.md), [video descompuesto](research/video_inspired_strategy.md). Este documento especifica **qué debe poder hacer** PAPER V1 y quién tiene autoridad; ninguna tecnología, broker, proveedor o estrategia queda seleccionada.
 
 ## 1. Objetivo y límites de la versión
 
@@ -31,7 +31,7 @@ Audit/Performance ──> Monitoring + Pedagogical Agent + Research
 5. Datos externos se consumen con licencia, origen y disponibilidad temporal explícitos. Un dato retrospectivamente enriquecido no se usa como si hubiera existido en tiempo real.
 6. `ShadowPortfolioProposal` usa el **mismo contexto elegible** al tiempo de decisión que el camino Champion, cuando corresponde, pero vive en un canal separado: no se convierte en `TradeIntent`, no llega a Risk/Execution/Broker y no modifica posiciones, Champion, riesgo ni asignaciones. Su captura y evaluación son auditables.
 
-Estos puntos desarrollan D-002/D-005 ya `DECIDED`. Los detalles de política D-012/D-017 siguen abiertos y no se sustituyen por este contrato.
+Estos puntos desarrollan D-002/D-005 ya `DECIDED`. D-017 fija G1+G2 y reanudación humana tras pausa material; las reglas cuantitativas D-012 siguen abiertas.
 
 ## 3. Matriz de responsabilidad y permiso aprobada en alcance
 
@@ -46,7 +46,7 @@ Estos puntos desarrollan D-002/D-005 ya `DECIDED`. Los detalles de política D-0
 | Portfolio Manager Agent **SHADOW** | R contexto elegible sin secretos | P `ShadowPortfolioProposal` | R, puede proponer señal shadow | **—** | — | **—** | — | — |
 | Risk Agent explicativo | R | P | — | — | — | — | S | — |
 | **Deterministic Risk Engine** | R estado y política | — | R | R | **A** | — | A/S según política | — |
-| Execution Engine/Broker adapter | R mínimo | — | — | R autorizado | R | **E** | ejecuta cancelación/liquidación solo según política | — |
+| Execution Engine/Broker adapter | R mínimo | — | — | R autorizado | R | **E** | G2: cancela solo entradas pendientes verificadas; sin liquidación automática general | — |
 | Monitoring/Sentinel | R | P | — | — | — | — | **S**; acción final determinística | — |
 | Performance/Attribution | R auditado | P | — | — | — | — | — | — |
 | Champion/Challenger manager | R | P | P sandbox | — | — | — | — | solicita promoción |
@@ -87,13 +87,15 @@ Los esquemas definitivos, clocks, corporate actions y modelo de estados se cierr
 
 ## 6. Fallos y límites de autoridad que el plan debe probar
 
-| Escenario | Resultado requerido, sujeto a política D-012/D-017 |
+| Escenario | Resultado requerido conforme a D-017; detalle D-012/D-013 pendiente |
 |---|---|
 | Datos stale, timestamp PIT desconocido o calidad insuficiente | No nueva señal/entrada dependiente; alerta y rastro de rechazo |
 | Dos señales o intents concurrentes consumen mismo presupuesto | Reserva/serialización determinística; nunca exposición superior al límite |
 | Risk aprueba y cambian posición/precio/versión antes de enviar | Invalidar/revalidar; no usar aprobación vieja |
 | Broker acepta pero respuesta/DB/stream falla | Consultar por client ID y reconciliar antes de reintentar; no duplicar |
 | Fill parcial, cancelación o eventos reordenados | Estado monotónico/reconciliado; no asumir fill completo |
+| Incertidumbre material o hard limit | G1 bloquea entradas y reconcilia; G2 solo cancela entrada pendiente identificada y verificada; conserva protección; G3 no autorizado |
+| Pausa por discrepancia material, hard limit o protección fallida | Reanudación con autorización humana registrada, nunca solo por heartbeat/reconexión |
 | Stop cruza gap o falla monitor | No prometer pérdida máxima igual al umbral; respuesta por política y prueba de escenario |
 | Prompt injection en fuente, correo, Skill o MCP | Contenido de datos no adquiere permisos; aislamiento/validación y logging |
 | Agente propone cambio de Champion, riesgo o broker | Solicitud de gobierno; no desplegar ni ejecutar hasta aprobación registrada |

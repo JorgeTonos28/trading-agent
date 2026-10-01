@@ -7,7 +7,7 @@ Fecha: 2026-10-01. Fuente base: [hoja de ruta v0.2](../docs/master/hoja_de_ruta_
 | D-001 | Preparation Program, DoR y bloqueo de implementación | P0 | DECIDED | Hoja §3, §56; dueño aprueba freeze |
 | D-002 | Invariante TradeIntent → riesgo determinístico → ejecución → broker | P0 | DECIDED | Hoja §2, §7; cualquier cambio requiere aprobación humana |
 | D-003 | Primera versión operativa PAPER; LIVE por gate separado | P0 | DECIDED | Hoja §0, §24–25; LIVE requiere aprobación |
-| D-004 | Autonomía por operación dentro de estrategia y límites aprobados | P0 | DECIDED | Hoja §5; alcance detallado abierto en D-017 |
+| D-004 | Autonomía por operación dentro de estrategia y límites aprobados | P0 | DECIDED | Hoja §5; incidentes PAPER V1 delimitados en ADR-002/D-017 |
 | D-005 | Research separado de Champion; promoción humana | P0 | DECIDED | Hoja §2, §26 |
 | D-006 | MATR_V1 como primera estrategia/Champion experimental | P0 | SUPERSEDED | ADR-000: era una hipótesis del borrador; propietario reabrió selección el 2026-10-01 |
 | D-007 | Capa Trading OS Plugin propia sujeta a Build vs. Reuse | P1 | DECIDED | Hoja §3.14, §9; formato y contenido abiertos en D-024 |
@@ -15,12 +15,12 @@ Fecha: 2026-10-01. Fuente base: [hoja de ruta v0.2](../docs/master/hoja_de_ruta_
 | D-009 | Extracción funcional del video: capacidades, mecanismos, estrategias y pedagogía | P0 | RESEARCHING | Transcripción primaria revisada; cerrar con mapa conservar/modificar/separar/descartar, sin auditar claims promocionales salvo necesidad decisoria |
 | D-010 | Especificación de MATR_V1 como candidato/benchmark | P0 | RESEARCHING | RC0 en `02_MATR_V1_spec.md`; no es contrato de implementación salvo selección D-008 |
 | D-011 | Metodología de backtest: datos point-in-time, OOS, costes, benchmark, sesgos | P0 | RESEARCHING | RC0 en `02_MATR_V1_spec.md`; protocolo reproducible y revisión crítica |
-| D-012 | Arquitectura de riesgo: precedencia de reglas, estados, reserva de presupuesto, protección y acciones ante fallos | P0 | RESEARCHING | `03_risk_policy_RC0.md`; falta calibración/escenarios y aprobación humana de política material |
+| D-012 | Arquitectura de riesgo: precedencia de reglas, estados, reserva de presupuesto, protección y acciones ante fallos | P0 | RESEARCHING | `03_risk_policy_RC1.md`; D-017 fija solo frontera G1+G2; falta calibración/escenarios y aprobación humana de política material |
 | D-013 | Contratos de órdenes, `TradeIntent`, autorización, idempotencia y reconciliación | P0 | RESEARCHING | `04_order_contract_RC0.md`; falta máquina formal, broker semantics y pruebas de fallos |
 | D-014 | Contrato de datos y linaje: timestamps, ajustes, corporate actions, snapshots | P0 | RESEARCHING | `05_data_contract_RC0.md`; falta resolver clocks, proveedores y muestras PIT |
 | D-015 | Límites de componentes y autoridad; papel de Portfolio Manager, Signal y Execution | P0 | DECIDED | ADR-001 aprobado por el propietario 2026-10-01: A+; Champion/intent determinísticos, Portfolio Manager Agent SHADOW sin ruta operativa |
 | D-016 | Alcance exacto PAPER V1 y gates de aceptación frente a fases B0–B7 | P0 | DECIDED | ADR-001 y contrato RC1: un Champion operativo puede combinar fuentes/señales; shadow y explicación factual desde B4, pedagogía completa antes de DoD |
-| D-017 | Fronteras de autonomía: suspender, cancelar, reducir o liquidar ante incidentes | P0 | READY_FOR_DECISION | `03_risk_policy_RC0.md` §4–5; decisión humana sobre G1/G2/G3 y reanudación; umbrales concretos siguen D-012/031 |
+| D-017 | Fronteras de autonomía PAPER V1 ante incidentes | P0 | DECIDED | Propietario aprobó G1+G2 y reanudación humana tras pausa material el 2026-10-01; ADR-002; G3/liquidación general no autorizados; umbrales D-012/031 abiertos |
 | D-018 | Papel de Smart Money y señales externas en Research/Strategy/Pedagogical, con contrato PIT y admisión | P0 | RESEARCHING | R-023; Congreso, Form 4, 13F, options flow, dark pool, revisions, flows y otros separados |
 | D-019 | Contrato del Pedagogical Agent y aprendizaje sin alterar Champion | P0 | DECIDED | ADR-001 aprobado: factual desde B4 y completo antes de DoD, sin autoridad financiera; formato/evals P1 pendientes |
 | D-020 | Stack de capacidades, licencias y clasificación Build vs. Reuse | P1 | RESEARCHING | Fichas C-001–009 y contrato RC0 §7; faltan landscape completo, scorecards y decisión por capacidad |

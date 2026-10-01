@@ -23,6 +23,8 @@ Estados mínimos: `CREATED → RISK_APPROVED → SUBMITTING → SUBMITTED/UNKNOW
 
 Si falla el proceso después de enviar y antes de guardar respuesta, el recoverer consulta broker por `client_order_id` y lista de órdenes/fills; reconcilia cuenta antes de autorizar nueva entrada. Si el broker no ofrece búsqueda/idempotencia suficiente, el candidato no cumple el gate sin un procedimiento alternativo probado. [IBKR documenta callbacks duplicados y que puede faltar un `orderStatus` para ejecuciones inmediatas](https://interactivebrokers.github.io/tws-api/order_submission.html); esto justifica integrar fills y reconciliación, sin seleccionar IBKR. La semántica se comprobará en cada broker candidato.
 
+**Incidente G1+G2 (ADR-002):** un controlador determinístico bloquea nuevas entradas y solicita reconciliación. Execution solo puede emitir cancelación automática si la orden es una **entrada pendiente** con identidad, propósito y estado broker verificados. `CANCEL_PENDING` y acuse de solicitud no liberan reserva ni demuestran cancelación final; un fill concurrente se registra y reconcilia. No se cancelan órdenes protectoras por esta ruta. Ningún timeout habilita reducción/liquidación automática o reanudación de una pausa material.
+
 ## 3. Escenarios de aceptación a especificar
 
 1. Dos señales simultáneas compiten por el mismo cash/risk budget: solo se autoriza exposición conjunta dentro de límite.
