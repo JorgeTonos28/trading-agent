@@ -27,6 +27,7 @@ Las hipótesis siguientes **no** son decisiones aprobadas. Su posible falsedad t
 | A-021 | P1 | El Portfolio Manager Agent shadow podrá recibir un contexto elegible comparable al del Champion y producir propuestas reproducibles sin información futura ni efecto operativo. R-026 debe probarlo. | Limitar la comparación a contextos pareados disponibles; corregir aislamiento/evaluación antes del DoD. |
 | A-022 | P0 | **REFUTADO como inferencia válida:** la mera visibilidad de un plugin/MCP en documentación o catálogo no implica acceso a datos ni licencia para backtest. Verificar entitlement, costes y probe por dataset. | `AVAILABLE_TO_US` o `ECONOMICALLY_REASONABLE` queda NO/UNKNOWN hasta evidencia; buscar API/fuente alternativa. |
 | A-023 | P0 | **UNVERIFIED:** las capacidades de Codex observadas en este chat estarán disponibles para el runtime PAPER V1 con la suscripción Plus del propietario, sin factura adicional ni límite operativo incompatible. Verificar cuenta, límites y modo de ejecución; no inferirlo por visibilidad local. | Rediseñar la arquitectura Tier 0/1 o llevar excepción Tier 2 al propietario con coste/beneficio. |
+| A-024 | P0 | **UNVERIFIED:** Sign in with ChatGPT plan usage y Codex app-server pueden operar la carga PAPER V1 dentro del cupo Plus y sus términos. La sesión sondeada informa `planType=team`; documentación/CLI no prueban entitlement Plus ni continuidad desatendida. | Tratar C-025 como `REFERENCE_ONLY` o buscar otra ruta Tier 0/1; no activar API con clave sin excepción ADR-007. |
 
 ## Hechos de baseline, no supuestos
 
