@@ -54,6 +54,8 @@ baseline_decisions:
     result: A+ approved for PAPER V1; one deterministic operational Champion with multiple possible signal families, plus isolated Shadow Portfolio Manager and factual pedagogy
   - id: ADR-002
     result: G1+G2 PAPER V1 incident boundary; block new entries and reconcile, cancel only verified pending entries, preserve protection, require human resume after material pause; G3 not authorized
+  - id: ADR-003
+    result: Broker-independent internal order identity, durable command before send, event ledger and reconciliation; UNKNOWN never permits blind resend; G2 cancellation has separate deterministic risk authorization
 strategy_v1:
   selection_status: OPEN
   priority: P0
@@ -92,7 +94,7 @@ system_design:
   protective_orders_preserved_on_incident: true
   human_resume_after_material_pause: true
 open_decision_ids:
-  P0: [D-008, D-009, D-010, D-011, D-012, D-013, D-014, D-018]
+  P0: [D-008, D-009, D-010, D-011, D-012, D-014, D-018]
   P1: [D-020, D-021, D-022, D-023, D-024, D-025, D-026, D-027, D-028, D-029, D-033, D-034]
   P2: [D-030, D-031, D-032]
   P3: [D-040, D-041, D-042]

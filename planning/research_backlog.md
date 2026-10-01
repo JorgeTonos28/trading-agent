@@ -12,7 +12,7 @@ Prioridad: P0 arquitectura, P1 implementación, P2 paper autónomo, P3 live, P4 
 | R-024 | P0 | D-019/015/016 | DECIDED en alcance funcional: contrato RC1 vincula explicación a rastro y currículo §55 sin autoridad financiera; formato detallado, privacidad y evals se completarán como P1. |
 | R-001 | P0 | D-010/011 | RESEARCHING: MATR_V1 RC0 es ficha candidata, no Strategy V1 seleccionada; faltan convenciones, datos, timing y protocolo OOS comparativo. |
 | R-002 | P0 | D-012/017 | D-017 DECIDED en ADR-002: G1+G2 y reanudación humana tras pausa material. `03_risk_policy_RC1.md` conserva D-012 RESEARCHING para precedencia, reservas, clasificación, umbrales y pruebas. |
-| R-003 | P0 | D-013/015 | RESEARCHING: `04_order_contract_RC0.md` define identidades, autorización, idempotencia y fallos; faltan máquina formal y pruebas contra broker. |
+| R-003 | P0 | D-013/015 | DECIDED en contrato abstracto: `04_order_contract_RC1.md` y ADR-003 fijan identidades, eventos, autorización, `UNKNOWN` y G2; semántica/probes del broker candidato siguen D-021/030/031. |
 | R-004 | P0 | D-014 | RESEARCHING: `05_data_contract_RC0.md` define clocks, revisiones, snapshots y gates PIT; faltan muestras y convenciones por proveedor/estrategia. |
 | R-005 | P0 | D-016 | DECIDED en alcance: contrato RC1 §5 mapea B0–B7 y §57; traceability requisito→test y umbrales detallados permanecen P1/P2 antes del DoR. |
 | R-006 | P1 | D-020/024 | RESEARCHING: ver fichas iniciales C-001–006 en `capability_landscape.md`; faltan Codex/otras capacidades financieras, otros labs, open source, quant, brokers, datos, acceso/coste/licencias y clasificación final. |

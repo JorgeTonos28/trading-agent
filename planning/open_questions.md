@@ -10,7 +10,7 @@ Estados: cada Q muestra su prioridad; Q-030–Q-037 incluyen estado explícito. 
 | Q-002 | P0 | D-011 | El propietario confirma que **nunca se ejecutaron ni vieron backtests de MATR_V1**. ¿Qué política OOS preserva independencia al comparar varios candidatos y cómo se preregistra antes de consultar resultados? |
 | Q-003 | P0 | D-011 | ¿Qué costes, spreads, slippage, parciales, dividendos e impuestos de transacción se modelan por escenario? Datos y test de sensibilidad. |
 | Q-004 | P0 | D-012 | ¿Cómo interactúan stop estratégico, broker-side stop, gap, capital reservado, posiciones existentes y varios intents concurrentes? Tabla de precedencias y escenarios. |
-| Q-005 | P0 | D-013 | ¿Qué sucede si broker acepta una orden pero DB/stream falla, o si llegan eventos duplicados/desordenados? Máquina de estados y replay. |
+| Q-005 | P0 | D-013 | `DECIDED` en contrato abstracto ADR-003: persistir antes de enviar, `UNKNOWN` sin reenvío, ledger de eventos y reconciliación de órdenes/fills/posición; mapeo y probes por broker D-021/030. |
 | Q-006 | P0 | D-014 | ¿Qué timestamp significa observado, publicado, disponible, recibido y utilizable? Contrato de barras, corporate actions, snapshots y lineage. |
 | Q-007 | P0 | D-015 | `DECIDED`: el propietario aprobó A+ (ADR-001); Portfolio Manager Agent produce propuestas shadow auditables sin alterar intents operativos. |
 | Q-008 | P0 | D-016 | `DECIDED`: un Champion operativo inicial puede combinar fuentes/señales; shadow y pedagogía factual desde B4; contrato completo pedagógico antes de DoD. Traceability detallada sigue en P1. |

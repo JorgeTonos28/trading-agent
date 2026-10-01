@@ -3,7 +3,7 @@
 - **Fecha y aprobador:** 2026-10-01, propietario del proyecto mediante instrucción explícita.
 - **Estado:** `DECIDED` para D-017, limitado a PAPER V1.
 - **Prioridad:** P0.
-- **Contrato afectado:** [política de riesgo RC1](../03_risk_policy_RC1.md), [PAPER V1 RC1](../paper_v1_capability_contract_RC1.md), [orden RC0](../04_order_contract_RC0.md).
+- **Contrato afectado:** [política de riesgo RC1](../03_risk_policy_RC1.md), [PAPER V1 RC1](../paper_v1_capability_contract_RC1.md), [orden RC1](../04_order_contract_RC1.md).
 - **Baseline:** [hoja v0.2 §5, §11–12, §32–33, §54](../../docs/master/hoja_de_ruta_sistema_trading_agentes_ia_v0.2.md) y ADR-001.
 
 ## Problema y alternativas

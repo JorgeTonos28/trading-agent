@@ -1,6 +1,6 @@
 # PAPER V1 — contrato de capacidades y autoridad RC1 (A+)
 
-**Fecha:** 2026-10-01. **Estado:** alcance/autoridad funcional **aprobados como A+** en [ADR-001](decisions/ADR-001-paper-v1-authority.md) y frontera de incidentes G1+G2 aprobada en [ADR-002](decisions/ADR-002-paper-v1-incident-autonomy.md); detalle D-012–014 y DoR aún abierto. **Bloqueo:** `implementation_locked=true`. **Decisiones:** D-015/D-016/D-017/D-019 `DECIDED`, D-018 `RESEARCHING`; D-008 y P1 de stack abiertos. **Fuentes:** [hoja de ruta §4–9, §55–57](../docs/master/hoja_de_ruta_sistema_trading_agentes_ia_v0.2.md), [mapa funcional](research/system_capability_map.md), [video descompuesto](research/video_inspired_strategy.md). Este documento especifica **qué debe poder hacer** PAPER V1 y quién tiene autoridad; ninguna tecnología, broker, proveedor o estrategia queda seleccionada.
+**Fecha:** 2026-10-01. **Estado:** alcance/autoridad funcional **aprobados como A+** en [ADR-001](decisions/ADR-001-paper-v1-authority.md), frontera G1+G2 en [ADR-002](decisions/ADR-002-paper-v1-incident-autonomy.md) y contrato abstracto de orden en [ADR-003](decisions/ADR-003-order-identity-and-recovery.md); D-012/D-014 y DoR aún abiertos. **Bloqueo:** `implementation_locked=true`. **Decisiones:** D-013/D-015/D-016/D-017/D-019 `DECIDED`, D-018 `RESEARCHING`; D-008 y P1 de stack abiertos. **Fuentes:** [hoja de ruta §4–9, §55–57](../docs/master/hoja_de_ruta_sistema_trading_agentes_ia_v0.2.md), [mapa funcional](research/system_capability_map.md), [video descompuesto](research/video_inspired_strategy.md). Este documento especifica **qué debe poder hacer** PAPER V1 y quién tiene autoridad; ninguna tecnología, broker, proveedor o estrategia queda seleccionada.
 
 ## 1. Objetivo y límites de la versión
 
@@ -65,11 +65,11 @@ Estos puntos desarrollan D-002/D-005 ya `DECIDED`. D-017 fija G1+G2 y reanudaci�
 | `ShadowPortfolioProposal` | ID, versión del agente/modelo/prompt/política shadow, `decision_time`, context/snapshot IDs y data cut-off, posiciones hipotéticas a abrir/cerrar/mantener, prioridad, notional/sizing, señales, razones estructuradas, confianza calibrada o `NOT_APPLICABLE`, fuentes, supuestos y limitaciones | Portfolio Manager Agent → **Shadow Audit/Evaluation solamente** | Nunca se acepta como `Signal`/`TradeIntent` operativo; no comparte credenciales ni endpoint de Execution; rechazo automático de cualquier intento de cruzar frontera |
 | `TradeIntent` | ID único, signal ID, estrategia/version, instrumento, lado, notional/cantidad deseada, razón, política de stop, expiración, cuenta/estado de referencia | Portfolio/Intent → Risk | No es orden; inválido sin snapshot, estrategia habilitada y estado fresco |
 | `RiskDecision` | intent ID + hash, política/version, cuenta/posición/version, checks y motivos, notional autorizado, expiración, firma/verificador | Risk → Execution | No reusarse con intent o estado modificado; denegación registrada |
-| `OrderCommand` / `BrokerEvent` | idempotency key/client ID, autorización, tipo/TIF, broker/account, aceptación, parcial, fill, cancel/reject y timestamps | Execution ↔ Broker | Duplicados y eventos fuera de orden no crean posiciones fantasma |
+| `OrderCommand` / `BrokerEvent` | `order_key` interno; IDs broker según API; autorización vinculada, tipo/TIF, broker/account, aceptación, parcial, fill, cancel/reject y timestamps | Execution ↔ Broker | Duplicados y eventos fuera de orden no crean posiciones fantasma; G2 `CancelCommand` solo con autorización determinística ADR-002/003 |
 | `ReconciliationRecord` | estado interno vs broker, diferencias, acción y estado de bloqueo | Reconciliation → Risk/monitoring | Incertidumbre material bloquea nuevas entradas hasta resolver |
 | `PedagogicalReport` | trade/intent/decision/order/fill IDs, explicación factual, conceptos §55, incertidumbre, links a fuente y versión | Pedagogical → propietario | No inventa causa, precio/fill ni rendimiento; distingue plan, autorización y resultado |
 
-Los esquemas definitivos, clocks, corporate actions y modelo de estados se cierran en D-013/D-014. No se confunde `published_at` de una fuente con `event_at` del hecho económico; un campo desconocido permanece desconocido. El snapshot shadow debe corresponder al mismo instante de decisión y datos disponibles del Champion para que la comparación sea justa; puede registrar diferencias explícitas de contexto.
+El modelo abstracto de identidad/estados se fija en D-013/ADR-003; esquemas de broker, clocks y corporate actions siguen D-014/D-021/D-030. No se confunde `published_at` de una fuente con `event_at` del hecho económico; un campo desconocido permanece desconocido. El snapshot shadow debe corresponder al mismo instante de decisión y datos disponibles del Champion para que la comparación sea justa; puede registrar diferencias explícitas de contexto.
 
 ## 5. Capacidad por etapa y criterio observable
 
@@ -87,7 +87,7 @@ Los esquemas definitivos, clocks, corporate actions y modelo de estados se cierr
 
 ## 6. Fallos y límites de autoridad que el plan debe probar
 
-| Escenario | Resultado requerido conforme a D-017; detalle D-012/D-013 pendiente |
+| Escenario | Resultado requerido conforme a D-013/D-017; detalle cuantitativo D-012 y broker D-021/030 pendiente |
 |---|---|
 | Datos stale, timestamp PIT desconocido o calidad insuficiente | No nueva señal/entrada dependiente; alerta y rastro de rechazo |
 | Dos señales o intents concurrentes consumen mismo presupuesto | Reserva/serialización determinística; nunca exposición superior al límite |
