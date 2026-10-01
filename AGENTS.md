@@ -170,6 +170,52 @@ Continuously check for:
 - execution assumptions
 - unbounded agent authority
 
+## Git and GitHub discipline
+
+GitHub is part of the project's persistent source of truth.
+
+The active Preparation Program branch is `plan-architect`. The `main` branch represents the latest stable approved baseline and MUST NOT be modified or merged into automatically without an explicit project checkpoint or human approval.
+
+Whenever work produces a **material change** to the project, the change must be:
+
+1. reflected in all affected repository artifacts;
+2. checked for consistency with existing decisions and contracts;
+3. committed to the active branch with a descriptive commit message;
+4. pushed to GitHub before the work is reported as completed.
+
+A material change includes, but is not limited to:
+
+- architecture or system behavior;
+- agent capabilities or authority;
+- autonomy boundaries;
+- risk policy or failure handling;
+- strategy definitions or selection status;
+- data, order, execution or reconciliation contracts;
+- broker or provider decisions;
+- Build-vs-Reuse conclusions;
+- security architecture;
+- project scope;
+- decision status changes;
+- ADR creation or modification;
+- roadmap or master-plan changes;
+- Definition of Ready criteria;
+- planning artifacts that materially affect future implementation.
+
+Minor wording, formatting, typo fixes, or closely related documentation edits may be batched into a later meaningful commit.
+
+Use milestone-oriented commit prefixes such as:
+
+- `planning:`
+- `research:`
+- `decision:`
+- `docs:`
+
+Do not force-push, rewrite shared history, delete branches, merge `plan-architect` into `main`, or modify an approved baseline without explicit authorization when the action could affect project history or governance.
+
+Never commit secrets, API keys, tokens, broker credentials, `.env` contents, private certificates, or other sensitive credentials.
+
+If a material change cannot be pushed successfully, explicitly report that the repository is not synchronized instead of presenting the change as fully completed.
+
 ## Plan completion
 
 The Preparation Program ends only when the project's formal Definition of Ready is satisfied.
