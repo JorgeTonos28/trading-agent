@@ -71,3 +71,5 @@ Aplicar [ADR-008 y scorecard](economic_scorecard.md). Esta tabla inicia campos, 
 | C-025 SIWC/app-server | UNKNOWN gate Plus | Potencial 0 incremental; cupo/operación UNKNOWN | UNKNOWN escala | Codex directo/workflow mínimo candidato | API paga: control/capacidad como hipótesis si Plus insuficiente | YES si alternativa paga |
 
 C-019–021 siguen fuera del alcance agéntico ADR-007; la política económica no reabre su evaluación. Brokers/datos tienen fichas económicas propias y storage/infra/observabilidad adoptan el scorecard común antes de preselección.
+
+**Wave 03 / gate Plus:** [app-server local read-only](research/R-006_probe_wave_03_2026-10-02.md) descubrió C-017 habilitada en raíz temporal con autenticación CLI `team`, sin inferencia ni instalación persistente. Discovery disponible en investigación; activación/comportamiento/Plus siguen `UNKNOWN`. C-010/017 ganan esta subcapacidad probada; C-025 SIWC no recibió OAuth ni inferencia. El [gate Plus RC0](research/R-006_plus_runtime_gate_RC0.md) especifica las evidencias pendientes; `SELECTED=NO` y D-024 OPEN.
