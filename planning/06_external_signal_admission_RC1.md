@@ -47,4 +47,6 @@ Un fallo de gate se documenta con motivo y estado, sin sustituir datos inexisten
 
 Para cada dataset se compararán fuentes primarias (SEC/EDGAR, registros oficiales, FINRA cuando aplique), Quiver, Unusual Whales, Capitol Trades y especialistas adicionales. Las rutas posibles son `REUSE_AS_IS / ADAPT / PORT / WRAP / REFERENCE_ONLY / BUILD / REJECT`, con las cinco dimensiones `EXISTS`, `AVAILABLE_TO_US`, `TECHNICALLY_COMPATIBLE`, `ECONOMICALLY_REASONABLE`, `SELECTED`. Un API/MCP puede ser `WRAP` para ingestión de solo lectura; no adquiere autoridad de órdenes. Ningún proveedor está seleccionado y no se presupone una plataforma única.
 
+La economía se desglosa por PAPER/LIVE bajo ADR-008 y [scorecard común](economic_scorecard.md); calidad/PIT/licencia no se sacrifican por gratuidad. Estudiar servicio pago está autorizado y no equivale a admitir dataset ni aprobar gasto.
+
 **Pendientes fuera de D-018:** R-021 intenta demostrar PIT de candidatos; D-033/R-025 compara proveedores por dataset; D-022 evalúa mercado/históricos; D-008 selecciona Strategy V1 con aprobación humana. La utilidad predictiva de familias que no entren en V1 permanece D-050 P4; la factibilidad de una fuente que sí pueda alimentar V1 debe resolverse antes de seleccionarla.

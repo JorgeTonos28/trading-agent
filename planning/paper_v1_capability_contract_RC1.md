@@ -117,6 +117,8 @@ El modelo abstracto de identidad/estados se fija en D-013/ADR-003 y los clocks/r
 
 Cada capacidad mayor recibe ficha R-006 con `EXISTS`, `AVAILABLE_IN_RESEARCH_ENVIRONMENT`, `AVAILABLE_IN_TARGET_PLUS`, `TECHNICALLY_COMPATIBLE`, `ECONOMICALLY_REASONABLE`, `SELECTED` y una disposición `REUSE_AS_IS / ADAPT / PORT / WRAP / REFERENCE_ONLY / BUILD / REJECT` antes de ADR técnico. Para capacidades dependientes del plan, un probe en la sesión Team actual no establece disponibilidad en el runtime Plus individual objetivo (ADR-007). La documentación oficial de OpenAI confirma la separación Skill (workflow) / MCP (acciones) y que los guardrails del SDK tienen alcance específico por entrada/salida/herramienta; la inferencia arquitectónica del proyecto es exigir autorización financiera **fuera** del agente, en el gateway determinístico.
 
+ADR-008 añade ficha económica por fase ([scorecard](economic_scorecard.md)): PAPER prioriza cero/bajo coste incremental con calidad suficiente; LIVE puede justificar servicios pagos por valor y economía unitaria. Investigación paga documental autorizada, gasto/contratación sujetos a aprobación; Skills/templates gratuitos/incluidos/propios. Una restricción PAPER no es veto arquitectónico permanente ni permite relajar los invariantes.
+
 ## 8. Decisión A+ y futura evaluación de autoridad
 
 | Opción | Alcance/autoridad | Ventaja | Coste/riesgo |

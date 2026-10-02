@@ -115,9 +115,19 @@ Do not select technologies simply because they appeared in a tutorial or previou
 
 For R-006/D-020 and D-024 in PAPER V1, investigate the **AI/agentic layer only within OpenAI and Anthropic**. Do not evaluate other AI Labs or third-party agent frameworks/runtimes, including Google ADK, Microsoft Agent Framework, LangGraph and PydanticAI. This restriction does not narrow separate broker, market-data, alternative-data, quantitative-engine, database or infrastructure research.
 
-Prioritize zero or near-zero incremental cost: Tier 0 = capabilities included in the **target individual ChatGPT Plus account** or public reusable assets; Tier 1 = free-limited/free-account or low-cost local open source; Tier 2 = separate OpenAI/Anthropic API billing, Claude Managed Agents, added subscriptions, enterprise tools, premium financial connectors or recurring spend. Tier 2 is excluded by default for PAPER V1. Reconsider it only after documenting the lack of a reasonable Tier 0/1 alternative, material benefit, costs and trade-offs, and obtaining explicit owner approval to consider that expense. A public SDK does not imply Plus entitlement; never activate paid API usage as a probe without that approval. See ADR-007.
+For PAPER V1, prioritize Tier 0 (capabilities included in the **target individual ChatGPT Plus account** or public reusable assets) and Tier 1 (free-limited/free-account or reasonable local open source). Tier 2 includes separately billed OpenAI/Anthropic APIs, Managed Agents, extra subscriptions, enterprise services, premium connectors or incremental spend. Paid alternatives may be researched and documented; contracting, enabling billing or generating incremental spend requires explicit owner approval. A public SDK does not imply Plus entitlement. See ADR-007 and ADR-008.
 
 For capability evidence, distinguish `CURRENT_RESEARCH_ENVIRONMENT` (this planning session, observed `planType=team`) from `TARGET_RUNTIME_ENVIRONMENT` (an **individual ChatGPT Plus account**). The current environment is for research only. For plan-dependent capabilities, record `AVAILABLE_IN_RESEARCH_ENVIRONMENT` and `AVAILABLE_IN_TARGET_PLUS` separately. A successful probe here does not establish availability in Plus: if no Plus-specific evidence exists, record `AVAILABLE_IN_TARGET_PLUS=UNKNOWN`. Assess PAPER V1 cost and architecture against the target Plus environment. Public assets whose access does not depend on plan may continue to be inspected and adapted. See ADR-007.
+
+## Economic policy by project phase
+
+Optimize quality, reliability and capability at the lowest reasonable total cost. Prefer free/open-source/free-tier options when they meet requirements; a material quality, data, performance or availability gap must influence the comparison.
+
+PAPER V1 follows **Zero/Low Incremental Cost First** to demonstrate, measure and learn. LIVE/production follows **Economic Value First**, considering unit economics, expected net benefit, operational reliability, security and scale. Paid services remain valid future candidates; a PAPER budget exclusion is not a permanent architectural rejection. Any contracting or incremental spending requires explicit owner approval.
+
+Skills, prompts, agent templates, reference workflows and methodologies must be free, public, included in existing capabilities, or created/adapted by us. Do not pay specifically to acquire a Skill/template. Runtime, models, data or infrastructure used by it may later justify payment separately.
+
+For every external candidate, record `PAPER_V1_VIABLE_FREE`, `PAPER_V1_COST`, `LIVE_COST`, `FREE_ALTERNATIVE`, `PAID_INCREMENTAL_VALUE` and `ECONOMIC_JUSTIFICATION_REQUIRED`. Include fixed and variable costs, estimated monthly cost and scale assumptions, quality/capability difference, lock-in/exit cost, expected operational benefit and the condition that would justify paying. Keep unknown prices/benefits explicit and dispositions phase-specific. Apply ADR-008 and `planning/economic_scorecard.md` across broker, data, AI/runtime, storage, infrastructure, observability and future capability research.
 
 ## Agent Capability Gate
 

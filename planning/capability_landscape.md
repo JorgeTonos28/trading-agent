@@ -1,6 +1,6 @@
 # Capability Landscape — plantilla de investigación inicial
 
-Estado 2026-10-01: **investigación parcial**, sin selección. R-006/D-020 es P0 y gate de D-024. [ADR-007](decisions/ADR-007-r006-openai-anthropic-plus-scope.md) limita la **capa agéntica** a OpenAI y Anthropic y exige Tier 0/1 para PAPER V1. No interpretar una mención como confirmación de disponibilidad, compatibilidad, licencia o precio. Método en [plan R-006](research/R-006_agentic_capability_discovery_plan.md); [inventario y probes](research/R-006_initial_findings_2026-10-01.md).
+Estado 2026-10-02: **investigación parcial**, sin selección. R-006/D-020 es P0 y gate de D-024. [ADR-007](decisions/ADR-007-r006-openai-anthropic-plus-scope.md) limita IA/agentes a OpenAI/Anthropic; [ADR-008](decisions/ADR-008-economic-policy-by-phase.md) prioriza Tier 0/1 PAPER y valor económico LIVE, sin descartar pagos del futuro. Estudiar pagos está autorizado; contratar/gastar requiere aprobación. No interpretar una mención como confirmación de acceso, compatibilidad, licencia o precio. Método en [plan R-006](research/R-006_agentic_capability_discovery_plan.md); [inventario/probes](research/R-006_initial_findings_2026-10-01.md).
 
 Actualización 2026-10-02: [ADR-007](decisions/ADR-007-r006-openai-anthropic-plus-scope.md) distingue `CURRENT_RESEARCH_ENVIRONMENT` (esta sesión, `planType=team`, solo investigación) de `TARGET_RUNTIME_ENVIRONMENT` (**ChatGPT Plus individual**, diseño y presupuesto PAPER V1). [Wave 01](research/R-006_probe_wave_01_2026-10-01.md) observó herramientas aquí; [wave 02](research/R-006_probe_wave_02_2026-10-02.md) validó solo formato de Skill adaptada y fixture PIT. La [evidencia documental Plus por superficie](research/R-006_plus_entitlement_evidence_2026-10-02.md) confirma elegibilidad general de Codex y visibilidad del directorio, pero no activación de Skills/plugins concretos. SIWC C-025 sigue condicional. `SELECTED=NO` para todos los candidatos Trading OS.
 
@@ -20,7 +20,7 @@ Actualización 2026-10-02: [ADR-007](decisions/ADR-007-r006-openai-anthropic-plu
 
 ## Ficha obligatoria por candidato
 
-`ID; capability; source/version/date; primary-source URL; cost_tier; EXISTS; AVAILABLE_IN_RESEARCH_ENVIRONMENT; AVAILABLE_IN_TARGET_PLUS; TECHNICALLY_COMPATIBLE; ECONOMICALLY_REASONABLE; SELECTED; license/portability; permissions; data sent; lifecycle/maintenance; alternatives; test; disposition; ADR`. Valores iniciales `UNKNOWN` salvo evidencia. Un `YES` en investigación no se copia a Plus. Para activos públicos distinguir acceso al archivo de activación del runtime. Tier 2 queda fuera de PAPER V1 salvo excepción ADR-007. La disposición se registra en `build_vs_reuse.md` con fundamento; inicialmente ninguna queda seleccionada.
+`ID; capability; source/version/date; primary-source URL; cost_tier; EXISTS; AVAILABLE_IN_RESEARCH_ENVIRONMENT; AVAILABLE_IN_TARGET_PLUS; TECHNICALLY_COMPATIBLE; ECONOMICALLY_REASONABLE; SELECTED; license/portability; permissions; data sent; lifecycle/maintenance; alternatives; test; disposition_by_phase; ADR; PAPER_V1_VIABLE_FREE; PAPER_V1_COST; LIVE_COST; FREE_ALTERNATIVE; PAID_INCREMENTAL_VALUE; ECONOMIC_JUSTIFICATION_REQUIRED`. Valores iniciales `UNKNOWN` salvo evidencia. Un `YES` en investigación no se copia a Plus. Para activos públicos distinguir acceso al archivo de activación del runtime. ADR-008 permite estudiar Tier 2, pero ejecución paga PAPER exige aprobación; LIVE se evalúa por valor. La disposición se registra en `build_vs_reuse.md`; ninguna queda seleccionada.
 
 ## Fichas verificadas parcialmente — 2026-10-01
 
@@ -39,4 +39,35 @@ Actualización 2026-10-02: [ADR-007](decisions/ADR-007-r006-openai-anthropic-plu
 
 **Inferencia inicial:** los workflows de equity research de Anthropic pueden aportar métodos de investigación; su propio alcance publicado no cubre estrategia cuantitativa operativa, risk gateway ni ejecución. Los plugins de OpenAI separan instrucciones de Skills y acceso controlado de MCP, compatible conceptualmente con el invariante del proyecto, pero falta probar la frontera real de permisos. Ningún hallazgo justifica incorporar o instalar un componente todavía.
 
-R-025 abrió fichas preliminares para [Quiver](https://api.quiverquant.com/), [Unusual Whales](https://unusualwhales.com/developers), [Capitol Trades](https://www.capitoltrades.com/about-us) y [SEC/EDGAR](https://www.sec.gov/about/developer-resources), además de candidatos por descubrir. Las ofertas declaradas por proveedor solo prueban existencia aparente; no confirman disponibilidad para **el entorno Plus objetivo**, historia PIT, derechos o selección.
+R-025 abrió fichas preliminares para [Quiver](https://api.quiverquant.com/), [Unusual Whales](https://unusualwhales.com/developers), [Capitol Trades](https://www.capitoltrades.com/about-us) y [SEC/EDGAR](https://www.sec.gov/about/developer-resources), además de candidatos por descubrir. Las ofertas declaradas por proveedor solo prueban existencia aparente; no confirman acceso del proyecto, historia PIT, derechos o selección. Su acceso API/dataset se verifica separado de cualquier entitlement de plugin/Plus.
+
+## Ficha económica por candidato — PAPER vs LIVE
+
+Aplicar [ADR-008 y scorecard](economic_scorecard.md). Esta tabla inicia campos, **no valida precios ni beneficios**; el detalle fijo/variable/mensual/escala se completa con cotización y workload antes de recomendar pago. `0 contenido` se refiere solo a lectura/adquisición del activo público; no declara gratis runtime, datos ni operación. Las disposiciones `REFERENCE_ONLY` anteriores por presupuesto son PAPER, reevaluables para LIVE. Skills/templates mantienen adquisición gratuita como regla.
+
+| ID/capacidad | PAPER_V1_VIABLE_FREE | PAPER_V1_COST | LIVE_COST | FREE_ALTERNATIVE | PAID_INCREMENTAL_VALUE | ECONOMIC_JUSTIFICATION_REQUIRED |
+|---|---|---|---|---|---|---|
+| C-001 SDK público | UNKNOWN para workflow | 0 código; inferencia UNKNOWN | UNKNOWN por uso | C-010/C-025, sin validar | Hipótesis: control del harness; probar frente a Plus | YES si ejecución paga |
+| C-002 Skills/Plugins/MCP | UNKNOWN por componente | UNKNOWN; entitlements separados | UNKNOWN | Skill/local read-only candidata | Dependiente de app/datos/runtime, sin demostrar | YES si dependencia paga |
+| C-003 guardrails/review API | NO para ruta facturada | 0 docs; API UNKNOWN | UNKNOWN | Aislamiento/gateway determinístico y permisos Codex por evaluar | Controles/evals adicionales a probar; no autoridad financiera | YES si ejecución paga |
+| C-004 Anthropic reference agents | PARTIAL: solo activos | 0 método; conectores/runtime UNKNOWN | UNKNOWN dependencias | Fuentes públicas + adaptación candidata | Valorar datos/runtime aparte; no comprar metodología | YES si dependencia paga |
+| C-005 Anthropic Skills públicas | PARTIAL: solo activos | 0 adquisición; integración UNKNOWN | UNKNOWN dependencias | ADAPT/PORT gratuito | Valorar datos/runtime aparte | YES si dependencia paga |
+| C-006 cookbook portfolio | YES como referencia | 0 lectura; ejecución fuera del probe | UNKNOWN si se ejecutara | Método propio/C-017 | No demostrado; referencia archivada | YES si ejecución paga |
+| C-007 workflow Skills OpenAI | UNKNOWN activación Plus | UNKNOWN; docs públicas 0 | UNKNOWN runtime/datos | Procedimiento propio con fixtures | Valor runtime/datos separado del prompt | YES si dependencia paga |
+| C-008 SDK como runtime | NO ruta API facturada | UNKNOWN API; fuera de ejecución paga autorizada | UNKNOWN por carga | C-010/C-025, sin validar | Hipótesis: continuidad/control vs cupo Plus; probar | YES |
+| C-009 guardrails del SDK | NO ruta API facturada | UNKNOWN inferencia | UNKNOWN | Frontera técnica/gateway + permisos por evaluar | Hipótesis de mejor evaluación/controles, sin demostrar | YES |
+| C-010 Codex + Skills | UNKNOWN configuración Plus | Potencial 0 incremental; capacidad/cupo UNKNOWN | UNKNOWN escala | Workflow mínimo Codex candidato | Comparar API/servicio por continuidad y calidad | YES para alternativa paga |
+| C-011 OpenAI Developers plugin | UNKNOWN instalación Plus | UNKNOWN; no activar billing API | UNKNOWN | openai-docs/documentación pública | Sin mejora financiera demostrada | YES si ruta paga |
+| C-012 SDK público/API | NO ruta API facturada | 0 código; API UNKNOWN | UNKNOWN por uso | C-010/C-025 candidatos | Harness/continuidad como hipótesis | YES |
+| C-013 Agents/Responses API key | NO como entitlement Plus | UNKNOWN API | UNKNOWN por uso | C-010/C-025 candidatos | Evaluar control/continuidad y límites, no presumir superioridad | YES |
+| C-014 Docs MCP | UNKNOWN integración completa | Endpoint público; cliente UNKNOWN | UNKNOWN mantenimiento | Documentación web oficial | No valor pago demostrado | YES si dependencia paga |
+| C-015 cookbook portfolio | YES referencia | 0 lectura | UNKNOWN si se ejecutara | Procedimiento propio/C-017 | No demostrado; no comprar template | YES si ejecución paga |
+| C-016 reference templates | PARTIAL: activos públicos | 0 método; datos/runtime UNKNOWN | UNKNOWN | Adaptar fuente pública | Dependencias premium solo si mejoran evidencia/cobertura | YES si dependencia paga |
+| C-017 equity research Skills | PARTIAL formato; conducta UNKNOWN | 0 adquisición; runtime/datos UNKNOWN | UNKNOWN | Workflow mínimo propio | Mejor datos/runtime a demostrar; template gratuito | YES si dependencia paga |
+| C-018 financial MCP | UNKNOWN por proveedor | UNKNOWN; sin suscripción aprobada | UNKNOWN por dataset/uso | SEC/EDGAR y fuentes públicas candidatas | PIT/cobertura/latencia a medir en R-025 | YES |
+| C-022 LEAN/NautilusTrader | UNKNOWN workflow/datos | Código público; operación/datos UNKNOWN | UNKNOWN | Motores locales candidatos R-009 | Comparar datos/hosting por fidelidad y continuidad | YES si dependencia paga |
+| C-023 broker/data APIs | UNKNOWN por proveedor | UNKNOWN | UNKNOWN | R-007/008/025 | Cobertura/latencia/reconciliación, pendientes de evidencia | YES |
+| C-024 Skills pedagógicas | UNKNOWN composición Plus | UNKNOWN; metodología sin compra | UNKNOWN datos/runtime | Markdown/trazas y procedimiento propio | Calidad factual/claridad y continuidad a evaluar | YES si dependencia paga |
+| C-025 SIWC/app-server | UNKNOWN gate Plus | Potencial 0 incremental; cupo/operación UNKNOWN | UNKNOWN escala | Codex directo/workflow mínimo candidato | API paga: control/capacidad como hipótesis si Plus insuficiente | YES si alternativa paga |
+
+C-019–021 siguen fuera del alcance agéntico ADR-007; la política económica no reabre su evaluación. Brokers/datos tienen fichas económicas propias y storage/infra/observabilidad adoptan el scorecard común antes de preselección.

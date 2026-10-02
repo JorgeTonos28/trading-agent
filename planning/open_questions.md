@@ -19,7 +19,7 @@ Estados: cada Q muestra su prioridad; Q-030–Q-037 incluyen estado explícito. 
 | Q-011 | P1 | D-021 | ¿Qué broker PAPER admite el perfil real del dueño desde RD, los ETFs/órdenes necesarios, datos/stream y pruebas de recuperación? Verificación oficial y probes. |
 | Q-012 | P1 | D-022 | ¿Qué proveedor cubre historia 2005–2026, ajustes, delistings/cambios, timestamps, uso automatizado y costes? Muestra comparada. |
 | Q-013 | P1 | D-023 | ¿LEAN, NautilusTrader, vectorbt u otra solución reproduce las semánticas de los candidatos viables y sus fallos con coste razonable? Benchmark. |
-| Q-014 | P1 | D-024 | `OPEN / GATED_BY_R-006`: ¿Qué combinación OpenAI/Codex Tier 0/1 y contenido Anthropic portable cubre los agentes sin delegar autoridad de órdenes? Runtime/topología/Skills/plugins/MCP no pueden cerrarse antes de madurez R-006, pruebas de permisos/evals y aprobación material. Tier 2 requiere excepción ADR-007. |
+| Q-014 | P1 | D-024 | `OPEN / GATED_BY_R-006`: ¿Qué combinación OpenAI/Codex Tier 0/1 y contenido Anthropic portable cubre los agentes en Plus individual? Madurez R-006, permisos/evals y aprobación material preceden freeze. ADR-008 permite estudiar alternativas pagas PAPER/LIVE; gasto requiere aprobación y no sustituye el gate Plus. |
 | Q-015 | P1 | D-025 | ¿Temporal, otra solución o scheduler simple cumple recovery, replays e idempotencia a la escala V1? Prueba de fallos y coste operativo. |
 | Q-016 | P1 | D-026 | ¿Qué repositorios de datos y eventos preservan decisiones, versiones, P&L y audit trail reconstruible? Esquemas y restore. |
 | Q-017 | P1 | D-027 | ¿Qué aislamiento evita que prompt injection, plugin, dependencia o credencial paper alcancen ejecución/secretos live? Threat model. |
@@ -48,6 +48,8 @@ Estados: cada Q muestra su prioridad; Q-030–Q-037 incluyen estado explícito. 
 - Q-034 (P0, D-018, `DECIDED`): ADR-005 fija roles graduados y gates de admisión para todas las familias Smart Money; ninguna familia queda seleccionada. Evidencia PIT y proveedor por dataset siguen D-022/033 y Strategy V1 D-008.
 - Q-035 (P0, D-019, `DECIDED`): el propietario aprobó explicación factual desde B4 y reporte completo antes de DoD, derivados de traza real y sin autoridad de trading. Formato/evals detallados P1 después.
 - Q-036 (P1, D-033, `RESEARCHING`): ¿Qué combinación de Quiver, Unusual Whales, Capitol Trades, SEC/EDGAR y otros proveedores entrega cada dataset con historia PIT, API, latencia, licencia, calidad y coste adecuados? Scorecard R-025.
+
+- Q-040 (P3, D-040/042, `DEFERRED`): ¿Qué servicios pagos justifican su coste fijo/variable/mensual y por escala en LIVE frente a alternativas gratuitas, por calidad, continuidad, seguridad o beneficio neto esperado? Política D-036/ADR-008 `DECIDED`; presupuesto y selecciones concretas abiertos. No bloquea investigación PAPER, salvo que una insuficiencia material afecte el diseño V1.
 - Q-037 (P1, D-021, `OPEN`): ¿Qué broker es elegible para RD y sirve a equities PAPER con API, streams y órdenes protectoras, manteniendo opciones futuras sin imponer derivados en V1? Comparación R-007; Alpaca no está seleccionado.
 - Q-038 (P1, D-034, `OPEN`): ¿Qué esquema, aislamiento técnico, protocolo de evaluación PIT y métricas preregistradas permiten comparar Champion con `ShadowPortfolioProposal` sin que el shadow influya en operaciones ni obtenga datos futuros?
 - Q-039 (P1, D-035, `OPEN`): ¿Cuáles son las fórmulas, unidades, redondeos, precedencia y casos de concurrencia verificables que concretan ADR-006 sin fijar aún los umbrales PAPER de D-031?

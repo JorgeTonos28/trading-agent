@@ -1,5 +1,5 @@
 schema_version: 1
-updated_on: 2026-10-01
+updated_on: 2026-10-02
 project:
   name: Trading OS
   purpose: auditable_agentic_quantitative_trading_platform
@@ -63,7 +63,9 @@ baseline_decisions:
   - id: ADR-006
     result: PAPER V1 deterministic risk uses the most restrictive applicable independent exposure/cash, estimated protection, gap/slippage, liquidity and concurrent-reservation constraints; no numerical policy approved
   - id: ADR-007
-    result: R-006 agentic layer limited to OpenAI and Anthropic, with Plus/Codex and public reusable assets preferred; separately billed services excluded by default for PAPER V1
+    result: R-006 agentic layer limited to OpenAI and Anthropic; target individual Plus and public assets preferred for PAPER, Team research is not target evidence; paid execution requires ADR-008 approval
+  - id: ADR-008
+    result: PAPER zero_or_low_incremental_cost_first; LIVE economic_value_first; paid services research allowed, explicit approval before spend; free_or_included_or_self_created methodology acquisition only
 strategy_v1:
   selection_status: OPEN
   priority: P0
@@ -148,7 +150,8 @@ capability_discovery:
   tier_0: included_in_target_individual_Plus_or_public_reusable_assets
   tier_1: free_limited_free_account_or_local_open_source_without_material_cost
   tier_2_excluded_by_default: true
-  tier_2_exception: no_reasonable_Tier_0_or_1_plus_material_benefit_plus_documented_cost_benefit_plus_explicit_owner_approval_to_consider_expense
+  tier_2_research_allowed_without_spend: true
+  tier_2_exception: documented_material_incremental_value_and_costs_plus_explicit_owner_approval_before_contracting_or_spend
   agent_capability_gate: D-024_must_remain_open_until_R-006_maturity_review
   no_final_runtime_or_agent_plugin_selection_before_gate: true
   research_plan: planning/research/R-006_agentic_capability_discovery_plan.md
@@ -165,6 +168,22 @@ capability_discovery:
     - alternative_data_providers
     - smart_money_congress_insider_13F_options_flow_dark_pool_revisions_fund_flows
     - storage_observability_and_security_tools
+economic_policy:
+  decision: ADR-008_D-036
+  objective: highest_quality_reliability_capability_at_lowest_reasonable_cost
+  PAPER_V1: ZERO_OR_LOW_INCREMENTAL_COST_FIRST
+  LIVE: ECONOMIC_VALUE_FIRST
+  paid_services_may_be_researched: true
+  contracting_billing_or_incremental_spend_requires_explicit_owner_approval: true
+  free_preference_conditional_on_sufficient_quality: true
+  paper_exclusion_is_not_permanent_architecture_rejection: true
+  methodology_acquisition: free_public_existing_entitlement_or_self_created_adapted_only
+  paid_methodology_acquisition_allowed: false
+  runtime_data_infrastructure_evaluated_separately: true
+  economic_fields: [PAPER_V1_VIABLE_FREE, PAPER_V1_COST, LIVE_COST, FREE_ALTERNATIVE, PAID_INCREMENTAL_VALUE, ECONOMIC_JUSTIFICATION_REQUIRED]
+  scorecard: planning/economic_scorecard.md
+  live_evaluation: unit_economics_net_expected_value_and_operational_benefit_with_uncertainty
+  approved_incremental_spend: NONE
 governance:
   decision_states: [OPEN, RESEARCHING, READY_FOR_DECISION, DECIDED, DEFERRED, SUPERSEDED]
   priority_meanings:
@@ -186,6 +205,7 @@ governance:
     - major_scope_changes
     - promotion_of_shadow_portfolio_manager_to_operational_authority
     - final_agent_runtime_topology_skills_plugins_mcp_and_plugin_architecture_D_024
+    - contracting_billing_or_any_incremental_spend
   closure_rule: No P0/P1 open, every Definition of Ready gate evidenced, independent critical review, owner approval and plan freeze
   source_of_truth: planning/ registers plus approved master plan and ADRs
   creator_performance_claims: Record as unverified when applicable; no dedicated audit unless necessary for a project decision

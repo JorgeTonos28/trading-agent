@@ -30,3 +30,17 @@ Alpaca, Interactive Brokers (IBKR), Tradier, tastytrade, TradeStation y otros AP
 ## Entregable y decisión
 
 Ficha fechada por broker con `EXISTS / AVAILABLE_TO_US / TECHNICALLY_COMPATIBLE / ECONOMICALLY_REASONABLE / SELECTED`, fuente primaria, probes y `REUSE_AS_IS/WRAP/REJECT` cuando corresponda; scorecard con pesos fijados antes de pruebas y ADR aprobado por el propietario. Los probes B1–B5 verifican semántica paper después de preselección. El soporte futuro de opciones cuenta como criterio, pero no justifica comprometer V1 con derivados.
+
+## Scorecard económico por fase — ADR-008
+
+PAPER prioriza cuenta/API/datos paper sin gasto adicional **si cumplen calidad/semántica**. LIVE admite servicios pagos con valor y economía unitaria demostrados. No descartar broker futuro por precio PAPER ni inferir coste live desde simulación. Aplicar [ficha común](../economic_scorecard.md): fijo, variable, mensual y escala; comisiones/fees, datos, mínimos, API, custodia/funding/FX aplicables, slippage y mantenimiento/lock-in separados. Investigar no contrata; gastar requiere aprobación humana.
+
+| Candidato | PAPER_V1_VIABLE_FREE | PAPER_V1_COST | LIVE_COST | FREE_ALTERNATIVE | PAID_INCREMENTAL_VALUE | ECONOMIC_JUSTIFICATION_REQUIRED |
+|---|---|---|---|---|---|---|
+| Alpaca | UNKNOWN hasta elegibilidad/semántica | UNKNOWN | UNKNOWN | Otros brokers paper por validar | Calidad API/datos/órdenes/continuidad por probar | YES antes de gasto |
+| IBKR | UNKNOWN | UNKNOWN | UNKNOWN | Otros brokers paper por validar | Cobertura/controles/coste total por probar | YES antes de gasto |
+| Tradier | UNKNOWN | UNKNOWN | UNKNOWN | Otros brokers paper por validar | Paridad/órdenes/datos por probar | YES antes de gasto |
+| tastytrade | UNKNOWN | UNKNOWN | UNKNOWN | Otros brokers paper por validar | API/streaming/cobertura por probar | YES antes de gasto |
+| TradeStation | UNKNOWN | UNKNOWN | UNKNOWN | Otros brokers paper por validar | API/semántica/fiabilidad por probar | YES antes de gasto |
+
+No se consultaron precios nuevos para estas filas; son campos abiertos de investigación, no juicio económico contra el proveedor. Cada broker adicional tendrá los mismos seis campos antes de entrar al scorecard.

@@ -41,7 +41,23 @@ Para todas: **fecha del hecho ≠ fecha de publicación ≠ fecha de recepción 
 6. **Calidad para backtest:** enlace a documento primario, identificadores estables, universo histórico, exclusiones, replay y controles de sesgo.
 7. **Utilidad en el sistema:** research, pedagogía, señal candidata, validación cruzada o descarte; valor marginal frente a otras fuentes.
 
-El resultado puede ser **varios proveedores especializados** o fuentes oficiales más normalización propia. Cada dataset recibirá disposición `REUSE_AS_IS / ADAPT / PORT / WRAP / REFERENCE_ONLY / BUILD / REJECT`, con criterio y coste. La elección de una fuente con gasto material requiere aprobación humana.
+El resultado puede ser **varios proveedores especializados** o fuentes oficiales más normalización propia. Cada dataset recibirá disposición `REUSE_AS_IS / ADAPT / PORT / WRAP / REFERENCE_ONLY / BUILD / REJECT` **por fase**, con criterio y coste. ADR-008 permite estudiar alternativas pagas; contratar/consumir con gasto incremental requiere aprobación humana. PAPER prioriza fuentes incluidas/gratuitas suficientemente fiables; LIVE admite valor incremental pago, sin presuponer alpha.
+
+## Scorecard económico por proveedor y después por dataset
+
+Aplicar [ADR-008/ficha común](../economic_scorecard.md): fijo/variable/mensual/escala, coste de backfill/almacenamiento, planes/add-ons, licencia automatizada, calidad/latencia/PIT frente a fuente gratuita, mantenimiento/lock-in, beneficio y condición para pagar. Las filas siguientes no actualizan precios; `UNKNOWN` requiere documentación/cotización vigente.
+
+| Candidato | PAPER_V1_VIABLE_FREE | PAPER_V1_COST | LIVE_COST | FREE_ALTERNATIVE | PAID_INCREMENTAL_VALUE | ECONOMIC_JUSTIFICATION_REQUIRED |
+|---|---|---|---|---|---|---|
+| Quiver | UNKNOWN por dataset/plan | UNKNOWN | UNKNOWN | SEC/EDGAR/registros oficiales según familia | Hipótesis: normalización, cobertura/PIT/latencia; medir | YES antes de gasto |
+| Unusual Whales | UNKNOWN por dataset/plan | UNKNOWN | UNKNOWN | Fuentes oficiales para filings; flow equivalente UNKNOWN | Hipótesis: flow/cobertura/historia/PIT; medir | YES antes de gasto |
+| Capitol Trades | UNKNOWN integración/licencia | UNKNOWN | UNKNOWN | Registros oficiales Congreso | Hipótesis: limpieza/entidades/cronología; medir | YES antes de gasto |
+| SEC/EDGAR directo | PARTIAL acceso público; workflow por probar | Acceso público; normalización/operación UNKNOWN | UNKNOWN operación/escala | Esta fuente primaria | Agregador solo si mejora calidad/continuidad/esfuerzo con evidencia | YES si gasto complementario |
+| Cámara/Senado oficial | UNKNOWN automatización/historia | UNKNOWN | UNKNOWN operación | Esta fuente primaria candidata | Agregador solo si mejora cronología/cobertura con evidencia | YES si gasto complementario |
+| Disclosed Capitol | UNKNOWN plan/licencia/PIT | UNKNOWN | UNKNOWN | Registros oficiales Congreso | Hipótesis: normalización/history/API; medir | YES antes de gasto |
+| Otros por descubrir | UNKNOWN | UNKNOWN | UNKNOWN | Por familia | Pendiente de diferencia medible | YES antes de gasto |
+
+La necesidad de pagar puede justificarse por fiabilidad o datos aun sin demostrar retorno predictivo; admitir la fuente como señal operativa sigue requiriendo los gates PIT/licencia/OOS de ADR-005 y selección Strategy V1. Un proveedor caro/gratis no obtiene admisión automática.
 
 ## Orden de probes (desechables, sin Trading OS)
 
