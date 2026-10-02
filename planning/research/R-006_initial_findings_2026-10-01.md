@@ -54,3 +54,5 @@
 **Actualización tras ADR-007:** la [probe wave 01](R-006_probe_wave_01_2026-10-01.md) fija revisión de Anthropic, verifica estructura de tres Skills y registra que este host reporta `planType=team`, no Plus. C-025 añade la ruta oficial SIWC como hipótesis Tier 0/1 condicionada; C-012/013 con API key conservan Tier 2. Ninguna arquitectura se seleccionó.
 
 **Wave 02, 2026-10-02:** [adaptación desechable y fixture sintética](R-006_probe_wave_02_2026-10-02.md) validan el formato Codex y una regla de elegibilidad temporal; no validan obediencia del modelo, activación Plus ni autoridad financiera. C-017 conserva disposición `ADAPT` **candidata**, `SELECTED=NO`.
+
+**Elegibilidad documental Plus, 2026-10-02:** [fuentes oficiales desglosadas por superficie](R-006_plus_entitlement_evidence_2026-10-02.md) confirman Codex base incluido en ChatGPT Plus y directorio de plugins entre planes, pero no acceso a Skills/plugins específicos. La documentación de Skills personales en ChatGPT no establece Plus como plan elegible; Codex Skills pueden regirse por una ruta distinta. C-010 conserva `UNKNOWN` para la configuración compuesta en la cuenta Plus objetivo.
