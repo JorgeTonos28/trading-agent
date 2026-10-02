@@ -153,6 +153,7 @@ capability_discovery:
   no_final_runtime_or_agent_plugin_selection_before_gate: true
   research_plan: planning/research/R-006_agentic_capability_discovery_plan.md
   first_probe_wave: planning/research/R-006_probe_wave_01_2026-10-01.md
+  second_probe_wave: planning/research/R-006_probe_wave_02_2026-10-02.md
   dimensions: [EXISTS, AVAILABLE_IN_RESEARCH_ENVIRONMENT, AVAILABLE_IN_TARGET_PLUS, TECHNICALLY_COMPATIBLE, ECONOMICALLY_REASONABLE, SELECTED]
   dispositions: [REUSE_AS_IS, ADAPT, PORT, WRAP, REFERENCE_ONLY, BUILD, REJECT]
   families:

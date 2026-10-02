@@ -23,8 +23,10 @@ Estado 2026-10-01: **R-006 es P0 y foco inmediato**; D-024 queda abierto hasta e
 5. Coste total: licencia, datos, integración, operaciones y salida.
 6. Reversibilidad y capacidad de prueba independiente.
 
-Una capacidad puede existir y ser técnicamente compatible, pero no estar disponible para nosotros o no ser económicamente razonable. `SELECTED` exige evidencia y decisión registrada. Un `BUILD` para componente mayor requiere comparación con alternativas y justificación explícita; el Risk Engine determinístico es una **intención arquitectónica de control propio**, pero incluso ahí se investigarán librerías de apoyo sin delegar autoridad.
+Una capacidad puede existir y ser técnicamente compatible, pero no estar disponible en el **Plus individual objetivo** o no ser económicamente razonable. La disponibilidad en la sesión Team de investigación no demuestra entitlement en Plus. `SELECTED` exige evidencia y decisión registrada. Un `BUILD` para componente mayor requiere comparación con alternativas y justificación explícita; el Risk Engine determinístico es una **intención arquitectónica de control propio**, pero incluso ahí se investigarán librerías de apoyo sin delegar autoridad.
 
 ## Primera cola de clasificación
 
 R-006: OpenAI Skills/Plugins/Codex/MCP y análisis cuya inclusión en **Plus individual objetivo** debe verificarse; ruta SIWC/Codex app-server como hipótesis de uso del plan; Anthropic Financial Services y Skills/templates/workflows públicos portables. OpenAI Agents SDK/API con **clave facturada** y Anthropic runtime son Tier 2 y quedan `REFERENCE_ONLY` por defecto. Fuera de R-006 continúan motores quant, broker APIs, market/alternative data, almacenamiento, seguridad y observabilidad. Las fichas separan `EXISTS`, `AVAILABLE_IN_RESEARCH_ENVIRONMENT`, `AVAILABLE_IN_TARGET_PLUS`, `TECHNICALLY_COMPATIBLE`, `ECONOMICALLY_REASONABLE` y `SELECTED`. `PENDING` no equivale a clasificación final; cada disposición final tendrá evidencia y ADR cuando proceda.
+
+La [wave 02 de R-006](research/R-006_probe_wave_02_2026-10-02.md) deja C-017 como **`ADAPT` candidata**: se validó formato y fixture temporal de una adaptación desechable, pero no activación Plus ni comportamiento del modelo. `SELECTED=NO`; ninguna Skill entra aún al diseño final.
