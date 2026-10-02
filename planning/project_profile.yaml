@@ -132,13 +132,20 @@ capability_discovery:
   current_focus: R-006_D-020_D-024
   agentic_provider_scope: [OpenAI, Anthropic]
   other_agentic_frameworks_in_scope: false
-  target_subscription: ChatGPT_Plus_owner_reported
+  CURRENT_RESEARCH_ENVIRONMENT:
+    purpose: research_and_planning_only
+    observed_plan_type: team
+    observed_on: 2026-10-01
+    entitlement_transfers_to_target: false
+  TARGET_RUNTIME_ENVIRONMENT:
+    subscription: ChatGPT_Plus_individual
+    purpose: PAPER_V1_architecture_and_budget
+    actual_capability_entitlements: unverified
   plus_entitlements_require_empirical_verification: true
-  observed_codex_session_plan_type: team_not_representative_of_plus_target
   api_billing_separate_from_plus: true
   siwc_plan_usage_candidate: conditional_tier_0_or_1_requires_plus_entitlement_and_operational_probe
   paper_v1_cost_preference: [Tier_0, Tier_1]
-  tier_0: included_Plus_or_Codex_and_public_reusable_assets
+  tier_0: included_in_target_individual_Plus_or_public_reusable_assets
   tier_1: free_limited_free_account_or_local_open_source_without_material_cost
   tier_2_excluded_by_default: true
   tier_2_exception: no_reasonable_Tier_0_or_1_plus_material_benefit_plus_documented_cost_benefit_plus_explicit_owner_approval_to_consider_expense
@@ -146,7 +153,7 @@ capability_discovery:
   no_final_runtime_or_agent_plugin_selection_before_gate: true
   research_plan: planning/research/R-006_agentic_capability_discovery_plan.md
   first_probe_wave: planning/research/R-006_probe_wave_01_2026-10-01.md
-  dimensions: [EXISTS, AVAILABLE_TO_US, TECHNICALLY_COMPATIBLE, ECONOMICALLY_REASONABLE, SELECTED]
+  dimensions: [EXISTS, AVAILABLE_IN_RESEARCH_ENVIRONMENT, AVAILABLE_IN_TARGET_PLUS, TECHNICALLY_COMPATIBLE, ECONOMICALLY_REASONABLE, SELECTED]
   dispositions: [REUSE_AS_IS, ADAPT, PORT, WRAP, REFERENCE_ONLY, BUILD, REJECT]
   families:
     - OpenAI_Skills_Plugins_Codex_MCP_Agents_and_financial_analysis
