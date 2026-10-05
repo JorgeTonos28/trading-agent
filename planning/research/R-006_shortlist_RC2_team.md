@@ -56,3 +56,7 @@ Disponibilidad/activación/config herramientas en cuenta Plus candidata, entitle
 ## 5. Aprobación y siguiente paquete
 
 Propietario aprobó ADR-011 A y disposiciones RC2; la anterior solicitud queda resuelta. Continuar P1 R-010–014 y preregistro Strategy V1 independiente. D-024 no puede cerrarse por esta aprobación ni por smokes. Gates Team permanecen; Plus solo PRE-LIVE.
+
+## Hardening posterior ADR-011
+
+[Contratos/probes/review R-010–014](R-010_014_hardening_findings_2026-10-05.md) especifican automatización, seguridad por dominios, recovery/epoch, audit/versiones y carga. SDK/CLI0.160 emparejado H4 pasa 2/2 focales; no final pin ni cuota. D-020 DECIDED en disposiciones de diseño; D-024 sigue RESEARCHING hasta gates. Próximo gobierno ADR-012 frontera material de seguridad, no Plus.

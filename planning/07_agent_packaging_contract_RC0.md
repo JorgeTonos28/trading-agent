@@ -49,3 +49,7 @@ Fuentes primarias, 2026-10-05: [AGENTS](https://learn.chatgpt.com/docs/agent-con
 ## Aclaración de identidad portable — probe fresh clone
 
 Hash portable de assets versionados = SHA256 de bytes del **Git blob en repo_commit**; `manifest_sha256` también incluye el propio manifest. Hash de bytes de worktree se registra aparte. Clasificar diferencia CRLF/LF declarada por checkout antes de decidir drift; cualquier otro cambio requiere nuevo fingerprint/evidencia. No normalizar silenciosamente textos arbitrarios para esconder modificaciones. R-028 encontró 31 deltas EOL; reportes originales preservados. El probe del commit 9e0dbed no verifica versiones posteriores ni toda superficie desktop.
+
+## Dirección y permisos posteriores ADR-011
+
+Roles lógicos mantienen reuse aprobado de paquetes, no sesiones/procesos por rol congelados. Empaquetado declara contratos 08 y autoridad NONE de outputs. Dominios de visibilidad del proceso se deciden en D-027, no en AGENTS/package.json: shadow no lee store pedagógico/Champion y research/quant no leen holdout sin gate. Contract delivery-v2/epoch requiere consumers versionados; packages documentales no configuran ACL ni runtime.

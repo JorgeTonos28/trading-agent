@@ -61,3 +61,7 @@ Wave 04 prueba B4 parcial; wave 06 prueba estructura/canonización y causa UNKNO
 ## 6. Build vs. Reuse
 
 C-024 **ADAPT** métodos de trazabilidad/explicación en Skill breve propia, complementada con C-010 baseline. C-026 Data y document/visualization Skills son **REFERENCE_ONLY** hasta entitlement/uso concreto; no copiar contenido propietario. Se puede reutilizar dentro de inclusión Plus validada para QA/materiales, no dependencia necesaria del informe factual básico Markdown/JSON. Activos financieros públicos Apache de Anthropic aportan estructura de evidence ledger, riesgo/falsifier y revisión; su narrativa de inversión se adapta a enseñanza factual. No hay compra de template ni runtime Claude. Software de gráficos/reportes y almacenamiento se investigará antes de construir subsistemas; el método pedagógico del proyecto es específico, no requiere LLM always-on.
+
+## Vigencia de entrega posterior ADR-011 / hardening RC0
+
+Dirección core local + jobs Team automáticos aprobada; D-020 DECIDED en disposiciones de diseño, D-024 RESEARCHING. Textos anteriores de siguiente Plus/selección pendiente son historia de sus hitos. Plus solo PRE-LIVE ADR-010. [Workflow/recovery y mapping delivery-contract-v2](08_job_workflow_recovery_contract_RC0.md) separa workflow/attempt de enums de entrega originales, que se conservan para probes v1; no cambia content_status ni autoridad. Leases/identidades/epoch/namespace se validan fuera del modelo; no-output no es HOLD. Permisos finales y motor permanecen abiertos.

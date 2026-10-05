@@ -108,3 +108,7 @@ Entregables: contratos/manifiesto/perfiles, paquetes documentales, Skill candida
 ## Aclaración del perfil RC0 — Git identity
 
 `repo_commit` identifica snapshot ensayado. `manifest_sha256` es SHA256 del Git blob `shared/bootstrap_manifest.json` de ese commit, sin autorreferencia; asset hashes portables usan la misma regla. Raw worktree hash es evidencia local distinta. Un perfil posterior puede reutilizar solo gates cuyos inputs/rules/Skill/schema/cliente/condiciones relevantes sigan iguales; cambios de contenido no EOL se consideran drift. Evidence_kind simulado nunca se usa para cerrar target gates. Fresh clone local no implica máquina limpia, nueva autenticación o surface Plus.
+
+## Hardening posterior ADR-011
+
+Bootstrap debe verificar contratos 08, configuración efectiva/identity domain/namespace y versión de admission, tool allowlists, dataset/holdout exports, trusted incarnation por intento y ausencia de broker paths/credenciales. S2 propuesto requiere gobierno/config concreta; no crear usuarios/firewall/VM por onboarding automático. WSL binario presente pero subsistema no instalado se reporta UNAVAILABLE/USER_ACTION_REQUIRED, no disponible. H4 bundle native default0.160 probado en Team es evidencia focal de candidato, no nueva readiness completa del entorno ni permiso final. Auth del dominio se configura legítimamente por owner; no copiar tokens. Perfil histórico observado no se actualiza como PASS porque cambió documentación.

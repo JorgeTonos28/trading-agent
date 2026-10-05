@@ -28,6 +28,8 @@ Repo/release + manifest + snapshot + tool trace + output/admission son fuente de
 
 Estados de transporte/admission: QUEUED, RUNNING, COMPLETED, FAILED_TOOL, FAILED_RUNTIME, TIMEOUT, NO_OUTPUT, REJECTED, ACCEPTED_ON_TIME, LATE_RETROSPECTIVE_ONLY, DUPLICATE. `content_status` COMPLETE/PARTIAL/ABSTAIN/INSUFFICIENT_EVIDENCE es eje distinto. Guardar cada intento; máximo una recepción admisible por job lógico, con política determinística de elección/retry definida D-025/026. El replay de admisión es determinístico; output generativo puede variar y no debe llamarse reproducible en sentido numérico fuerte sin evidencia.
 
+Los nombres anteriores de transporte no sustituyen estados canónicos de evidence: aplicar mapping/version [delivery-contract-v2](../08_job_workflow_recovery_contract_RC0.md). Dispatch/envelope del intento/lease/tool receipts/admission incluyen `environment_incarnation_id` confiable distinto de config fingerprint, preservando manifest y job_id lógico originales. Tras restore nuevo epoch invalida nuevas recepciones de workers antiguos, no outputs históricos ya admitidos. Elegir output requiere current attempt/owner/generation/expiry/lifecycle y epoch vigentes en la misma transacción externa.
+
 Una propuesta shadow tardía sirve para análisis retrospectivo identificado y sin contaminación de comparación on-time. Silencio/fallo no es HOLD. Pedagogía no inventa causas/outcomes; pending/missing reports quedan contabilizados. El agente que termina no reanuda una pausa financiera material; G1+G2 requiere autorización humana conforme ADR-002.
 
 ## 5. Degradación y separación de autoridad

@@ -77,3 +77,7 @@ Recovery rehidrata **el mismo** manifest/contrato, conserva histórico de entreg
 ## 8. Verificación y límites de este RC
 
 Schemas y pruebas bajo [probe de contratos](research/probes/r006-contracts/) son **experimentos de planificación**: demuestran discriminación en fixtures, no motor financiero, aislamiento OS ni ruta broker. Reutilizan `jsonschema` y `decimal`, sin construir framework/validator propios de producción. Negativos: rol del contenido, enums localizados, intent inesperado, override de modo, input futuro, derivación equivocada, unidad errónea, qty ambigua, contexto distinto, tardío/no-output/duplicado. La wave 06 prueba regresión focalizada de los procedimientos con contratos explícitos. R-006 madura para una propuesta condicionada; D-020/D-024 permanecen abiertos.
+
+## Vigencia de entrega posterior ADR-011 / hardening RC0
+
+Dirección core local + jobs Team automáticos aprobada; D-020 DECIDED en disposiciones de diseño, D-024 RESEARCHING. Textos anteriores de siguiente Plus/selección pendiente son historia de sus hitos. Plus solo PRE-LIVE ADR-010. [Workflow/recovery y mapping delivery-contract-v2](08_job_workflow_recovery_contract_RC0.md) separa workflow/attempt de enums de entrega originales, que se conservan para probes v1; no cambia content_status ni autoridad. Leases/identidades/epoch/namespace se validan fuera del modelo; no-output no es HOLD. Permisos finales y motor permanecen abiertos.

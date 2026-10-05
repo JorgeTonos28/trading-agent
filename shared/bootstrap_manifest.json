@@ -13,7 +13,10 @@
     "planning/07_agent_packaging_contract_RC0.md",
     "planning/06_agent_evidence_contract_RC0.md",
     "planning/06_shadow_portfolio_contract_RC0.md",
-    "planning/06_pedagogical_contract_RC0.md"
+    "planning/06_pedagogical_contract_RC0.md",
+    "planning/08_agent_security_contract_RC0.md",
+    "planning/08_job_workflow_recovery_contract_RC0.md",
+    "planning/08_audit_versions_deployment_contract_RC0.md"
   ],
   "packages": [
     "agents/onboarding/package.json",
@@ -107,5 +110,8 @@
     "stable_approved_branch": "main",
     "deployment_snapshot": "approved_versioned_release_or_tag",
     "automatic_promotion": false
-  }
+  },
+  "agentic_design_decision": "planning/decisions/ADR-011-paper-team-agentic-direction-proposed.md",
+  "security_direction_proposal": "planning/decisions/ADR-012-agent-process-isolation-proposed.md",
+  "operational_permissions_approved": false
 }

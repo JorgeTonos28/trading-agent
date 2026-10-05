@@ -166,3 +166,7 @@ Cohorte RC1 aprobada solo para aceptación; SELECTED=NO. ADR-009 añade D-037/R-
 **Vigencia ADR-011 — 2026-10-05:** propietario aprobó opción A y disposiciones RC2 como dirección de diseño PAPER: núcleo financiero local determinístico always-on + jobs Codex Team automáticos por evento/calendario, sin aprobación por job rutinario. D-020 DECIDED únicamente en dirección Build-vs-Reuse; versiones/permisos/runtime final siguen D-024 RESEARCHING. No implementación, gasto, capacidad sostenida ni autoridad financiera adicional. Plus permanece PRE-LIVE.
 
 Se conserva A+, G1+G2 y ADR-006. Las futuras dependencias obligatorias de Strategy V1 tendrán fallo explícito. No modificación de main ni release de despliegue.
+
+## P1 posterior ADR-011 — reuse y fronteras
+
+[Paquete R-010–014](research/R-010_014_hardening_findings_2026-10-05.md): official SDK/CLI0.160 bundle default probado; wrapper no propio RPC. Seguridad candidata reutiliza controles Windows por dominio (S2), VM reserva; permisos no aprobados. Temporal baseline vs APScheduler/OS investigados como **workflow determinístico**, fuera del límite de frameworks IA; SQLite solo probe, no selección storage. No BUILD motor/audit framework antes de necesidad demostrada. D-024 abierto; R-006 método suficiente para dirección aprobada, capacidad/operación pendiente.

@@ -7,7 +7,7 @@
 
 **Vigencia actual — ADR-010, 2026-10-05:** CURRENT_RESEARCH_ENVIRONMENT=Team; PAPER_RUNTIME_ENVIRONMENT=Team actual; FUTURE_LIVE_ENVIRONMENT=Plus individual candidato. Las cláusulas anteriores que exigían Plus para PAPER/D-020/D-024 quedan parcialmente SUPERSEDED. La evidencia original se conserva; Plus es gate P3 PRE-LIVE (R-029/D-039), sin dependencia para PAPER. Aceptación activa: [Team TP1–7](R-006_team_runtime_acceptance_RC0.md). No selección final ni implementación autorizada.
 
-**Siguiente paquete activo:** TP Team SDK/Skills/tools, recovery sin chat, carga acotada, propuesta comparativa. Las secciones fechadas de waves y endpoints anteriores son históricas y no exigen acceso Plus.
+**Siguiente paquete activo:** hardening P1 de dirección ADR-011, frontera material de seguridad ADR-012 y gates de runtime pendientes. SDK/Skills/recovery/carga acotada y propuesta comparativa anteriores ya tienen evidencia; no repetir discovery entera. Las secciones fechadas de waves y endpoints anteriores son históricas y no exigen acceso Plus.
 
 **Fecha:** 2026-10-01. **Estado:** `RESEARCHING`, P0. **Decisiones:** D-020 (investigación de capacidades) y D-024 (arquitectura agéntica/runtime, `OPEN`). **Alcance aprobado:** [ADR-007](../decisions/ADR-007-r006-openai-anthropic-plus-scope.md). **Límite:** `implementation_locked=true`; este plan solo autoriza documentación y probes desechables.
 
@@ -118,3 +118,7 @@ Madurez: suficiente para propuesta de dirección/cohorte de aceptación, **no** 
 ## Adenda vigente — Environment Bootstrap / Portability
 
 ADR-009 registra aprobación de cohorte candidata RC1, no selección final. Antes de Plus, R-028/D-037 P1 añade inventario/perfiles/paquetes y ruta reproducible fresh clone sin memoria Team. D-024/DoR no cierran sin contrato y evidencia de bootstrap. Procedimientos manuales/programáticos comparten assets; no una sesión por rol obligatoria. [Protocolo R-028](R-028_bootstrap_probe_protocol.md).
+
+## P1 posterior ADR-011 — reuse y fronteras
+
+[Paquete R-010–014](R-010_014_hardening_findings_2026-10-05.md): official SDK/CLI0.160 bundle default probado; wrapper no propio RPC. Seguridad candidata reutiliza controles Windows por dominio (S2), VM reserva; permisos no aprobados. Temporal baseline vs APScheduler/OS investigados como **workflow determinístico**, fuera del límite de frameworks IA; SQLite solo probe, no selección storage. No BUILD motor/audit framework antes de necesidad demostrada. D-024 abierto; R-006 método suficiente para dirección aprobada, capacidad/operación pendiente.

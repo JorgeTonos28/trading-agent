@@ -1,0 +1,20 @@
+{
+  "probe": "RESTORE_EPOCH_TOY",
+  "checks": {
+    "backup_generation_would_match": true,
+    "external_epoch_rejects_old_worker": true,
+    "lost_ack_detected": true,
+    "gap_not_silently_recounted": true
+  },
+  "passed": 4,
+  "total": 4,
+  "decision": {
+    "admission": "REJECTED_INCARNATION",
+    "recovery_status": "RECOVERY_GAP_UNKNOWN",
+    "comparison_eligible": false,
+    "new_financial_action": false,
+    "note": "gap rule specified; no recovery of missing durable evidence actually demonstrated"
+  },
+  "source_sha256": "48e88cf77b40fdf0d12d1c7f03003c78de21c0f0f86e83436a6f34afe2d397b9",
+  "scope": "logical fixture, not real backup/worker fencing; fourth check is policy assignment, not enforcement"
+}

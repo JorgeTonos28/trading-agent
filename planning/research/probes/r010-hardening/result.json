@@ -1,0 +1,1214 @@
+{
+  "probe": "H1_H2_H3_DISPOSABLE",
+  "created_at": "2026-10-05T19:08:00.234472+00:00",
+  "scope": "SQLite semantic/process-crash toy; no engine selection, real financial runtime, OS isolation or LLM quota proof",
+  "source_sha256": "2f3c5c42497efa4019e5789e7c9c589f4a4bb9e2e03c372f6b57f9c68af15669",
+  "checks": [
+    {
+      "id": "child_abrupt_exit_before",
+      "passed": true
+    },
+    {
+      "id": "child_abrupt_exit_after",
+      "passed": true
+    },
+    {
+      "id": "uncommitted_absent",
+      "passed": true
+    },
+    {
+      "id": "committed_survives_process_exit",
+      "passed": true
+    },
+    {
+      "id": "missing_is_no_output",
+      "passed": true
+    },
+    {
+      "id": "hash_mismatch_rejected",
+      "passed": true
+    },
+    {
+      "id": "unknown_identity_rejected",
+      "passed": true
+    },
+    {
+      "id": "old_worker_fenced",
+      "passed": true
+    },
+    {
+      "id": "current_accepted",
+      "passed": true
+    },
+    {
+      "id": "ack_loss_repeat_deduplicated",
+      "passed": true
+    },
+    {
+      "id": "conflicting_output_cannot_replace",
+      "passed": true
+    },
+    {
+      "id": "late_preserved",
+      "passed": true
+    },
+    {
+      "id": "single_admitted",
+      "passed": true
+    },
+    {
+      "id": "all_attempt_receipts_accounted",
+      "passed": true
+    },
+    {
+      "id": "backup_restore_receipts",
+      "passed": true
+    },
+    {
+      "id": "backup_restore_selected",
+      "passed": true
+    },
+    {
+      "id": "sqlite_readonly_write_denied_NOT_OS_ACL",
+      "passed": true
+    },
+    {
+      "id": "tool_extra_arg_rejected",
+      "passed": true
+    },
+    {
+      "id": "tool_unapproved_bundle_rejected",
+      "passed": true
+    },
+    {
+      "id": "simulation_all_40_accounted",
+      "passed": true
+    }
+  ],
+  "sqlite_version": "3.50.4",
+  "financial_interfaces": 0,
+  "simulation_source_sha256": "e31a0c420b8d6f690b300def70295d3d035bca2a288a948c83e4c1ace15d2a38",
+  "simulation_assumptions": "max observed role service; priority queue; no retry/auth/quota/network/OS delays; virtual arrival pattern; not observed 40 LLM jobs",
+  "simulation_runs": [
+    {
+      "multiplier": 1,
+      "required": 40,
+      "accounted": 40,
+      "on_time": 40,
+      "service_seconds": 1117.293,
+      "max_total_shadow_s": 28.256,
+      "jobs": [
+        {
+          "job": "SH0",
+          "role": "shadow",
+          "arrival": 0,
+          "wait_s": 0,
+          "service_s": 28.256,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "job": "PE0",
+          "role": "pedagogy",
+          "arrival": 0,
+          "wait_s": 28.256,
+          "service_s": 25.861,
+          "total_s": 54.117,
+          "on_time": true
+        },
+        {
+          "job": "R1",
+          "role": "research",
+          "arrival": 0,
+          "wait_s": 54.117,
+          "service_s": 18.249,
+          "total_s": 72.366,
+          "on_time": true
+        },
+        {
+          "job": "SH1",
+          "role": "shadow",
+          "arrival": 900,
+          "wait_s": 0,
+          "service_s": 28.256,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "job": "SH2",
+          "role": "shadow",
+          "arrival": 1800,
+          "wait_s": 0,
+          "service_s": 28.256,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "job": "PE1",
+          "role": "pedagogy",
+          "arrival": 1800,
+          "wait_s": 28.256,
+          "service_s": 25.861,
+          "total_s": 54.117,
+          "on_time": true
+        },
+        {
+          "job": "SH3",
+          "role": "shadow",
+          "arrival": 2700,
+          "wait_s": 0,
+          "service_s": 28.256,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "job": "SH4",
+          "role": "shadow",
+          "arrival": 3600,
+          "wait_s": 0,
+          "service_s": 28.256,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "job": "PE2",
+          "role": "pedagogy",
+          "arrival": 3600,
+          "wait_s": 28.256,
+          "service_s": 25.861,
+          "total_s": 54.117,
+          "on_time": true
+        },
+        {
+          "job": "SH5",
+          "role": "shadow",
+          "arrival": 4500,
+          "wait_s": 0,
+          "service_s": 28.256,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "job": "SH6",
+          "role": "shadow",
+          "arrival": 5400,
+          "wait_s": 0,
+          "service_s": 28.256,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "job": "PE3",
+          "role": "pedagogy",
+          "arrival": 5400,
+          "wait_s": 28.256,
+          "service_s": 25.861,
+          "total_s": 54.117,
+          "on_time": true
+        },
+        {
+          "job": "SH7",
+          "role": "shadow",
+          "arrival": 6300,
+          "wait_s": 0,
+          "service_s": 28.256,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "job": "SH8",
+          "role": "shadow",
+          "arrival": 7200,
+          "wait_s": 0,
+          "service_s": 28.256,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "job": "PE4",
+          "role": "pedagogy",
+          "arrival": 7200,
+          "wait_s": 28.256,
+          "service_s": 25.861,
+          "total_s": 54.117,
+          "on_time": true
+        },
+        {
+          "job": "SH9",
+          "role": "shadow",
+          "arrival": 8100,
+          "wait_s": 0,
+          "service_s": 28.256,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "job": "SH10",
+          "role": "shadow",
+          "arrival": 9000,
+          "wait_s": 0,
+          "service_s": 28.256,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "job": "PE5",
+          "role": "pedagogy",
+          "arrival": 9000,
+          "wait_s": 28.256,
+          "service_s": 25.861,
+          "total_s": 54.117,
+          "on_time": true
+        },
+        {
+          "job": "SH11",
+          "role": "shadow",
+          "arrival": 9900,
+          "wait_s": 0,
+          "service_s": 28.256,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "job": "SH12",
+          "role": "shadow",
+          "arrival": 10800,
+          "wait_s": 0,
+          "service_s": 28.256,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "job": "PE6",
+          "role": "pedagogy",
+          "arrival": 10800,
+          "wait_s": 28.256,
+          "service_s": 25.861,
+          "total_s": 54.117,
+          "on_time": true
+        },
+        {
+          "job": "SH13",
+          "role": "shadow",
+          "arrival": 11700,
+          "wait_s": 0,
+          "service_s": 28.256,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "job": "SH14",
+          "role": "shadow",
+          "arrival": 12600,
+          "wait_s": 0,
+          "service_s": 28.256,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "job": "PE7",
+          "role": "pedagogy",
+          "arrival": 12600,
+          "wait_s": 28.256,
+          "service_s": 25.861,
+          "total_s": 54.117,
+          "on_time": true
+        },
+        {
+          "job": "SH15",
+          "role": "shadow",
+          "arrival": 13500,
+          "wait_s": 0,
+          "service_s": 28.256,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "job": "SH16",
+          "role": "shadow",
+          "arrival": 14400,
+          "wait_s": 0,
+          "service_s": 28.256,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "job": "PE8",
+          "role": "pedagogy",
+          "arrival": 14400,
+          "wait_s": 28.256,
+          "service_s": 25.861,
+          "total_s": 54.117,
+          "on_time": true
+        },
+        {
+          "job": "SH17",
+          "role": "shadow",
+          "arrival": 15300,
+          "wait_s": 0,
+          "service_s": 28.256,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "job": "SH18",
+          "role": "shadow",
+          "arrival": 16200,
+          "wait_s": 0,
+          "service_s": 28.256,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "job": "PE9",
+          "role": "pedagogy",
+          "arrival": 16200,
+          "wait_s": 28.256,
+          "service_s": 25.861,
+          "total_s": 54.117,
+          "on_time": true
+        },
+        {
+          "job": "SH19",
+          "role": "shadow",
+          "arrival": 17100,
+          "wait_s": 0,
+          "service_s": 28.256,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "job": "SH20",
+          "role": "shadow",
+          "arrival": 18000,
+          "wait_s": 0,
+          "service_s": 28.256,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "job": "R2",
+          "role": "research",
+          "arrival": 18000,
+          "wait_s": 28.256,
+          "service_s": 18.249,
+          "total_s": 46.505,
+          "on_time": true
+        },
+        {
+          "job": "SH21",
+          "role": "shadow",
+          "arrival": 18900,
+          "wait_s": 0,
+          "service_s": 28.256,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "job": "SH22",
+          "role": "shadow",
+          "arrival": 19800,
+          "wait_s": 0,
+          "service_s": 28.256,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "job": "SH23",
+          "role": "shadow",
+          "arrival": 20700,
+          "wait_s": 0,
+          "service_s": 28.256,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "job": "SH24",
+          "role": "shadow",
+          "arrival": 21600,
+          "wait_s": 0,
+          "service_s": 28.256,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "job": "Q1",
+          "role": "quant",
+          "arrival": 21600,
+          "wait_s": 28.256,
+          "service_s": 61.668,
+          "total_s": 89.924,
+          "on_time": true
+        },
+        {
+          "job": "SH25",
+          "role": "shadow",
+          "arrival": 22500,
+          "wait_s": 0,
+          "service_s": 28.256,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "job": "PD",
+          "role": "pedagogy",
+          "arrival": 23400,
+          "wait_s": 0,
+          "service_s": 25.861,
+          "total_s": 25.861,
+          "on_time": true
+        }
+      ]
+    },
+    {
+      "multiplier": 2,
+      "required": 40,
+      "accounted": 40,
+      "on_time": 40,
+      "service_seconds": 2234.586,
+      "max_total_shadow_s": 56.512,
+      "jobs": [
+        {
+          "job": "SH0",
+          "role": "shadow",
+          "arrival": 0,
+          "wait_s": 0,
+          "service_s": 56.512,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "job": "PE0",
+          "role": "pedagogy",
+          "arrival": 0,
+          "wait_s": 56.512,
+          "service_s": 51.722,
+          "total_s": 108.234,
+          "on_time": true
+        },
+        {
+          "job": "R1",
+          "role": "research",
+          "arrival": 0,
+          "wait_s": 108.234,
+          "service_s": 36.498,
+          "total_s": 144.732,
+          "on_time": true
+        },
+        {
+          "job": "SH1",
+          "role": "shadow",
+          "arrival": 900,
+          "wait_s": 0,
+          "service_s": 56.512,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "job": "SH2",
+          "role": "shadow",
+          "arrival": 1800,
+          "wait_s": 0,
+          "service_s": 56.512,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "job": "PE1",
+          "role": "pedagogy",
+          "arrival": 1800,
+          "wait_s": 56.512,
+          "service_s": 51.722,
+          "total_s": 108.234,
+          "on_time": true
+        },
+        {
+          "job": "SH3",
+          "role": "shadow",
+          "arrival": 2700,
+          "wait_s": 0,
+          "service_s": 56.512,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "job": "SH4",
+          "role": "shadow",
+          "arrival": 3600,
+          "wait_s": 0,
+          "service_s": 56.512,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "job": "PE2",
+          "role": "pedagogy",
+          "arrival": 3600,
+          "wait_s": 56.512,
+          "service_s": 51.722,
+          "total_s": 108.234,
+          "on_time": true
+        },
+        {
+          "job": "SH5",
+          "role": "shadow",
+          "arrival": 4500,
+          "wait_s": 0,
+          "service_s": 56.512,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "job": "SH6",
+          "role": "shadow",
+          "arrival": 5400,
+          "wait_s": 0,
+          "service_s": 56.512,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "job": "PE3",
+          "role": "pedagogy",
+          "arrival": 5400,
+          "wait_s": 56.512,
+          "service_s": 51.722,
+          "total_s": 108.234,
+          "on_time": true
+        },
+        {
+          "job": "SH7",
+          "role": "shadow",
+          "arrival": 6300,
+          "wait_s": 0,
+          "service_s": 56.512,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "job": "SH8",
+          "role": "shadow",
+          "arrival": 7200,
+          "wait_s": 0,
+          "service_s": 56.512,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "job": "PE4",
+          "role": "pedagogy",
+          "arrival": 7200,
+          "wait_s": 56.512,
+          "service_s": 51.722,
+          "total_s": 108.234,
+          "on_time": true
+        },
+        {
+          "job": "SH9",
+          "role": "shadow",
+          "arrival": 8100,
+          "wait_s": 0,
+          "service_s": 56.512,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "job": "SH10",
+          "role": "shadow",
+          "arrival": 9000,
+          "wait_s": 0,
+          "service_s": 56.512,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "job": "PE5",
+          "role": "pedagogy",
+          "arrival": 9000,
+          "wait_s": 56.512,
+          "service_s": 51.722,
+          "total_s": 108.234,
+          "on_time": true
+        },
+        {
+          "job": "SH11",
+          "role": "shadow",
+          "arrival": 9900,
+          "wait_s": 0,
+          "service_s": 56.512,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "job": "SH12",
+          "role": "shadow",
+          "arrival": 10800,
+          "wait_s": 0,
+          "service_s": 56.512,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "job": "PE6",
+          "role": "pedagogy",
+          "arrival": 10800,
+          "wait_s": 56.512,
+          "service_s": 51.722,
+          "total_s": 108.234,
+          "on_time": true
+        },
+        {
+          "job": "SH13",
+          "role": "shadow",
+          "arrival": 11700,
+          "wait_s": 0,
+          "service_s": 56.512,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "job": "SH14",
+          "role": "shadow",
+          "arrival": 12600,
+          "wait_s": 0,
+          "service_s": 56.512,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "job": "PE7",
+          "role": "pedagogy",
+          "arrival": 12600,
+          "wait_s": 56.512,
+          "service_s": 51.722,
+          "total_s": 108.234,
+          "on_time": true
+        },
+        {
+          "job": "SH15",
+          "role": "shadow",
+          "arrival": 13500,
+          "wait_s": 0,
+          "service_s": 56.512,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "job": "SH16",
+          "role": "shadow",
+          "arrival": 14400,
+          "wait_s": 0,
+          "service_s": 56.512,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "job": "PE8",
+          "role": "pedagogy",
+          "arrival": 14400,
+          "wait_s": 56.512,
+          "service_s": 51.722,
+          "total_s": 108.234,
+          "on_time": true
+        },
+        {
+          "job": "SH17",
+          "role": "shadow",
+          "arrival": 15300,
+          "wait_s": 0,
+          "service_s": 56.512,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "job": "SH18",
+          "role": "shadow",
+          "arrival": 16200,
+          "wait_s": 0,
+          "service_s": 56.512,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "job": "PE9",
+          "role": "pedagogy",
+          "arrival": 16200,
+          "wait_s": 56.512,
+          "service_s": 51.722,
+          "total_s": 108.234,
+          "on_time": true
+        },
+        {
+          "job": "SH19",
+          "role": "shadow",
+          "arrival": 17100,
+          "wait_s": 0,
+          "service_s": 56.512,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "job": "SH20",
+          "role": "shadow",
+          "arrival": 18000,
+          "wait_s": 0,
+          "service_s": 56.512,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "job": "R2",
+          "role": "research",
+          "arrival": 18000,
+          "wait_s": 56.512,
+          "service_s": 36.498,
+          "total_s": 93.01,
+          "on_time": true
+        },
+        {
+          "job": "SH21",
+          "role": "shadow",
+          "arrival": 18900,
+          "wait_s": 0,
+          "service_s": 56.512,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "job": "SH22",
+          "role": "shadow",
+          "arrival": 19800,
+          "wait_s": 0,
+          "service_s": 56.512,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "job": "SH23",
+          "role": "shadow",
+          "arrival": 20700,
+          "wait_s": 0,
+          "service_s": 56.512,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "job": "SH24",
+          "role": "shadow",
+          "arrival": 21600,
+          "wait_s": 0,
+          "service_s": 56.512,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "job": "Q1",
+          "role": "quant",
+          "arrival": 21600,
+          "wait_s": 56.512,
+          "service_s": 123.336,
+          "total_s": 179.848,
+          "on_time": true
+        },
+        {
+          "job": "SH25",
+          "role": "shadow",
+          "arrival": 22500,
+          "wait_s": 0,
+          "service_s": 56.512,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "job": "PD",
+          "role": "pedagogy",
+          "arrival": 23400,
+          "wait_s": 0,
+          "service_s": 51.722,
+          "total_s": 51.722,
+          "on_time": true
+        }
+      ]
+    },
+    {
+      "multiplier": 4,
+      "required": 40,
+      "accounted": 40,
+      "on_time": 40,
+      "service_seconds": 4469.172,
+      "max_total_shadow_s": 113.024,
+      "jobs": [
+        {
+          "job": "SH0",
+          "role": "shadow",
+          "arrival": 0,
+          "wait_s": 0,
+          "service_s": 113.024,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "job": "PE0",
+          "role": "pedagogy",
+          "arrival": 0,
+          "wait_s": 113.024,
+          "service_s": 103.444,
+          "total_s": 216.468,
+          "on_time": true
+        },
+        {
+          "job": "R1",
+          "role": "research",
+          "arrival": 0,
+          "wait_s": 216.468,
+          "service_s": 72.996,
+          "total_s": 289.464,
+          "on_time": true
+        },
+        {
+          "job": "SH1",
+          "role": "shadow",
+          "arrival": 900,
+          "wait_s": 0,
+          "service_s": 113.024,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "job": "SH2",
+          "role": "shadow",
+          "arrival": 1800,
+          "wait_s": 0,
+          "service_s": 113.024,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "job": "PE1",
+          "role": "pedagogy",
+          "arrival": 1800,
+          "wait_s": 113.024,
+          "service_s": 103.444,
+          "total_s": 216.468,
+          "on_time": true
+        },
+        {
+          "job": "SH3",
+          "role": "shadow",
+          "arrival": 2700,
+          "wait_s": 0,
+          "service_s": 113.024,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "job": "SH4",
+          "role": "shadow",
+          "arrival": 3600,
+          "wait_s": 0,
+          "service_s": 113.024,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "job": "PE2",
+          "role": "pedagogy",
+          "arrival": 3600,
+          "wait_s": 113.024,
+          "service_s": 103.444,
+          "total_s": 216.468,
+          "on_time": true
+        },
+        {
+          "job": "SH5",
+          "role": "shadow",
+          "arrival": 4500,
+          "wait_s": 0,
+          "service_s": 113.024,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "job": "SH6",
+          "role": "shadow",
+          "arrival": 5400,
+          "wait_s": 0,
+          "service_s": 113.024,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "job": "PE3",
+          "role": "pedagogy",
+          "arrival": 5400,
+          "wait_s": 113.024,
+          "service_s": 103.444,
+          "total_s": 216.468,
+          "on_time": true
+        },
+        {
+          "job": "SH7",
+          "role": "shadow",
+          "arrival": 6300,
+          "wait_s": 0,
+          "service_s": 113.024,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "job": "SH8",
+          "role": "shadow",
+          "arrival": 7200,
+          "wait_s": 0,
+          "service_s": 113.024,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "job": "PE4",
+          "role": "pedagogy",
+          "arrival": 7200,
+          "wait_s": 113.024,
+          "service_s": 103.444,
+          "total_s": 216.468,
+          "on_time": true
+        },
+        {
+          "job": "SH9",
+          "role": "shadow",
+          "arrival": 8100,
+          "wait_s": 0,
+          "service_s": 113.024,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "job": "SH10",
+          "role": "shadow",
+          "arrival": 9000,
+          "wait_s": 0,
+          "service_s": 113.024,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "job": "PE5",
+          "role": "pedagogy",
+          "arrival": 9000,
+          "wait_s": 113.024,
+          "service_s": 103.444,
+          "total_s": 216.468,
+          "on_time": true
+        },
+        {
+          "job": "SH11",
+          "role": "shadow",
+          "arrival": 9900,
+          "wait_s": 0,
+          "service_s": 113.024,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "job": "SH12",
+          "role": "shadow",
+          "arrival": 10800,
+          "wait_s": 0,
+          "service_s": 113.024,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "job": "PE6",
+          "role": "pedagogy",
+          "arrival": 10800,
+          "wait_s": 113.024,
+          "service_s": 103.444,
+          "total_s": 216.468,
+          "on_time": true
+        },
+        {
+          "job": "SH13",
+          "role": "shadow",
+          "arrival": 11700,
+          "wait_s": 0,
+          "service_s": 113.024,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "job": "SH14",
+          "role": "shadow",
+          "arrival": 12600,
+          "wait_s": 0,
+          "service_s": 113.024,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "job": "PE7",
+          "role": "pedagogy",
+          "arrival": 12600,
+          "wait_s": 113.024,
+          "service_s": 103.444,
+          "total_s": 216.468,
+          "on_time": true
+        },
+        {
+          "job": "SH15",
+          "role": "shadow",
+          "arrival": 13500,
+          "wait_s": 0,
+          "service_s": 113.024,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "job": "SH16",
+          "role": "shadow",
+          "arrival": 14400,
+          "wait_s": 0,
+          "service_s": 113.024,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "job": "PE8",
+          "role": "pedagogy",
+          "arrival": 14400,
+          "wait_s": 113.024,
+          "service_s": 103.444,
+          "total_s": 216.468,
+          "on_time": true
+        },
+        {
+          "job": "SH17",
+          "role": "shadow",
+          "arrival": 15300,
+          "wait_s": 0,
+          "service_s": 113.024,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "job": "SH18",
+          "role": "shadow",
+          "arrival": 16200,
+          "wait_s": 0,
+          "service_s": 113.024,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "job": "PE9",
+          "role": "pedagogy",
+          "arrival": 16200,
+          "wait_s": 113.024,
+          "service_s": 103.444,
+          "total_s": 216.468,
+          "on_time": true
+        },
+        {
+          "job": "SH19",
+          "role": "shadow",
+          "arrival": 17100,
+          "wait_s": 0,
+          "service_s": 113.024,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "job": "SH20",
+          "role": "shadow",
+          "arrival": 18000,
+          "wait_s": 0,
+          "service_s": 113.024,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "job": "R2",
+          "role": "research",
+          "arrival": 18000,
+          "wait_s": 113.024,
+          "service_s": 72.996,
+          "total_s": 186.02,
+          "on_time": true
+        },
+        {
+          "job": "SH21",
+          "role": "shadow",
+          "arrival": 18900,
+          "wait_s": 0,
+          "service_s": 113.024,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "job": "SH22",
+          "role": "shadow",
+          "arrival": 19800,
+          "wait_s": 0,
+          "service_s": 113.024,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "job": "SH23",
+          "role": "shadow",
+          "arrival": 20700,
+          "wait_s": 0,
+          "service_s": 113.024,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "job": "SH24",
+          "role": "shadow",
+          "arrival": 21600,
+          "wait_s": 0,
+          "service_s": 113.024,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "job": "Q1",
+          "role": "quant",
+          "arrival": 21600,
+          "wait_s": 113.024,
+          "service_s": 246.672,
+          "total_s": 359.696,
+          "on_time": true
+        },
+        {
+          "job": "SH25",
+          "role": "shadow",
+          "arrival": 22500,
+          "wait_s": 0,
+          "service_s": 113.024,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "job": "PD",
+          "role": "pedagogy",
+          "arrival": 23400,
+          "wait_s": 0,
+          "service_s": 103.444,
+          "total_s": 103.444,
+          "on_time": true
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "no power-loss test",
+    "no PostgreSQL/Temporal test",
+    "no host permission enforcement",
+    "no native 40-job or sustained quota acceptance",
+    "toy output strings, no financial/schema validation"
+  ],
+  "passed": 20,
+  "total": 20,
+  "cleanup": "temporary workspace closed"
+}

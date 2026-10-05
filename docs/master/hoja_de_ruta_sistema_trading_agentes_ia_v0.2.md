@@ -4802,3 +4802,7 @@ La primera meta no es maximizar retorno. La primera meta es tener **un plan en e
 **Vigencia ADR-011 — 2026-10-05:** propietario aprobó opción A y disposiciones RC2 como dirección de diseño PAPER: núcleo financiero local determinístico always-on + jobs Codex Team automáticos por evento/calendario, sin aprobación por job rutinario. D-020 DECIDED únicamente en dirección Build-vs-Reuse; versiones/permisos/runtime final siguen D-024 RESEARCHING. No implementación, gasto, capacidad sostenida ni autoridad financiera adicional. Plus permanece PRE-LIVE.
 
 Se conserva A+, G1+G2 y ADR-006. Las futuras dependencias obligatorias de Strategy V1 tendrán fallo explícito. No modificación de main ni release de despliegue.
+
+## Enmienda de especificación P1 posterior ADR-011 — 2026-10-05
+
+Contratos candidatos 08 seguridad/workflow/audit añaden triggers automáticos, estados versionados, fencing/incarnation y scopes de evidencia, sin modificar A+, G1+G2 ni ADR-006. Revisión independiente documentada R-010_014 con hallazgos/remediaciones; motor, permisos y capacidad final siguen abiertos. ADR-012 propone S2 dominios Windows versus S3 VM, aún requiere gobierno. Probes sintéticos/nativos acotados no son implementación del Trading OS ni sustituyen DoR/gates de PAPER. Plus sigue PRE-LIVE.

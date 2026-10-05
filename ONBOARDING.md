@@ -43,3 +43,7 @@ ADR-010: preparación y probes usan commits pinados de plan-architect. main cons
 ## Evidencia de planificación disponible
 
 [Perfil PAPER Team RC0](planning/research/probes/r006-team-paper/environment-profile-PAPER-Team-RC0.json) describe el fresh clone c53a130 probado con SDK, no una release actual aprobada. Readiness PARTIAL; root/rol/Skill y target Team verificados, selección/seguridad/operación pendientes. No importar como aprobado un gate cuyo fingerprint haya cambiado.
+
+## Contratos y checkpoint de seguridad posteriores ADR-011
+
+ADR-011 A y disposiciones de diseño aprobados; final D-024 abierto. Revisar [seguridad](planning/08_agent_security_contract_RC0.md), [workflow/recovery](planning/08_job_workflow_recovery_contract_RC0.md) y [audit/versiones](planning/08_audit_versions_deployment_contract_RC0.md). Runtime de jobs será event/schedule-driven automático; uso manual de carpetas sirve preparación y no equivale a scheduler operacional. ADR-012 propone dominios Windows dedicados; aún no aprobados/configurados. Setup con identidad/ACL/red requiere pasos concretos y gobierno, jamás copia de broker/Codex secrets. Smoke default SDK0.160 en Team no cambia perfil observado PARTIAL ni demuestra entorno con aislamiento.

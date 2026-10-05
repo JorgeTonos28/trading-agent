@@ -5,7 +5,7 @@
 1. **D-038 DECIDED:** registrar supersession ADR-010, perfiles/contratos/gates y source policy; commit/push.
 2. **Paquete focal Team completado:** wave07 8/8, SDK bootstrap 14/14 y 16 checks consolidación; RC2/perfil PARTIAL. D-020 DECIDED en disposiciones ADR-011; D-024 RESEARCHING y no freeze.
 3. **ADR-011 A DECIDED:** dirección core local + jobs Team automáticos por eventos/calendario y disposiciones RC2 aprobadas. No nueva aprobación por job rutinario, ni freeze/implementación.
-4. **Paquete autónomo activo R-010–014:** contratos de aislamiento/permisos, workflow/recovery, storage/audit, versiones/deploy y criterios/capacidad P1; revisión independiente. Comparar alternativas antes de pedir gobierno de arquitectura material D-027/D-024. Revisión crítica independiente requerida antes de freeze; no fingir reviewer independiente.
+4. **Paquete autónomo R-010–014 especificado/probado en alcance de preparación:** contratos de aislamiento/permisos, workflow/recovery, storage/audit, versiones/deploy y criterios/capacidad P1; revisión independiente. Comparar alternativas antes de pedir gobierno de arquitectura material D-027/D-024. Revisión crítica independiente requerida antes de freeze; no fingir reviewer independiente.
 5. Después, siguiente P0 R-020/D-008 (preregistro/candidatos/Strategy V1), D-011, y R-007/008/009/025 datos/broker/quant/Smart Money; contratos D-021–029/033–035 y seguridad. No seleccionar broker/estrategia/umbrales ni gastar sin gobierno correspondiente.
 6. Completar DoR: P0/P1 cerrados, contratos/protocolos/stack aprobados, bootstrap Team reproducible y review/freeze. Solo entonces implementar.
 7. Validación P2: integración financiera/aislamiento/workflow, backtests y operación PAPER con workload definitivo, cuotas/ventanas reales, pedagogía y shadow; límites numéricos/promotion gates aprobados.
@@ -57,3 +57,7 @@ Source: plan-architect candidato; main baseline aprobado; deployment desde relea
 5. Review/seguridad y gobierno final D-020/D-024/037; runtime/topología aún abiertos. La ruta bootstrap es condición DoR explícita. R-020/D-008 y demás trabajo independiente siguen válidos; no implementar Trading OS.
 
 **Endpoint R-028 alcanzado:** diseño/paquetes/probes nativos y fresh clone/reporte PARTIAL completados y persistidos; próximo gate requiere cuenta Plus real para GP/EB target. Cohorte ya aprobada; no final runtime. Scope del paquete independiente de entitlement agotado; solicitar acceso conforme Autonomous Continuation Rule. No implica pausa global de Preparation ni cierre de R-020/otras investigaciones.
+
+## Checkpoint material posterior ADR-011
+
+Contratos/probes/review P1 documentados en dossier R-010_014. Endpoint siguiente: ADR-012 dirección material S2 vs S3; no aprobación por job ni Plus. Antes del checkpoint se avanzó preregistro independiente R-020; Strategy V1 sigue OPEN. Tras dirección: config/permisos concretos, probe aislamiento real, motor/store final, carga representativa y revisión del paquete antes de D-024; no freeze por smoke.

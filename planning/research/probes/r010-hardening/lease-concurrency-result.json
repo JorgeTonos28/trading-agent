@@ -1,0 +1,63 @@
+{
+  "probe": "H2_LEASE_RACE_ADDITIONAL",
+  "source_sha256": "104e0d11ac1577a294c19f8660b498eff10818b1bdc7ebdb06edaa38568c46c3",
+  "scope": "toy transactional semantics; virtual timestamps and lease identities; no real worker lease renewal/auth/OS proof",
+  "checks": [
+    {
+      "id": "both_threads_finish",
+      "passed": true
+    },
+    {
+      "id": "concurrent_receipts_exactly_one_selected",
+      "passed": true
+    },
+    {
+      "id": "lease_expiry_rejects",
+      "passed": true
+    },
+    {
+      "id": "cancelled_rejects",
+      "passed": true
+    },
+    {
+      "id": "exhausted_rejects",
+      "passed": true
+    },
+    {
+      "id": "wrong_owner_rejects",
+      "passed": true
+    },
+    {
+      "id": "wrong_attempt_rejects",
+      "passed": true
+    },
+    {
+      "id": "stale_generation_rejects",
+      "passed": true
+    },
+    {
+      "id": "late_is_retrospective",
+      "passed": true
+    },
+    {
+      "id": "all_nine_receipts_accounted",
+      "passed": true
+    },
+    {
+      "id": "only_race_has_selected_output",
+      "passed": true
+    }
+  ],
+  "passed": 11,
+  "total": 11,
+  "race_verdicts": [
+    "ACCEPTED_ON_TIME",
+    "DUPLICATE"
+  ],
+  "limitations": [
+    "no concurrent cancellation race executed",
+    "no clock-drift/reboot test",
+    "no PostgreSQL/Temporal proof"
+  ],
+  "cleanup": "temporary workspace closed"
+}

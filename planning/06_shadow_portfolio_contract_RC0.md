@@ -58,3 +58,7 @@ Antes de PAPER: frontera técnica aislada de Risk/Execution, trusted role/schema
 ## 6. Build vs. Reuse
 
 Recomendación C-017b: **ADAPT** thesis-tracker Apache-2.0 (commit 574ed362) como procedimiento breve; mantener tesis/catalyst/falsifier, retirar autoridad original. C-010 mínimo es baseline. `jsonschema` y Decimal se reutilizan para probes. Transporte C-025a **WRAP** candidato; MCP **WRAP** reserva si interoperabilidad material. Engine/eval libraries no elegidos: R-009 antes de construir simulador/portfolio analytics. No construir motor de cartera en preparación. Referencia del activo y atribución están en la Skill desechable/wave 05.
+
+## Vigencia de entrega posterior ADR-011 / hardening RC0
+
+Dirección core local + jobs Team automáticos aprobada; D-020 DECIDED en disposiciones de diseño, D-024 RESEARCHING. Textos anteriores de siguiente Plus/selección pendiente son historia de sus hitos. Plus solo PRE-LIVE ADR-010. [Workflow/recovery y mapping delivery-contract-v2](08_job_workflow_recovery_contract_RC0.md) separa workflow/attempt de enums de entrega originales, que se conservan para probes v1; no cambia content_status ni autoridad. Leases/identidades/epoch/namespace se validan fuera del modelo; no-output no es HOLD. Permisos finales y motor permanecen abiertos.

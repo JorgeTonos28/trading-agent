@@ -53,3 +53,9 @@ El propietario declaró el 2026-10-01 que **nunca se ejecutaron ni consultaron r
 **A-030 actualizado R-028:** PARTIAL — CLI Team probó root+rol y Skill en fixture, metadata y cinco respuestas; carpeta aislada no hereda. No generalizar a cada superficie/config/Plus; fresh clone real y target quedan pendientes. A-031 sigue parcial: assets versionados se transportan, auth/servicios externos no.
 
 **A-030/031 tras fresh clone:** CLI app-server confirmó seis cadenas raíz+rol y Skill común; dos roles respondieron invariantes. Assets Git portables comprobados, con 31 cambios EOL del checkout; auth/localtools siguen prerequisitos externos. Desktop UI/SDK directo y Plus no demostrados. No tratar raw worktree hash como identidad portable.
+
+## Supuestos adicionales P1 — hardening
+
+| A-033 | P1 | UNVERIFIED: identidades/ACL/IPC/egress Windows por dominio pueden aislar todo SDK/app-server/handlers y mantener Team login legítimo sin filtrar Champion/holdout/secrets. | S2 propuesta ADR-012; aprobación y probe empírico antes de freeze. Native sandbox de comandos no demuestra proceso completo. |
+| A-034 | P1 | PARTIAL: SDK/CLI0.160 publicado emparejado soporta roles/Skills/tools necesarios. | H4 2/2 research/shadow correctos, no todos los roles/requests/OS ni cuota sostenida; pin final abierto. |
+| A-035 | P1 | UNVERIFIED: prioridad y una cola no preemptiva bastan para demanda PAPER. | H3 virtual muestra fallos de deadline en burst/carga amplificada; no seleccionar concurrencia por promedio ni falsificar capacidad nativa. |

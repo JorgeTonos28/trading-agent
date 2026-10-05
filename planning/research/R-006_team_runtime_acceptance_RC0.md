@@ -1,6 +1,6 @@
 # R-006 — Team Runtime Acceptance & Architecture Readiness RC0
 
-2026-10-05. PAPER_RUNTIME_ENVIRONMENT = **Team actual**, ADR-010. Cohorte RC1 aprobada para evaluación; selección final D-020/D-024 abierta. No dependencias de Plus para PAPER.
+2026-10-05. PAPER_RUNTIME_ENVIRONMENT = **Team actual**, ADR-010. ADR-011 A y disposiciones RC2 aprobadas para diseño; D-020 DECIDED en ese alcance. D-024 y controles finales siguen abiertos. No dependencias de Plus para PAPER.
 
 ## Tres niveles de evidencia
 
@@ -34,6 +34,10 @@ EB1–8 se evalúan contra Team para PAPER. EB7 ahora depende de TP1–7, no GP 
 
 No cierre automático de D-020/D-024, ni implementación ni selección de Strategy/broker/datos/umbrales. Un problema en componente opcional no exige instalarlo ni pausa discovery.
 
-## Estado posterior — wave07
+## Hito histórico antes de aprobación ADR-011 — wave07
 
 8/8 jobs y SDK/bootstrap 14/14 verifican factibilidad acotada y fresh clone; 16 checks consolidan evidencia y recepción offline. TP3/5/6 focales cubiertos en ese scope; TP4 seguridad real, TP5 durable/auth y TP6 carga sostenida siguen pendientes por etapa. RC2/ADR-011 listos para decisión material; perfil PARTIAL, SELECTED=NO.
+
+## Paquete P1 posterior ADR-011
+
+Contratos 08 seguridad/workflow/audit: permisos materiales D-027 requieren gobierno y probe de viabilidad empírico bajo frontera elegida antes de freeze, no solo protocolo P2 pendiente. SDK/CLI publicados emparejados H4 aporta regresión focal, no capacidad sostenida. H1/H2 SQLite prueba semántica/desconexión/race toy; H3 simulado no aprueba TP6. D-025/026 exigen evidencia de motor escogido; RPO/restore y autenticación integrada P2. Review independiente documentada en R-010_014 dossier, no auditoría humana/aprobación final.

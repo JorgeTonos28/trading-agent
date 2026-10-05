@@ -75,3 +75,9 @@ Estados: cada Q muestra su prioridad; Q-030–Q-037 incluyen estado explícito. 
 **Q-044 estado posterior:** contrato y fresh-clone route documentados/probados en CLI Team (metadata 6, smoke 2). Quedan superficie/entitlement/operación target, full EB y permisos/runtime finales; evidencia parcial no cierra D-037.
 
 - Q-045 (P3, D-039, DEFERRED): ¿qué deltas y suficiencia operacional requiere migrar el sistema validado Team a Plus candidato antes de LIVE? Activar R-029 cuando proceda, sin esperar ahora.
+
+## P1 posterior ADR-011 — hardening
+
+- Q-046 (P1, D-027, READY_FOR_DECISION en dirección): ¿aprobamos S2 — identidades Windows por dominio para SDK/app-server, shadow separado y core fuera — o preferimos VM S3? Evidencia, trade-offs y alcance exacto en ADR-012. No permisos/setup concedidos.
+- Q-047 (P1, D-025/026, RESEARCHING): ¿qué motor/store, fencing/epoch y restore cumplen recepción at-most-once y conservación audit/PIT? Contratos 08 y probes toy reducen ambigüedad, motor final sigue pendiente.
+- Q-042 avance: scheduler automático aprobado en ADR-011; cola/prioridad/concurrencia/plazos/cupo permanecen candidatos. Background largo puede bloquear shadow; workloads reales y retries con deadline original son gate, no 63 éxitos simulados.

@@ -64,3 +64,9 @@ Todos los riesgos salvo K-018 siguen `OPEN`; una arquitectura aprobada aún requ
 **K-045/046, evidencia inicial R-028:** root/nested/aislado/override y Skills probados en fixture Team; 31 checks offline. No cierre por prompt/schema. Cleanup WinError 32 tras inferencia añade caso lifecycle a EB6/GP5; nuevo entorno requiere evidencia propia.
 
 **K-045/046 tras fresh clone:** seis paquetes correctamente descubiertos y dos smoke con bloqueo/autoridad; 31 deltas CRLF/LF exigen hashes Git del commit + observación local separada. Errores de cleanup y manifest hash preservados. Perfil PARTIAL, full target gates y modelo de seguridad siguen abiertos.
+
+## Riesgos adicionales P1 — hardening (OPEN)
+
+| K-048 | P1 | Trabajo background largo bloquea shadow pese a prioridad; retries/interaction agotan cuota o deadlines | Media/Alta | Separar queue/service/total, gate burst durante quant, parent/deadline originales, dimensionamiento real; scheduler/concurrencia final pendientes | Architecture/Operations |
+| K-049 | P1 | Identidad/namespace compartido revela Champion al shadow o holdout confirmatorio a research/quant | Media/Alta | Dominios ACL/export mínimo, admission y store externo; prueba lectura prohibida antes de freeze, no garantía por prompt | Security/Quant |
+| K-050 | P1 | Restore revive lease viejo o reacepta/recuenta output perdido por RPO | Media/Alta | Incarnation externo en envelope, job ID/manifest histórico intactos, fencing y RECOVERY_GAP/UNKNOWN; restauración real del motor final | Operations/Architecture |
