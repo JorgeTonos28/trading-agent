@@ -116,3 +116,7 @@ Fichas económicas y lock-in/salidas/carga por cohorte en [shortlist §3](resear
 | C-029 Codex SDK | UNKNOWN workflow Plus; YES software | 0 licencia; potencial quota incluida/local por medir | UNKNOWN fijo/variable/mensual/escala | C-025a/C-010 con gates | Continuidad/capacidad/control como hipótesis futura, no probado | YES antes de gasto |
 
 [Ficha SDK y fallos preservados](research/R-006_codex_sdk_findings_2026-10-05.md): primer intento enum del harness mal nombrado, antes de inferencia; segundo smoke pasa. No actualizar CLI/config/auth del propietario para probarlo. Cohorte final propuesta C-010, C-025a/C-029 como **familia alternativa de transporte**, C-017a/b, C-024 y C-028; MCP/Data reservados por necesidad. C-017a/b son ADAPT y traslado metodológico PORT; full wrappers/premium reference, no entitlement importado. [Plus Gate RC2](research/R-006_plus_runtime_gate_RC0.md) verifica finalistas con workload; seguridad/engine/Strategy V1/DoD/review son otros gates.
+
+## Gate vigente de portabilidad — 2026-10-05
+
+Cohorte RC1 aprobada solo para aceptación; SELECTED=NO. ADR-009 añade D-037/R-028 P1, onboarding/perfiles/paquetes y gate previo D-024/DoR. Entitlement Plus no se deduce de Team ni de un clone. Mecanismos nativos de AGENTS/Skills/inventory/config se investigan antes de proponer instalador propio.

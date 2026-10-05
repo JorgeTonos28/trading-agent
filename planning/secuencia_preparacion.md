@@ -30,3 +30,11 @@
 **Estado vigente R-006 2026-10-05:** [shortlist RC1](research/R-006_shortlist_RC1.md) tras completar pasos autónomos 1–2 de RC0: contratos por rol/shadow/pedagogía, workload y matriz; wave 06 y transporte Codex SDK nativo probados. No parar tras resumen dentro de un paquete abierto: aplicar Autonomous Continuation Rule, persistir/commit/push y avanzar. Endpoint de este paquete R-006 alcanzado; siguiente acción es dirección candidata material y acceso Plus, sin final selección/freeze de D-020/024. Gate target limitado a finalistas; no repetir discovery completo.
 
 **Después de intervención:** confirmar dirección candidata y sesión Plus, escoger wrapper oficial adecuado al contrato/tools, ejecutar GP1–7 y demanda representativa; review independiente/seguridad y paquete final D-020/D-024. Strategy V1 demanda puede rebaselinar workload antes de freeze. R-020/D-008 continúa como siguiente P0 de preparación (preregistro/candidatos, sin backtests no aprobados), con R-025/R-007/R-008/009 y contratos de integración en su orden. Contratos financieros y futuras investigaciones independientes no quedan cancelados por acceso Plus pendiente; cada paquete tendrá endpoint explícito. Trading OS sigue sin implementar.
+
+## Secuencia vigente — requisito de portabilidad 2026-10-05
+
+1. Cohorte RC1 aprobada para aceptación; no volver a pedir esta aprobación ni cerrar D-020/D-024.
+2. **Ahora R-028/D-037 P1**, dependiente del gate arquitectónico: fuente oficial, contrato de onboarding/perfiles/paquetes, probes Team/fresh clone y diferencias/readiness offline. Requisito ADR-009 aprobado.
+3. Persistir/sincronizar evidencias y deltas de R-006/GP; continuar todo trabajo de este paquete que no dependa de entitlement/gobierno.
+4. Plus Acceptance GP1–7 más gate de portabilidad usando entorno objetivo y assets del clone. Acceso requiere acción del dueño; no transferir auth Team. Reutilizar evidencia conductual, repetir solo diferencias relevantes.
+5. Review/seguridad y gobierno final D-020/D-024/037; runtime/topología aún abiertos. La ruta bootstrap es condición DoR explícita. R-020/D-008 y demás trabajo independiente siguen válidos; no implementar Trading OS.

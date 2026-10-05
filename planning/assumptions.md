@@ -34,6 +34,9 @@ Las hipótesis siguientes **no** son decisiones aprobadas. Su posible falsedad t
 | A-028 | P1 | **UNVERIFIED:** WL-R propuesto (40 jobs base/día, hasta 63 con interacción/reserva) y deadlines serán representativos/sostenibles en Plus. Es parámetro experimental, no cuota/SLA ni cadencia Strategy V1. | Rebaselinar demanda tras D-008 y medir GP6 sin reducir obligaciones o activar billing. |
 | A-029 | P1 | **PARTIAL:** Codex SDK Python oficial puede reemplazar transporte propio; un smoke Team 7/7 y auth/schema compatibles, sin tool callbacks/full Skills/state/recovery probados. | SDK si cubre job contract; gap documentado justifica raw app-server/otra integración Tier 0/1, no construir por defecto. |
 
+| A-030 | P1 | UNVERIFIED: abrir un paquete como cwd conserva automáticamente reglas raíz y Skills compartidas en todas las superficies/versiones. Documentación establece condiciones Git root/cwd/override y límite; R-028 lo prueba. | Verificar cadena/activación; entry point explicita raíz y contratos cuando discovery falla. No confundir instrucciones con ACL. |
+| A-031 | P1 | UNVERIFIED: un clone y los assets públicos bastan para reproducir el entorno, aunque auth, dependencias, plugins, MCP y cuotas son externos. | Manifest/perfil/deltas y gates separados; disponibilidad Team no transfiere a Plus. |
+
 ## Hechos de baseline, no supuestos
 
 La hoja declara el bloqueo de implementación, el invariante financiero, primera operación PAPER y autoridad humana sobre promoción/riesgo/live. Son reglas del proyecto hasta cambio documentado y aprobado; no afirmaciones sobre rendimiento de mercado.

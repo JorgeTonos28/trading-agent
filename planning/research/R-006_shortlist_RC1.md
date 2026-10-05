@@ -89,3 +89,7 @@ Si Plus falla: diagnosticar antes de descartar. Rediseño de carga Tier 0/1 solo
 **Input posterior necesario:** habilitar una sesión de la cuenta **Plus individual objetivo** para GP1–7. Hasta entonces `AVAILABLE_IN_TARGET_PLUS=UNKNOWN`. Recomendación principal frente a desktop/manual: ofrece camino medible a cobertura shadow/report autónoma sin depender de un LLM permanente; la cuenta objetivo y criterios propuestos deben confirmarla. No iniciar el gate ni cambiar autenticación de esta cuenta Team automáticamente.
 
 Tras decisión/acceso: registrar orientación aprobada sin dar por cerradas selecciones; smoke finalistas y workload, review independiente/seguridad, comparativa final para D-020/024; mientras no afecte el bloqueo, seguir R-020/D-008 y plataforma/datos según secuencia, sin implementar.
+
+## 8. Actualización vigente — cohorte candidata aprobada y portabilidad
+
+El propietario aprobó la **cohorte** para continuar hacia Plus Acceptance; no aprobó selección final/freeze D-020/D-024 ni necesariamente toda la dirección arquitectónica de §3/§7. El pedido de aprobación de cohorte de §7 queda atendido en ese alcance. ADR-009 añade R-028/D-037 P1 antes de continuar: onboarding reproducible y paquetes por rol, sin fijar sesiones/proyectos ni runtime. Plus no se ejecuta en Team. La nueva secuencia y gate prevalecen sobre el endpoint histórico de este documento.

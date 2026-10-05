@@ -70,6 +70,8 @@ baseline_decisions:
     result: PAPER V1 deterministic risk uses the most restrictive applicable independent exposure/cash, estimated protection, gap/slippage, liquidity and concurrent-reservation constraints; no numerical policy approved
   - id: ADR-007
     result: R-006 agentic layer limited to OpenAI and Anthropic; target individual Plus and public assets preferred for PAPER, Team research is not target evidence; paid execution requires ADR-008 approval
+  - id: ADR-009
+    result: Candidate cohort approved for acceptance only; reproducible environment bootstrap and reusable role packages required before D-024 and DoR
   - id: ADR-008
     result: PAPER zero_or_low_incremental_cost_first; LIVE economic_value_first; paid services research allowed, explicit approval before spend; free_or_included_or_self_created methodology acquisition only
 strategy_v1:
@@ -190,7 +192,8 @@ capability_discovery:
   native_codex_sdk_smoke_checks: 7
   no_general_Skill_superiority_demonstrated: true
   autonomous_RC0_steps_1_and_2: COMPLETE_SPECIFICATION_AND_FOCUSED_SYNTHETIC_PROBES
-  next_package_action: HUMAN_ACTION_REQUIRED_candidate_direction_and_target_Plus_access
+  candidate_cohort_owner_approval: APPROVED_FOR_ACCEPTANCE_NOT_FINAL_SELECTION
+  next_package_action: R028_bootstrap_portability_autonomous_design_and_probes
   independent_coverage_gaps: security_independent_review_full_financial_and_pedagogical_integration_not_closed
   proposed_architecture_direction: deterministic_local_always_on_core_plus_intermittent_Codex_jobs_NOT_APPROVED_OR_FROZEN
   representative_workload: WL_R_proposed_test_profile_40_base_jobs_63_with_reserve_NOT_STRATEGY_CADENCE
@@ -249,3 +252,18 @@ governance:
   closure_rule: No P0/P1 open, every Definition of Ready gate evidenced, independent critical review, owner approval and plan freeze
   source_of_truth: planning/ registers plus approved master plan and ADRs
   creator_performance_claims: Record as unverified when applicable; no dedicated audit unless necessary for a project decision
+
+environment_portability:
+  requirement: APPROVED_ADR009
+  decision: D-037
+  research: R-028
+  priority: P1
+  design_status: RESEARCHING
+  gates: [D-020, D-024, Definition_of_Ready]
+  CURRENT_RESEARCH_ENVIRONMENT: Team_research_only
+  TARGET_PLUS_ENVIRONMENT: individual_Plus_alias_TARGET_RUNTIME_ENVIRONMENT
+  FUTURE_LIVE_ENVIRONMENT: UNSELECTED_separate_live_gates
+  candidate_cohort: APPROVED_NOT_SELECTED
+  one_session_per_role: NOT_SELECTED
+  repository_only_no_chat_dependency: required
+  agent_readiness_is_trading_readiness: false

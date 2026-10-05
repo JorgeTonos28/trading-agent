@@ -849,7 +849,9 @@ Cada revisión producirá un `Plan Consistency Report`.
 - plugins seleccionados;
 - MCPs seleccionados;
 - Build-vs-Reuse completado;
-- dependencias y licencias revisadas.
+- dependencias y licencias revisadas;
+- ruta reproducible de Environment Bootstrap, Portability & Agent Packaging desde entorno nuevo + repositorio hasta entorno agéntico configurado y verificado, con perfiles, acciones manuales/automáticas, smoke y acceptance gates específicos del target (ADR-009, D-037/R-028);
+- D-024 no cerrado sin esta ruta; readiness agéntico no sustituye READY_FOR_IMPLEMENTATION, PAPER ni LIVE.
 
 ### Quant
 

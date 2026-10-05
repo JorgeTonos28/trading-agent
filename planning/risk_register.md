@@ -49,4 +49,7 @@ Escala inicial cualitativa: `Alta/Media/Baja`; se calibrará después. Dueño in
 | K-043 | P1 | Shadow se ancla al resultado Champion o compara cartera acumulativa distinta como si snapshot fuera idéntico | Alta/Alta | Ocultar Champion al generador, sealed outputs/hashes; separar decisión desde cartera real de trayectoria contrafactual, futuros outcomes no entran al corte; contrato shadow RC0/R-026 | Quant/Architecture |
 | K-044 | P1 | Smoke pequeño o cuota Team se presenta como suficiencia WL-R Plus; batch elimina decisiones shadow obligatorias | Alta/Alta | Matriz WL-L/R/S, size/deadlines/coverage/accounting, Plus GP6 específico; gap/cupo no autoriza recortar obligaciones ni gastar | Operations/Architecture |
 
+| K-045 | P1 | Paquete aislado pierde reglas raíz, overrides/truncación cambian autoridad o se asume que AGENTS aplica permisos técnicos | Media/Alta | R-028 prueba root/cwd/override/discovery; manifiesto de reglas y contrato global explícito; aislamiento técnico D-027 independiente | Architecture/Security |
+| K-046 | P1 | Bootstrap hereda readiness Team, copia secretos/settings personales o oculta dependencias/manual actions, haciendo irreproducible el target | Media/Alta | ADR-009; perfiles separados, outputs sanitizados, UNKNOWN bloquea requisito obligatorio, drift/recovery y fresh-clone probes, nunca auth/secrets Git | Operations/Plan Architect |
+
 Todos los riesgos salvo K-018 siguen `OPEN`; una arquitectura aprobada aún requiere datos, parámetros y pruebas para mitigar riesgo operativo.

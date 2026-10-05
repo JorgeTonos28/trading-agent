@@ -139,7 +139,19 @@ For every external candidate, record `PAPER_V1_VIABLE_FREE`, `PAPER_V1_COST`, `L
 
 Preserve as an OPEN architectural alternative an always-on deterministic/local Trading OS core with Codex/Plus used intermittently for research, shadow portfolio management, analysis and pedagogy. Autonomous approved Champion execution need not require an always-on LLM; agent availability and operational safety are distinct design questions. No production implementation is authorized.
 
-R-006 / D-020 Agentic Capability Discovery is an architecture prerequisite for D-024. Do not close D-024 or freeze the final agent runtime, multiagent topology, Skills, plugins, MCP integrations, subagent design, or Trading OS Plugin structure until R-006 has a documented maturity review: relevant capability coverage, access/license/cost checks, practical probes for priority candidates when feasible, permission and financial-authority tests, and a comparative recommendation. Financial contracts independent of technology may continue. A candidate's existence or current availability never implies selection. Current evidence and the conditional shortlist are in `planning/research/R-006_shortlist_RC0.md`; its Team results do not close D-020/D-024.
+R-006 / D-020 Agentic Capability Discovery is an architecture prerequisite for D-024. Do not close D-024 or freeze the final agent runtime, multiagent topology, Skills, plugins, MCP integrations, subagent design, or Trading OS Plugin structure until R-006 has a documented maturity review: relevant capability coverage, access/license/cost checks, practical probes for priority candidates when feasible, permission and financial-authority tests, and a comparative recommendation. Financial contracts independent of technology may continue. A candidate's existence or current availability never implies selection. Current evidence and the conditional shortlist are in `planning/research/R-006_shortlist_RC1.md`; its Team results do not close D-020/D-024.
+
+## Environment Bootstrap, Portability and Agent Packaging Gate
+
+The owner approved the R-006 RC1 shortlist as a **candidate acceptance cohort**, not final selection, runtime topology or freeze of D-020/D-024.
+
+Maintain a repository-contained onboarding route from a fresh environment plus repository to a configured and verified agent environment. See ADR-009, D-037/R-028 and `ONBOARDING.md`. D-024 and Definition of Ready cannot close without this reproducible route, its environment-specific acceptance evidence and explicit unresolved actions.
+
+Distinguish `CURRENT_RESEARCH_ENVIRONMENT` (Team), `TARGET_PLUS_ENVIRONMENT` (individual Plus; alias of `TARGET_RUNTIME_ENVIRONMENT`) and `FUTURE_LIVE_ENVIRONMENT` (unselected). Research availability never establishes target entitlement. Do not depend on current chat memory, user-specific paths, installed plugins or authentication being transferred by Git.
+
+Classify onboarding actions as `AUTOMATED`, `USER_ACTION_REQUIRED`, `UNAVAILABLE`, `OPTIONAL` or `FALLBACK_AVAILABLE`. Account login, credentials, subscriptions, spend and material permissions require the appropriate owner action. Never request or write secrets in Git; sanitize reports and preserve existing user configuration.
+
+Role packages may specialize these global rules but must preserve approved financial authority, preparation lock, governance and economics. Package instructions are not a security boundary. Manual directory use and future programmatic invocation must use the same versioned contracts; one session/project per role is not selected. The Plan Guardian role remains inactive until approved plan freeze.
 
 ## Financial architecture invariant
 
