@@ -1,5 +1,8 @@
 # Diagnóstico integral de la hoja v0.2
 
+**Vigencia ADR-011 — 2026-10-05:** propietario aprobó opción A y disposiciones RC2 como dirección de diseño PAPER: núcleo financiero local determinístico always-on + jobs Codex Team automáticos por evento/calendario, sin aprobación por job rutinario. D-020 DECIDED únicamente en dirección Build-vs-Reuse; versiones/permisos/runtime final siguen D-024 RESEARCHING. No implementación, gasto, capacidad sostenida ni autoridad financiera adicional. Plus permanece PRE-LIVE.
+
+
 **Vigencia actual — ADR-010, 2026-10-05:** CURRENT_RESEARCH_ENVIRONMENT=Team; PAPER_RUNTIME_ENVIRONMENT=Team actual; FUTURE_LIVE_ENVIRONMENT=Plus individual candidato. Las cláusulas anteriores que exigían Plus para PAPER/D-020/D-024 quedan parcialmente SUPERSEDED. La evidencia original se conserva; Plus es gate P3 PRE-LIVE (R-029/D-039), sin dependencia para PAPER. Aceptación activa: [Team TP1–7](research/R-006_team_runtime_acceptance_RC0.md). No selección final ni implementación autorizada.
 
 **Lectura:** registros/tablas actuales y esta adenda gobiernan; notas fechadas de hitos previos se conservan como historia, incluidos sus antiguos siguientes pasos Plus.
@@ -65,4 +68,4 @@ D-037 P1 añade prerequisito reproducible de D-024/DoR: fresh environment + repo
 
 ## Estado vigente de Capability Discovery Team — wave07
 
-RC2/ADR-011 presentan arquitectura candidata material con reutilización nativa, Skills/metodologías públicas y paquetes repo. Evidencia SDK/Skills/tools/restart/carga acotada y bootstrap Team suficiente para decidir dirección, no para seguridad/operación/freeze. D-020 READY_FOR_DECISION/D-024 RESEARCHING; next input ADR-011, sin acceso Plus.
+RC2/ADR-011 presentan arquitectura candidata material con reutilización nativa, Skills/metodologías públicas y paquetes repo. Evidencia SDK/Skills/tools/restart/carga acotada y bootstrap Team suficiente para decidir dirección, no para seguridad/operación/freeze. Hito histórico anterior a la aprobación ADR-011: D-020 entonces READY_FOR_DECISION. Ahora DECIDED en dirección de diseño; D-024 RESEARCHING, sin acceso Plus requerido.

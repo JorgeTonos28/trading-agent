@@ -1,5 +1,8 @@
 # R-006 — workload PAPER y matriz de aceptación RC0
 
+**Vigencia ADR-011 — 2026-10-05:** propietario aprobó opción A y disposiciones RC2 como dirección de diseño PAPER: núcleo financiero local determinístico always-on + jobs Codex Team automáticos por evento/calendario, sin aprobación por job rutinario. D-020 DECIDED únicamente en dirección Build-vs-Reuse; versiones/permisos/runtime final siguen D-024 RESEARCHING. No implementación, gasto, capacidad sostenida ni autoridad financiera adicional. Plus permanece PRE-LIVE.
+
+
 **Vigencia actual — ADR-010, 2026-10-05:** CURRENT_RESEARCH_ENVIRONMENT=Team; PAPER_RUNTIME_ENVIRONMENT=Team actual; FUTURE_LIVE_ENVIRONMENT=Plus individual candidato. Las cláusulas anteriores que exigían Plus para PAPER/D-020/D-024 quedan parcialmente SUPERSEDED. La evidencia original se conserva; Plus es gate P3 PRE-LIVE (R-029/D-039), sin dependencia para PAPER. Aceptación activa: [Team TP1–7](R-006_team_runtime_acceptance_RC0.md). No selección final ni implementación autorizada.
 
 **Etapas:** burst representativo acotado es probe de viabilidad para decisión; las ≥5 sesiones/≥7 días y WL-R definitivo se verifican P2 antes de PAPER autónomo. No se exige sistema implementado para permitir su implementación. Parámetros siguen propuestos, no cuotas/SLA/política aprobada.

@@ -1,5 +1,8 @@
 # Environment Bootstrap / Onboarding / Portability — RC0
 
+**Vigencia ADR-011 — 2026-10-05:** propietario aprobó opción A y disposiciones RC2 como dirección de diseño PAPER: núcleo financiero local determinístico always-on + jobs Codex Team automáticos por evento/calendario, sin aprobación por job rutinario. D-020 DECIDED únicamente en dirección Build-vs-Reuse; versiones/permisos/runtime final siguen D-024 RESEARCHING. No implementación, gasto, capacidad sostenida ni autoridad financiera adicional. Plus permanece PRE-LIVE.
+
+
 **Vigencia actual — ADR-010, 2026-10-05:** CURRENT_RESEARCH_ENVIRONMENT=Team; PAPER_RUNTIME_ENVIRONMENT=Team actual; FUTURE_LIVE_ENVIRONMENT=Plus individual candidato. Las cláusulas anteriores que exigían Plus para PAPER/D-020/D-024 quedan parcialmente SUPERSEDED. La evidencia original se conserva; Plus es gate P3 PRE-LIVE (R-029/D-039), sin dependencia para PAPER. Aceptación activa: [Team TP1–7](research/R-006_team_runtime_acceptance_RC0.md). No selección final ni implementación autorizada.
 
 2026-10-05. Requisito ADR-009 aprobado; mecanismo candidato D-037/R-028 P1. D-020 READY_FOR_DECISION/D-024 RESEARCHING. Fuente de verdad: repo, [ONBOARDING](../ONBOARDING.md), [manifest](../shared/bootstrap_manifest.json), perfiles y evidencia versionada. No implementar Trading OS.

@@ -4796,3 +4796,9 @@ La IA tendrá amplia libertad para investigar, analizar, programar, explicar y c
 La primera estrategia Champion se seleccionará durante preparación mediante comparación explícita del enfoque inspirado en el video, MATR_V1 y otros candidatos justificados. MATR_V1 sigue siendo un candidato interpretable y benchmark; no recibe autoridad de producción por aparecer en este borrador. Las ideas de copy trading congresual, insider activity, mean reversion, news, options y regime switching se separarán y evaluarán según sus propios datos, riesgos y gates; las opciones requieren aprobación específica de alcance.
 
 La primera meta no es maximizar retorno. La primera meta es tener **un plan en el que podamos confiar**. La segunda es construir **una máquina de investigación y ejecución en la que podamos confiar técnicamente**. Solo después será razonable preguntarnos cuánto capital merece gestionar.
+
+## Enmienda trazable ADR-011 — dirección PAPER agéntica
+
+**Vigencia ADR-011 — 2026-10-05:** propietario aprobó opción A y disposiciones RC2 como dirección de diseño PAPER: núcleo financiero local determinístico always-on + jobs Codex Team automáticos por evento/calendario, sin aprobación por job rutinario. D-020 DECIDED únicamente en dirección Build-vs-Reuse; versiones/permisos/runtime final siguen D-024 RESEARCHING. No implementación, gasto, capacidad sostenida ni autoridad financiera adicional. Plus permanece PRE-LIVE.
+
+Se conserva A+, G1+G2 y ADR-006. Las futuras dependencias obligatorias de Strategy V1 tendrán fallo explícito. No modificación de main ni release de despliegue.

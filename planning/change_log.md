@@ -53,3 +53,9 @@ Propietario declara Team para preparación/implementación tras DoR/backtests/PA
 ## 2026-10-05 — R-006 wave07 y decisión arquitectónica propuesta
 
 8/8 jobs Team, 7 funcionales + 1 failure, SDK oficial low-level tools/Skills/outputs y contexto reiniciado; payloads >32 KiB. Handler default auto-accept identificado, denegación explícita exigida. Fresh clone SDK completion 14/14 y 16 checks consolidación, profile v0.2 PAPER PARTIAL. Fallos harness TypeError/KeyError y lectura instructionSources preservados, sin repetir toda investigación. D-020 READY_FOR_DECISION/D-024 RESEARCHING; RC2 y ADR-011 listos para gobierno de dirección PAPER. Sustained WL-R/seguridad/durable recovery/P2 pendientes. Ningún gasto, trading, selección final/freeze ni main/release modificados.
+
+## 2026-10-05 — aprobación ADR-011 A y disposiciones RC2
+
+**Vigencia ADR-011 — 2026-10-05:** propietario aprobó opción A y disposiciones RC2 como dirección de diseño PAPER: núcleo financiero local determinístico always-on + jobs Codex Team automáticos por evento/calendario, sin aprobación por job rutinario. D-020 DECIDED únicamente en dirección Build-vs-Reuse; versiones/permisos/runtime final siguen D-024 RESEARCHING. No implementación, gasto, capacidad sostenida ni autoridad financiera adicional. Plus permanece PRE-LIVE.
+
+Se conserva A+, G1+G2 y ADR-006. Las futuras dependencias obligatorias de Strategy V1 tendrán fallo explícito. No modificación de main ni release de despliegue.

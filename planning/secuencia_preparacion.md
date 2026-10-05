@@ -3,9 +3,9 @@
 2026-10-05. Team actual para preparación, futura implementación tras DoR, backtests y PAPER. Plus individual es candidato PRE-LIVE R-029 P3; no espera de acceso Plus. Implementation lock vigente.
 
 1. **D-038 DECIDED:** registrar supersession ADR-010, perfiles/contratos/gates y source policy; commit/push.
-2. **Paquete focal Team completado:** wave07 8/8, SDK bootstrap 14/14 y 16 checks consolidación; RC2/perfil PARTIAL. D-020 READY_FOR_DECISION; D-024 RESEARCHING y no freeze.
-3. Matriz/propuesta preparada en RC2/ADR-011. Endpoint actual HUMAN_ACTION_REQUIRED: decidir dirección PAPER núcleo local + jobs nativos Team; no nueva aprobación de cohorte ni acceso Plus.
-4. **Gobierno humano:** arquitectura de runtime/permisos material y selección final D-020/D-024 conforme gate de madurez. Revisión crítica independiente requerida antes de freeze; no fingir reviewer independiente.
+2. **Paquete focal Team completado:** wave07 8/8, SDK bootstrap 14/14 y 16 checks consolidación; RC2/perfil PARTIAL. D-020 DECIDED en disposiciones ADR-011; D-024 RESEARCHING y no freeze.
+3. **ADR-011 A DECIDED:** dirección core local + jobs Team automáticos por eventos/calendario y disposiciones RC2 aprobadas. No nueva aprobación por job rutinario, ni freeze/implementación.
+4. **Paquete autónomo activo R-010–014:** contratos de aislamiento/permisos, workflow/recovery, storage/audit, versiones/deploy y criterios/capacidad P1; revisión independiente. Comparar alternativas antes de pedir gobierno de arquitectura material D-027/D-024. Revisión crítica independiente requerida antes de freeze; no fingir reviewer independiente.
 5. Después, siguiente P0 R-020/D-008 (preregistro/candidatos/Strategy V1), D-011, y R-007/008/009/025 datos/broker/quant/Smart Money; contratos D-021–029/033–035 y seguridad. No seleccionar broker/estrategia/umbrales ni gastar sin gobierno correspondiente.
 6. Completar DoR: P0/P1 cerrados, contratos/protocolos/stack aprobados, bootstrap Team reproducible y review/freeze. Solo entonces implementar.
 7. Validación P2: integración financiera/aislamiento/workflow, backtests y operación PAPER con workload definitivo, cuotas/ventanas reales, pedagogía y shadow; límites numéricos/promotion gates aprobados.

@@ -1,6 +1,9 @@
 # Capability Landscape — plantilla de investigación inicial
 
-**Estado vigente posterior — wave07:** [RC2 Team](research/R-006_shortlist_RC2_team.md) documenta madurez para decisión acotada: 8/8 jobs, SDK/bootstrap 14/14, evaluación 16/16; perfil PAPER PARTIAL. D-020 READY_FOR_DECISION, D-024 RESEARCHING; próximo gobierno ADR-011 dirección nativa, sin cierre final/freeze ni acceso Plus.
+**Vigencia ADR-011 — 2026-10-05:** propietario aprobó opción A y disposiciones RC2 como dirección de diseño PAPER: núcleo financiero local determinístico always-on + jobs Codex Team automáticos por evento/calendario, sin aprobación por job rutinario. D-020 DECIDED únicamente en dirección Build-vs-Reuse; versiones/permisos/runtime final siguen D-024 RESEARCHING. No implementación, gasto, capacidad sostenida ni autoridad financiera adicional. Plus permanece PRE-LIVE.
+
+
+**Hito histórico previo a aprobación ADR-011 — wave07:** [RC2 Team](research/R-006_shortlist_RC2_team.md) documenta madurez para decisión acotada: 8/8 jobs, SDK/bootstrap 14/14, evaluación 16/16; perfil PAPER PARTIAL. D-020 READY_FOR_DECISION, D-024 RESEARCHING; próximo gobierno ADR-011 dirección nativa, sin cierre final/freeze ni acceso Plus.
 
 ## Matriz vigente PAPER Team — ADR-010
 
@@ -157,3 +160,9 @@ Cohorte RC1 aprobada solo para aceptación; SELECTED=NO. ADR-009 añade D-037/R-
 [Resultados R-028](research/R-028_bootstrap_findings_2026-10-05.md). Instalar no es habilitar/invocar. Carpetas package y shared son estructuras de planificación, no freeze ni autoridad. Cleanup WinError 32 tras cinco turnos conservado; lifecycle GP5/EB6 pendiente.
 
 **C-030/C-031 actualización posterior:** fresh clone del commit 9e0dbed descubrió Skill bootstrap en seis roles y cargó root+local; dos smoke confirmaron current Plan Architect/authority NONE/lock y Guardian inactive. C-031 compatibilidad PARTIAL: workflow completo no probado ni target; availability archivos YES, entitlement/activación target UNKNOWN. Perfil PARTIAL y hashing portable de Git blobs; no selección. [Dossier §9](research/R-028_bootstrap_findings_2026-10-05.md).
+
+## Alcance de selección ADR-011
+
+**Vigencia ADR-011 — 2026-10-05:** propietario aprobó opción A y disposiciones RC2 como dirección de diseño PAPER: núcleo financiero local determinístico always-on + jobs Codex Team automáticos por evento/calendario, sin aprobación por job rutinario. D-020 DECIDED únicamente en dirección Build-vs-Reuse; versiones/permisos/runtime final siguen D-024 RESEARCHING. No implementación, gasto, capacidad sostenida ni autoridad financiera adicional. Plus permanece PRE-LIVE.
+
+Se conserva A+, G1+G2 y ADR-006. Las futuras dependencias obligatorias de Strategy V1 tendrán fallo explícito. No modificación de main ni release de despliegue.

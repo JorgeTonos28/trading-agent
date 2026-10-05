@@ -1,6 +1,9 @@
 # Open Questions — inventario inicial
 
-**Estado vigente posterior — wave07:** [RC2 Team](research/R-006_shortlist_RC2_team.md) documenta madurez para decisión acotada: 8/8 jobs, SDK/bootstrap 14/14, evaluación 16/16; perfil PAPER PARTIAL. D-020 READY_FOR_DECISION, D-024 RESEARCHING; próximo gobierno ADR-011 dirección nativa, sin cierre final/freeze ni acceso Plus.
+**Vigencia ADR-011 — 2026-10-05:** propietario aprobó opción A y disposiciones RC2 como dirección de diseño PAPER: núcleo financiero local determinístico always-on + jobs Codex Team automáticos por evento/calendario, sin aprobación por job rutinario. D-020 DECIDED únicamente en dirección Build-vs-Reuse; versiones/permisos/runtime final siguen D-024 RESEARCHING. No implementación, gasto, capacidad sostenida ni autoridad financiera adicional. Plus permanece PRE-LIVE.
+
+
+**Hito histórico previo a aprobación ADR-011 — wave07:** [RC2 Team](research/R-006_shortlist_RC2_team.md) documenta madurez para decisión acotada: 8/8 jobs, SDK/bootstrap 14/14, evaluación 16/16; perfil PAPER PARTIAL. D-020 READY_FOR_DECISION, D-024 RESEARCHING; próximo gobierno ADR-011 dirección nativa, sin cierre final/freeze ni acceso Plus.
 
 **Vigencia actual — ADR-010, 2026-10-05:** CURRENT_RESEARCH_ENVIRONMENT=Team; PAPER_RUNTIME_ENVIRONMENT=Team actual; FUTURE_LIVE_ENVIRONMENT=Plus individual candidato. Las cláusulas anteriores que exigían Plus para PAPER/D-020/D-024 quedan parcialmente SUPERSEDED. La evidencia original se conserva; Plus es gate P3 PRE-LIVE (R-029/D-039), sin dependencia para PAPER. Aceptación activa: [Team TP1–7](research/R-006_team_runtime_acceptance_RC0.md). No selección final ni implementación autorizada.
 
@@ -60,7 +63,7 @@ Estados: cada Q muestra su prioridad; Q-030–Q-037 incluyen estado explícito. 
 - Q-038 (P1, D-034, `OPEN`): ¿Qué esquema, aislamiento técnico, protocolo de evaluación PIT y métricas preregistradas permiten comparar Champion con `ShadowPortfolioProposal` sin que el shadow influya en operaciones ni obtenga datos futuros?
 - Q-039 (P1, D-035, `OPEN`): ¿Cuáles son las fórmulas, unidades, redondeos, precedencia y casos de concurrencia verificables que concretan ADR-006 sin fijar aún los umbrales PAPER de D-031?
 
-- Q-041 (P0, D-020, READY_FOR_DECISION): RC2 recomienda capacidades; evidencia focal SDK/tool/Skills/restart/carga acotada Team completa. Selección material ADR-011 pendiente; operación/P2 y review/freeze distintos.
+- Q-041 (P0, D-020, DECIDED en dirección): propietario aprueba ADR-011 A/disposiciones RC2. Versiones/permisos y freeze siguen D-024; operación sostenida sigue pendiente. No selección definitiva ni implementación.
 - Q-042 (P1, D-024/025, RESEARCHING): ¿qué cadencia, recovery/degradación y contratos exige núcleo local + Codex Team intermitente? TP por etapa y demanda Strategy V1; operación sostenida P2, sin gate Plus.
 
 - Q-043 (P1, D-034/029, `RESEARCHING`): ¿Cómo discriminar desde rol confiable ResearchHypothesis/ShadowPortfolioProposal/explicación y OBSERVED/DERIVED? Respuesta técnica RC0 en 06_agent_evidence_contract: caller externo/schema, enums, target qty, typed refs/lineage, tres ejes de estado y hashes pareados. Wave 06 prueba spine con fallos de checker conservados. Full schemas/aislamiento/integration siguen P1, no repetir muestra para ocultar errores.

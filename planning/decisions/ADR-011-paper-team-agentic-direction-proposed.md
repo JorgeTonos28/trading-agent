@@ -1,8 +1,8 @@
-# ADR-011 — dirección agéntica PAPER Team propuesta
+# ADR-011 — dirección agéntica PAPER Team aprobada
 
-2026-10-05. Estado **READY_FOR_DECISION**, aprobación pendiente del propietario. D-020 selección propuesta / D-024 dirección arquitectónica; **no cierre final de D-024 ni freeze**. ADR-010 ya aprobó Team PAPER, no esta elección de ejecución/permisos.
+2026-10-05. Estado **DECIDED**, opción A aprobada explícitamente por el propietario; alcance: dirección arquitectónica candidata y disposiciones de diseño RC2. D-020 selección propuesta / D-024 dirección arquitectónica; **no cierre final de D-024 ni freeze**. ADR-010 ya aprobó Team PAPER, no esta elección de ejecución/permisos.
 
-## Decisión exacta solicitada
+## Propuesta presentada y aprobada (historia de la decisión)
 
 Adoptar como dirección de diseño PAPER **núcleo financiero local determinístico + jobs Codex Team intermitentes**, con roles lógicos empaquetados en repo, transporte nativo oficial preferentemente Codex SDK, herramientas concretas de lectura de snapshots/trazas y admission externo. Incorporar las disposiciones propuestas de la shortlist RC2 como referencia para especificación del stack; no agregar un framework agéntico o un plugin operativo residente por defecto.
 
@@ -25,7 +25,7 @@ Esta decisión determina cómo se invocará el componente agéntico y dónde se 
 | C. LLM residente/multiagentes/plugin como orquestador financiero | Posible coordinación generativa richer | Sin valor incremental probado, más permisos/estado/cupo y complejidad; no puede asumir autoridad Champion/riesgo | REFERENCE_ONLY; no justificar como requisito de autonomía |
 | D. Agents SDK/API facturada o runtime Anthropic | Posible control/continuidad mayor | Gasto separado, beneficios/costos no probados; fuera de ejecución paga PAPER por defecto ADR-008 | REFERENCE_ONLY PAPER, futuro LIVE con ficha/aprobación |
 
-## Lo que la aprobación NO cerraría
+## Lo que la aprobación NO cierra
 
 - DoR, implementación, PAPER inmediato o LIVE; todos sus gates permanecen.
 - Strategy V1, broker, datos/Smart Money, umbrales ni cambio A+/G1+G2/ADR-006.
@@ -36,8 +36,16 @@ Esta decisión determina cómo se invocará el componente agéntico y dónde se 
 
 Después de aprobación, continuar especificación/probes de esos P1, revisar independientemente el paquete y cerrar D-024 solo con requisitos satisfechos. La selección de familia/roles para diseño no debe presentarse como freeze final de agentes/runtime/plugin. Si el dueño prefiere B/C, documentar cómo satisface shadow/pedagogía/carga y revisar comparativa; no bajar obligaciones silenciosamente.
 
+## Aprobación y aclaraciones vinculantes del propietario
+
+Opción A aprobada el 2026-10-05. **Intermitente significa event/schedule-driven, no manual**. Un scheduler/workflow determinístico debe invocar automáticamente jobs rutinarios aprobados; no se requiere autorización humana por invocación. Reglas de trigger, deadlines, prioridad, retries y recovery se especifican en D-025; la aprobación no selecciona motor ni permisos finales.
+
+Disposiciones RC2 aprobadas para continuar especificación: Codex base REUSE_AS_IS; transporte oficial SDK/app-server WRAP cuando necesario; Anthropic públicos idea-generation/thesis-tracker ADAPT/PORT; Quant Review y Pedagogical propios ADAPT; AGENTS/Skills REUSE_AS_IS; bootstrap/paquetes ADAPT; MCP WRAP reserva ante necesidad concreta. Otras disposiciones de la tabla se conservan, sin gasto ni activación automática. `SELECTED_FOR_DESIGN=YES` en este alcance; `FINAL_RUNTIME_SELECTION=OPEN` bajo D-024. Las reservas no pasan a capacidades obligatorias.
+
+Failure isolation: ningún job recibe credenciales de broker ni outputs se convierten directamente en órdenes. PM permanece SHADOW; handlers/tools con allowlists y fail-closed; snapshots/versiones reconstructibles; validación fuera del modelo; retry/recovery sin efectos financieros duplicados. Timeout/cuota/error/tardanza/silencio no producen autoridad alternativa ni se interpretan como HOLD u otra decisión. Si una futura Strategy V1 necesita un output agéntico obligatorio, su fallo se define explícitamente y se aprueba antes de promoción; nunca se habilita acción financiera por defecto.
+
+No congela D-024, implementa, selecciona estrategia/broker/datos, aprueba permisos finales o capacidad sostenida, autoriza gasto, ni altera A+, G1+G2 o ADR-006. No merge/main/release.
+
 ## Gobierno y siguiente trabajo
 
-**HUMAN_ACTION_REQUIRED:** aprobar A como dirección arquitectónica candidata para PAPER, o escoger una alternativa con su impacto. Propuesta técnica: A.
-
-Tras esa decisión: D-024/R-010 junto a seguridad/workflow/storage por necesidad; siguiente P0 R-020/Strategy V1 y protocolo comparativo con Build-vs-Reuse continuo. R-029 Plus sigue DEFERRED P3. Este ADR no incorpora aprobación por silencio.
+La solicitud de aprobación de esta dirección queda resuelta; no volver a pedirla. D-020 DECIDED en disposiciones de diseño, descubrimiento continuo ante nuevas necesidades; D-024 RESEARCHING hasta sus gates. Continuar R-010–014: aislamiento/permisos, workflow/recovery, storage/audit, versiones/deployment, carga y revisión crítica independiente. Avanzar preregistro siguiente P0 R-020/D-008 cuando sus dependencias permitan. Plus R-029 sigue P3, no bloquea PAPER.

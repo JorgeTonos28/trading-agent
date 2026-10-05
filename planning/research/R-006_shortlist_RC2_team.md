@@ -1,8 +1,10 @@
 # R-006 — shortlist RC2 y madurez PAPER Team
 
-2026-10-05. Vigente tras ADR-010; sustituye **recomendación/next-step** RC1 para PAPER, conserva RC1 y pruebas históricas. Cohorte candidata ya aprobada, selección final **NO**; D-020 READY_FOR_DECISION, D-024 RESEARCHING (dirección ADR-011 lista para decisión; freeze no listo). No implementación.
+2026-10-05. Vigente tras ADR-010; sustituye **recomendación/next-step** RC1 para PAPER, conserva RC1 y pruebas históricas. Cohorte candidata ya aprobada, selección final **NO**; D-020 DECIDED en disposiciones de diseño ADR-011; D-024 RESEARCHING (dirección A aprobada; freeze no listo). No implementación.
 
-## 1. Recomendación de reutilización
+## 1. Disposiciones de diseño aprobadas
+
+La tabla original conserva SELECTED=NO como **selección final de runtime**. ADR-011 aprueba estas disposiciones para especificación (`SELECTED_FOR_DESIGN=YES` para la cohorte activa); no activa reservas, paga servicios ni congela versiones/permisos. Jobs rutinarios serán automáticos por eventos/calendario, no manuales.
 
 | Capacidad | EXISTS / AVAILABLE_IN_PAPER_TEAM | Compatibilidad / economía | Disposición propuesta; SELECTED=NO |
 |---|---|---|---|
@@ -51,8 +53,6 @@ La [propuesta ADR-011](../decisions/ADR-011-paper-team-agentic-direction-propose
 
 Disponibilidad/activación/config herramientas en cuenta Plus candidata, entitlement/cuota/continuidad para **demanda validada en Team**, auth legítima de nueva cuenta, perfiles/diffs/smoke de release, portabilidad/recovery y rollback de migración. [R-029](R-029_pre_live_environment_migration_gate_RC0.md). Reusar métodos/conducta Team y repetir solo deltas pertinentes. No repetir R-006 entera, ni pedir acceso Plus ahora, ni confundir este gate con aprobación financiera LIVE.
 
-## 5. Decisión humana concreta y endpoint
+## 5. Aprobación y siguiente paquete
 
-Paquete autónomo ADR-010 reevaluación/probes/dossier completado en su alcance. Próxima acción material: **ADR-011 opción A**, elegir dirección PAPER de núcleo determinístico + jobs nativos Team y disposiciones de diseño RC2, con contratos externos y ningún acceso de orden/config financiera. No final freeze D-024. Exacta aprobación pendiente documentada; no atribuirla a aprobación previa de cohorte.
-
-Después de decisión, continuar P1 seguridad/workflow/storage/stack final y siguiente P0 Strategy V1, con Build-vs-Reuse activo. Review independiente y todo DoR antes de implementar; carga/integración funcional completas P2 antes de PAPER. No hay bloqueo Plus ni cambio de baseline main.
+Propietario aprobó ADR-011 A y disposiciones RC2; la anterior solicitud queda resuelta. Continuar P1 R-010–014 y preregistro Strategy V1 independiente. D-024 no puede cerrarse por esta aprobación ni por smokes. Gates Team permanecen; Plus solo PRE-LIVE.

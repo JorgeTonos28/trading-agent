@@ -1,6 +1,6 @@
 # Contrato candidato — jobs Codex Team fuera del núcleo financiero
 
-2026-10-05. Propuesta para decisión D-020/D-024; no aprobada ni implementación. Detalla A+/G1+G2 sin ampliar autoridad. [Team acceptance](R-006_team_runtime_acceptance_RC0.md), contratos comunes/shadow/pedagogía y ADR-010 gobiernan.
+2026-10-05. Dirección ADR-011 A aprobada; detalles D-024 siguen candidatos, sin implementación. Detalla A+/G1+G2 sin ampliar autoridad. [Team acceptance](R-006_team_runtime_acceptance_RC0.md), contratos comunes/shadow/pedagogía y ADR-010 gobiernan.
 
 ## 1. Responsabilidades
 
@@ -46,3 +46,7 @@ Outputs research/quant/shadow/pedagogy van a namespaces sin interfaz de TradeInt
 - Revisión crítica independiente y gobierno antes de freeze. Este análisis es del Plan Architect; no presenta auto-review como independiente.
 
 Las metodologías/contratos existen y son reutilizables; estas integraciones son ajustes locales candidatos WRAP/ADAPT cuya construcción permanece bloqueada hasta DoR. Ninguna nueva autoridad, gasto, broker o estrategia seleccionados.
+
+## 7. Automatización aprobada ADR-011
+
+Triggers de eventos/calendario son reglas versionadas del caller determinístico. Jobs rutinarios aprobados no requieren intervención por invocación. Fallo agéntico no genera decisión financiera por defecto. Contrato de cada dependencia estratégica obligatoria debe identificar datos faltantes/timeout/late y decisión determinística admisible de fallo; aún no hay Strategy V1 seleccionada.
