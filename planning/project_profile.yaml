@@ -86,6 +86,10 @@ strategy_v1:
   selected_strategy: null
   candidate_minimum: [VIDEO_INSPIRED_V1, MATR_V1]
   first_to_decompose: VIDEO_INSPIRED_V1
+  admission_preregistration: planning/research/R-020_strategy_admission_preregistration_RC1.md
+  candidate_rule_cards: planning/research/R-020_video_candidate_rule_cards_RC0.md
+  SEC_dataset_card: planning/research/R-020_SEC_dataset_admissibility_RC0.md
+  candidate_results_consulted_this_package: false
   video_is_functional_and_architectural_inspiration: true
   literal_replication_required: false
   creator_performance_audit_required: false

@@ -61,3 +61,5 @@ Source: plan-architect candidato; main baseline aprobado; deployment desde relea
 ## Checkpoint material posterior ADR-011
 
 Contratos/probes/review P1 documentados en dossier R-010_014. Endpoint siguiente: ADR-012 dirección material S2 vs S3; no aprobación por job ni Plus. Antes del checkpoint se avanzó preregistro independiente R-020; Strategy V1 sigue OPEN. Tras dirección: config/permisos concretos, probe aislamiento real, motor/store final, carga representativa y revisión del paquete antes de D-024; no freeze por smoke.
+
+**Avance independiente R-020:** cards de reglas video y admisibilidad SEC creadas con fuentes primarias; no resultados históricos consultados. Tras checkpoint seguridad, continuar datos/PIT y variantes admisibles/protocolo OOS; broker/engine/risk numérico mantienen decisiones separadas.

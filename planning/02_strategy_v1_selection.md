@@ -38,3 +38,7 @@ Para los candidatos admitidos se documentarán: (a) claridad y fundamento de la 
 ## Entregable de decisión
 
 El futuro paquete al propietario mostrará cada candidato, evidencia primaria, reglas exactas, gate de admisión, scorecard, pruebas, sensibilidad, riesgos, costes, alternativas, recomendación y la pregunta única: **“¿Qué estrategia autorizamos como primera Strategy V1 para especificar y construir en PAPER?”** Se registrará ADR con fecha y aprobador. Hasta entonces, `selected_strategy: null`.
+
+## Avance R-020 posterior ADR-011 — 2026-10-05
+
+[Preregistro RC1](research/R-020_strategy_admission_preregistration_RC1.md), [CandidateRuleCards video](research/R-020_video_candidate_rule_cards_RC0.md) y [DatasetCard SEC](research/R-020_SEC_dataset_admissibility_RC0.md) avanzan admisión antes de rendimiento. VID-TS no define entrada; trailing porcentual/absoluto y ladder/stop tienen conflictos explicitados. SEC público no implica clock de primera disponibilidad histórico; acceptance no sustituye publication/receipt. MATR sigue candidato/benchmark. **Strategy V1 Selection=OPEN**, ningún backtest, riesgo numérico, broker/datos o estrategia aprobados.

@@ -1,6 +1,6 @@
 # R-020 — siguiente P0 Strategy V1: admisión y preregistro RC1
 
-2026-10-05. D-008 P0 **RESEARCHING**, selección OPEN. Avance independiente de permisos finales D-027 y Plus. [RC0](../02_strategy_v1_selection.md), ADR-000, ADR-004/005/006 y A+ gobiernan. No ejecutar backtests ni construir Trading OS en este documento.
+2026-10-05. R-020 P0 **RESEARCHING**, D-008/selección OPEN. Avance independiente de permisos finales D-027 y Plus. [RC0](../02_strategy_v1_selection.md), ADR-000, ADR-004/005/006 y A+ gobiernan. No ejecutar backtests ni construir Trading OS en este documento.
 
 ## 1. Separar lo que mostró el video
 
@@ -31,3 +31,7 @@ Evaluar primero reglas, calidad/PIT/licencia, costes/replay, riesgo/operación, 
 R-025/R-007 datos alimentan admisión; D-011 protocolo de validación y R-009 paridad motor; broker D-009 limita ejecución reproducible; risk numérico P2 D-031 distinto del riesgo conceptual aprobado. D-008 puede avanzar especificación sin esperar D-024, pero selección final de Strategy V1 requiere evidencia/gobierno. No hay circularidad que permita implementar primero.
 
 Entregables siguientes: `CandidateRuleCard` por variante, `DatasetAdmissibilityCard` por fuente histórica y scorecard pre-resultados, variantes preregistradas y escenarios de conflicto. Campos mínimos: estado/evidence/source, clocks y missing, reglas completas vs OPEN, autoridad y dependencia-failure contract, costos/free alternative, engine/order assumptions, owner decisions restantes. Las fichas son documentos del repo; no estrategias productivas ni elección final. Investigación de acceso/datos puede continuar después de decisión de aislamiento sin activar broker/API paga.
+
+## Avance documental del paquete
+
+[CandidateRuleCards del video](R-020_video_candidate_rule_cards_RC0.md) especifican ambigüedades y escenarios de stops/ladder/señales sin inventar entrada. [DatasetCard SEC](R-020_SEC_dataset_admissibility_RC0.md) verifica camino público de extracción y registra ausencia de timestamp first-available; no backtest/dataset/API probe ejecutado ni familia/proveedor seleccionado.

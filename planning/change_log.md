@@ -63,3 +63,7 @@ Se conserva A+, G1+G2 y ADR-006. Las futuras dependencias obligatorias de Strate
 ## 2026-10-05 — P1 seguridad/workflow/audit, probes y revisión independiente
 
 Dirección aprobada ADR-011 operacionalizada como contratos de planificación 08 (sin runtime): automatización, permisos por dominio/holdout, mapping estados, leases/epoch/recovery y audit/versions/deploy. H1/H2 20 checks, suplemento11; restore3 checks lógicos+1policy. H4 public SDK/CLI0.160 resolver default2/2 Team; H6 Temporaldev1.9.1 schedule/restart10/10 sin worker/model/broker, fetchTLSfallido preservado. H3 cola virtual detecta bloqueo background y corrige denominador v2, v1 preservado. Reviewer independiente read-only IR01–07 y addendum H6; reparaciones documentales, enforcement pendiente. D-025–028 RESEARCHING; ADR-012 S2 vs S3 READY_FOR_DECISION en dirección. D-024 abierto, no freeze/implementación/gasto, main/tag sin cambios. Bootstrap referencias nuevas no actualiza readiness histórico.
+
+## 2026-10-05 — R-020 CandidateRuleCards y admisibilidad SEC
+
+Avance autónomo siguiente P0, independiente de permiso S2: video descompuesto en módulos/familias, escenarios de ambigüedad y entry-rule OPEN; MATR benchmark. Documentación SEC primaria confirma API pública sin key, archives e inexistencia de timestamp first-available; no acceptance→public/receipt ficticio. Fichas/prereg/exposure/holdout antes de rendimiento; sin dataset/backtest/API scraping o selección de fuente/estrategia. D-008 OPEN, ADR-012 sigue próximo gobierno material.

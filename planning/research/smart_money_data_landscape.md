@@ -67,3 +67,7 @@ La necesidad de pagar puede justificarse por fiabilidad o datos aun sin demostra
 4. Medir cobertura/latencia y estimar esfuerzo de integración; decidir qué familias son factibles para V1, research-only o futuras.
 
 **Gate:** D-018/ADR-005 define roles y admisión abstracta; ADR-004 fija semántica PIT. D-033 selecciona proveedor(es) solo después del scorecard, o deja una familia diferida con razón explícita. D-008 aprueba cualquier uso operativo en Strategy V1. No se requiere demostrar o refutar las cifras del video.
+
+## SEC/EDGAR — avance R-020/R-025 documental, 2026-10-05
+
+[DatasetAdmissibilityCard](R-020_SEC_dataset_admissibility_RC0.md): APIs de lectura públicas sin key y archives históricos verificadas documentalmente; no dataset/probe/selección. SEC declara ausencia de timestamp que indique primera disponibilidad del contenido en sec.gov, de modo que acceptance no equivale a publicación o recepción. Historia PIT/canal/quality/normalización siguen CONDITIONAL; comparar specialized vendors antes de construir extractor importante. Congresional, Form4,13F y demás familias siguen abiertas independientemente.

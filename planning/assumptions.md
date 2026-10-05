@@ -59,3 +59,5 @@ El propietario declaró el 2026-10-01 que **nunca se ejecutaron ni consultaron r
 | A-033 | P1 | UNVERIFIED: identidades/ACL/IPC/egress Windows por dominio pueden aislar todo SDK/app-server/handlers y mantener Team login legítimo sin filtrar Champion/holdout/secrets. | S2 propuesta ADR-012; aprobación y probe empírico antes de freeze. Native sandbox de comandos no demuestra proceso completo. |
 | A-034 | P1 | PARTIAL: SDK/CLI0.160 publicado emparejado soporta roles/Skills/tools necesarios. | H4 2/2 research/shadow correctos, no todos los roles/requests/OS ni cuota sostenida; pin final abierto. |
 | A-035 | P1 | UNVERIFIED: prioridad y una cola no preemptiva bastan para demanda PAPER. | H3 virtual muestra fallos de deadline en burst/carga amplificada; no seleccionar concurrencia por promedio ni falsificar capacidad nativa. |
+
+| A-036 | P1 | UNVERIFIED: acceso gratuito a filings SEC permite reconstruir precisión PIT necesaria para una Strategy V1 aún no definida. | SEC documenta no timestamp first-available; DatasetCard R-020 exige canal/historia/método de disponibilidad y no confundir acceptance con receipt. No dataset descargado ni API probe. |

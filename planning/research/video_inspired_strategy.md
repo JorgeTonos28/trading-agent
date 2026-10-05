@@ -54,3 +54,7 @@ El video **no define una estrategia única lista para backtest**. Presenta (1) u
 ## Nota de fiabilidad de la fuente
 
 El panel de YouTube identifica los subtítulos como «Inglés (generado automáticamente)». Esta investigación toma como **hechos observados** lo que el narrador dice o muestra en la transcripción; sus retornos, resultados de dashboards y descripciones de desempeño son **afirmaciones del creador**. Las implicaciones sobre sesgo, riesgo y arquitectura son **análisis nuestro**, no citas ni conclusiones del video. El [resumen externo generado por IA](https://videohighlight.com/v/2Et4Ao6usbA) consultado al localizar la fuente no se usó para establecer reglas.
+
+## Seguimiento de especificación — R-020 RC0, 2026-10-05
+
+[CandidateRuleCards](R-020_video_candidate_rule_cards_RC0.md) separan módulo de posición VID-TS de señales externas VID-EXT/ALERT/WHEEL. Escenarios hipotéticos identifican ambigüedad porcentual/absoluta, base de escalón y conflicto stop/compra caída; no aprobar cifras del creador ni inventar entry-rule. [SEC DatasetCard](R-020_SEC_dataset_admissibility_RC0.md) amplía fuentes sin reducir Smart Money a Congreso. Video sigue inspiración funcional; no investigación principal para auditar sus resultados.

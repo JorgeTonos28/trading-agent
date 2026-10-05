@@ -9,7 +9,7 @@ Prioridad: P0 arquitectura, P1 implementación, P2 paper autónomo, P3 live, P4 
 | ID | P | Cierra | Investigación / prueba y entregable |
 |---|---|---|---|
 | R-019 | P0 | D-009 | RESEARCHING: transcripción primaria revisada; usar `research/video_inspired_strategy.md` para extraer capacidades y reglas útiles. Más pantallas/prompts solo si aclaran nuestro diseño; claims de retorno `NO VERIFICADO`, sin auditoría dedicada. |
-| R-020 | P0 | D-008/011 | Preregistrar criterios y comparar variantes video viables, MATR_V1 y otros candidatos; el sistema y contratos comunes gobiernan admisión. No seleccionar por aparecer en el video; `02_strategy_v1_selection.md` y aprobación humana. |
+| R-020 | P0 | D-008/011 | RESEARCHING: preregistro RC1, rule cards VID-TS/EXT/ALERT/WHEEL y DatasetCard SEC. Sin entry-rule inventada, backtest ni selección; MATR benchmark. Gates fuentes/PIT/costs/rules y protocolo OOS antes de resultados. |
 | R-021 | P0 | D-014/018/008 | Factibilidad PIT para **familias de señales externas** que puedan alimentar V1: timestamps de evento/publicación/recepción, cobertura histórica, derechos y primera operación posible. Congreso y alertas de terceros son casos, no el conjunto completo; coordinar con R-023/025. |
 | R-022 | P0 | D-015/016/018/019 | DECIDED: contrato PAPER V1 RC1 y ADR-001 cierran A+ D-015/016/019; ADR-005 cierra roles/admisión abstracta D-018, mientras R-021/025 prueba datasets. |
 | R-023 | P0 | D-018/014 | DECIDED en contrato abstracto ADR-005/`06_external_signal_admission_RC1.md`: familias separadas, roles graduados y gates PIT/licencia/OOS; R-021 y R-025 siguen pruebas por dataset/proveedor. |

@@ -81,3 +81,5 @@ Estados: cada Q muestra su prioridad; Q-030–Q-037 incluyen estado explícito. 
 - Q-046 (P1, D-027, READY_FOR_DECISION en dirección): ¿aprobamos S2 — identidades Windows por dominio para SDK/app-server, shadow separado y core fuera — o preferimos VM S3? Evidencia, trade-offs y alcance exacto en ADR-012. No permisos/setup concedidos.
 - Q-047 (P1, D-025/026, RESEARCHING): ¿qué motor/store, fencing/epoch y restore cumplen recepción at-most-once y conservación audit/PIT? Contratos 08 y probes toy reducen ambigüedad, motor final sigue pendiente.
 - Q-042 avance: scheduler automático aprobado en ADR-011; cola/prioridad/concurrencia/plazos/cupo permanecen candidatos. Background largo puede bloquear shadow; workloads reales y retries con deadline original son gate, no 63 éxitos simulados.
+
+- Q-048 (P1, D-010/033, RESEARCHING): ¿qué evidencia histórica acredita public availability/delivery de SEC por canal cuando la fuente no da timestamp first-available? DatasetCard R-020 distingue acceptance/filing/change/receipt y propone comparación de fuentes/canal conservador; no adoptar delay supuesto como PIT exacto.
