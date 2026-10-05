@@ -29,6 +29,8 @@
 
 ---
 
+**Preparación R-006 — paquete autónomo completado, 5 de octubre de 2026:** [shortlist RC1](../../planning/research/R-006_shortlist_RC1.md) es propuesta actual tras contratos por rol/snapshots/linaje/estados, PM shadow y Pedagogical completos en especificación, [workload/matriz](../../planning/research/R-006_workload_acceptance_RC0.md), regresión Team y smoke de Codex SDK nativo (distinto de Agents SDK/API). No es selección/freeze: D-020 RESEARCHING, D-024 OPEN, target Plus operativo UNKNOWN. El propietario debe decidir dirección candidata y habilitar Plus para aceptación limitada; seguridad, revisión independiente, Strategy V1/stack financiero y DoD conservan gates distintos. Los RC detallan ADR-001/004 sin modificar autoridad aprobada. Autonomous Continuation Rule en AGENTS exige seguir tareas autorizadas hasta endpoint real, con persistencia/commit/push. Esta nota de progreso no desbloquea implementación ni convierte los parámetros de workload en política financiera.
+
 ## 0. Resumen ejecutivo
 
 El proyecto consiste en construir una plataforma de trading cuantitativo con agentes de inteligencia artificial capaz de investigar estrategias, analizar mercados, producir señales, ejecutar operaciones de forma automática dentro de límites predeterminados, monitorear el riesgo, evaluar su propio desempeño, proponer mejoras y enseñar al propietario del sistema los conceptos que justifican cada decisión.

@@ -40,3 +40,17 @@ La [wave 02 de R-006](research/R-006_probe_wave_02_2026-10-02.md) deja C-017 com
 [Shortlist RC0](research/R-006_shortlist_RC0.md): mínimo Codex `REUSE_AS_IS` como capacidad/benchmark; integración nativa app-server `WRAP` candidata; idea-generation y thesis-tracker `ADAPT`; procedimientos propios breves de Quant Review/pedagogía adaptan métodos/contratos tras discovery, sin motor ni subagentes seleccionados. MCP SDK oficial `WRAP` de lectura opcional, probado localmente; Data propietario `REFERENCE_ONLY` hoy, reuse dentro de entitlement verificable después. Assets Earnings/Audit/Calendar son reservas adaptables por necesidad. No comprar Skills/templates ni asumir premium access.
 
 Mínimo 10/10 y Skill 9/10 checks: no se demostró superioridad general. Skill aporta detalle metodológico/pedagógico; estructura/seguridad pertenecen también a harness y contratos. Role/schema/lineage requieren endurecimiento; no seleccionar bundles o construir componentes mayores por inercia. Todos `SELECTED=NO`; no cerrar D-020/D-024.
+
+## Recomendación actual RC1 — paquete autónomo completado
+
+[Shortlist RC1](research/R-006_shortlist_RC1.md) incorpora [wave 06](research/R-006_probe_wave_06_2026-10-05.md), contratos por rol/shadow/pedagogía, workload/matriz y [Codex SDK nativo C-029](research/R-006_codex_sdk_findings_2026-10-05.md), distinto de Agents SDK API. Recomendaciones (ninguna SELECTED):
+
+- C-010 capacidad base **REUSE_AS_IS**, conservar benchmark mínimo.
+- C-025a/C-029 **WRAP** de transporte oficial mínimo; preferir SDK cuando cubra job contract, app-server por gap concreto (tools/callbacks/lifecycle). No construir RPC framework nuevo por defecto ni imponer Python/TS.
+- C-017a/b **ADAPT**, **PORT** del método público Anthropic (Apache), eliminando autoridad y cambiando PIT/output; no portar runtime/conector premium por copiar prompt.
+- C-024/C-028 **ADAPT** de métodos/contratos propios tras revisar activos: pedagogía factual/curriculum y Quant Review; no motor quant propio seleccionado.
+- MCP oficial **WRAP** reserva por interoperabilidad necesaria; Data/plugin propietario **REFERENCE_ONLY** hoy, REUSE_AS_IS solo con entitlement/licencia/uso demostrado.
+- Métodos financieros públicos Earnings/Audit/Calendar/Model/Market **ADAPT/PORT** reserva por tarea; APIs/modelos pagos **REFERENCE_ONLY** PAPER con LIVE económica abierta.
+- Otros labs/frameworks agénticos **REJECT** por alcance aprobado, no fallo técnico; brokers/datos/quant/infra conservan investigación separada.
+
+No BUILD de capacidad mayor autorizado/seleccionado. Integración propia específica de contratos se propone después de comparar workflow/storage/engine R-009/011/012; no implementación durante preparación. Wave 06 corrige tipos en corpus pequeño, con checker v2 enmendado y v1 conservado; no superioridad/general fiabilidad. [Plus Gate](research/R-006_plus_runtime_gate_RC0.md) sigue abierto; paquetes finales D-020/D-024 requieren aceptación target, review independiente y gobierno. Orientación candidata local determinística always-on + jobs Codex intermitentes se presenta al propietario, sin freeze.

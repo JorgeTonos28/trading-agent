@@ -1,5 +1,7 @@
 # Capability Landscape — plantilla de investigación inicial
 
+**Referencia vigente 2026-10-05:** [shortlist RC1](research/R-006_shortlist_RC1.md), [contratos por rol](06_agent_evidence_contract_RC0.md) y [workload/aceptación](research/R-006_workload_acceptance_RC0.md). Paquete autónomo RC0 pasos 1–2 completado; madurez suficiente para propuesta de cohorte/dirección, no final selección. Tablas/notes anteriores conservan evidencia por ola, no reemplazan estado actualizado. D-020 RESEARCHING/D-024 OPEN; todos SELECTED=NO y target Plus operativo UNKNOWN.
+
 Estado 2026-10-05: **shortlist condicional, investigación parcial para selección**, sin selección. R-006/D-020 es P0 y gate de D-024. [ADR-007](decisions/ADR-007-r006-openai-anthropic-plus-scope.md) limita IA/agentes a OpenAI/Anthropic; [ADR-008](decisions/ADR-008-economic-policy-by-phase.md) prioriza Tier 0/1 PAPER y valor económico LIVE, sin descartar pagos del futuro. Estudiar pagos está autorizado; contratar/gastar requiere aprobación. No interpretar una mención como confirmación de acceso, compatibilidad, licencia o precio. Método en [plan R-006](research/R-006_agentic_capability_discovery_plan.md); [inventario/probes](research/R-006_initial_findings_2026-10-01.md).
 
 Actualización 2026-10-02: [ADR-007](decisions/ADR-007-r006-openai-anthropic-plus-scope.md) distingue `CURRENT_RESEARCH_ENVIRONMENT` (esta sesión, `planType=team`, solo investigación) de `TARGET_RUNTIME_ENVIRONMENT` (**ChatGPT Plus individual**, diseño y presupuesto PAPER V1). [Wave 01](research/R-006_probe_wave_01_2026-10-01.md) observó herramientas aquí; [wave 02](research/R-006_probe_wave_02_2026-10-02.md) validó solo formato de Skill adaptada y fixture PIT. La [evidencia documental Plus por superficie](research/R-006_plus_entitlement_evidence_2026-10-02.md) confirma elegibilidad general de Codex y visibilidad del directorio, pero no activación de Skills/plugins concretos. SIWC C-025 sigue condicional. `SELECTED=NO` para todos los candidatos Trading OS.
@@ -100,3 +102,17 @@ C-025a nativo existente está probado para estas fixtures Team; C-025b SIWC OAut
 | C-028 Quant Review | YES método; UNKNOWN runtime Plus | Método 0; inferencia/datos/local aparte | Método 0; runtime/datos UNKNOWN | Workflow mínimo con contrato común | Datos/runtime mejores, no compra de Skill | YES si dependencia paga |
 
 Fichas económicas y lock-in/salidas/carga por cohorte en [shortlist §3](research/R-006_shortlist_RC0.md). La adquisición gratuita de un método no prueba coste cero del sistema ni fiabilidad; no hubo billing API/contratación aprobado.
+
+## Contratos/workload y transporte reutilizable — estado vigente posterior
+
+[Wave 06](research/R-006_probe_wave_06_2026-10-05.md): 10 turnos con schema por trusted role y quantity/lineage/causa ausente; admission v1 8/10 y v2 10/10 tras interpretación de citation calificada registrada. 39/39 checks locales v2. No superioridad general ni seguridad/performance/Plus demostrados. Especificaciones RC0 común, shadow y pedagógica completas como contrato propuesto; workload WL-R solo perfil de prueba, no cuota ni estrategia seleccionada.
+
+| ID | Capacidad | EXISTS | AVAILABLE_IN_RESEARCH_ENVIRONMENT | AVAILABLE_IN_TARGET_PLUS | TECHNICALLY_COMPATIBLE | ECONOMICALLY_REASONABLE | SELECTED | Disposición recomendada |
+|---|---|---|---|---|---|---|---|---|
+| C-029 | Codex SDK Python 0.160.0 / TypeScript metadata 0.160.0 | YES público Apache-2.0 | YES Python Team 1 smoke 7/7; TS solo metadata | YES archivo; UNKNOWN inferencia/tools/Skill/state/cuota target | YES Python smoke CLI pin explícito; high-level dynamic tool callbacks no probados, TS NOT_TESTED | YES software; CONDITIONAL runtime/local/quota | NO | WRAP transporte oficial si cubre contrato, antes de transporte propio; distinto de Agents SDK/API facturada |
+
+| Candidato | PAPER_V1_VIABLE_FREE | PAPER_V1_COST | LIVE_COST | FREE_ALTERNATIVE | PAID_INCREMENTAL_VALUE | ECONOMIC_JUSTIFICATION_REQUIRED |
+|---|---|---|---|---|---|---|
+| C-029 Codex SDK | UNKNOWN workflow Plus; YES software | 0 licencia; potencial quota incluida/local por medir | UNKNOWN fijo/variable/mensual/escala | C-025a/C-010 con gates | Continuidad/capacidad/control como hipótesis futura, no probado | YES antes de gasto |
+
+[Ficha SDK y fallos preservados](research/R-006_codex_sdk_findings_2026-10-05.md): primer intento enum del harness mal nombrado, antes de inferencia; segundo smoke pasa. No actualizar CLI/config/auth del propietario para probarlo. Cohorte final propuesta C-010, C-025a/C-029 como **familia alternativa de transporte**, C-017a/b, C-024 y C-028; MCP/Data reservados por necesidad. C-017a/b son ADAPT y traslado metodológico PORT; full wrappers/premium reference, no entitlement importado. [Plus Gate RC2](research/R-006_plus_runtime_gate_RC0.md) verifica finalistas con workload; seguridad/engine/Strategy V1/DoD/review son otros gates.

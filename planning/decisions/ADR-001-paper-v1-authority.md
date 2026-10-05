@@ -36,6 +36,10 @@ PAPER V1 se considerará funcional solo cuando, además de autonomía paper cont
 - [OpenAI Agents SDK](https://developers.openai.com/api/docs/guides/agents/sdk) ofrece orquestación, tools y tracing, pero la aplicación conserva deployment, estado y decisiones de aprobación. [Guardrails/human review](https://developers.openai.com/api/docs/guides/agents/guardrails-approvals) no protegen automáticamente todas las llamadas en una cadena; por ello el control financiero se ubica en el gateway determinístico. Esto justifica la **frontera funcional**, no selecciona SDK ni decide construir un runtime.
 - Skills, Plugins, MCP, backtest frameworks y APIs existentes permanecen en R-006 antes de decidir `BUILD` para cualquier capacidad mayor. El contrato RC1 §7 registra opciones reutilizables; ninguna disposición final ni proveedor queda seleccionado.
 
+## Especificación de detalle durante preparación — 2026-10-05
+
+[Contrato común RC0](../06_agent_evidence_contract_RC0.md), [PM shadow RC0](../06_shadow_portfolio_contract_RC0.md) y [Pedagogical RC0](../06_pedagogical_contract_RC0.md) detallan evidence/caller, snapshots ciegos pareados, target quantity/derivaciones, failure/late/no-output, comparación de decisión vs trayectoria contrafactual y formatos/curriculum completo. Mantienen esta decisión aprobada; especificaciones propuestas no seleccionan runtime, aprueban seguridad material ni convierten probes sintéticos en DoD. R-026/D-034 RESEARCHING; D-029/025/026/027 y validación PAPER conservan gates.
+
 ## Evaluación shadow exigida
 
 Comparar Champion determinístico y propuestas del Portfolio Manager Agent en decisiones coincidentes/divergentes, riesgo propuesto, rendimiento hipotético **con datos point-in-time y costes**, estabilidad, reproducibilidad, errores y utilidad incremental. El shadow no se puntúa con información posterior al momento de la propuesta. No existe promoción automática por buen resultado.

@@ -79,3 +79,9 @@ Se compara también la alternativa abierta **núcleo local/determinístico alway
 ## 8. Hito de evidencia — 2026-10-05
 
 [Wave 04](R-006_probe_wave_04_2026-10-05.md): veinte turnos Team, mínimo vs cuatro procedimientos explícitos, PIT/inyección/quant/shadow/pedagogía/fallos/repetibilidad; calibración fallida preservada. [Wave 05](R-006_probe_wave_05_2026-10-05.md): MCP SDK local, metadata/permiso/licencia plugins, activos Earnings/Audit/Calendar y schema por trusted role. [Shortlist RC0](R-006_shortlist_RC0.md) alcanza evidencia suficiente para cohorte condicional, no madurez final/selección. D-020 RESEARCHING, D-024 OPEN. Lo pendiente de Plus solo aplica a finalistas; contratos/snapshots/workload pueden continuar en Team.
+
+## 9. Paquete autónomo RC0 pasos 1–2 — completado 2026-10-05
+
+La [shortlist RC1](R-006_shortlist_RC1.md) es recomendación actual. [Contratos](../06_agent_evidence_contract_RC0.md) por rol, PM shadow y pedagogía completa propuestos; [workload/matriz](R-006_workload_acceptance_RC0.md) WL-L/R/S y GP1–7 especificados. [Wave 06](R-006_probe_wave_06_2026-10-05.md) prueba role/lineage/qty/cause/failure focalizados y conserva enmienda del checker (8/10 v1, 10/10 v2); no superioridad universal de Skills. [Codex SDK](R-006_codex_sdk_findings_2026-10-05.md) nativo prueba transporte público 7/7 checks, diferente de Agents SDK/API; no tool callbacks/recovery/Plus probados.
+
+Madurez: suficiente para propuesta de dirección/cohorte de aceptación, **no** para cerrar D-020/D-024. Endpoint del paquete solicitado alcanzado después de persistir/commit/push. Siguiente intervención: dirección arquitectónica candidata material y acceso Plus para aceptación limitada. No marcar todo Preparation bloqueado: Strategy V1/plataformas/datos, threat model/revisión independiente e integración financiera/pedagógica siguen su backlog; un gate Plus no los sustituye. No ampliar frameworks, gastar, implementar o congelar.
