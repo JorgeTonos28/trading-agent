@@ -55,3 +55,5 @@ Cohorte RC1 aprobada para aceptación, no selección. [Bootstrap EB1–8](../07_
 GP2/4 comprueban root/cwd/overrides/Skill/allowlists en superficie elegida; GP5 añade lifecycle/cleanup de procesos y replay de perfil sin duplicar configuración/admisión. GP6/7 mantienen ventana/cuotas y operación legítima. Los cinco smoke R-028 no prueban GP target; cleanup TEMP WinError 32 se conserva como caso lifecycle pendiente. No repetir todo R-006, solo deltas relevantes.
 
 [ONBOARDING](../../ONBOARDING.md) es entry point; no cambiar auth de Team ni copiarla. Preparación agéntica parcial sin inferencia puede continuar con inventario local. READY_AGENT_ENVIRONMENT no equivale a READY_FOR_IMPLEMENTATION/PAPER/LIVE.
+
+**R-028 fresh clone — evidencia reutilizable:** seis cadenas de instrucciones/Skill común y dos smoke de rol desde commit 9e0dbed en CLI Team; hash Git distingue 31 EOL changes. GP2 verifica solo diferencias en la superficie Plus seleccionada, incluyendo desktop/SDK si relevantes. GP5 lifecycle recoge cleanup Windows observado. No usar profile PARTIAL de investigación como aceptación target. Paquete autónomo completo; siguiente requisito acceso Plus.

@@ -55,3 +55,5 @@ Escala inicial cualitativa: `Alta/Media/Baja`; se calibrará después. Dueño in
 Todos los riesgos salvo K-018 siguen `OPEN`; una arquitectura aprobada aún requiere datos, parámetros y pruebas para mitigar riesgo operativo.
 
 **K-045/046, evidencia inicial R-028:** root/nested/aislado/override y Skills probados en fixture Team; 31 checks offline. No cierre por prompt/schema. Cleanup WinError 32 tras inferencia añade caso lifecycle a EB6/GP5; nuevo entorno requiere evidencia propia.
+
+**K-045/046 tras fresh clone:** seis paquetes correctamente descubiertos y dos smoke con bloqueo/autoridad; 31 deltas CRLF/LF exigen hashes Git del commit + observación local separada. Errores de cleanup y manifest hash preservados. Perfil PARTIAL, full target gates y modelo de seguridad siguen abiertos.

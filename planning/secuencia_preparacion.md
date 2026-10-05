@@ -38,3 +38,5 @@
 3. Persistir/sincronizar evidencias y deltas de R-006/GP; continuar todo trabajo de este paquete que no dependa de entitlement/gobierno.
 4. Plus Acceptance GP1–7 más gate de portabilidad usando entorno objetivo y assets del clone. Acceso requiere acción del dueño; no transferir auth Team. Reutilizar evidencia conductual, repetir solo diferencias relevantes.
 5. Review/seguridad y gobierno final D-020/D-024/037; runtime/topología aún abiertos. La ruta bootstrap es condición DoR explícita. R-020/D-008 y demás trabajo independiente siguen válidos; no implementar Trading OS.
+
+**Endpoint R-028 alcanzado:** diseño/paquetes/probes nativos y fresh clone/reporte PARTIAL completados y persistidos; próximo gate requiere cuenta Plus real para GP/EB target. Cohorte ya aprobada; no final runtime. Scope del paquete independiente de entitlement agotado; solicitar acceso conforme Autonomous Continuation Rule. No implica pausa global de Preparation ni cierre de R-020/otras investigaciones.

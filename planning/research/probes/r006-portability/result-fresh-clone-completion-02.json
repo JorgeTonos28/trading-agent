@@ -1,0 +1,118 @@
+{
+  "probe": "R028_FRESH_CLONE_COMPLETION_02",
+  "source_attempt": "result-fresh-clone-attempt-01.json",
+  "source_attempt_error": "KeyError_manifest_self_hash_omitted",
+  "commit": "9e0dbedd98c25d0158acf14fd18cc578adf00a7b",
+  "inference_turns": 0,
+  "AVAILABLE_IN_TARGET_PLUS": "UNKNOWN",
+  "checks": [
+    {
+      "id": "same_commit_exact",
+      "passed": true
+    },
+    {
+      "id": "all_previous_assets_git_blob_identical",
+      "passed": true
+    },
+    {
+      "id": "self_manifest_hash_included",
+      "passed": true
+    },
+    {
+      "id": "worktree_only_declared_eol_delta",
+      "passed": true
+    },
+    {
+      "id": "previous_six_source_chains_verified",
+      "passed": true
+    },
+    {
+      "id": "previous_two_smokes_accounted",
+      "passed": true
+    },
+    {
+      "id": "original_attempt_all_completed_checks_preserved",
+      "passed": true
+    },
+    {
+      "id": "observed_profile_schema_valid",
+      "passed": true
+    },
+    {
+      "id": "Team_profile_is_partial_not_Plus_ready",
+      "passed": true
+    }
+  ],
+  "git_blob_asset_sha256": {
+    ".agents/skills/trading-os-bootstrap/SKILL.md": "a743309c18ae17b280737ef9d67e9529bef5805772992f4799da580760f96d83",
+    "AGENTS.md": "a96ac4a1062a675fd8b87c1e05120de852492085d4879508f5ae0abe362b227d",
+    "ONBOARDING.md": "14de91f6c260effd940a3dfd020759bb1e4ee1a1874798ab070ffa34227a531b",
+    "agents/market-research/AGENTS.md": "91935ab44a029416ab73143b4d79b8cabf103f607da063e711397af03ea9fc79",
+    "agents/market-research/package.json": "9f43d240ed95e98f05f2958f77853023b93644561ab17d88edaebf7e3afeab40",
+    "agents/onboarding/AGENTS.md": "1b57ff9fb62519bc1fa4e644dd5c090e86afc0be6239795b35768ffd83838d94",
+    "agents/onboarding/package.json": "95e8037e06713d902c46a5ad9bdb30ee9311fb2cd677dee6637081e064600735",
+    "agents/pedagogical/AGENTS.md": "8b24bf44ad99c26a0986bd528f5ea572bdc0671b866829a25465da51c5b69744",
+    "agents/pedagogical/package.json": "ae421c5d891693eebd9636343024b3097f2bcaa32549d03386153d822c28722a",
+    "agents/plan-guardian/AGENTS.md": "52936213a8a62a4bb8adc9514d29eb533598005ba6712f88842279ebebab1e4c",
+    "agents/plan-guardian/package.json": "e3f4b0019f6059662dbfb54da1000cfbf17fd23f1847371658be52d7b2de5ebf",
+    "agents/portfolio-manager-shadow/AGENTS.md": "1f824c309fe3bd9f08a8a372267398838e2e1778b1e5a98fa1ef93c4acb0cf45",
+    "agents/portfolio-manager-shadow/package.json": "e0638e033a78c6351b2a6f8427ecde7d2d405ac48a2bfa6261e2e0a0cd650b31",
+    "agents/quant-research/AGENTS.md": "1d3882473a29878219c6dba49d7d4aec2987244c683498c64d75fdf389a892a8",
+    "agents/quant-research/package.json": "923af385a55ecca1c2bcd33a28b16ae543412ebf97d9bfca648c73136e4fc558",
+    "planning/06_agent_evidence_contract_RC0.md": "435649035ef9a0cc7522cc8b1dc8120d500cdd943e60d0e9fbc597a6e82a11a9",
+    "planning/06_external_signal_admission_RC1.md": "fdab142d9b4301e42fde095561f84197c8f52a292402fb14caea9ab516355139",
+    "planning/06_pedagogical_contract_RC0.md": "9348059bb1eb6bcc0ab7be16de5f410d02be807ecc546a4befda4639b1fa9225",
+    "planning/06_shadow_portfolio_contract_RC0.md": "32d6de94fffb890a84b0b2b3b696d8bc3bc7265b179be86ba228473e45f30bf6",
+    "planning/07_agent_packaging_contract_RC0.md": "42b8152c303026047de8de1e1e4a5ad2e37d60eb104a2f4a64b18a07c31f1910",
+    "planning/07_environment_bootstrap_contract_RC0.md": "d859e966b2f593b3984cb17a7fd491f1b3ac61c65d1d67c48b642f1be5655366",
+    "planning/decision_register.md": "409cd6a8b390d015b2ce9c8ad5b7ee86f1f8745775b222cf82aac408adeb9c48",
+    "planning/research/R-006_workload_acceptance_RC0.md": "1a8a5b955d24a9d55a0ef26fe9cf4ed999eba2258dcd11368826fc25409415e7",
+    "planning/research/probes/r006-contracts/skills/pedagogy/SKILL.md": "5ce1d593ce9de91ca021810dcf6fbcc9e0d3c20015d59b64dd8bd7e4429fdb24",
+    "planning/research/probes/r006-contracts/skills/quant/SKILL.md": "65d9704dece6dc4c189e4089980a16754346b495e089dfa19724f52c67bf011f",
+    "planning/research/probes/r006-contracts/skills/research/SKILL.md": "8ace180e5478d8b8c73df4034a8fcbdd7df33744b5b50c02a90caa6ed75f9a5b",
+    "planning/research/probes/r006-contracts/skills/shadow/SKILL.md": "6595768b8ec0f45fa74bac42ea411c67db58561ccf3fa1867f8a3c22cba862fd",
+    "planning/secuencia_preparacion.md": "6731009b691e25e07dd486df17601d612fad15982c433ace23542cf837e10268",
+    "shared/bootstrap_manifest.json": "26d4bbb0283e67d326b6a93a14c04434f55b78b06a3a7afaefa9e9c25f198ef6",
+    "shared/environment_profile.schema.json": "b968db16995539a6640346f952ec0f7a204ef11a069ed38d0b75151751178b6f",
+    "shared/target_plus_profile.json": "af7129f945f2f8e473baebe77e6a17214e489cab7f4e1ddd15254f35d182a63f"
+  },
+  "worktree_eol_only_differences": [
+    ".agents/skills/trading-os-bootstrap/SKILL.md",
+    "AGENTS.md",
+    "ONBOARDING.md",
+    "agents/market-research/AGENTS.md",
+    "agents/market-research/package.json",
+    "agents/onboarding/AGENTS.md",
+    "agents/onboarding/package.json",
+    "agents/pedagogical/AGENTS.md",
+    "agents/pedagogical/package.json",
+    "agents/plan-guardian/AGENTS.md",
+    "agents/plan-guardian/package.json",
+    "agents/portfolio-manager-shadow/AGENTS.md",
+    "agents/portfolio-manager-shadow/package.json",
+    "agents/quant-research/AGENTS.md",
+    "agents/quant-research/package.json",
+    "planning/06_agent_evidence_contract_RC0.md",
+    "planning/06_external_signal_admission_RC1.md",
+    "planning/06_pedagogical_contract_RC0.md",
+    "planning/06_shadow_portfolio_contract_RC0.md",
+    "planning/07_agent_packaging_contract_RC0.md",
+    "planning/07_environment_bootstrap_contract_RC0.md",
+    "planning/decision_register.md",
+    "planning/research/R-006_workload_acceptance_RC0.md",
+    "planning/research/probes/r006-contracts/skills/pedagogy/SKILL.md",
+    "planning/research/probes/r006-contracts/skills/quant/SKILL.md",
+    "planning/research/probes/r006-contracts/skills/research/SKILL.md",
+    "planning/research/probes/r006-contracts/skills/shadow/SKILL.md",
+    "planning/secuencia_preparacion.md",
+    "shared/bootstrap_manifest.json",
+    "shared/environment_profile.schema.json",
+    "shared/target_plus_profile.json"
+  ],
+  "hash_policy": "SHA256_git_blob_at_repo_commit_for_portable_identity_raw_bytes_separate",
+  "reused_smoke_turns": 2,
+  "cleanup": "COMPLETED",
+  "passed": 9,
+  "total": 9,
+  "source_sha256": "b551d0d32a599b4a8bf1978fa4d8e6aa6d630b8d20f1bfadbd288834c0735d8e"
+}

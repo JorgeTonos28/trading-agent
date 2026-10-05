@@ -62,3 +62,5 @@ Estados: cada Q muestra su prioridad; Q-030–Q-037 incluyen estado explícito. 
 - Q-044 (P1, D-037/020/024, RESEARCHING): ¿Qué ruta reproducible de bootstrap carga reglas globales y rol, descubre/configura capacidades sin depender de Team/chat, distingue acciones manuales y prueba readiness Plus? ADR-009 aprueba obligación; R-028 compara mecanismos nativos y paquetes. Sesión por rol y runtime final no seleccionados.
 
 **Q-044 avance R-028:** discovery nativo y herencia corroborados en fixture Team; contratos/perfiles/paquetes RC0 creados. Siguiente probe fresh clone; ruta target/gates y permisos siguen abiertos, no selección de sesiones.
+
+**Q-044 estado posterior:** contrato y fresh-clone route documentados/probados en CLI Team (metadata 6, smoke 2). Quedan superficie/entitlement/operación target, full EB y permisos/runtime finales; evidencia parcial no cierra D-037.

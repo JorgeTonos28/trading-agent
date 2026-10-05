@@ -49,6 +49,8 @@ Son etiquetas del plan de acción; availability, requisito required/optional, se
 
 Schema RC0 compartido estrictamente versionado. Campos:
 
+Las referencias locales evidence_refs publicadas se resuelven desde la raíz del repositorio, con verificación de paths/evidencia, no desde el cwd de un rol. Las referencias simbólicas SYNTHETIC de fixtures no cierran gates reales.
+
 - environment_kind, expected_plan, observed_plan, surface, OS, repo_commit, manifest_sha256 y captured_at UTC;
 - inventory con ID/kind, detected/enabled/callable por separado, version y evidence_refs (sin auth values);
 - skills/plugins/MCP/localtools/dependencies mediante `kind`; cuotas/límites conocidos, UNKNOWN permitido;
@@ -97,3 +99,7 @@ Assets locales/Skill propia: PAPER licencia/adquisición 0, cómputo/cuota inclu
 ## 9. Límites del paquete autónomo
 
 Entregables: contratos/manifiesto/perfiles, paquetes documentales, Skill candidata, evidencia local y fresh-clone, deltas a Plus Gate/shortlist. Endpoint cuando eso esté sincronizado y siguientes gates necesiten entorno autenticado/Plus o decisión material. Auth bloqueada no detiene inventario local, diseño y negativos. D-037 queda RESEARCHING; mecanismos/permisos finales necesitan evidencia y gobierno correspondientes.
+
+## Aclaración del perfil RC0 — Git identity
+
+`repo_commit` identifica snapshot ensayado. `manifest_sha256` es SHA256 del Git blob `shared/bootstrap_manifest.json` de ese commit, sin autorreferencia; asset hashes portables usan la misma regla. Raw worktree hash es evidencia local distinta. Un perfil posterior puede reutilizar solo gates cuyos inputs/rules/Skill/schema/cliente/condiciones relevantes sigan iguales; cambios de contenido no EOL se consideran drift. Evidence_kind simulado nunca se usa para cerrar target gates. Fresh clone local no implica máquina limpia, nueva autenticación o surface Plus.

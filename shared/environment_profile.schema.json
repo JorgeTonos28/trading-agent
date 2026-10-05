@@ -34,7 +34,8 @@
     },
     "manifest_sha256": {
       "type": "string",
-      "pattern": "^[0-9a-f]{64}$"
+      "pattern": "^[0-9a-f]{64}$",
+      "description": "SHA256 of shared/bootstrap_manifest.json Git blob at repo_commit; raw worktree bytes recorded separately"
     },
     "instruction_chain": {
       "type": "array",

@@ -181,7 +181,7 @@ capability_discovery:
   sixth_probe_wave: planning/research/R-006_probe_wave_06_2026-10-05.md
   native_codex_sdk_candidate: planning/research/R-006_codex_sdk_findings_2026-10-05.md
   conditional_shortlist: planning/research/R-006_shortlist_RC1.md
-  discovery_maturity: AUTONOMOUS_PACKAGE_COMPLETE_PROPOSED_SHORTLIST_NOT_FINAL_SELECTION
+  discovery_maturity: COHORT_APPROVED_BOOTSTRAP_PACKAGE_COMPLETE_TARGET_ACCEPTANCE_AND_FINAL_SELECTION_PENDING
   baseline_behavioral_turns: 20
   baseline_behavioral_predefined_complete_passes: 19
   focused_behavioral_turns: 10
@@ -193,7 +193,7 @@ capability_discovery:
   no_general_Skill_superiority_demonstrated: true
   autonomous_RC0_steps_1_and_2: COMPLETE_SPECIFICATION_AND_FOCUSED_SYNTHETIC_PROBES
   candidate_cohort_owner_approval: APPROVED_FOR_ACCEPTANCE_NOT_FINAL_SELECTION
-  next_package_action: R028_fresh_clone_assets_discovery_and_profile
+  next_package_action: HUMAN_ACTION_REQUIRED_target_individual_Plus_environment_access_for_acceptance
   independent_coverage_gaps: security_independent_review_full_financial_and_pedagogical_integration_not_closed
   proposed_architecture_direction: deterministic_local_always_on_core_plus_intermittent_Codex_jobs_NOT_APPROVED_OR_FROZEN
   representative_workload: WL_R_proposed_test_profile_40_base_jobs_63_with_reserve_NOT_STRATEGY_CADENCE
@@ -258,7 +258,7 @@ environment_portability:
   decision: D-037
   research: R-028
   priority: P1
-  design_status: CONTRACT_RC0_LOCAL_PROBES_COMPLETE_FRESH_CLONE_NEXT
+  design_status: CONTRACT_RC0_LOCAL_AND_FRESH_CLONE_EVIDENCE_COMPLETE_TARGET_GATES_OPEN
   gates: [D-020, D-024, Definition_of_Ready]
   CURRENT_RESEARCH_ENVIRONMENT: Team_research_only
   TARGET_PLUS_ENVIRONMENT: individual_Plus_alias_TARGET_RUNTIME_ENVIRONMENT
@@ -267,3 +267,17 @@ environment_portability:
   one_session_per_role: NOT_SELECTED
   repository_only_no_chat_dependency: required
   agent_readiness_is_trading_readiness: false
+
+bootstrap_evidence:
+  dossier: planning/research/R-028_bootstrap_findings_2026-10-05.md
+  source_commit_tested: 9e0dbed
+  role_packages_metadata_verified: 6
+  native_fixture_smoke_turns: 5
+  fresh_clone_role_smoke_turns: 2
+  offline_checks: 31
+  clone_completion_checks: 9
+  target_acceptance_executed: false
+  observed_readiness: PARTIAL
+  portable_hash_policy: SHA256_git_blob_at_pinned_commit
+  desktop_UI_and_SDK_folder_inheritance: NOT_TESTED_this_probe
+  failures_preserved: account_RPC_internal_TEMP_cleanup_WinError32_manifest_self_hash_KeyError

@@ -44,3 +44,5 @@ La hoja declara el bloqueo de implementación, el invariante financiero, primera
 El propietario declaró el 2026-10-01 que **nunca se ejecutaron ni consultaron resultados históricos de MATR_V1 o variantes cercanas**, para 2023–septiembre de 2026 ni para otro período. Esto es un hecho reportado sobre el proceso del proyecto, no evidencia de rendimiento ni garantía de que la futura comparación entre candidatos preserve un holdout.
 
 **A-030 actualizado R-028:** PARTIAL — CLI Team probó root+rol y Skill en fixture, metadata y cinco respuestas; carpeta aislada no hereda. No generalizar a cada superficie/config/Plus; fresh clone real y target quedan pendientes. A-031 sigue parcial: assets versionados se transportan, auth/servicios externos no.
+
+**A-030/031 tras fresh clone:** CLI app-server confirmó seis cadenas raíz+rol y Skill común; dos roles respondieron invariantes. Assets Git portables comprobados, con 31 cambios EOL del checkout; auth/localtools siguen prerequisitos externos. Desktop UI/SDK directo y Plus no demostrados. No tratar raw worktree hash como identidad portable.

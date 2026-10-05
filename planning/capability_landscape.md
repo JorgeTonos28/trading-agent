@@ -130,3 +130,5 @@ Cohorte RC1 aprobada solo para aceptación; SELECTED=NO. ADR-009 añade D-037/R-
 | C-032 | Custom agents/config roles nativos Codex | YES documentación oficial | UNKNOWN activación; no probe específico | UNKNOWN | UNKNOWN integración/version/superficie | CONDITIONAL nativo/cupo/local | NO | REFERENCE_ONLY, sin topología elegida |
 
 [Resultados R-028](research/R-028_bootstrap_findings_2026-10-05.md). Instalar no es habilitar/invocar. Carpetas package y shared son estructuras de planificación, no freeze ni autoridad. Cleanup WinError 32 tras cinco turnos conservado; lifecycle GP5/EB6 pendiente.
+
+**C-030/C-031 actualización posterior:** fresh clone del commit 9e0dbed descubrió Skill bootstrap en seis roles y cargó root+local; dos smoke confirmaron current Plan Architect/authority NONE/lock y Guardian inactive. C-031 compatibilidad PARTIAL: workflow completo no probado ni target; availability archivos YES, entitlement/activación target UNKNOWN. Perfil PARTIAL y hashing portable de Git blobs; no selección. [Dossier §9](research/R-028_bootstrap_findings_2026-10-05.md).

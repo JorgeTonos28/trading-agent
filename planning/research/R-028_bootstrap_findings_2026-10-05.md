@@ -1,6 +1,6 @@
 # R-028 — Environment Bootstrap, Portability & Agent Packaging
 
-Fecha: 2026-10-05. Estado: **RESEARCHING**, P1, D-037; contrato/diseño RC0 y evidencia local. ADR-009 aprueba requisito y cohorte candidata; no cierre D-020/D-024/037 ni selección final. Fresh-clone verification pendiente en este hito.
+Fecha: 2026-10-05. Estado: **RESEARCHING**, P1, D-037; contrato/diseño RC0 y evidencia local. ADR-009 aprueba requisito y cohorte candidata; no cierre D-020/D-024/037 ni selección final. Paquete autónomo de diseño/local/fresh-clone completado; aceptación target y review/gobierno permanecen abiertos. Véase §9, vigente sobre las notas del primer hito.
 
 ## 1. Conclusión técnica candidata
 
@@ -66,3 +66,37 @@ Antes de D-024/DoR: EB1–8 para ruta seleccionada más GP1–7, permisos/review
 ## 8. Próximo trabajo autónomo de este paquete
 
 Commit/push del diseño y evidencia focal; clonar ese commit a TEMP, comprobar manifiesto/rules/Skill reales y referencias desde clone sin este chat. Persistir perfil sanitizado/readiness parcial y deltas a Plus Gate. Después del endpoint, acceso Plus y gobierno material según evidencia; no pedir otra aprobación de cohorte ni repetir investigación conductual completa.
+
+## 9. Hito final — fresh clone y perfil observado
+
+Se clonó **localmente** el commit publicado `9e0dbed` en un directorio TEMP sin copiar configuración/auth. Este es un clone fresco de assets, **no una máquina limpia ni otro plan**. Account read confirmó Team. Los seis cwd cargaron exactamente AGENTS raíz + AGENTS del paquete, con trading-os-bootstrap descubierta/habilitada en cada uno. Dos smoke programáticos app-server (onboarding y PM shadow) devolvieron Plan Architect, rol lógico correcto, implementation_locked=true, authority=NONE y Guardian inactive. No tools solicitadas. Cuatro roles restantes tienen metadata, no smoke conductual. Apertura UI/proyecto desktop y wrapper SDK específicos no probados en este hito; GP2 verifica superficie final.
+
+[Intento clone 01](probes/r006-portability/result-fresh-clone-attempt-01.json): 12/12 comprobaciones hasta ese punto, pero exit 1 por **KeyError del harness**, al omitir el propio manifest en el conjunto de hashes y construir el perfil. Cleanup COMPLETED. No se borró ni presentó como éxito integral. [Completion 02](probes/r006-portability/result-fresh-clone-completion-02.json): clone del mismo commit, incluye/verifica manifest, reutiliza los dos smoke con assets Git idénticos, **9/9 checks**, cero inferencias nuevas, cleanup COMPLETED. No se repitió la conducta para mejorar resultados.
+
+**Hallazgo material de portabilidad:** 31 archivos mostraron diferencias solo CRLF↔LF por checkout Windows. Identidad portable usa SHA256 del **Git blob al commit fijado**, incluyendo manifest; bytes del worktree se registran por separado y cualquier diferencia que no sea el EOL declarado se trata como drift. No comparar raw hashes de máquinas distintas como si fueran Git content hashes. El contrato fija esta semántica; no renormalizamos historia ni cambiamos configuración global.
+
+[Environment profile observado RC1](probes/r006-portability/environment-profile-research-RC1.json) valida schema y queda PARTIAL: Team/CLI, versiones, paquetes/inventory parcial, acciones/manual fallback, EB1/2 de investigación acotados. Plugins/apps/MCP/dependencias no inventariados por este probe figuran explícitamente UNKNOWN. GP target no ejecutado, EB3–8 completos no cerrados. La Skill bootstrap tiene formato/discovery probado; su workflow completo y activación específica siguen pendientes. Profile captura el commit ensayado, no afirma verificar modificaciones posteriores de documentación.
+
+### Estado de madurez R-006
+
+- Coverage/comparativa/contratos/workload y cohorte candidata: documentados; owner aprobó continuar aceptación.
+- Bootstrap/packaging: diseño RC0 + native fixture y fresh-clone evidence; método reproducible de preparación documentado sin chat.
+- Target Plus: UNKNOWN, GP1–7/EB target pendientes. No repetir discovery Team completo.
+- Seguridad técnica/permiso material, revisión crítica independiente, final selección D-020/D-024/037 y integración financiera/pedagógica: pendientes propios, no todos exclusivos de Plus.
+- Todos SELECTED=NO. Nuevos candidatos nativos REUSE_AS_IS / Bootstrap ADAPT / custom roles y plugin distribution REFERENCE_ONLY. No arquitectura final ni implementación.
+
+### Endpoint e intervención exacta
+
+**Paquete autónomo solicitado completado** en documentación/probes y reporte parcial, condicionado a commit/push final. La siguiente aceptación de entorno necesita una cuenta/superficie Plus individual real; Team no puede cubrirla.
+
+`HUMAN_ACTION_REQUIRED`: abrir el clone completo de plan-architect en Codex con la cuenta Plus objetivo y pedir Bootstrap Mode siguiendo ONBOARDING.md. Login/entitlement son acción del dueño, no solicitar tokens ni cambiar autenticación Team automáticamente. No hace falta aprobar otra vez la cohorte ni escoger sesiones por rol. No se pide aprobación final de runtime todavía. R-020 y otras investigaciones del Preparation Program permanecen en cola; el acceso target no las convierte en bloqueadas globalmente.
+
+**Publicación del perfil:** RC1 normaliza únicamente evidence_refs a paths relativos a repo root; original observado se conserva. Schema válido y todas las referencias locales existen. Observaciones/readiness PARTIAL no se modifican. Registro en result-profile-publication-01.json; no nueva aceptación target.
+
+| Candidato | PAPER_V1_VIABLE_FREE | PAPER_V1_COST | LIVE_COST | FREE_ALTERNATIVE | PAID_INCREMENTAL_VALUE | ECONOMIC_JUSTIFICATION_REQUIRED |
+|---|---|---|---|---|---|---|
+| C-030 discovery/instrucciones nativos | CONDITIONAL entitlement/suficiencia Plus; assets locales sí | Licencia/adquisición 0; cuota incluida y operación local por validar | UNKNOWN plan/ruta/escala; no estimar 0 permanente | Lectura explícita de contratos/Skills | Gestión/continuidad de runtime externo posible, no demostrada | YES antes de gasto adicional |
+| C-031 Bootstrap Mode/paquetes/Skill propios | YES activos; CONDITIONAL inferencia/operación | Adquisición 0; sin subscription adicional, local/cuota por medir | UNKNOWN mantenimiento/infra/modelo por ruta futura | ONBOARDING manual desde repo | Gestión de despliegue/fiabilidad posible, sin beneficio medido | YES servicios, no adquirir Skill paga |
+| C-032 custom agents nativos | UNKNOWN activación/suficiencia; referencia gratuita | Documentación 0; runtime/cuota target UNKNOWN | UNKNOWN por selección/escala | Cwd/caller explícito con paquetes | No beneficio pago demostrado; no seleccionar por automatismo | YES si gasto adicional |
+
+Coste fijo/variable/mensual/escala de ejecución permanece UNKNOWN hasta workload/ruta; no confundir coste 0 del documento con coste 0 del sistema. Metodologías se adquieren gratis/incluidas/propias, modelos/infra/datos aparte bajo ADR-008.

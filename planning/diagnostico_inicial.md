@@ -54,3 +54,7 @@ No hay dependencia circular necesaria si los **contratos funcionales** se define
 ## Próxima investigación compartida
 
 **R-022/R-023/R-024 / D-015/018/019:** cerrar primero el mapa del Trading OS, las fronteras de autoridad, el papel de señales externas y el contrato pedagógico. R-025/R-007 investigan proveedores/broker en paralelo. R-020 compara Strategy V1 después de fijar gates y criterios; el video aporta inspiración funcional, no rendimientos que debamos auditar.
+
+## Actualización de portabilidad — ADR-009 / R-028
+
+D-037 P1 añade prerequisito reproducible de D-024/DoR: fresh environment + repo hasta entorno agéntico configurado/verificado. Diseño RC0 y evidence native/fresh clone disponibles; target Plus UNKNOWN y perfiles no heredados de Team. Discovery de raíz/cwd/Skill es reutilizable, no una ACL ni una sesión obligatoria por rol. Ruta/config/entitlement operacionales y final runtime/gobierno siguen abiertos. Esto no introduce dependencia circular con implementar Trading OS: acceptance de herramientas/roles utiliza assets y fixtures de preparación; integración trading/PAPER/DoD se verifica después en sus gates.

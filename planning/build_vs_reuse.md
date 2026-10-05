@@ -58,3 +58,5 @@ No BUILD de capacidad mayor autorizado/seleccionado. Integración propia especí
 ## Bootstrap/Agent Packaging — candidato R-028
 
 REUSE_AS_IS discovery/instrucciones/Skills nativos (C-030); ADAPT modo de onboarding/Skill propia/perfiles/paquetes de contratos actuales (C-031); WRAP inventarios/transporte oficial cuando D-024 elija una ruta. Skill-installer público REFERENCE_ONLY/ADAPT si hace falta adquirir assets externos, no para copiar nuestros assets a home. Roles nativos custom agents C-032 y plugin packaging C-002 REFERENCE_ONLY ahora. No construir instalador/discovery engine/orquestador nuevo por defecto. SELECTED=NO, Team no prueba Plus. [Dossier](research/R-028_bootstrap_findings_2026-10-05.md).
+
+**R-028 paquete concluido:** fresh clone metadata de seis roles + dos smoke, profile PARTIAL y hash de Git blob portable. No installer operativo construido; bootstrap es método/instrucciones y contratos candidatos. Coste por fase y free/paid alternativas en dossier R-028. Plus access/gates y final gobierno siguen pendientes.
