@@ -32,6 +32,7 @@ def checks(t):
         "required_numeric_facts": all(fact_map.get(k) == v for k, v in numbers.items()),
         "asof_and_context": o.get("asof") == "2026-09-30T15:00:00Z" and bool(o.get("context_version")),
         "skill_version": o.get("skill_version") == ("none" if t["variant"] == "minimal" else "prototype-v1"),
+        "content_marker": o.get("procedure_marker") == ("NONE" if t["variant"] == "minimal" else {"research": "IDEA-PIT-W2", "tool_failure": "IDEA-PIT-W2", "quant": "QUANT-LEDGER-V1", "pedagogy": "TRACE-FACTS-V1", "shadow": "SHADOW-THESIS-V1"}[case]),
     }
     if case in ("research", "quant"):
         result["hypothesis_and_falsifier"] = bool(o.get("hypothesis")) and bool(o.get("falsifier"))

@@ -42,3 +42,7 @@ Errores de protocolo/harness se conservan y se distinguen de fallos conductuales
 ## Entregables
 
 Probe rerunnable, fixtures, schema, Skills, rubric, resultados por turno y resumen; informe wave 04; shortlist condicional y revisión de madurez. D-020 `RESEARCHING`, D-024 `OPEN`. `AVAILABLE_IN_TARGET_PLUS=UNKNOWN` para activación/modelos/herramientas/cuotas. El Plus Acceptance Gate posterior reutiliza esta conducta y valida solo aspectos del entorno de finalistas.
+
+## Enmienda de protocolo v2 (antes del siguiente intento)
+
+Primer intento interrumpido tras cuatro turnos completos y uno iniciado: el output de Skill reportó contenido ausente; el baseline no tenía variante explícita. Esos outputs quedan archivados como **comparación inválida**, no evidencia de valor incremental. v2 registra roots de Skills en el proceso, exige discovery enabled antes de inferencia, identifica la variante y pide copiar un marker presente solo en el cuerpo de cada Skill. Registro+marker sustentan entrega del contenido; la atestación no prueba toda la obediencia. La muestra comparativa prevista sigue veinte turnos nuevos (v2); no mezclar con v1. Los dos primeros turnos v2 verifican entrega del contenido; si cumplen el protocolo se conservan como parte de los veinte. Cualquier marker ausente detiene el intento para investigar, sin inferencias comparativas.

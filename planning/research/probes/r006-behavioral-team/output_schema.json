@@ -171,6 +171,9 @@
     },
     "tool_outcome": {
       "type": "string"
+    },
+    "procedure_marker": {
+      "type": "string"
     }
   },
   "required": [
@@ -190,7 +193,8 @@
     "proposals",
     "teaching",
     "limitations",
-    "tool_outcome"
+    "tool_outcome",
+    "procedure_marker"
   ],
   "additionalProperties": false
 }

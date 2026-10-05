@@ -109,7 +109,7 @@ def digest(path):
 
 def skill_for(case):
     if case in ("research", "tool_failure"):
-        return ROOT.parent / "r006-idea-generation-sandbox" / "SKILL.md", "r006-research-idea-sandbox"
+        return ROOT / "skills" / "idea-generation" / "SKILL.md", "r006-research-idea-sandbox"
     names = {"quant": ("quant-review", "r006-quant-review-prototype"),
              "pedagogy": ("pedagogy-trace", "r006-pedagogy-trace-prototype"),
              "shadow": ("shadow-thesis", "r006-shadow-thesis-prototype")}
@@ -123,6 +123,24 @@ def run_trial(server, cwd, case, variant, repetition, model, effort, fixture, sc
              "tool_trace": [], "unexpected_tools": [], "output": None,
              "turn_status": "not_started", "schema_errors": [], "usage": None}
     common = (ROOT / "common_contract.txt").read_text(encoding="utf-8")
+    inputs_skill = None
+    if variant == "skill":
+        path, name = skill_for(case)
+        dest = cwd / "skills" / name / "SKILL.md"
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(path, dest)
+        inputs_skill = {"type": "skill", "name": name, "path": str(dest)}
+        entry["skill_sha256"] = digest(path)
+        entry["skill_bytes"] = path.stat().st_size
+        server.rpc("skills/extraRoots/set", {"extraRoots": [str(cwd / "skills")]})
+        inventory = server.rpc("skills/list", {"cwds": [str(cwd)], "forceReload": True})
+        found = [s for group in inventory.get("data", []) for s in group.get("skills", []) if s.get("name") == name]
+        entry["skill_discovered_enabled"] = any(s.get("enabled") is True for s in found)
+        if not entry["skill_discovered_enabled"]:
+            raise RuntimeError("Skill not discovered/enabled; no inference until harness repaired")
+    else:
+        server.rpc("skills/extraRoots/set", {"extraRoots": []})
+        entry["skill_bytes"] = 0
     tool = {"type": "function", "name": "read_evidence",
             "description": "Read this trial's synthetic as-of evidence bundle. No external access or side effects.",
             "inputSchema": {"type": "object", "properties": {"bundle": {"type": "string"}},
@@ -131,7 +149,7 @@ def run_trial(server, cwd, case, variant, repetition, model, effort, fixture, sc
         "cwd": str(cwd), "model": model, "modelProvider": "openai",
         "ephemeral": True, "approvalPolicy": "never", "sandbox": "read-only",
         "baseInstructions": common, "developerInstructions": "Synthetic experiment only. No delegation or other tools.",
-        "dynamicTools": [tool], "selectedCapabilityRoots": [],
+        "dynamicTools": [tool],
         "allowProviderModelFallback": False,
     })
     if thread.get("modelProvider") != "openai" or thread.get("model") != model:
@@ -142,19 +160,11 @@ def run_trial(server, cwd, case, variant, repetition, model, effort, fixture, sc
                                   "disabled_plugin_count": len(thread.get("disabledPluginIds", [])),
                                   "multi_agent_mode": thread.get("multiAgentMode")}
     thread_id = thread["thread"]["id"]
-    request = f"Bundle={case}; asof={fixture['data']['asof']}; context_version={fixture['data']['context_version']}. {fixture['task']}"
+    request = f"Variant={variant}; bundle={case}; asof={fixture['data']['asof']}; context_version={fixture['data']['context_version']}. {fixture['task']}"
     inputs = [{"type": "text", "text": request}]
     if variant == "skill":
-        path, name = skill_for(case)
-        dest = cwd / "skills" / name / "SKILL.md"
-        dest.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copyfile(path, dest)
         inputs[0]["text"] += f" Apply ${name}."
-        inputs.append({"type": "skill", "name": name, "path": str(dest)})
-        entry["skill_sha256"] = digest(path)
-        entry["skill_bytes"] = path.stat().st_size
-    else:
-        entry["skill_bytes"] = 0
+        inputs.append(inputs_skill)
     entry["request_bytes"] = len(request.encode())
     server.rpc("turn/start", {
         "threadId": thread_id, "input": inputs, "outputSchema": schema,
@@ -244,6 +254,7 @@ def main():
               "config_overrides": CONFIG, "fixtures_sha256": digest(ROOT / "fixtures.json"),
               "contract_sha256": digest(ROOT / "common_contract.txt"),
               "schema_sha256": digest(ROOT / "output_schema.json"), "trials": []}
+    report["protocol_version"] = "2_activation_and_explicit_variant"
     output = Path(args.output)
     with tempfile.TemporaryDirectory(prefix="r006_behavior_team_") as sandbox:
         server = Server(sandbox)
@@ -280,6 +291,12 @@ def main():
                                   "reads": len(entry["tool_trace"]), "seconds": entry["duration_seconds"]}), flush=True)
                 if entry["turn_status"] != "completed":
                     raise RuntimeError("Noncompleted inference; stop to investigate, no automatic retries")
+                expected_markers = {"research": "IDEA-PIT-W2", "tool_failure": "IDEA-PIT-W2",
+                                    "quant": "QUANT-LEDGER-V1", "pedagogy": "TRACE-FACTS-V1",
+                                    "shadow": "SHADOW-THESIS-V1"}
+                marker = expected_markers[case] if variant == "skill" else "NONE"
+                if (entry.get("output") or {}).get("procedure_marker") != marker:
+                    raise RuntimeError("Content delivery marker absent; stop comparison, retain failed attempt")
         finally:
             server.close()
             report["diagnostic_lines_not_persisted"] = server.diagnostic_lines

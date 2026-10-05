@@ -1,0 +1,8 @@
+# Disposable research output should retain evidence, not interpreter caches.
+__pycache__/
+*.py[cod]
+
+# Credentials must never enter repository history.
+.env
+.env.*
+!.env.example

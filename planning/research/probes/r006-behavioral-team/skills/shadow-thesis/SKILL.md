@@ -10,3 +10,5 @@ First ledger the asof context: holdings, cash, reservations, prices, unvalidated
 Adapted methodology only from Anthropic financial-services thesis-tracker, pinned commit 574ed3624aebd0418c7e96cd101262f30210ab26, Apache-2.0:
 https://github.com/anthropics/financial-services/blob/574ed3624aebd0418c7e96cd101262f30210ab26/plugins/vertical-plugins/equity-research/skills/thesis-tracker/SKILL.md
 Tracking thesis/catalyst/risk is retained; increase/trim/exit/stop authority and premium connectors are removed. No Claude runtime required. This adaptation is a disposable probe, not final portfolio policy.
+
+Experimental content marker: SHADOW-THESIS-V1. Copy it to procedure_marker only when this Skill content was actually supplied.
