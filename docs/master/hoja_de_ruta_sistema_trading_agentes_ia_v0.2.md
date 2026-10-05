@@ -23,6 +23,8 @@
 
 **Política económica general — 2 de octubre de 2026, D-036/ADR-008:** maximizar calidad, fiabilidad y capacidad al menor coste razonable. PAPER V1 sigue **Zero/Low Incremental Cost First**; LIVE/producción **Economic Value First**, con economía unitaria, beneficio esperado neto y evidencia de mejoras operativas. Una opción paga no se descarta del futuro por precio; estudiar pagos está autorizado y contratar/generar gasto requiere aprobación explícita. Skills/prompts/templates/workflows/metodologías deben ser gratuitos, públicos, incluidos o creados/adaptados por nosotros; modelo/runtime/datos/infraestructura se valoran aparte. Toda ficha externa distingue `PAPER_V1_VIABLE_FREE`, `PAPER_V1_COST`, `LIVE_COST`, `FREE_ALTERNATIVE`, `PAID_INCREMENTAL_VALUE`, `ECONOMIC_JUSTIFICATION_REQUIRED`, junto a fijo/variable/mensual/escala, lock-in y condición para pagar. Véanse [ADR-008](../../planning/decisions/ADR-008-economic-policy-by-phase.md) y [scorecard](../../planning/economic_scorecard.md). No hay presupuesto, gasto ni LIVE aprobado.
 
+**Aclaración R-006 — 5 de octubre de 2026:** por instrucción del propietario, pruebas conductuales/comparativas Team y shortlist no esperan acceso a Plus. La aceptación Plus posterior comprueba solo acceso/activación/entitlement/cuotas/tools/auth/estado/recovery/suficiencia de finalistas, reutilizando evidencia Team. Disponibilidad Plus permanece UNKNOWN sin prueba específica. Núcleo local determinístico always-on + Codex/Plus intermitente es alternativa abierta; no se presupone LLM permanente para autonomía. D-020/D-024 siguen abiertos en su estado vigente; implementación bloqueada.
+
 ---
 
 ## 0. Resumen ejecutivo

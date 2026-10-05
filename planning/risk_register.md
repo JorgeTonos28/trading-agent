@@ -43,3 +43,7 @@ Escala inicial cualitativa: `Alta/Media/Baja`; se calibrará después. Dueño in
 | K-037 | P0 | Convertir ahorro PAPER en veto permanente a pagos LIVE o escoger gratis pese a brecha material de calidad/fiabilidad | Media/Alta | ADR-008, fichas económicas por fase/capa, comparación de suficiencia, economía unitaria y condición evidenciada para pagar; aprobación antes de gasto | Architecture/Owner |
 
 Todos los riesgos salvo K-018 siguen `OPEN`; una arquitectura aprobada aún requiere datos, parámetros y pruebas para mitigar riesgo operativo.
+
+| K-037 | P0 | Esperar acceso Plus detiene discovery, o repetir allí toda la investigación consume esfuerzo sin resolver entitlements | Media/Media | Separar evidencia Team de Plus Acceptance Gate de finalistas; regresiones solo ante diferencias concretas | Plan Architect |
+| K-038 | P0 | Interpretar buena conducta LLM o sandbox sintético como garantía de seguridad financiera | Alta/Alta | Medir respuestas e intentos de herramientas por separado; no dar broker/secretos; negativos de harness no prueban producción | Architecture/Security |
+| K-039 | P1 | Convertir LLM/cuotas en dependencia permanente del trading sin evidencia de necesidad | Media/Alta | Conservar núcleo local determinístico + Codex intermitente como alternativa; separar fallos de agente e incidentes materiales ADR-002 | Architecture/Operations |

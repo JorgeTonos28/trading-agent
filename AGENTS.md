@@ -131,6 +131,14 @@ For every external candidate, record `PAPER_V1_VIABLE_FREE`, `PAPER_V1_COST`, `L
 
 ## Agent Capability Gate
 
+### Research behavior and target acceptance
+
+`CURRENT_RESEARCH_ENVIRONMENT = Team` may be used for behavioral and comparative probes independent of plan entitlement: Skill versus minimal workflow, quality, point-in-time discipline, traceability, injection, structured outputs, pedagogy, shadow proposals, authority isolation, repeatability and tool failures. Missing access to the target Plus account MUST NOT block this research or a conditional shortlist.
+
+`TARGET_RUNTIME_ENVIRONMENT = ChatGPT Plus individual` has a separate **Plus Acceptance Gate**, applied to finalists only: availability, activation, entitlement, tools/authentication, quotas, persistence/recovery and operational sufficiency. Reuse Team behavioral evidence; do not repeat the entire research under Plus. An environment-dependent difference may require a focused regression. Maintain `AVAILABLE_IN_TARGET_PLUS = UNKNOWN` without target-specific evidence. Neither shortlist nor research success closes D-020/D-024 or selects a capability.
+
+Preserve as an OPEN architectural alternative an always-on deterministic/local Trading OS core with Codex/Plus used intermittently for research, shadow portfolio management, analysis and pedagogy. Autonomous approved Champion execution need not require an always-on LLM; agent availability and operational safety are distinct design questions. No production implementation is authorized.
+
 R-006 / D-020 Agentic Capability Discovery is an architecture prerequisite for D-024. Do not close D-024 or freeze the final agent runtime, multiagent topology, Skills, plugins, MCP integrations, subagent design, or Trading OS Plugin structure until R-006 has a documented maturity review: relevant capability coverage, access/license/cost checks, practical probes for priority candidates when feasible, permission and financial-authority tests, and a comparative recommendation. Financial contracts independent of technology may continue. A candidate's existence or current availability never implies selection.
 
 ## Financial architecture invariant

@@ -35,3 +35,6 @@ Las hipótesis siguientes **no** son decisiones aprobadas. Su posible falsedad t
 La hoja declara el bloqueo de implementación, el invariante financiero, primera operación PAPER y autoridad humana sobre promoción/riesgo/live. Son reglas del proyecto hasta cambio documentado y aprobado; no afirmaciones sobre rendimiento de mercado.
 
 El propietario declaró el 2026-10-01 que **nunca se ejecutaron ni consultaron resultados históricos de MATR_V1 o variantes cercanas**, para 2023–septiembre de 2026 ni para otro período. Esto es un hecho reportado sobre el proceso del proyecto, no evidencia de rendimiento ni garantía de que la futura comparación entre candidatos preserve un holdout.
+
+| A-025 | P0 | **HYPOTHESIS:** Skills añaden calidad/reusabilidad por encima del mismo contrato y workflow mínimo. | Comparación pareada Team con métricas predefinidas; no atribuir al Skill schema/sandbox del harness. |
+| A-026 | P1 | **HYPOTHESIS:** el núcleo determinístico puede operar autónomamente con Codex intermitente. No equivale a continuidad probada ni runtime seleccionado. | Evaluar dependencias operativas, cadencia, estado/recovery y degradación en D-024/025; Plus Gate solo finalistas. |

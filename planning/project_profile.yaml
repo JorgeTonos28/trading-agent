@@ -1,5 +1,5 @@
 schema_version: 1
-updated_on: 2026-10-02
+updated_on: 2026-10-05
 project:
   name: Trading OS
   purpose: auditable_agentic_quantitative_trading_platform
@@ -135,7 +135,7 @@ capability_discovery:
   agentic_provider_scope: [OpenAI, Anthropic]
   other_agentic_frameworks_in_scope: false
   CURRENT_RESEARCH_ENVIRONMENT:
-    purpose: research_and_planning_only
+    purpose: research_planning_and_entitlement_independent_behavioral_probes
     observed_plan_type: team
     observed_on: 2026-10-01
     entitlement_transfers_to_target: false
@@ -144,6 +144,11 @@ capability_discovery:
     purpose: PAPER_V1_architecture_and_budget
     actual_capability_entitlements: unverified
   plus_entitlements_require_empirical_verification: true
+  missing_target_access_blocks_discovery: false
+  behavioral_environment: CURRENT_RESEARCH_ENVIRONMENT_Team
+  plus_acceptance_scope: finalist_access_activation_quotas_tools_auth_state_recovery_operational_sufficiency
+  repeat_entire_behavioral_research_in_Plus: false
+  deterministic_local_always_on_core_with_intermittent_Codex: OPEN_architecture_alternative
   api_billing_separate_from_plus: true
   siwc_plan_usage_candidate: conditional_tier_0_or_1_requires_plus_entitlement_and_operational_probe
   paper_v1_cost_preference: [Tier_0, Tier_1]
@@ -159,7 +164,7 @@ capability_discovery:
   second_probe_wave: planning/research/R-006_probe_wave_02_2026-10-02.md
   third_probe_wave: planning/research/R-006_probe_wave_03_2026-10-02.md
   plus_runtime_gate: planning/research/R-006_plus_runtime_gate_RC0.md
-  plus_runtime_gate_status: OPEN_research_discovery_only_no_target_inference
+  plus_runtime_gate_status: OPEN_finalists_only_reuse_Team_behavioral_evidence
   dimensions: [EXISTS, AVAILABLE_IN_RESEARCH_ENVIRONMENT, AVAILABLE_IN_TARGET_PLUS, TECHNICALLY_COMPATIBLE, ECONOMICALLY_REASONABLE, SELECTED]
   dispositions: [REUSE_AS_IS, ADAPT, PORT, WRAP, REFERENCE_ONLY, BUILD, REJECT]
   families:

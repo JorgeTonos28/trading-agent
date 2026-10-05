@@ -24,6 +24,10 @@ La preferencia económica PAPER V1 es:
 
 ## Límite de la decisión
 
+**Aclaración 2026-10-05, instrucción del propietario:** se autorizan pruebas conductuales/comparativas bajo Team independientes del entitlement (PIT, calidad, inyección, trazabilidad, estructura, shadow, pedagogía, aislamiento, repetibilidad y fallos). No disponer de la cuenta Plus objetivo no bloquea R-006 ni una shortlist condicional. Team demuestra comportamiento/diseño en la configuración ensayada, nunca disponibilidad Plus. Los finalistas pasan después un Plus Acceptance Gate de acceso, activación, cuotas, herramientas, autenticación, persistencia/recovery y suficiencia operacional. Se reutilizan los resultados conductuales; solo diferencias concretas de entorno justifican regresiones focalizadas. `AVAILABLE_IN_TARGET_PLUS=UNKNOWN` cuando corresponda. D-020 sigue `RESEARCHING` y D-024 `OPEN`.
+
+Se conserva explícitamente como alternativa **abierta** el núcleo local/determinístico siempre activo y Codex/Plus como capa agéntica intermitente de research, shadow, análisis y pedagogía. La autonomía de un Champion aprobado no requiere por definición un LLM permanente. No se selecciona aquí topología, runtime ni stack y no cambia A+, G1+G2 o el gateway financiero.
+
 La restricción de proveedores agénticos no elimina R-007 brokers, R-008 market data, R-025 Smart Money/alternative data, R-009 motores quant como LEAN/NautilusTrader, ni almacenamiento e infraestructura técnica. Esas líneas conservan sus gates y aplican ADR-008: Tier 0/1 primero en PAPER, valor económico en LIVE y autorización antes de gastar.
 
 D-024 permanece `OPEN` bajo el Agent Capability Gate de [R-006](../research/R-006_agentic_capability_discovery_plan.md). No se ha elegido runtime, topología, Skill final, plugin, MCP, broker, proveedor, Strategy V1 ni política numérica. `implementation_locked=true`.

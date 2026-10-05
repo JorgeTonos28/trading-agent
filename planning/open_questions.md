@@ -53,3 +53,6 @@ Estados: cada Q muestra su prioridad; Q-030–Q-037 incluyen estado explícito. 
 - Q-037 (P1, D-021, `OPEN`): ¿Qué broker es elegible para RD y sirve a equities PAPER con API, streams y órdenes protectoras, manteniendo opciones futuras sin imponer derivados en V1? Comparación R-007; Alpaca no está seleccionado.
 - Q-038 (P1, D-034, `OPEN`): ¿Qué esquema, aislamiento técnico, protocolo de evaluación PIT y métricas preregistradas permiten comparar Champion con `ShadowPortfolioProposal` sin que el shadow influya en operaciones ni obtenga datos futuros?
 - Q-039 (P1, D-035, `OPEN`): ¿Cuáles son las fórmulas, unidades, redondeos, precedencia y casos de concurrencia verificables que concretan ADR-006 sin fijar aún los umbrales PAPER de D-031?
+
+- Q-040 (P0, D-020/024, `RESEARCHING`): ¿Qué valor incremental añaden las Skills frente a workflow mínimo en Team, y qué finalistas justifican aceptación Plus? No esperar acceso objetivo para estudiar conducta.
+- Q-041 (P1, D-024/025, `OPEN`): ¿Qué cadencia, persistencia y degradación requiere la alternativa de núcleo determinístico local siempre activo con Codex/Plus intermitente, preservando A+, G1+G2 y pedagogía completa?

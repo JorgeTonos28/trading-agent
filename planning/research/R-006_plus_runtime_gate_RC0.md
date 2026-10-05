@@ -1,6 +1,6 @@
-# R-006 — Gate de runtime Plus individual RC0
+# R-006 — Plus Acceptance Gate RC1
 
-**Fecha:** 2026-10-02. **Estado:** `OPEN`, arquitectura/runtime D-024 no seleccionados. Este contrato de evidencia concreta ADR-007 y ADR-008; no aprueba tecnología ni gasto. Cuenta de planificación Team y cuenta de operación Plus son distintas. Discovery, elegibilidad documental, inferencia, permiso y continuidad son evidencias diferentes.
+**Actualizado:** 2026-10-05. **Estado:** `OPEN`, reservado a finalistas; arquitectura/runtime D-024 no seleccionados. Este contrato concreta ADR-007/008 y la instrucción del propietario del 5 de octubre. Team produce evidencia conductual y una shortlist sin depender de acceso a Plus. Este gate verifica solo diferencias del entorno objetivo. Su nombre de archivo RC0 se conserva para evitar romper referencias; el contenido es RC1.
 
 ## Rutas candidatas y economía
 
@@ -20,8 +20,8 @@ Skills/templates se adquieren gratis/incluidos/propios; inferencia/runtime/datos
 |---|---|---|
 | GP-1 identidad/entitlement | Owner identifica la cuenta objetivo; lectura sanitizada bajo ella confirma Plus individual y cliente/superficie. Sin tokens/email/IDs en repo. | OPEN; Team observado, Plus documental no empírico. |
 | GP-2 formato/discovery | Skill desechable versionada aparece en esa ruta; distinguir discovery local de activación del modelo. Conservar versión CLI/schema y errores. | PARTIAL solo investigación: wave 02 formato y wave 03 discovery Team. |
-| GP-3 inferencia/estructura | Bajo Plus y ruta incluida, modelo seleccionado completa fixture, salida estructurada válida y trazable. Contrastar con workflow mínimo, mismo input; excluir datos futuros, no inventar cifras. | OPEN; cero turnos en probe local. |
-| GP-4 permisos/autoridad | Probar en sandbox sin secretos: inyección en datos, petición de tool no autorizada y propuesta shadow no pueden producir acción operativa. La evaluación de contenido y la barrera técnica son comprobaciones separadas. | OPEN; prohibiciones escritas/fixture no prueban aislamiento. |
+| GP-3 activación/compatibilidad | Smoke test acotado por ruta finalista: inferencia incluida, Skill realmente activada, salida estructurada y herramientas necesarias disponibles. Registrar diferencias de versión/modelo; reutilizar pruebas comparativas Team, sin repetir toda la investigación. | OPEN en Plus; conducta Team se registra aparte. |
+| GP-4 permisos del entorno | Confirmar que sandbox, allowlist, herramientas y autenticación de la ruta finalista soportan los límites ensayados. Repetir solo negativos afectados por una diferencia concreta; nunca dar acceso a broker/secretos. | OPEN en Plus; barreras de harness y conducta son evidencias distintas. |
 | GP-5 estado/recovery | Contexto/snapshots versionados, reanudación tras caída, expiración/refresh/revocación y recovery de tool; no doble efecto. Verificar APIs de la versión/ruta usada. | OPEN; handshake no equivale a recuperación. |
 | GP-6 suficiencia/coste | Carga PAPER propuesta para research/shadow/pedagogía: latencia, cuotas compartidas, turnos/contexto, ventanas y margen operativo medidos; ficha coste/escala. No extrapolar capacidad Team a Plus. | OPEN; workload/criterios por especificar sin fijar umbrales financieros. |
 | GP-7 términos/operación | Ruta autorizada para uso local y modo previsto, acceso a modelos/tools, preview/lifecycle y política de datos documentados; ausencia de facturación inadvertida. Cualquier pago va al dueño con comparación ADR-008. | PARTIAL documentación; operación concreta no validada. |
@@ -31,3 +31,5 @@ Skills/templates se adquieren gratis/incluidos/propios; inferencia/runtime/datos
 ## Regla de avance
 
 Registrar `AVAILABLE_IN_RESEARCH_ENVIRONMENT` y `AVAILABLE_IN_TARGET_PLUS` por capacidad/subcapacidad. Un fallo temporal se investiga antes de concluir `NO`; un permiso desconocido sigue `UNKNOWN`. No usar la cuenta Team como reemplazo del gate. Si Plus no es suficiente, comparar rediseño/carga Tier 0/1 y alternativa paga con calidad/coste/valor por fase; llevar gasto concreto al propietario. D-024 requiere además madurez global R-006, revisión crítica y gobierno humano; este gate por sí solo no descongela agentes ni implementación.
+
+**Dependencia:** pruebas conductuales Team → shortlist condicional → este gate para finalistas → propuesta de selección/gobierno. No exigir GP-1–7 para iniciar comparación o presentar shortlist. Una cuota insuficiente puede limitar la cadencia agéntica sin detener necesariamente un núcleo local determinístico; esa alternativa permanece abierta. GP-5/6 deben valorar research, shadow y pedagogía intermitentes y distinguir fallos de agentes de incidentes financieros materiales (ADR-002). No presume continuidad desatendida ni disponibilidad Plus.
