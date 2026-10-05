@@ -171,12 +171,17 @@ capability_discovery:
   third_probe_wave: planning/research/R-006_probe_wave_03_2026-10-02.md
   fourth_probe_wave: planning/research/R-006_probe_wave_04_2026-10-05.md
   fifth_probe_wave: planning/research/R-006_probe_wave_05_2026-10-05.md
+  role_evidence_contract: planning/06_agent_evidence_contract_RC0.md
+  shadow_contract: planning/06_shadow_portfolio_contract_RC0.md
+  pedagogy_contract: planning/06_pedagogical_contract_RC0.md
+  representative_workload_acceptance: planning/research/R-006_workload_acceptance_RC0.md
+  focused_regression_protocol: planning/research/R-006_probe_wave_06_protocol.md
   conditional_shortlist: planning/research/R-006_shortlist_RC0.md
   discovery_maturity: SUFFICIENT_FOR_CONDITIONAL_SHORTLIST_NOT_SELECTION
   behavioral_turns_valid_protocol: 20
   behavioral_automated_complete_passes: 19
   no_general_Skill_superiority_demonstrated: true
-  next_independent_work: trusted_role_evidence_contracts_and_representative_workload
+  next_independent_work: focused_contract_regression_then_shortlist_maturity_review
   final_selection_status: OPEN
   plus_runtime_gate: planning/research/R-006_plus_runtime_gate_RC0.md
   plus_runtime_gate_status: OPEN_finalists_only_reuse_Team_behavioral_evidence

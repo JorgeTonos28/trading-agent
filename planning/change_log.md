@@ -2,6 +2,7 @@
 
 | Fecha | Cambio | Razón | Efecto arquitectónico |
 |---|---|---|---|
+| 2026-10-05 | R-006 pasos 1–2: contratos RC0 por rol/evidencia, PM shadow y pedagogía completa; workload WL-L/R/S y matriz de aceptación; wave 06 preregistrada y 36 checks offline | Cerrar ambigüedades concretas de waves 04/05 y preparar criterios Plus sin acceso target | D-034/R-026 RESEARCHING; arquitectura/runtime/Skills siguen propuestas no seleccionadas; cifras de workload son parámetros experimentales, no política financiera |
 | 2026-10-05 | Añadida Autonomous Continuation Rule a AGENTS y mandato/perfil del Plan Architect | Instrucción del propietario: persistir y sincronizar hitos, continuar el siguiente trabajo autorizado y detenerse solo en endpoint real o necesidad humana explícita | Regla operativa; sin cambio de arquitectura/autoridad; paquete R-006 pasos 1–2 continúa autónomamente |
 | 2026-10-01 | Inicializados perfil, registros, diagnóstico, backlog y secuencia en `.project/` | Primera ejecución del Plan Architect | Ninguno; baseline v0.2 preservado |
 | 2026-10-01 | Se usa como baseline el archivo `docs/master/hoja_de_ruta_sistema_trading_agentes_ia_v0.2.md` indicado por el usuario | El nombre citado en `AGENTS.md` no existe | Corrección de referencia pendiente; sin cambio de contenido |

@@ -60,6 +60,8 @@ No convertir tokens Team en coste mensual Plus/API. Las fichas LIVE necesitan ca
 
 ## 5. Siguiente trabajo inmediato
 
+**Seguimiento 2026-10-05:** pasos 1–2 ahora especificados en [contrato común](../06_agent_evidence_contract_RC0.md), [shadow](../06_shadow_portfolio_contract_RC0.md), [pedagogía](../06_pedagogical_contract_RC0.md) y [workload/aceptación](R-006_workload_acceptance_RC0.md). [Wave 06 preregistrada](R-006_probe_wave_06_protocol.md) verificará las correcciones antes de revisión de shortlist. Esta RC0 se conserva como antecedente, no evidencia de que los probes posteriores ya estén ejecutados.
+
 1. Preparar contratos de evidencia por rol y snapshot pareado para D-034/R-026 y pedagogía: enums, OBSERVED/DERIVED, unidad/fórmula/inputs, quantity semantics, fuente/clocks/versiones, trusted role y failure/late/no-output. Incorporar hallazgos wave 04; son documentos/probes, no Trading OS.
 2. Definir workload mínimo representativo para research/shadow/pedagogía y matriz de aceptación de **C-010/C-025a + cuatro procedimientos**. Cadencia se enlaza a Strategy V1 aún OPEN; no inventar SLA ni prometer cuota. MCP/Data quedan reservas si no aportan una necesidad concreta.
 3. Cuando haya finalistas concretos/configuración revisable, ejecutar Plus Acceptance Gate: identidad sanitizada, disponibilidad/activación/tools/auth, cuotas, estado/recovery y suficiencia. Un smoke de Skill/estructura valida compatibilidad de entorno; no repetir veinte pruebas comparativas. Diferencias materiales requieren regresión focalizada. Hasta entonces seguir trabajo independiente en Team.

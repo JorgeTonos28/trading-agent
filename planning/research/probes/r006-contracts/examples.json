@@ -1,0 +1,235 @@
+{
+  "research": {
+    "schema_version": "r006-spine-1",
+    "role": "RESEARCH_IDEA",
+    "authority": "NONE",
+    "snapshot_id": "SYN-research-v1",
+    "snapshot_hash": "4ab6e7223c3f0c42567769cddc6dc787da947e9566d4d0b4889bf26a1c0900ac",
+    "decision_at": "2026-09-30T15:00:00Z",
+    "knowledge_asof": "2026-09-30T15:00:00Z",
+    "content_status": "COMPLETE",
+    "procedure_marker": "NONE",
+    "facts": [
+      {
+        "fact_id": "growth",
+        "source_id": "R1",
+        "field": "growth",
+        "value": "12",
+        "unit": "PERCENT_POINT"
+      }
+    ],
+    "calculations": [],
+    "unknowns": [],
+    "payload": {
+      "hypothesis": "Investigar crecimiento",
+      "falsifier": "Sin persistencia",
+      "next_test": "OOS",
+      "evidence_ids": [
+        "R1"
+      ]
+    }
+  },
+  "quant": {
+    "schema_version": "r006-spine-1",
+    "role": "QUANT_REVIEW",
+    "authority": "NONE",
+    "snapshot_id": "SYN-quant-v1",
+    "snapshot_hash": "f4211103b6a4b2ac4706203fc1098bde44f51bf7f885e79175841a25ffcdc8d6",
+    "decision_at": "2026-09-30T15:00:00Z",
+    "knowledge_asof": "2026-09-30T15:00:00Z",
+    "content_status": "COMPLETE",
+    "procedure_marker": "NONE",
+    "facts": [
+      {
+        "fact_id": "gross_train_return",
+        "source_id": "Q1",
+        "field": "gross_train_return",
+        "value": "18",
+        "unit": "PERCENT_POINT"
+      },
+      {
+        "fact_id": "trades",
+        "source_id": "Q1",
+        "field": "trades",
+        "value": "12",
+        "unit": "COUNT"
+      }
+    ],
+    "calculations": [],
+    "unknowns": [],
+    "payload": {
+      "verdict": "NOT_VALIDATED",
+      "missing_tests": [
+        "costs",
+        "OOS",
+        "benchmark"
+      ],
+      "next_test": "preregister"
+    }
+  },
+  "shadow": {
+    "schema_version": "r006-spine-1",
+    "role": "PORTFOLIO_SHADOW",
+    "authority": "NONE",
+    "snapshot_id": "SYN-shadow-v1",
+    "snapshot_hash": "71fe891fe76c8e4ce7787364b2a44c26602d6149762a8c82199a54a5ed50c8a6",
+    "decision_at": "2026-09-30T15:00:00Z",
+    "knowledge_asof": "2026-09-30T15:00:00Z",
+    "content_status": "COMPLETE",
+    "procedure_marker": "NONE",
+    "facts": [
+      {
+        "fact_id": "cash",
+        "source_id": "S1",
+        "field": "cash",
+        "value": "1000",
+        "unit": "USD"
+      },
+      {
+        "fact_id": "reservation",
+        "source_id": "S1",
+        "field": "reservation",
+        "value": "400",
+        "unit": "USD"
+      },
+      {
+        "fact_id": "target",
+        "source_id": "S1",
+        "field": "target",
+        "value": "2",
+        "unit": "SHARE"
+      },
+      {
+        "fact_id": "price",
+        "source_id": "S1",
+        "field": "price",
+        "value": "50",
+        "unit": "USD_PER_SHARE"
+      },
+      {
+        "fact_id": "current",
+        "source_id": "S1",
+        "field": "current",
+        "value": "0",
+        "unit": "SHARE"
+      }
+    ],
+    "calculations": [
+      {
+        "calculation_id": "available",
+        "formula": "cash_minus_reservations@toy-1",
+        "input_fact_ids": [
+          "cash",
+          "reservation"
+        ],
+        "result": "600",
+        "unit": "USD"
+      },
+      {
+        "calculation_id": "notional",
+        "formula": "quantity_times_price@toy-1",
+        "input_fact_ids": [
+          "target",
+          "price"
+        ],
+        "result": "100",
+        "unit": "USD"
+      }
+    ],
+    "unknowns": [],
+    "payload": {
+      "mode": "SHADOW",
+      "proposals": [
+        {
+          "instrument_id": "SYN-B",
+          "action": "OPEN",
+          "target_quantity": "2",
+          "target_notional_calculation_id": "notional",
+          "priority": 1,
+          "reasons": [
+            "toy exercise"
+          ],
+          "source_ids": [
+            "S1"
+          ],
+          "confidence": null
+        }
+      ],
+      "limitations": [
+        "Not a sizing validation"
+      ]
+    }
+  },
+  "pedagogy": {
+    "schema_version": "r006-spine-1",
+    "role": "PEDAGOGY",
+    "authority": "NONE",
+    "snapshot_id": "SYN-pedagogy-v1",
+    "snapshot_hash": "fd25abb6a593998ac1c680f2ca607a97c944ad0edfcda0948bee2661d8b0a4bd",
+    "decision_at": "2026-09-30T15:00:00Z",
+    "knowledge_asof": "2026-09-30T15:00:00Z",
+    "content_status": "COMPLETE",
+    "procedure_marker": "NONE",
+    "facts": [
+      {
+        "fact_id": "requested",
+        "source_id": "P1",
+        "field": "requested",
+        "value": "10",
+        "unit": "SHARE"
+      },
+      {
+        "fact_id": "filled",
+        "source_id": "P1",
+        "field": "filled",
+        "value": "4",
+        "unit": "SHARE"
+      },
+      {
+        "fact_id": "protective",
+        "source_id": "P1",
+        "field": "protective",
+        "value": "4",
+        "unit": "SHARE"
+      }
+    ],
+    "calculations": [],
+    "unknowns": [],
+    "payload": {
+      "trade_ids": [
+        "T1"
+      ],
+      "timeline_source_ids": [
+        "P1"
+      ],
+      "explanation": "Fill parcial; cancel UNKNOWN",
+      "sizing_motive": "UNKNOWN",
+      "concepts": [
+        "partial fill"
+      ],
+      "question": "¿Fill completo?",
+      "answer_key": "No, 4 de 10",
+      "result_state": "PENDING"
+    }
+  },
+  "failure": {
+    "schema_version": "r006-spine-1",
+    "role": "RESEARCH_IDEA",
+    "authority": "NONE",
+    "snapshot_id": "SYN-failure-v1",
+    "snapshot_hash": "69fd38be66af8f6b8fd5f317412ec077d684bdb5e5492bb0f6366d719f30f995",
+    "decision_at": "2026-09-30T15:00:00Z",
+    "knowledge_asof": "2026-09-30T15:00:00Z",
+    "content_status": "INSUFFICIENT_EVIDENCE",
+    "procedure_marker": "NONE",
+    "facts": [],
+    "calculations": [],
+    "unknowns": [],
+    "payload": {
+      "hypothesis": "",
+      "falsifier": "",
+      "next_test": "Recover read",
+      "evidence_ids": []
+    }
+  }
+}
