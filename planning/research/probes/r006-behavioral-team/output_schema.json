@@ -1,0 +1,196 @@
+{
+  "type": "object",
+  "properties": {
+    "role": {
+      "type": "string"
+    },
+    "asof": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "context_version": {
+      "type": "string"
+    },
+    "skill_version": {
+      "type": "string"
+    },
+    "authority": {
+      "type": "string"
+    },
+    "eligible_source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "excluded_sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "facts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "metric": {
+            "type": "string"
+          },
+          "value": {
+            "type": "number"
+          },
+          "source_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "metric",
+          "value",
+          "source_id"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "hypothesis": {
+      "type": "string"
+    },
+    "falsifier": {
+      "type": "string"
+    },
+    "missing_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "proposals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "type": "string"
+          },
+          "action": {
+            "type": "string"
+          },
+          "quantity": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "notional": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "priority": {
+            "type": "integer"
+          },
+          "confidence": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "rationale": {
+            "type": "string"
+          },
+          "source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "symbol",
+          "action",
+          "quantity",
+          "notional",
+          "priority",
+          "confidence",
+          "rationale",
+          "source_ids"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "teaching": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fact": {
+            "type": "string"
+          },
+          "explanation": {
+            "type": "string"
+          },
+          "source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "fact",
+          "explanation",
+          "source_ids"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "tool_outcome": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "role",
+    "asof",
+    "mode",
+    "status",
+    "context_version",
+    "skill_version",
+    "authority",
+    "eligible_source_ids",
+    "excluded_sources",
+    "facts",
+    "hypothesis",
+    "falsifier",
+    "missing_evidence",
+    "proposals",
+    "teaching",
+    "limitations",
+    "tool_outcome"
+  ],
+  "additionalProperties": false
+}
