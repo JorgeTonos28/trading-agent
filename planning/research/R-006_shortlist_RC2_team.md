@@ -60,3 +60,5 @@ Propietario aprobó ADR-011 A y disposiciones RC2; la anterior solicitud queda r
 ## Hardening posterior ADR-011
 
 [Contratos/probes/review R-010–014](R-010_014_hardening_findings_2026-10-05.md) especifican automatización, seguridad por dominios, recovery/epoch, audit/versiones y carga. SDK/CLI0.160 emparejado H4 pasa 2/2 focales; no final pin ni cuota. D-020 DECIDED en disposiciones de diseño; D-024 sigue RESEARCHING hasta gates. Próximo gobierno ADR-012 frontera material de seguridad, no Plus.
+
+**Vigencia ADR-012 — 2026-10-05:** el propietario aprueba S2 como dirección candidata de aislamiento PAPER por dominios Windows. S3 es fallback formal sujeto a nueva decisión si S2 falla; S1 solo probes sin secretos. Las propuestas históricas S2 vs S3 quedan resueltas únicamente en dirección. Security isolation y Shadow experimental blinding requieren acceptance separado; configuración administrativa, permisos efectivos y D-027/D-024 siguen abiertos. Ningún usuario/ACL/firewall/credencial se modifica por esta aprobación. Véase [ADR-012](../decisions/ADR-012-agent-process-isolation-proposed.md).

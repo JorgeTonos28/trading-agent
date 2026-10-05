@@ -113,5 +113,13 @@
   },
   "agentic_design_decision": "planning/decisions/ADR-011-paper-team-agentic-direction-proposed.md",
   "security_direction_proposal": "planning/decisions/ADR-012-agent-process-isolation-proposed.md",
-  "operational_permissions_approved": false
+  "operational_permissions_approved": false,
+  "security_direction_decision": "planning/decisions/ADR-012-agent-process-isolation-proposed.md",
+  "security_direction_status": "APPROVED_CANDIDATE_S2_NOT_ACCEPTED",
+  "administrative_setup_authorized": false,
+  "isolation_gates": {
+    "security": "NOT_VERIFIED",
+    "shadow_blinding": "NOT_VERIFIED",
+    "fallback": "S3_REQUIRES_HUMAN_REEVALUATION"
+  }
 }

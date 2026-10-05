@@ -310,3 +310,11 @@ That version will be reviewed, frozen, and used as the primary implementation co
 After freeze, this role transitions from **Plan Architect** to **Plan Guardian**.
 
 The Plan Guardian helps Codex execute the approved plan, detects deviations, evaluates proposed changes, and keeps implementation aligned with the frozen architecture.
+
+## Approved candidate isolation direction — ADR-012
+
+The owner approved S2 for PAPER: separate Windows identities/processes by trust domain with effective minimum filesystem, secrets, IPC and network permissions. S3 dedicated VM is a formal fallback to reevaluate through human governance if S2 fails. S1 remains secret-free research only and is never an operational PAPER fallback.
+
+Security isolation and Shadow experimental blinding require separate acceptance evidence. Prompts, AGENTS, `authority=NONE` and different usernames are not security barriers. D-027/D-024 remain open until mandatory controls, negative tests, reproducibility and rejected-access audit pass. Define objective S2-to-S3 escalation criteria before testing; never migrate silently or downgrade to S1.
+
+Specification and non-administrative synthetic probes are authorized. Creating users, changing ACL/firewall/system policies, moving secrets or configuring credentials/privileges require a concrete reviewable administrative gate and owner approval. Complete independent authorized work first, then stop with `HUMAN_ACTION_REQUIRED` specifying the exact change. No production implementation or spending is authorized.

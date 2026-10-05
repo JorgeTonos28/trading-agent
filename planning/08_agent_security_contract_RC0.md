@@ -1,6 +1,6 @@
 # 08 — seguridad y permisos de jobs PAPER RC0
 
-2026-10-05. D-027/R-013 **RESEARCHING**. Dirección ADR-011 aprobada; frontera material propuesta pendiente de gobierno. No configuración de usuarios/firewall/VM, permisos finales o implementación autorizados.
+2026-10-05. D-027/R-013 **RESEARCHING**. Direcciones ADR-011 y ADR-012 S2 aprobadas en alcance candidato; controles efectivos y gate administrativo pendientes. No configuración de usuarios/firewall/VM, permisos finales o implementación autorizados.
 
 ## 1. Actores y amenazas
 
@@ -49,4 +49,4 @@ Documentación oficial describe Windows elevated con usuarios de menor privilegi
 
 P1: amenaza/matriz, frontera elegida y permisos base aprobados, scripts de acceptance especificados, **probe empírico de viabilidad del aislamiento elegido bajo identidad efectiva**, revisión independiente y remediación de hallazgos críticos. Una propuesta de S2 sin acceso/ACL/IPC/red probados no cierra D-027/D-024. No exige Trading OS implementado: ensayar frontera con proceso Codex y canaries sintéticas es preparación permitida tras gobierno/config concreta. P2 antes de PAPER: ampliar al runtime/core integrado y credenciales almacenadas fuera del job, auth lifecycle, handlers unknown/escalation, plugins/config drift, backup y logs. **Ninguna canary será una credencial real.** Evidencia negativa incluye cómo se lanzó el proceso y política efectiva; ausencia de tool calls no basta.
 
-UNKNOWN sobre control obligatorio no es permiso. Si S2 falla, mantener jobs no operacionales; comparar S3 y regresar a gobierno, nunca degradar automáticamente a S1. No ejecutar OS setup hasta aprobar arquitectura material. Recomendación y pregunta exacta en ADR-012; no cerrar D-027 por elegir dirección de ensayo.
+UNKNOWN sobre control obligatorio no es permiso. Si S2 falla, mantener jobs no operacionales; comparar S3 y regresar a gobierno, nunca degradar automáticamente a S1. Dirección S2 aprobada en ADR-012; no ejecutar OS setup hasta aprobar su propuesta administrativa concreta. Seguridad y blinding separados; no cerrar D-027 por elegir dirección de ensayo.

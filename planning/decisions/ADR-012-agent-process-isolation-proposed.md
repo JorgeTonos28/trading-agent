@@ -1,6 +1,6 @@
-# ADR-012 — aislamiento del proceso agéntico PAPER (propuesta)
+# ADR-012 — aislamiento del proceso agéntico PAPER (dirección S2 aprobada)
 
-2026-10-05. D-027 P1 **READY_FOR_DECISION para dirección de aislamiento**; controles finales, verificaciones y cierre de D-027 siguen pendientes. D-024 RESEARCHING. No permiso concedido por este documento.
+2026-10-05. **DECIDED: dirección candidata S2 aprobada por el propietario**; D-027 P1 RESEARCHING: controles finales, verificaciones y cierre siguen pendientes. D-024 RESEARCHING. No permiso concedido por este documento.
 
 ## Problema y evidencia
 
@@ -20,8 +20,18 @@ Host observado Windows 11 Enterprise; WSL no instalado y Docker no encontrado. H
 
 Revisión independiente detectó que una única identidad agéntica con store compartido podría revelar Champion al shadow. S2 incluye segregación por dominio de visibilidad y export mínimo por job; no basta cambiar el nombre del usuario. Probar acceso denegado a namespaces hermanos y decisión contemporánea Champion antes de seal. La matriz/config exacta y su suficiencia permanecen gates P1/P2.
 
-## Decisión humana exacta
+## Propuesta original — resuelta por aprobación posterior
 
-**HUMAN_ACTION_REQUIRED:** aprobar S2 como frontera candidata a especificar y verificar, con S3 reserva y S1 solo investigación, o preferir S3. AGENTS exige aprobación explícita de arquitectura material de seguridad. No se pide aprobación por job rutinario ni otra aprobación ADR-011.
+**Pregunta histórica, ya resuelta:** aprobar S2 como frontera candidata a especificar y verificar, con S3 reserva y S1 solo investigación, o preferir S3. AGENTS exige aprobación explícita de arquitectura material de seguridad. No se pide aprobación por job rutinario ni otra aprobación ADR-011.
 
 Esta decisión **no** autoriza aún creación de usuarios, UAC, reglas firewall, transferencia de autenticación, instalación de VM, modificación de secretos o configuración global. Tras dirección aprobada se documentará configuración concreta revisable y pasos manuales/privilegios necesarios; no dar permisos efectivos por lectura del ADR. El owner realizará login legítimo cuando toque; no copiar tokens ni Git secrets. No cierre D-027/D-024, implementación, gasto o main.
+
+## Decisión vigente del propietario — 2026-10-05
+
+El propietario aprueba **opción S2 como dirección candidata PAPER**, no como aislamiento ya demostrado. Identidades/procesos Windows separados por dominio de confianza, permisos mínimos efectivos y separación de filesystem, secretos, IPC y red. S3 VM dedicada permanece fallback formal sujeto a nueva decisión si S2 falla; S1 solo investigación/probes sin secretos, nunca fallback operativo PAPER.
+
+Antes de cerrar D-027/D-024 deben probarse: inaccesibilidad de broker credentials y secretos core; ausencia de escritura de estados financieros; bloqueo directo de Execution/broker endpoints; ACL explícitas; control/IPC restringido; egress mínimo; allowlists/fail-closed; ausencia de permisos heredados de desarrollo; separación de workspaces/stores; exports mínimos versionados por job; negative tests entre dominios/namespaces y auditoría de rechazos. Crear usuarios distintos, prompts, AGENTS o `authority=NONE` no satisfacen el gate.
+
+**Security isolation** y **experimental blinding de Shadow** son objetivos/gates separados. Shadow no recibe información contemporánea Champion fuera del snapshot pareado. Se especificarán criterios objetivos de insuficiencia S2 y reevaluación S3 antes de ejecutar acceptance.
+
+Autorizado: especificación y pruebas no administrativas/destructivas con fixtures sintéticas. **No autorizado todavía:** crear usuarios, modificar ACL/firewall/políticas/credenciales, mover secretos o configurar privilegios. Primero preparar propuesta concreta revisable; detenerse con `HUMAN_ACTION_REQUIRED` al necesitar ese cambio. No solicitar otra aprobación de la dirección S2. No cierre D-027/D-024, implementación, gasto ni cambios a A+, G1+G2 o ADR-006.

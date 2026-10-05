@@ -67,3 +67,7 @@ Dirección aprobada ADR-011 operacionalizada como contratos de planificación 08
 ## 2026-10-05 — R-020 CandidateRuleCards y admisibilidad SEC
 
 Avance autónomo siguiente P0, independiente de permiso S2: video descompuesto en módulos/familias, escenarios de ambigüedad y entry-rule OPEN; MATR benchmark. Documentación SEC primaria confirma API pública sin key, archives e inexistencia de timestamp first-available; no acceptance→public/receipt ficticio. Fichas/prereg/exposure/holdout antes de rendimiento; sin dataset/backtest/API scraping o selección de fuente/estrategia. D-008 OPEN, ADR-012 sigue próximo gobierno material.
+
+## 2026-10-05 — ADR-012 S2 aprobado como dirección candidata
+
+Propietario aprueba separación Windows por dominio con permisos efectivos mínimos. S3 fallback formal, S1 solo research sin secretos. Separa gates security/blinding, exige negativos/audit/reproducibilidad y criterios de escalamiento predefinidos. Registros/instrucciones/profile/bootstrap/master actualizados sin borrar propuesta histórica. D-027/D-024 RESEARCHING. Setup administrativo no aprobado, no usuarios/ACL/firewall/credenciales modificados, no implementación/gasto/main. Próximo paquete autónomo R-013 especifica controles concretos y ensayos no administrativos antes de pedir el gate real.

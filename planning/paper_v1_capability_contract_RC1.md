@@ -152,3 +152,5 @@ Cohorte agéntica aprobada solo para aceptación. Bootstrap/Portability y paquet
 ## Evidencia Team y gobierno vigente — wave07
 
 RC2/ADR-011 proponen núcleo local determinístico + jobs nativos Team. SDK low-level/Skills/tools/restart y fresh-clone probados en alcance sintético; perfil PARTIAL. D-020 READY_FOR_DECISION y D-024 RESEARCHING, selección/permisos/freeze pendientes. Core financiero no depende de LLM always-on; shadow/pedagogía siguen obligaciones completas. Plus solo P3 PRE-LIVE.
+
+**Vigencia ADR-012 — 2026-10-05:** el propietario aprueba S2 como dirección candidata de aislamiento PAPER por dominios Windows. S3 es fallback formal sujeto a nueva decisión si S2 falla; S1 solo probes sin secretos. Las propuestas históricas S2 vs S3 quedan resueltas únicamente en dirección. Security isolation y Shadow experimental blinding requieren acceptance separado; configuración administrativa, permisos efectivos y D-027/D-024 siguen abiertos. Ningún usuario/ACL/firewall/credencial se modifica por esta aprobación. Véase [ADR-012](decisions/ADR-012-agent-process-isolation-proposed.md).

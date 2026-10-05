@@ -4806,3 +4806,7 @@ Se conserva A+, G1+G2 y ADR-006. Las futuras dependencias obligatorias de Strate
 ## Enmienda de especificación P1 posterior ADR-011 — 2026-10-05
 
 Contratos candidatos 08 seguridad/workflow/audit añaden triggers automáticos, estados versionados, fencing/incarnation y scopes de evidencia, sin modificar A+, G1+G2 ni ADR-006. Revisión independiente documentada R-010_014 con hallazgos/remediaciones; motor, permisos y capacidad final siguen abiertos. ADR-012 propone S2 dominios Windows versus S3 VM, aún requiere gobierno. Probes sintéticos/nativos acotados no son implementación del Trading OS ni sustituyen DoR/gates de PAPER. Plus sigue PRE-LIVE.
+
+### Enmienda trazable — 2026-10-05: dirección S2 aprobada (ADR-012)
+
+El propietario aprueba identidades/procesos Windows separados por dominio de confianza como dirección candidata PAPER. S3 VM dedicada conserva fallback formal a reevaluar si S2 falla; S1 solo investigación sin secretos. Security isolation y experimental blinding se especifican y prueban por separado. D-027/D-024 y controles efectivos siguen abiertos; creación de usuarios, ACL/firewall/políticas/credenciales requiere gate concreto. No implementación, gasto, autoridad financiera nueva ni modificación de baseline main. Detalle y alcance histórico/vigente en `planning/decisions/ADR-012-agent-process-isolation-proposed.md`.

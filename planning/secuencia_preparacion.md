@@ -63,3 +63,7 @@ Source: plan-architect candidato; main baseline aprobado; deployment desde relea
 Contratos/probes/review P1 documentados en dossier R-010_014. Endpoint siguiente: ADR-012 dirección material S2 vs S3; no aprobación por job ni Plus. Antes del checkpoint se avanzó preregistro independiente R-020; Strategy V1 sigue OPEN. Tras dirección: config/permisos concretos, probe aislamiento real, motor/store final, carga representativa y revisión del paquete antes de D-024; no freeze por smoke.
 
 **Avance independiente R-020:** cards de reglas video y admisibilidad SEC creadas con fuentes primarias; no resultados históricos consultados. Tras checkpoint seguridad, continuar datos/PIT y variantes admisibles/protocolo OOS; broker/engine/risk numérico mantienen decisiones separadas.
+
+## Checkpoint vigente — aprobación S2 y próximo gate administrativo
+
+ADR-012 S2 dirección candidata aprobada. Ejecutar R-013 autónomo: contratos concretos por dominio, threat model, secretos, negative tests, blinding separado, acceptance/escalamiento y probes sintéticos no administrativos. Persistir/revisar/commit/push. Solo después presentar el cambio administrativo concreto necesario para probar identidades/ACL/IPC/egress efectivos. D-027/D-024 RESEARCHING; no esperar Plus, no repetir elección S2, no Trading OS. Continuar P1 independientes antes de detenerse; Strategy V1 permanece OPEN.
