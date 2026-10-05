@@ -14,6 +14,7 @@ import sys
 import tempfile
 import threading
 import time
+import traceback
 from collections import Counter
 from datetime import datetime, timezone
 from decimal import Decimal
@@ -22,6 +23,7 @@ from pathlib import Path
 from jsonschema import Draft202012Validator
 from openai_codex import CodexConfig, __version__
 from openai_codex.client import CodexClient
+from openai_codex.generated.v2_all import SkillsListResponse
 
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parents[3]
@@ -144,7 +146,7 @@ def main():
             report['trials'].append(trial)
             cwd=clone/'agents'/PACKAGES[case]
             skillcase='research' if case=='failure' else case
-            inv=client.request('skills/list',{'cwds':[str(cwd)],'forceReload':True})
+            inv=client.request('skills/list',{'cwds':[str(cwd)],'forceReload':True},response_model=SkillsListResponse)
             if hasattr(inv,'model_dump'):inv=inv.model_dump(by_alias=True,mode='json')
             discovered=[s for g in inv.get('data',[]) for s in g.get('skills',[]) if s.get('name')==f'r006-contract-{skillcase}' and s.get('enabled')]
             trial['skill_discovered_enabled']=bool(discovered)
@@ -218,6 +220,8 @@ def main():
         report['native_states']=runtime_states
     except Exception as error:
         report['error_class']=type(error).__name__
+        report['error_frames']=[{'file':Path(f.filename).name,'function':f.name,'line':f.lineno}
+                                for f in traceback.extract_tb(error.__traceback__)]
         report['error_phase']='harness_or_transport_or_trial; sanitized error, preserve partial records'
     finally:
         if client:client.close()
