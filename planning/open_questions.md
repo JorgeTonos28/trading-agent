@@ -1,5 +1,9 @@
 # Open Questions — inventario inicial
 
+**Vigencia actual — ADR-010, 2026-10-05:** CURRENT_RESEARCH_ENVIRONMENT=Team; PAPER_RUNTIME_ENVIRONMENT=Team actual; FUTURE_LIVE_ENVIRONMENT=Plus individual candidato. Las cláusulas anteriores que exigían Plus para PAPER/D-020/D-024 quedan parcialmente SUPERSEDED. La evidencia original se conserva; Plus es gate P3 PRE-LIVE (R-029/D-039), sin dependencia para PAPER. Aceptación activa: [Team TP1–7](research/R-006_team_runtime_acceptance_RC0.md). No selección final ni implementación autorizada.
+
+**Lectura:** registros/tablas actuales y esta adenda gobiernan; notas fechadas de hitos previos se conservan como historia, incluidos sus antiguos siguientes pasos Plus.
+
 Fecha: 2026-10-01. Cada Q apunta a una decisión del [registro](decision_register.md). La prioridad expresa el gate más temprano que bloquea. El criterio de cierre es evidencia verificable, no una preferencia informal.
 
 Estados: cada Q muestra su prioridad; Q-030–Q-037 incluyen estado explícito. Las Q anteriores conservan el estado inicial salvo que el registro de decisiones indique investigación en curso. Actualizar el estado al registrar su resolución.
@@ -15,11 +19,11 @@ Estados: cada Q muestra su prioridad; Q-030–Q-037 incluyen estado explícito. 
 | Q-007 | P0 | D-015 | `DECIDED`: el propietario aprobó A+ (ADR-001); Portfolio Manager Agent produce propuestas shadow auditables sin alterar intents operativos. |
 | Q-008 | P0 | D-016 | `DECIDED`: un Champion operativo inicial puede combinar fuentes/señales; shadow y pedagogía factual desde B4; contrato completo pedagógico antes de DoD. Traceability detallada sigue en P1. |
 | Q-009 | P0 | D-017 | `DECIDED`: propietario aprobó G1+G2, conservación de protección y reanudación humana tras pausa material en ADR-002; G3/liquidación automática no autorizados. Umbrales/clasificación detallada continúan D-031. |
-| Q-010 | P0 | D-020 | Bajo ADR-007, ¿qué Skills, plugins, MCP y flujos OpenAI/Codex funcionan **realmente** en la cuenta Plus objetivo sin factura API, y qué activos públicos Anthropic se pueden portar/adaptar? La sesión sondeada reportó Team, no Plus. Probar también SIWC C-025, límites/cupo y portabilidad; gate de D-024. |
+| Q-010 | P0 | D-020 | ¿Qué capacidades nativas Team y activos Anthropic portables cubren PAPER con calidad, aislamiento y coste suficiente? Evidencia existente válida en su ruta; gaps focalizados TP y selección pendientes. Plus PRE-LIVE separado. |
 | Q-011 | P1 | D-021 | ¿Qué broker PAPER admite el perfil real del dueño desde RD, los ETFs/órdenes necesarios, datos/stream y pruebas de recuperación? Verificación oficial y probes. |
 | Q-012 | P1 | D-022 | ¿Qué proveedor cubre historia 2005–2026, ajustes, delistings/cambios, timestamps, uso automatizado y costes? Muestra comparada. |
 | Q-013 | P1 | D-023 | ¿LEAN, NautilusTrader, vectorbt u otra solución reproduce las semánticas de los candidatos viables y sus fallos con coste razonable? Benchmark. |
-| Q-014 | P1 | D-024 | `OPEN / GATED_BY_R-006`: ¿Qué combinación OpenAI/Codex Tier 0/1 y contenido Anthropic portable cubre los agentes en Plus individual? Madurez R-006, permisos/evals y aprobación material preceden freeze. ADR-008 permite estudiar alternativas pagas PAPER/LIVE; gasto requiere aprobación y no sustituye el gate Plus. |
+| Q-014 | P1 | D-024 | OPEN / GATED_BY_R006: ¿núcleo determinístico local + jobs Codex Team intermitentes con roles/Skills y transporte oficial cubre obligaciones PAPER? Bootstrap, permisos, recovery y comparativa; decisión material owner. No gate Plus para PAPER. |
 | Q-015 | P1 | D-025 | ¿Temporal, otra solución o scheduler simple cumple recovery, replays e idempotencia a la escala V1? Prueba de fallos y coste operativo. |
 | Q-016 | P1 | D-026 | ¿Qué repositorios de datos y eventos preservan decisiones, versiones, P&L y audit trail reconstruible? Esquemas y restore. |
 | Q-017 | P1 | D-027 | ¿Qué aislamiento evita que prompt injection, plugin, dependencia o credencial paper alcancen ejecución/secretos live? Threat model. |
@@ -54,13 +58,15 @@ Estados: cada Q muestra su prioridad; Q-030–Q-037 incluyen estado explícito. 
 - Q-038 (P1, D-034, `OPEN`): ¿Qué esquema, aislamiento técnico, protocolo de evaluación PIT y métricas preregistradas permiten comparar Champion con `ShadowPortfolioProposal` sin que el shadow influya en operaciones ni obtenga datos futuros?
 - Q-039 (P1, D-035, `OPEN`): ¿Cuáles son las fórmulas, unidades, redondeos, precedencia y casos de concurrencia verificables que concretan ADR-006 sin fijar aún los umbrales PAPER de D-031?
 
-- Q-041 (P0, D-020/024, `RESEARCHING`): ¿Qué valor incremental añaden las Skills frente a workflow mínimo en Team, y qué finalistas justifican aceptación Plus? Shortlist RC1 final propuesta, cuatro procedimientos y transporte SDK/app-server; corpus inicial y regresión completos, sin superioridad general. Paquete autónomo contratos/workload concluido; quedan Plus y review/gobierno final.
-- Q-042 (P1, D-024/025, `RESEARCHING`): ¿Qué cadencia, persistencia y degradación requiere núcleo local siempre activo + Codex intermitente? Contrato RC0 y WL-L/R/S propuestos especifican corte/estado/recovery/coverage; carga WL-R/Plus y demanda definitiva Strategy V1 pendientes, A+/G1+G2/pedagogía preservados.
+- Q-041 (P0, D-020/024, RESEARCHING): ¿qué finalistas y contratos cumplen el target Team PAPER? Conducta y cohorte aprobada; ejecutar gaps SDK/Skill/tool, recovery/carga acotados y dossier material. Plus no bloquea.
+- Q-042 (P1, D-024/025, RESEARCHING): ¿qué cadencia, recovery/degradación y contratos exige núcleo local + Codex Team intermitente? TP por etapa y demanda Strategy V1; operación sostenida P2, sin gate Plus.
 
 - Q-043 (P1, D-034/029, `RESEARCHING`): ¿Cómo discriminar desde rol confiable ResearchHypothesis/ShadowPortfolioProposal/explicación y OBSERVED/DERIVED? Respuesta técnica RC0 en 06_agent_evidence_contract: caller externo/schema, enums, target qty, typed refs/lineage, tres ejes de estado y hashes pareados. Wave 06 prueba spine con fallos de checker conservados. Full schemas/aislamiento/integration siguen P1, no repetir muestra para ocultar errores.
 
-- Q-044 (P1, D-037/020/024, RESEARCHING): ¿Qué ruta reproducible de bootstrap carga reglas globales y rol, descubre/configura capacidades sin depender de Team/chat, distingue acciones manuales y prueba readiness Plus? ADR-009 aprueba obligación; R-028 compara mecanismos nativos y paquetes. Sesión por rol y runtime final no seleccionados.
+- Q-044 (P1, D-037/020/024, RESEARCHING): ¿qué ruta reproducible bootstrap Team carga reglas/roles/Skills, restaura desde repo y prueba readiness sin chat? Fresh clone parcial probado; final permisos/runtime pendientes; Team→Plus solo PRE-LIVE.
 
 **Q-044 avance R-028:** discovery nativo y herencia corroborados en fixture Team; contratos/perfiles/paquetes RC0 creados. Siguiente probe fresh clone; ruta target/gates y permisos siguen abiertos, no selección de sesiones.
 
 **Q-044 estado posterior:** contrato y fresh-clone route documentados/probados en CLI Team (metadata 6, smoke 2). Quedan superficie/entitlement/operación target, full EB y permisos/runtime finales; evidencia parcial no cierra D-037.
+
+- Q-045 (P3, D-039, DEFERRED): ¿qué deltas y suficiencia operacional requiere migrar el sistema validado Team a Plus candidato antes de LIVE? Activar R-029 cuando proceda, sin esperar ahora.

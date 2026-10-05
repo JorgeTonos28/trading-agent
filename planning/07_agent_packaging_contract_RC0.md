@@ -1,5 +1,7 @@
 # Agent Packaging — contrato candidato RC0
 
+**Vigencia actual — ADR-010, 2026-10-05:** CURRENT_RESEARCH_ENVIRONMENT=Team; PAPER_RUNTIME_ENVIRONMENT=Team actual; FUTURE_LIVE_ENVIRONMENT=Plus individual candidato. Las cláusulas anteriores que exigían Plus para PAPER/D-020/D-024 quedan parcialmente SUPERSEDED. La evidencia original se conserva; Plus es gate P3 PRE-LIVE (R-029/D-039), sin dependencia para PAPER. Aceptación activa: [Team TP1–7](research/R-006_team_runtime_acceptance_RC0.md). No selección final ni implementación autorizada.
+
 2026-10-05. ADR-009 requisito aprobado; D-037 RESEARCHING, D-020/D-024 no seleccionados. Documentos/instrucciones permitidos durante preparación; no implementación del Trading OS.
 
 ## Unidad de paquete

@@ -23,7 +23,8 @@
       "kind": "capability",
       "id": "native-Codex",
       "required_for_model_activation": true,
-      "entitlement": "UNKNOWN_target_Plus"
+      "entitlement": "PARTIAL_observed_native_Team_route_see_TP_gates",
+      "future_Plus_entitlement": "UNKNOWN_PRELIVE"
     }
   ],
   "permissions_contract": "planning/07_environment_bootstrap_contract_RC0.md",

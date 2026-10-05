@@ -115,9 +115,9 @@ Do not select technologies simply because they appeared in a tutorial or previou
 
 For R-006/D-020 and D-024 in PAPER V1, investigate the **AI/agentic layer only within OpenAI and Anthropic**. Do not evaluate other AI Labs or third-party agent frameworks/runtimes, including Google ADK, Microsoft Agent Framework, LangGraph and PydanticAI. This restriction does not narrow separate broker, market-data, alternative-data, quantitative-engine, database or infrastructure research.
 
-For PAPER V1, prioritize Tier 0 (capabilities included in the **target individual ChatGPT Plus account** or public reusable assets) and Tier 1 (free-limited/free-account or reasonable local open source). Tier 2 includes separately billed OpenAI/Anthropic APIs, Managed Agents, extra subscriptions, enterprise services, premium connectors or incremental spend. Paid alternatives may be researched and documented; contracting, enabling billing or generating incremental spend requires explicit owner approval. A public SDK does not imply Plus entitlement. See ADR-007 and ADR-008.
+For PAPER V1, prioritize Tier 0 (capabilities included in the **current Team account**, or public reusable assets) and Tier 1 (free-limited/free-account or reasonable local open source). Tier 2 includes separately billed OpenAI/Anthropic APIs, Managed Agents, extra subscriptions, enterprise services, premium connectors or incremental spend. Paid alternatives may be researched; contracting, enabling billing or generating incremental spend requires explicit owner approval. Subscription access does not imply API entitlement. See ADR-007, ADR-008 and superseding ADR-010.
 
-For capability evidence, distinguish `CURRENT_RESEARCH_ENVIRONMENT` (this planning session, observed `planType=team`) from `TARGET_RUNTIME_ENVIRONMENT` (an **individual ChatGPT Plus account**). The current environment is for research and planning, including authorized behavioral probes independent of plan entitlement. For plan-dependent capabilities, record `AVAILABLE_IN_RESEARCH_ENVIRONMENT` and `AVAILABLE_IN_TARGET_PLUS` separately. A successful probe here does not establish availability in Plus: if no Plus-specific evidence exists, record `AVAILABLE_IN_TARGET_PLUS=UNKNOWN`. Assess PAPER V1 cost and architecture against the target Plus environment. Public assets whose access does not depend on plan may continue to be inspected and adapted. See ADR-007.
+Define `CURRENT_RESEARCH_ENVIRONMENT = Team` and `PAPER_RUNTIME_ENVIRONMENT = Team current`. Preparation, implementation after Definition of Ready, backtests and initial complete PAPER validation use this environment. `FUTURE_LIVE_ENVIRONMENT = ChatGPT Plus individual` is a candidate for later migration after validated PAPER, not an approved LIVE runtime. Keep availability per environment, instance, surface and version. Record `AVAILABLE_IN_RESEARCH_ENVIRONMENT`, `AVAILABLE_IN_PAPER_TEAM` and `AVAILABLE_IN_FUTURE_PLUS` separately; the legacy `AVAILABLE_IN_TARGET_PLUS` field belongs to historical evidence or PRE-LIVE. Team evidence does not establish Plus entitlement. Preserve unknowns and original probe results.
 
 ## Economic policy by project phase
 
@@ -131,13 +131,15 @@ For every external candidate, record `PAPER_V1_VIABLE_FREE`, `PAPER_V1_COST`, `L
 
 ## Agent Capability Gate
 
-### Research behavior and target acceptance
+### Research behavior and PAPER Team acceptance
 
-`CURRENT_RESEARCH_ENVIRONMENT = Team` may be used for behavioral and comparative probes independent of plan entitlement: Skill versus minimal workflow, quality, point-in-time discipline, traceability, injection, structured outputs, pedagogy, shadow proposals, authority isolation, repeatability and tool failures. Missing access to the target Plus account MUST NOT block this research or a conditional shortlist.
+Use Team for behavioral, comparative and PAPER runtime probes: Skills versus minimal workflows, PIT, traceability, injection, structured outputs, pedagogy, shadow, authority isolation, repeatability, tools, recovery and workload. Reuse applicable Team evidence; do not repeat complete discovery when the target correction only changes its applicability.
 
-`TARGET_RUNTIME_ENVIRONMENT = ChatGPT Plus individual` has a separate **Plus Acceptance Gate**, applied to finalists only: availability, activation, entitlement, tools/authentication, quotas, persistence/recovery and operational sufficiency. Reuse Team behavioral evidence; do not repeat the entire research under Plus. An environment-dependent difference may require a focused regression. Maintain `AVAILABLE_IN_TARGET_PLUS = UNKNOWN` without target-specific evidence. Neither shortlist nor research success closes D-020/D-024 or selects a capability.
+The active PAPER acceptance is `planning/research/R-006_team_runtime_acceptance_RC0.md` (TP1–7). Distinguish evidence for architecture decisions, implementation readiness and sustained operational validation before autonomous PAPER. A smoke does not establish production security or sustainable quota.
 
-Preserve as an OPEN architectural alternative an always-on deterministic/local Trading OS core with Codex/Plus used intermittently for research, shadow portfolio management, analysis and pedagogy. Autonomous approved Champion execution need not require an always-on LLM; agent availability and operational safety are distinct design questions. No production implementation is authorized.
+The former Plus Acceptance Gate is **P3 Pre-Live Environment Migration & Acceptance**, R-029/D-039. It MUST NOT block R-006, D-020, D-024, implementation, backtesting or PAPER in Team. Test environment-dependent deltas when migration is actually proposed; preserve previous Plus documents/results as historical evidence. Keep Plus availability UNKNOWN without specific evidence.
+
+Preserve as an OPEN architectural alternative an always-on deterministic/local Trading OS core with Codex/Team used intermittently for research, shadow portfolio management, analysis and pedagogy. Autonomous approved Champion execution need not require an always-on LLM. No production implementation is authorized before Definition of Ready.
 
 R-006 / D-020 Agentic Capability Discovery is an architecture prerequisite for D-024. Do not close D-024 or freeze the final agent runtime, multiagent topology, Skills, plugins, MCP integrations, subagent design, or Trading OS Plugin structure until R-006 has a documented maturity review: relevant capability coverage, access/license/cost checks, practical probes for priority candidates when feasible, permission and financial-authority tests, and a comparative recommendation. Financial contracts independent of technology may continue. A candidate's existence or current availability never implies selection. Current evidence and the conditional shortlist are in `planning/research/R-006_shortlist_RC1.md`; its Team results do not close D-020/D-024.
 
@@ -147,7 +149,7 @@ The owner approved the R-006 RC1 shortlist as a **candidate acceptance cohort**,
 
 Maintain a repository-contained onboarding route from a fresh environment plus repository to a configured and verified agent environment. See ADR-009, D-037/R-028 and `ONBOARDING.md`. D-024 and Definition of Ready cannot close without this reproducible route, its environment-specific acceptance evidence and explicit unresolved actions.
 
-Distinguish `CURRENT_RESEARCH_ENVIRONMENT` (Team), `TARGET_PLUS_ENVIRONMENT` (individual Plus; alias of `TARGET_RUNTIME_ENVIRONMENT`) and `FUTURE_LIVE_ENVIRONMENT` (unselected). Research availability never establishes target entitlement. Do not depend on current chat memory, user-specific paths, installed plugins or authentication being transferred by Git.
+Distinguish `CURRENT_RESEARCH_ENVIRONMENT` (Team), `PAPER_RUNTIME_ENVIRONMENT` (current Team) and `FUTURE_LIVE_ENVIRONMENT` (individual Plus candidate). PAPER bootstrap demonstrates Team reproducibility, fresh clone, roles/configuration recovery from the repository and no chat dependency. Team-to-Plus migration belongs to PRE-LIVE. Historical TARGET_PLUS_ENVIRONMENT/TARGET_RUNTIME_ENVIRONMENT identifiers are superseded for PAPER by ADR-010. Availability never transfers automatically between instances/surfaces/plans. Do not depend on current chat memory, user-specific paths, installed plugins or authentication being transferred by Git.
 
 Classify onboarding actions as `AUTOMATED`, `USER_ACTION_REQUIRED`, `UNAVAILABLE`, `OPTIONAL` or `FALLBACK_AVAILABLE`. Account login, credentials, subscriptions, spend and material permissions require the appropriate owner action. Never request or write secrets in Git; sanitize reports and preserve existing user configuration.
 
@@ -213,6 +215,8 @@ Continuously check for:
 ## Git and GitHub discipline
 
 GitHub is part of the project's persistent source of truth.
+
+Deployment Source Policy: `plan-architect` is preparation/candidate work; `main` is the stable approved baseline; a versioned approved release/tag is the reproducible deployment snapshot. Record its commit, manifest and acceptance evidence. Candidate probes may use pinned working-branch commits. Do not create/promote a deployment release or merge to main without the required checkpoint/approval.
 
 The active Preparation Program branch is `plan-architect`. The `main` branch represents the latest stable approved baseline and MUST NOT be modified or merged into automatically without an explicit project checkpoint or human approval.
 

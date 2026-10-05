@@ -1,5 +1,9 @@
 # R-006 — shortlist final propuesta y madurez RC1
 
+**Vigencia actual — ADR-010, 2026-10-05:** CURRENT_RESEARCH_ENVIRONMENT=Team; PAPER_RUNTIME_ENVIRONMENT=Team actual; FUTURE_LIVE_ENVIRONMENT=Plus individual candidato. Las cláusulas anteriores que exigían Plus para PAPER/D-020/D-024 quedan parcialmente SUPERSEDED. La evidencia original se conserva; Plus es gate P3 PRE-LIVE (R-029/D-039), sin dependencia para PAPER. Aceptación activa: [Team TP1–7](R-006_team_runtime_acceptance_RC0.md). No selección final ni implementación autorizada.
+
+**Las notas siguientes conservan el estado/evidencia del hito anterior; los próximos pasos Plus de entonces ya no son el próximo paso PAPER.**
+
 **Fecha:** 2026-10-05. **Estado:** `RESEARCHING / PROPOSED_SHORTLIST_COMPLETE`, suficiente para orientación humana y aceptación de finalistas; **no** madurez final para cerrar D-020/D-024. `SELECTED=NO` en todos. Sustituye RC0 como recomendación actual; RC0 y waves/attempts conservados. No cambia A+/G1+G2, riesgo, Strategy V1, broker, datos, implementación bloqueada ni presupuesto.
 
 ## 1. Paquete autónomo completado

@@ -1,5 +1,9 @@
 # R-006 — Plus Acceptance Gate RC3
 
+**RECLASIFICADO / HISTÓRICO — ADR-010:** este contrato Plus y sus criterios originales se preservan. Su dependencia PAPER queda SUPERSEDED; es P3 PRE-LIVE, [R-029](R-029_pre_live_environment_migration_gate_RC0.md)/D-039 DEFERRED. El gate activo PAPER es [Team TP1–7](R-006_team_runtime_acceptance_RC0.md). No pedir acceso Plus ni bloquear D-020/D-024/implementación/PAPER por este archivo.
+
+## Contrato anterior conservado
+
 **Actualizado:** 2026-10-05. **Estado:** `OPEN`, reservado a finalistas; arquitectura/runtime D-024 no seleccionados. Este contrato concreta ADR-007/008 y la instrucción del propietario del 5 de octubre. Team produce evidencia conductual y shortlist sin depender de Plus. Este gate verifica diferencias del entorno objetivo. Nombre RC0 conservado para referencias, contenido RC3. [Shortlist RC1](R-006_shortlist_RC1.md) y [workload/matriz RC0](R-006_workload_acceptance_RC0.md) definen la cohorte y criterios propuestos; no se ejecutó gate target.
 
 ## Rutas candidatas y economía

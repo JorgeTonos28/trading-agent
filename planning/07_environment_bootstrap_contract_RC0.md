@@ -1,5 +1,7 @@
 # Environment Bootstrap / Onboarding / Portability — RC0
 
+**Vigencia actual — ADR-010, 2026-10-05:** CURRENT_RESEARCH_ENVIRONMENT=Team; PAPER_RUNTIME_ENVIRONMENT=Team actual; FUTURE_LIVE_ENVIRONMENT=Plus individual candidato. Las cláusulas anteriores que exigían Plus para PAPER/D-020/D-024 quedan parcialmente SUPERSEDED. La evidencia original se conserva; Plus es gate P3 PRE-LIVE (R-029/D-039), sin dependencia para PAPER. Aceptación activa: [Team TP1–7](research/R-006_team_runtime_acceptance_RC0.md). No selección final ni implementación autorizada.
+
 2026-10-05. Requisito ADR-009 aprobado; mecanismo candidato D-037/R-028 P1. D-020 RESEARCHING/D-024 OPEN. Fuente de verdad: repo, [ONBOARDING](../ONBOARDING.md), [manifest](../shared/bootstrap_manifest.json), perfiles y evidencia versionada. No implementar Trading OS.
 
 ## 1. Bootstrap Mode candidato
@@ -13,10 +15,10 @@ Entradas confiables: repo/commit, target declarado por dueño, scope de readines
 | ID | Propósito | Lo que NO demuestra |
 |---|---|---|
 | CURRENT_RESEARCH_ENVIRONMENT | Team declarado/observado históricamente; conducta, diseño y probes | Entitlements Plus o condiciones LIVE |
-| TARGET_PLUS_ENVIRONMENT | Plus individual para PAPER; alias TARGET_RUNTIME_ENVIRONMENT | READY_FOR_IMPLEMENTATION, autorización PAPER/LIVE o entitlement API |
-| FUTURE_LIVE_ENVIRONMENT | Plan/superficie/servicios aún UNSELECTED | Aprobación de gasto, runtime, broker/capital o gates LIVE |
+| PAPER_RUNTIME_ENVIRONMENT | Team actual: implementación tras DoR, backtests y PAPER | READY_FOR_IMPLEMENTATION, autorización inmediata PAPER/LIVE o entitlement API |
+| FUTURE_LIVE_ENVIRONMENT | Plus individual candidato, migración PRE-LIVE R-029 | Aprobación de gasto, runtime, broker/capital o gates LIVE |
 
-Perfilar **cada instancia**, no solo el tipo de plan. Registrar OS/superficie/versiones/capacidades/Skills/plugins/MCP/dependencias/límites/fallbacks/tests/estado. Plan observado puede ser UNKNOWN aunque el dueño haya declarado un target; documentar el error. `expected` es requisito; `observed` es evidencia. Nunca rellenar observado desde expected o desde Team.
+Perfilar **cada instancia**, no solo el tipo de plan. Registrar OS/superficie/versiones/capacidades/Skills/plugins/MCP/dependencias/límites/fallbacks/tests/estado. Plan observado puede ser UNKNOWN aunque el dueño haya declarado un target; documentar el error. `expected` es requisito; `observed` es evidencia. Nunca rellenar observado desde expected; no transferir resultados entre instancias/superficies ni hacia Plus.
 
 ## 3. Ruta ejecutable de preparación
 
@@ -27,7 +29,7 @@ Perfilar **cada instancia**, no solo el tipo de plan. Registrar OS/superficie/ve
 | Compare | Diff esperado↔observado y required/optional | UNKNOWN obligatorio bloquea su gate; explicar deltas del entorno |
 | Plan | Acciones, prerequisitos, costes, approvals, rollback | No asumir permiso por figurar un paquete en manifiesto |
 | Configure | Local assets ya llegan con clone; proponer settings/permisos concretos | Diff y alcance; cambios aprobados, idempotentes, backup sin secretos en repo; nunca sobrescribir settings globales |
-| Accept | EB y GP según scope/entorno | GP1 antes de inferencia target, GP2–4 tras discovery; GP5–7 requieren operación y ventana temporal, no todo se completa en onboarding instantáneo |
+| Accept | EB y TP según scope/entorno | TP1 antes de inferencia target, TP2–4 tras discovery; TP5–7 requieren operación y ventana temporal, no todo se completa en onboarding instantáneo |
 | Prepare roles | Cadena global/local + rol/schema/tools/version confiables | Paquete documentado ≠ activación operativa. Plan Guardian solo tras freeze |
 | Smoke/report | Fixtures sintéticas, resultados/fallos y readiness | Registro antes de resumir; reporte accionable, sin crear órdenes/posiciones ni gastar |
 
@@ -58,7 +60,7 @@ Las referencias locales evidence_refs publicadas se resuelven desde la raíz del
 - action_plan, selected_fallbacks, acceptance_tests (environment/source/versión/resultado/evidencia), requirement_results;
 - readiness_scope y estado/blocked_by, autoridad NONE, implementation_locked=true.
 
-Estados: NOT_ASSESSED, PARTIAL, BLOCKED_USER_ACTION, BLOCKED_FAILED_GATE, READY_AGENT_ENVIRONMENT. Scope: PREPARATION_ONBOARDING o PAPER_AGENT_ENVIRONMENT. READY requiere todos los requisitos obligatorios del scope PASSED y sin acciones obligatorias abiertas. Para PAPER, además selección/gobierno aprobados, identidad Plus y EB/GP completos. Un schema válido o autoinforme LLM no concede readiness: la comprobación externa valida evidencia y reglas.
+Estados: NOT_ASSESSED, PARTIAL, BLOCKED_USER_ACTION, BLOCKED_FAILED_GATE, READY_AGENT_ENVIRONMENT. Scope: PREPARATION_ONBOARDING o PAPER_AGENT_ENVIRONMENT. READY requiere todos los requisitos obligatorios del scope PASSED y sin acciones obligatorias abiertas. Para PAPER, además selección/gobierno aprobados, identidad Team y EB/TP del alcance correspondiente completos; aceptación sostenida operacional es P2. Un schema válido o autoinforme LLM no concede readiness: la comprobación externa valida evidencia y reglas.
 
 No claim de readiness de sistema financiero. Aun con entorno listo, DoR/Strategy/broker/riesgo/gates PAPER independientes pueden seguir abiertos. LIVE nunca queda autorizado por este perfil.
 
@@ -67,15 +69,15 @@ No claim de readiness de sistema financiero. Aun con entorno listo, DoR/Strategy
 | Gate | Antes de cierre | Prueba propuesta y vínculo |
 |---|---|---|
 | EB-1 clone/integridad | Reproducir entry point del commit/manifiesto correcto sin chat/caché de assets | Fresh local clone + refs/hashes; externos explícitos. Git privado exige acceso manual legítimo |
-| EB-2 reglas/roles | Root+rol cargados, rol hermano ausente, override/truncación/conflicto detectados | Metadata + smoke observable en superficie seleccionada; no asumir ACL. GP2/4 |
-| EB-3 capabilities/diff | Inventario expected/observed y entitlement específico | Skills/plugins/MCP/dependencies, desconocidos visibles; GP1–3, no heredar Team |
-| EB-4 configuración/seguridad | Acciones permitidas/manuales, no secretos ni settings clobber | Diff autorizado, idempotencia/paths/rollback; permisos finales D-027. GP4/7 |
+| EB-2 reglas/roles | Root+rol cargados, rol hermano ausente, override/truncación/conflicto detectados | Metadata + smoke observable en superficie seleccionada; no asumir ACL. TP2/4 |
+| EB-3 capabilities/diff | Inventario expected/observed y entitlement específico | Skills/plugins/MCP/dependencies, desconocidos visibles; TP1–3, verificar instancia/superficie Team |
+| EB-4 configuración/seguridad | Acciones permitidas/manuales, no secretos ni settings clobber | Diff autorizado, idempotencia/paths/rollback; permisos finales D-027. TP4/7 |
 | EB-5 package portability | Manual/programmatic entry de ruta elegida carga mismo contrato/caller/outputs | Hashes/paths/lifecycle. No exigir dos rutas si una no se selecciona; no sesiones por rol impuestas |
-| EB-6 smoke/recovery | Rol/Skill/schema/tools básicos y reporte recuperable | Snapshot del job/attempt y resultados, no duplicar configuración/admisión; GP3/5. Probe offline solo simula, no recovery durable real |
-| EB-7 suficiencia target | Finalistas cumplen requisitos en Plus, cuotas/auth/cadencia | GP1–7 + workload R-006; no repetir toda la comparación Team. GP6 necesita varias sesiones/días |
+| EB-6 smoke/recovery | Rol/Skill/schema/tools básicos y reporte recuperable | Snapshot del job/attempt y resultados, no duplicar configuración/admisión; TP3/5. Probe offline solo simula, no recovery durable real |
+| EB-7 suficiencia target | Finalistas cumplen requisitos en Team, cuotas/auth/cadencia | TP1–7 + workload R-006; reutilizar comparación Team pertinente. TP6 necesita varias sesiones/días |
 | EB-8 readiness audit | Estado derivado de evidencia por requisito, acciones exactas, revisión crítica | UNKNOWN/fail no pasan, opcional no bloquea, drift invalida gates afectados; D-029/037 |
 
-**DoR/D-024:** antes de freeze, ruta final y paquetes/permiso seleccionados o descartados justificadamente, EB obligatorio cerrado para target y GP específico aprobado, responsable de mantenimiento/deployment y version pins. Protocolos financieros/PAPER/LIVE siguen separados. Discovery/probes Team y documentos no cierran EB target.
+**DoR/D-024:** antes de freeze, ruta final y paquetes/permiso seleccionados o descartados justificadamente, EB de preparación cerrado para Team, permisos aprobados y protocolo TP operacional definido; carga sostenida e integración financiera construida se ejecutan P2 antes de PAPER autónomo, responsable de mantenimiento/deployment y version pins. Protocolos financieros/PAPER/LIVE siguen separados. Discovery/probes válidos Team aplican a gates de arquitectura, sin probar operación sostenida ni todas las superficies. Véase matriz por etapa TP y ADR-010.
 
 ## 7. Reanudación y drift
 
@@ -94,11 +96,11 @@ No descargar/cargar credenciales al recuperar un perfil. No ejecutar automática
 | Custom native agents | REFERENCE_ONLY | Ruta opcional de invocación futura; no topología seleccionada |
 | Portable plugin package/marketplace | REFERENCE_ONLY | Posible distribución posterior; instalación/trust/auth separadas |
 
-Assets locales/Skill propia: PAPER licencia/adquisición 0, cómputo/cuota incluidos solo si GP demuestra; LIVE coste operacional UNKNOWN. Alternativa gratuita: procedimiento manual explícito y native discovery; no necesariamente equivalente al workload. Valor pago posible continuidad/gestión de entorno, no demostrado; requiere ficha ADR-008/aprobación antes de gastar. No comprar Skills ni asumir entitlement propietario.
+Assets locales/Skill propia: PAPER licencia/adquisición 0, cómputo/cuota incluidos solo si TP demuestra; LIVE coste operacional UNKNOWN. Alternativa gratuita: procedimiento manual explícito y native discovery; no necesariamente equivalente al workload. Valor pago posible continuidad/gestión de entorno, no demostrado; requiere ficha ADR-008/aprobación antes de gastar. No comprar Skills ni asumir entitlement propietario.
 
 ## 9. Límites del paquete autónomo
 
-Entregables: contratos/manifiesto/perfiles, paquetes documentales, Skill candidata, evidencia local y fresh-clone, deltas a Plus Gate/shortlist. Endpoint cuando eso esté sincronizado y siguientes gates necesiten entorno autenticado/Plus o decisión material. Auth bloqueada no detiene inventario local, diseño y negativos. D-037 queda RESEARCHING; mecanismos/permisos finales necesitan evidencia y gobierno correspondientes.
+Entregables: contratos/manifiesto/perfiles, paquetes documentales, Skill candidata, evidencia local y fresh-clone, deltas a Team Gate/shortlist y PRE-LIVE Plus. Endpoint cuando eso esté sincronizado y siguiente acción necesite gobierno material; el acceso Plus no bloquea este paquete Team. Auth bloqueada no detiene inventario local, diseño y negativos. D-037 queda RESEARCHING; mecanismos/permisos finales necesitan evidencia y gobierno correspondientes.
 
 ## Aclaración del perfil RC0 — Git identity
 

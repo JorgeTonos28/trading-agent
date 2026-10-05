@@ -1,5 +1,9 @@
 # Decision Register — inicialización
 
+**Vigencia actual — ADR-010, 2026-10-05:** CURRENT_RESEARCH_ENVIRONMENT=Team; PAPER_RUNTIME_ENVIRONMENT=Team actual; FUTURE_LIVE_ENVIRONMENT=Plus individual candidato. Las cláusulas anteriores que exigían Plus para PAPER/D-020/D-024 quedan parcialmente SUPERSEDED. La evidencia original se conserva; Plus es gate P3 PRE-LIVE (R-029/D-039), sin dependencia para PAPER. Aceptación activa: [Team TP1–7](research/R-006_team_runtime_acceptance_RC0.md). No selección final ni implementación autorizada.
+
+**Lectura:** registros/tablas actuales y esta adenda gobiernan; notas fechadas de hitos previos se conservan como historia, incluidos sus antiguos siguientes pasos Plus.
+
 Fecha: 2026-10-01. Fuente base: [hoja de ruta v0.2](../docs/master/hoja_de_ruta_sistema_trading_agentes_ia_v0.2.md). `DECIDED` significa que la hoja fija el principio; no implica que su implementación esté especificada. Los candidatos nombrados por la hoja siguen abiertos. Estados: `OPEN`, `RESEARCHING`, `READY_FOR_DECISION`, `DECIDED`, `DEFERRED`, `SUPERSEDED`. P0/P1 bloquean el Plan v1.0.
 
 | ID | Decisión y estado actual | Prioridad | Estado | Cierre / autoridad |
@@ -23,11 +27,11 @@ Fecha: 2026-10-01. Fuente base: [hoja de ruta v0.2](../docs/master/hoja_de_ruta_
 | D-017 | Fronteras de autonomía PAPER V1 ante incidentes | P0 | DECIDED | Propietario aprobó G1+G2 y reanudación humana tras pausa material el 2026-10-01; ADR-002; G3/liquidación general no autorizados; umbrales D-031 abiertos |
 | D-018 | Roles y gates abstractos de Smart Money/señales externas en Research/Strategy/Pedagogical | P0 | DECIDED | ADR-005 y `06_external_signal_admission_RC1.md`; ninguna familia/dataset admitido automáticamente, PIT/selección concreta D-008/022/033 |
 | D-019 | Contrato del Pedagogical Agent y aprendizaje sin alterar Champion | P0 | DECIDED | ADR-001 aprobado: factual desde B4 y completo antes de DoD, sin autoridad financiera; contrato completo RC0 especificado, full reports/privacidad/evals P1/P2 pendientes |
-| D-020 | Stack de capacidades, licencias y clasificación Build vs. Reuse | P0 | RESEARCHING | ADR-007/008 vigentes; [shortlist RC1](research/R-006_shortlist_RC1.md) final propuesta: contratos/workload completos en especificación y wave 06 focalizada, C-029 Codex SDK nativo probado. Plus individual target UNKNOWN; falta aceptación target, review independiente/seguridad y gobierno final. Sin cierre ni SELECTED; package autónomo pasos 1–2 completo |
+| D-020 | Stack de capacidades, licencias y clasificación Build vs. Reuse | P0 | RESEARCHING | ADR-010: objetivo PAPER Team; evidencia waves/SDK/bootstrap aplicable. Cohorte aprobada, no selección. Faltan SDK Skills/tools, recovery y carga acotada Team, comparativa/review/gobierno; Plus es P3 y no bloquea. |
 | D-021 | Broker PAPER y elegibilidad real para residente de RD | P1 | OPEN | Gates B1–B5, pruebas API y aprobación humana |
 | D-022 | Proveedor de históricos y datos para candidatos Strategy V1; validador secundario | P1 | OPEN | Cobertura, PIT, ajustes, licencia, coste y benchmark |
 | D-023 | Motor(es) de investigación/backtest event-driven | P1 | OPEN | Comparativa y replay mínimo contra D-008/011 |
-| D-024 | Runtime de Plan Architect/agentes y diseño del Trading OS Plugin | P1 | OPEN | **Gate previo R-006/D-020**, sin impedir investigación autónoma. Shortlist RC1 propone núcleo local determinístico always-on + jobs Codex intermitentes, transporte oficial SDK/app-server y roles lógicos. Orientación candidata pendiente de owner; final runtime/topología/Skills/plugins/MCP/freeze pendientes Plus, review/gobierno. No implementación |
+| D-024 | Runtime de agentes y diseño Trading OS Plugin | P1 | OPEN | Gate R-006/D-020 y bootstrap Team D-037; propuesta núcleo local determinístico + jobs Codex Team intermitentes, transporte oficial y roles lógicos. Selección/permisos/gobierno final pendientes; Plus PRE-LIVE no bloquea. No implementación. |
 | D-025 | Workflow durable, scheduler y política de recuperación | P1 | OPEN | Fallos, persistencia, complejidad y benchmark |
 | D-026 | Almacenamiento, eventos, identidad/versionado y audit trail | P1 | OPEN | Esquemas, retención, replay y recuperación |
 | D-027 | Modelo de seguridad: secretos, entornos, permisos, supply chain, prompt injection | P1 | OPEN | Threat model y aprobación humana de arquitectura material |
@@ -41,6 +45,8 @@ Fecha: 2026-10-01. Fuente base: [hoja de ruta v0.2](../docs/master/hoja_de_ruta_
 | D-030 | Ejecución PAPER concreta: tipo de orden, stops, slippage y fill parity | P2 | OPEN | Protocolo antes de paper autónomo; decisión puede afectar D-010/011 |
 | D-031 | Umbrales PAPER calibrados y kill switches ensayados | P2 | OPEN | Evidencia backtest/paper y aprobación humana de política |
 | D-032 | Ventana y reglas de promoción desde replay a paper autónomo | P2 | OPEN | Métricas, incidentes y procedimiento explícito en DoR |
+| D-038 | Entorno Team para preparación/implementación tras DoR/backtests/PAPER; Plus candidato PRE-LIVE y Deployment Source Policy | P0 | DECIDED | Propietario 2026-10-05, ADR-010 supersede parcialmente ADR-007/009; no merge main ni release ahora. |
+| D-039 | Pre-Live Environment Migration & Acceptance Team → Plus | P3 | DEFERRED | R-029; activar tras PAPER validado e intención de migración; no dependencia para D-020/D-024/implementación/PAPER. |
 | D-040 | Broker LIVE, elegibilidad/custodia/funding y permisos | P3 | DEFERRED | Gate LIVE, pruebas y aprobación humana |
 | D-041 | Capital live, riesgo live, fiscalidad y obligaciones RD/EE.UU. | P3 | DEFERRED | Asesoramiento competente y aprobación humana antes de LIVE |
 | D-042 | SLO, disaster recovery y criterios paper→shadow→live | P3 | DEFERRED | Evidencia operacional y aprobación humana |

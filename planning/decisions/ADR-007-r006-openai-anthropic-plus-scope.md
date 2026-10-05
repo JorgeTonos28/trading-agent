@@ -1,5 +1,7 @@
 # ADR-007 — Alcance y presupuesto de Agentic Capability Discovery
 
+**Vigencia actual — ADR-010, 2026-10-05:** CURRENT_RESEARCH_ENVIRONMENT=Team; PAPER_RUNTIME_ENVIRONMENT=Team actual; FUTURE_LIVE_ENVIRONMENT=Plus individual candidato. Las cláusulas anteriores que exigían Plus para PAPER/D-020/D-024 quedan parcialmente SUPERSEDED. La evidencia original se conserva; Plus es gate P3 PRE-LIVE (R-029/D-039), sin dependencia para PAPER. Aceptación activa: [Team TP1–7](../research/R-006_team_runtime_acceptance_RC0.md). No selección final ni implementación autorizada.
+
 - **Fecha:** 2026-10-01.
 - **Estado:** `DECIDED` por instrucción explícita del propietario; acota R-006/D-020 y condiciona D-024.
 - **Prioridad:** P0. **Implementación:** bloqueada.

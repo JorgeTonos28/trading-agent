@@ -1,5 +1,7 @@
 # ADR-009 — Environment Bootstrap, Portability & Agent Packaging
 
+**PARTIALLY SUPERSEDED — ADR-010 (2026-10-05):** el requisito de bootstrap/paquetes y la cohorte candidata siguen aprobados. Se sustituye únicamente Plus como target PAPER y gate previo: PAPER_RUNTIME_ENVIRONMENT=Team; Plus candidato PRE-LIVE R-029 P3. Contrato original conservado abajo; no espera de Plus para D-020/D-024/DoR/PAPER.
+
 Fecha: 2026-10-05. Estado: **DECIDED — requisito aprobado por el propietario**. El mecanismo final D-037 está `RESEARCHING`; runtime/topología D-024 `OPEN`, stack D-020 `RESEARCHING`.
 
 ## Decisión del propietario

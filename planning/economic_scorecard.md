@@ -1,5 +1,9 @@
 # Scorecard económico común — ADR-008
 
+**Vigencia actual — ADR-010, 2026-10-05:** CURRENT_RESEARCH_ENVIRONMENT=Team; PAPER_RUNTIME_ENVIRONMENT=Team actual; FUTURE_LIVE_ENVIRONMENT=Plus individual candidato. Las cláusulas anteriores que exigían Plus para PAPER/D-020/D-024 quedan parcialmente SUPERSEDED. La evidencia original se conserva; Plus es gate P3 PRE-LIVE (R-029/D-039), sin dependencia para PAPER. Aceptación activa: [Team TP1–7](research/R-006_team_runtime_acceptance_RC0.md). No selección final ni implementación autorizada.
+
+**Lectura:** registros/tablas actuales y esta adenda gobiernan; notas fechadas de hitos previos se conservan como historia, incluidos sus antiguos siguientes pasos Plus.
+
 **Fecha:** 2026-10-02. **Estado:** estructura de investigación; no precios ni presupuestos aprobados. Aplicable a brokers, market/alternative data, modelos/runtimes, conectores, quant, almacenamiento, infraestructura, observabilidad y cualquier capability externa.
 
 ## Campos mínimos por candidato y fase

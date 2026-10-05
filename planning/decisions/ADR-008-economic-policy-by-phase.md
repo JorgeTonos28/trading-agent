@@ -1,5 +1,7 @@
 # ADR-008 — Política económica por fase y adquisición de metodologías
 
+**Aplicación de entorno ADR-010:** PAPER usa Team actual, no Plus. La política económica decidida aquí permanece vigente; Plus individual es candidato PRE-LIVE. Ninguna suscripción implica facturación API incluida.
+
 - **Fecha:** 2026-10-02.
 - **Estado:** `DECIDED`, instrucción explícita del propietario; D-036, P0.
 - **Alcance:** todas las capacidades y proveedores externos presentes y futuros. Complementa ADR-007 y prevalece sobre su anterior exigencia de aprobación para **estudiar/considerar** gasto.

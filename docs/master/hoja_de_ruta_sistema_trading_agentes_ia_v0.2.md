@@ -1,5 +1,7 @@
 # Hoja de Ruta — Sistema Autónomo de Trading Cuantitativo con Agentes de IA
 
+**Decisión vigente de entornos — 5 octubre 2026, [ADR-010](../../planning/decisions/ADR-010-team-paper-and-prelive-plus-migration.md):** CURRENT_RESEARCH_ENVIRONMENT=Team y PAPER_RUNTIME_ENVIRONMENT=Team actual para preparación, implementación tras DoR, backtests y PAPER. FUTURE_LIVE_ENVIRONMENT=Plus individual candidato tras PAPER validado. Plus Acceptance queda P3 PRE-LIVE R-029/D-039 y NO bloquea R-006/D-020/D-024/implementación/backtest/PAPER. Notas previas sobre Plus como target PAPER son históricas y parcialmente SUPERSEDED; evidencia conservada. Bootstrap ADR-009/D-037 se verifica en Team; deployment futuro desde release/tag aprobado, plan-architect candidato y main baseline. No merge ni implementación ahora.
+
 **Versión:** 0.2 — Documento maestro de preparación, arquitectura y ejecución  
 **Fecha:** 30 de septiembre de 2026  
 **Estado:** PREPARATION — hoja de ruta viva. El proyecto no entra en implementación del núcleo financiero hasta completar el programa de preparación, cerrar las decisiones bloqueantes y congelar un Plan v1.0 aprobado. Ninguna plataforma de brokerage, proveedor de datos, Skill, plugin, MCP, framework de agentes ni estrategia complementaria se considera seleccionada hasta completar los gates definidos en este documento.  
@@ -850,7 +852,7 @@ Cada revisión producirá un `Plan Consistency Report`.
 - MCPs seleccionados;
 - Build-vs-Reuse completado;
 - dependencias y licencias revisadas;
-- ruta reproducible de Environment Bootstrap, Portability & Agent Packaging desde entorno nuevo + repositorio hasta entorno agéntico configurado y verificado, con perfiles, acciones manuales/automáticas, smoke y acceptance gates específicos del target (ADR-009, D-037/R-028);
+- ruta reproducible de Environment Bootstrap, Portability & Agent Packaging desde entorno nuevo + repositorio hasta entorno agéntico configurado y verificado, con perfiles, acciones manuales/automáticas, smoke y acceptance gates de preparación específicos del Team PAPER (ADR-009/010, D-037/R-028), protocolos de validación operacional P2 y migración Plus P3 separada;
 - D-024 no cerrado sin esta ruta; readiness agéntico no sustituye READY_FOR_IMPLEMENTATION, PAPER ni LIVE.
 
 ### Quant

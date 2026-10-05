@@ -1,5 +1,7 @@
 # Paquetes de roles — candidato RC0
 
+**ADR-010:** paquetes PAPER se evalúan en Team actual; Plus es migración PRE-LIVE candidata. Las dependencias registran evidencia parcial por ruta, sin asegurar toda superficie ni operación sostenida. D-024 sigue abierto.
+
 Estos paquetes contienen **instrucciones y contratos de planificación**, no implementaciones ni agentes residentes. La raíz mantiene reglas globales; cada carpeta especializa el trabajo permitido dentro del Preparation Program. Runtime, activación operacional, sesiones/proyectos y subagentes siguen abiertos en D-024.
 
 | Paquete | Función | Estado durante preparación |

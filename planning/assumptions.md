@@ -1,5 +1,9 @@
 # Assumptions Register — 2026-10-01
 
+**Vigencia actual — ADR-010, 2026-10-05:** CURRENT_RESEARCH_ENVIRONMENT=Team; PAPER_RUNTIME_ENVIRONMENT=Team actual; FUTURE_LIVE_ENVIRONMENT=Plus individual candidato. Las cláusulas anteriores que exigían Plus para PAPER/D-020/D-024 quedan parcialmente SUPERSEDED. La evidencia original se conserva; Plus es gate P3 PRE-LIVE (R-029/D-039), sin dependencia para PAPER. Aceptación activa: [Team TP1–7](research/R-006_team_runtime_acceptance_RC0.md). No selección final ni implementación autorizada.
+
+**Lectura:** registros/tablas actuales y esta adenda gobiernan; notas fechadas de hitos previos se conservan como historia, incluidos sus antiguos siguientes pasos Plus.
+
 Las hipótesis siguientes **no** son decisiones aprobadas. Su posible falsedad tiene que evaluarse antes del gate señalado. Estado inicial `UNVERIFIED`, salvo filas marcadas `REFUTADO`.
 
 | ID | P | Supuesto / prueba de falsación | Impacto si es falso |
@@ -26,16 +30,16 @@ Las hipótesis siguientes **no** son decisiones aprobadas. Su posible falsedad t
 | A-020 | P1 | Uno o varios proveedores especializados permitirán cubrir señales externas con derechos y coste razonables. R-025 compara contra fuentes oficiales. | Reducir alcance de fuentes V1 o construir normalización propia. |
 | A-021 | P1 | PARTIAL solo fixtures: shadow con contexto versionado y canonización/derivación verificadas; no prueba cartera general/reproducibilidad generativa/aislamiento real. RC0 exige Champion oculto y distingue decisiones desde cartera real vs trayectoria contrafactual. | Parear solo hashes/contextos iguales; métricas/sealed outcomes y engine/seguridad R-026 antes DoD. |
 | A-022 | P0 | **REFUTADO como inferencia válida:** la mera visibilidad de un plugin/MCP en documentación o catálogo no implica acceso a datos ni licencia para backtest. Verificar entitlement, costes y probe por dataset. | `AVAILABLE_IN_TARGET_PLUS` o `ECONOMICALLY_REASONABLE` queda NO/UNKNOWN hasta evidencia; buscar API/fuente alternativa. |
-| A-023 | P0 | **UNVERIFIED:** las capacidades de Codex observadas en `CURRENT_RESEARCH_ENVIRONMENT` Team estarán disponibles para PAPER V1 en `TARGET_RUNTIME_ENVIRONMENT` Plus individual, sin factura adicional ni límite operativo incompatible. Verificar entitlement y modo de ejecución específicos; no inferirlo de Team. | Investigar otra ruta Tier 0/1 o preparar alternativa paga con evidencia/coste por fase bajo ADR-008; aprobación antes de gastar. |
-| A-024 | P0 | **UNVERIFIED:** Sign in with ChatGPT plan usage y Codex app-server pueden operar la carga PAPER V1 dentro del cupo Plus y sus términos. La sesión sondeada informa `planType=team`; documentación/CLI no prueban entitlement Plus ni continuidad desatendida. | Buscar ruta Tier 0/1 o evaluar alternativa paga por fase; no gastar sin aprobación ADR-008. |
+| A-023 | P3 | SUPERSEDED para PAPER por ADR-010: transferencia Team→Plus pasa a hipótesis PRE-LIVE P3, no disponibilidad PAPER. | Medir gates Team por etapa o R-029 PRE-LIVE; no gasto ni rebaja silenciosa de obligaciones. |
+| A-024 | P1 | UNVERIFIED: native Codex en Team soporta demanda PAPER sostenida y recovery; identidad/acceso/probes no prueban cuotas/continuidad. | Medir gates Team por etapa o R-029 PRE-LIVE; no gasto ni rebaja silenciosa de obligaciones. |
 | A-025 | P0 | **UNVERIFIED:** una ruta zero/low incremental cost puede cumplir los requisitos de calidad/fiabilidad PAPER V1. Probar capacidades, datos, límites y recovery; gratis no es evidencia de suficiencia. | Documentar brecha y opciones pagas revisables; no reducir silenciosamente gates ni comprar sin aprobación ADR-008. |
 | A-026 | P0 | **PARTIAL:** wave 04 muestra valor cualitativo de procedimiento/pedagogía y más contexto; mínimo 10/10 checks vs Skill 9/10. No se demostró superioridad general ni fiabilidad. | Shortlist condicional; canonizar outputs/linaje y conservar baseline. Ver research/R-006_probe_wave_04_2026-10-05.md. |
-| A-027 | P1 | **HYPOTHESIS:** el núcleo determinístico puede operar autónomamente con Codex intermitente. No equivale a continuidad probada ni runtime seleccionado. | Evaluar dependencias operativas, cadencia, estado/recovery y degradación en D-024/025; Plus Gate solo finalistas. |
-| A-028 | P1 | **UNVERIFIED:** WL-R propuesto (40 jobs base/día, hasta 63 con interacción/reserva) y deadlines serán representativos/sostenibles en Plus. Es parámetro experimental, no cuota/SLA ni cadencia Strategy V1. | Rebaselinar demanda tras D-008 y medir GP6 sin reducir obligaciones o activar billing. |
+| A-027 | P1 | **HYPOTHESIS:** el núcleo determinístico puede operar autónomamente con Codex intermitente. No equivale a continuidad probada ni runtime seleccionado. | Evaluar dependencias operativas, cadencia, estado/recovery y degradación en D-024/025; Team TP por etapa; Plus PRE-LIVE. |
+| A-028 | P1 | UNVERIFIED: WL-R propuesto 40/63 jobs y deadlines son representativos/sostenibles en Team; benchmark acotado no sustituye multi-sesión/Strategy V1. | Medir gates Team por etapa o R-029 PRE-LIVE; no gasto ni rebaja silenciosa de obligaciones. |
 | A-029 | P1 | **PARTIAL:** Codex SDK Python oficial puede reemplazar transporte propio; un smoke Team 7/7 y auth/schema compatibles, sin tool callbacks/full Skills/state/recovery probados. | SDK si cubre job contract; gap documentado justifica raw app-server/otra integración Tier 0/1, no construir por defecto. |
 
 | A-030 | P1 | UNVERIFIED: abrir un paquete como cwd conserva automáticamente reglas raíz y Skills compartidas en todas las superficies/versiones. Documentación establece condiciones Git root/cwd/override y límite; R-028 lo prueba. | Verificar cadena/activación; entry point explicita raíz y contratos cuando discovery falla. No confundir instrucciones con ACL. |
-| A-031 | P1 | UNVERIFIED: un clone y los assets públicos bastan para reproducir el entorno, aunque auth, dependencias, plugins, MCP y cuotas son externos. | Manifest/perfil/deltas y gates separados; disponibilidad Team no transfiere a Plus. |
+| A-031 | P1 | UNVERIFIED: un clone y los assets públicos bastan para reproducir el entorno, aunque auth, dependencias, plugins, MCP y cuotas son externos. | Manifest/perfil/deltas y gates separados; fresh clone Team no transfiere auth ni prueba continuidad; Plus PRE-LIVE por separado. |
 
 ## Hechos de baseline, no supuestos
 

@@ -1,3 +1,20 @@
+# Secuencia vigente de Preparation Program — ADR-010
+
+2026-10-05. Team actual para preparación, futura implementación tras DoR, backtests y PAPER. Plus individual es candidato PRE-LIVE R-029 P3; no espera de acceso Plus. Implementation lock vigente.
+
+1. **D-038 DECIDED:** registrar supersession ADR-010, perfiles/contratos/gates y source policy; commit/push.
+2. **R-006/D-020 P0 + D-024/D-037 P1:** reusar waves Team y fresh clone; probar gaps prioritarios SDK/Skill/tool/recovery, corpus/carga acotados. TP por etapa; conservar fallos. No repetir toda comparación.
+3. Preparar matriz requisito→evidencia→gap/etapa y propuesta de arquitectura/capacidades PAPER. Continuar autónomamente hasta decisión material; no cerrar selección por cohorte aprobada.
+4. **Gobierno humano:** arquitectura de runtime/permisos material y selección final D-020/D-024 conforme gate de madurez. Revisión crítica independiente requerida antes de freeze; no fingir reviewer independiente.
+5. Después, siguiente P0 R-020/D-008 (preregistro/candidatos/Strategy V1), D-011, y R-007/008/009/025 datos/broker/quant/Smart Money; contratos D-021–029/033–035 y seguridad. No seleccionar broker/estrategia/umbrales ni gastar sin gobierno correspondiente.
+6. Completar DoR: P0/P1 cerrados, contratos/protocolos/stack aprobados, bootstrap Team reproducible y review/freeze. Solo entonces implementar.
+7. Validación P2: integración financiera/aislamiento/workflow, backtests y operación PAPER con workload definitivo, cuotas/ventanas reales, pedagogía y shadow; límites numéricos/promotion gates aprobados.
+8. P3 tras PAPER validado: R-029 Team→Plus candidato, release/tag aprobado, diff/acceptance/migración y rollback; gates LIVE financieros/económicos aparte.
+
+Source: plan-architect candidato; main baseline aprobado; deployment desde release/tag versionado aprobado. No merge/main/tag de deployment ahora.
+
+## Secuencia histórica conservada — superseded en entorno/next-step por ADR-010
+
 # Secuencia para cerrar el Preparation Program
 
 1. **A0–A1, ahora:** baseline, Plan Architect, diagnóstico, registros, dependencias y DoR desglosado. Confirmar identidad del dueño/aprobador. Salida de esta ejecución: `planning/` inicializado; aún no se declara `PLAN_UNDERSTOOD=TRUE` formal porque quedan ambigüedades P0.

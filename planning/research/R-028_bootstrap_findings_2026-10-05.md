@@ -1,5 +1,9 @@
 # R-028 — Environment Bootstrap, Portability & Agent Packaging
 
+**Vigencia actual — ADR-010, 2026-10-05:** CURRENT_RESEARCH_ENVIRONMENT=Team; PAPER_RUNTIME_ENVIRONMENT=Team actual; FUTURE_LIVE_ENVIRONMENT=Plus individual candidato. Las cláusulas anteriores que exigían Plus para PAPER/D-020/D-024 quedan parcialmente SUPERSEDED. La evidencia original se conserva; Plus es gate P3 PRE-LIVE (R-029/D-039), sin dependencia para PAPER. Aceptación activa: [Team TP1–7](R-006_team_runtime_acceptance_RC0.md). No selección final ni implementación autorizada.
+
+**Las notas siguientes conservan el estado/evidencia del hito anterior; los próximos pasos Plus de entonces ya no son el próximo paso PAPER.**
+
 Fecha: 2026-10-05. Estado: **RESEARCHING**, P1, D-037; contrato/diseño RC0 y evidencia local. ADR-009 aprueba requisito y cohorte candidata; no cierre D-020/D-024/037 ni selección final. Paquete autónomo de diseño/local/fresh-clone completado; aceptación target y review/gobierno permanecen abiertos. Véase §9, vigente sobre las notas del primer hito.
 
 ## 1. Conclusión técnica candidata

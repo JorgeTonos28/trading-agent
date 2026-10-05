@@ -1,5 +1,28 @@
 # Capability Landscape — plantilla de investigación inicial
 
+## Matriz vigente PAPER Team — ADR-010
+
+EXISTS=YES en todos los candidatos siguientes; SELECTED=NO. Los resultados específicos Team ahora son aplicables al target PAPER, sin convertirlos en seguridad/cuota sostenida probada. AVAILABLE_IN_FUTURE_PLUS=UNKNOWN para activación/runtime dependientes del plan; acceso a código público no equivale a runtime disponible.
+
+| Capacidad | AVAILABLE_IN_PAPER_TEAM | Compatibilidad / economía PAPER | Disposición recomendada / siguiente evidencia |
+|---|---|---|---|
+| C-010 Codex base | YES ruta CLI nativa probada | YES fixtures; consumo de cupo existente, continuidad UNKNOWN | REUSE_AS_IS; TP carga/recovery |
+| C-025a app-server / C-029 Python SDK | YES inferencia nativa/smoke; SDK tools/Skills focal pendiente | PARTIAL integración; código libre y login nativo, sin API billing | WRAP transporte oficial; no runtime propio por defecto |
+| C-017a research idea | YES procedimiento probado | ADAPT método Apache-2.0; adquisición 0 | ADAPT / PORT metodología, outputs PIT |
+| C-017b shadow thesis | YES procedimiento probado | ADAPT método; aislamiento financiero real pendiente | ADAPT / PORT, shadow sin autoridad |
+| C-024 pedagogía / C-028 quant | YES procedimientos probados | Métodos propios 0; informes completos/integración pendientes | ADAPT; no garantía de superioridad sobre mínimo |
+| C-030 discovery / C-031 bootstrap | YES CLI fixture/fresh clone | PARTIAL por superficie/recovery; assets locales 0 | REUSE_AS_IS / ADAPT, Team EB/TP |
+| C-027 MCP / C-026 Data plugin | MCP mock YES, host real UNKNOWN; Data entitlement ambiguo por superficie | No necesarios por defecto; licencia/Data proprietary | WRAP reserva / REFERENCE_ONLY; no PORT propietario |
+| Agents SDK, APIs y Managed Agents | Código público/servicio existe; no ejecución paga aprobada | Tier 2 separado de Team | REFERENCE_ONLY PAPER; economía LIVE ADR-008 |
+
+## Inventario y resultados históricos conservados
+
+Las tablas fechadas siguientes conservan los ejes Plus originales; no son la disponibilidad PAPER vigente ni sus próximos pasos. La matriz anterior y ADR-010 prevalecen.
+
+**Vigencia actual — ADR-010, 2026-10-05:** CURRENT_RESEARCH_ENVIRONMENT=Team; PAPER_RUNTIME_ENVIRONMENT=Team actual; FUTURE_LIVE_ENVIRONMENT=Plus individual candidato. Las cláusulas anteriores que exigían Plus para PAPER/D-020/D-024 quedan parcialmente SUPERSEDED. La evidencia original se conserva; Plus es gate P3 PRE-LIVE (R-029/D-039), sin dependencia para PAPER. Aceptación activa: [Team TP1–7](research/R-006_team_runtime_acceptance_RC0.md). No selección final ni implementación autorizada.
+
+**Lectura:** registros/tablas actuales y esta adenda gobiernan; notas fechadas de hitos previos se conservan como historia, incluidos sus antiguos siguientes pasos Plus.
+
 **Referencia vigente 2026-10-05:** [shortlist RC1](research/R-006_shortlist_RC1.md), [contratos por rol](06_agent_evidence_contract_RC0.md) y [workload/aceptación](research/R-006_workload_acceptance_RC0.md). Paquete autónomo RC0 pasos 1–2 completado; madurez suficiente para propuesta de cohorte/dirección, no final selección. Tablas/notes anteriores conservan evidencia por ola, no reemplazan estado actualizado. D-020 RESEARCHING/D-024 OPEN; todos SELECTED=NO y target Plus operativo UNKNOWN.
 
 Estado 2026-10-05: **shortlist condicional, investigación parcial para selección**, sin selección. R-006/D-020 es P0 y gate de D-024. [ADR-007](decisions/ADR-007-r006-openai-anthropic-plus-scope.md) limita IA/agentes a OpenAI/Anthropic; [ADR-008](decisions/ADR-008-economic-policy-by-phase.md) prioriza Tier 0/1 PAPER y valor económico LIVE, sin descartar pagos del futuro. Estudiar pagos está autorizado; contratar/gastar requiere aprobación. No interpretar una mención como confirmación de acceso, compatibilidad, licencia o precio. Método en [plan R-006](research/R-006_agentic_capability_discovery_plan.md); [inventario/probes](research/R-006_initial_findings_2026-10-01.md).

@@ -12,6 +12,8 @@ version_control:
   stable_baseline_commit: a28d6f3
   working_branch: plan-architect
   promotion_policy: reviewed_approved_milestones_only
+  deployment_snapshot: approved_versioned_release_or_tag
+  automatic_merge_or_deployment_tag: false
   commit_policy: milestone_based_descriptive_commits
   allowed_commit_prefixes: [planning, research, decision, docs]
 operating_rules:
@@ -69,9 +71,11 @@ baseline_decisions:
   - id: ADR-006
     result: PAPER V1 deterministic risk uses the most restrictive applicable independent exposure/cash, estimated protection, gap/slippage, liquidity and concurrent-reservation constraints; no numerical policy approved
   - id: ADR-007
-    result: R-006 agentic layer limited to OpenAI and Anthropic; target individual Plus and public assets preferred for PAPER, Team research is not target evidence; paid execution requires ADR-008 approval
+    result: R-006 agentic layer limited to OpenAI and Anthropic; Team current and public assets preferred for PAPER under superseding ADR-010; Plus candidate PRE-LIVE; paid execution requires ADR-008 approval
   - id: ADR-009
     result: Candidate cohort approved for acceptance only; reproducible environment bootstrap and reusable role packages required before D-024 and DoR
+  - id: ADR-010
+    result: Team current for preparation_implementation_after_DoR_backtests_and_PAPER; individual_Plus_candidate_PRELIVE; approved_versioned_release_tag_for_deployment; no_main_promotion_now
   - id: ADR-008
     result: PAPER zero_or_low_incremental_cost_first; LIVE economic_value_first; paid services research allowed, explicit approval before spend; free_or_included_or_self_created methodology acquisition only
 strategy_v1:
@@ -122,7 +126,7 @@ open_decision_ids:
   P0: [D-008, D-009, D-010, D-011, D-020]
   P1: [D-021, D-022, D-023, D-024, D-025, D-026, D-027, D-028, D-029, D-033, D-034, D-035, D-037]
   P2: [D-030, D-031, D-032]
-  P3: [D-040, D-041, D-042]
+  P3: [D-039, D-040, D-041, D-042]
   P4: [D-050, D-051]
 required_specialties:
   - quantitative_finance_and_backtesting
@@ -143,24 +147,28 @@ capability_discovery:
   agentic_provider_scope: [OpenAI, Anthropic]
   other_agentic_frameworks_in_scope: false
   CURRENT_RESEARCH_ENVIRONMENT:
-    purpose: research_planning_and_entitlement_independent_behavioral_probes
+    purpose: preparation_research_and_PAPER_target_behavior_runtime_probes
     observed_plan_type: team
     observed_on: 2026-10-05
     entitlement_transfers_to_target: false
-  TARGET_RUNTIME_ENVIRONMENT:
-    subscription: ChatGPT_Plus_individual
-    purpose: PAPER_V1_architecture_and_budget
+  PAPER_RUNTIME_ENVIRONMENT:
+    subscription: Team_current
+    purpose: preparation_implementation_after_DoR_backtesting_and_PAPER_V1
+    actual_capability_entitlements: per_instance_surface_probe_evidence
+  FUTURE_LIVE_ENVIRONMENT:
+    subscription: ChatGPT_Plus_individual_candidate
+    purpose: PRELIVE_migration_after_validated_PAPER
     actual_capability_entitlements: unverified
   plus_entitlements_require_empirical_verification: true
   missing_target_access_blocks_discovery: false
   behavioral_environment: CURRENT_RESEARCH_ENVIRONMENT_Team
-  plus_acceptance_scope: finalist_access_activation_quotas_tools_auth_state_recovery_operational_sufficiency
+  prelive_plus_acceptance_scope: finalist_access_activation_quotas_tools_auth_state_recovery_operational_sufficiency
   repeat_entire_behavioral_research_in_Plus: false
   deterministic_local_always_on_core_with_intermittent_Codex: OPEN_architecture_alternative
   api_billing_separate_from_plus: true
-  siwc_plan_usage_candidate: conditional_tier_0_or_1_requires_plus_entitlement_and_operational_probe
+  siwc_plan_usage_candidate: conditional_separate_OAuth_route_not_selected_native_Team_preferred_for_probe
   paper_v1_cost_preference: [Tier_0, Tier_1]
-  tier_0: included_in_target_individual_Plus_or_public_reusable_assets
+  tier_0: included_in_current_Team_or_public_reusable_assets
   tier_1: free_limited_free_account_or_local_open_source_without_material_cost
   tier_2_excluded_by_default: true
   tier_2_research_allowed_without_spend: true
@@ -181,7 +189,7 @@ capability_discovery:
   sixth_probe_wave: planning/research/R-006_probe_wave_06_2026-10-05.md
   native_codex_sdk_candidate: planning/research/R-006_codex_sdk_findings_2026-10-05.md
   conditional_shortlist: planning/research/R-006_shortlist_RC1.md
-  discovery_maturity: COHORT_APPROVED_BOOTSTRAP_PACKAGE_COMPLETE_TARGET_ACCEPTANCE_AND_FINAL_SELECTION_PENDING
+  discovery_maturity: COHORT_APPROVED_TEAM_EVIDENCE_APPLICABLE_FOCUSED_GAPS_AND_FINAL_SELECTION_PENDING
   baseline_behavioral_turns: 20
   baseline_behavioral_predefined_complete_passes: 19
   focused_behavioral_turns: 10
@@ -193,14 +201,17 @@ capability_discovery:
   no_general_Skill_superiority_demonstrated: true
   autonomous_RC0_steps_1_and_2: COMPLETE_SPECIFICATION_AND_FOCUSED_SYNTHETIC_PROBES
   candidate_cohort_owner_approval: APPROVED_FOR_ACCEPTANCE_NOT_FINAL_SELECTION
-  next_package_action: HUMAN_ACTION_REQUIRED_target_individual_Plus_environment_access_for_acceptance
+  next_package_action: AUTONOMOUS_Team_SDK_tools_Skills_rehydration_bounded_workload_then_material_architecture_decision
   independent_coverage_gaps: security_independent_review_full_financial_and_pedagogical_integration_not_closed
   proposed_architecture_direction: deterministic_local_always_on_core_plus_intermittent_Codex_jobs_NOT_APPROVED_OR_FROZEN
   representative_workload: WL_R_proposed_test_profile_40_base_jobs_63_with_reserve_NOT_STRATEGY_CADENCE
   final_selection_status: OPEN
   plus_runtime_gate: planning/research/R-006_plus_runtime_gate_RC0.md
-  plus_runtime_gate_status: OPEN_finalists_only_reuse_Team_behavioral_evidence
-  dimensions: [EXISTS, AVAILABLE_IN_RESEARCH_ENVIRONMENT, AVAILABLE_IN_TARGET_PLUS, TECHNICALLY_COMPATIBLE, ECONOMICALLY_REASONABLE, SELECTED]
+  plus_runtime_gate_status: SUPERSEDED_FOR_PAPER_RECLASSIFIED_P3_R029
+  team_runtime_gate: planning/research/R-006_team_runtime_acceptance_RC0.md
+  prelive_migration_gate: planning/research/R-029_pre_live_environment_migration_gate_RC0.md
+  plus_blocks_paper_architecture_or_implementation: false
+  dimensions: [EXISTS, AVAILABLE_IN_RESEARCH_ENVIRONMENT, AVAILABLE_IN_PAPER_TEAM, AVAILABLE_IN_FUTURE_PLUS, TECHNICALLY_COMPATIBLE, ECONOMICALLY_REASONABLE, SELECTED]
   dispositions: [REUSE_AS_IS, ADAPT, PORT, WRAP, REFERENCE_ONLY, BUILD, REJECT]
   families:
     - OpenAI_Skills_Plugins_Codex_MCP_Agents_and_financial_analysis
@@ -260,9 +271,9 @@ environment_portability:
   priority: P1
   design_status: CONTRACT_RC0_LOCAL_AND_FRESH_CLONE_EVIDENCE_COMPLETE_TARGET_GATES_OPEN
   gates: [D-020, D-024, Definition_of_Ready]
-  CURRENT_RESEARCH_ENVIRONMENT: Team_research_only
-  TARGET_PLUS_ENVIRONMENT: individual_Plus_alias_TARGET_RUNTIME_ENVIRONMENT
-  FUTURE_LIVE_ENVIRONMENT: UNSELECTED_separate_live_gates
+  CURRENT_RESEARCH_ENVIRONMENT: Team
+  PAPER_RUNTIME_ENVIRONMENT: Team_current
+  FUTURE_LIVE_ENVIRONMENT: individual_Plus_candidate_PRELIVE
   candidate_cohort: APPROVED_NOT_SELECTED
   one_session_per_role: NOT_SELECTED
   repository_only_no_chat_dependency: required
@@ -276,7 +287,9 @@ bootstrap_evidence:
   fresh_clone_role_smoke_turns: 2
   offline_checks: 31
   clone_completion_checks: 9
-  target_acceptance_executed: false
+  Team_fresh_clone_acceptance: PARTIAL
+  sustained_PAPER_operational_acceptance: NOT_EXECUTED
+  prelive_Plus_acceptance_executed: false
   observed_readiness: PARTIAL
   portable_hash_policy: SHA256_git_blob_at_pinned_commit
   desktop_UI_and_SDK_folder_inheritance: NOT_TESTED_this_probe

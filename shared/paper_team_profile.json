@@ -1,0 +1,15 @@
+{
+  "schema_version": "0.2.0-planning",
+  "profile_type": "EXPECTED_NOT_OBSERVED",
+  "environment_kind": "PAPER_RUNTIME_ENVIRONMENT",
+  "plan": "Team",
+  "surface": "NATIVE_CODEX_CANDIDATE_D024",
+  "capabilities": "OWNER_APPROVED_CANDIDATE_COHORT_NOT_FINAL_SELECTION",
+  "availability": "PER_CAPABILITY_INSTANCE_EVIDENCE_REQUIRED",
+  "economic_policy": "ADR008_PAPER_ZERO_LOW_INCREMENTAL",
+  "authority": "NONE",
+  "implementation_locked": true,
+  "native_api_billing_allowed": false,
+  "required_approval_for_extra_spend": true,
+  "decision": "ADR-010_D-038"
+}

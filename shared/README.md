@@ -1,5 +1,7 @@
 # Contratos y assets compartidos — RC0
 
+**ADR-010:** expected PAPER profile es [paper_team_profile.json](paper_team_profile.json). Plus es candidato PRE-LIVE en [future_live_plus_profile.json](future_live_plus_profile.json). El target_plus_profile original es histórico, SUPERSEDED para PAPER. Schema observado actual v0.2; original v0.1 preservado en history/ para interpretar probes previos.
+
 - [bootstrap_manifest.json](bootstrap_manifest.json): requisitos, gates, roles y rutas relativas; no credenciales ni settings de una máquina.
 - [environment_profile.schema.json](environment_profile.schema.json): perfil observado/reporte sanitizado con evidencia y estados.
 - [target_plus_profile.json](target_plus_profile.json): expectativa de Plus individual; sus valores no son observaciones.

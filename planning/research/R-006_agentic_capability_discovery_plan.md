@@ -1,10 +1,34 @@
 # R-006 — Agentic Capability Discovery y Build-vs-Reuse
 
+**Vigencia actual — ADR-010, 2026-10-05:** CURRENT_RESEARCH_ENVIRONMENT=Team; PAPER_RUNTIME_ENVIRONMENT=Team actual; FUTURE_LIVE_ENVIRONMENT=Plus individual candidato. Las cláusulas anteriores que exigían Plus para PAPER/D-020/D-024 quedan parcialmente SUPERSEDED. La evidencia original se conserva; Plus es gate P3 PRE-LIVE (R-029/D-039), sin dependencia para PAPER. Aceptación activa: [Team TP1–7](R-006_team_runtime_acceptance_RC0.md). No selección final ni implementación autorizada.
+
+**Siguiente paquete activo:** TP Team SDK/Skills/tools, recovery sin chat, carga acotada, propuesta comparativa. Las secciones fechadas de waves y endpoints anteriores son históricas y no exigen acceso Plus.
+
 **Fecha:** 2026-10-01. **Estado:** `RESEARCHING`, P0. **Decisiones:** D-020 (investigación de capacidades) y D-024 (arquitectura agéntica/runtime, `OPEN`). **Alcance aprobado:** [ADR-007](../decisions/ADR-007-r006-openai-anthropic-plus-scope.md). **Límite:** `implementation_locked=true`; este plan solo autoriza documentación y probes desechables.
+
+## 1. Pregunta y alcance vigentes
+
+¿Qué arquitectura agéntica PAPER podemos diseñar con OpenAI/Codex en Team actual y métodos públicos/propios de Anthropic, sin autoridad financiera LLM? Solo OpenAI/Anthropic en IA/agentes. Brokers/datos/quant/infra se investigan aparte. Tier 0/1 preferido; API facturada no incluida por suscripción y sin gasto autorizado. LIVE sigue economía ADR-008.
+
+## 2. Método vigente
+
+Inventario por rol, EXISTS / AVAILABLE_IN_RESEARCH_ENVIRONMENT / AVAILABLE_IN_PAPER_TEAM / AVAILABLE_IN_FUTURE_PLUS / TECHNICALLY_COMPATIBLE / ECONOMICALLY_REASONABLE / SELECTED. Exigir versiones/licencias/permisos/inputs/outputs y probes relevantes antes de selección. Disposiciones REUSE_AS_IS / ADAPT / PORT / WRAP / REFERENCE_ONLY / BUILD / REJECT, por fase. SELECTED=NO hasta gobierno.
+
+Reutilizar waves 04–06, MCP mock, activos Anthropic pinados, smoke SDK y R-028 bootstrap. Team evidencia ahora aplica al target PAPER en rutas probadas. No repetir comparación completa ni exigir Plus. Investigar gaps oficiales SDK/Skills/tools; recovery rehidratado desde repo/snapshot; corpus y carga acotada Team; documentar fallos, aislamiento observado y amenazas no resueltas.
+
+## 3. Entregables y endpoint
+
+- Gate [Team TP](R-006_team_runtime_acceptance_RC0.md) y EB por etapa; protocolos/resultados; matriz de madurez y propuesta arquitectura/capacidades.
+- Contratos confiables por rol, shadow/pedagogía y caller determinístico externo; núcleo local always-on + jobs Codex Team intermitentes permanece candidato.
+- Comparativa económica, coste incremental/no billing y fallbacks con limitaciones.
+- Paquete material revisable D-020/D-024; detenerse cuando siguiente paso requiera gobierno de arquitectura/permisos, no por resumen informativo. Revisión independiente crítica antes de freeze, no simularla con auto-review.
+- DoR exige arquitectura/contratos/seguridad/bootstrap de preparación seleccionados y protocolos. Operación sostenida/integración financiera implementada P2 antes de PAPER; Plus gate P3 R-029 tras PAPER validado.
+
+## Historia conservada — método y protocolo anteriores
 
 ## 1. Pregunta de diseño
 
-¿Cuál es la mejor arquitectura agéntica para Trading OS que podemos diseñar con **OpenAI/Codex en una cuenta ChatGPT Plus individual objetivo** y activos públicos gratuitos/reutilizables de Anthropic? Debe cubrir investigación cuantitativa y fundamental, propuestas shadow, explicación pedagógica, evaluación y auditoría sin dar autoridad financiera a un agente. La selección de runtime, topología, Skills, plugins, MCP, subagentes y estructura del Trading OS Plugin queda **abierta**. Codex sirve al Plan Architect en el entorno de investigación; eso no lo selecciona ni verifica su entitlement en el runtime Plus objetivo.
+¿Cuál es la mejor arquitectura agéntica para Trading OS que podemos diseñar con **OpenAI/Codex en Team actual para PAPER (ADR-010)** y activos públicos gratuitos/reutilizables de Anthropic? Debe cubrir investigación cuantitativa y fundamental, propuestas shadow, explicación pedagógica, evaluación y auditoría sin dar autoridad financiera a un agente. La selección de runtime, topología, Skills, plugins, MCP, subagentes y estructura del Trading OS Plugin queda **abierta**. Codex sirve al Plan Architect en el entorno de investigación; eso no lo selecciona ni verifica su entitlement en el runtime Plus objetivo.
 
 ## 2. Alcance por responsabilidad
 
@@ -20,9 +44,9 @@
 
 **Frontera de investigación:** para la capa de IA/agentes solo OpenAI y Anthropic. Se inspeccionan OpenAI Skills, Plugins/Apps, Codex, MCP orientados a agentes y capacidades financieras incluidas; Agents SDK y API con **clave facturada** se estudian como `REFERENCE_ONLY` Tier 2. [Sign in with ChatGPT para uso del plan](https://developers.openai.com/siwc/token-sharing-open-source) se examina por separado como ruta Tier 0/1 condicional, sin presumir entitlement ni equivalencia con Agents SDK. Se inspeccionan Skills, prompts, templates, reference agents y workflows públicos de Anthropic para `PORT / ADAPT / REFERENCE_ONLY` sin Claude runtime. Google ADK, Microsoft Agent Framework, LangGraph, PydanticAI y otros labs/frameworks agénticos salen de R-006. R-007/008/009/021/025 mantienen separados brokers, datos, motores quant e infraestructura.
 
-**Filtro económico [ADR-008](../decisions/ADR-008-economic-policy-by-phase.md):** PAPER V1 prioriza Tier 0/1 de la **cuenta Plus individual objetivo** o activos públicos/locales con calidad suficiente. Tier 2 puede estudiarse y registrarse como alternativa PAPER excepcional o futura LIVE, sin facturación; aprobar contratación/gasto explícitamente antes de cualquier probe facturable. LIVE considera valor material y economía unitaria, no solo precio. Skills/templates se adquieren gratis/incluidos/propios; sus dependencias se presupuestan aparte. Plus no incluye automáticamente consumo de OpenAI API.
+**Filtro económico [ADR-008](../decisions/ADR-008-economic-policy-by-phase.md):** PAPER V1 prioriza Tier 0/1 de la **cuenta Team actual objetivo PAPER** o activos públicos/locales con calidad suficiente. Tier 2 puede estudiarse y registrarse como alternativa PAPER excepcional o futura LIVE, sin facturación; aprobar contratación/gasto explícitamente antes de cualquier probe facturable. LIVE considera valor material y economía unitaria, no solo precio. Skills/templates se adquieren gratis/incluidos/propios; sus dependencias se presupuestan aparte. Plus no incluye automáticamente consumo de OpenAI API.
 
-**Dos entornos de evidencia:** `CURRENT_RESEARCH_ENVIRONMENT` = sesión actual de planificación con indicador observado `planType=team`; `TARGET_RUNTIME_ENVIRONMENT` = cuenta ChatGPT Plus **individual** de PAPER V1. Para capacidades dependientes del plan, reportar `AVAILABLE_IN_RESEARCH_ENVIRONMENT` y `AVAILABLE_IN_TARGET_PLUS` por separado. Un `YES` actual deja `AVAILABLE_IN_TARGET_PLUS=UNKNOWN` sin evidencia específica de Plus. Acceso a un archivo público y activación de una Skill en el runtime son hechos distintos.
+**Dos entornos de evidencia:** `CURRENT_RESEARCH_ENVIRONMENT` = sesión actual de planificación con indicador observado `planType=team`; `PAPER_RUNTIME_ENVIRONMENT` = Team actual de PAPER V1; Plus individual es candidato PRE-LIVE. Para capacidades dependientes del plan, reportar `AVAILABLE_IN_RESEARCH_ENVIRONMENT` y `AVAILABLE_IN_TARGET_PLUS` por separado. Un `YES` actual deja `AVAILABLE_IN_TARGET_PLUS=UNKNOWN` sin evidencia específica de Plus. Acceso a un archivo público y activación de una Skill en el runtime son hechos distintos.
 
 ## 3. Método y entregables
 

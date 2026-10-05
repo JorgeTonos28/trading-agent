@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0-planning",
+  "schema_version": "0.2.0-planning",
   "status": "CANDIDATE_NOT_SELECTED",
   "source_of_truth": "repository",
   "implementation_locked": true,
@@ -7,7 +7,7 @@
   "root_instruction": "AGENTS.md",
   "entry_point": "ONBOARDING.md",
   "profile_schema": "shared/environment_profile.schema.json",
-  "expected_profile": "shared/target_plus_profile.json",
+  "expected_profile": "shared/paper_team_profile.json",
   "contracts": [
     "planning/07_environment_bootstrap_contract_RC0.md",
     "planning/07_agent_packaging_contract_RC0.md",
@@ -35,13 +35,13 @@
     "EB-6",
     "EB-7",
     "EB-8",
-    "GP-1",
-    "GP-2",
-    "GP-3",
-    "GP-4",
-    "GP-5",
-    "GP-6",
-    "GP-7"
+    "TP-1",
+    "TP-2",
+    "TP-3",
+    "TP-4",
+    "TP-5",
+    "TP-6",
+    "TP-7"
   ],
   "requirements": [
     {
@@ -66,7 +66,7 @@
       ]
     },
     {
-      "id": "plus-identity",
+      "id": "team-identity",
       "required_scopes": [
         "PAPER_AGENT_ENVIRONMENT"
       ]
@@ -78,7 +78,7 @@
       ]
     },
     {
-      "id": "plus-GP1-7",
+      "id": "team-TP1-7",
       "required_scopes": [
         "PAPER_AGENT_ENVIRONMENT"
       ]
@@ -98,5 +98,14 @@
   ],
   "topology": "UNSELECTED_D024",
   "configuration_mutations": "ONLY_CONCRETE_ALLOWED_CHANGES_WITH_DIFF_NO_SECRETS",
-  "automatic_installation": false
+  "automatic_installation": false,
+  "environment_decision": "planning/decisions/ADR-010-team-paper-and-prelive-plus-migration.md",
+  "paper_acceptance": "planning/research/R-006_team_runtime_acceptance_RC0.md",
+  "pre_live_migration_gate": "planning/research/R-029_pre_live_environment_migration_gate_RC0.md",
+  "deployment_source_policy": {
+    "candidate_branch": "plan-architect",
+    "stable_approved_branch": "main",
+    "deployment_snapshot": "approved_versioned_release_or_tag",
+    "automatic_promotion": false
+  }
 }

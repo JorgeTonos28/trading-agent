@@ -1,5 +1,9 @@
 # Research Backlog v0 — 2026-10-01
 
+**Vigencia actual — ADR-010, 2026-10-05:** CURRENT_RESEARCH_ENVIRONMENT=Team; PAPER_RUNTIME_ENVIRONMENT=Team actual; FUTURE_LIVE_ENVIRONMENT=Plus individual candidato. Las cláusulas anteriores que exigían Plus para PAPER/D-020/D-024 quedan parcialmente SUPERSEDED. La evidencia original se conserva; Plus es gate P3 PRE-LIVE (R-029/D-039), sin dependencia para PAPER. Aceptación activa: [Team TP1–7](research/R-006_team_runtime_acceptance_RC0.md). No selección final ni implementación autorizada.
+
+**Lectura:** registros/tablas actuales y esta adenda gobiernan; notas fechadas de hitos previos se conservan como historia, incluidos sus antiguos siguientes pasos Plus.
+
 Prioridad: P0 arquitectura, P1 implementación, P2 paper autónomo, P3 live, P4 futuro. Cada investigación produce un dossier con fuentes fechadas, hechos frente a supuestos, alternativas, criterios, coste/licencia, pruebas cuando proceda, riesgo, recomendación y enlace a decisión/ADR. Ningún candidato citado en la hoja queda seleccionado por aparecer aquí.
 
 | ID | P | Cierra | Investigación / prueba y entregable |
@@ -15,7 +19,7 @@ Prioridad: P0 arquitectura, P1 implementación, P2 paper autónomo, P3 live, P4 
 | R-003 | P0 | D-013/015 | DECIDED en contrato abstracto: `04_order_contract_RC1.md` y ADR-003 fijan identidades, eventos, autorización, `UNKNOWN` y G2; semántica/probes del broker candidato siguen D-021/030/031. |
 | R-004 | P0 | D-014 | DECIDED en contrato abstracto: `05_data_contract_RC1.md` y ADR-004 fijan clocks por canal, `eligible_from`, revisiones y ajustes as-of; muestras/delays/proveedor siguen R-021/025/008. |
 | R-005 | P0 | D-016 | DECIDED en alcance: contrato RC1 §5 mapea B0–B7 y §57; traceability requisito→test y umbrales detallados permanecen P1/P2 antes del DoR. |
-| R-006 | P0 | D-020/024 | **RESEARCHING / PAQUETE AUTÓNOMO COMPLETO** bajo ADR-007/008: [shortlist RC1](research/R-006_shortlist_RC1.md), contratos por rol/shadow/pedagogía y workload/matriz, waves 04–06 Team + smoke SDK nativo C-029. IA OpenAI/Anthropic, métodos públicos, sin API facturada. Finalistas propuestos, SELECTED=NO; Plus target UNKNOWN y aceptación GP1–7 solo allí. Cohorte candidata aprobada; primero R-028 bootstrap/packaging y luego cuenta Plus; review independiente/seguridad/gobierno final distintos. No cierre D-020/D-024/freeze ni implementación. |
+| R-006 | P0 | D-020/024 | RESEARCHING: ADR-010 PAPER Team. Reusar waves 04–06 y bootstrap; ejecutar gaps SDK/Skills/tools, recovery desde repo y benchmark representativo acotado. Gate activo TP1–7 por etapa; Plus reclasificado P3 R-029. Cohorte aprobada, SELECTED=NO; dossier arquitectura y gobierno final pendientes. |
 | R-007 | P1 | D-021 | OPEN (marco RC0): Alpaca/IBKR/Tradier/tastytrade/TradeStation/otros, todos abiertos. API, PAPER, paridad live, streaming, stops/brackets/trailing, estabilidad, RD, equities, opciones futuras, costes y seguridad; `research/broker_selection.md`, scorecard y ADR humano. |
 | R-008 | P1 | D-022 | Market data primario/validador: broker-native, Databento, Massive, Nasdaq Data Link, Tiingo, Alpha Vantage y nuevos candidatos; timestamps, ajustes, históricos, licencia, precios y muestras cruzadas. |
 | R-009 | P1 | D-023 | Backtesting: LEAN, NautilusTrader, vectorbt, Backtrader y mínimo propio; reproducibilidad, PIT, modelo órdenes y coste de adaptación; benchmark desechable. |
@@ -32,10 +36,11 @@ Prioridad: P0 arquitectura, P1 implementación, P2 paper autónomo, P3 live, P4 
 | R-028 | P1 | D-037/020/024/027/029 | RESEARCHING: Environment Bootstrap, Portability & Agent Packaging; contrato reproducible fresh clone, perfiles esperados/observados, inventory/gates, paquetes manuales/programáticos y smoke. [Protocolo](research/R-028_bootstrap_probe_protocol.md); requisito ADR-009 aprobado, selección/runtime abiertos |
 | R-027 | P1 | D-035 | OPEN: especificar y probar en papel fórmulas, unidades, redondeos, precedencia, concurrencia y estados no evaluables de opción B; separar parámetros numéricos D-031 de semántica del algoritmo antes del DoR. |
 | R-018 | P4 | D-051 | Opciones/short/leverage/cripto/futuros/regímenes avanzados: investigar solo tras alcance PAPER. |
+| R-029 | P3 | D-039/024/037/040/042 | DEFERRED: migración Team → Plus candidato tras PAPER validado; contratos Plus conservados y deltas específicos PRE-LIVE, sin bloquear PAPER Team. |
 
 ## Protocolo de Capability Discovery (R-006)
 
-Por cada capacidad se registrará `EXISTS`, `AVAILABLE_IN_RESEARCH_ENVIRONMENT`, `AVAILABLE_IN_TARGET_PLUS`, `TECHNICALLY_COMPATIBLE`, `ECONOMICALLY_REASONABLE`, `SELECTED` por separado; Tier, versión/fecha, fuente primaria, licencia/portabilidad, permisos, datos transmitidos, pruebas y disposición `REUSE_AS_IS / ADAPT / PORT / WRAP / REFERENCE_ONLY / BUILD / REJECT` por fase. La sesión Team permite planificación y probes conductuales independientes del entitlement; Plus individual es objetivo PAPER. `SELECTED=false` hasta ADR; `unknown` no se interpreta como `false`. IA/agentes solo OpenAI y Anthropic bajo ADR-007. ADR-008 autoriza estudiar pagos y exige aprobación antes de contratar/gastar; el presupuesto PAPER no veta LIVE. Ninguna Skill/plugin/MCP recibe autoridad de broker por instalarse.
+Por cada capacidad se registrará `EXISTS`, `AVAILABLE_IN_RESEARCH_ENVIRONMENT`, `AVAILABLE_IN_PAPER_TEAM`, `AVAILABLE_IN_FUTURE_PLUS`, `TECHNICALLY_COMPATIBLE`, `ECONOMICALLY_REASONABLE`, `SELECTED` por separado; Tier, versión/fecha, fuente primaria, licencia/portabilidad, permisos, datos transmitidos, pruebas y disposición `REUSE_AS_IS / ADAPT / PORT / WRAP / REFERENCE_ONLY / BUILD / REJECT` por fase. Team actual es entorno de investigación y PAPER objetivo; Plus individual es candidato PRE-LIVE, no gate de PAPER (ADR-010). `SELECTED=false` hasta ADR; `unknown` no se interpreta como `false`. IA/agentes solo OpenAI y Anthropic bajo ADR-007. ADR-008 autoriza estudiar pagos y exige aprobación antes de contratar/gastar; el presupuesto PAPER no veta LIVE. Ninguna Skill/plugin/MCP recibe autoridad de broker por instalarse.
 
 ## Política económica transversal R-007–014/025/026 y capabilities futuras
 
