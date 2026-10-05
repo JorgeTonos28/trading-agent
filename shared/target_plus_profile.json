@@ -1,0 +1,15 @@
+{
+  "schema_version": "0.1.0-planning",
+  "profile_type": "EXPECTED_NOT_OBSERVED",
+  "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+  "alias": "TARGET_RUNTIME_ENVIRONMENT",
+  "plan": "ChatGPT_Plus_individual",
+  "surface": "TO_BE_SELECTED_D024",
+  "capabilities": "RC1_OWNER_APPROVED_CANDIDATE_COHORT_NOT_FINAL_SELECTION",
+  "availability": "UNKNOWN_UNTIL_TARGET_EVIDENCE",
+  "economic_policy": "ADR008_PAPER_ZERO_LOW_INCREMENTAL",
+  "authority": "NONE",
+  "implementation_locked": true,
+  "native_api_billing_allowed": false,
+  "required_approval_for_extra_spend": true
+}

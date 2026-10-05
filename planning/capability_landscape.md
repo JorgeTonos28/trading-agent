@@ -120,3 +120,13 @@ Fichas económicas y lock-in/salidas/carga por cohorte en [shortlist §3](resear
 ## Gate vigente de portabilidad — 2026-10-05
 
 Cohorte RC1 aprobada solo para aceptación; SELECTED=NO. ADR-009 añade D-037/R-028 P1, onboarding/perfiles/paquetes y gate previo D-024/DoR. Entitlement Plus no se deduce de Team ni de un clone. Mecanismos nativos de AGENTS/Skills/inventory/config se investigan antes de proponer instalador propio.
+
+## Candidatos de portabilidad — R-028
+
+| ID | Capacidad | EXISTS | AVAILABLE_IN_RESEARCH_ENVIRONMENT | AVAILABLE_IN_TARGET_PLUS | TECHNICALLY_COMPATIBLE | ECONOMICALLY_REASONABLE | SELECTED | Disposición propuesta |
+|---|---|---|---|---|---|---|---|---|
+| C-030 | Codex native AGENTS/cwd + repo Skill discovery | YES | YES 5 smoke Team, metadata y Skill local | UNKNOWN activación/superficie target | YES en CLI/fixture probada, no todas superficies | YES assets/nativo; cupo target condicional | NO | REUSE_AS_IS |
+| C-031 | Bootstrap Mode, Skill repo propia, perfiles y paquetes RC0 | YES documentos/assets creados | YES formato/31 checks locales; fresh clone pendiente en este hito | YES archivos; UNKNOWN comportamiento/gates target | PARTIAL diseño y fixtures, sin instalador/runtime | YES adquisición 0, runtime condicional GP | NO | ADAPT de contratos/método |
+| C-032 | Custom agents/config roles nativos Codex | YES documentación oficial | UNKNOWN activación; no probe específico | UNKNOWN | UNKNOWN integración/version/superficie | CONDITIONAL nativo/cupo/local | NO | REFERENCE_ONLY, sin topología elegida |
+
+[Resultados R-028](research/R-028_bootstrap_findings_2026-10-05.md). Instalar no es habilitar/invocar. Carpetas package y shared son estructuras de planificación, no freeze ni autoridad. Cleanup WinError 32 tras cinco turnos conservado; lifecycle GP5/EB6 pendiente.

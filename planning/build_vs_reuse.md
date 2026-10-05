@@ -54,3 +54,7 @@ Mínimo 10/10 y Skill 9/10 checks: no se demostró superioridad general. Skill a
 - Otros labs/frameworks agénticos **REJECT** por alcance aprobado, no fallo técnico; brokers/datos/quant/infra conservan investigación separada.
 
 No BUILD de capacidad mayor autorizado/seleccionado. Integración propia específica de contratos se propone después de comparar workflow/storage/engine R-009/011/012; no implementación durante preparación. Wave 06 corrige tipos en corpus pequeño, con checker v2 enmendado y v1 conservado; no superioridad/general fiabilidad. [Plus Gate](research/R-006_plus_runtime_gate_RC0.md) sigue abierto; paquetes finales D-020/D-024 requieren aceptación target, review independiente y gobierno. Orientación candidata local determinística always-on + jobs Codex intermitentes se presenta al propietario, sin freeze.
+
+## Bootstrap/Agent Packaging — candidato R-028
+
+REUSE_AS_IS discovery/instrucciones/Skills nativos (C-030); ADAPT modo de onboarding/Skill propia/perfiles/paquetes de contratos actuales (C-031); WRAP inventarios/transporte oficial cuando D-024 elija una ruta. Skill-installer público REFERENCE_ONLY/ADAPT si hace falta adquirir assets externos, no para copiar nuestros assets a home. Roles nativos custom agents C-032 y plugin packaging C-002 REFERENCE_ONLY ahora. No construir instalador/discovery engine/orquestador nuevo por defecto. SELECTED=NO, Team no prueba Plus. [Dossier](research/R-028_bootstrap_findings_2026-10-05.md).

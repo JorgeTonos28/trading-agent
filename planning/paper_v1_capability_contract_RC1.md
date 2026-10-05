@@ -139,3 +139,7 @@ ADR-008 añade ficha económica por fase ([scorecard](economic_scorecard.md)): P
 Preservar alternativa local determinística always-on con Codex/Plus intermitente; no introducir LLM permanente en el camino financiero por defecto. Cadencia, recuperación y suficiencia target siguen abiertas; pedagogía y shadow continúan obligaciones PAPER. Ninguna Skill/plugin/MCP/runtime seleccionado; Plus Acceptance solo finalistas.
 
 [Workload y aceptación](research/R-006_workload_acceptance_RC0.md) define perfiles/criterios propuestos sin seleccionar Strategy V1/cadencia ni umbral financiero. [Plus Gate RC2](research/R-006_plus_runtime_gate_RC0.md) pendiente de sesión Plus confirma entitlement/tools/auth/quota/state/operación de finalistas, no reemplaza evaluación financiera/PAPER P2. Dirección candidata de núcleo local + jobs/transporte oficial mínimo requiere gobierno; D-020 RESEARCHING/D-024 OPEN, implementación bloqueada.
+
+## Gate adicional de entorno — ADR-009
+
+Cohorte agéntica aprobada solo para aceptación. Bootstrap/Portability y paquetes reutilizables son requisito del dueño, D-037/R-028 P1 y gate D-024/DoR: clone completo, perfiles, acciones manuales/automáticas, verificación target y smoke. READINESS del entorno no autoriza PAPER ni modifica A+, G1+G2, riesgo conceptual o selección Strategy/broker. [Contrato](07_environment_bootstrap_contract_RC0.md).

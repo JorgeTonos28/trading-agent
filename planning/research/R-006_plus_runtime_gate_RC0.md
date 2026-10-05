@@ -1,6 +1,6 @@
-# R-006 — Plus Acceptance Gate RC2
+# R-006 — Plus Acceptance Gate RC3
 
-**Actualizado:** 2026-10-05. **Estado:** `OPEN`, reservado a finalistas; arquitectura/runtime D-024 no seleccionados. Este contrato concreta ADR-007/008 y la instrucción del propietario del 5 de octubre. Team produce evidencia conductual y shortlist sin depender de Plus. Este gate verifica diferencias del entorno objetivo. Nombre RC0 conservado para referencias, contenido RC2. [Shortlist RC1](R-006_shortlist_RC1.md) y [workload/matriz RC0](R-006_workload_acceptance_RC0.md) definen la cohorte y criterios propuestos; no se ejecutó gate target.
+**Actualizado:** 2026-10-05. **Estado:** `OPEN`, reservado a finalistas; arquitectura/runtime D-024 no seleccionados. Este contrato concreta ADR-007/008 y la instrucción del propietario del 5 de octubre. Team produce evidencia conductual y shortlist sin depender de Plus. Este gate verifica diferencias del entorno objetivo. Nombre RC0 conservado para referencias, contenido RC3. [Shortlist RC1](R-006_shortlist_RC1.md) y [workload/matriz RC0](R-006_workload_acceptance_RC0.md) definen la cohorte y criterios propuestos; no se ejecutó gate target.
 
 ## Rutas candidatas y economía
 
@@ -47,3 +47,11 @@ Registrar `AVAILABLE_IN_RESEARCH_ENVIRONMENT` y `AVAILABLE_IN_TARGET_PLUS` por c
 4. GP5: rehidratar snapshot tras restart, auth/quota/tool fail controlados, outputs late/no-output/duplicate, sin broker ni credenciales; acción sensible sobre auth del dueño requiere su participación.
 5. GP6–7: corpus/carga WL-R/ventanas, uso interactivo/reset observables, suficiencia y operación legítima sin gasto; si no alcanza, paquete de alternativas/coste antes de pedir pago.
 6. Persistir/commit/push resultados y fallos; revisión crítica/seguridad y decisión final humana D-020/D-024. No abrir implementación.
+
+## Nuevo gate de portabilidad — RC3 / ADR-009
+
+Cohorte RC1 aprobada para aceptación, no selección. [Bootstrap EB1–8](../07_environment_bootstrap_contract_RC0.md) y [packaging](../07_agent_packaging_contract_RC0.md) son prerrequisitos D-024/DoR. GP1–7 se ejecutan desde clone/manifest/perfil de entorno con raíz+rol verificados, assets/versiones sellados, actions y readiness sanitizados. Team aporta evidencia conducta/discovery; Plus target permanece UNKNOWN.
+
+GP2/4 comprueban root/cwd/overrides/Skill/allowlists en superficie elegida; GP5 añade lifecycle/cleanup de procesos y replay de perfil sin duplicar configuración/admisión. GP6/7 mantienen ventana/cuotas y operación legítima. Los cinco smoke R-028 no prueban GP target; cleanup TEMP WinError 32 se conserva como caso lifecycle pendiente. No repetir todo R-006, solo deltas relevantes.
+
+[ONBOARDING](../../ONBOARDING.md) es entry point; no cambiar auth de Team ni copiarla. Preparación agéntica parcial sin inferencia puede continuar con inventario local. READY_AGENT_ENVIRONMENT no equivale a READY_FOR_IMPLEMENTATION/PAPER/LIVE.

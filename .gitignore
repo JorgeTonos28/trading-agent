@@ -6,3 +6,6 @@ __pycache__/
 .env
 .env.*
 !.env.example
+
+# Machine-private bootstrap profiles/configuration; only reviewed sanitized evidence is tracked.
+.local/

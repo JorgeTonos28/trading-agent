@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1.0-planning",
+  "package_id": "quant-research",
+  "version": "0.1.0-planning",
+  "logical_role": "QUANT_REVIEW",
+  "lifecycle": "PLANNING_ONLY",
+  "authority": "NONE",
+  "working_directory": "agents/quant-research",
+  "global_instruction_path": "AGENTS.md",
+  "instruction_path": "agents/quant-research/AGENTS.md",
+  "contracts": [
+    "planning/06_agent_evidence_contract_RC0.md",
+    "planning/research/R-006_workload_acceptance_RC0.md"
+  ],
+  "candidate_procedure_path": "planning/research/probes/r006-contracts/skills/quant/SKILL.md",
+  "dependencies": [
+    {
+      "kind": "repository",
+      "id": "shared",
+      "required": true
+    },
+    {
+      "kind": "capability",
+      "id": "native-Codex",
+      "required_for_model_activation": true,
+      "entitlement": "UNKNOWN_target_Plus"
+    }
+  ],
+  "permissions_contract": "planning/07_environment_bootstrap_contract_RC0.md",
+  "manual_entry": "open_working_directory_inside_complete_clone_then_verify_global_and_local_rules",
+  "programmatic_entry": "trusted_caller_resolves_same_paths_and_assigns_role_schema_tools_NOT_IMPLEMENTED"
+}

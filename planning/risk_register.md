@@ -53,3 +53,5 @@ Escala inicial cualitativa: `Alta/Media/Baja`; se calibrará después. Dueño in
 | K-046 | P1 | Bootstrap hereda readiness Team, copia secretos/settings personales o oculta dependencias/manual actions, haciendo irreproducible el target | Media/Alta | ADR-009; perfiles separados, outputs sanitizados, UNKNOWN bloquea requisito obligatorio, drift/recovery y fresh-clone probes, nunca auth/secrets Git | Operations/Plan Architect |
 
 Todos los riesgos salvo K-018 siguen `OPEN`; una arquitectura aprobada aún requiere datos, parámetros y pruebas para mitigar riesgo operativo.
+
+**K-045/046, evidencia inicial R-028:** root/nested/aislado/override y Skills probados en fixture Team; 31 checks offline. No cierre por prompt/schema. Cleanup WinError 32 tras inferencia añade caso lifecycle a EB6/GP5; nuevo entorno requiere evidencia propia.

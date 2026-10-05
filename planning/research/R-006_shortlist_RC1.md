@@ -93,3 +93,7 @@ Tras decisión/acceso: registrar orientación aprobada sin dar por cerradas sele
 ## 8. Actualización vigente — cohorte candidata aprobada y portabilidad
 
 El propietario aprobó la **cohorte** para continuar hacia Plus Acceptance; no aprobó selección final/freeze D-020/D-024 ni necesariamente toda la dirección arquitectónica de §3/§7. El pedido de aprobación de cohorte de §7 queda atendido en ese alcance. ADR-009 añade R-028/D-037 P1 antes de continuar: onboarding reproducible y paquetes por rol, sin fijar sesiones/proyectos ni runtime. Plus no se ejecuta en Team. La nueva secuencia y gate prevalecen sobre el endpoint histórico de este documento.
+
+## 9. Impacto técnico de R-028
+
+[Bootstrap/packaging RC0 y probes](R-028_bootstrap_findings_2026-10-05.md): añadir discovery nativo C-030 REUSE_AS_IS, modo/Skill/manifiesto C-031 ADAPT; roles nativos C-032 y plugin distribución REFERENCE_ONLY. Seis paquetes documentales reutilizables + shared; raíz/rol/Skill probados en fixture Team, no un LLM por carpeta. Config/permisos efectivos son externos a AGENTS. D-037/R-028 P1 y EB1–8 bloquean D-024/DoR. La arquitectura candidata ahora incorpora ruta de onboarding/perfil/diff/gates, sin congelar runtime/topología. Próximo hito autónomo: fresh clone de assets reales y reporte parcial; luego gates de entorno objetivo.

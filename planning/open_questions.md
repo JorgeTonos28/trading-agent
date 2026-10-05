@@ -60,3 +60,5 @@ Estados: cada Q muestra su prioridad; Q-030–Q-037 incluyen estado explícito. 
 - Q-043 (P1, D-034/029, `RESEARCHING`): ¿Cómo discriminar desde rol confiable ResearchHypothesis/ShadowPortfolioProposal/explicación y OBSERVED/DERIVED? Respuesta técnica RC0 en 06_agent_evidence_contract: caller externo/schema, enums, target qty, typed refs/lineage, tres ejes de estado y hashes pareados. Wave 06 prueba spine con fallos de checker conservados. Full schemas/aislamiento/integration siguen P1, no repetir muestra para ocultar errores.
 
 - Q-044 (P1, D-037/020/024, RESEARCHING): ¿Qué ruta reproducible de bootstrap carga reglas globales y rol, descubre/configura capacidades sin depender de Team/chat, distingue acciones manuales y prueba readiness Plus? ADR-009 aprueba obligación; R-028 compara mecanismos nativos y paquetes. Sesión por rol y runtime final no seleccionados.
+
+**Q-044 avance R-028:** discovery nativo y herencia corroborados en fixture Team; contratos/perfiles/paquetes RC0 creados. Siguiente probe fresh clone; ruta target/gates y permisos siguen abiertos, no selección de sesiones.

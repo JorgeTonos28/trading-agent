@@ -1,0 +1,172 @@
+{
+  "probe": "R028_OFFLINE_CONTRACT_01",
+  "evidence_kind": "SYNTHETIC_SIMULATION_NOT_TARGET_ACCEPTANCE",
+  "selected": false,
+  "AVAILABLE_IN_TARGET_PLUS": "UNKNOWN",
+  "checks": [
+    {
+      "id": "all_manifest_assets_exist",
+      "passed": true
+    },
+    {
+      "id": "six_unique_documentary_packages",
+      "passed": true
+    },
+    {
+      "id": "root_plus_role_within_documented_default_budget",
+      "passed": true
+    },
+    {
+      "id": "reject_path:../outside.txt",
+      "passed": true
+    },
+    {
+      "id": "reject_path:/outside.txt",
+      "passed": true
+    },
+    {
+      "id": "reject_path:C:/Users/private",
+      "passed": true
+    },
+    {
+      "id": "reject_path:agents/../../outside",
+      "passed": true
+    },
+    {
+      "id": "reject_path:agents\\onboarding\\AGENTS.md",
+      "passed": true
+    },
+    {
+      "id": "synthetic_complete_profile_schema",
+      "passed": true
+    },
+    {
+      "id": "synthetic_complete_profile_semantics",
+      "passed": true
+    },
+    {
+      "id": "team_cannot_pass_target",
+      "passed": true
+    },
+    {
+      "id": "unknown_plan_not_ready",
+      "passed": true
+    },
+    {
+      "id": "empty_results_not_ready",
+      "passed": true
+    },
+    {
+      "id": "report_cannot_downgrade_required",
+      "passed": true
+    },
+    {
+      "id": "unknown_required_not_ready",
+      "passed": true
+    },
+    {
+      "id": "failed_required_not_ready",
+      "passed": true
+    },
+    {
+      "id": "empty_evidence_not_ready",
+      "passed": true
+    },
+    {
+      "id": "global_rule_missing",
+      "passed": true
+    },
+    {
+      "id": "manifest_drift_invalidates",
+      "passed": true
+    },
+    {
+      "id": "gate_team_evidence_not_target",
+      "passed": true
+    },
+    {
+      "id": "missing_gate_not_ready",
+      "passed": true
+    },
+    {
+      "id": "not_tested_gate_not_ready",
+      "passed": true
+    },
+    {
+      "id": "duplicate_gate_not_ready",
+      "passed": true
+    },
+    {
+      "id": "financial_authority_forbidden",
+      "passed": true
+    },
+    {
+      "id": "cannot_unlock_implementation",
+      "passed": true
+    },
+    {
+      "id": "secret_field_schema_rejected",
+      "passed": true
+    },
+    {
+      "id": "pending_login_not_ready",
+      "passed": true
+    },
+    {
+      "id": "missing_optional_does_not_block",
+      "passed": true
+    },
+    {
+      "id": "proposed_fallback_does_not_pass_unknown",
+      "passed": true
+    },
+    {
+      "id": "simulated_restart_same_classification",
+      "passed": true
+    },
+    {
+      "id": "manifest_snapshot_repeatable",
+      "passed": true
+    }
+  ],
+  "passed": 31,
+  "total": 31,
+  "asset_sha256": {
+    ".agents/skills/trading-os-bootstrap/SKILL.md": "a743309c18ae17b280737ef9d67e9529bef5805772992f4799da580760f96d83",
+    "AGENTS.md": "3b37053f3d28ec6833be53d65d1509ae948e920b4a3a8ca33f7ab1a9210a7b5f",
+    "ONBOARDING.md": "14de91f6c260effd940a3dfd020759bb1e4ee1a1874798ab070ffa34227a531b",
+    "agents/market-research/AGENTS.md": "619a27f65d08657b2007c081d606f4182da592e8004af7169e0bb0db3561f27d",
+    "agents/market-research/package.json": "6077251ffe87ec107a4b30f93ce11a26c03db490ceccf266582a2fdb9eb7aed5",
+    "agents/onboarding/AGENTS.md": "4f7b0c70693fe3c8cb54d38b010fd8d7f738fc09e0d5b79cb01b22df3d68afc7",
+    "agents/onboarding/package.json": "374915df5da1ea5efad522a4631d1bd6fd6493fa5a348e239b528a2adadb9ab0",
+    "agents/pedagogical/AGENTS.md": "6a8f0115f618e81918650a5e7df0214fa75b838084a962569c1a15715294bd3f",
+    "agents/pedagogical/package.json": "41ab634892abbad3e76cedbe17e0e73840b74725b89c4af6f6e31f9dcbdc5a4a",
+    "agents/plan-guardian/AGENTS.md": "0f8439238314530a3be1db3b038bcbe85347dd0881fcb7dc2f8380882e6c690b",
+    "agents/plan-guardian/package.json": "0cf480720cbeefbbb4c9aa4f3baad30194a1942d68998b1219b8c6fd6a070cd3",
+    "agents/portfolio-manager-shadow/AGENTS.md": "395f209d0701575861cdc1eb5751c0e3407fae2dea21210e68bb2dd055fc31d0",
+    "agents/portfolio-manager-shadow/package.json": "eb88f1ed8275e844a49820feeacb48263c974c0aeda40025d366e4df1e6086ba",
+    "agents/quant-research/AGENTS.md": "8120d6a1322f02d5f1f5ca23492b9078a1f8327a0c97c3b0ab46b089d3f3bff0",
+    "agents/quant-research/package.json": "b42a650a9bd6d661fb56a904a7ab4e709e987e6788bc1167b61d754c697eee5e",
+    "planning/06_agent_evidence_contract_RC0.md": "435649035ef9a0cc7522cc8b1dc8120d500cdd943e60d0e9fbc597a6e82a11a9",
+    "planning/06_external_signal_admission_RC1.md": "fdab142d9b4301e42fde095561f84197c8f52a292402fb14caea9ab516355139",
+    "planning/06_pedagogical_contract_RC0.md": "9348059bb1eb6bcc0ab7be16de5f410d02be807ecc546a4befda4639b1fa9225",
+    "planning/06_shadow_portfolio_contract_RC0.md": "32d6de94fffb890a84b0b2b3b696d8bc3bc7265b179be86ba228473e45f30bf6",
+    "planning/07_agent_packaging_contract_RC0.md": "42b8152c303026047de8de1e1e4a5ad2e37d60eb104a2f4a64b18a07c31f1910",
+    "planning/07_environment_bootstrap_contract_RC0.md": "d859e966b2f593b3984cb17a7fd491f1b3ac61c65d1d67c48b642f1be5655366",
+    "planning/decision_register.md": "d38366368a64876cebf9b5b6e3cec8abaf972f262070a9c0c0da4894417ad09f",
+    "planning/research/R-006_workload_acceptance_RC0.md": "1a8a5b955d24a9d55a0ef26fe9cf4ed999eba2258dcd11368826fc25409415e7",
+    "planning/research/probes/r006-contracts/skills/pedagogy/SKILL.md": "5ce1d593ce9de91ca021810dcf6fbcc9e0d3c20015d59b64dd8bd7e4429fdb24",
+    "planning/research/probes/r006-contracts/skills/quant/SKILL.md": "65d9704dece6dc4c189e4089980a16754346b495e089dfa19724f52c67bf011f",
+    "planning/research/probes/r006-contracts/skills/research/SKILL.md": "8ace180e5478d8b8c73df4034a8fcbdd7df33744b5b50c02a90caa6ed75f9a5b",
+    "planning/research/probes/r006-contracts/skills/shadow/SKILL.md": "6595768b8ec0f45fa74bac42ea411c67db58561ccf3fa1867f8a3c22cba862fd",
+    "planning/secuencia_preparacion.md": "6950a546060248803996d310a735a04d0ecc43b37be667f20eb23e50d991aab0",
+    "shared/environment_profile.schema.json": "7199053b496a09cf22a632c7a5c5b19c6ac07f9b931953f378b3edaa6637c656",
+    "shared/target_plus_profile.json": "25162f6d99279b329466af0b3c36b808042199643c6a648d83868faf7cf72331"
+  },
+  "limitations": [
+    "not entitlement or model activation",
+    "not ACL or general secret detection",
+    "not durable recovery or installer",
+    "evidence_refs existence/trust remains real gate responsibility"
+  ]
+}

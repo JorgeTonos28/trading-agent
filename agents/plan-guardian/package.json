@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1.0-planning",
+  "package_id": "plan-guardian",
+  "version": "0.1.0-planning",
+  "logical_role": "PLAN_GUARDIAN",
+  "lifecycle": "DORMANT_UNTIL_APPROVED_FREEZE",
+  "authority": "NONE",
+  "working_directory": "agents/plan-guardian",
+  "global_instruction_path": "AGENTS.md",
+  "instruction_path": "agents/plan-guardian/AGENTS.md",
+  "contracts": [
+    "planning/decision_register.md",
+    "planning/secuencia_preparacion.md"
+  ],
+  "candidate_procedure_path": null,
+  "dependencies": [
+    {
+      "kind": "repository",
+      "id": "shared",
+      "required": true
+    },
+    {
+      "kind": "capability",
+      "id": "native-Codex",
+      "required_for_model_activation": true,
+      "entitlement": "UNKNOWN_target_Plus"
+    }
+  ],
+  "permissions_contract": "planning/07_environment_bootstrap_contract_RC0.md",
+  "manual_entry": "open_working_directory_inside_complete_clone_then_verify_global_and_local_rules",
+  "programmatic_entry": "trusted_caller_resolves_same_paths_and_assigns_role_schema_tools_NOT_IMPLEMENTED"
+}

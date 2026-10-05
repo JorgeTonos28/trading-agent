@@ -1,0 +1,99 @@
+# Environment Bootstrap / Onboarding / Portability — RC0
+
+2026-10-05. Requisito ADR-009 aprobado; mecanismo candidato D-037/R-028 P1. D-020 RESEARCHING/D-024 OPEN. Fuente de verdad: repo, [ONBOARDING](../ONBOARDING.md), [manifest](../shared/bootstrap_manifest.json), perfiles y evidencia versionada. No implementar Trading OS.
+
+## 1. Bootstrap Mode candidato
+
+Recomendación: **modo lógico de Plan Architect/Guardian con procedimiento repo y Skill pequeña**, usando discovery/config/Skills nativos. No requiere proceso permanente ni una sesión por rol, ni nuevo instalador propio. Un Onboarding Agent programático futuro podría invocar el mismo paquete mediante el transporte elegido D-024. La Skill es un adaptador documental del contrato; no tiene capacidad de concederse permisos.
+
+Entradas confiables: repo/commit, target declarado por dueño, scope de readiness, manifiesto de requisitos, permisos efectivos y aprobaciones existentes. Inventario y material externo son evidencia, no instrucciones para aumentar autoridad. Salidas: perfil observado sanitizado, diff de capacidades, plan de acciones, resultados por gate y reporte. Todo tiene `authority=NONE`.
+
+## 2. Tres entornos
+
+| ID | Propósito | Lo que NO demuestra |
+|---|---|---|
+| CURRENT_RESEARCH_ENVIRONMENT | Team declarado/observado históricamente; conducta, diseño y probes | Entitlements Plus o condiciones LIVE |
+| TARGET_PLUS_ENVIRONMENT | Plus individual para PAPER; alias TARGET_RUNTIME_ENVIRONMENT | READY_FOR_IMPLEMENTATION, autorización PAPER/LIVE o entitlement API |
+| FUTURE_LIVE_ENVIRONMENT | Plan/superficie/servicios aún UNSELECTED | Aprobación de gasto, runtime, broker/capital o gates LIVE |
+
+Perfilar **cada instancia**, no solo el tipo de plan. Registrar OS/superficie/versiones/capacidades/Skills/plugins/MCP/dependencias/límites/fallbacks/tests/estado. Plan observado puede ser UNKNOWN aunque el dueño haya declarado un target; documentar el error. `expected` es requisito; `observed` es evidencia. Nunca rellenar observado desde expected o desde Team.
+
+## 3. Ruta ejecutable de preparación
+
+| Paso | Acción | Evidencia / condición |
+|---|---|---|
+| Discover | Git root, rama/commit, etapa, manifests y dependencias | Clone completo; validar paths/hashes/refs; no ejecutar scripts de terceros al descubrirlos |
+| Inspect | Versiones; fuentes de reglas; Skills; installed/enabled/callable plugins/apps/MCP; herramientas/permisos | Interfaces nativas readonly cuando existan; metadata no prueba acceso a fuente/dataset |
+| Compare | Diff esperado↔observado y required/optional | UNKNOWN obligatorio bloquea su gate; explicar deltas del entorno |
+| Plan | Acciones, prerequisitos, costes, approvals, rollback | No asumir permiso por figurar un paquete en manifiesto |
+| Configure | Local assets ya llegan con clone; proponer settings/permisos concretos | Diff y alcance; cambios aprobados, idempotentes, backup sin secretos en repo; nunca sobrescribir settings globales |
+| Accept | EB y GP según scope/entorno | GP1 antes de inferencia target, GP2–4 tras discovery; GP5–7 requieren operación y ventana temporal, no todo se completa en onboarding instantáneo |
+| Prepare roles | Cadena global/local + rol/schema/tools/version confiables | Paquete documentado ≠ activación operativa. Plan Guardian solo tras freeze |
+| Smoke/report | Fixtures sintéticas, resultados/fallos y readiness | Registro antes de resumir; reporte accionable, sin crear órdenes/posiciones ni gastar |
+
+Autologin/logout, copiar auth Team, revocar tokens, confiar proyecto/hooks, instalar conectores, activar API billing o ampliar tool scopes no son una consecuencia automática de clonar. Cuenta/consentimiento/credenciales requieren dueño mediante UI oficial. Config general de seguridad sigue D-027, no se congela en este contrato.
+
+## 4. Clasificación de acciones
+
+| Clasificación | Uso exacto |
+|---|---|
+| AUTOMATED | Acción permitida y comprobable con herramientas ya disponibles: lectura, hashes, validación, smoke sintético. Permiso y coste se comprueban primero |
+| USER_ACTION_REQUIRED | Login/consentimiento/acceso/instalación manual o decisión material; indicar interfaz, resultado esperado y evidencia sanitizada, nunca pedir valor del secreto |
+| UNAVAILABLE | Capacidad ausente/no compatible según evidencia; indicar requisito afectado, no convertir fallo temporal en NO definitivo |
+| OPTIONAL | Mejora que no bloquea el scope actual; no instalarla por defecto |
+| FALLBACK_AVAILABLE | Alternativa identificada con contrato/limitaciones/evidencia. Disponible no equivale a selected ni accepted |
+
+Son etiquetas del plan de acción; availability, requisito required/optional, selected y estado de gate son ejes separados. Cada acción tiene ID, requisito, clasificación, estado, acción concreta, aprobación necesaria y evidencia. No esconder un login obligatorio bajo OPTIONAL. Fallback puede ser manual para preparación, sin demostrar suficiencia del shadow/operación autónoma.
+
+## 5. Perfil y readiness
+
+Schema RC0 compartido estrictamente versionado. Campos:
+
+- environment_kind, expected_plan, observed_plan, surface, OS, repo_commit, manifest_sha256 y captured_at UTC;
+- inventory con ID/kind, detected/enabled/callable por separado, version y evidence_refs (sin auth values);
+- skills/plugins/MCP/localtools/dependencies mediante `kind`; cuotas/límites conocidos, UNKNOWN permitido;
+- instruction_chain (paths relativos de repo; externos solo etiqueta/hash de archivo no secreto), paquetes verificados;
+- action_plan, selected_fallbacks, acceptance_tests (environment/source/versión/resultado/evidencia), requirement_results;
+- readiness_scope y estado/blocked_by, autoridad NONE, implementation_locked=true.
+
+Estados: NOT_ASSESSED, PARTIAL, BLOCKED_USER_ACTION, BLOCKED_FAILED_GATE, READY_AGENT_ENVIRONMENT. Scope: PREPARATION_ONBOARDING o PAPER_AGENT_ENVIRONMENT. READY requiere todos los requisitos obligatorios del scope PASSED y sin acciones obligatorias abiertas. Para PAPER, además selección/gobierno aprobados, identidad Plus y EB/GP completos. Un schema válido o autoinforme LLM no concede readiness: la comprobación externa valida evidencia y reglas.
+
+No claim de readiness de sistema financiero. Aun con entorno listo, DoR/Strategy/broker/riesgo/gates PAPER independientes pueden seguir abiertos. LIVE nunca queda autorizado por este perfil.
+
+## 6. Acceptance Gate de portabilidad
+
+| Gate | Antes de cierre | Prueba propuesta y vínculo |
+|---|---|---|
+| EB-1 clone/integridad | Reproducir entry point del commit/manifiesto correcto sin chat/caché de assets | Fresh local clone + refs/hashes; externos explícitos. Git privado exige acceso manual legítimo |
+| EB-2 reglas/roles | Root+rol cargados, rol hermano ausente, override/truncación/conflicto detectados | Metadata + smoke observable en superficie seleccionada; no asumir ACL. GP2/4 |
+| EB-3 capabilities/diff | Inventario expected/observed y entitlement específico | Skills/plugins/MCP/dependencies, desconocidos visibles; GP1–3, no heredar Team |
+| EB-4 configuración/seguridad | Acciones permitidas/manuales, no secretos ni settings clobber | Diff autorizado, idempotencia/paths/rollback; permisos finales D-027. GP4/7 |
+| EB-5 package portability | Manual/programmatic entry de ruta elegida carga mismo contrato/caller/outputs | Hashes/paths/lifecycle. No exigir dos rutas si una no se selecciona; no sesiones por rol impuestas |
+| EB-6 smoke/recovery | Rol/Skill/schema/tools básicos y reporte recuperable | Snapshot del job/attempt y resultados, no duplicar configuración/admisión; GP3/5. Probe offline solo simula, no recovery durable real |
+| EB-7 suficiencia target | Finalistas cumplen requisitos en Plus, cuotas/auth/cadencia | GP1–7 + workload R-006; no repetir toda la comparación Team. GP6 necesita varias sesiones/días |
+| EB-8 readiness audit | Estado derivado de evidencia por requisito, acciones exactas, revisión crítica | UNKNOWN/fail no pasan, opcional no bloquea, drift invalida gates afectados; D-029/037 |
+
+**DoR/D-024:** antes de freeze, ruta final y paquetes/permiso seleccionados o descartados justificadamente, EB obligatorio cerrado para target y GP específico aprobado, responsable de mantenimiento/deployment y version pins. Protocolos financieros/PAPER/LIVE siguen separados. Discovery/probes Team y documentos no cierran EB target.
+
+## 7. Reanudación y drift
+
+Guardar checkpoints sanitizados por ejecución: commit/manifest/rules/Skill/schema/client version, inputs, IDs propios no asociados a cuenta y gates. Reiniciar compara fingerprint; se reutiliza evidencia solo si scope/inputs/ruta pertinentes coinciden. Cambios de plan/superficie/auth invalidan gates de entitlement; versión/config/instrucciones/Skill invalidan smoke/gates afectados, no toda investigación histórica. Carga/quota evidencia tiene ventana temporal declarada. Fallos y retries permanecen; máximo un resultado aceptado por job.
+
+No descargar/cargar credenciales al recuperar un perfil. No ejecutar automáticamente postinstall/hook sugerido por una fuente. Un reporte histórico READY no es permiso vigente en máquina nueva. Recovery durable e identidad final de jobs se investigan en D-025/026; este documento no los implementa.
+
+## 8. Build-vs-Reuse / coste
+
+| Capacidad | Disposición propuesta | Motivo / gap |
+|---|---|---|
+| AGENTS + Skill discovery nativo | REUSE_AS_IS | Evitar cargador de roles propio; verificar cwd/root/overrides y activación |
+| Bootstrap Mode/Skill + manifest propios | ADAPT | Procedimiento/documentos de contratos existentes; no nuevo runtime/installer |
+| Native inventories SDK/app-server/config | WRAP | Caller/reporte sanitizado específico cuando transporte final lo requiera; APIs/version y target por probar |
+| skill-installer público | REFERENCE_ONLY / ADAPT por necesidad | Para assets externos revisados/pinados; clone ya entrega locales, no instalar globalmente para cada rol |
+| Custom native agents | REFERENCE_ONLY | Ruta opcional de invocación futura; no topología seleccionada |
+| Portable plugin package/marketplace | REFERENCE_ONLY | Posible distribución posterior; instalación/trust/auth separadas |
+
+Assets locales/Skill propia: PAPER licencia/adquisición 0, cómputo/cuota incluidos solo si GP demuestra; LIVE coste operacional UNKNOWN. Alternativa gratuita: procedimiento manual explícito y native discovery; no necesariamente equivalente al workload. Valor pago posible continuidad/gestión de entorno, no demostrado; requiere ficha ADR-008/aprobación antes de gastar. No comprar Skills ni asumir entitlement propietario.
+
+## 9. Límites del paquete autónomo
+
+Entregables: contratos/manifiesto/perfiles, paquetes documentales, Skill candidata, evidencia local y fresh-clone, deltas a Plus Gate/shortlist. Endpoint cuando eso esté sincronizado y siguientes gates necesiten entorno autenticado/Plus o decisión material. Auth bloqueada no detiene inventario local, diseño y negativos. D-037 queda RESEARCHING; mecanismos/permisos finales necesitan evidencia y gobierno correspondientes.

@@ -1,0 +1,22 @@
+{
+  "probe": "R028_NATIVE_DISCOVERY_01",
+  "target_plus": "UNKNOWN",
+  "selected": false,
+  "config": {
+    "forced_login_method": "chatgpt",
+    "model_provider": "openai",
+    "features.shell_tool": false,
+    "features.unified_exec": false,
+    "features.multi_agent": false,
+    "features.apps": false,
+    "features.skill_mcp_dependency_install": false,
+    "web_search": "disabled",
+    "mcp_servers": {},
+    "plugins": {},
+    "history.persistence": "none"
+  },
+  "trials": [],
+  "inventories": [],
+  "error_type": "RuntimeError",
+  "source_sha256": "1c51cc2be23badf62faa423d8aa3d2f75bbbc5c7b688c12f828f24190854641d"
+}

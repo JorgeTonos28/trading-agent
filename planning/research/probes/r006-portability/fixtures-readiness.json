@@ -1,0 +1,4037 @@
+{
+  "evidence_kind": "SIMULATED_NOT_EXECUTED_TARGET",
+  "complete_fixture": {
+    "schema_version": "0.1.0-planning",
+    "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+    "expected_plan": "ChatGPT_Plus_individual",
+    "observed_plan": "plus",
+    "surface": "SYNTHETIC_FIXTURE",
+    "os": "SYNTHETIC",
+    "captured_at": "2026-10-05T12:00:00Z",
+    "repo_commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "manifest_sha256": "2eb12aa6e28359b0a662e53dfc5a5388eed912879700660528809f6c7767dac2",
+    "instruction_chain": [
+      "AGENTS.md",
+      "agents/onboarding/AGENTS.md"
+    ],
+    "package_ids_verified": [
+      "onboarding"
+    ],
+    "inventory": [],
+    "known_limits": [
+      "SYNTHETIC_NOT_REAL_PLUS"
+    ],
+    "action_plan": [],
+    "selected_fallbacks": [],
+    "acceptance_tests": [
+      {
+        "gate_id": "EB-1",
+        "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+        "result": "PASSED",
+        "version": "synthetic-v1",
+        "evidence_refs": [
+          "SYNTHETIC:EB-1"
+        ]
+      },
+      {
+        "gate_id": "EB-2",
+        "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+        "result": "PASSED",
+        "version": "synthetic-v1",
+        "evidence_refs": [
+          "SYNTHETIC:EB-2"
+        ]
+      },
+      {
+        "gate_id": "EB-3",
+        "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+        "result": "PASSED",
+        "version": "synthetic-v1",
+        "evidence_refs": [
+          "SYNTHETIC:EB-3"
+        ]
+      },
+      {
+        "gate_id": "EB-4",
+        "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+        "result": "PASSED",
+        "version": "synthetic-v1",
+        "evidence_refs": [
+          "SYNTHETIC:EB-4"
+        ]
+      },
+      {
+        "gate_id": "EB-5",
+        "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+        "result": "PASSED",
+        "version": "synthetic-v1",
+        "evidence_refs": [
+          "SYNTHETIC:EB-5"
+        ]
+      },
+      {
+        "gate_id": "EB-6",
+        "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+        "result": "PASSED",
+        "version": "synthetic-v1",
+        "evidence_refs": [
+          "SYNTHETIC:EB-6"
+        ]
+      },
+      {
+        "gate_id": "EB-7",
+        "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+        "result": "PASSED",
+        "version": "synthetic-v1",
+        "evidence_refs": [
+          "SYNTHETIC:EB-7"
+        ]
+      },
+      {
+        "gate_id": "EB-8",
+        "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+        "result": "PASSED",
+        "version": "synthetic-v1",
+        "evidence_refs": [
+          "SYNTHETIC:EB-8"
+        ]
+      },
+      {
+        "gate_id": "GP-1",
+        "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+        "result": "PASSED",
+        "version": "synthetic-v1",
+        "evidence_refs": [
+          "SYNTHETIC:GP-1"
+        ]
+      },
+      {
+        "gate_id": "GP-2",
+        "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+        "result": "PASSED",
+        "version": "synthetic-v1",
+        "evidence_refs": [
+          "SYNTHETIC:GP-2"
+        ]
+      },
+      {
+        "gate_id": "GP-3",
+        "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+        "result": "PASSED",
+        "version": "synthetic-v1",
+        "evidence_refs": [
+          "SYNTHETIC:GP-3"
+        ]
+      },
+      {
+        "gate_id": "GP-4",
+        "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+        "result": "PASSED",
+        "version": "synthetic-v1",
+        "evidence_refs": [
+          "SYNTHETIC:GP-4"
+        ]
+      },
+      {
+        "gate_id": "GP-5",
+        "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+        "result": "PASSED",
+        "version": "synthetic-v1",
+        "evidence_refs": [
+          "SYNTHETIC:GP-5"
+        ]
+      },
+      {
+        "gate_id": "GP-6",
+        "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+        "result": "PASSED",
+        "version": "synthetic-v1",
+        "evidence_refs": [
+          "SYNTHETIC:GP-6"
+        ]
+      },
+      {
+        "gate_id": "GP-7",
+        "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+        "result": "PASSED",
+        "version": "synthetic-v1",
+        "evidence_refs": [
+          "SYNTHETIC:GP-7"
+        ]
+      }
+    ],
+    "requirement_results": [
+      {
+        "id": "clone-integrity",
+        "required": true,
+        "result": "PASSED",
+        "evidence_refs": [
+          "SYNTHETIC:clone-integrity"
+        ]
+      },
+      {
+        "id": "global-role-rules",
+        "required": true,
+        "result": "PASSED",
+        "evidence_refs": [
+          "SYNTHETIC:global-role-rules"
+        ]
+      },
+      {
+        "id": "sanitized-inventory-actions",
+        "required": true,
+        "result": "PASSED",
+        "evidence_refs": [
+          "SYNTHETIC:sanitized-inventory-actions"
+        ]
+      },
+      {
+        "id": "plus-identity",
+        "required": true,
+        "result": "PASSED",
+        "evidence_refs": [
+          "SYNTHETIC:plus-identity"
+        ]
+      },
+      {
+        "id": "final-selection-approval",
+        "required": true,
+        "result": "PASSED",
+        "evidence_refs": [
+          "SYNTHETIC:final-selection-approval"
+        ]
+      },
+      {
+        "id": "plus-GP1-7",
+        "required": true,
+        "result": "PASSED",
+        "evidence_refs": [
+          "SYNTHETIC:plus-GP1-7"
+        ]
+      },
+      {
+        "id": "portability-EB1-8",
+        "required": true,
+        "result": "PASSED",
+        "evidence_refs": [
+          "SYNTHETIC:portability-EB1-8"
+        ]
+      }
+    ],
+    "readiness_scope": "PAPER_AGENT_ENVIRONMENT",
+    "readiness_state": "READY_AGENT_ENVIRONMENT",
+    "blocked_by": [],
+    "authority": "NONE",
+    "implementation_locked": true
+  },
+  "negative_fixtures": [
+    {
+      "case": "team_cannot_pass_target",
+      "profile": {
+        "schema_version": "0.1.0-planning",
+        "environment_kind": "CURRENT_RESEARCH_ENVIRONMENT",
+        "expected_plan": "ChatGPT_Plus_individual",
+        "observed_plan": "team",
+        "surface": "SYNTHETIC_FIXTURE",
+        "os": "SYNTHETIC",
+        "captured_at": "2026-10-05T12:00:00Z",
+        "repo_commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "manifest_sha256": "2eb12aa6e28359b0a662e53dfc5a5388eed912879700660528809f6c7767dac2",
+        "instruction_chain": [
+          "AGENTS.md",
+          "agents/onboarding/AGENTS.md"
+        ],
+        "package_ids_verified": [
+          "onboarding"
+        ],
+        "inventory": [],
+        "known_limits": [
+          "SYNTHETIC_NOT_REAL_PLUS"
+        ],
+        "action_plan": [],
+        "selected_fallbacks": [],
+        "acceptance_tests": [
+          {
+            "gate_id": "EB-1",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-1"
+            ]
+          },
+          {
+            "gate_id": "EB-2",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-2"
+            ]
+          },
+          {
+            "gate_id": "EB-3",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-3"
+            ]
+          },
+          {
+            "gate_id": "EB-4",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-4"
+            ]
+          },
+          {
+            "gate_id": "EB-5",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-5"
+            ]
+          },
+          {
+            "gate_id": "EB-6",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-6"
+            ]
+          },
+          {
+            "gate_id": "EB-7",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-7"
+            ]
+          },
+          {
+            "gate_id": "EB-8",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-8"
+            ]
+          },
+          {
+            "gate_id": "GP-1",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-1"
+            ]
+          },
+          {
+            "gate_id": "GP-2",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-2"
+            ]
+          },
+          {
+            "gate_id": "GP-3",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-3"
+            ]
+          },
+          {
+            "gate_id": "GP-4",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-4"
+            ]
+          },
+          {
+            "gate_id": "GP-5",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-5"
+            ]
+          },
+          {
+            "gate_id": "GP-6",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-6"
+            ]
+          },
+          {
+            "gate_id": "GP-7",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-7"
+            ]
+          }
+        ],
+        "requirement_results": [
+          {
+            "id": "clone-integrity",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:clone-integrity"
+            ]
+          },
+          {
+            "id": "global-role-rules",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:global-role-rules"
+            ]
+          },
+          {
+            "id": "sanitized-inventory-actions",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:sanitized-inventory-actions"
+            ]
+          },
+          {
+            "id": "plus-identity",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:plus-identity"
+            ]
+          },
+          {
+            "id": "final-selection-approval",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:final-selection-approval"
+            ]
+          },
+          {
+            "id": "plus-GP1-7",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:plus-GP1-7"
+            ]
+          },
+          {
+            "id": "portability-EB1-8",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:portability-EB1-8"
+            ]
+          }
+        ],
+        "readiness_scope": "PAPER_AGENT_ENVIRONMENT",
+        "readiness_state": "READY_AGENT_ENVIRONMENT",
+        "blocked_by": [],
+        "authority": "NONE",
+        "implementation_locked": true
+      }
+    },
+    {
+      "case": "unknown_plan_not_ready",
+      "profile": {
+        "schema_version": "0.1.0-planning",
+        "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+        "expected_plan": "ChatGPT_Plus_individual",
+        "observed_plan": "UNKNOWN",
+        "surface": "SYNTHETIC_FIXTURE",
+        "os": "SYNTHETIC",
+        "captured_at": "2026-10-05T12:00:00Z",
+        "repo_commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "manifest_sha256": "2eb12aa6e28359b0a662e53dfc5a5388eed912879700660528809f6c7767dac2",
+        "instruction_chain": [
+          "AGENTS.md",
+          "agents/onboarding/AGENTS.md"
+        ],
+        "package_ids_verified": [
+          "onboarding"
+        ],
+        "inventory": [],
+        "known_limits": [
+          "SYNTHETIC_NOT_REAL_PLUS"
+        ],
+        "action_plan": [],
+        "selected_fallbacks": [],
+        "acceptance_tests": [
+          {
+            "gate_id": "EB-1",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-1"
+            ]
+          },
+          {
+            "gate_id": "EB-2",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-2"
+            ]
+          },
+          {
+            "gate_id": "EB-3",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-3"
+            ]
+          },
+          {
+            "gate_id": "EB-4",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-4"
+            ]
+          },
+          {
+            "gate_id": "EB-5",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-5"
+            ]
+          },
+          {
+            "gate_id": "EB-6",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-6"
+            ]
+          },
+          {
+            "gate_id": "EB-7",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-7"
+            ]
+          },
+          {
+            "gate_id": "EB-8",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-8"
+            ]
+          },
+          {
+            "gate_id": "GP-1",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-1"
+            ]
+          },
+          {
+            "gate_id": "GP-2",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-2"
+            ]
+          },
+          {
+            "gate_id": "GP-3",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-3"
+            ]
+          },
+          {
+            "gate_id": "GP-4",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-4"
+            ]
+          },
+          {
+            "gate_id": "GP-5",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-5"
+            ]
+          },
+          {
+            "gate_id": "GP-6",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-6"
+            ]
+          },
+          {
+            "gate_id": "GP-7",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-7"
+            ]
+          }
+        ],
+        "requirement_results": [
+          {
+            "id": "clone-integrity",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:clone-integrity"
+            ]
+          },
+          {
+            "id": "global-role-rules",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:global-role-rules"
+            ]
+          },
+          {
+            "id": "sanitized-inventory-actions",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:sanitized-inventory-actions"
+            ]
+          },
+          {
+            "id": "plus-identity",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:plus-identity"
+            ]
+          },
+          {
+            "id": "final-selection-approval",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:final-selection-approval"
+            ]
+          },
+          {
+            "id": "plus-GP1-7",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:plus-GP1-7"
+            ]
+          },
+          {
+            "id": "portability-EB1-8",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:portability-EB1-8"
+            ]
+          }
+        ],
+        "readiness_scope": "PAPER_AGENT_ENVIRONMENT",
+        "readiness_state": "READY_AGENT_ENVIRONMENT",
+        "blocked_by": [],
+        "authority": "NONE",
+        "implementation_locked": true
+      }
+    },
+    {
+      "case": "empty_results_not_ready",
+      "profile": {
+        "schema_version": "0.1.0-planning",
+        "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+        "expected_plan": "ChatGPT_Plus_individual",
+        "observed_plan": "plus",
+        "surface": "SYNTHETIC_FIXTURE",
+        "os": "SYNTHETIC",
+        "captured_at": "2026-10-05T12:00:00Z",
+        "repo_commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "manifest_sha256": "2eb12aa6e28359b0a662e53dfc5a5388eed912879700660528809f6c7767dac2",
+        "instruction_chain": [
+          "AGENTS.md",
+          "agents/onboarding/AGENTS.md"
+        ],
+        "package_ids_verified": [
+          "onboarding"
+        ],
+        "inventory": [],
+        "known_limits": [
+          "SYNTHETIC_NOT_REAL_PLUS"
+        ],
+        "action_plan": [],
+        "selected_fallbacks": [],
+        "acceptance_tests": [
+          {
+            "gate_id": "EB-1",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-1"
+            ]
+          },
+          {
+            "gate_id": "EB-2",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-2"
+            ]
+          },
+          {
+            "gate_id": "EB-3",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-3"
+            ]
+          },
+          {
+            "gate_id": "EB-4",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-4"
+            ]
+          },
+          {
+            "gate_id": "EB-5",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-5"
+            ]
+          },
+          {
+            "gate_id": "EB-6",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-6"
+            ]
+          },
+          {
+            "gate_id": "EB-7",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-7"
+            ]
+          },
+          {
+            "gate_id": "EB-8",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-8"
+            ]
+          },
+          {
+            "gate_id": "GP-1",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-1"
+            ]
+          },
+          {
+            "gate_id": "GP-2",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-2"
+            ]
+          },
+          {
+            "gate_id": "GP-3",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-3"
+            ]
+          },
+          {
+            "gate_id": "GP-4",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-4"
+            ]
+          },
+          {
+            "gate_id": "GP-5",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-5"
+            ]
+          },
+          {
+            "gate_id": "GP-6",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-6"
+            ]
+          },
+          {
+            "gate_id": "GP-7",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-7"
+            ]
+          }
+        ],
+        "requirement_results": [],
+        "readiness_scope": "PAPER_AGENT_ENVIRONMENT",
+        "readiness_state": "READY_AGENT_ENVIRONMENT",
+        "blocked_by": [],
+        "authority": "NONE",
+        "implementation_locked": true
+      }
+    },
+    {
+      "case": "report_cannot_downgrade_required",
+      "profile": {
+        "schema_version": "0.1.0-planning",
+        "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+        "expected_plan": "ChatGPT_Plus_individual",
+        "observed_plan": "plus",
+        "surface": "SYNTHETIC_FIXTURE",
+        "os": "SYNTHETIC",
+        "captured_at": "2026-10-05T12:00:00Z",
+        "repo_commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "manifest_sha256": "2eb12aa6e28359b0a662e53dfc5a5388eed912879700660528809f6c7767dac2",
+        "instruction_chain": [
+          "AGENTS.md",
+          "agents/onboarding/AGENTS.md"
+        ],
+        "package_ids_verified": [
+          "onboarding"
+        ],
+        "inventory": [],
+        "known_limits": [
+          "SYNTHETIC_NOT_REAL_PLUS"
+        ],
+        "action_plan": [],
+        "selected_fallbacks": [],
+        "acceptance_tests": [
+          {
+            "gate_id": "EB-1",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-1"
+            ]
+          },
+          {
+            "gate_id": "EB-2",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-2"
+            ]
+          },
+          {
+            "gate_id": "EB-3",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-3"
+            ]
+          },
+          {
+            "gate_id": "EB-4",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-4"
+            ]
+          },
+          {
+            "gate_id": "EB-5",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-5"
+            ]
+          },
+          {
+            "gate_id": "EB-6",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-6"
+            ]
+          },
+          {
+            "gate_id": "EB-7",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-7"
+            ]
+          },
+          {
+            "gate_id": "EB-8",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-8"
+            ]
+          },
+          {
+            "gate_id": "GP-1",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-1"
+            ]
+          },
+          {
+            "gate_id": "GP-2",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-2"
+            ]
+          },
+          {
+            "gate_id": "GP-3",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-3"
+            ]
+          },
+          {
+            "gate_id": "GP-4",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-4"
+            ]
+          },
+          {
+            "gate_id": "GP-5",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-5"
+            ]
+          },
+          {
+            "gate_id": "GP-6",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-6"
+            ]
+          },
+          {
+            "gate_id": "GP-7",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-7"
+            ]
+          }
+        ],
+        "requirement_results": [
+          {
+            "id": "clone-integrity",
+            "required": false,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:clone-integrity"
+            ]
+          },
+          {
+            "id": "global-role-rules",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:global-role-rules"
+            ]
+          },
+          {
+            "id": "sanitized-inventory-actions",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:sanitized-inventory-actions"
+            ]
+          },
+          {
+            "id": "plus-identity",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:plus-identity"
+            ]
+          },
+          {
+            "id": "final-selection-approval",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:final-selection-approval"
+            ]
+          },
+          {
+            "id": "plus-GP1-7",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:plus-GP1-7"
+            ]
+          },
+          {
+            "id": "portability-EB1-8",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:portability-EB1-8"
+            ]
+          }
+        ],
+        "readiness_scope": "PAPER_AGENT_ENVIRONMENT",
+        "readiness_state": "READY_AGENT_ENVIRONMENT",
+        "blocked_by": [],
+        "authority": "NONE",
+        "implementation_locked": true
+      }
+    },
+    {
+      "case": "unknown_required_not_ready",
+      "profile": {
+        "schema_version": "0.1.0-planning",
+        "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+        "expected_plan": "ChatGPT_Plus_individual",
+        "observed_plan": "plus",
+        "surface": "SYNTHETIC_FIXTURE",
+        "os": "SYNTHETIC",
+        "captured_at": "2026-10-05T12:00:00Z",
+        "repo_commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "manifest_sha256": "2eb12aa6e28359b0a662e53dfc5a5388eed912879700660528809f6c7767dac2",
+        "instruction_chain": [
+          "AGENTS.md",
+          "agents/onboarding/AGENTS.md"
+        ],
+        "package_ids_verified": [
+          "onboarding"
+        ],
+        "inventory": [],
+        "known_limits": [
+          "SYNTHETIC_NOT_REAL_PLUS"
+        ],
+        "action_plan": [],
+        "selected_fallbacks": [],
+        "acceptance_tests": [
+          {
+            "gate_id": "EB-1",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-1"
+            ]
+          },
+          {
+            "gate_id": "EB-2",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-2"
+            ]
+          },
+          {
+            "gate_id": "EB-3",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-3"
+            ]
+          },
+          {
+            "gate_id": "EB-4",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-4"
+            ]
+          },
+          {
+            "gate_id": "EB-5",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-5"
+            ]
+          },
+          {
+            "gate_id": "EB-6",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-6"
+            ]
+          },
+          {
+            "gate_id": "EB-7",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-7"
+            ]
+          },
+          {
+            "gate_id": "EB-8",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-8"
+            ]
+          },
+          {
+            "gate_id": "GP-1",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-1"
+            ]
+          },
+          {
+            "gate_id": "GP-2",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-2"
+            ]
+          },
+          {
+            "gate_id": "GP-3",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-3"
+            ]
+          },
+          {
+            "gate_id": "GP-4",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-4"
+            ]
+          },
+          {
+            "gate_id": "GP-5",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-5"
+            ]
+          },
+          {
+            "gate_id": "GP-6",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-6"
+            ]
+          },
+          {
+            "gate_id": "GP-7",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-7"
+            ]
+          }
+        ],
+        "requirement_results": [
+          {
+            "id": "clone-integrity",
+            "required": true,
+            "result": "UNKNOWN",
+            "evidence_refs": [
+              "SYNTHETIC:clone-integrity"
+            ]
+          },
+          {
+            "id": "global-role-rules",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:global-role-rules"
+            ]
+          },
+          {
+            "id": "sanitized-inventory-actions",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:sanitized-inventory-actions"
+            ]
+          },
+          {
+            "id": "plus-identity",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:plus-identity"
+            ]
+          },
+          {
+            "id": "final-selection-approval",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:final-selection-approval"
+            ]
+          },
+          {
+            "id": "plus-GP1-7",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:plus-GP1-7"
+            ]
+          },
+          {
+            "id": "portability-EB1-8",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:portability-EB1-8"
+            ]
+          }
+        ],
+        "readiness_scope": "PAPER_AGENT_ENVIRONMENT",
+        "readiness_state": "READY_AGENT_ENVIRONMENT",
+        "blocked_by": [],
+        "authority": "NONE",
+        "implementation_locked": true
+      }
+    },
+    {
+      "case": "failed_required_not_ready",
+      "profile": {
+        "schema_version": "0.1.0-planning",
+        "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+        "expected_plan": "ChatGPT_Plus_individual",
+        "observed_plan": "plus",
+        "surface": "SYNTHETIC_FIXTURE",
+        "os": "SYNTHETIC",
+        "captured_at": "2026-10-05T12:00:00Z",
+        "repo_commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "manifest_sha256": "2eb12aa6e28359b0a662e53dfc5a5388eed912879700660528809f6c7767dac2",
+        "instruction_chain": [
+          "AGENTS.md",
+          "agents/onboarding/AGENTS.md"
+        ],
+        "package_ids_verified": [
+          "onboarding"
+        ],
+        "inventory": [],
+        "known_limits": [
+          "SYNTHETIC_NOT_REAL_PLUS"
+        ],
+        "action_plan": [],
+        "selected_fallbacks": [],
+        "acceptance_tests": [
+          {
+            "gate_id": "EB-1",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-1"
+            ]
+          },
+          {
+            "gate_id": "EB-2",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-2"
+            ]
+          },
+          {
+            "gate_id": "EB-3",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-3"
+            ]
+          },
+          {
+            "gate_id": "EB-4",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-4"
+            ]
+          },
+          {
+            "gate_id": "EB-5",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-5"
+            ]
+          },
+          {
+            "gate_id": "EB-6",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-6"
+            ]
+          },
+          {
+            "gate_id": "EB-7",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-7"
+            ]
+          },
+          {
+            "gate_id": "EB-8",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-8"
+            ]
+          },
+          {
+            "gate_id": "GP-1",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-1"
+            ]
+          },
+          {
+            "gate_id": "GP-2",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-2"
+            ]
+          },
+          {
+            "gate_id": "GP-3",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-3"
+            ]
+          },
+          {
+            "gate_id": "GP-4",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-4"
+            ]
+          },
+          {
+            "gate_id": "GP-5",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-5"
+            ]
+          },
+          {
+            "gate_id": "GP-6",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-6"
+            ]
+          },
+          {
+            "gate_id": "GP-7",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-7"
+            ]
+          }
+        ],
+        "requirement_results": [
+          {
+            "id": "clone-integrity",
+            "required": true,
+            "result": "FAILED",
+            "evidence_refs": [
+              "SYNTHETIC:clone-integrity"
+            ]
+          },
+          {
+            "id": "global-role-rules",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:global-role-rules"
+            ]
+          },
+          {
+            "id": "sanitized-inventory-actions",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:sanitized-inventory-actions"
+            ]
+          },
+          {
+            "id": "plus-identity",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:plus-identity"
+            ]
+          },
+          {
+            "id": "final-selection-approval",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:final-selection-approval"
+            ]
+          },
+          {
+            "id": "plus-GP1-7",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:plus-GP1-7"
+            ]
+          },
+          {
+            "id": "portability-EB1-8",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:portability-EB1-8"
+            ]
+          }
+        ],
+        "readiness_scope": "PAPER_AGENT_ENVIRONMENT",
+        "readiness_state": "READY_AGENT_ENVIRONMENT",
+        "blocked_by": [],
+        "authority": "NONE",
+        "implementation_locked": true
+      }
+    },
+    {
+      "case": "empty_evidence_not_ready",
+      "profile": {
+        "schema_version": "0.1.0-planning",
+        "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+        "expected_plan": "ChatGPT_Plus_individual",
+        "observed_plan": "plus",
+        "surface": "SYNTHETIC_FIXTURE",
+        "os": "SYNTHETIC",
+        "captured_at": "2026-10-05T12:00:00Z",
+        "repo_commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "manifest_sha256": "2eb12aa6e28359b0a662e53dfc5a5388eed912879700660528809f6c7767dac2",
+        "instruction_chain": [
+          "AGENTS.md",
+          "agents/onboarding/AGENTS.md"
+        ],
+        "package_ids_verified": [
+          "onboarding"
+        ],
+        "inventory": [],
+        "known_limits": [
+          "SYNTHETIC_NOT_REAL_PLUS"
+        ],
+        "action_plan": [],
+        "selected_fallbacks": [],
+        "acceptance_tests": [
+          {
+            "gate_id": "EB-1",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-1"
+            ]
+          },
+          {
+            "gate_id": "EB-2",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-2"
+            ]
+          },
+          {
+            "gate_id": "EB-3",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-3"
+            ]
+          },
+          {
+            "gate_id": "EB-4",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-4"
+            ]
+          },
+          {
+            "gate_id": "EB-5",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-5"
+            ]
+          },
+          {
+            "gate_id": "EB-6",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-6"
+            ]
+          },
+          {
+            "gate_id": "EB-7",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-7"
+            ]
+          },
+          {
+            "gate_id": "EB-8",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-8"
+            ]
+          },
+          {
+            "gate_id": "GP-1",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-1"
+            ]
+          },
+          {
+            "gate_id": "GP-2",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-2"
+            ]
+          },
+          {
+            "gate_id": "GP-3",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-3"
+            ]
+          },
+          {
+            "gate_id": "GP-4",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-4"
+            ]
+          },
+          {
+            "gate_id": "GP-5",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-5"
+            ]
+          },
+          {
+            "gate_id": "GP-6",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-6"
+            ]
+          },
+          {
+            "gate_id": "GP-7",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-7"
+            ]
+          }
+        ],
+        "requirement_results": [
+          {
+            "id": "clone-integrity",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": []
+          },
+          {
+            "id": "global-role-rules",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:global-role-rules"
+            ]
+          },
+          {
+            "id": "sanitized-inventory-actions",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:sanitized-inventory-actions"
+            ]
+          },
+          {
+            "id": "plus-identity",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:plus-identity"
+            ]
+          },
+          {
+            "id": "final-selection-approval",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:final-selection-approval"
+            ]
+          },
+          {
+            "id": "plus-GP1-7",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:plus-GP1-7"
+            ]
+          },
+          {
+            "id": "portability-EB1-8",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:portability-EB1-8"
+            ]
+          }
+        ],
+        "readiness_scope": "PAPER_AGENT_ENVIRONMENT",
+        "readiness_state": "READY_AGENT_ENVIRONMENT",
+        "blocked_by": [],
+        "authority": "NONE",
+        "implementation_locked": true
+      }
+    },
+    {
+      "case": "global_rule_missing",
+      "profile": {
+        "schema_version": "0.1.0-planning",
+        "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+        "expected_plan": "ChatGPT_Plus_individual",
+        "observed_plan": "plus",
+        "surface": "SYNTHETIC_FIXTURE",
+        "os": "SYNTHETIC",
+        "captured_at": "2026-10-05T12:00:00Z",
+        "repo_commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "manifest_sha256": "2eb12aa6e28359b0a662e53dfc5a5388eed912879700660528809f6c7767dac2",
+        "instruction_chain": [],
+        "package_ids_verified": [
+          "onboarding"
+        ],
+        "inventory": [],
+        "known_limits": [
+          "SYNTHETIC_NOT_REAL_PLUS"
+        ],
+        "action_plan": [],
+        "selected_fallbacks": [],
+        "acceptance_tests": [
+          {
+            "gate_id": "EB-1",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-1"
+            ]
+          },
+          {
+            "gate_id": "EB-2",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-2"
+            ]
+          },
+          {
+            "gate_id": "EB-3",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-3"
+            ]
+          },
+          {
+            "gate_id": "EB-4",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-4"
+            ]
+          },
+          {
+            "gate_id": "EB-5",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-5"
+            ]
+          },
+          {
+            "gate_id": "EB-6",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-6"
+            ]
+          },
+          {
+            "gate_id": "EB-7",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-7"
+            ]
+          },
+          {
+            "gate_id": "EB-8",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-8"
+            ]
+          },
+          {
+            "gate_id": "GP-1",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-1"
+            ]
+          },
+          {
+            "gate_id": "GP-2",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-2"
+            ]
+          },
+          {
+            "gate_id": "GP-3",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-3"
+            ]
+          },
+          {
+            "gate_id": "GP-4",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-4"
+            ]
+          },
+          {
+            "gate_id": "GP-5",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-5"
+            ]
+          },
+          {
+            "gate_id": "GP-6",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-6"
+            ]
+          },
+          {
+            "gate_id": "GP-7",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-7"
+            ]
+          }
+        ],
+        "requirement_results": [
+          {
+            "id": "clone-integrity",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:clone-integrity"
+            ]
+          },
+          {
+            "id": "global-role-rules",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:global-role-rules"
+            ]
+          },
+          {
+            "id": "sanitized-inventory-actions",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:sanitized-inventory-actions"
+            ]
+          },
+          {
+            "id": "plus-identity",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:plus-identity"
+            ]
+          },
+          {
+            "id": "final-selection-approval",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:final-selection-approval"
+            ]
+          },
+          {
+            "id": "plus-GP1-7",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:plus-GP1-7"
+            ]
+          },
+          {
+            "id": "portability-EB1-8",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:portability-EB1-8"
+            ]
+          }
+        ],
+        "readiness_scope": "PAPER_AGENT_ENVIRONMENT",
+        "readiness_state": "READY_AGENT_ENVIRONMENT",
+        "blocked_by": [],
+        "authority": "NONE",
+        "implementation_locked": true
+      }
+    },
+    {
+      "case": "manifest_drift_invalidates",
+      "profile": {
+        "schema_version": "0.1.0-planning",
+        "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+        "expected_plan": "ChatGPT_Plus_individual",
+        "observed_plan": "plus",
+        "surface": "SYNTHETIC_FIXTURE",
+        "os": "SYNTHETIC",
+        "captured_at": "2026-10-05T12:00:00Z",
+        "repo_commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "manifest_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "instruction_chain": [
+          "AGENTS.md",
+          "agents/onboarding/AGENTS.md"
+        ],
+        "package_ids_verified": [
+          "onboarding"
+        ],
+        "inventory": [],
+        "known_limits": [
+          "SYNTHETIC_NOT_REAL_PLUS"
+        ],
+        "action_plan": [],
+        "selected_fallbacks": [],
+        "acceptance_tests": [
+          {
+            "gate_id": "EB-1",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-1"
+            ]
+          },
+          {
+            "gate_id": "EB-2",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-2"
+            ]
+          },
+          {
+            "gate_id": "EB-3",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-3"
+            ]
+          },
+          {
+            "gate_id": "EB-4",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-4"
+            ]
+          },
+          {
+            "gate_id": "EB-5",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-5"
+            ]
+          },
+          {
+            "gate_id": "EB-6",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-6"
+            ]
+          },
+          {
+            "gate_id": "EB-7",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-7"
+            ]
+          },
+          {
+            "gate_id": "EB-8",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-8"
+            ]
+          },
+          {
+            "gate_id": "GP-1",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-1"
+            ]
+          },
+          {
+            "gate_id": "GP-2",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-2"
+            ]
+          },
+          {
+            "gate_id": "GP-3",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-3"
+            ]
+          },
+          {
+            "gate_id": "GP-4",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-4"
+            ]
+          },
+          {
+            "gate_id": "GP-5",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-5"
+            ]
+          },
+          {
+            "gate_id": "GP-6",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-6"
+            ]
+          },
+          {
+            "gate_id": "GP-7",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-7"
+            ]
+          }
+        ],
+        "requirement_results": [
+          {
+            "id": "clone-integrity",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:clone-integrity"
+            ]
+          },
+          {
+            "id": "global-role-rules",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:global-role-rules"
+            ]
+          },
+          {
+            "id": "sanitized-inventory-actions",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:sanitized-inventory-actions"
+            ]
+          },
+          {
+            "id": "plus-identity",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:plus-identity"
+            ]
+          },
+          {
+            "id": "final-selection-approval",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:final-selection-approval"
+            ]
+          },
+          {
+            "id": "plus-GP1-7",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:plus-GP1-7"
+            ]
+          },
+          {
+            "id": "portability-EB1-8",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:portability-EB1-8"
+            ]
+          }
+        ],
+        "readiness_scope": "PAPER_AGENT_ENVIRONMENT",
+        "readiness_state": "READY_AGENT_ENVIRONMENT",
+        "blocked_by": [],
+        "authority": "NONE",
+        "implementation_locked": true
+      }
+    },
+    {
+      "case": "gate_team_evidence_not_target",
+      "profile": {
+        "schema_version": "0.1.0-planning",
+        "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+        "expected_plan": "ChatGPT_Plus_individual",
+        "observed_plan": "plus",
+        "surface": "SYNTHETIC_FIXTURE",
+        "os": "SYNTHETIC",
+        "captured_at": "2026-10-05T12:00:00Z",
+        "repo_commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "manifest_sha256": "2eb12aa6e28359b0a662e53dfc5a5388eed912879700660528809f6c7767dac2",
+        "instruction_chain": [
+          "AGENTS.md",
+          "agents/onboarding/AGENTS.md"
+        ],
+        "package_ids_verified": [
+          "onboarding"
+        ],
+        "inventory": [],
+        "known_limits": [
+          "SYNTHETIC_NOT_REAL_PLUS"
+        ],
+        "action_plan": [],
+        "selected_fallbacks": [],
+        "acceptance_tests": [
+          {
+            "gate_id": "EB-1",
+            "environment_kind": "CURRENT_RESEARCH_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-1"
+            ]
+          },
+          {
+            "gate_id": "EB-2",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-2"
+            ]
+          },
+          {
+            "gate_id": "EB-3",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-3"
+            ]
+          },
+          {
+            "gate_id": "EB-4",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-4"
+            ]
+          },
+          {
+            "gate_id": "EB-5",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-5"
+            ]
+          },
+          {
+            "gate_id": "EB-6",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-6"
+            ]
+          },
+          {
+            "gate_id": "EB-7",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-7"
+            ]
+          },
+          {
+            "gate_id": "EB-8",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-8"
+            ]
+          },
+          {
+            "gate_id": "GP-1",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-1"
+            ]
+          },
+          {
+            "gate_id": "GP-2",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-2"
+            ]
+          },
+          {
+            "gate_id": "GP-3",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-3"
+            ]
+          },
+          {
+            "gate_id": "GP-4",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-4"
+            ]
+          },
+          {
+            "gate_id": "GP-5",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-5"
+            ]
+          },
+          {
+            "gate_id": "GP-6",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-6"
+            ]
+          },
+          {
+            "gate_id": "GP-7",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-7"
+            ]
+          }
+        ],
+        "requirement_results": [
+          {
+            "id": "clone-integrity",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:clone-integrity"
+            ]
+          },
+          {
+            "id": "global-role-rules",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:global-role-rules"
+            ]
+          },
+          {
+            "id": "sanitized-inventory-actions",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:sanitized-inventory-actions"
+            ]
+          },
+          {
+            "id": "plus-identity",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:plus-identity"
+            ]
+          },
+          {
+            "id": "final-selection-approval",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:final-selection-approval"
+            ]
+          },
+          {
+            "id": "plus-GP1-7",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:plus-GP1-7"
+            ]
+          },
+          {
+            "id": "portability-EB1-8",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:portability-EB1-8"
+            ]
+          }
+        ],
+        "readiness_scope": "PAPER_AGENT_ENVIRONMENT",
+        "readiness_state": "READY_AGENT_ENVIRONMENT",
+        "blocked_by": [],
+        "authority": "NONE",
+        "implementation_locked": true
+      }
+    },
+    {
+      "case": "missing_gate_not_ready",
+      "profile": {
+        "schema_version": "0.1.0-planning",
+        "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+        "expected_plan": "ChatGPT_Plus_individual",
+        "observed_plan": "plus",
+        "surface": "SYNTHETIC_FIXTURE",
+        "os": "SYNTHETIC",
+        "captured_at": "2026-10-05T12:00:00Z",
+        "repo_commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "manifest_sha256": "2eb12aa6e28359b0a662e53dfc5a5388eed912879700660528809f6c7767dac2",
+        "instruction_chain": [
+          "AGENTS.md",
+          "agents/onboarding/AGENTS.md"
+        ],
+        "package_ids_verified": [
+          "onboarding"
+        ],
+        "inventory": [],
+        "known_limits": [
+          "SYNTHETIC_NOT_REAL_PLUS"
+        ],
+        "action_plan": [],
+        "selected_fallbacks": [],
+        "acceptance_tests": [
+          {
+            "gate_id": "EB-1",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-1"
+            ]
+          },
+          {
+            "gate_id": "EB-2",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-2"
+            ]
+          },
+          {
+            "gate_id": "EB-3",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-3"
+            ]
+          },
+          {
+            "gate_id": "EB-4",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-4"
+            ]
+          },
+          {
+            "gate_id": "EB-5",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-5"
+            ]
+          },
+          {
+            "gate_id": "EB-6",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-6"
+            ]
+          },
+          {
+            "gate_id": "EB-7",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-7"
+            ]
+          },
+          {
+            "gate_id": "EB-8",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-8"
+            ]
+          },
+          {
+            "gate_id": "GP-1",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-1"
+            ]
+          },
+          {
+            "gate_id": "GP-2",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-2"
+            ]
+          },
+          {
+            "gate_id": "GP-3",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-3"
+            ]
+          },
+          {
+            "gate_id": "GP-4",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-4"
+            ]
+          },
+          {
+            "gate_id": "GP-5",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-5"
+            ]
+          },
+          {
+            "gate_id": "GP-6",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-6"
+            ]
+          }
+        ],
+        "requirement_results": [
+          {
+            "id": "clone-integrity",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:clone-integrity"
+            ]
+          },
+          {
+            "id": "global-role-rules",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:global-role-rules"
+            ]
+          },
+          {
+            "id": "sanitized-inventory-actions",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:sanitized-inventory-actions"
+            ]
+          },
+          {
+            "id": "plus-identity",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:plus-identity"
+            ]
+          },
+          {
+            "id": "final-selection-approval",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:final-selection-approval"
+            ]
+          },
+          {
+            "id": "plus-GP1-7",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:plus-GP1-7"
+            ]
+          },
+          {
+            "id": "portability-EB1-8",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:portability-EB1-8"
+            ]
+          }
+        ],
+        "readiness_scope": "PAPER_AGENT_ENVIRONMENT",
+        "readiness_state": "READY_AGENT_ENVIRONMENT",
+        "blocked_by": [],
+        "authority": "NONE",
+        "implementation_locked": true
+      }
+    },
+    {
+      "case": "not_tested_gate_not_ready",
+      "profile": {
+        "schema_version": "0.1.0-planning",
+        "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+        "expected_plan": "ChatGPT_Plus_individual",
+        "observed_plan": "plus",
+        "surface": "SYNTHETIC_FIXTURE",
+        "os": "SYNTHETIC",
+        "captured_at": "2026-10-05T12:00:00Z",
+        "repo_commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "manifest_sha256": "2eb12aa6e28359b0a662e53dfc5a5388eed912879700660528809f6c7767dac2",
+        "instruction_chain": [
+          "AGENTS.md",
+          "agents/onboarding/AGENTS.md"
+        ],
+        "package_ids_verified": [
+          "onboarding"
+        ],
+        "inventory": [],
+        "known_limits": [
+          "SYNTHETIC_NOT_REAL_PLUS"
+        ],
+        "action_plan": [],
+        "selected_fallbacks": [],
+        "acceptance_tests": [
+          {
+            "gate_id": "EB-1",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "NOT_TESTED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-1"
+            ]
+          },
+          {
+            "gate_id": "EB-2",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-2"
+            ]
+          },
+          {
+            "gate_id": "EB-3",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-3"
+            ]
+          },
+          {
+            "gate_id": "EB-4",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-4"
+            ]
+          },
+          {
+            "gate_id": "EB-5",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-5"
+            ]
+          },
+          {
+            "gate_id": "EB-6",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-6"
+            ]
+          },
+          {
+            "gate_id": "EB-7",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-7"
+            ]
+          },
+          {
+            "gate_id": "EB-8",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-8"
+            ]
+          },
+          {
+            "gate_id": "GP-1",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-1"
+            ]
+          },
+          {
+            "gate_id": "GP-2",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-2"
+            ]
+          },
+          {
+            "gate_id": "GP-3",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-3"
+            ]
+          },
+          {
+            "gate_id": "GP-4",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-4"
+            ]
+          },
+          {
+            "gate_id": "GP-5",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-5"
+            ]
+          },
+          {
+            "gate_id": "GP-6",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-6"
+            ]
+          },
+          {
+            "gate_id": "GP-7",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-7"
+            ]
+          }
+        ],
+        "requirement_results": [
+          {
+            "id": "clone-integrity",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:clone-integrity"
+            ]
+          },
+          {
+            "id": "global-role-rules",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:global-role-rules"
+            ]
+          },
+          {
+            "id": "sanitized-inventory-actions",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:sanitized-inventory-actions"
+            ]
+          },
+          {
+            "id": "plus-identity",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:plus-identity"
+            ]
+          },
+          {
+            "id": "final-selection-approval",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:final-selection-approval"
+            ]
+          },
+          {
+            "id": "plus-GP1-7",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:plus-GP1-7"
+            ]
+          },
+          {
+            "id": "portability-EB1-8",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:portability-EB1-8"
+            ]
+          }
+        ],
+        "readiness_scope": "PAPER_AGENT_ENVIRONMENT",
+        "readiness_state": "READY_AGENT_ENVIRONMENT",
+        "blocked_by": [],
+        "authority": "NONE",
+        "implementation_locked": true
+      }
+    },
+    {
+      "case": "duplicate_gate_not_ready",
+      "profile": {
+        "schema_version": "0.1.0-planning",
+        "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+        "expected_plan": "ChatGPT_Plus_individual",
+        "observed_plan": "plus",
+        "surface": "SYNTHETIC_FIXTURE",
+        "os": "SYNTHETIC",
+        "captured_at": "2026-10-05T12:00:00Z",
+        "repo_commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "manifest_sha256": "2eb12aa6e28359b0a662e53dfc5a5388eed912879700660528809f6c7767dac2",
+        "instruction_chain": [
+          "AGENTS.md",
+          "agents/onboarding/AGENTS.md"
+        ],
+        "package_ids_verified": [
+          "onboarding"
+        ],
+        "inventory": [],
+        "known_limits": [
+          "SYNTHETIC_NOT_REAL_PLUS"
+        ],
+        "action_plan": [],
+        "selected_fallbacks": [],
+        "acceptance_tests": [
+          {
+            "gate_id": "EB-1",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-1"
+            ]
+          },
+          {
+            "gate_id": "EB-2",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-2"
+            ]
+          },
+          {
+            "gate_id": "EB-3",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-3"
+            ]
+          },
+          {
+            "gate_id": "EB-4",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-4"
+            ]
+          },
+          {
+            "gate_id": "EB-5",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-5"
+            ]
+          },
+          {
+            "gate_id": "EB-6",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-6"
+            ]
+          },
+          {
+            "gate_id": "EB-7",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-7"
+            ]
+          },
+          {
+            "gate_id": "EB-8",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-8"
+            ]
+          },
+          {
+            "gate_id": "GP-1",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-1"
+            ]
+          },
+          {
+            "gate_id": "GP-2",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-2"
+            ]
+          },
+          {
+            "gate_id": "GP-3",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-3"
+            ]
+          },
+          {
+            "gate_id": "GP-4",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-4"
+            ]
+          },
+          {
+            "gate_id": "GP-5",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-5"
+            ]
+          },
+          {
+            "gate_id": "GP-6",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-6"
+            ]
+          },
+          {
+            "gate_id": "GP-7",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-7"
+            ]
+          },
+          {
+            "gate_id": "EB-1",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-1"
+            ]
+          }
+        ],
+        "requirement_results": [
+          {
+            "id": "clone-integrity",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:clone-integrity"
+            ]
+          },
+          {
+            "id": "global-role-rules",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:global-role-rules"
+            ]
+          },
+          {
+            "id": "sanitized-inventory-actions",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:sanitized-inventory-actions"
+            ]
+          },
+          {
+            "id": "plus-identity",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:plus-identity"
+            ]
+          },
+          {
+            "id": "final-selection-approval",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:final-selection-approval"
+            ]
+          },
+          {
+            "id": "plus-GP1-7",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:plus-GP1-7"
+            ]
+          },
+          {
+            "id": "portability-EB1-8",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:portability-EB1-8"
+            ]
+          }
+        ],
+        "readiness_scope": "PAPER_AGENT_ENVIRONMENT",
+        "readiness_state": "READY_AGENT_ENVIRONMENT",
+        "blocked_by": [],
+        "authority": "NONE",
+        "implementation_locked": true
+      }
+    },
+    {
+      "case": "financial_authority_forbidden",
+      "profile": {
+        "schema_version": "0.1.0-planning",
+        "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+        "expected_plan": "ChatGPT_Plus_individual",
+        "observed_plan": "plus",
+        "surface": "SYNTHETIC_FIXTURE",
+        "os": "SYNTHETIC",
+        "captured_at": "2026-10-05T12:00:00Z",
+        "repo_commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "manifest_sha256": "2eb12aa6e28359b0a662e53dfc5a5388eed912879700660528809f6c7767dac2",
+        "instruction_chain": [
+          "AGENTS.md",
+          "agents/onboarding/AGENTS.md"
+        ],
+        "package_ids_verified": [
+          "onboarding"
+        ],
+        "inventory": [],
+        "known_limits": [
+          "SYNTHETIC_NOT_REAL_PLUS"
+        ],
+        "action_plan": [],
+        "selected_fallbacks": [],
+        "acceptance_tests": [
+          {
+            "gate_id": "EB-1",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-1"
+            ]
+          },
+          {
+            "gate_id": "EB-2",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-2"
+            ]
+          },
+          {
+            "gate_id": "EB-3",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-3"
+            ]
+          },
+          {
+            "gate_id": "EB-4",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-4"
+            ]
+          },
+          {
+            "gate_id": "EB-5",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-5"
+            ]
+          },
+          {
+            "gate_id": "EB-6",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-6"
+            ]
+          },
+          {
+            "gate_id": "EB-7",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-7"
+            ]
+          },
+          {
+            "gate_id": "EB-8",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-8"
+            ]
+          },
+          {
+            "gate_id": "GP-1",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-1"
+            ]
+          },
+          {
+            "gate_id": "GP-2",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-2"
+            ]
+          },
+          {
+            "gate_id": "GP-3",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-3"
+            ]
+          },
+          {
+            "gate_id": "GP-4",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-4"
+            ]
+          },
+          {
+            "gate_id": "GP-5",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-5"
+            ]
+          },
+          {
+            "gate_id": "GP-6",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-6"
+            ]
+          },
+          {
+            "gate_id": "GP-7",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-7"
+            ]
+          }
+        ],
+        "requirement_results": [
+          {
+            "id": "clone-integrity",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:clone-integrity"
+            ]
+          },
+          {
+            "id": "global-role-rules",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:global-role-rules"
+            ]
+          },
+          {
+            "id": "sanitized-inventory-actions",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:sanitized-inventory-actions"
+            ]
+          },
+          {
+            "id": "plus-identity",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:plus-identity"
+            ]
+          },
+          {
+            "id": "final-selection-approval",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:final-selection-approval"
+            ]
+          },
+          {
+            "id": "plus-GP1-7",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:plus-GP1-7"
+            ]
+          },
+          {
+            "id": "portability-EB1-8",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:portability-EB1-8"
+            ]
+          }
+        ],
+        "readiness_scope": "PAPER_AGENT_ENVIRONMENT",
+        "readiness_state": "READY_AGENT_ENVIRONMENT",
+        "blocked_by": [],
+        "authority": "EXECUTION",
+        "implementation_locked": true
+      }
+    },
+    {
+      "case": "cannot_unlock_implementation",
+      "profile": {
+        "schema_version": "0.1.0-planning",
+        "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+        "expected_plan": "ChatGPT_Plus_individual",
+        "observed_plan": "plus",
+        "surface": "SYNTHETIC_FIXTURE",
+        "os": "SYNTHETIC",
+        "captured_at": "2026-10-05T12:00:00Z",
+        "repo_commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "manifest_sha256": "2eb12aa6e28359b0a662e53dfc5a5388eed912879700660528809f6c7767dac2",
+        "instruction_chain": [
+          "AGENTS.md",
+          "agents/onboarding/AGENTS.md"
+        ],
+        "package_ids_verified": [
+          "onboarding"
+        ],
+        "inventory": [],
+        "known_limits": [
+          "SYNTHETIC_NOT_REAL_PLUS"
+        ],
+        "action_plan": [],
+        "selected_fallbacks": [],
+        "acceptance_tests": [
+          {
+            "gate_id": "EB-1",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-1"
+            ]
+          },
+          {
+            "gate_id": "EB-2",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-2"
+            ]
+          },
+          {
+            "gate_id": "EB-3",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-3"
+            ]
+          },
+          {
+            "gate_id": "EB-4",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-4"
+            ]
+          },
+          {
+            "gate_id": "EB-5",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-5"
+            ]
+          },
+          {
+            "gate_id": "EB-6",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-6"
+            ]
+          },
+          {
+            "gate_id": "EB-7",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-7"
+            ]
+          },
+          {
+            "gate_id": "EB-8",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-8"
+            ]
+          },
+          {
+            "gate_id": "GP-1",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-1"
+            ]
+          },
+          {
+            "gate_id": "GP-2",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-2"
+            ]
+          },
+          {
+            "gate_id": "GP-3",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-3"
+            ]
+          },
+          {
+            "gate_id": "GP-4",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-4"
+            ]
+          },
+          {
+            "gate_id": "GP-5",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-5"
+            ]
+          },
+          {
+            "gate_id": "GP-6",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-6"
+            ]
+          },
+          {
+            "gate_id": "GP-7",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-7"
+            ]
+          }
+        ],
+        "requirement_results": [
+          {
+            "id": "clone-integrity",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:clone-integrity"
+            ]
+          },
+          {
+            "id": "global-role-rules",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:global-role-rules"
+            ]
+          },
+          {
+            "id": "sanitized-inventory-actions",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:sanitized-inventory-actions"
+            ]
+          },
+          {
+            "id": "plus-identity",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:plus-identity"
+            ]
+          },
+          {
+            "id": "final-selection-approval",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:final-selection-approval"
+            ]
+          },
+          {
+            "id": "plus-GP1-7",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:plus-GP1-7"
+            ]
+          },
+          {
+            "id": "portability-EB1-8",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:portability-EB1-8"
+            ]
+          }
+        ],
+        "readiness_scope": "PAPER_AGENT_ENVIRONMENT",
+        "readiness_state": "READY_AGENT_ENVIRONMENT",
+        "blocked_by": [],
+        "authority": "NONE",
+        "implementation_locked": false
+      }
+    },
+    {
+      "case": "secret_field_schema_rejected",
+      "profile": {
+        "schema_version": "0.1.0-planning",
+        "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+        "expected_plan": "ChatGPT_Plus_individual",
+        "observed_plan": "plus",
+        "surface": "SYNTHETIC_FIXTURE",
+        "os": "SYNTHETIC",
+        "captured_at": "2026-10-05T12:00:00Z",
+        "repo_commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "manifest_sha256": "2eb12aa6e28359b0a662e53dfc5a5388eed912879700660528809f6c7767dac2",
+        "instruction_chain": [
+          "AGENTS.md",
+          "agents/onboarding/AGENTS.md"
+        ],
+        "package_ids_verified": [
+          "onboarding"
+        ],
+        "inventory": [],
+        "known_limits": [
+          "SYNTHETIC_NOT_REAL_PLUS"
+        ],
+        "action_plan": [],
+        "selected_fallbacks": [],
+        "acceptance_tests": [
+          {
+            "gate_id": "EB-1",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-1"
+            ]
+          },
+          {
+            "gate_id": "EB-2",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-2"
+            ]
+          },
+          {
+            "gate_id": "EB-3",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-3"
+            ]
+          },
+          {
+            "gate_id": "EB-4",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-4"
+            ]
+          },
+          {
+            "gate_id": "EB-5",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-5"
+            ]
+          },
+          {
+            "gate_id": "EB-6",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-6"
+            ]
+          },
+          {
+            "gate_id": "EB-7",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-7"
+            ]
+          },
+          {
+            "gate_id": "EB-8",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-8"
+            ]
+          },
+          {
+            "gate_id": "GP-1",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-1"
+            ]
+          },
+          {
+            "gate_id": "GP-2",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-2"
+            ]
+          },
+          {
+            "gate_id": "GP-3",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-3"
+            ]
+          },
+          {
+            "gate_id": "GP-4",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-4"
+            ]
+          },
+          {
+            "gate_id": "GP-5",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-5"
+            ]
+          },
+          {
+            "gate_id": "GP-6",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-6"
+            ]
+          },
+          {
+            "gate_id": "GP-7",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-7"
+            ]
+          }
+        ],
+        "requirement_results": [
+          {
+            "id": "clone-integrity",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:clone-integrity"
+            ]
+          },
+          {
+            "id": "global-role-rules",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:global-role-rules"
+            ]
+          },
+          {
+            "id": "sanitized-inventory-actions",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:sanitized-inventory-actions"
+            ]
+          },
+          {
+            "id": "plus-identity",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:plus-identity"
+            ]
+          },
+          {
+            "id": "final-selection-approval",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:final-selection-approval"
+            ]
+          },
+          {
+            "id": "plus-GP1-7",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:plus-GP1-7"
+            ]
+          },
+          {
+            "id": "portability-EB1-8",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:portability-EB1-8"
+            ]
+          }
+        ],
+        "readiness_scope": "PAPER_AGENT_ENVIRONMENT",
+        "readiness_state": "READY_AGENT_ENVIRONMENT",
+        "blocked_by": [],
+        "authority": "NONE",
+        "implementation_locked": true,
+        "api_key": "SYNTHETIC_FAKE_SECRET_NOT_REAL"
+      }
+    },
+    {
+      "case": "pending_login_not_ready",
+      "profile": {
+        "schema_version": "0.1.0-planning",
+        "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+        "expected_plan": "ChatGPT_Plus_individual",
+        "observed_plan": "plus",
+        "surface": "SYNTHETIC_FIXTURE",
+        "os": "SYNTHETIC",
+        "captured_at": "2026-10-05T12:00:00Z",
+        "repo_commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "manifest_sha256": "2eb12aa6e28359b0a662e53dfc5a5388eed912879700660528809f6c7767dac2",
+        "instruction_chain": [
+          "AGENTS.md",
+          "agents/onboarding/AGENTS.md"
+        ],
+        "package_ids_verified": [
+          "onboarding"
+        ],
+        "inventory": [],
+        "known_limits": [
+          "SYNTHETIC_NOT_REAL_PLUS"
+        ],
+        "action_plan": [
+          {
+            "id": "login",
+            "requirement_id": "plus-identity",
+            "classification": "USER_ACTION_REQUIRED",
+            "status": "PENDING",
+            "instruction": "Official UI login; no secrets to repo",
+            "requires_owner_approval": true,
+            "evidence_refs": []
+          }
+        ],
+        "selected_fallbacks": [],
+        "acceptance_tests": [
+          {
+            "gate_id": "EB-1",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-1"
+            ]
+          },
+          {
+            "gate_id": "EB-2",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-2"
+            ]
+          },
+          {
+            "gate_id": "EB-3",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-3"
+            ]
+          },
+          {
+            "gate_id": "EB-4",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-4"
+            ]
+          },
+          {
+            "gate_id": "EB-5",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-5"
+            ]
+          },
+          {
+            "gate_id": "EB-6",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-6"
+            ]
+          },
+          {
+            "gate_id": "EB-7",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-7"
+            ]
+          },
+          {
+            "gate_id": "EB-8",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:EB-8"
+            ]
+          },
+          {
+            "gate_id": "GP-1",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-1"
+            ]
+          },
+          {
+            "gate_id": "GP-2",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-2"
+            ]
+          },
+          {
+            "gate_id": "GP-3",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-3"
+            ]
+          },
+          {
+            "gate_id": "GP-4",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-4"
+            ]
+          },
+          {
+            "gate_id": "GP-5",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-5"
+            ]
+          },
+          {
+            "gate_id": "GP-6",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-6"
+            ]
+          },
+          {
+            "gate_id": "GP-7",
+            "environment_kind": "TARGET_PLUS_ENVIRONMENT",
+            "result": "PASSED",
+            "version": "synthetic-v1",
+            "evidence_refs": [
+              "SYNTHETIC:GP-7"
+            ]
+          }
+        ],
+        "requirement_results": [
+          {
+            "id": "clone-integrity",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:clone-integrity"
+            ]
+          },
+          {
+            "id": "global-role-rules",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:global-role-rules"
+            ]
+          },
+          {
+            "id": "sanitized-inventory-actions",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:sanitized-inventory-actions"
+            ]
+          },
+          {
+            "id": "plus-identity",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:plus-identity"
+            ]
+          },
+          {
+            "id": "final-selection-approval",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:final-selection-approval"
+            ]
+          },
+          {
+            "id": "plus-GP1-7",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:plus-GP1-7"
+            ]
+          },
+          {
+            "id": "portability-EB1-8",
+            "required": true,
+            "result": "PASSED",
+            "evidence_refs": [
+              "SYNTHETIC:portability-EB1-8"
+            ]
+          }
+        ],
+        "readiness_scope": "PAPER_AGENT_ENVIRONMENT",
+        "readiness_state": "READY_AGENT_ENVIRONMENT",
+        "blocked_by": [],
+        "authority": "NONE",
+        "implementation_locked": true
+      }
+    }
+  ]
+}

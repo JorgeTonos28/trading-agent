@@ -1,0 +1,102 @@
+{
+  "schema_version": "0.1.0-planning",
+  "status": "CANDIDATE_NOT_SELECTED",
+  "source_of_truth": "repository",
+  "implementation_locked": true,
+  "authority": "NONE",
+  "root_instruction": "AGENTS.md",
+  "entry_point": "ONBOARDING.md",
+  "profile_schema": "shared/environment_profile.schema.json",
+  "expected_profile": "shared/target_plus_profile.json",
+  "contracts": [
+    "planning/07_environment_bootstrap_contract_RC0.md",
+    "planning/07_agent_packaging_contract_RC0.md",
+    "planning/06_agent_evidence_contract_RC0.md",
+    "planning/06_shadow_portfolio_contract_RC0.md",
+    "planning/06_pedagogical_contract_RC0.md"
+  ],
+  "packages": [
+    "agents/onboarding/package.json",
+    "agents/plan-guardian/package.json",
+    "agents/quant-research/package.json",
+    "agents/market-research/package.json",
+    "agents/portfolio-manager-shadow/package.json",
+    "agents/pedagogical/package.json"
+  ],
+  "shared_skills": [
+    ".agents/skills/trading-os-bootstrap/SKILL.md"
+  ],
+  "required_gates": [
+    "EB-1",
+    "EB-2",
+    "EB-3",
+    "EB-4",
+    "EB-5",
+    "EB-6",
+    "EB-7",
+    "EB-8",
+    "GP-1",
+    "GP-2",
+    "GP-3",
+    "GP-4",
+    "GP-5",
+    "GP-6",
+    "GP-7"
+  ],
+  "requirements": [
+    {
+      "id": "clone-integrity",
+      "required_scopes": [
+        "PREPARATION_ONBOARDING",
+        "PAPER_AGENT_ENVIRONMENT"
+      ]
+    },
+    {
+      "id": "global-role-rules",
+      "required_scopes": [
+        "PREPARATION_ONBOARDING",
+        "PAPER_AGENT_ENVIRONMENT"
+      ]
+    },
+    {
+      "id": "sanitized-inventory-actions",
+      "required_scopes": [
+        "PREPARATION_ONBOARDING",
+        "PAPER_AGENT_ENVIRONMENT"
+      ]
+    },
+    {
+      "id": "plus-identity",
+      "required_scopes": [
+        "PAPER_AGENT_ENVIRONMENT"
+      ]
+    },
+    {
+      "id": "final-selection-approval",
+      "required_scopes": [
+        "PAPER_AGENT_ENVIRONMENT"
+      ]
+    },
+    {
+      "id": "plus-GP1-7",
+      "required_scopes": [
+        "PAPER_AGENT_ENVIRONMENT"
+      ]
+    },
+    {
+      "id": "portability-EB1-8",
+      "required_scopes": [
+        "PAPER_AGENT_ENVIRONMENT"
+      ]
+    }
+  ],
+  "external_prerequisites": [
+    "Git/repository_access",
+    "Codex_client",
+    "owner_official_native_login",
+    "tools_required_by_selected_route"
+  ],
+  "topology": "UNSELECTED_D024",
+  "configuration_mutations": "ONLY_CONCRETE_ALLOWED_CHANGES_WITH_DIFF_NO_SECRETS",
+  "automatic_installation": false
+}
