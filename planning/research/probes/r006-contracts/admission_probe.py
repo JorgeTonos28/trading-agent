@@ -16,6 +16,13 @@ def dt(value):
     return datetime.fromisoformat(value.replace('Z', '+00:00'))
 
 
+def known_reference(reference, sources):
+    if reference in sources:
+        return True
+    source_id, separator, field = reference.partition('.')
+    return bool(separator and source_id in sources and field in sources[source_id]['fields'])
+
+
 def admit(case, output):
     """Checks only fixed synthetic spine; prose truth/security need other gates."""
     fixture = FIXTURES[case]
@@ -87,7 +94,7 @@ def admit(case, output):
         available = Decimal(sources['S1']['fields']['cash']['value']) - Decimal(sources['S1']['fields']['reservation']['value'])
         if aggregate_buy > available:
             return 'REJECTED_LINEAGE'  # fixture contract only, not live financial authority
-    if case == 'research' and any(s not in sources for s in payload['evidence_ids']):
+    if case == 'research' and any(not known_reference(s, sources) for s in payload['evidence_ids']):
         return 'REJECTED_PIT'
     if case == 'quant' and payload['verdict'] != 'NOT_VALIDATED':
         return 'REJECTED_LINEAGE'
@@ -176,6 +183,11 @@ def main():
     negative('sizing_cause_invented', 'pedagogy', lambda o: o['payload'].update(sizing_motive='DOCUMENTED'), 'REJECTED_LINEAGE')
     negative('outcome_invented', 'pedagogy', lambda o: o['payload'].update(result_state='KNOWN'), 'REJECTED_LINEAGE')
     negative('read_failure_fabricated_fact', 'failure', lambda o: o['facts'].append(examples['research']['facts'][0]), 'REJECTED_PIT')
+    negative('known_source_unknown_field', 'research', lambda o: o['payload'].update(evidence_ids=['R1.future_growth']), 'REJECTED_PIT')
+    negative('unknown_qualified_source', 'research', lambda o: o['payload'].update(evidence_ids=['FUTURE.growth']), 'REJECTED_PIT')
+    qualified = copy.deepcopy(examples['research'])
+    qualified['payload']['evidence_ids'] = ['R1.growth']
+    tests.append({'case': 'qualified_known_field_reference', 'observed': admit('research', qualified), 'expected': 'ACCEPTED'})
     for name, values, expected in [
         ('on_time', (True, True, True, False), 'ACCEPTED_ON_TIME'),
         ('late_kept_not_on_time', (True, True, False, False), 'LATE_RETROSPECTIVE_ONLY'),
@@ -191,10 +203,10 @@ def main():
     tests.append({'case': 'deterministic_admission_replay', 'passed': replay_a == replay_b,
                   'observed': replay_b, 'expected': replay_a})
     (ROOT / 'examples.json').write_text(json.dumps(examples, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
-    report = {'probe': 'R006-CONTRACT-SPINE-01', 'synthetic': True, 'selected': False,
+    report = {'probe': 'R006-CONTRACT-SPINE-01', 'protocol_version': '2_typed_reference_semantics', 'synthetic': True, 'selected': False,
               'target_plus': 'NOT_TESTED', 'checks': tests, 'passed': sum(t['passed'] for t in tests),
               'total': len(tests), 'source_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest()}
-    (ROOT / 'result-local.json').write_text(json.dumps(report, indent=2) + '\n')
+    (ROOT / 'result-local-v2.json').write_text(json.dumps(report, indent=2) + '\n')
     print(json.dumps({'passed': report['passed'], 'total': report['total']}))
     if report['passed'] != report['total']:
         raise SystemExit(1)

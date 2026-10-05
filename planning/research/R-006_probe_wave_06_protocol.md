@@ -22,6 +22,8 @@ Checks preregistrados: JSON/schema por rol, metadatos coincidentes, authority NO
 
 ## Evidencia y límites
 
+**Enmienda de interpretación después de observar research (2026-10-05):** el prompt pide `R1.growth`; el checker v1 asumía evidence_ids=source ID puro y rechazó dos citas válidas. Guardar evaluación v1 y v2 separadas. V2 resuelve ID puro o source.field estrictamente existente; agrega positivos/negativos de campo calificado. No cambiar prompts, fixtures, turnos, source payload ni quitar los outputs fallidos. No presentar el 10/10 posterior si aparece como una comparación estrictamente preregistrada sin esta salvedad. Contrato de producción usa referencias tipadas.
+
 Guardar source/fixture/schema/Skill hashes, versión CLI/jsonschema, ambiente sanitizado (tipo/plan, no account IDs/email), latencias, uso reportado sin convertirlo a precio/cupo Plus, tools y outputs públicos sintéticos. Nunca stderr/raw auth/chain-of-thought. Timeout RPC/turn acotado, sin retry infinito; timeout real no intencionalmente inducido en modelo, estados probados offline.
 
 Este subconjunto no prueba plugins reales, MCP integrado, entitlement Plus, cuotas, recuperación de auth, aislamiento OS, cartera general/sizing, simulación de retorno, todos los order types ni Pedagogical DoD. Contratos de producción siguen abiertos donde dependen de Strategy V1/broker/infra. Resultado útil aun si una Skill falla: documentación de admission independiente y siguiente riesgo concreto.

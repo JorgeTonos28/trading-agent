@@ -2,6 +2,7 @@
 
 | Fecha | Cambio | Razón | Efecto arquitectónico |
 |---|---|---|---|
+| 2026-10-05 | Wave 06: 10 turnos Team con contratos por rol; admission v1 8/10 por cita calificada, v2 10/10 tras aclaración registrada; 36/36 y 39/39 negativos/positivos offline; discovery de Codex SDK C-029 | Verificar correcciones de rol/derivación/qty/causa; preservar fallo de evaluador y distinguir SDK nativo de Agents SDK API | Evidencia sintética, no seguridad real/performance ni Plus; no superioridad de Skill/selección. Probe SDK inicial falla por enum del harness antes de inferencia y se conserva |
 | 2026-10-05 | R-006 pasos 1–2: contratos RC0 por rol/evidencia, PM shadow y pedagogía completa; workload WL-L/R/S y matriz de aceptación; wave 06 preregistrada y 36 checks offline | Cerrar ambigüedades concretas de waves 04/05 y preparar criterios Plus sin acceso target | D-034/R-026 RESEARCHING; arquitectura/runtime/Skills siguen propuestas no seleccionadas; cifras de workload son parámetros experimentales, no política financiera |
 | 2026-10-05 | Añadida Autonomous Continuation Rule a AGENTS y mandato/perfil del Plan Architect | Instrucción del propietario: persistir y sincronizar hitos, continuar el siguiente trabajo autorizado y detenerse solo en endpoint real o necesidad humana explícita | Regla operativa; sin cambio de arquitectura/autoridad; paquete R-006 pasos 1–2 continúa autónomamente |
 | 2026-10-01 | Inicializados perfil, registros, diagnóstico, backlog y secuencia en `.project/` | Primera ejecución del Plan Architect | Ninguno; baseline v0.2 preservado |

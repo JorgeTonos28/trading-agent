@@ -46,6 +46,10 @@ DERIVED incluye `derivation_id`, fórmula/versión, input claim IDs, valores/uni
 
 Ejemplo **sintético, no política**: cash 10000 USD, reservas 400 USD -> disponible 9600 USD por `cash_minus_reservations@toy-1`; 4 shares × 100 USD/share -> 400 USD por `quantity_times_price@toy-1`. No demuestra buying power broker, sizing, límites o riesgo general. Fórmulas de riesgo/concurrencia reales siguen D-035/D-031 y selección de datos/broker.
 
+### Referencias sin ambigüedad
+
+En el contrato final, usar referencias tipadas `{source_id, revision, field_path}`; no una cadena que mezcle nombres de instrumentos, facts o documentos. En el spine desechable RC0 se admiten ID de fuente exacto (`R1`) o referencia `source.field` (`R1.growth`) **solo si ambos existen en el manifest**. No quitar sufijos silenciosamente ni aceptar un prefijo de fuente conocida con campo inventado. Wave 06 reveló que el primer checker asumía source ID puro aunque la tarea solicitaba `R1.growth`; su resultado v1 se conserva como limitación del evaluador, no invención del modelo.
+
 ## 5. Tres estados separados
 
 | Eje | Enum / semántica | Responsable |
