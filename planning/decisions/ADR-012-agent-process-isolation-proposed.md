@@ -35,3 +35,7 @@ Antes de cerrar D-027/D-024 deben probarse: inaccesibilidad de broker credential
 **Security isolation** y **experimental blinding de Shadow** son objetivos/gates separados. Shadow no recibe información contemporánea Champion fuera del snapshot pareado. Se especificarán criterios objetivos de insuficiencia S2 y reevaluación S3 antes de ejecutar acceptance.
 
 Autorizado: especificación y pruebas no administrativas/destructivas con fixtures sintéticas. **No autorizado todavía:** crear usuarios, modificar ACL/firewall/políticas/credenciales, mover secretos o configurar privilegios. Primero preparar propuesta concreta revisable; detenerse con `HUMAN_ACTION_REQUIRED` al necesitar ese cambio. No solicitar otra aprobación de la dirección S2. No cierre D-027/D-024, implementación, gasto ni cambios a A+, G1+G2 o ADR-006.
+
+## Contratos y siguiente acción administrativa concreta
+
+2026-10-05: [S2 RC1](../08_S2_isolation_spec_RC1.md), [acceptance SI/BL/RB y escalamiento](../research/R-013_S2_acceptance_matrix_RC1.md), [hallazgos](../research/R-013_S2_findings_2026-10-05.md) y [S2-ADM-01](../research/R-013_S2_administrative_gate_ADM01.md). Preflight read-only + siete observaciones sintéticas completados; S2_SECURITY/SHADOW_BLINDING siguen NOT_TESTED. Configuración firewall efectiva requiere store/policy competente; no asumir reglas locales aplicadas. La próxima aprobación es únicamente laboratorio temporal de tres cuentas estándar y ACL en árbol nuevo, no dirección S2, permisos PAPER finales ni modificación de firewall.

@@ -16,7 +16,8 @@
     "planning/06_pedagogical_contract_RC0.md",
     "planning/08_agent_security_contract_RC0.md",
     "planning/08_job_workflow_recovery_contract_RC0.md",
-    "planning/08_audit_versions_deployment_contract_RC0.md"
+    "planning/08_audit_versions_deployment_contract_RC0.md",
+    "planning/08_S2_isolation_spec_RC1.md"
   ],
   "packages": [
     "agents/onboarding/package.json",
@@ -91,6 +92,24 @@
       "required_scopes": [
         "PAPER_AGENT_ENVIRONMENT"
       ]
+    },
+    {
+      "id": "S2-security-effective",
+      "required_scopes": [
+        "PAPER_AGENT_ENVIRONMENT"
+      ]
+    },
+    {
+      "id": "S2-shadow-blinding",
+      "required_scopes": [
+        "PAPER_AGENT_ENVIRONMENT"
+      ]
+    },
+    {
+      "id": "S2-domain-bootstrap",
+      "required_scopes": [
+        "PAPER_AGENT_ENVIRONMENT"
+      ]
     }
   ],
   "external_prerequisites": [
@@ -120,6 +139,11 @@
   "isolation_gates": {
     "security": "NOT_VERIFIED",
     "shadow_blinding": "NOT_VERIFIED",
-    "fallback": "S3_REQUIRES_HUMAN_REEVALUATION"
-  }
+    "fallback": "S3_REQUIRES_HUMAN_REEVALUATION",
+    "reproducibility": "NOT_TESTED",
+    "administrative_gate": "PENDING_OWNER_APPROVAL"
+  },
+  "isolation_acceptance_matrix": "planning/research/R-013_S2_acceptance_matrix_RC1.md",
+  "isolation_administrative_gate": "planning/research/R-013_S2_administrative_gate_ADM01.md",
+  "isolation_review": "planning/research/R-013_S2_independent_review_2026-10-05.md"
 }

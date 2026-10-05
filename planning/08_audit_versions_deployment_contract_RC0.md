@@ -41,3 +41,9 @@ El epoch actual pertenece al **envelope del intento**, no al job_id lógico ni a
 ## 5. Economía por candidato externo
 
 PostgreSQL/Parquet/DuckDB/Redis/Temporal locales: PAPER_V1_VIABLE_FREE=CONDITIONAL al motor/instalación/licencia/recursos; PAPER_V1_COST=0 licencia esperada para opciones libres, tiempo/hardware por medir; LIVE_COST=UNKNOWN fijo/variable/mensual/escala. FREE_ALTERNATIVE=local/self-host según candidato. PAID_INCREMENTAL_VALUE=hipótesis de continuidad/managed operations/backups/seguridad; ECONOMIC_JUSTIFICATION_REQUIRED=YES antes de contratar. SQLite stdlib: gratuito para probe, no sustitución aprobada. Pin y verificar licencia del artefacto final (Redis depende de distribución/versión). No facturación/servicio cloud iniciado.
+
+## S2 — raw/output versus sealed evidence y audit de permisos
+
+Aplicar [S2 RC1](08_S2_isolation_spec_RC1.md): jobs solo export permitido y scratch/output propios; C recoge bytes a store sellado fuera de job, H realiza join posterior. Ningún writer del job puede modificar snapshot/receipt/digest anchor, backup core, configuration o package. Trusted SID/policy/version fingerprint de lanzamiento y cada negativo forman audit sanitizado; raw OS SID/SDDL local protegido. No claim de logging OS completo por handler log: SI-14 exige correlación de acceso rechazado con controles positivos y observer apropiado; habilitar SACL/audit/firewall logging necesita gate administrativo.
+
+Bootstrap/deploy liga SIDs de instancia nueva, config/policy y versión exacta sin copiar autenticación ni ACL con SID viejo silenciosamente. Reboot/restore revalida denies antes de iniciar/admitir jobs; permisos unknown bloquean, no fallback S1. Postseal mutation conserva original en receipt. Directories de canary ADM-01 son laboratorio, no layout productivo implementado ni nuevo store seleccionado.

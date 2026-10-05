@@ -83,3 +83,6 @@ Estados: cada Q muestra su prioridad; Q-030–Q-037 incluyen estado explícito. 
 - Q-042 avance: scheduler automático aprobado en ADR-011; cola/prioridad/concurrencia/plazos/cupo permanecen candidatos. Background largo puede bloquear shadow; workloads reales y retries con deadline original son gate, no 63 éxitos simulados.
 
 - Q-048 (P1, D-010/033, RESEARCHING): ¿qué evidencia histórica acredita public availability/delivery de SEC por canal cuando la fuente no da timestamp first-available? DatasetCard R-020 distingue acceptance/filing/change/receipt y propone comparación de fuentes/canal conservador; no adoptar delay supuesto como PIT exacto.
+
+- Q-049 (P1, D-027/D-024/D-037, READY_FOR_DECISION): autorizar laboratorio temporal S2-ADM-01 con `tos_probe_core/shadow/ped` estándar, ACL solo árbol nuevo `C:\ProgramData\TradingOS-S2-Probe\trial-01`, procesos/canaries y deshabilitar cuentas al terminar. Requiere aprobación administrativa explícita reservada por propietario; no firewall/login/Trading OS. [Propuesta](research/R-013_S2_administrative_gate_ADM01.md).
+- Q-050 (P1, D-027, RESEARCHING): ¿qué policy store/administrador y controles verificables aplican egress completo del SDK/children en este host con AllowLocalFirewallRules=False? Preflight y rule-source counts no establecen origen del setting. No cambiar merge/global defaults; gate red posterior concreto.

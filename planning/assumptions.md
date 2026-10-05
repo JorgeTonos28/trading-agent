@@ -61,3 +61,6 @@ El propietario declaró el 2026-10-01 que **nunca se ejecutaron ni consultaron r
 | A-035 | P1 | UNVERIFIED: prioridad y una cola no preemptiva bastan para demanda PAPER. | H3 virtual muestra fallos de deadline en burst/carga amplificada; no seleccionar concurrencia por promedio ni falsificar capacidad nativa. |
 
 | A-036 | P1 | UNVERIFIED: acceso gratuito a filings SEC permite reconstruir precisión PIT necesaria para una Strategy V1 aún no definida. | SEC documenta no timestamp first-available; DatasetCard R-020 exige canal/historia/método de disponibilidad y no confundir acceptance con receipt. No dataset descargado ni API probe. |
+
+| A-037 | P1 | PARTIAL/UNVERIFIED: controles red Windows pueden aplicarse por dominio completo sin cambiar políticas globales/empresariales. | ActiveStore reporta AllowLocalFirewallRules=False y outbound Allow; cmdlets disponibles no prueban enforcement. SI-09/10 y ADM-02 después de store competente. |
+| A-038 | P1 | UNVERIFIED: identidad por dominio más export por job mantiene separación de históricos/cache y capacidad suficiente. | SIDs iguales comparten permisos; S2 exige serialización/revocación o frontera job demostrada, SI-16/BL-06/TP-6 antes de freeze; ninguna concurrencia final aprobada. |

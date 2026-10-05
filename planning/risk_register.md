@@ -72,3 +72,9 @@ Todos los riesgos salvo K-018 siguen `OPEN`; una arquitectura aprobada aún requ
 | K-050 | P1 | Restore revive lease viejo o reacepta/recuenta output perdido por RPO | Media/Alta | Incarnation externo en envelope, job ID/manifest histórico intactos, fencing y RECOVERY_GAP/UNKNOWN; restauración real del motor final | Operations/Architecture |
 
 **K-027 evidencia adicional R-020:** la propia SEC indica que no hay timestamp first-available en sec.gov; API pública/acceptance no prueba availability de canal histórico. Fuente/canal conservador modelado explícito y comparación proveedor siguen gates, no elegir gratis por defecto. Ver DatasetCard SEC.
+
+## S2 — riesgos adicionales (OPEN)
+
+| K-051 | P1 | Allowlist red de comandos se confunde con egress del proceso completo; reglas locales ignoradas por policy merge o block/allow diseñado incorrectamente | Media/Alta | S2 SI-09/10, ActiveStore/source y acceso positivo/negativo real; no cambiar política global ni construir driver; ADM-02; UNKNOWN bloquea aceptación | Security/Operations |
+| K-052 | P1 | Permitted field/caché/history/same-SID job filtra decisión Champion pese a separación de roles | Media/Alta | BL-01/03/06 + SI-16: DAG/version/causal export antes de decisión, contexto constante, sesiones/stores separados, revocar vistas y terminar handles | Security/Quant |
+| K-053 | P1 | Logger controlado por job o LogBlocked=False deja intentos rechazados sin reconstrucción confiable | Media/Alta | SI-14 observer externo + eventos OS donde aplique, receipts protegidos; gate explícito de audit/SACL/red si necesario; no prometer logging existente | Security/Operations |

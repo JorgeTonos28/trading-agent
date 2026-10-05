@@ -67,3 +67,7 @@ Contratos/probes/review P1 documentados en dossier R-010_014. Endpoint siguiente
 ## Checkpoint vigente — aprobación S2 y próximo gate administrativo
 
 ADR-012 S2 dirección candidata aprobada. Ejecutar R-013 autónomo: contratos concretos por dominio, threat model, secretos, negative tests, blinding separado, acceptance/escalamiento y probes sintéticos no administrativos. Persistir/revisar/commit/push. Solo después presentar el cambio administrativo concreto necesario para probar identidades/ACL/IPC/egress efectivos. D-027/D-024 RESEARCHING; no esperar Plus, no repetir elección S2, no Trading OS. Continuar P1 independientes antes de detenerse; Strategy V1 permanece OPEN.
+
+## Endpoint vigente del paquete S2 — ADM-01
+
+Threat model/identity-FS-network-IPC-secrets, SI17/BL9/RB5 y escalamiento predefinidos; preflight readonly + 7 observaciones/counterexamples, revisión y persistencia. Ningún S2 PASS. Trabajo P1 independiente de configuración actualizado: launch/recovery, raw/sealed/audit/deploy y bootstrap. Siguiente prueba efectiva requiere cuentas/ACL reservadas a gobierno: Q-049 / [ADM-01](research/R-013_S2_administrative_gate_ADM01.md). Solicitar solo ese laboratorio, no repetir elección S2. ADM-02 red/IPC/audit y ADM-03 login Team requieren sus propuestas concretas posteriores. D-024/D-027 abiertos; Strategy V1/datos/motor mantienen secuencia propia, sin backtests/holdout/aprobación tácita.

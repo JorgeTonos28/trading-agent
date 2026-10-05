@@ -122,3 +122,7 @@ ADR-009 registra aprobación de cohorte candidata RC1, no selección final. Ante
 ## P1 posterior ADR-011 — reuse y fronteras
 
 [Paquete R-010–014](R-010_014_hardening_findings_2026-10-05.md): official SDK/CLI0.160 bundle default probado; wrapper no propio RPC. Seguridad candidata reutiliza controles Windows por dominio (S2), VM reserva; permisos no aprobados. Temporal baseline vs APScheduler/OS investigados como **workflow determinístico**, fuera del límite de frameworks IA; SQLite solo probe, no selección storage. No BUILD motor/audit framework antes de necesidad demostrada. D-024 abierto; R-006 método suficiente para dirección aprobada, capacidad/operación pendiente.
+
+## S2 approval y paquete de cierre P1
+
+ADR-012 dirección S2 aprobada. [S2 RC1](../08_S2_isolation_spec_RC1.md)/[SI-BL-RB](R-013_S2_acceptance_matrix_RC1.md) separan security/blinding/runtime reproducibility. Capability Discovery conserva dispositions ADR-011; native OS controls REUSE/WRAP, no sandbox propio. Preflight/7 observaciones son diseño, no effective acceptance. Próximo gobierno [ADM-01](R-013_S2_administrative_gate_ADM01.md) cuentas/ACL sintéticas; egress/IPC/auth pending, D-024 RESEARCHING; Plus PRE-LIVE.

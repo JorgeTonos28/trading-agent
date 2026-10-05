@@ -1,0 +1,17 @@
+{
+  "observed_at": "2026-10-05T20:04:27.2577851Z",
+  "query": "Get-NetFirewallRule -PolicyStore ActiveStore, source type counts only",
+  "source_counts": [
+    {
+      "source_type": "Local",
+      "rule_count": 590
+    },
+    {
+      "source_type": "GroupPolicy",
+      "rule_count": 22
+    }
+  ],
+  "profile_setting_origin": "UNKNOWN_NOT_DETERMINED_BY_RULE_SOURCE_COUNTS",
+  "rule_names_or_addresses_recorded": false,
+  "configuration_changes": []
+}

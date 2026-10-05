@@ -62,3 +62,7 @@ Recomendación C-017b: **ADAPT** thesis-tracker Apache-2.0 (commit 574ed362) com
 ## Vigencia de entrega posterior ADR-011 / hardening RC0
 
 Dirección core local + jobs Team automáticos aprobada; D-020 DECIDED en disposiciones de diseño, D-024 RESEARCHING. Textos anteriores de siguiente Plus/selección pendiente son historia de sus hitos. Plus solo PRE-LIVE ADR-010. [Workflow/recovery y mapping delivery-contract-v2](08_job_workflow_recovery_contract_RC0.md) separa workflow/attempt de enums de entrega originales, que se conservan para probes v1; no cambia content_status ni autoridad. Leases/identidades/epoch/namespace se validan fuera del modelo; no-output no es HOLD. Permisos finales y motor permanecen abiertos.
+
+## S2 — blinding distinto de seguridad
+
+[S2 RC1](08_S2_isolation_spec_RC1.md) y [BL-01–09](research/R-013_S2_acceptance_matrix_RC1.md) mantienen Shadow separado de Champion/pedagogía/join/cache/otros intentos. Contexto as-of común incluye holdings reales previos legítimos; decisión contemporánea excluida. DAG/visibility policy confiables y export invariante a decisión Champion; top-level field allowlist no evita contaminación dentro de una señal. Digest/pair-id del contexto predecisión, no hash de decisión secreta; seal en store externo antes de join. Fallo blinding invalida comparabilidad y se registra sin alterar posiciones/riesgo/denominadores. Probes NA son toy/counterexamples, no BL PASS. Cross-identity acceptance y engine/outcomes permanecen pendientes.

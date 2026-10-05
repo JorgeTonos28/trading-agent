@@ -65,3 +65,7 @@ C-024 **ADAPT** métodos de trazabilidad/explicación en Skill breve propia, com
 ## Vigencia de entrega posterior ADR-011 / hardening RC0
 
 Dirección core local + jobs Team automáticos aprobada; D-020 DECIDED en disposiciones de diseño, D-024 RESEARCHING. Textos anteriores de siguiente Plus/selección pendiente son historia de sus hitos. Plus solo PRE-LIVE ADR-010. [Workflow/recovery y mapping delivery-contract-v2](08_job_workflow_recovery_contract_RC0.md) separa workflow/attempt de enums de entrega originales, que se conservan para probes v1; no cambia content_status ni autoridad. Leases/identidades/epoch/namespace se validan fuera del modelo; no-output no es HOLD. Permisos finales y motor permanecen abiertos.
+
+## S2 — namespace pedagógico
+
+Pedagogía usa dominio P/trace posdecisión separado del S Shadow: ningún reporte contemporáneo, cache/session u output pedagógico se entrega al Shadow antes del seal/comparación. Contrato [S2 RC1](08_S2_isolation_spec_RC1.md), negativos SI-03/BL-02/06 y trazabilidad BL-03. Separación no cambia explicación factual desde B4/full DoD ni concede broker/control authority. Namespace/cuenta operacionales pendientes de gate y acceptance.

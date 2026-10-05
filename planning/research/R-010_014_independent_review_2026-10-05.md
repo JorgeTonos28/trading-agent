@@ -27,3 +27,7 @@ S2 configuration/identity/ACL/IPC/egress/canaries; motor/store y backup/migraci�
 Reviewer confirmó H3 v2 y workload reparados sin claim de retry/rate. Incarnation se propagó a dispatch/envelope/lease/tool receipts/admission, separado de fingerprint; no cambia job_id ni manifest histórico ni rechaza retroactivamente outputs admitidos.
 
 Addendum final recibido: reviewer inspeccionó código y resultados H6; 10/10 respaldan duplicate-ID rejection, una acción automática de schedule y persistencia de workflow/run, **longitud de history** y estado tras kill/restart, con cleanup. No compara todos los eventos del history, worker/Activities/retries, Codex integrado, aislamiento ni despliegue productivo. No hallazgo documental crítico adicional identificado; D-024/D-027 siguen abiertos. No ejecución independiente ni aprobación final.
+
+## Revisión posterior a dirección S2 aprobada
+
+La revisión read-only continúa en [R-013 S2](R-013_S2_independent_review_2026-10-05.md): persistencia propia del SID, env de probes, controles positivos y full-process egress. Reparaciones documentales/source activas verificadas; no S2 acceptance ni permisos finales concedidos.

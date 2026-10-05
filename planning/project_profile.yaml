@@ -207,7 +207,7 @@ capability_discovery:
   no_general_Skill_superiority_demonstrated: true
   autonomous_RC0_steps_1_and_2: COMPLETE_SPECIFICATION_AND_FOCUSED_SYNTHETIC_PROBES
   candidate_cohort_owner_approval: APPROVED_FOR_ACCEPTANCE_NOT_FINAL_SELECTION
-  next_package_action: S2_concrete_controls_non_admin_probes_then_administrative_gate
+  next_package_action: HUMAN_ACTION_REQUIRED_S2_ADM01_three_standard_canary_accounts_and_scoped_ACL
   independent_coverage_gaps: independent_agent_review_documented_empirical_security_and_integrated_financial_pedagogy_not_closed
   proposed_architecture_direction: deterministic_local_always_on_core_plus_automatic_event_schedule_Codex_Team_jobs_APPROVED_DIRECTION_NOT_FROZEN
   representative_workload: WL_R_40_base_plus_10_interactive_logical_jobs_up_to_13_reserve_service_requests_NOT_STRATEGY_CADENCE
@@ -335,3 +335,28 @@ paper_isolation_direction:
   administrative_setup_authorized: false
   D027: RESEARCHING
   D024: RESEARCHING
+
+s2_research_package:
+  specification: planning/08_S2_isolation_spec_RC1.md
+  acceptance_matrix: planning/research/R-013_S2_acceptance_matrix_RC1.md
+  findings: planning/research/R-013_S2_findings_2026-10-05.md
+  administrative_gate: planning/research/R-013_S2_administrative_gate_ADM01.md
+  stage: SPECIFIED_NON_ADMIN_PROBES_COMPLETE_ADMIN_APPROVAL_PENDING
+  security_tests_specified: 17
+  blinding_tests_specified: 9
+  reproducibility_tests_specified: 5
+  non_admin_expected_observations: 7
+  effective_S2_acceptance: NOT_TESTED
+  runtime_auth_by_domain: NOT_TESTED
+  current_token_elevated: false
+  observed_local_firewall_merge: false
+  observed_firewall_block_logging: false
+  effective_firewall_setting_origin: UNKNOWN
+  configuration_changes: []
+
+s2_independent_review:
+  artifact: planning/research/R-013_S2_independent_review_2026-10-05.md
+  reviewer: independent_hardening_review_read_only
+  contract_findings: ADDRESSED_ENFORCEMENT_PENDING
+  probe_environment_correction: ATTEMPT03_ALL_CHILD_ENV_ALLOWLISTED
+  actual_security_acceptance: NOT_TESTED

@@ -53,3 +53,7 @@ Hash portable de assets versionados = SHA256 de bytes del **Git blob en repo_com
 ## Dirección y permisos posteriores ADR-011
 
 Roles lógicos mantienen reuse aprobado de paquetes, no sesiones/procesos por rol congelados. Empaquetado declara contratos 08 y autoridad NONE de outputs. Dominios de visibilidad del proceso se deciden en D-027, no en AGENTS/package.json: shadow no lee store pedagógico/Champion y research/quant no leen holdout sin gate. Contract delivery-v2/epoch requiere consumers versionados; packages documentales no configuran ACL ni runtime.
+
+## S2 reproducible — vigencia posterior ADR-012
+
+[S2 RC1](08_S2_isolation_spec_RC1.md) declara dominios independientes de roles, paths mínimos y política versionada. Bootstrap identifica token/group/policy efectiva y bindings SID de esta instancia; no copia SIDs/auth del Team histórico. Exports/caches/sessions/workspaces separados preservan blinding Shadow. [SI/BL/RB](research/R-013_S2_acceptance_matrix_RC1.md) se registran como NOT_TESTED hasta acceso efectivo, no convertir preflight/smoke en READY. [ADM-01](research/R-013_S2_administrative_gate_ADM01.md) es USER_ACTION_REQUIRED pendiente de aprobación. No script auto-user/ACL/firewall, instalación/credencial/privilegio tácito ni número final de sesiones por carpeta. Source policy release/tag aprobado permanece.

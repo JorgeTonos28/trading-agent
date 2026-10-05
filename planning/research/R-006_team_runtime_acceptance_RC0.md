@@ -41,3 +41,7 @@ No cierre automático de D-020/D-024, ni implementación ni selección de Strate
 ## Paquete P1 posterior ADR-011
 
 Contratos 08 seguridad/workflow/audit: permisos materiales D-027 requieren gobierno y probe de viabilidad empírico bajo frontera elegida antes de freeze, no solo protocolo P2 pendiente. SDK/CLI publicados emparejados H4 aporta regresión focal, no capacidad sostenida. H1/H2 SQLite prueba semántica/desconexión/race toy; H3 simulado no aprueba TP6. D-025/026 exigen evidencia de motor escogido; RPO/restore y autenticación integrada P2. Review independiente documentada en R-010_014 dossier, no auditoría humana/aprobación final.
+
+## TP-4 y bootstrap — S2 posterior ADR-012
+
+S2 dirección aprobada; controles finales no. [Contrato concreto](../08_S2_isolation_spec_RC1.md), [SI/BL/RB](R-013_S2_acceptance_matrix_RC1.md), [hallazgos](R-013_S2_findings_2026-10-05.md). ADM-01 requiere owner para tres cuentas estándar/ACL canary; no Plus, no papel financiero implementado. TP-4 sigue PARTIAL/NOT_TESTED en enforcement; RB/TP-6 exige permisos/domain launch reales, no importar capacidad S1. Gate red considera AllowLocalFirewallRulesFalse; no decisión S3 por falta de aprobación. R-006 madura contratos de diseño, no fuerza D-024 cerrado.

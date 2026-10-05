@@ -11,5 +11,12 @@
   "implementation_locked": true,
   "native_api_billing_allowed": false,
   "required_approval_for_extra_spend": true,
-  "decision": "ADR-010_D-038"
+  "decision": "ADR-010_D-038",
+  "isolation_direction": "ADR012_S2_APPROVED_CANDIDATE_NOT_ACCEPTED",
+  "mandatory_isolation_acceptance": [
+    "S2_SECURITY",
+    "SHADOW_BLINDING",
+    "REPRODUCIBILITY"
+  ],
+  "administrative_setup_authorized": false
 }

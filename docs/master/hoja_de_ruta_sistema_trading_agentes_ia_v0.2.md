@@ -4810,3 +4810,7 @@ Contratos candidatos 08 seguridad/workflow/audit añaden triggers automáticos, 
 ### Enmienda trazable — 2026-10-05: dirección S2 aprobada (ADR-012)
 
 El propietario aprueba identidades/procesos Windows separados por dominio de confianza como dirección candidata PAPER. S3 VM dedicada conserva fallback formal a reevaluar si S2 falla; S1 solo investigación sin secretos. Security isolation y experimental blinding se especifican y prueban por separado. D-027/D-024 y controles efectivos siguen abiertos; creación de usuarios, ACL/firewall/políticas/credenciales requiere gate concreto. No implementación, gasto, autoridad financiera nueva ni modificación de baseline main. Detalle y alcance histórico/vigente en `planning/decisions/ADR-012-agent-process-isolation-proposed.md`.
+
+### Enmienda trazable — 2026-10-05: especificación S2 y gates efectivos
+
+`planning/08_S2_isolation_spec_RC1.md` y `planning/research/R-013_S2_acceptance_matrix_RC1.md` operacionalizan dirección aprobada ADR-012 como contratos de planificación: dominios, ACL, IPC, egress, secretos, aislamiento por job, snapshots/DAG, gates security/blinding/reproducibilidad y escalamiento S3. Preflight/7 observaciones esperadas no significan aceptación S2. Setup administrativo ADM-01 reservado al propietario; D-027/D-024 RESEARCHING, Definition of Ready no satisfecha. No implementación financiera, gasto ni promoción main/tag.

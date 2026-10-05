@@ -1,0 +1,113 @@
+{
+  "schema_version": "r013-preflight-v1",
+  "observed_at": "2026-10-05T19:55:28.4100825Z",
+  "environment": "CURRENT_RESEARCH_ENVIRONMENT_TEAM",
+  "configuration_changes": [],
+  "limitations": [
+    "Current developer identity only; not S2 acceptance",
+    "No credential paths/values inspected",
+    "No system policies modified"
+  ],
+  "token": {
+    "authenticated": true,
+    "elevated_admin_role": false,
+    "group_count": 16,
+    "own_account_name_recorded": false,
+    "own_sid_recorded": false
+  },
+  "os": {
+    "Caption": "Microsoft Windows 11 Enterprise",
+    "Version": "10.0.26300",
+    "OSArchitecture": "64 bits"
+  },
+  "commands": [
+    {
+      "name": "Get-LocalUser",
+      "available": true
+    },
+    {
+      "name": "New-LocalUser",
+      "available": true
+    },
+    {
+      "name": "Get-Acl",
+      "available": true
+    },
+    {
+      "name": "Set-Acl",
+      "available": true
+    },
+    {
+      "name": "Get-NetFirewallProfile",
+      "available": true
+    },
+    {
+      "name": "Get-NetFirewallRule",
+      "available": true
+    },
+    {
+      "name": "Get-NetFirewallSecurityFilter",
+      "available": true
+    },
+    {
+      "name": "New-NetFirewallRule",
+      "available": true
+    },
+    {
+      "name": "Get-WinEvent",
+      "available": true
+    },
+    {
+      "name": "Get-NetTCPConnection",
+      "available": true
+    }
+  ],
+  "firewall_services": [
+    {
+      "Name": "BFE",
+      "Status": 4
+    },
+    {
+      "Name": "MpsSvc",
+      "Status": 4
+    }
+  ],
+  "firewall_profiles": [
+    {
+      "Name": "Domain",
+      "Enabled": 1,
+      "DefaultInboundAction": 2,
+      "DefaultOutboundAction": 2,
+      "AllowLocalFirewallRules": 0,
+      "LogBlocked": 0,
+      "LogAllowed": 0
+    },
+    {
+      "Name": "Private",
+      "Enabled": 1,
+      "DefaultInboundAction": 2,
+      "DefaultOutboundAction": 2,
+      "AllowLocalFirewallRules": 0,
+      "LogBlocked": 0,
+      "LogAllowed": 0
+    },
+    {
+      "Name": "Public",
+      "Enabled": 1,
+      "DefaultInboundAction": 4,
+      "DefaultOutboundAction": 2,
+      "AllowLocalFirewallRules": 0,
+      "LogBlocked": 0,
+      "LogAllowed": 0
+    }
+  ],
+  "firewall_read_status": "OBSERVED_READ_ONLY",
+  "repo_acl": {
+    "inheritance_protected": false,
+    "ace_count": 5,
+    "inherited_ace_count": 5,
+    "full_control_ace_count": 2,
+    "actual_principals_recorded": false,
+    "security_acceptance": "NOT_TESTED"
+  }
+}
