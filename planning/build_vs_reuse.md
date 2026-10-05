@@ -34,3 +34,9 @@ La [wave 02 de R-006](research/R-006_probe_wave_02_2026-10-02.md) deja C-017 com
 ## Economía por fase y por capa
 
 [ADR-008](decisions/ADR-008-economic-policy-by-phase.md) exige calidad suficiente antes de preferir gratis: PAPER cero/bajo coste incremental, LIVE valor económico y economía unitaria. Estudiar un servicio pago está autorizado; gastar/contratar no. Las referencias Tier 2 anteriores son **disposiciones PAPER provisionales por presupuesto**, no `REJECT` permanente ni prohibición de evaluar LIVE. Skills/metodologías se adquieren gratis/incluidas/propias; modelos/datos/runtime/infraestructura se comparan aparte. Cada candidato usa los [seis campos y detalle de coste](economic_scorecard.md); una futura disposición puede diferir entre PAPER y LIVE con evidencia y aprobación.
+
+## Recomendaciones tras waves 04/05 — 2026-10-05
+
+[Shortlist RC0](research/R-006_shortlist_RC0.md): mínimo Codex `REUSE_AS_IS` como capacidad/benchmark; integración nativa app-server `WRAP` candidata; idea-generation y thesis-tracker `ADAPT`; procedimientos propios breves de Quant Review/pedagogía adaptan métodos/contratos tras discovery, sin motor ni subagentes seleccionados. MCP SDK oficial `WRAP` de lectura opcional, probado localmente; Data propietario `REFERENCE_ONLY` hoy, reuse dentro de entitlement verificable después. Assets Earnings/Audit/Calendar son reservas adaptables por necesidad. No comprar Skills/templates ni asumir premium access.
+
+Mínimo 10/10 y Skill 9/10 checks: no se demostró superioridad general. Skill aporta detalle metodológico/pedagógico; estructura/seguridad pertenecen también a harness y contratos. Role/schema/lineage requieren endurecimiento; no seleccionar bundles o construir componentes mayores por inercia. Todos `SELECTED=NO`; no cerrar D-020/D-024.

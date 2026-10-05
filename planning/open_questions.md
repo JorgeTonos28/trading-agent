@@ -54,5 +54,7 @@ Estados: cada Q muestra su prioridad; Q-030–Q-037 incluyen estado explícito. 
 - Q-038 (P1, D-034, `OPEN`): ¿Qué esquema, aislamiento técnico, protocolo de evaluación PIT y métricas preregistradas permiten comparar Champion con `ShadowPortfolioProposal` sin que el shadow influya en operaciones ni obtenga datos futuros?
 - Q-039 (P1, D-035, `OPEN`): ¿Cuáles son las fórmulas, unidades, redondeos, precedencia y casos de concurrencia verificables que concretan ADR-006 sin fijar aún los umbrales PAPER de D-031?
 
-- Q-040 (P0, D-020/024, `RESEARCHING`): ¿Qué valor incremental añaden las Skills frente a workflow mínimo en Team, y qué finalistas justifican aceptación Plus? No esperar acceso objetivo para estudiar conducta.
-- Q-041 (P1, D-024/025, `OPEN`): ¿Qué cadencia, persistencia y degradación requiere la alternativa de núcleo determinístico local siempre activo con Codex/Plus intermitente, preservando A+, G1+G2 y pedagogía completa?
+- Q-041 (P0, D-020/024, `RESEARCHING`): ¿Qué valor incremental añaden las Skills frente a workflow mínimo en Team, y qué finalistas justifican aceptación Plus? Wave 04/05 ejecutadas: shortlist RC0 disponible, sin superioridad general de Skill. Pendientes contratos/aceptación Plus y selección; no esperar acceso objetivo para investigación independiente.
+- Q-042 (P1, D-024/025, `OPEN`): ¿Qué cadencia, persistencia y degradación requiere la alternativa de núcleo determinístico local siempre activo con Codex/Plus intermitente, preservando A+, G1+G2 y pedagogía completa?
+
+- Q-043 (P1, D-034/029, `OPEN`): ¿Cómo discriminar desde rol confiable ResearchHypothesis/ShadowPortfolioProposal/explicación, canonizar enums y distinguir OBSERVED/DERIVED con unidades/fórmulas/inputs? Wave 04 generic schema admitió outputs ambiguos; wave 05 schema por rol rechazó tres. No repetir muestra para ocultar fallos.

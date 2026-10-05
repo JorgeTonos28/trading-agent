@@ -137,7 +137,7 @@ capability_discovery:
   CURRENT_RESEARCH_ENVIRONMENT:
     purpose: research_planning_and_entitlement_independent_behavioral_probes
     observed_plan_type: team
-    observed_on: 2026-10-01
+    observed_on: 2026-10-05
     entitlement_transfers_to_target: false
   TARGET_RUNTIME_ENVIRONMENT:
     subscription: ChatGPT_Plus_individual
@@ -163,6 +163,15 @@ capability_discovery:
   first_probe_wave: planning/research/R-006_probe_wave_01_2026-10-01.md
   second_probe_wave: planning/research/R-006_probe_wave_02_2026-10-02.md
   third_probe_wave: planning/research/R-006_probe_wave_03_2026-10-02.md
+  fourth_probe_wave: planning/research/R-006_probe_wave_04_2026-10-05.md
+  fifth_probe_wave: planning/research/R-006_probe_wave_05_2026-10-05.md
+  conditional_shortlist: planning/research/R-006_shortlist_RC0.md
+  discovery_maturity: SUFFICIENT_FOR_CONDITIONAL_SHORTLIST_NOT_SELECTION
+  behavioral_turns_valid_protocol: 20
+  behavioral_automated_complete_passes: 19
+  no_general_Skill_superiority_demonstrated: true
+  next_independent_work: trusted_role_evidence_contracts_and_representative_workload
+  final_selection_status: OPEN
   plus_runtime_gate: planning/research/R-006_plus_runtime_gate_RC0.md
   plus_runtime_gate_status: OPEN_finalists_only_reuse_Team_behavioral_evidence
   dimensions: [EXISTS, AVAILABLE_IN_RESEARCH_ENVIRONMENT, AVAILABLE_IN_TARGET_PLUS, TECHNICALLY_COMPATIBLE, ECONOMICALLY_REASONABLE, SELECTED]

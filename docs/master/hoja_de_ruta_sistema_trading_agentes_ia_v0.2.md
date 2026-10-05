@@ -25,6 +25,8 @@
 
 **Aclaración R-006 — 5 de octubre de 2026:** por instrucción del propietario, pruebas conductuales/comparativas Team y shortlist no esperan acceso a Plus. La aceptación Plus posterior comprueba solo acceso/activación/entitlement/cuotas/tools/auth/estado/recovery/suficiencia de finalistas, reutilizando evidencia Team. Disponibilidad Plus permanece UNKNOWN sin prueba específica. Núcleo local determinístico always-on + Codex/Plus intermitente es alternativa abierta; no se presupone LLM permanente para autonomía. D-020/D-024 siguen abiertos en su estado vigente; implementación bloqueada.
 
+**Evidencia R-006 — 5 de octubre de 2026:** [waves 04/05 y shortlist RC0](../../planning/research/R-006_shortlist_RC0.md) completan comparación conductual Team (20 turnos, calibración inválida preservada), SDK MCP mock, plugins/licencias/activos y prueba de schema por rol. Shortlist es condicional; no hay superioridad general demostrada de Skill ni selección. Plus Acceptance posterior solo finalistas, sin repetir toda la investigación. Tipos/linaje/snapshots/workload y revisión/seguridad/operación target siguen abiertos; D-020 RESEARCHING, D-024 OPEN y bloqueo de implementación intacto.
+
 ---
 
 ## 0. Resumen ejecutivo

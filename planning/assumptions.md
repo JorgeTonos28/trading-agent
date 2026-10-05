@@ -13,7 +13,7 @@ Las hipótesis siguientes **no** son decisiones aprobadas. Su posible falsedad t
 | A-007 | P1 | Históricos de ETFs 2005–2026 con timestamps, ajustes y derechos de uso son obtenibles dentro de presupuesto; muestras y cotización. | Cambia dataset/ventana/coste. |
 | A-008 | P1 | Un motor reutilizable puede representar estrategia, órdenes y stops con fidelidad suficiente; benchmark. | BUILD/ADAPT más costoso. |
 | A-009 | P0 | **SUPERSEDED por ADR-007:** que Agents SDK/Temporal y stack Python reduzcan complejidad no justifica su selección. Agents SDK/API son referencia Tier 2; Temporal pertenece a infraestructura R-011, no al comparativo agéntico R-006. | Evaluar rutas Codex/Skills y contenido Anthropic Tier 0/1 antes de D-024; el stack sigue abierto. |
-| A-010 | P0 | Skills/plantillas de terceros pueden usarse legal y técnicamente en Codex; auditoría de licencia/formatos/permisos y probe real de portabilidad. | REFERENCE_ONLY o REJECT; formato similar no basta. |
+| A-010 | P0 | Skills/plantillas de terceros pueden usarse legal y técnicamente en Codex; auditoría de licencia/formatos/permisos y probe real de portabilidad. | REFERENCE_ONLY o REJECT; formato similar no basta. Wave 04 probó activación de adaptaciones concretas en Team; no licencia/activación Plus de bundles propietarios. |
 | A-011 | P1 | Dos fuentes permiten detectar errores materiales sin discrepancias irreconciliables; cross-check. | Más controles o cambio proveedor. |
 | A-012 | P2 | Paper fills representan suficientemente la mecánica requerida para validar ejecución; shadow quotes y gap analysis. | Mayor fase shadow/limitaciones. |
 | A-013 | P2 | Los límites PAPER 25%/0.5%/2% y soft/hard son coherentes con volatilidad y gaps; stress. | Recalibración humana. |
@@ -29,12 +29,11 @@ Las hipótesis siguientes **no** son decisiones aprobadas. Su posible falsedad t
 | A-023 | P0 | **UNVERIFIED:** las capacidades de Codex observadas en `CURRENT_RESEARCH_ENVIRONMENT` Team estarán disponibles para PAPER V1 en `TARGET_RUNTIME_ENVIRONMENT` Plus individual, sin factura adicional ni límite operativo incompatible. Verificar entitlement y modo de ejecución específicos; no inferirlo de Team. | Investigar otra ruta Tier 0/1 o preparar alternativa paga con evidencia/coste por fase bajo ADR-008; aprobación antes de gastar. |
 | A-024 | P0 | **UNVERIFIED:** Sign in with ChatGPT plan usage y Codex app-server pueden operar la carga PAPER V1 dentro del cupo Plus y sus términos. La sesión sondeada informa `planType=team`; documentación/CLI no prueban entitlement Plus ni continuidad desatendida. | Buscar ruta Tier 0/1 o evaluar alternativa paga por fase; no gastar sin aprobación ADR-008. |
 | A-025 | P0 | **UNVERIFIED:** una ruta zero/low incremental cost puede cumplir los requisitos de calidad/fiabilidad PAPER V1. Probar capacidades, datos, límites y recovery; gratis no es evidencia de suficiencia. | Documentar brecha y opciones pagas revisables; no reducir silenciosamente gates ni comprar sin aprobación ADR-008. |
+| A-026 | P0 | **PARTIAL:** wave 04 muestra valor cualitativo de procedimiento/pedagogía y más contexto; mínimo 10/10 checks vs Skill 9/10. No se demostró superioridad general ni fiabilidad. | Shortlist condicional; canonizar outputs/linaje y conservar baseline. Ver research/R-006_probe_wave_04_2026-10-05.md. |
+| A-027 | P1 | **HYPOTHESIS:** el núcleo determinístico puede operar autónomamente con Codex intermitente. No equivale a continuidad probada ni runtime seleccionado. | Evaluar dependencias operativas, cadencia, estado/recovery y degradación en D-024/025; Plus Gate solo finalistas. |
 
 ## Hechos de baseline, no supuestos
 
 La hoja declara el bloqueo de implementación, el invariante financiero, primera operación PAPER y autoridad humana sobre promoción/riesgo/live. Son reglas del proyecto hasta cambio documentado y aprobado; no afirmaciones sobre rendimiento de mercado.
 
 El propietario declaró el 2026-10-01 que **nunca se ejecutaron ni consultaron resultados históricos de MATR_V1 o variantes cercanas**, para 2023–septiembre de 2026 ni para otro período. Esto es un hecho reportado sobre el proceso del proyecto, no evidencia de rendimiento ni garantía de que la futura comparación entre candidatos preserve un holdout.
-
-| A-025 | P0 | **HYPOTHESIS:** Skills añaden calidad/reusabilidad por encima del mismo contrato y workflow mínimo. | Comparación pareada Team con métricas predefinidas; no atribuir al Skill schema/sandbox del harness. |
-| A-026 | P1 | **HYPOTHESIS:** el núcleo determinístico puede operar autónomamente con Codex intermitente. No equivale a continuidad probada ni runtime seleccionado. | Evaluar dependencias operativas, cadencia, estado/recovery y degradación en D-024/025; Plus Gate solo finalistas. |

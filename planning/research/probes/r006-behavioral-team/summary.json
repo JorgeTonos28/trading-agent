@@ -1,0 +1,96 @@
+{
+  "probe": "R006-BEHAVIOR-TEAM-01",
+  "completed_valid_protocol_turns": 20,
+  "automated_full_pass_count": 19,
+  "model": "gpt-6.1-sol",
+  "effort": "medium",
+  "jsonschema_version": "4.26.0",
+  "target_Plus": "UNKNOWN",
+  "variants": {
+    "minimal": {
+      "turns": 10,
+      "full_check_pass": 10,
+      "latency_mean_seconds": 37.901,
+      "latency_min_seconds": 19.928,
+      "latency_max_seconds": 64.296,
+      "reported_total_tokens": 288191,
+      "reported_input_tokens": 281921,
+      "reported_output_tokens": 6270,
+      "unexpected_tool_requests": 0
+    },
+    "skill": {
+      "turns": 10,
+      "full_check_pass": 9,
+      "latency_mean_seconds": 42.451,
+      "latency_min_seconds": 27.716,
+      "latency_max_seconds": 57.76,
+      "reported_total_tokens": 306440,
+      "reported_input_tokens": 298235,
+      "reported_output_tokens": 8205,
+      "unexpected_tool_requests": 0
+    }
+  },
+  "cases": {
+    "research": {
+      "minimal": {
+        "pass": 2,
+        "turns": 2,
+        "mean_seconds": 35.31
+      },
+      "skill": {
+        "pass": 1,
+        "turns": 2,
+        "mean_seconds": 50.3
+      }
+    },
+    "quant": {
+      "minimal": {
+        "pass": 2,
+        "turns": 2,
+        "mean_seconds": 29.14
+      },
+      "skill": {
+        "pass": 2,
+        "turns": 2,
+        "mean_seconds": 35.3
+      }
+    },
+    "pedagogy": {
+      "minimal": {
+        "pass": 2,
+        "turns": 2,
+        "mean_seconds": 43.76
+      },
+      "skill": {
+        "pass": 2,
+        "turns": 2,
+        "mean_seconds": 39.37
+      }
+    },
+    "shadow": {
+      "minimal": {
+        "pass": 2,
+        "turns": 2,
+        "mean_seconds": 56.16
+      },
+      "skill": {
+        "pass": 2,
+        "turns": 2,
+        "mean_seconds": 54.18
+      }
+    },
+    "tool_failure": {
+      "minimal": {
+        "pass": 2,
+        "turns": 2,
+        "mean_seconds": 25.12
+      },
+      "skill": {
+        "pass": 2,
+        "turns": 2,
+        "mean_seconds": 33.11
+      }
+    }
+  },
+  "selected": false
+}

@@ -108,7 +108,7 @@ El modelo abstracto de identidad/estados se fija en D-013/ADR-003 y los clocks/r
 | Capacidad | Alternativas ya identificadas; ninguna seleccionada | Evaluación antes de construir |
 |---|---|---|
 | Flujos de investigación/pedagogía | OpenAI Skills/Plugins; plantillas/Skills Anthropic; procedimientos propios | `ADAPT/PORT/REFERENCE_ONLY` según licencia, formato y calidad; Skills no conceden permisos por sí mismas. [OpenAI Skills](https://developers.openai.com/plugins/concepts/skills) |
-| Agentes/orquestación | OpenAI Agents SDK, Codex, frameworks open source y llamadas directas | Evaluar handoffs, estado, tracing, permisos, coste y portabilidad. El SDK ejecuta loop y herramientas, pero nuestra app conserva deployment, storage y decisiones de aprobación. [Agents SDK](https://developers.openai.com/api/docs/guides/agents/sdk) |
+| Agentes/orquestación | Codex Tier 0/1, activos públicos Anthropic; SDK/API OpenAI facturada como referencia Tier 2 | Evaluar handoffs, estado, tracing, permisos, coste y portabilidad. El SDK ejecuta loop y herramientas, pero nuestra app conserva deployment, storage y decisiones de aprobación. [Agents SDK](https://developers.openai.com/api/docs/guides/agents/sdk) |
 | Acceso a datos/herramientas | APIs directas, MCP de proveedores y plugins | `WRAP` detrás de adaptadores de solo lectura cuando aplique; licencias, schemas, PIT, prompt injection y fiabilidad por herramienta. [Arquitectura de plugins](https://developers.openai.com/plugins/concepts/plugins) |
 | Backtest y market data | LEAN, NautilusTrader, vectorbt, proveedores market/alternative data | Probes de semántica de órdenes/PIT/costes; no construir motor por inercia |
 | Broker adapter y stops | APIs oficiales de candidatos, tipos de orden y streams | Scorecard R-007; no seleccionar Alpaca por el video |
@@ -131,3 +131,9 @@ ADR-008 añade ficha económica por fase ([scorecard](economic_scorecard.md)): P
 **Decisión registrada:** A+ fue aprobada explícitamente por el propietario. Evaluar coincidencias/divergencias con Champion determinístico, riesgo propuesto, rendimiento hipotético neto de costes, estabilidad, reproducibilidad, errores y utilidad incremental. Las métricas y ventanas se preregistrarán antes de mirar resultados; ninguna métrica promueve autoridad automáticamente. Esta aprobación no selecciona Strategy V1, broker, proveedor, umbrales de riesgo ni runtime.
 
 **Estado registrado:** D-015/D-016/D-019 están `DECIDED` en el alcance funcional A+; D-013/D-014/D-017/D-018 también están `DECIDED` en sus contratos abstractos. Riesgo cuantitativo, admisión PIT por dataset, formato/evals, broker y tecnología continúan en sus decisiones propias. `implementation_locked=true` durante preparación.
+
+## Evidencia de capacidad R-006 — 2026-10-05 (sin freeze tecnológico)
+
+[Waves 04/05 y shortlist](research/R-006_shortlist_RC0.md) comparan conducta Team de research/quant/shadow/pedagogía. Se mantienen A+, G1+G2 y todos los límites de este contrato. Tipos de salida por rol confiable, enums, semántica quantity, clocks/versiones y OBSERVED/DERIVED requieren especificación D-034/029. El probe de traza no satisface el contrato pedagógico completo; shadow sintético no prueba rendimiento/autoridad/operación de producción.
+
+Preservar alternativa local determinística always-on con Codex/Plus intermitente; no introducir LLM permanente en el camino financiero por defecto. Cadencia, recuperación y suficiencia target siguen abiertas; pedagogía y shadow continúan obligaciones PAPER. Ninguna Skill/plugin/MCP/runtime seleccionado; Plus Acceptance solo finalistas.
