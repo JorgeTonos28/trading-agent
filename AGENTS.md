@@ -244,6 +244,39 @@ Never commit secrets, API keys, tokens, broker credentials, `.env` contents, pri
 
 If a material change cannot be pushed successfully, explicitly report that the repository is not synchronized instead of presenting the change as fully completed.
 
+## Autonomous Continuation Rule
+
+During the Preparation Program, do not stop at informational checkpoints when the next valid work item is already defined and does not require human approval.
+
+After completing a research task, probe, document or sub-step:
+
+1. persist the results in the repository;
+2. commit and push material changes;
+3. identify the next highest-priority valid task from the approved preparation sequence;
+4. continue executing it autonomously.
+
+A progress summary alone is not a reason to end the task.
+
+Stop and request owner intervention only when:
+
+- an explicit human-governance decision is required;
+- spending or contracting requires approval;
+- credentials, access, account action or external input from the owner is required;
+- a material change to approved scope/invariants is proposed;
+- evidence produces alternatives whose selection materially changes architecture;
+- a genuine external blocker prevents further useful work;
+- or the planned autonomous work package has actually been completed.
+
+If work can continue in parallel without resolving the blocker, continue the independent work first.
+
+When stopping, state explicitly:
+
+`HUMAN_ACTION_REQUIRED`
+
+and describe the exact decision/input/blocker.
+
+Otherwise continue through the planned work package and only report completion after reaching its defined endpoint.
+
 ## Plan completion
 
 The Preparation Program ends only when the project's formal Definition of Ready is satisfied.

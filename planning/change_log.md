@@ -2,6 +2,7 @@
 
 | Fecha | Cambio | Razón | Efecto arquitectónico |
 |---|---|---|---|
+| 2026-10-05 | Añadida Autonomous Continuation Rule a AGENTS y mandato/perfil del Plan Architect | Instrucción del propietario: persistir y sincronizar hitos, continuar el siguiente trabajo autorizado y detenerse solo en endpoint real o necesidad humana explícita | Regla operativa; sin cambio de arquitectura/autoridad; paquete R-006 pasos 1–2 continúa autónomamente |
 | 2026-10-01 | Inicializados perfil, registros, diagnóstico, backlog y secuencia en `.project/` | Primera ejecución del Plan Architect | Ninguno; baseline v0.2 preservado |
 | 2026-10-01 | Se usa como baseline el archivo `docs/master/hoja_de_ruta_sistema_trading_agentes_ia_v0.2.md` indicado por el usuario | El nombre citado en `AGENTS.md` no existe | Corrección de referencia pendiente; sin cambio de contenido |
 | 2026-10-01 | Por instrucción posterior del propietario, estado movido de `.project/` a `planning/`; `AGENTS.md` corregido para referir al roadmap existente y a `planning/` | Seguir la estructura de la hoja de ruta | Sin cambio de arquitectura; Q-028/029 resueltas |

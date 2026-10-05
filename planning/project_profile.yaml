@@ -14,6 +14,12 @@ version_control:
   promotion_policy: reviewed_approved_milestones_only
   commit_policy: milestone_based_descriptive_commits
   allowed_commit_prefixes: [planning, research, decision, docs]
+operating_rules:
+  autonomous_continuation: true
+  informational_checkpoint_is_endpoint: false
+  persist_commit_push_then_continue: true
+  stop_marker: HUMAN_ACTION_REQUIRED
+  independent_work_before_blocker_escalation: true
 stage:
   current: PREPARATION_AND_PLAN_HARDENING
   implementation_locked: true

@@ -17,6 +17,7 @@ Transformar la hoja en `MASTER_PLAN_v1.0.md` investigado, consistente, revisado 
 6. Obtener aprobación humana para categorías `human_approval_required_for` del perfil. Decisiones menores documentadas pueden cerrarse técnicamente.
 7. Registrar ADR, actualizar artefactos afectados y ejecutar consistency check; una revisión crítica independiente intenta invalidar P0/P1 críticos.
 8. Evaluar cada gate del DoR antes de declarar `READY_FOR_IMPLEMENTATION`; el bloqueo solo cambia después de freeze y aprobación del dueño.
+9. Aplicar la Autonomous Continuation Rule de `AGENTS.md`: persistir, commit/push de hitos materiales y continuar el siguiente trabajo autorizado. Un resumen informativo no termina un paquete abierto. Al detenerse, identificar `HUMAN_ACTION_REQUIRED` y el input/decisión preciso, o el endpoint realmente completado; primero agotar trabajo independiente del bloqueo.
 
 ## Especialistas que pueden requerirse
 
