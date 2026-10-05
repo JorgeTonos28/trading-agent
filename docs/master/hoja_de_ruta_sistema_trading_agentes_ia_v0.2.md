@@ -1,5 +1,7 @@
 # Hoja de Ruta — Sistema Autónomo de Trading Cuantitativo con Agentes de IA
 
+**Madurez R-006 Team posterior — 5 octubre 2026:** [RC2](../../planning/research/R-006_shortlist_RC2_team.md) registra wave07 8/8 jobs acotados, SDK/bootstrap 14/14 y perfil PAPER PARTIAL. D-020 READY_FOR_DECISION; D-024 RESEARCHING, dirección propuesta [ADR-011](../../planning/decisions/ADR-011-paper-team-agentic-direction-proposed.md) requiere gobierno humano, sin selección/freeze final ni implementación. Plus P3 PRE-LIVE no bloquea PAPER. Seguridad/permisos/workflow/versiones/review P1 y integración/carga operacional P2 permanecen pendientes.
+
 **Decisión vigente de entornos — 5 octubre 2026, [ADR-010](../../planning/decisions/ADR-010-team-paper-and-prelive-plus-migration.md):** CURRENT_RESEARCH_ENVIRONMENT=Team y PAPER_RUNTIME_ENVIRONMENT=Team actual para preparación, implementación tras DoR, backtests y PAPER. FUTURE_LIVE_ENVIRONMENT=Plus individual candidato tras PAPER validado. Plus Acceptance queda P3 PRE-LIVE R-029/D-039 y NO bloquea R-006/D-020/D-024/implementación/backtest/PAPER. Notas previas sobre Plus como target PAPER son históricas y parcialmente SUPERSEDED; evidencia conservada. Bootstrap ADR-009/D-037 se verifica en Team; deployment futuro desde release/tag aprobado, plan-architect candidato y main baseline. No merge ni implementación ahora.
 
 **Versión:** 0.2 — Documento maestro de preparación, arquitectura y ejecución  

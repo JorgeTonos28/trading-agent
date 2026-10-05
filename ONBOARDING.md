@@ -39,3 +39,7 @@ Si Codex no demuestra cargar la cadena requerida, volver a la raíz y leer expl�
 ## Fuente de despliegue
 
 ADR-010: preparación y probes usan commits pinados de plan-architect. main conserva el baseline aprobado. El despliegue futuro usa release/tag versionado aprobado con manifest y gates; no crear ni promover release automáticamente. CURRENT_RESEARCH_ENVIRONMENT=Team; PAPER_RUNTIME_ENVIRONMENT=Team; FUTURE_LIVE_ENVIRONMENT=Plus individual candidato.
+
+## Evidencia de planificación disponible
+
+[Perfil PAPER Team RC0](planning/research/probes/r006-team-paper/environment-profile-PAPER-Team-RC0.json) describe el fresh clone c53a130 probado con SDK, no una release actual aprobada. Readiness PARTIAL; root/rol/Skill y target Team verificados, selección/seguridad/operación pendientes. No importar como aprobado un gate cuyo fingerprint haya cambiado.

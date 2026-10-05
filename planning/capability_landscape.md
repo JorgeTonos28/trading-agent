@@ -1,5 +1,7 @@
 # Capability Landscape — plantilla de investigación inicial
 
+**Estado vigente posterior — wave07:** [RC2 Team](research/R-006_shortlist_RC2_team.md) documenta madurez para decisión acotada: 8/8 jobs, SDK/bootstrap 14/14, evaluación 16/16; perfil PAPER PARTIAL. D-020 READY_FOR_DECISION, D-024 RESEARCHING; próximo gobierno ADR-011 dirección nativa, sin cierre final/freeze ni acceso Plus.
+
 ## Matriz vigente PAPER Team — ADR-010
 
 EXISTS=YES en todos los candidatos siguientes; SELECTED=NO. Los resultados específicos Team ahora son aplicables al target PAPER, sin convertirlos en seguridad/cuota sostenida probada. AVAILABLE_IN_FUTURE_PLUS=UNKNOWN para activación/runtime dependientes del plan; acceso a código público no equivale a runtime disponible.
@@ -7,7 +9,7 @@ EXISTS=YES en todos los candidatos siguientes; SELECTED=NO. Los resultados espec
 | Capacidad | AVAILABLE_IN_PAPER_TEAM | Compatibilidad / economía PAPER | Disposición recomendada / siguiente evidencia |
 |---|---|---|---|
 | C-010 Codex base | YES ruta CLI nativa probada | YES fixtures; consumo de cupo existente, continuidad UNKNOWN | REUSE_AS_IS; TP carga/recovery |
-| C-025a app-server / C-029 Python SDK | YES inferencia nativa/smoke; SDK tools/Skills focal pendiente | PARTIAL integración; código libre y login nativo, sin API billing | WRAP transporte oficial; no runtime propio por defecto |
+| C-025a app-server / C-029 Python SDK | YES inferencia/Skills/callbacks SDK low-level wave07; contexto restart, no durable recovery | YES integración sintética, PARTIAL producción; código libre y login nativo, sin API billing | WRAP transporte oficial; no runtime propio por defecto |
 | C-017a research idea | YES procedimiento probado | ADAPT método Apache-2.0; adquisición 0 | ADAPT / PORT metodología, outputs PIT |
 | C-017b shadow thesis | YES procedimiento probado | ADAPT método; aislamiento financiero real pendiente | ADAPT / PORT, shadow sin autoridad |
 | C-024 pedagogía / C-028 quant | YES procedimientos probados | Métodos propios 0; informes completos/integración pendientes | ADAPT; no garantía de superioridad sobre mínimo |

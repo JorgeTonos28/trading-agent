@@ -1,5 +1,7 @@
 # Risk Register — 2026-10-01
 
+**Estado vigente posterior — wave07:** [RC2 Team](research/R-006_shortlist_RC2_team.md) documenta madurez para decisión acotada: 8/8 jobs, SDK/bootstrap 14/14, evaluación 16/16; perfil PAPER PARTIAL. D-020 READY_FOR_DECISION, D-024 RESEARCHING; próximo gobierno ADR-011 dirección nativa, sin cierre final/freeze ni acceso Plus.
+
 **Vigencia actual — ADR-010, 2026-10-05:** CURRENT_RESEARCH_ENVIRONMENT=Team; PAPER_RUNTIME_ENVIRONMENT=Team actual; FUTURE_LIVE_ENVIRONMENT=Plus individual candidato. Las cláusulas anteriores que exigían Plus para PAPER/D-020/D-024 quedan parcialmente SUPERSEDED. La evidencia original se conserva; Plus es gate P3 PRE-LIVE (R-029/D-039), sin dependencia para PAPER. Aceptación activa: [Team TP1–7](research/R-006_team_runtime_acceptance_RC0.md). No selección final ni implementación autorizada.
 
 **Lectura:** registros/tablas actuales y esta adenda gobiernan; notas fechadas de hitos previos se conservan como historia, incluidos sus antiguos siguientes pasos Plus.
@@ -55,6 +57,7 @@ Escala inicial cualitativa: `Alta/Media/Baja`; se calibrará después. Dueño in
 
 | K-045 | P1 | Paquete aislado pierde reglas raíz, overrides/truncación cambian autoridad o se asume que AGENTS aplica permisos técnicos | Media/Alta | R-028 prueba root/cwd/override/discovery; manifiesto de reglas y contrato global explícito; aislamiento técnico D-027 independiente | Architecture/Security |
 | K-046 | P1 | Bootstrap hereda readiness Team, copia secretos/settings personales o oculta dependencias/manual actions, haciendo irreproducible el target | Media/Alta | ADR-009; perfiles separados, outputs sanitizados, UNKNOWN bloquea requisito obligatorio, drift/recovery y fresh-clone probes, nunca auth/secrets Git | Operations/Plan Architect |
+| K-047 | P1 | SDK default auto-accept de command/file requests amplía autoridad si se reutiliza sin handler explícito | Alta/Alta | Código pinado/probe offline wave07; fail-closed explícito y denegación válida de cada método, permisos D-027/034 y upgrade regression. No promesa por prompt. | Security/Architecture |
 
 Todos los riesgos salvo K-018 siguen `OPEN`; una arquitectura aprobada aún requiere datos, parámetros y pruebas para mitigar riesgo operativo.
 

@@ -1,0 +1,272 @@
+{
+  "schema_version": "0.2.0-planning",
+  "environment_kind": "PAPER_RUNTIME_ENVIRONMENT",
+  "expected_plan": "Team",
+  "observed_plan": "team",
+  "surface": "Codex_native_CLI_app_server_via_Python_SDK",
+  "os": "Windows",
+  "captured_at": "2026-10-05T18:39:27.169317+00:00",
+  "repo_commit": "c53a1305084d6bcf8fccea8e028d54f50e25e8a7",
+  "manifest_sha256": "5e389d70bfb5f80c9f2c38b25c1ea6b095e46a1fd16dd5f97a3a2552ebf1b20d",
+  "instruction_chain": [
+    "AGENTS.md",
+    "agents/onboarding/AGENTS.md"
+  ],
+  "package_ids_verified": [
+    "market-research",
+    "onboarding",
+    "pedagogical",
+    "plan-guardian",
+    "portfolio-manager-shadow",
+    "quant-research"
+  ],
+  "inventory": [
+    {
+      "id": "native_Codex_CLI",
+      "kind": "RUNTIME",
+      "detected": "YES",
+      "enabled": "YES",
+      "callable": "YES",
+      "version": "codex-cli 0.159.0-alpha.12.1",
+      "evidence_refs": [
+        "planning/research/probes/r006-team-paper/result-attempt-02.json",
+        "planning/research/probes/r006-team-paper/result-bootstrap-SDK-completion-02.json"
+      ]
+    },
+    {
+      "id": "official_Python_SDK_external_temporary_dependencies",
+      "kind": "DEPENDENCY",
+      "detected": "YES",
+      "enabled": "YES",
+      "callable": "YES",
+      "version": "0.160.0",
+      "evidence_refs": [
+        "planning/research/probes/r006-team-paper/result-attempt-02.json",
+        "planning/research/probes/r006-team-paper/result-bootstrap-SDK-completion-02.json"
+      ]
+    },
+    {
+      "id": "trading-os-bootstrap",
+      "kind": "SKILL",
+      "detected": "YES",
+      "enabled": "YES",
+      "callable": "YES",
+      "version": "repo_commit_c53a1305084d6bcf8fccea8e028d54f50e25e8a7",
+      "evidence_refs": [
+        "planning/research/probes/r006-team-paper/result-bootstrap-SDK-completion-02.json"
+      ]
+    },
+    {
+      "id": "optional_plugins_apps_inventory",
+      "kind": "PLUGIN",
+      "detected": "UNKNOWN",
+      "enabled": "UNKNOWN",
+      "callable": "UNKNOWN",
+      "version": "UNKNOWN_not_required_for_candidate_jobs",
+      "evidence_refs": [
+        "planning/research/probes/r006-team-paper/result-attempt-02.json",
+        "planning/research/probes/r006-team-paper/result-bootstrap-SDK-completion-02.json"
+      ]
+    },
+    {
+      "id": "optional_MCP_host_inventory",
+      "kind": "MCP",
+      "detected": "UNKNOWN",
+      "enabled": "UNKNOWN",
+      "callable": "UNKNOWN",
+      "version": "UNKNOWN_not_required_for_candidate_jobs",
+      "evidence_refs": [
+        "planning/research/probes/r006-team-paper/result-attempt-02.json",
+        "planning/research/probes/r006-team-paper/result-bootstrap-SDK-completion-02.json"
+      ]
+    }
+  ],
+  "known_limits": [
+    "8 bounded jobs; sustained WL-R/quota reset/auth lifecycle NOT_TESTED",
+    "shared Team use 30% before, 32% after; not attributable to jobs alone",
+    "external auth/SDK/local dependencies not supplied by Git clone",
+    "profile pins tested c53a130 assets; later changes require scoped drift review"
+  ],
+  "action_plan": [
+    {
+      "id": "architecture-governance",
+      "requirement_id": "final-selection-approval",
+      "classification": "USER_ACTION_REQUIRED",
+      "status": "PENDING",
+      "instruction": "Decide proposed ADR-011 PAPER native jobs direction; do not select or freeze by silence.",
+      "requires_owner_approval": true,
+      "evidence_refs": [
+        "planning/decisions/ADR-011-paper-team-agentic-direction-proposed.md"
+      ]
+    },
+    {
+      "id": "security-and-runtime-spec",
+      "requirement_id": "team-TP1-7",
+      "classification": "AUTOMATED",
+      "status": "PENDING",
+      "instruction": "After direction, complete P1 permissions/workflow/storage/version protocols; material security approval separately.",
+      "requires_owner_approval": true,
+      "evidence_refs": [
+        "planning/research/R-006_native_job_boundary_RC0.md"
+      ]
+    },
+    {
+      "id": "sustained-paper-operation",
+      "requirement_id": "team-TP1-7",
+      "classification": "AUTOMATED",
+      "status": "PENDING",
+      "instruction": "P2 after DoR/implementation: financial integration, sustained final workload, quota/auth/recovery and educational validation.",
+      "requires_owner_approval": false,
+      "evidence_refs": [
+        "planning/research/R-006_team_runtime_acceptance_RC0.md"
+      ]
+    },
+    {
+      "id": "manual-preparation-fallback",
+      "requirement_id": "portability-EB1-8",
+      "classification": "FALLBACK_AVAILABLE",
+      "status": "COMPLETED",
+      "instruction": "Explicit root/role/contract reading supports preparation; not selected as autonomous PAPER-equivalent.",
+      "requires_owner_approval": false,
+      "evidence_refs": [
+        "ONBOARDING.md"
+      ]
+    }
+  ],
+  "selected_fallbacks": [],
+  "acceptance_tests": [
+    {
+      "gate_id": "TP-1_native_identity",
+      "environment_kind": "PAPER_RUNTIME_ENVIRONMENT",
+      "result": "PASSED",
+      "version": "wave07_scoped",
+      "evidence_refs": [
+        "planning/research/probes/r006-team-paper/result-attempt-02.json",
+        "planning/research/probes/r006-team-paper/result-bootstrap-SDK-completion-02.json"
+      ]
+    },
+    {
+      "gate_id": "TP-2_3_synthetic_workflows",
+      "environment_kind": "PAPER_RUNTIME_ENVIRONMENT",
+      "result": "PASSED",
+      "version": "wave07_scoped",
+      "evidence_refs": [
+        "planning/research/probes/r006-team-paper/result-attempt-02.json",
+        "planning/research/probes/r006-team-paper/result-bootstrap-SDK-completion-02.json"
+      ]
+    },
+    {
+      "gate_id": "EB-1_2_5_clone_rules_metadata_smoke",
+      "environment_kind": "PAPER_RUNTIME_ENVIRONMENT",
+      "result": "PASSED",
+      "version": "SDK_completion02_scoped",
+      "evidence_refs": [
+        "planning/research/probes/r006-team-paper/result-bootstrap-SDK-completion-02.json"
+      ]
+    },
+    {
+      "gate_id": "TP-4_financial_OS_isolation",
+      "environment_kind": "PAPER_RUNTIME_ENVIRONMENT",
+      "result": "NOT_TESTED",
+      "version": "not_closed_by_synthetic_harness",
+      "evidence_refs": [
+        "planning/research/probes/r006-team-paper/result-attempt-02.json",
+        "planning/research/probes/r006-team-paper/result-bootstrap-SDK-completion-02.json"
+      ]
+    },
+    {
+      "gate_id": "TP-5_durable_recovery",
+      "environment_kind": "PAPER_RUNTIME_ENVIRONMENT",
+      "result": "NOT_TESTED",
+      "version": "context_restart_only",
+      "evidence_refs": [
+        "planning/research/probes/r006-team-paper/result-attempt-02.json",
+        "planning/research/probes/r006-team-paper/result-bootstrap-SDK-completion-02.json"
+      ]
+    },
+    {
+      "gate_id": "TP-6_sustained_operational_capacity",
+      "environment_kind": "PAPER_RUNTIME_ENVIRONMENT",
+      "result": "NOT_TESTED",
+      "version": "bounded_feasibility_only",
+      "evidence_refs": [
+        "planning/research/probes/r006-team-paper/result-attempt-02.json",
+        "planning/research/probes/r006-team-paper/result-bootstrap-SDK-completion-02.json"
+      ]
+    }
+  ],
+  "requirement_results": [
+    {
+      "id": "clone-integrity",
+      "required": true,
+      "result": "PASSED",
+      "evidence_refs": [
+        "planning/research/probes/r006-team-paper/result-attempt-02.json",
+        "planning/research/probes/r006-team-paper/result-bootstrap-SDK-completion-02.json"
+      ]
+    },
+    {
+      "id": "global-role-rules",
+      "required": true,
+      "result": "PASSED",
+      "evidence_refs": [
+        "planning/research/probes/r006-team-paper/result-attempt-02.json",
+        "planning/research/probes/r006-team-paper/result-bootstrap-SDK-completion-02.json"
+      ]
+    },
+    {
+      "id": "sanitized-inventory-actions",
+      "required": true,
+      "result": "PASSED",
+      "evidence_refs": [
+        "planning/research/probes/r006-team-paper/result-attempt-02.json",
+        "planning/research/probes/r006-team-paper/result-bootstrap-SDK-completion-02.json"
+      ]
+    },
+    {
+      "id": "team-identity",
+      "required": true,
+      "result": "PASSED",
+      "evidence_refs": [
+        "planning/research/probes/r006-team-paper/result-attempt-02.json",
+        "planning/research/probes/r006-team-paper/result-bootstrap-SDK-completion-02.json"
+      ]
+    },
+    {
+      "id": "final-selection-approval",
+      "required": true,
+      "result": "NOT_TESTED",
+      "evidence_refs": [
+        "planning/research/probes/r006-team-paper/result-attempt-02.json",
+        "planning/research/probes/r006-team-paper/result-bootstrap-SDK-completion-02.json"
+      ]
+    },
+    {
+      "id": "team-TP1-7",
+      "required": true,
+      "result": "NOT_TESTED",
+      "evidence_refs": [
+        "planning/research/probes/r006-team-paper/result-attempt-02.json",
+        "planning/research/probes/r006-team-paper/result-bootstrap-SDK-completion-02.json"
+      ]
+    },
+    {
+      "id": "portability-EB1-8",
+      "required": true,
+      "result": "NOT_TESTED",
+      "evidence_refs": [
+        "planning/research/probes/r006-team-paper/result-attempt-02.json",
+        "planning/research/probes/r006-team-paper/result-bootstrap-SDK-completion-02.json"
+      ]
+    }
+  ],
+  "readiness_scope": "PAPER_AGENT_ENVIRONMENT",
+  "readiness_state": "PARTIAL",
+  "blocked_by": [
+    "final-selection-approval",
+    "team-TP1-7",
+    "portability-EB1-8"
+  ],
+  "authority": "NONE",
+  "implementation_locked": true
+}

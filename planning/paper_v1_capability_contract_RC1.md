@@ -145,3 +145,7 @@ Preservar alternativa local determinística always-on con Codex/Team intermitent
 ## Gate adicional de entorno — ADR-009
 
 Cohorte agéntica aprobada solo para aceptación. Bootstrap/Portability y paquetes reutilizables son requisito del dueño, D-037/R-028 P1 y gate D-024/DoR: clone completo, perfiles, acciones manuales/automáticas, verificación target y smoke. READINESS del entorno no autoriza PAPER ni modifica A+, G1+G2, riesgo conceptual o selección Strategy/broker. [Contrato](07_environment_bootstrap_contract_RC0.md).
+
+## Evidencia Team y gobierno vigente — wave07
+
+RC2/ADR-011 proponen núcleo local determinístico + jobs nativos Team. SDK low-level/Skills/tools/restart y fresh-clone probados en alcance sintético; perfil PARTIAL. D-020 READY_FOR_DECISION y D-024 RESEARCHING, selección/permisos/freeze pendientes. Core financiero no depende de LLM always-on; shadow/pedagogía siguen obligaciones completas. Plus solo P3 PRE-LIVE.

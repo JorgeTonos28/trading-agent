@@ -62,3 +62,7 @@ No hay dependencia circular necesaria si los **contratos funcionales** se define
 ## Actualización de portabilidad — ADR-009 / R-028
 
 D-037 P1 añade prerequisito reproducible de D-024/DoR: fresh environment + repo hasta entorno agéntico configurado/verificado. Diseño RC0 y evidence native/fresh clone disponibles; target Plus UNKNOWN y perfiles no heredados de Team. Discovery de raíz/cwd/Skill es reutilizable, no una ACL ni una sesión obligatoria por rol. Ruta/config/entitlement operacionales y final runtime/gobierno siguen abiertos. Esto no introduce dependencia circular con implementar Trading OS: acceptance de herramientas/roles utiliza assets y fixtures de preparación; integración trading/PAPER/DoD se verifica después en sus gates.
+
+## Estado vigente de Capability Discovery Team — wave07
+
+RC2/ADR-011 presentan arquitectura candidata material con reutilización nativa, Skills/metodologías públicas y paquetes repo. Evidencia SDK/Skills/tools/restart/carga acotada y bootstrap Team suficiente para decidir dirección, no para seguridad/operación/freeze. D-020 READY_FOR_DECISION/D-024 RESEARCHING; next input ADR-011, sin acceso Plus.

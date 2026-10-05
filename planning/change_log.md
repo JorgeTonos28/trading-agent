@@ -49,3 +49,7 @@
 ## 2026-10-05 — D-038 / ADR-010: supersession de target PAPER
 
 Propietario declara Team para preparación/implementación tras DoR/backtests/PAPER y Plus individual candidato PRE-LIVE. Plus Gate pasa a R-029/D-039 P3, no bloquea D-020/D-024/PAPER. Actualizados instrucciones, profile, manifest/schema v0.2 (v0.1 preservado), paquetes, contratos, registros y secuencia. Gate Team TP diferencia arquitectura/DoR/operación P2. Source policy release/tag aprobado; sin merge main, selección final ni implementación. Próximo paquete autónomo: gaps SDK/Skills/tools, recovery y carga acotada Team.
+
+## 2026-10-05 — R-006 wave07 y decisión arquitectónica propuesta
+
+8/8 jobs Team, 7 funcionales + 1 failure, SDK oficial low-level tools/Skills/outputs y contexto reiniciado; payloads >32 KiB. Handler default auto-accept identificado, denegación explícita exigida. Fresh clone SDK completion 14/14 y 16 checks consolidación, profile v0.2 PAPER PARTIAL. Fallos harness TypeError/KeyError y lectura instructionSources preservados, sin repetir toda investigación. D-020 READY_FOR_DECISION/D-024 RESEARCHING; RC2 y ADR-011 listos para gobierno de dirección PAPER. Sustained WL-R/seguridad/durable recovery/P2 pendientes. Ningún gasto, trading, selección final/freeze ni main/release modificados.

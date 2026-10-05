@@ -8,6 +8,7 @@ import json
 import os
 import shutil
 import subprocess
+import sys
 import tempfile
 import threading
 from datetime import datetime, timezone
@@ -27,7 +28,8 @@ SCHEMA={'type':'object','properties':{'primary_role':{'type':'string'},'logical_
                 'implementation_locked','authority','deployment_source'],'additionalProperties':False}
 
 def main():
-    output=HERE/'result-bootstrap-SDK-completion-01.json'
+    attempt=sys.argv[1] if len(sys.argv)>1 else '02'
+    output=HERE/f'result-bootstrap-SDK-completion-{attempt}.json'
     if output.exists():raise RuntimeError('Preserve original completion result')
     for k in list(os.environ):
         if k.upper().endswith(('API_KEY','ACCESS_TOKEN')):del os.environ[k]
@@ -57,7 +59,7 @@ def main():
                 'approvalPolicy':'never','sandbox':'read-only','allowProviderModelFallback':False})
             m=t.model_dump(by_alias=True,mode='json')
             sources=[Path(str(x)).relative_to(clone).as_posix() if Path(str(x)).is_relative_to(clone) else 'EXTERNAL_INSTRUCTION' for x in m.get('instructionSources',[])]
-            d['metadata'].append({'package_id':json.loads(package.read_text())['id'],'instruction_sources':sources,
+            d['metadata'].append({'package_id':json.loads(package.read_text())['package_id'],'instruction_sources':sources,
                 'bootstrap_skill_enabled':any(s.get('enabled') for s in skills),'model':m.get('model'),'provider':m.get('modelProvider')})
             if cwd.name=='onboarding':onboarding=t
         d['checks']['six_packages']=len(d['metadata'])==6

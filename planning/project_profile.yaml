@@ -188,8 +188,8 @@ capability_discovery:
   focused_regression_protocol: planning/research/R-006_probe_wave_06_protocol.md
   sixth_probe_wave: planning/research/R-006_probe_wave_06_2026-10-05.md
   native_codex_sdk_candidate: planning/research/R-006_codex_sdk_findings_2026-10-05.md
-  conditional_shortlist: planning/research/R-006_shortlist_RC1.md
-  discovery_maturity: COHORT_APPROVED_TEAM_EVIDENCE_APPLICABLE_FOCUSED_GAPS_AND_FINAL_SELECTION_PENDING
+  conditional_shortlist: planning/research/R-006_shortlist_RC2_team.md
+  discovery_maturity: MATURE_FOR_SCOPED_PAPER_ARCHITECTURE_DECISION_OPERATIONAL_GATES_OPEN
   baseline_behavioral_turns: 20
   baseline_behavioral_predefined_complete_passes: 19
   focused_behavioral_turns: 10
@@ -201,11 +201,19 @@ capability_discovery:
   no_general_Skill_superiority_demonstrated: true
   autonomous_RC0_steps_1_and_2: COMPLETE_SPECIFICATION_AND_FOCUSED_SYNTHETIC_PROBES
   candidate_cohort_owner_approval: APPROVED_FOR_ACCEPTANCE_NOT_FINAL_SELECTION
-  next_package_action: AUTONOMOUS_Team_SDK_tools_Skills_rehydration_bounded_workload_then_material_architecture_decision
+  next_package_action: HUMAN_ACTION_REQUIRED_ADR011_PAPER_native_jobs_direction
   independent_coverage_gaps: security_independent_review_full_financial_and_pedagogical_integration_not_closed
   proposed_architecture_direction: deterministic_local_always_on_core_plus_intermittent_Codex_jobs_NOT_APPROVED_OR_FROZEN
   representative_workload: WL_R_proposed_test_profile_40_base_jobs_63_with_reserve_NOT_STRATEGY_CADENCE
-  final_selection_status: OPEN
+  seventh_probe_wave: planning/research/R-006_probe_wave_07_2026-10-05.md
+  Team_bounded_jobs_passed: 8
+  SDK_bootstrap_completion_checks_passed: 14
+  Team_environment_profile: planning/research/probes/r006-team-paper/environment-profile-PAPER-Team-RC0.json
+  Team_context_rehydration: PROBED_NOT_DURABLE_RECOVERY
+  Team_sustained_workload_acceptance: NOT_EXECUTED
+  P1_final_runtime_capacity_evidence: PARTIAL_final_criteria_and_sufficiency_required_before_freeze
+  architecture_direction_proposal: planning/decisions/ADR-011-paper-team-agentic-direction-proposed.md
+  final_selection_status: READY_FOR_DECISION_NOT_APPROVED
   plus_runtime_gate: planning/research/R-006_plus_runtime_gate_RC0.md
   plus_runtime_gate_status: SUPERSEDED_FOR_PAPER_RECLASSIFIED_P3_R029
   team_runtime_gate: planning/research/R-006_team_runtime_acceptance_RC0.md
@@ -292,5 +300,6 @@ bootstrap_evidence:
   prelive_Plus_acceptance_executed: false
   observed_readiness: PARTIAL
   portable_hash_policy: SHA256_git_blob_at_pinned_commit
-  desktop_UI_and_SDK_folder_inheritance: NOT_TESTED_this_probe
+  desktop_UI_folder_inheritance: NOT_TESTED
+  SDK_folder_inheritance: VERIFIED_scoped_clone_c53a130_completion02
   failures_preserved: account_RPC_internal_TEMP_cleanup_WinError32_manifest_self_hash_KeyError

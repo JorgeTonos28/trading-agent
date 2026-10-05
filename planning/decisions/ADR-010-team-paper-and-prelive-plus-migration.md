@@ -18,6 +18,7 @@ El antiguo `TARGET_RUNTIME_ENVIRONMENT = Plus` y el alias `TARGET_PLUS_ENVIRONME
 
 - Plus Acceptance Gate queda **reclasificado P3 PRE-LIVE**: [R-029 Pre-Live Environment Migration & Acceptance](../research/R-029_pre_live_environment_migration_gate_RC0.md), D-039 DEFERRED. No bloquea R-006/D-020/D-024, implementación, backtest ni PAPER Team.
 - PAPER conserva aceptación **Team** de capacidades/runtime. [Gate Team](../research/R-006_team_runtime_acceptance_RC0.md) distingue evidence suficiente para decisión arquitectónica, DoR y acceptance operacional previa a PAPER. No eliminar requisitos por mover el target.
+- La distribución detallada P1/P2 de pruebas es una propuesta para especificar, no una dispensa de suficiencia/runtime aprobada por esta corrección. D-024 final necesita sus criterios/evidencia completos y gobierno; un probe acotado solo habilita presentar una dirección candidata.
 - ADR-009/D-037/R-028 siguen vigentes: fresh-clone bootstrap Team, paquetes, configuración/restauración desde repo y ausencia de dependencia del chat. Team→Plus se prueba posteriormente PRE-LIVE.
 - Estudios/probes/results previos se preservan. Documentos históricos se marcan explícitamente; los contratos/registros/perfiles operativos actuales se actualizan. No reinterpretar un fixture Plus sintético como prueba real.
 - Mantener el desarrollo bloqueado hasta DoR/freeze. Esta decisión no autoriza implementación anticipada, PAPER inmediato, LIVE, gasto, Strategy V1/broker/datos/umbral financiero ni selección final de runtime.

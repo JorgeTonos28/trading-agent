@@ -8,16 +8,16 @@
 2. **Definition of Ready P1:** arquitectura/contratos/tecnologías seleccionados y especificados, bootstrap Team reproducible, permisos/seguridad aprobados, protocolos de tests y operación con responsables. No exigir implementación financiera de producción para cerrar un plan: specs/probes de preparación y gates explícitos son evidencia adecuada donde proceda.
 3. **Acceptance operacional P2 antes de PAPER autónomo:** implementación ya construida contra plan congelado, integración durable/financiera real, workload de Strategy V1, observación de cuota/ventanas/continuidad, informes/curriculum y fallos. Los ensayos de varias sesiones/días no se simulan ni se dan por aprobados por un burst. Política numérica/gates financieros requieren su gobierno.
 
-No cambiar el significado de los gates históricos silenciosamente: ADR-010 elimina dependencia de Plus y esta matriz explicita etapas; la separación evita exigir PAPER completo antes de permitir construirlo. Si evidence detecta un gap material que invalida la arquitectura, vuelve a P0/P1.
+No cambiar el significado de los gates históricos silenciosamente: ADR-010 elimina dependencia de Plus, **no exime criterios de acceso, permisos, recovery, cuota o suficiencia**. Esta distribución por etapa es una propuesta de especificación que requiere validación en el cierre D-024; no una dispensa ya aprobada. Antes de freeze P1 se debe justificar con evidencia la viabilidad de la ruta y carga representativas seleccionadas; un protocolo pendiente o ocho fixtures no aseguran ese cierre. La operación financiera completa y su continuidad integrada se verifican P2, después de construirla. Si evidence detecta un gap material que invalida la arquitectura, vuelve a P0/P1.
 
 | Gate Team | Evidencia para arquitectura / pendiente inmediato | Gate operacional posterior |
 |---|---|---|
 | TP-1 identidad/acceso | Account/read sanitizado Team, cliente/modelo/ruta nativa. Waves 03–06/R-028 disponibles | Revalidar en instancia de despliegue seleccionada, no todos los Team equivalentes |
 | TP-2 discovery/activación | Cuatro procedimientos, Bootstrap Mode y paquetes; inventario vs cuerpo activado, versiones/pins | Verificar assets finales de release y tooling necesarios |
-| TP-3 outputs/tools | Schemas confiables, PIT/lineage, cuatro roles; SDK/raw tool gap focal pendiente | Fuentes/engine/report contracts completos en integración real |
+| TP-3 outputs/tools | Schemas confiables, PIT/lineage, cuatro roles; SDK low-level Skill/tool wave07 probado, raw reservado por gap | Fuentes/engine/report contracts completos en integración real |
 | TP-4 autoridad/permiso | Sin broker/secretos/órdenes; allowlist y admission fuera del modelo; revisión de gaps | Aislamiento técnico D-027/034, red team e integración, no garantía por prompt |
 | TP-5 contexto/recovery | Rehidratar job desde repo/snapshot después de reiniciar cliente, no depender de chat; intento/late/fail auditables | Durable workflow/storage/auth lifecycle D-025/026; revocación/login del dueño no se altera automáticamente |
-| TP-6 carga/viabilidad | Benchmark Team **acotado**, contextos representativos, latencia/throughput/accounting/cuota observables | WL-R final y varias sesiones/días según Strategy V1; reserva/cupo/reset y uso compartido, no inferir sostenibilidad desde tokens |
+| TP-6 carga/viabilidad | Benchmark Team **acotado** para decidir dirección; antes de cierre final P1, workload representativo/criterios seleccionados y evidencia de suficiencia exigible, actualmente PARTIAL | WL-R integrado y varias sesiones/días según Strategy V1; reserva/cupo/reset y uso compartido, no inferir sostenibilidad desde tokens |
 | TP-7 operación/economía | Ruta nativa local documentada, sin API billing, licencias/permisos; integración/versiones y límites explícitos | SLO/continuidad/alertas/backups/operación legítima de configuración final |
 
 ## Bootstrap y source policy
@@ -33,3 +33,7 @@ EB1–8 se evalúan contra Team para PAPER. EB7 ahora depende de TP1–7, no GP 
 - Commit/push hitos. Detenerse ante decisión **material** de arquitectura/autoridad/permisos que requiera dueño; no pedir acceso Plus.
 
 No cierre automático de D-020/D-024, ni implementación ni selección de Strategy/broker/datos/umbrales. Un problema en componente opcional no exige instalarlo ni pausa discovery.
+
+## Estado posterior — wave07
+
+8/8 jobs y SDK/bootstrap 14/14 verifican factibilidad acotada y fresh clone; 16 checks consolidan evidencia y recepción offline. TP3/5/6 focales cubiertos en ese scope; TP4 seguridad real, TP5 durable/auth y TP6 carga sostenida siguen pendientes por etapa. RC2/ADR-011 listos para decisión material; perfil PARTIAL, SELECTED=NO.

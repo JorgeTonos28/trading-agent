@@ -1,5 +1,7 @@
 # Assumptions Register — 2026-10-01
 
+**Estado vigente posterior — wave07:** [RC2 Team](research/R-006_shortlist_RC2_team.md) documenta madurez para decisión acotada: 8/8 jobs, SDK/bootstrap 14/14, evaluación 16/16; perfil PAPER PARTIAL. D-020 READY_FOR_DECISION, D-024 RESEARCHING; próximo gobierno ADR-011 dirección nativa, sin cierre final/freeze ni acceso Plus.
+
 **Vigencia actual — ADR-010, 2026-10-05:** CURRENT_RESEARCH_ENVIRONMENT=Team; PAPER_RUNTIME_ENVIRONMENT=Team actual; FUTURE_LIVE_ENVIRONMENT=Plus individual candidato. Las cláusulas anteriores que exigían Plus para PAPER/D-020/D-024 quedan parcialmente SUPERSEDED. La evidencia original se conserva; Plus es gate P3 PRE-LIVE (R-029/D-039), sin dependencia para PAPER. Aceptación activa: [Team TP1–7](research/R-006_team_runtime_acceptance_RC0.md). No selección final ni implementación autorizada.
 
 **Lectura:** registros/tablas actuales y esta adenda gobiernan; notas fechadas de hitos previos se conservan como historia, incluidos sus antiguos siguientes pasos Plus.
@@ -40,6 +42,7 @@ Las hipótesis siguientes **no** son decisiones aprobadas. Su posible falsedad t
 
 | A-030 | P1 | UNVERIFIED: abrir un paquete como cwd conserva automáticamente reglas raíz y Skills compartidas en todas las superficies/versiones. Documentación establece condiciones Git root/cwd/override y límite; R-028 lo prueba. | Verificar cadena/activación; entry point explicita raíz y contratos cuando discovery falla. No confundir instrucciones con ACL. |
 | A-031 | P1 | UNVERIFIED: un clone y los assets públicos bastan para reproducir el entorno, aunque auth, dependencias, plugins, MCP y cuotas son externos. | Manifest/perfil/deltas y gates separados; fresh clone Team no transfiere auth ni prueba continuidad; Plus PRE-LIVE por separado. |
+| A-032 | P1 | UNVERIFIED: el perfil acotado Team mantiene continuidad/cuota/auth y calidad en workload PAPER definitivo. Wave07 8/8 no prueba operación sostenida ni igualdad generativa. | P1 protocolo/política de versión; P2 carga/recovery/auth y regresión reales, sin gasto ni bajar obligaciones. |
 
 ## Hechos de baseline, no supuestos
 
