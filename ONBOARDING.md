@@ -57,3 +57,7 @@ Leer [S2 RC1](planning/08_S2_isolation_spec_RC1.md) y [matriz SI/BL/RB](planning
 ## Checkpoint vigente: variante antes de administración — 2026-10-06
 
 El propietario **no autoriza S2-ADM-01**. La sección anterior de próximo gate es histórica y queda sustituida: no crear sus tres usuarios ni cambiar ACL/firewall/perfiles. Leer [comparativa](planning/research/R-013_S2_variants_comparison_2026-10-06.md), [contrato S2-B RC2](planning/08_S2_agent_domain_contract_RC2.md) y [acceptance RC2](planning/research/R-013_S2_variant_acceptance_RC2.md). Recomendación B pendiente de decisión Q-051, no setup; roles/paquetes no fijan cuentas/sesiones. Repo incluye evidencia AccessCheck semántica, no entorno aislado verificado. Automatizar solo checks permitidos; readiness PARTIAL, financial authority NONE, implementación bloqueada. Nueva administración se propone concretamente después de elegir variante.
+
+## S2-B dirección aprobada — confirmación posterior 2026-10-06
+
+Q-051 está DECIDED en dirección, no pedirla nuevamente. Preparar laboratorio mínimo/reversión con [ADR-012](planning/decisions/ADR-012-agent-process-isolation-proposed.md). S2-B principal, A/S3 condicionadas; ninguna cuenta/ACL/firewall/credencial/config global autorizada. Setup requiere propuesta concreta antes de ejecutar; S2-ADM-01 no se reactiva. Readiness efectiva sigue pendiente.

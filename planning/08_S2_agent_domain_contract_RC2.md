@@ -1,6 +1,6 @@
 # S2 RC2 — Agent Domain y contención por job
 
-2026-10-06. **PROPOSED / READY_FOR_DECISION**, dirección S2-B recomendada, no permiso ni implementación. Sustituye como propuesta vigente el mapeo obligatorio rol→cuenta de [S2-A RC1](08_S2_isolation_spec_RC1.md). El objetivo S2 aprobado permanece: frontera financiera técnica. [Comparativa/evidencia](research/R-013_S2_variants_comparison_2026-10-06.md), [ADR-012](decisions/ADR-012-agent-process-isolation-proposed.md).
+2026-10-06. **APPROVED_CANDIDATE_DIRECTION / NOT_ACCEPTED**: propietario confirma S2-B después de la comparativa el 2026-10-06. No permiso administrativo ni implementación. Sustituye como propuesta vigente el mapeo obligatorio rol→cuenta de [S2-A RC1](08_S2_isolation_spec_RC1.md). El objetivo S2 aprobado permanece: frontera financiera técnica. [Comparativa/evidencia](research/R-013_S2_variants_comparison_2026-10-06.md), [ADR-012](decisions/ADR-012-agent-process-isolation-proposed.md).
 
 ## 1. Dominios, procesos y confianza
 
@@ -74,4 +74,4 @@ Bootstrap fresh clone reconstruye paquetes/contratos/perfiles y binding local si
 - Si B exige perfil/grants inseguros o no diferencia jobs de forma reproducible, comparar **mínima** separación adicional S2-A por dominio de confianza/visibilidad, no por cada rol automáticamente. Mostrar bypass y coste operativo concreto al propietario.
 - Si S2 no logra seguridad/IPC/egress/blinding/refresh/bootstrap verificables con controles permitidos, presentar S3; una VM común también debe pasar blinding. No migración ni downgrade silenciosos.
 
-Security, blinding y operación son gates independientes; ninguna puntuación media compensa acceso prohibido. D-027/D-024 RESEARCHING; A+, G1+G2 y ADR-006 intactos. Dirección revisada pendiente de gobierno humano; final topology/permissions/freeze no aprobados.
+Security, blinding y operación son gates independientes; ninguna puntuación media compensa acceso prohibido. D-027/D-024 RESEARCHING; A+, G1+G2 y ADR-006 intactos. Dirección revisada aprobada explícitamente; final topology/permissions/freeze y setup administrativo no aprobados.

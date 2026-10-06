@@ -207,7 +207,7 @@ capability_discovery:
   no_general_Skill_superiority_demonstrated: true
   autonomous_RC0_steps_1_and_2: COMPLETE_SPECIFICATION_AND_FOCUSED_SYNTHETIC_PROBES
   candidate_cohort_owner_approval: APPROVED_FOR_ACCEPTANCE_NOT_FINAL_SELECTION
-  next_package_action: HUMAN_ACTION_REQUIRED_Q051_revised_S2_B_candidate_direction_no_administrative_setup
+  next_package_action: PREPARE_MINIMAL_S2_B_LAB_WITH_EXPLICIT_ADMINISTRATIVE_GATE_AND_REVERSAL
   independent_coverage_gaps: independent_agent_review_documented_empirical_security_and_integrated_financial_pedagogy_not_closed
   proposed_architecture_direction: deterministic_local_always_on_core_plus_automatic_event_schedule_Codex_Team_jobs_APPROVED_DIRECTION_NOT_FROZEN
   representative_workload: WL_R_40_base_plus_10_interactive_logical_jobs_up_to_13_reserve_service_requests_NOT_STRATEGY_CADENCE
@@ -315,7 +315,7 @@ paper_agentic_hardening:
   workflow_contract: planning/08_job_workflow_recovery_contract_RC0.md
   audit_versions_deployment_contract: planning/08_audit_versions_deployment_contract_RC0.md
   dossier: planning/research/R-010_014_hardening_findings_2026-10-05.md
-  next_human_decision: Q051_S2_B_revised_direction_before_new_administrative_gate
+  next_human_decision: concrete_minimal_S2_B_laboratory_setup_and_reversal
   security_setup_executed: false
   paired_native_SDK_CLI_probe: 0.160.0_research_shadow_2_of_2_pass
   durable_semantic_probe: SQLite_disposable_20_checks_plus_11_lease_race_checks
@@ -326,7 +326,7 @@ paper_agentic_hardening:
 
 paper_isolation_direction:
   decision: ADR-012
-  status: APPROVED_S2_BOUNDARY_VARIANT_S2_B_PROPOSED_NOT_ACCEPTED
+  status: APPROVED_CANDIDATE_S2_B_NOT_ACCEPTED
   approved_by: project_owner
   fallback: S3_REEVALUATION_REQUIRES_HUMAN_DECISION
   S1: SECRET_FREE_RESEARCH_ONLY
@@ -343,7 +343,7 @@ s2_research_package:
   historical_acceptance_matrix: planning/research/R-013_S2_acceptance_matrix_RC1.md
   findings: planning/research/R-013_S2_findings_2026-10-05.md
   administrative_gate: planning/research/R-013_S2_administrative_gate_ADM01.md
-  stage: VARIANT_COMPARISON_COMPLETE_OWNER_DIRECTION_PENDING_ADM01_WITHHELD
+  stage: S2_B_DIRECTION_APPROVED_LAB_PREPARATION_ADMIN_NOT_AUTHORIZED
   security_tests_specified: 17
   blinding_tests_specified: 9
   reproducibility_tests_specified: 5
@@ -366,10 +366,10 @@ s2_independent_review:
 s2_variant_review:
   observed_on: 2026-10-06
   owner_administrative_decision: S2_ADM01_NOT_AUTHORIZED_DEFERRED
-  next_question: Q-051
+  next_question: concrete_S2_B_lab_admin_gate_after_closed_Q051
   comparison: planning/research/R-013_S2_variants_comparison_2026-10-06.md
   proposed_variant: S2_B_SINGLE_AGENT_RUNNER_EFFECTIVE_PER_JOB_CONTEXTS
-  candidate_direction_approval: PENDING_OWNER_DECISION
+  candidate_direction_approval: APPROVED_PROJECT_OWNER_2026_10_06
   account_per_role: NOT_ASSUMED
   S2_A: CONDITIONAL_ON_DEMONSTRATED_S2_B_LIMITATION
   S3: FORMAL_RESERVE_REQUIRES_HUMAN_REEVALUATION

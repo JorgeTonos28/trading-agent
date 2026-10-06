@@ -61,3 +61,7 @@ Roles lógicos mantienen reuse aprobado de paquetes, no sesiones/procesos por ro
 ## Bootstrap y packaging con S2-B propuesto — 2026-10-06
 
 [RC2](08_S2_agent_domain_contract_RC2.md) sustituye como propuesta activa la realización por cuentas RC1; [acceptance RC2](research/R-013_S2_variant_acceptance_RC2.md). Un paquete/rol no implica cuenta Windows, sesión o proyecto Codex independiente. Bootstrap registra usuario base y contexto efectivo por job, grants, auth mínimo, persistencia, IPC/red, policy/version y SI/BL/RB/VP observados; no importa auth/SID del chat previo. S2-ADM-01 es DEFERRED/NOT_AUTHORIZED por owner, no próxima instalación. Acción humana vigente Q-051 dirección revisada; futuro setup exige diff/gate concreto. Mantener UNKNOWN/NOT_TESTED y PARTIAL, no READY por probe semántico. PAPER Team/Plus PRE-LIVE y deployment source policy intactos.
+
+## Confirmación de dirección S2-B — 2026-10-06
+
+Propietario aprueba S2-B como candidata principal, Q-051 cerrado en dirección. Un Runner base con aislamiento efectivo por job; A/S3 reservas condicionadas. Assets y controles continúan candidatos, no permisos/runtime aceptados. Siguiente gate es laboratorio mínimo concreto y reversible; no administración autorizada. [ADR-012](decisions/ADR-012-agent-process-isolation-proposed.md).

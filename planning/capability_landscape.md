@@ -192,3 +192,7 @@ No amplían capa IA fuera OpenAI/Anthropic. Economics seis campos/coste/alternat
 | C-036 AppContainer Win32 unpackaged | YES Microsoft | DOCUMENTED_ONLY; ningún profile/process creado | UNKNOWN native Codex/auth/persistencia/IPC/red | UNKNOWN instalación/runtime destino | UNKNOWN; soporte Win32 genérico no acredita Codex | CONDITIONAL host/licencia/recursos/setup, sin compra | NO; REFERENCE_ONLY hasta probe autorizado |
 
 Economía C-035/036: PAPER_V1_VIABLE_FREE=CONDITIONAL; PAPER_V1_COST=sin facturación activada, licencia incremental esperada 0, ingeniería/recursos UNKNOWN; LIVE_COST=UNKNOWN con migración y operación; FREE_ALTERNATIVE=S2-A mínimo o mecanismo nativo equivalente condicionado; PAID_INCREMENTAL_VALUE=no servicio pago propuesto; ECONOMIC_JUSTIFICATION_REQUIRED=antes de gasto/material coste operativo. Entitlement Team/Plus separado de disponibilidad OS. Ningún gate efectivo pasa por AC.
+
+## Confirmación de dirección S2-B — 2026-10-06
+
+Propietario aprueba S2-B como candidata principal, Q-051 cerrado en dirección. Un Runner base con aislamiento efectivo por job; A/S3 reservas condicionadas. Assets y controles continúan candidatos, no permisos/runtime aceptados. Siguiente gate es laboratorio mínimo concreto y reversible; no administración autorizada. [ADR-012](decisions/ADR-012-agent-process-isolation-proposed.md).

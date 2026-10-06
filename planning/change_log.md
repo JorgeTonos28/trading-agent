@@ -88,3 +88,9 @@ Contrato concreto F/C/R/S/P/H, filesystem/network/IPC/secrets, snapshots mínimo
 - ADR-012 revisado, RC2 contrato/proyección acceptance, AGENTS, registers/profile, bootstrap/manifest/packaging, Shadow/Pedagogy, workflow/audit, roadmap/secuencia/R-006 sincronizados. RC1 y hallazgos históricos retenidos; próxima Q-051 dirección candidata B, no nueva solicitud ADM-01.
 - Revisión crítica independiente requerida y persistida en R-013_S2_independent_review_2026-10-06.md. D-027/D-024 RESEARCHING; D-020 disposiciones, A+, G1+G2, ADR-006, Strategy V1 OPEN e implementation lock intactos. No promoción main ni gasto.
 - Hallazgo owner por principal/derechos efectivos incorporado a RC2/VP03–04. Focal in-memory de 27 observaciones: base owner permite READ_CONTROL/WRITE_DAC, ambos tokens restringidos los deniegan en fixtures; no bypass ni supervisor real probado. Reviewer verificó fuente/hash/tabla y que 10 checks repetidos son regresión, sin sumar nueva evidencia independiente. `financial_canary` rotulada ungranted-object, sin positivo ni protección financiera acreditada.
+
+## 2026-10-06 — propietario confirma S2-B (material decision)
+
+- ADR-012/Q-051 DECIDED solo dirección candidata principal S2-B, Runner único/contextos efectivos por job. Historial de propuesta/RC1/ADM-01 preservado; A/S3 mantienen condiciones aprobadas.
+- AGENTS, contratos/matriz RC2, registers/profile/bootstrap manifests, packaging/onboarding/capabilities, roadmap y secuencia reflejan aprobación. Sin selección de mecanismo ni acceptance real.
+- Próximo trabajo autónomo: laboratorio mínimo concreto/reversión y preparación no administrativa. Todos users/ACL/firewall/credentials/config global siguen sin autorización; ADM-01 tres cuentas DEFERRED. D-027/D-024 RESEARCHING, implementation lock/main y autoridad financiera intactos.

@@ -134,14 +134,14 @@
   "security_direction_proposal": "planning/decisions/ADR-012-agent-process-isolation-proposed.md",
   "operational_permissions_approved": false,
   "security_direction_decision": "planning/decisions/ADR-012-agent-process-isolation-proposed.md",
-  "security_direction_status": "APPROVED_S2_BOUNDARY_VARIANT_S2_B_PROPOSED_NOT_ACCEPTED",
+  "security_direction_status": "APPROVED_CANDIDATE_S2_B_NOT_ACCEPTED",
   "administrative_setup_authorized": false,
   "isolation_gates": {
     "security": "NOT_VERIFIED",
     "shadow_blinding": "NOT_VERIFIED",
     "fallback": "S3_REQUIRES_HUMAN_REEVALUATION",
     "reproducibility": "NOT_TESTED",
-    "administrative_gate": "ADM01_OWNER_WITHHELD_DEFERRED_VARIANT_REVIEW"
+    "administrative_gate": "NOT_AUTHORIZED_S2_B_LAB_PREPARATION_ADM01_WITHHELD"
   },
   "isolation_acceptance_matrix": "planning/research/R-013_S2_variant_acceptance_RC2.md",
   "isolation_administrative_gate": "planning/research/R-013_S2_administrative_gate_ADM01.md",
@@ -150,13 +150,14 @@
     "planning/08_S2_isolation_spec_RC1.md",
     "planning/research/R-013_S2_acceptance_matrix_RC1.md"
   ],
-  "next_governance_item": "Q-051_S2_B_REVISED_CANDIDATE_DIRECTION_NO_SETUP",
+  "next_governance_item": "CONCRETE_MINIMAL_S2_B_LAB_SETUP_AND_REVERSAL",
   "isolation_variant": {
     "proposed": "S2_B",
     "selected": false,
     "account_per_role": "NOT_ASSUMED",
     "core_outside_runner": true,
     "effective_per_job_contexts_required": true,
-    "actual_acceptance": "NOT_TESTED"
+    "actual_acceptance": "NOT_TESTED",
+    "candidate_direction_approved": true
   }
 }

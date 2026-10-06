@@ -1,6 +1,16 @@
-# ADR-012 — aislamiento PAPER: dirección S2 aprobada, variante S2-B propuesta
+# ADR-012 — aislamiento PAPER: dirección candidata S2-B aprobada
 
-## Estado vigente — revisión solicitada 2026-10-06
+## Estado vigente — confirmación explícita del propietario, 2026-10-06
+
+**DECIDED: S2-B como dirección candidata principal de validación PAPER.** Una identidad base Agent Runner, con aislamiento efectivo por job; mantener la arquitectura simple preservando la frontera AI/Agent Domain → Trusted Financial Core. Security isolation y experimental blinding tienen contratos y evidencia separados.
+
+El propietario autoriza diseñar/preparar pruebas; conserva S2-A como alternativa si tests demuestran insuficiencia de aislamiento por job y S3 como reserva si S2 no cumple seguridad. No selección final de mecanismo/launcher ni suficiencia operacional; D-027/D-024 RESEARCHING. Role packages no prescriben cuentas/sesiones.
+
+**No cambios administrativos autorizados:** Windows users, ACL, firewall, credenciales o configuración global. S2-ADM-01 de tres cuentas permanece DEFERRED/NOT_AUTHORIZED, no reactivado. Antes de cualquier laboratorio que requiera esos cambios: presentar recursos/política/diff y reversión concretos y detenerse con HUMAN_ACTION_REQUIRED. No ampliar grants para lograr compatibilidad sin gate; no fallback S1 ni migración silenciosa.
+
+[Contrato RC2](../08_S2_agent_domain_contract_RC2.md), [acceptance por variante](../research/R-013_S2_variant_acceptance_RC2.md), [comparativa y límites de evidencia](../research/R-013_S2_variants_comparison_2026-10-06.md). La decisión Q-051 está cerrada solo en dirección; el siguiente trabajo es preparar laboratorio mínimo revisable y completar investigación no administrativa. No implementación, gasto, main, autoridad financiera, Strategy V1 o freeze autorizado.
+
+## Propuesta comparativa histórica — 2026-10-06, antes de confirmación
 
 **S2: DECIDED solo dirección de frontera financiera técnica. Variante S2-B: READY_FOR_DECISION / propuesta revisada. D-027/D-024 RESEARCHING.** El propietario **no autoriza S2-ADM-01**, reabre la granularidad rol→cuenta y prefiere un Agent Runner único si satisface los contratos. No interpretar esta preferencia condicional como aceptación técnica o permiso administrativo.
 

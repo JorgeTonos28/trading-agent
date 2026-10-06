@@ -1,6 +1,6 @@
 # Secuencia vigente de Preparation Program — ADR-010
 
-**Endpoint vigente 2026-10-06:** completar comparación S2-A/S2-B/S3 y presentar dirección candidata S2-B, Q-051. [Comparativa](research/R-013_S2_variants_comparison_2026-10-06.md), [RC2](08_S2_agent_domain_contract_RC2.md). S2-ADM-01 withheld/DEFERRED; no pedir ni ejecutar tres cuentas/ACL. La secuencia administrativa de 2026-10-05 siguiente es histórica y está suspendida. Después de dirección revisada, preparar laboratorio mínimo nuevo con gate propio. D-027/D-024 abiertos; no Plus ni implementación.
+**Endpoint vigente 2026-10-06, tras confirmación:** S2-B candidata principal aprobada; Q-051 DECIDED en dirección. Preparar laboratorio mínimo nuevo con gate/reversión concretos y checks no administrativos. [Comparativa](research/R-013_S2_variants_comparison_2026-10-06.md), [RC2](08_S2_agent_domain_contract_RC2.md). S2-ADM-01 withheld/DEFERRED; no pedir ni ejecutar tres cuentas/ACL. La secuencia administrativa de 2026-10-05 siguiente es histórica y está suspendida. D-027/D-024 abiertos; no Plus ni implementación.
 
 2026-10-05. Team actual para preparación, futura implementación tras DoR, backtests y PAPER. Plus individual es candidato PRE-LIVE R-029 P3; no espera de acceso Plus. Implementation lock vigente.
 
@@ -73,3 +73,7 @@ ADR-012 S2 dirección candidata aprobada. Ejecutar R-013 autónomo: contratos co
 ## Endpoint histórico del paquete S2 — ADM-01 (suspendido 2026-10-06)
 
 Threat model/identity-FS-network-IPC-secrets, SI17/BL9/RB5 y escalamiento predefinidos; preflight readonly + 7 observaciones/counterexamples, revisión y persistencia. Ningún S2 PASS. Trabajo P1 independiente de configuración actualizado: launch/recovery, raw/sealed/audit/deploy y bootstrap. Siguiente prueba efectiva requiere cuentas/ACL reservadas a gobierno: Q-049 / [ADM-01](research/R-013_S2_administrative_gate_ADM01.md). Solicitar solo ese laboratorio, no repetir elección S2. ADM-02 red/IPC/audit y ADM-03 login Team requieren sus propuestas concretas posteriores. D-024/D-027 abiertos; Strategy V1/datos/motor mantienen secuencia propia, sin backtests/holdout/aprobación tácita.
+
+## Endpoint vigente tras aprobación S2-B — 2026-10-06
+
+Q-051 cerrado en dirección candidata. Continuar R-013: especificar laboratorio mínimo S2-B, reutilizar controles existentes, comprobar artefactos/contratos sin cambios administrativos y revisión independiente. La configuración real que necesite users/ACL/firewall/credentials debe presentarse con reversión y HUMAN_ACTION_REQUIRED; no repetir elección de dirección. ADM-01 histórico permanece DEFERRED. D-027/D-024 abiertos.

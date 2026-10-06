@@ -89,5 +89,5 @@ Estados: cada Q muestra su prioridad; Q-030–Q-037 incluyen estado explícito. 
 
 ## Revisión vigente de variantes — 2026-10-06
 
-- Q-051 (P1, D-027/D-024, READY_FOR_DECISION): confirmar **S2-B como dirección candidata revisada** (Agent Runner único + contextos efectivos por job, core externo), manteniendo A condicionado a insuficiencia demostrada y S3 reserva. Comparativa completa y contratos RC2, probe semántico y revisión independiente; no acceptance ni setup autorizado. [ADR-012](decisions/ADR-012-agent-process-isolation-proposed.md).
+- Q-051 (P1, D-027/D-024, DECIDED solo dirección): propietario confirma S2-B como candidata principal el 2026-10-06. Runner único/contextos efectivos; A si insuficiencia demostrada, S3 reserva. Sin aceptación ni permiso administrativo. [ADR-012](decisions/ADR-012-agent-process-isolation-proposed.md).
 - Q-046 conserva aprobación histórica de frontera S2; no prescribe una cuenta por rol tras revisión. Q-050 sobre policy store/egress permanece RESEARCHING: mismo usuario o VM no sustituyen comprobación de red del harness completo.

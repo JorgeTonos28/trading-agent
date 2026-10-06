@@ -1,6 +1,6 @@
 # R-013 — acceptance por variante S2 RC2
 
-2026-10-06. **SPECIFIED / NOT_TESTED**, propuesta S2-B pendiente de dirección humana. [Contrato RC2](../08_S2_agent_domain_contract_RC2.md), [comparativa](R-013_S2_variants_comparison_2026-10-06.md). No autoriza setup. S2-ADM-01 **DEFERRED / NOT_AUTHORIZED** por propietario.
+2026-10-06. **SPECIFIED / NOT_TESTED**, dirección candidata S2-B aprobada por propietario; realización técnica y setup aún no autorizados/aceptados. [Contrato RC2](../08_S2_agent_domain_contract_RC2.md), [comparativa](R-013_S2_variants_comparison_2026-10-06.md). No autoriza setup. S2-ADM-01 **DEFERRED / NOT_AUTHORIZED** por propietario.
 
 ## Continuidad de criterios
 
