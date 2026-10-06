@@ -17,7 +17,7 @@
     "planning/08_agent_security_contract_RC0.md",
     "planning/08_job_workflow_recovery_contract_RC0.md",
     "planning/08_audit_versions_deployment_contract_RC0.md",
-    "planning/08_S2_isolation_spec_RC1.md"
+    "planning/08_S2_agent_domain_contract_RC2.md"
   ],
   "packages": [
     "agents/onboarding/package.json",
@@ -134,16 +134,29 @@
   "security_direction_proposal": "planning/decisions/ADR-012-agent-process-isolation-proposed.md",
   "operational_permissions_approved": false,
   "security_direction_decision": "planning/decisions/ADR-012-agent-process-isolation-proposed.md",
-  "security_direction_status": "APPROVED_CANDIDATE_S2_NOT_ACCEPTED",
+  "security_direction_status": "APPROVED_S2_BOUNDARY_VARIANT_S2_B_PROPOSED_NOT_ACCEPTED",
   "administrative_setup_authorized": false,
   "isolation_gates": {
     "security": "NOT_VERIFIED",
     "shadow_blinding": "NOT_VERIFIED",
     "fallback": "S3_REQUIRES_HUMAN_REEVALUATION",
     "reproducibility": "NOT_TESTED",
-    "administrative_gate": "PENDING_OWNER_APPROVAL"
+    "administrative_gate": "ADM01_OWNER_WITHHELD_DEFERRED_VARIANT_REVIEW"
   },
-  "isolation_acceptance_matrix": "planning/research/R-013_S2_acceptance_matrix_RC1.md",
+  "isolation_acceptance_matrix": "planning/research/R-013_S2_variant_acceptance_RC2.md",
   "isolation_administrative_gate": "planning/research/R-013_S2_administrative_gate_ADM01.md",
-  "isolation_review": "planning/research/R-013_S2_independent_review_2026-10-05.md"
+  "isolation_review": "planning/research/R-013_S2_independent_review_2026-10-06.md",
+  "historical_isolation_contracts": [
+    "planning/08_S2_isolation_spec_RC1.md",
+    "planning/research/R-013_S2_acceptance_matrix_RC1.md"
+  ],
+  "next_governance_item": "Q-051_S2_B_REVISED_CANDIDATE_DIRECTION_NO_SETUP",
+  "isolation_variant": {
+    "proposed": "S2_B",
+    "selected": false,
+    "account_per_role": "NOT_ASSUMED",
+    "core_outside_runner": true,
+    "effective_per_job_contexts_required": true,
+    "actual_acceptance": "NOT_TESTED"
+  }
 }

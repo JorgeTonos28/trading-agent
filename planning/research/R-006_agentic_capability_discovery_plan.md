@@ -126,3 +126,7 @@ ADR-009 registra aprobación de cohorte candidata RC1, no selección final. Ante
 ## S2 approval y paquete de cierre P1
 
 ADR-012 dirección S2 aprobada. [S2 RC1](../08_S2_isolation_spec_RC1.md)/[SI-BL-RB](R-013_S2_acceptance_matrix_RC1.md) separan security/blinding/runtime reproducibility. Capability Discovery conserva dispositions ADR-011; native OS controls REUSE/WRAP, no sandbox propio. Preflight/7 observaciones son diseño, no effective acceptance. Próximo gobierno [ADM-01](R-013_S2_administrative_gate_ADM01.md) cuentas/ACL sintéticas; egress/IPC/auth pending, D-024 RESEARCHING; Plus PRE-LIVE.
+
+## Gate S2 revisado — 2026-10-06
+
+[Comparativa A/B/S3](R-013_S2_variants_comparison_2026-10-06.md) y [RC2](../08_S2_agent_domain_contract_RC2.md) proponen **Agent Runner común con contextos efectivos por job**, sin cuenta obligatoria por rol. No cambiar disposiciones D-020/ADR-011 ni congelar D-024. **ADM-01 DEFERRED/NOT_AUTHORIZED**, no próximo gate: Q-051 dirección candidata revisada antes de laboratorio nuevo. AC10/10 es semántica, no TP4/EB/SI/BL/RB efectivo ni TP6 capacidad bajo permisos. Plus PRE-LIVE, PAPER Team, futuros native auth/egress/cache/recovery/workload pendientes.

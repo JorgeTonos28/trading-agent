@@ -1,5 +1,7 @@
 # S2 — dominios, permisos y fronteras PAPER RC1
 
+> **Histórico S2-A RC1 — revisión 2026-10-06:** la asignación de cuentas por dominio/rol está reabierta; no es requisito final. Propuesta activa [Agent Domain RC2](08_S2_agent_domain_contract_RC2.md) y [comparativa](research/R-013_S2_variants_comparison_2026-10-06.md). S2-ADM-01 withheld/DEFERRED, no autorizado. Este antecedente conserva su evidencia y controles; no ejecutar sus pasos administrativos.
+
 2026-10-05. **Especificación candidata** R-013/D-027 P1 bajo [ADR-012](decisions/ADR-012-agent-process-isolation-proposed.md). Dirección aprobada; configuración administrativa **NO autorizada**, aceptación efectiva **NOT_TESTED**. D-024 RESEARCHING, implementation_locked=true. No Trading OS implementado. Completa [seguridad RC0](08_agent_security_contract_RC0.md); no modifica A+, G1+G2 ni ADR-006.
 
 ## 1. Threat model y dos objetivos

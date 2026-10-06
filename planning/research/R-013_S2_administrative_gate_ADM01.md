@@ -1,5 +1,7 @@
 # S2-ADM-01 — primera prueba administrativa propuesta
 
+> **2026-10-06 — DEFERRED / NOT_AUTHORIZED / OWNER_WITHHELD.** El propietario no autoriza esta propuesta y exige comparar S2-A/S2-B/S3 antes del setup. Las tres cuentas/ACL siguientes son una propuesta histórica, no la próxima acción autorizable. [Revisión ADR-012](../decisions/ADR-012-agent-process-isolation-proposed.md) y [comparativa](R-013_S2_variants_comparison_2026-10-06.md). No crear usuarios/perfiles ni modificar ACL/firewall. Nueva propuesta concreta solo después de resolver la variante.
+
 2026-10-05. **USER_ACTION_REQUIRED / NO EJECUTADA / NO AUTORIZADA**. Dirección S2 ya aprobada; esta es la configuración concreta que el propietario reservó a un gate adicional. [ADR-012](../decisions/ADR-012-agent-process-isolation-proposed.md), [S2 RC1](../08_S2_isolation_spec_RC1.md), [acceptance](R-013_S2_acceptance_matrix_RC1.md).
 
 ## Decisión exacta y motivo

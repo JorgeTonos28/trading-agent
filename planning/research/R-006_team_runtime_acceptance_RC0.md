@@ -45,3 +45,7 @@ Contratos 08 seguridad/workflow/audit: permisos materiales D-027 requieren gobie
 ## TP-4 y bootstrap — S2 posterior ADR-012
 
 S2 dirección aprobada; controles finales no. [Contrato concreto](../08_S2_isolation_spec_RC1.md), [SI/BL/RB](R-013_S2_acceptance_matrix_RC1.md), [hallazgos](R-013_S2_findings_2026-10-05.md). ADM-01 requiere owner para tres cuentas estándar/ACL canary; no Plus, no papel financiero implementado. TP-4 sigue PARTIAL/NOT_TESTED en enforcement; RB/TP-6 exige permisos/domain launch reales, no importar capacidad S1. Gate red considera AllowLocalFirewallRulesFalse; no decisión S3 por falta de aprobación. R-006 madura contratos de diseño, no fuerza D-024 cerrado.
+
+## Gate S2 revisado — 2026-10-06
+
+[Comparativa A/B/S3](R-013_S2_variants_comparison_2026-10-06.md) y [RC2](../08_S2_agent_domain_contract_RC2.md) proponen **Agent Runner común con contextos efectivos por job**, sin cuenta obligatoria por rol. No cambiar disposiciones D-020/ADR-011 ni congelar D-024. **ADM-01 DEFERRED/NOT_AUTHORIZED**, no próximo gate: Q-051 dirección candidata revisada antes de laboratorio nuevo. AC10/10 es semántica, no TP4/EB/SI/BL/RB efectivo ni TP6 capacidad bajo permisos. Plus PRE-LIVE, PAPER Team, futuros native auth/egress/cache/recovery/workload pendientes.

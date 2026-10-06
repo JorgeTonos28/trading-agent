@@ -66,3 +66,7 @@ Dirección core local + jobs Team automáticos aprobada; D-020 DECIDED en dispos
 ## S2 — blinding distinto de seguridad
 
 [S2 RC1](08_S2_isolation_spec_RC1.md) y [BL-01–09](research/R-013_S2_acceptance_matrix_RC1.md) mantienen Shadow separado de Champion/pedagogía/join/cache/otros intentos. Contexto as-of común incluye holdings reales previos legítimos; decisión contemporánea excluida. DAG/visibility policy confiables y export invariante a decisión Champion; top-level field allowlist no evita contaminación dentro de una señal. Digest/pair-id del contexto predecisión, no hash de decisión secreta; seal en store externo antes de join. Fallo blinding invalida comparabilidad y se registra sin alterar posiciones/riesgo/denominadores. Probes NA son toy/counterexamples, no BL PASS. Cross-identity acceptance y engine/outcomes permanecen pendientes.
+
+## Blinding y cuenta Runner — 2026-10-06
+
+[S2-B RC2](08_S2_agent_domain_contract_RC2.md) propuesto: Shadow es rol con contexto/export propio, no requiere por definición cuenta Windows distinta. BL01..09 y VP verifican inaccesibilidad de trace Pedagogy/decisión Champion contemporánea, history/cache/otros jobs/holdout y supervisor, además de DAG predecisión. Snapshot pareado incluye contexto legítimo previo; join solo después de receipt sellado externo. Cuenta común irrestricta/carpetas/tool allowlists sin contención no pasa. El anterior cross-identity acceptance se proyecta a contexto efectivo RC2. Sin Shadow financiero, no BL PASS ni setup por AC10/10.

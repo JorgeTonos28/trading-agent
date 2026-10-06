@@ -181,3 +181,14 @@ Se conserva A+, G1+G2 y ADR-006. Las futuras dependencias obligatorias de Strate
 | C-034 Windows Job Objects lifecycle/descendientes | YES fuente Microsoft | UNKNOWN probe runtime; documental | UNKNOWN breakaway/nesting/child rights | CONDITIONAL wrapper/control domain | CONDITIONAL local/software nativo; tiempo por medir | NO; REFERENCE_ONLY hasta probe, WRAP si demuestra necesidad/viabilidad |
 
 No amplían capa IA fuera OpenAI/Anthropic. Economics seis campos/coste/alternativa en [S2 §9](08_S2_isolation_spec_RC1.md). Availability de controles SO no prueba entitlement/auth Plus/Team; entornos futuros UNKNOWN. [Hallazgos](research/R-013_S2_findings_2026-10-05.md) distinguen 7 observaciones esperadas de todos los gates S2 NOT_TESTED. Policy merge impide inferir firewall efectivo por una regla declarada; no framework/sandbox propio construido.
+
+## Revisión vigente R-013 — 2026-10-06
+
+[Comparativa S2-A/B/S3](research/R-013_S2_variants_comparison_2026-10-06.md), [RC2](08_S2_agent_domain_contract_RC2.md) y [probe](research/probes/r013-s2-variants/README.md). C-033 conserva controles Windows pero **no selecciona una cuenta por rol**; C-034 Job Objects no es barrera por sí mismo. S2-ADM-01 withheld; S2-B dirección recomendada pendiente de gobierno y gates. Skills/runtime financiero no construidos.
+
+| Capability | EXISTS | AVAILABLE_IN_RESEARCH_ENVIRONMENT | AVAILABLE_IN_PAPER_TEAM | AVAILABLE_IN_FUTURE_PLUS | TECHNICALLY_COMPATIBLE | ECONOMICALLY_REASONABLE | SELECTED / disposición candidata |
+|---|---|---|---|---|---|---|---|
+| C-035 Windows restricted tokens / AccessCheck | YES Microsoft | YES semántica 10/10 con token/descriptor en memoria; no launch | UNKNOWN runtime Codex y OS policy efectivos | UNKNOWN entorno/política; mecanismo OS no depende del entitlement | PARTIAL semántica, UNKNOWN native auth/launch/egress | CONDITIONAL controles locales nativos, sin gasto; integración/operación por medir | NO; WRAP candidato de API existente, no sandbox propio |
+| C-036 AppContainer Win32 unpackaged | YES Microsoft | DOCUMENTED_ONLY; ningún profile/process creado | UNKNOWN native Codex/auth/persistencia/IPC/red | UNKNOWN instalación/runtime destino | UNKNOWN; soporte Win32 genérico no acredita Codex | CONDITIONAL host/licencia/recursos/setup, sin compra | NO; REFERENCE_ONLY hasta probe autorizado |
+
+Economía C-035/036: PAPER_V1_VIABLE_FREE=CONDITIONAL; PAPER_V1_COST=sin facturación activada, licencia incremental esperada 0, ingeniería/recursos UNKNOWN; LIVE_COST=UNKNOWN con migración y operación; FREE_ALTERNATIVE=S2-A mínimo o mecanismo nativo equivalente condicionado; PAID_INCREMENTAL_VALUE=no servicio pago propuesto; ECONOMIC_JUSTIFICATION_REQUIRED=antes de gasto/material coste operativo. Entitlement Team/Plus separado de disponibilidad OS. Ningún gate efectivo pasa por AC.

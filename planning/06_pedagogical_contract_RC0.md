@@ -69,3 +69,7 @@ Dirección core local + jobs Team automáticos aprobada; D-020 DECIDED en dispos
 ## S2 — namespace pedagógico
 
 Pedagogía usa dominio P/trace posdecisión separado del S Shadow: ningún reporte contemporáneo, cache/session u output pedagógico se entrega al Shadow antes del seal/comparación. Contrato [S2 RC1](08_S2_isolation_spec_RC1.md), negativos SI-03/BL-02/06 y trazabilidad BL-03. Separación no cambia explicación factual desde B4/full DoD ni concede broker/control authority. Namespace/cuenta operacionales pendientes de gate y acceptance.
+
+## Vista pedagógica en dominio agéntico común — 2026-10-06
+
+[RC2](08_S2_agent_domain_contract_RC2.md) propuesto: explicación factual desde trace postdecisión permitida a Pedagogy, protegida de Shadow mediante contexto efectivo por job. Rol y paquete no prescriben cuenta/session OS propia. Sin export/share de trace/cache/history Champion a Shadow; external admission/logging permanece fuera del job. Security financiera y blinding se ensayan por separado. No ampliar permisos del Runner para comodidad pedagógica; gates efectivos todavía NOT_TESTED.

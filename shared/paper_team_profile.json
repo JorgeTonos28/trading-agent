@@ -12,11 +12,18 @@
   "native_api_billing_allowed": false,
   "required_approval_for_extra_spend": true,
   "decision": "ADR-010_D-038",
-  "isolation_direction": "ADR012_S2_APPROVED_CANDIDATE_NOT_ACCEPTED",
+  "isolation_direction": "ADR012_APPROVED_S2_BOUNDARY_VARIANT_S2_B_PROPOSED_NOT_ACCEPTED",
   "mandatory_isolation_acceptance": [
     "S2_SECURITY",
     "SHADOW_BLINDING",
     "REPRODUCIBILITY"
   ],
-  "administrative_setup_authorized": false
+  "administrative_setup_authorized": false,
+  "isolation_variant": {
+    "proposed": "S2_B",
+    "selected": false,
+    "account_per_role": "NOT_ASSUMED",
+    "effective_per_job_contexts_required": true
+  },
+  "administrative_gate_status": "ADM01_OWNER_WITHHELD_DEFERRED"
 }

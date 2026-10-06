@@ -64,3 +64,9 @@ El propietario declaró el 2026-10-01 que **nunca se ejecutaron ni consultaron r
 
 | A-037 | P1 | PARTIAL/UNVERIFIED: controles red Windows pueden aplicarse por dominio completo sin cambiar políticas globales/empresariales. | ActiveStore reporta AllowLocalFirewallRules=False y outbound Allow; cmdlets disponibles no prueban enforcement. SI-09/10 y ADM-02 después de store competente. |
 | A-038 | P1 | UNVERIFIED: identidad por dominio más export por job mantiene separación de históricos/cache y capacidad suficiente. | SIDs iguales comparten permisos; S2 exige serialización/revocación o frontera job demostrada, SI-16/BL-06/TP-6 antes de freeze; ninguna concurrencia final aprobada. |
+
+## Revisión de supuestos S2 — 2026-10-06
+
+| A-039 | P1 | UNVERIFIED: un único Agent Runner con contextos restringidos por job puede operar Codex Team sin grants inseguros y mantener security/blinding/recovery. | Restricted-token AccessCheck semántico 10/10 confirma mecanismo disponible, no compatibilidad/operación. SI/BL/RB/VP reales y auth/egress pendientes; no asumir una cuenta por rol necesaria. |
+
+A-033/038 conservados como históricos: cuenta común con token irrestricto puede compartir recursos, pero TokenUser común con restricting SID/contexto diferente puede tener permisos diferentes. Revocar/serializar o borrar exports solos no prueban aislamiento de cache/perfil. A-039 se cierra únicamente con tests efectivos RC2; coste total B<A no demostrado.

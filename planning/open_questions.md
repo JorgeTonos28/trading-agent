@@ -84,5 +84,10 @@ Estados: cada Q muestra su prioridad; Q-030–Q-037 incluyen estado explícito. 
 
 - Q-048 (P1, D-010/033, RESEARCHING): ¿qué evidencia histórica acredita public availability/delivery de SEC por canal cuando la fuente no da timestamp first-available? DatasetCard R-020 distingue acceptance/filing/change/receipt y propone comparación de fuentes/canal conservador; no adoptar delay supuesto como PIT exacto.
 
-- Q-049 (P1, D-027/D-024/D-037, READY_FOR_DECISION): autorizar laboratorio temporal S2-ADM-01 con `tos_probe_core/shadow/ped` estándar, ACL solo árbol nuevo `C:\ProgramData\TradingOS-S2-Probe\trial-01`, procesos/canaries y deshabilitar cuentas al terminar. Requiere aprobación administrativa explícita reservada por propietario; no firewall/login/Trading OS. [Propuesta](research/R-013_S2_administrative_gate_ADM01.md).
+- Q-049 (P1, D-027/D-024/D-037, DEFERRED): S2-ADM-01 **NOT_AUTHORIZED / OWNER_WITHHELD** el 2026-10-06. No crear las tres cuentas ni ACL; revisar variante antes de nueva propuesta administrativa. [Antecedente](research/R-013_S2_administrative_gate_ADM01.md).
 - Q-050 (P1, D-027, RESEARCHING): ¿qué policy store/administrador y controles verificables aplican egress completo del SDK/children en este host con AllowLocalFirewallRules=False? Preflight y rule-source counts no establecen origen del setting. No cambiar merge/global defaults; gate red posterior concreto.
+
+## Revisión vigente de variantes — 2026-10-06
+
+- Q-051 (P1, D-027/D-024, READY_FOR_DECISION): confirmar **S2-B como dirección candidata revisada** (Agent Runner único + contextos efectivos por job, core externo), manteniendo A condicionado a insuficiencia demostrada y S3 reserva. Comparativa completa y contratos RC2, probe semántico y revisión independiente; no acceptance ni setup autorizado. [ADR-012](decisions/ADR-012-agent-process-isolation-proposed.md).
+- Q-046 conserva aprobación histórica de frontera S2; no prescribe una cuenta por rol tras revisión. Q-050 sobre policy store/egress permanece RESEARCHING: mismo usuario o VM no sustituyen comprobación de red del harness completo.

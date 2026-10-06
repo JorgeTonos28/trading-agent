@@ -78,3 +78,9 @@ Todos los riesgos salvo K-018 siguen `OPEN`; una arquitectura aprobada aún requ
 | K-051 | P1 | Allowlist red de comandos se confunde con egress del proceso completo; reglas locales ignoradas por policy merge o block/allow diseñado incorrectamente | Media/Alta | S2 SI-09/10, ActiveStore/source y acceso positivo/negativo real; no cambiar política global ni construir driver; ADM-02; UNKNOWN bloquea aceptación | Security/Operations |
 | K-052 | P1 | Permitted field/caché/history/same-SID job filtra decisión Champion pese a separación de roles | Media/Alta | BL-01/03/06 + SI-16: DAG/version/causal export antes de decisión, contexto constante, sesiones/stores separados, revocar vistas y terminar handles | Security/Quant |
 | K-053 | P1 | Logger controlado por job o LogBlocked=False deja intentos rechazados sin reconstrucción confiable | Media/Alta | SI-14 observer externo + eventos OS donde aplique, receipts protegidos; gate explícito de audit/SACL/red si necesario; no prometer logging existente | Security/Operations |
+
+## Variante Agent Runner — 2026-10-06 (OPEN)
+
+| K-054 | P1 | Job bajo usuario base común roba token/handle del supervisor o recupera history/cache/registry/peer export; grants amplios para compatibilidad invalidan contención | Media/Alta, valoración cualitativa | RC2 VP-01..08 + SI-06/07/16 y BL-06, supervisor externo protegido, contextos efectivos, auth mínimo/persistencia separada; no ampliar Users/Everyone/perfil ni confundir AccessCheck con aceptación | Security/Operations |
+
+K-049/052 exigen aislamiento efectivo de recursos y linaje; no imponen una cuenta por nombre de rol. Complejidad/auth de múltiples cuentas y wrapper B se medirán en RB, sin afirmar menor probabilidad de misconfiguration por número de usuarios.
