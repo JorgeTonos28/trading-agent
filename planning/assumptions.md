@@ -70,3 +70,7 @@ El propietario declaró el 2026-10-01 que **nunca se ejecutaron ni consultaron r
 | A-039 | P1 | UNVERIFIED: un único Agent Runner con contextos restringidos por job puede operar Codex Team sin grants inseguros y mantener security/blinding/recovery. | Restricted-token AccessCheck semántico 10/10 confirma mecanismo disponible, no compatibilidad/operación. SI/BL/RB/VP reales y auth/egress pendientes; no asumir una cuenta por rol necesaria. |
 
 A-033/038 conservados como históricos: cuenta común con token irrestricto puede compartir recursos, pero TokenUser común con restricting SID/contexto diferente puede tener permisos diferentes. Revocar/serializar o borrar exports solos no prueban aislamiento de cache/perfil. A-039 se cierra únicamente con tests efectivos RC2; coste total B<A no demostrado.
+
+## Supuesto concreto de laboratorio — 2026-10-06
+
+| A-040 | P1 | UNVERIFIED: token con restricting SID privado y cero privilegios puede acceder a sus recursos por RootDirectory relativo sin ampliar ACL Windows y mantener tránsito/own-scratch/peer deny. | NtCreateFile oficial + harness AST-only; todos positivos/negativos reales NOT_TESTED. SeChangeNotify retirado puede romper paths/DLL/runtime; no full Codex compatibility ni grants comunes seleccionados. |

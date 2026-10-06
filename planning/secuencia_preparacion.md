@@ -1,6 +1,6 @@
 # Secuencia vigente de Preparation Program — ADR-010
 
-**Endpoint vigente 2026-10-06, tras confirmación:** S2-B candidata principal aprobada; Q-051 DECIDED en dirección. Preparar laboratorio mínimo nuevo con gate/reversión concretos y checks no administrativos. [Comparativa](research/R-013_S2_variants_comparison_2026-10-06.md), [RC2](08_S2_agent_domain_contract_RC2.md). S2-ADM-01 withheld/DEFERRED; no pedir ni ejecutar tres cuentas/ACL. La secuencia administrativa de 2026-10-05 siguiente es histórica y está suspendida. D-027/D-024 abiertos; no Plus ni implementación.
+**Endpoint vigente 2026-10-06, después de preparar/revisar el laboratorio:** Q-052 / [S2B-ADM-01](research/R-013_S2B_lab_ADM01.md) READY_FOR_DECISION / NOT_AUTHORIZED / NOT_EXECUTED. Una cuenta estándar temporal, nuevo árbol canary/ACL, pruebas FS acotadas y rollback. Paquete no administrativo completado; siguiente prueba requiere autorización concreta del owner. Q-051 dirección S2-B cerrada; viejo S2-ADM-01 tres cuentas withheld/DEFERRED. D-027/D-024 abiertos, Plus PRE-LIVE e implementación bloqueada. Secuencias administrativas anteriores son antecedentes, no autorizaciones activas.
 
 2026-10-05. Team actual para preparación, futura implementación tras DoR, backtests y PAPER. Plus individual es candidato PRE-LIVE R-029 P3; no espera de acceso Plus. Implementation lock vigente.
 
@@ -77,3 +77,7 @@ Threat model/identity-FS-network-IPC-secrets, SI17/BL9/RB5 y escalamiento predef
 ## Endpoint vigente tras aprobación S2-B — 2026-10-06
 
 Q-051 cerrado en dirección candidata. Continuar R-013: especificar laboratorio mínimo S2-B, reutilizar controles existentes, comprobar artefactos/contratos sin cambios administrativos y revisión independiente. La configuración real que necesite users/ACL/firewall/credentials debe presentarse con reversión y HUMAN_ACTION_REQUIRED; no repetir elección de dirección. ADM-01 histórico permanece DEFERRED. D-027/D-024 abiertos.
+
+## Endpoint S2-B y evidencia adicional — 2026-10-06
+
+Dirección S2-B aprobada; Q-051 DECIDED en ese alcance. [Laboratorio mínimo S2B-ADM-01](research/R-013_S2B_lab_ADM01.md), Q-052 READY_FOR_DECISION/NOT_AUTHORIZED. [Dossier](research/R-013_S2B_lab_preparation_2026-10-06.md) y fuentes distinguen memoria12+privilegios2, sintaxis14 y preflight readonly de **FS/thread/native NOT_TESTED**. Grant común/tránsito/default DACL se incluyen en VP04/LF09, con positivos adecuados. No setup ni retry bajo BASE para operaciones de job. Full process/IPC/egress/auth/cache/recovery/TP6 y SI17/BL9/RB5/VP8 pendientes; ningún gate efectivo se pasa por estos contadores. R-006 madura diseño, D-020 conserva aprobación, D-027/D-024 siguen RESEARCHING. ADM-01 tres cuentas DEFERRED; PAPER Team y Plus PRE-LIVE.

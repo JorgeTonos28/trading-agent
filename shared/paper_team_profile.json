@@ -26,5 +26,7 @@
     "effective_per_job_contexts_required": true,
     "candidate_direction_approved": true
   },
-  "administrative_gate_status": "ADM01_OWNER_WITHHELD_DEFERRED"
+  "administrative_gate_status": "S2B_ADM01_READY_FOR_DECISION_NOT_AUTHORIZED_NOT_EXECUTED",
+  "historical_administrative_gate_status": "ADM01_OWNER_WITHHELD_DEFERRED",
+  "laboratory_fixture_is_operational_environment": false
 }

@@ -65,3 +65,7 @@ Roles lógicos mantienen reuse aprobado de paquetes, no sesiones/procesos por ro
 ## Confirmación de dirección S2-B — 2026-10-06
 
 Propietario aprueba S2-B como candidata principal, Q-051 cerrado en dirección. Un Runner base con aislamiento efectivo por job; A/S3 reservas condicionadas. Assets y controles continúan candidatos, no permisos/runtime aceptados. Siguiente gate es laboratorio mínimo concreto y reversible; no administración autorizada. [ADR-012](decisions/ADR-012-agent-process-isolation-proposed.md).
+
+## Gate mínimo S2-B preparado — 2026-10-06
+
+[S2B-ADM-01](research/R-013_S2B_lab_ADM01.md) corresponde a una cuenta **temporal de laboratorio**, no un usuario por rol ni Runner operacional instalado. USER_ACTION_REQUIRED y NOT_AUTHORIZED hasta aprobación del owner; bootstrap no crea cuentas ni aplica policy. Memoria/PLAN_ONLY/readonly no prueban FS/EB/TP4. Binder local/secretos fuera de Git; rollback SID/path solo recursos nuevos. Team PAPER sin Plus, native auth/egress/full process/recovery y aceptación siguen pendientes. Paquetes no cambian autoridad ni D-024.

@@ -4824,3 +4824,7 @@ El propietario no autoriza S2-ADM-01 y reabre la premisa de una cuenta Windows p
 ## Confirmación del propietario S2-B — 2026-10-06, posterior a propuesta
 
 [ADR-012](../../planning/decisions/ADR-012-agent-process-isolation-proposed.md) registra **S2-B como dirección candidata principal aprobada**, un Agent Runner base + aislamiento efectivo por job. S2-A alternativa si tests demuestran insuficiencia; S3 reserva si S2 no cumple seguridad. Q-051 cerrado solo en dirección; D-027/D-024 abiertos. Security y blinding separados. Autorizado diseñar/preparar pruebas; users/ACL/firewall/credentials/config global requieren gate concreto y reversión. Sin implementación/gasto/main/freeze.
+
+## Enmienda trazable de preparación S2-B — 6 de octubre de 2026
+
+Tras aprobación del owner de S2-B como dirección candidata principal, el [paquete de laboratorio mínimo](../../planning/research/R-013_S2B_lab_ADM01.md) queda **READY_FOR_DECISION / NOT_AUTHORIZED / NOT_EXECUTED**. Una cuenta temporal y árbol/ACL canary nuevos, pruebas FS/thread-context preparadas y rollback; Q-052 es el siguiente gobierno administrativo concreto, Q-051 solo dirección está cerrado. No autoriza el antiguo gate de tres cuentas. [Dossier](../../planning/research/R-013_S2B_lab_preparation_2026-10-06.md) separa pruebas de memoria/sintaxis/readonly de security/blinding/whole Codex reales. D-027/D-024 y DoR pendientes; no cambios a A+, G1+G2, riesgo, Strategy V1, PAPER Team/Plus PRE-LIVE, main o implementation lock.

@@ -49,3 +49,7 @@ S2 dirección aprobada; controles finales no. [Contrato concreto](../08_S2_isola
 ## Gate S2 revisado — 2026-10-06
 
 [Comparativa A/B/S3](R-013_S2_variants_comparison_2026-10-06.md) y [RC2](../08_S2_agent_domain_contract_RC2.md) proponen **Agent Runner común con contextos efectivos por job**, sin cuenta obligatoria por rol. No cambiar disposiciones D-020/ADR-011 ni congelar D-024. **ADM-01 DEFERRED/NOT_AUTHORIZED**, no próximo gate: Q-051 dirección candidata revisada antes de laboratorio nuevo. AC10/10 es semántica, no TP4/EB/SI/BL/RB efectivo ni TP6 capacidad bajo permisos. Plus PRE-LIVE, PAPER Team, futuros native auth/egress/cache/recovery/workload pendientes.
+
+## Endpoint S2-B y evidencia adicional — 2026-10-06
+
+Dirección S2-B aprobada; Q-051 DECIDED en ese alcance. [Laboratorio mínimo S2B-ADM-01](R-013_S2B_lab_ADM01.md), Q-052 READY_FOR_DECISION/NOT_AUTHORIZED. [Dossier](R-013_S2B_lab_preparation_2026-10-06.md) y fuentes distinguen memoria12+privilegios2, sintaxis14 y preflight readonly de **FS/thread/native NOT_TESTED**. Grant común/tránsito/default DACL se incluyen en VP04/LF09, con positivos adecuados. No setup ni retry bajo BASE para operaciones de job. Full process/IPC/egress/auth/cache/recovery/TP6 y SI17/BL9/RB5/VP8 pendientes; ningún gate efectivo se pasa por estos contadores. R-006 madura diseño, D-020 conserva aprobación, D-027/D-024 siguen RESEARCHING. ADM-01 tres cuentas DEFERRED; PAPER Team y Plus PRE-LIVE.

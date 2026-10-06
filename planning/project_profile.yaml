@@ -207,7 +207,7 @@ capability_discovery:
   no_general_Skill_superiority_demonstrated: true
   autonomous_RC0_steps_1_and_2: COMPLETE_SPECIFICATION_AND_FOCUSED_SYNTHETIC_PROBES
   candidate_cohort_owner_approval: APPROVED_FOR_ACCEPTANCE_NOT_FINAL_SELECTION
-  next_package_action: PREPARE_MINIMAL_S2_B_LAB_WITH_EXPLICIT_ADMINISTRATIVE_GATE_AND_REVERSAL
+  next_package_action: WAIT_Q052_S2B_ADM01_OWNER_GATE_THEN_SCOPED_FILESYSTEM_LAB
   independent_coverage_gaps: independent_agent_review_documented_empirical_security_and_integrated_financial_pedagogy_not_closed
   proposed_architecture_direction: deterministic_local_always_on_core_plus_automatic_event_schedule_Codex_Team_jobs_APPROVED_DIRECTION_NOT_FROZEN
   representative_workload: WL_R_40_base_plus_10_interactive_logical_jobs_up_to_13_reserve_service_requests_NOT_STRATEGY_CADENCE
@@ -315,7 +315,7 @@ paper_agentic_hardening:
   workflow_contract: planning/08_job_workflow_recovery_contract_RC0.md
   audit_versions_deployment_contract: planning/08_audit_versions_deployment_contract_RC0.md
   dossier: planning/research/R-010_014_hardening_findings_2026-10-05.md
-  next_human_decision: concrete_minimal_S2_B_laboratory_setup_and_reversal
+  next_human_decision: Q052_S2B_ADM01_ONE_TEMP_ACCOUNT_NEW_FIXTURE_ACL_AND_ROLLBACK
   security_setup_executed: false
   paired_native_SDK_CLI_probe: 0.160.0_research_shadow_2_of_2_pass
   durable_semantic_probe: SQLite_disposable_20_checks_plus_11_lease_race_checks
@@ -342,8 +342,9 @@ s2_research_package:
   acceptance_matrix: planning/research/R-013_S2_variant_acceptance_RC2.md
   historical_acceptance_matrix: planning/research/R-013_S2_acceptance_matrix_RC1.md
   findings: planning/research/R-013_S2_findings_2026-10-05.md
-  administrative_gate: planning/research/R-013_S2_administrative_gate_ADM01.md
-  stage: S2_B_DIRECTION_APPROVED_LAB_PREPARATION_ADMIN_NOT_AUTHORIZED
+  administrative_gate: planning/research/R-013_S2B_lab_ADM01.md
+  historical_administrative_gate: planning/research/R-013_S2_administrative_gate_ADM01.md
+  stage: S2_B_LAB_READY_FOR_OWNER_GATE_NOT_AUTHORIZED_NOT_EXECUTED
   security_tests_specified: 17
   blinding_tests_specified: 9
   reproducibility_tests_specified: 5
@@ -366,7 +367,7 @@ s2_independent_review:
 s2_variant_review:
   observed_on: 2026-10-06
   owner_administrative_decision: S2_ADM01_NOT_AUTHORIZED_DEFERRED
-  next_question: concrete_S2_B_lab_admin_gate_after_closed_Q051
+  next_question: Q052_S2B_ADM01_AFTER_CLOSED_Q051
   comparison: planning/research/R-013_S2_variants_comparison_2026-10-06.md
   proposed_variant: S2_B_SINGLE_AGENT_RUNNER_EFFECTIVE_PER_JOB_CONTEXTS
   candidate_direction_approval: APPROVED_PROJECT_OWNER_2026_10_06
@@ -382,3 +383,25 @@ s2_variant_review:
   security_blinding_operational_acceptance: NOT_TESTED
   configuration_changes: []
   independent_review: planning/research/R-013_S2_independent_review_2026-10-06.md
+
+s2b_laboratory_preparation:
+  gate: S2B-ADM-01
+  question: Q-052
+  decision_status: READY_FOR_DECISION
+  authorized: false
+  setup_executed: false
+  filesystem_harness_executed: false
+  fixture_accounts_proposed: 1
+  role_OS_accounts_proposed: 0
+  resources_proposed: 14
+  bootstrap_parents_proposed: 1
+  dossier: planning/research/R-013_S2B_lab_preparation_2026-10-06.md
+  independent_review: planning/research/R-013_S2B_lab_independent_review_2026-10-06.md
+  common_sid_semantic_observations: 12
+  transient_privilege_observations: 2
+  synthetic_SDDL_syntax_validations: 15
+  preflight: READ_ONLY_NAME_AND_ROOT_ABSENT_NOT_AUTHORITY
+  filesystem_acceptance: NOT_TESTED
+  full_native_acceptance: NOT_TESTED
+  model_calls: 0
+  configuration_changes: []

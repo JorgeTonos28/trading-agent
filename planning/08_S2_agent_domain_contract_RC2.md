@@ -75,3 +75,7 @@ Bootstrap fresh clone reconstruye paquetes/contratos/perfiles y binding local si
 - Si S2 no logra seguridad/IPC/egress/blinding/refresh/bootstrap verificables con controles permitidos, presentar S3; una VM común también debe pasar blinding. No migración ni downgrade silenciosos.
 
 Security, blinding y operación son gates independientes; ninguna puntuación media compensa acceso prohibido. D-027/D-024 RESEARCHING; A+, G1+G2 y ADR-006 intactos. Dirección revisada aprobada explícitamente; final topology/permissions/freeze y setup administrativo no aprobados.
+
+## Endpoint S2-B y evidencia adicional — 2026-10-06
+
+Dirección S2-B aprobada; Q-051 DECIDED en ese alcance. [Laboratorio mínimo S2B-ADM-01](research/R-013_S2B_lab_ADM01.md), Q-052 READY_FOR_DECISION/NOT_AUTHORIZED. [Dossier](research/R-013_S2B_lab_preparation_2026-10-06.md) y fuentes distinguen memoria12+privilegios2, sintaxis14 y preflight readonly de **FS/thread/native NOT_TESTED**. Grant común/tránsito/default DACL se incluyen en VP04/LF09, con positivos adecuados. No setup ni retry bajo BASE para operaciones de job. Full process/IPC/egress/auth/cache/recovery/TP6 y SI17/BL9/RB5/VP8 pendientes; ningún gate efectivo se pasa por estos contadores. R-006 madura diseño, D-020 conserva aprobación, D-027/D-024 siguen RESEARCHING. ADM-01 tres cuentas DEFERRED; PAPER Team y Plus PRE-LIVE.

@@ -94,3 +94,13 @@ Contrato concreto F/C/R/S/P/H, filesystem/network/IPC/secrets, snapshots mínimo
 - ADR-012/Q-051 DECIDED solo dirección candidata principal S2-B, Runner único/contextos efectivos por job. Historial de propuesta/RC1/ADM-01 preservado; A/S3 mantienen condiciones aprobadas.
 - AGENTS, contratos/matriz RC2, registers/profile/bootstrap manifests, packaging/onboarding/capabilities, roadmap y secuencia reflejan aprobación. Sin selección de mecanismo ni acceptance real.
 - Próximo trabajo autónomo: laboratorio mínimo concreto/reversión y preparación no administrativa. Todos users/ACL/firewall/credentials/config global siguen sin autorización; ADM-01 tres cuentas DEFERRED. D-027/D-024 RESEARCHING, implementation lock/main y autoridad financiera intactos.
+
+## 2026-10-06 — laboratorio mínimo S2-B y revisión de controles
+
+- S2-B aprobado como dirección en b0d6818 publicado; no reabrir Q-051 ni ADM-01 tres cuentas withheld.
+- R-013 añade memoria12 comunes+2 privilegios, plan sintético14/14 y preflight readonly. Archiva attempt01/source/plan antes de corregir grants heredables SY/BA/OPERATOR; evidencia original intacta.
+- S2B-ADM-01/Q-052 READY_FOR_DECISION, no autorizado: una cuenta estándar temporal/árbol canary ACL nuevos, harness filesystem relativo preparado AST-only, LF01–12 con mapping automático/manual y rollback por SID/path. Zero admin/model/API/spend/real finance changes.
+- Revisión independiente corrige child peer positivo vs tránsito, pre-create parent checks/quiescence, compatibilidad de tránsito de Windows, cobertura no agregada y rollback padre separado no recursivo. Gates security/blinding/full native no pasados; A-040/K-055 abiertos.
+- Registros/ADR/contratos/profile/manifest/landscape/DoR/onboarding actualizados; D-027/D-024 RESEARCHING, D-020 dirección intacta. Team PAPER/Plus PRE-LIVE, lock/main/invariantes no cambiados. Hito se reporta completo solo tras commit/push y verificación.
+
+**Revisión adicional de alcance:** bootstrap parent nuevo exacto declarado con owner/DACL y borrado vacío no recursivo; attempt02/source/plan congelados y attempt03 valida 15 SDDL (14 FS + parent). Sin aplicación de ninguno. Evidencia/hitos anteriores de 14 se conservan como resultados históricos, no contador de acceptance.

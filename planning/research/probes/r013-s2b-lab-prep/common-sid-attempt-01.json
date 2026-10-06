@@ -1,0 +1,181 @@
+{
+  "schema_version": "r013-s2b-common-sid-v1",
+  "captured_at": "2026-10-06T13:43:03.824635+00:00",
+  "source_sha256": "c949c1bb5522f50c752b330f7a5ea758ef741c5332d39ba10f951f56c3f4524d",
+  "source_commit_base": "b0d6818d057a024bd6fbc2573a8d9bd06c254353",
+  "environment": "Team research, current developer Windows identity",
+  "configuration_changes": [],
+  "model_calls": 0,
+  "probe_scope": "Win32 token/descriptor AccessCheck only, no process launch or real object ACL enforcement",
+  "limitations": [
+    "Not native Codex compatibility",
+    "Not filesystem/process/network/IPC enforcement",
+    "Not a new Agent Runner or account",
+    "Not audit generation or bootstrap",
+    "No operational security/blinding PASS"
+  ],
+  "focused_observations": [
+    {
+      "id": "tight_shadow-private_shadow",
+      "observed_allowed": true,
+      "expected_observation": true,
+      "observation_matched": true,
+      "meaning": "DESCRIPTOR_PERMISSION_OBSERVATION_ONLY"
+    },
+    {
+      "id": "tight_shadow-private_pedagogy",
+      "observed_allowed": false,
+      "expected_observation": false,
+      "observation_matched": true,
+      "meaning": "DESCRIPTOR_PERMISSION_OBSERVATION_ONLY"
+    },
+    {
+      "id": "tight_shadow-shared_runtime_read",
+      "observed_allowed": false,
+      "expected_observation": false,
+      "observation_matched": true,
+      "meaning": "DESCRIPTOR_PERMISSION_OBSERVATION_ONLY"
+    },
+    {
+      "id": "tight_shadow-peer_trace_with_broad_common_grant",
+      "observed_allowed": false,
+      "expected_observation": false,
+      "observation_matched": true,
+      "meaning": "DESCRIPTOR_PERMISSION_OBSERVATION_ONLY"
+    },
+    {
+      "id": "common_shadow-private_shadow",
+      "observed_allowed": true,
+      "expected_observation": true,
+      "observation_matched": true,
+      "meaning": "DESCRIPTOR_PERMISSION_OBSERVATION_ONLY"
+    },
+    {
+      "id": "common_shadow-private_pedagogy",
+      "observed_allowed": false,
+      "expected_observation": false,
+      "observation_matched": true,
+      "meaning": "DESCRIPTOR_PERMISSION_OBSERVATION_ONLY"
+    },
+    {
+      "id": "common_shadow-shared_runtime_read",
+      "observed_allowed": true,
+      "expected_observation": true,
+      "observation_matched": true,
+      "meaning": "DESCRIPTOR_PERMISSION_OBSERVATION_ONLY"
+    },
+    {
+      "id": "common_shadow-peer_trace_with_broad_common_grant",
+      "observed_allowed": true,
+      "expected_observation": true,
+      "observation_matched": true,
+      "meaning": "EXCLUDED_PEER_DATA_EXPOSED_BY_BROAD_GRANT_COUNTEREXAMPLE"
+    },
+    {
+      "id": "common_pedagogy-private_shadow",
+      "observed_allowed": false,
+      "expected_observation": false,
+      "observation_matched": true,
+      "meaning": "DESCRIPTOR_PERMISSION_OBSERVATION_ONLY"
+    },
+    {
+      "id": "common_pedagogy-private_pedagogy",
+      "observed_allowed": true,
+      "expected_observation": true,
+      "observation_matched": true,
+      "meaning": "DESCRIPTOR_PERMISSION_OBSERVATION_ONLY"
+    },
+    {
+      "id": "common_pedagogy-shared_runtime_read",
+      "observed_allowed": true,
+      "expected_observation": true,
+      "observation_matched": true,
+      "meaning": "DESCRIPTOR_PERMISSION_OBSERVATION_ONLY"
+    },
+    {
+      "id": "common_pedagogy-peer_trace_with_broad_common_grant",
+      "observed_allowed": true,
+      "expected_observation": true,
+      "observation_matched": true,
+      "meaning": "DESCRIPTOR_PERMISSION_OBSERVATION_ONLY"
+    }
+  ],
+  "focused_observation_count": 12,
+  "privilege_observations": {
+    "DISABLE_MAX_PRIVILEGE_keeps_enabled_SeChangeNotify": true,
+    "explicit_delete_all_remaining_privileges": 0,
+    "current_process_token_changed": false
+  },
+  "new_privilege_expected_checks": {
+    "retained_traverse": true,
+    "deleted_all": true
+  },
+  "base_checks_are_regression_not_new_evidence": true,
+  "scope_note": "Common-SID in-memory descriptors and transient privilege removal only; no actual runtime/path traversal/child/filesystem test",
+  "tests": [
+    {
+      "id": "AC-01-same-base-user",
+      "observed": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "id": "AC-02-restrictions-present",
+      "observed": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "id": "AC-plain-shadow_export",
+      "observed": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "id": "AC-plain-pedagogy_trace",
+      "observed": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "id": "AC-shadow-shadow_export",
+      "observed": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "id": "AC-shadow-pedagogy_trace",
+      "observed": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "id": "AC-shadow-financial_canary",
+      "observed": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "id": "AC-pedagogy-shadow_export",
+      "observed": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "id": "AC-pedagogy-pedagogy_trace",
+      "observed": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "id": "AC-pedagogy-financial_canary",
+      "observed": false,
+      "expected": false,
+      "passed": true
+    }
+  ],
+  "expected_checks": 10,
+  "passed_checks": 10,
+  "status": "PASS_SEMANTIC_SCOPE_ONLY",
+  "cleanup": "Transient handles closed and in-memory SID/descriptors freed; no persistent setup"
+}

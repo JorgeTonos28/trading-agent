@@ -196,3 +196,7 @@ Economía C-035/036: PAPER_V1_VIABLE_FREE=CONDITIONAL; PAPER_V1_COST=sin factura
 ## Confirmación de dirección S2-B — 2026-10-06
 
 Propietario aprueba S2-B como candidata principal, Q-051 cerrado en dirección. Un Runner base con aislamiento efectivo por job; A/S3 reservas condicionadas. Assets y controles continúan candidatos, no permisos/runtime aceptados. Siguiente gate es laboratorio mínimo concreto y reversible; no administración autorizada. [ADR-012](decisions/ADR-012-agent-process-isolation-proposed.md).
+
+## C-035: preparación adicional S2-B — 2026-10-06
+
+S2-B dirección candidata aprobada; restricted tokens/AccessCheck/NtCreateFile **WRAP candidato**, SELECTED=NO para mecanismo final. EXISTS=YES; AVAILABLE_IN_RESEARCH_ENVIRONMENT=YES **memoria/readonly**; AVAILABLE_IN_PAPER_TEAM=UNKNOWN full runtime/permisos; AVAILABLE_IN_FUTURE_PLUS=UNKNOWN. TECHNICALLY_COMPATIBLE=PARTIAL semántica; ECONOMICALLY_REASONABLE=CONDITIONAL local/tiempo. 12 observaciones comunes + 2 privilegios y 14 SDDL sintácticos, ninguna prueba OS/Codex efectiva. [Dossier](research/R-013_S2B_lab_preparation_2026-10-06.md) y [gate](research/R-013_S2B_lab_ADM01.md) incluyen seis campos económicos/coste/alternativa. No API paga, AppContainer profile ni sandbox productivo propio; no cambios D-020/RC2 Skills. S1 solo investigación, A/S3 reservas con gobierno.

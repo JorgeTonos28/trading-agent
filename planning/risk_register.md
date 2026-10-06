@@ -84,3 +84,7 @@ Todos los riesgos salvo K-018 siguen `OPEN`; una arquitectura aprobada aún requ
 | K-054 | P1 | Job bajo usuario base común roba token/handle del supervisor o recupera history/cache/registry/peer export; grants amplios para compatibilidad invalidan contención | Media/Alta, valoración cualitativa | RC2 VP-01..08 + SI-06/07/16 y BL-06, supervisor externo protegido, contextos efectivos, auth mínimo/persistencia separada; no ampliar Users/Everyone/perfil ni confundir AccessCheck con aceptación | Security/Operations |
 
 K-049/052 exigen aislamiento efectivo de recursos y linaje; no imponen una cuenta por nombre de rol. Complejidad/auth de múltiples cuentas y wrapper B se medirán en RB, sin afirmar menor probabilidad de misconfiguration por número de usuarios.
+
+## Grant común y tránsito — 2026-10-06 (OPEN)
+
+| K-055 | P1 | Grants Users/Everyone heredados en datos excluidos, default DACL/owner de scratch o SeChangeNotify omiten la barrera esperada de directorio; adaptación runtime reexpone peer | Media/Alta cualitativa | Probe de memoria observó counterexample de grant común; LF09 exige READ peer child positivo + own real + peer real, privilegios/DACL/parent declarados. RootDirectory/pin quiescente no son sandbox completo, no ampliar ACL anteriores. VP04/SI/BL efectivos pendientes. | Security/Quant |

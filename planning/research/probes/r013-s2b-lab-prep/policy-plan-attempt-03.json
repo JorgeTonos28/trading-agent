@@ -1,0 +1,123 @@
+{
+  "schema_version": "r013-s2b-rendered-plan-v1",
+  "mode": "PLAN_ONLY",
+  "gate": "S2B-ADM-01",
+  "administrative_authorization": false,
+  "configuration_changes": [],
+  "source_sha256": "e5058cca5179216a91644e3a6cd0a26ced5afe57c3c7a9d89606794cf1304cb6",
+  "policy_sha256": "ade0ac46b2967c6f2e5e05df3d3d93b41de7e699ed921ffb78beeb636d02d6c7",
+  "bindings": "SYNTHETIC_NOT_APPLICABLE_REAL_ENVIRONMENT",
+  "resources": [
+    {
+      "relative_path": "",
+      "planned_path": "C:\\ProgramData\\TradingOS-S2B-Probe\\trial-01",
+      "synthetic_SDDL": "O:BAG:BAD:P(A;OICI;0x1f01ff;;;SY)(A;OICI;0x1f01ff;;;BA)(A;OICI;0x1f01ff;;;S-1-5-21-42424242-43434343-44444444-12002)(A;;0x1200a0;;;S-1-5-21-42424242-43434343-44444444-12001)(A;;0x1200a0;;;S-1-5-21-42424242-43434343-44444444-11001)(A;;0x1200a0;;;S-1-5-21-42424242-43434343-44444444-11002)(A;;0x0;;;OW)",
+      "syntax_validation": "VALID_SYNTACTIC_DESCRIPTOR_ONLY",
+      "actual_object_created": false
+    },
+    {
+      "relative_path": "code",
+      "planned_path": "C:\\ProgramData\\TradingOS-S2B-Probe\\trial-01\\code",
+      "synthetic_SDDL": "O:BAG:BAD:P(A;OICI;0x1f01ff;;;SY)(A;OICI;0x1f01ff;;;BA)(A;OICI;0x1f01ff;;;S-1-5-21-42424242-43434343-44444444-12002)(A;OICI;0x1200a9;;;S-1-5-21-42424242-43434343-44444444-12001)(A;OICI;0x1200a9;;;S-1-5-21-42424242-43434343-44444444-11001)(A;OICI;0x1200a9;;;S-1-5-21-42424242-43434343-44444444-11002)(A;;0x0;;;OW)",
+      "syntax_validation": "VALID_SYNTACTIC_DESCRIPTOR_ONLY",
+      "actual_object_created": false
+    },
+    {
+      "relative_path": "financial-canary",
+      "planned_path": "C:\\ProgramData\\TradingOS-S2B-Probe\\trial-01\\financial-canary",
+      "synthetic_SDDL": "O:BAG:BAD:P(A;OICI;0x1f01ff;;;SY)(A;OICI;0x1f01ff;;;BA)(A;OICI;0x1f01ff;;;S-1-5-21-42424242-43434343-44444444-12002)(A;;0x0;;;OW)",
+      "syntax_validation": "VALID_SYNTACTIC_DESCRIPTOR_ONLY",
+      "actual_object_created": false
+    },
+    {
+      "relative_path": "financial-canary/core-marker.txt",
+      "planned_path": "C:\\ProgramData\\TradingOS-S2B-Probe\\trial-01\\financial-canary\\core-marker.txt",
+      "synthetic_SDDL": "O:BAG:BAD:P(A;;0x1f01ff;;;SY)(A;;0x1f01ff;;;BA)(A;;0x1f01ff;;;S-1-5-21-42424242-43434343-44444444-12002)(A;;0x0;;;OW)",
+      "syntax_validation": "VALID_SYNTACTIC_DESCRIPTOR_ONLY",
+      "actual_object_created": false
+    },
+    {
+      "relative_path": "shadow",
+      "planned_path": "C:\\ProgramData\\TradingOS-S2B-Probe\\trial-01\\shadow",
+      "synthetic_SDDL": "O:BAG:BAD:P(A;OICI;0x1f01ff;;;SY)(A;OICI;0x1f01ff;;;BA)(A;OICI;0x1f01ff;;;S-1-5-21-42424242-43434343-44444444-12002)(A;;0x1200a0;;;S-1-5-21-42424242-43434343-44444444-12001)(A;;0x1200a0;;;S-1-5-21-42424242-43434343-44444444-11001)(A;;0x0;;;OW)",
+      "syntax_validation": "VALID_SYNTACTIC_DESCRIPTOR_ONLY",
+      "actual_object_created": false
+    },
+    {
+      "relative_path": "shadow/export",
+      "planned_path": "C:\\ProgramData\\TradingOS-S2B-Probe\\trial-01\\shadow\\export",
+      "synthetic_SDDL": "O:BAG:BAD:P(A;OICI;0x1f01ff;;;SY)(A;OICI;0x1f01ff;;;BA)(A;OICI;0x1f01ff;;;S-1-5-21-42424242-43434343-44444444-12002)(A;;0x1200a9;;;S-1-5-21-42424242-43434343-44444444-12001)(A;;0x1200a9;;;S-1-5-21-42424242-43434343-44444444-11001)(A;;0x0;;;OW)",
+      "syntax_validation": "VALID_SYNTACTIC_DESCRIPTOR_ONLY",
+      "actual_object_created": false
+    },
+    {
+      "relative_path": "shadow/export/snapshot.json",
+      "planned_path": "C:\\ProgramData\\TradingOS-S2B-Probe\\trial-01\\shadow\\export\\snapshot.json",
+      "synthetic_SDDL": "O:BAG:BAD:P(A;;0x1f01ff;;;SY)(A;;0x1f01ff;;;BA)(A;;0x1f01ff;;;S-1-5-21-42424242-43434343-44444444-12002)(A;;0x120089;;;S-1-5-21-42424242-43434343-44444444-12001)(A;;0x120089;;;S-1-5-21-42424242-43434343-44444444-11001)(A;;0x0;;;OW)",
+      "syntax_validation": "VALID_SYNTACTIC_DESCRIPTOR_ONLY",
+      "actual_object_created": false
+    },
+    {
+      "relative_path": "shadow/scratch",
+      "planned_path": "C:\\ProgramData\\TradingOS-S2B-Probe\\trial-01\\shadow\\scratch",
+      "synthetic_SDDL": "O:BAG:BAD:P(A;OICI;0x1f01ff;;;SY)(A;OICI;0x1f01ff;;;BA)(A;OICI;0x1f01ff;;;S-1-5-21-42424242-43434343-44444444-12002)(A;OICI;0x1301bf;;;S-1-5-21-42424242-43434343-44444444-12001)(A;OICI;0x1301bf;;;S-1-5-21-42424242-43434343-44444444-11001)(A;;0x0;;;OW)",
+      "syntax_validation": "VALID_SYNTACTIC_DESCRIPTOR_ONLY",
+      "actual_object_created": false
+    },
+    {
+      "relative_path": "pedagogy",
+      "planned_path": "C:\\ProgramData\\TradingOS-S2B-Probe\\trial-01\\pedagogy",
+      "synthetic_SDDL": "O:BAG:BAD:P(A;OICI;0x1f01ff;;;SY)(A;OICI;0x1f01ff;;;BA)(A;OICI;0x1f01ff;;;S-1-5-21-42424242-43434343-44444444-12002)(A;;0x1200a0;;;S-1-5-21-42424242-43434343-44444444-12001)(A;;0x1200a0;;;S-1-5-21-42424242-43434343-44444444-11002)(A;;0x0;;;OW)",
+      "syntax_validation": "VALID_SYNTACTIC_DESCRIPTOR_ONLY",
+      "actual_object_created": false
+    },
+    {
+      "relative_path": "pedagogy/export",
+      "planned_path": "C:\\ProgramData\\TradingOS-S2B-Probe\\trial-01\\pedagogy\\export",
+      "synthetic_SDDL": "O:BAG:BAD:P(A;OICI;0x1f01ff;;;SY)(A;OICI;0x1f01ff;;;BA)(A;OICI;0x1f01ff;;;S-1-5-21-42424242-43434343-44444444-12002)(A;;0x1200a9;;;S-1-5-21-42424242-43434343-44444444-12001)(A;;0x1200a9;;;S-1-5-21-42424242-43434343-44444444-11002)(A;;0x0;;;OW)",
+      "syntax_validation": "VALID_SYNTACTIC_DESCRIPTOR_ONLY",
+      "actual_object_created": false
+    },
+    {
+      "relative_path": "pedagogy/export/champion-marker.json",
+      "planned_path": "C:\\ProgramData\\TradingOS-S2B-Probe\\trial-01\\pedagogy\\export\\champion-marker.json",
+      "synthetic_SDDL": "O:BAG:BAD:P(A;;0x1f01ff;;;SY)(A;;0x1f01ff;;;BA)(A;;0x1f01ff;;;S-1-5-21-42424242-43434343-44444444-12002)(A;;0x120089;;;S-1-5-21-42424242-43434343-44444444-12001)(A;;0x120089;;;S-1-5-21-42424242-43434343-44444444-11002)(A;;0x0;;;OW)",
+      "syntax_validation": "VALID_SYNTACTIC_DESCRIPTOR_ONLY",
+      "actual_object_created": false
+    },
+    {
+      "relative_path": "pedagogy/scratch",
+      "planned_path": "C:\\ProgramData\\TradingOS-S2B-Probe\\trial-01\\pedagogy\\scratch",
+      "synthetic_SDDL": "O:BAG:BAD:P(A;OICI;0x1f01ff;;;SY)(A;OICI;0x1f01ff;;;BA)(A;OICI;0x1f01ff;;;S-1-5-21-42424242-43434343-44444444-12002)(A;OICI;0x1301bf;;;S-1-5-21-42424242-43434343-44444444-12001)(A;OICI;0x1301bf;;;S-1-5-21-42424242-43434343-44444444-11002)(A;;0x0;;;OW)",
+      "syntax_validation": "VALID_SYNTACTIC_DESCRIPTOR_ONLY",
+      "actual_object_created": false
+    },
+    {
+      "relative_path": "raw-results",
+      "planned_path": "C:\\ProgramData\\TradingOS-S2B-Probe\\trial-01\\raw-results",
+      "synthetic_SDDL": "O:BAG:BAD:P(A;OICI;0x1f01ff;;;SY)(A;OICI;0x1f01ff;;;BA)(A;OICI;0x1f01ff;;;S-1-5-21-42424242-43434343-44444444-12002)(A;OICI;0x1301bf;;;S-1-5-21-42424242-43434343-44444444-12001)(A;;0x0;;;OW)",
+      "syntax_validation": "VALID_SYNTACTIC_DESCRIPTOR_ONLY",
+      "actual_object_created": false
+    },
+    {
+      "relative_path": "trusted-evidence",
+      "planned_path": "C:\\ProgramData\\TradingOS-S2B-Probe\\trial-01\\trusted-evidence",
+      "synthetic_SDDL": "O:BAG:BAD:P(A;OICI;0x1f01ff;;;SY)(A;OICI;0x1f01ff;;;BA)(A;OICI;0x1f01ff;;;S-1-5-21-42424242-43434343-44444444-12002)(A;;0x0;;;OW)",
+      "syntax_validation": "VALID_SYNTACTIC_DESCRIPTOR_ONLY",
+      "actual_object_created": false
+    }
+  ],
+  "resource_count": 14,
+  "bootstrap_parents": [
+    {
+      "planned_path": "C:\\ProgramData\\TradingOS-S2B-Probe",
+      "synthetic_SDDL": "O:BAG:BAD:P(A;OICI;0x1f01ff;;;SY)(A;OICI;0x1f01ff;;;BA)(A;OICI;0x1f01ff;;;S-1-5-21-42424242-43434343-44444444-12002)(A;;0x1200a0;;;S-1-5-21-42424242-43434343-44444444-12001)(A;;0x1200a0;;;S-1-5-21-42424242-43434343-44444444-11001)(A;;0x1200a0;;;S-1-5-21-42424242-43434343-44444444-11002)(A;;0x0;;;OW)",
+      "syntax_validation": "VALID_SYNTACTIC_DESCRIPTOR_ONLY",
+      "actual_object_created": false,
+      "new_only": true
+    }
+  ],
+  "bootstrap_parent_count": 1,
+  "synthetic_descriptor_count": 15,
+  "actual_security_acceptance": "NOT_TESTED"
+}

@@ -61,3 +61,7 @@ El propietario **no autoriza S2-ADM-01**. La sección anterior de próximo gate 
 ## S2-B dirección aprobada — confirmación posterior 2026-10-06
 
 Q-051 está DECIDED en dirección, no pedirla nuevamente. Preparar laboratorio mínimo/reversión con [ADR-012](planning/decisions/ADR-012-agent-process-isolation-proposed.md). S2-B principal, A/S3 condicionadas; ninguna cuenta/ACL/firewall/credencial/config global autorizada. Setup requiere propuesta concreta antes de ejecutar; S2-ADM-01 no se reactiva. Readiness efectiva sigue pendiente.
+
+## Gate mínimo S2-B preparado — 2026-10-06
+
+[S2B-ADM-01](planning/research/R-013_S2B_lab_ADM01.md) corresponde a una cuenta **temporal de laboratorio**, no un usuario por rol ni Runner operacional instalado. USER_ACTION_REQUIRED y NOT_AUTHORIZED hasta aprobación del owner; bootstrap no crea cuentas ni aplica policy. Memoria/PLAN_ONLY/readonly no prueban FS/EB/TP4. Binder local/secretos fuera de Git; rollback SID/path solo recursos nuevos. Team PAPER sin Plus, native auth/egress/full process/recovery y aceptación siguen pendientes. Paquetes no cambian autoridad ni D-024.

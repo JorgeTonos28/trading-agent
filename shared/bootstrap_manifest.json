@@ -141,16 +141,16 @@
     "shadow_blinding": "NOT_VERIFIED",
     "fallback": "S3_REQUIRES_HUMAN_REEVALUATION",
     "reproducibility": "NOT_TESTED",
-    "administrative_gate": "NOT_AUTHORIZED_S2_B_LAB_PREPARATION_ADM01_WITHHELD"
+    "administrative_gate": "S2B_ADM01_READY_FOR_DECISION_NOT_AUTHORIZED_NOT_EXECUTED"
   },
   "isolation_acceptance_matrix": "planning/research/R-013_S2_variant_acceptance_RC2.md",
-  "isolation_administrative_gate": "planning/research/R-013_S2_administrative_gate_ADM01.md",
-  "isolation_review": "planning/research/R-013_S2_independent_review_2026-10-06.md",
+  "isolation_administrative_gate": "planning/research/R-013_S2B_lab_ADM01.md",
+  "isolation_review": "planning/research/R-013_S2B_lab_independent_review_2026-10-06.md",
   "historical_isolation_contracts": [
     "planning/08_S2_isolation_spec_RC1.md",
     "planning/research/R-013_S2_acceptance_matrix_RC1.md"
   ],
-  "next_governance_item": "CONCRETE_MINIMAL_S2_B_LAB_SETUP_AND_REVERSAL",
+  "next_governance_item": "Q052_S2B_ADM01_ONE_TEMP_ACCOUNT_NEW_FIXTURE_ACL_AND_ROLLBACK",
   "isolation_variant": {
     "proposed": "S2_B",
     "selected": false,
@@ -159,5 +159,7 @@
     "effective_per_job_contexts_required": true,
     "actual_acceptance": "NOT_TESTED",
     "candidate_direction_approved": true
-  }
+  },
+  "historical_isolation_administrative_gate": "planning/research/R-013_S2_administrative_gate_ADM01.md",
+  "lab_evidence": "planning/research/R-013_S2B_lab_preparation_2026-10-06.md"
 }

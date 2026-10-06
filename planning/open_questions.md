@@ -91,3 +91,8 @@ Estados: cada Q muestra su prioridad; Q-030–Q-037 incluyen estado explícito. 
 
 - Q-051 (P1, D-027/D-024, DECIDED solo dirección): propietario confirma S2-B como candidata principal el 2026-10-06. Runner único/contextos efectivos; A si insuficiencia demostrada, S3 reserva. Sin aceptación ni permiso administrativo. [ADR-012](decisions/ADR-012-agent-process-isolation-proposed.md).
 - Q-046 conserva aprobación histórica de frontera S2; no prescribe una cuenta por rol tras revisión. Q-050 sobre policy store/egress permanece RESEARCHING: mismo usuario o VM no sustituyen comprobación de red del harness completo.
+
+## Próximo gobierno concreto — 2026-10-06
+
+- Q-052 (P1, D-027/D-024/D-037, READY_FOR_DECISION): autorizar o rechazar **S2B-ADM-01**, una cuenta local estándar temporal `tos_probe_runner_b`, árbol canary nuevo/ACL exactas, pruebas FS acotadas y reversión por ledger SID/path. Indicar administrador legítimo para setup/logon local seguro. [Propuesta completa](research/R-013_S2B_lab_ADM01.md). NOT_AUTHORIZED; no Team login/red/ACL anteriores. La reserva administrativa del owner y AGENTS exige este gate.
+- Q-051 cerrado solo dirección. Q-050 egress/policy store abierto; viejo Q-049 DEFERRED. No Plus ni nueva selección de S2-B solicitada.

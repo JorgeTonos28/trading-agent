@@ -26,7 +26,7 @@ Prioridad: P0 arquitectura, P1 implementación, P2 paper autónomo, P3 live, P4 
 | R-010 | P1 | D-024 | Dirección ADR-011 A aprobada; SDK/CLI0.160 emparejados por default resolver, dos regresiones focales. Versiones finales/isolación/config/carga y freeze abiertos. Contratos 08 + dossier R-010_014; Plus P3, sin paid runtime. |
 | R-011 | P1 | D-025 | Workflow/recovery 08: eventos/calendario automático, outbox, estados/versiones, leases/expiry/concurrencia, epoch. Temporal baseline investigado, APScheduler/OS alternativos. Probes toy/motor no seleccionan tecnología; integración final pendiente. |
 | R-012 | P1 | D-026 | Storage/audit 08: baseline PostgreSQL/Parquet/DuckDB/Redis, commit durable y immutable evidence, hashes no autenticación, restore/lost receipts. SQLite crash/backup/race solo probe. Motor final/cost/retención por cerrar. |
-| R-013 | P1 | D-027 | S2-B candidata principal confirmada por owner; Q-051 DECIDED solo dirección. Preparar laboratorio mínimo real/rollback y comparar mecanismos reutilizables por job. Codex/auth/red/IPC/process/cache/ACL reales/SI-BL-RB NOT_TESTED. ADM-01 tres cuentas withheld DEFERRED; nueva configuración requiere gate concreto. A si insuficiencia por job demostrada, S3 reserva. Sin setup OS. |
+| R-013 | P1 | D-027 | S2-B candidata principal confirmada; Q-051 DECIDED solo dirección. Laboratorio mínimo/rollback/review preparados, Q-052 S2B-ADM-01 READY_FOR_DECISION/NOT_AUTHORIZED. Memoria/readonly/sintaxis15 separados de FS real NOT_EXECUTED. Codex/auth/red/IPC/process/cache/SI-BL-RB NOT_TESTED. ADM-01 tres cuentas withheld DEFERRED; A si insuficiencia por job demostrada, S3 reserva. Sin setup OS. |
 | R-014 | P1 | D-028/029 | Métricas/runbooks/deploy 08 y revisión independiente IR-01–07, remediación documental/probes. H3 cola virtual revela bloqueo no preemptivo, no cuota/capacidad real. Protocolos/operación integrada y full evals pendientes. |
 | R-015 | P2 | D-030/031/032 | Probes y calibración PAPER: orden siguiente sesión, brackets/stops, fills parciales, incidentes y gate de autonomía. |
 | R-016 | P3 | D-040/041/042 | Broker live, jurisdicción, costos, impuestos/documentación, capital, disaster recovery y gates paper→shadow→live. |
@@ -57,3 +57,7 @@ Orden vigente: contratos financieros abstractos D-012–019 establecidos; **R-00
 ## S2-B dirección confirmada — 2026-10-06
 
 R-013 continúa autónomo en especificación/preparación no administrativa bajo S2-B aprobado. Proponer laboratorio mínimo de una identidad base, recursos canary y contextos por job; detallar positivos, negativos, límites, coste y reversión. No S2-ADM-01 ni users/ACL/firewall/credentials hasta gate concreto. D-027/D-024 abiertos; no Plus ni implementación.
+
+## R-013: paquete autónomo de preparación completado — 2026-10-06
+
+[Laboratorio/gate S2B-ADM-01](research/R-013_S2B_lab_ADM01.md) y [dossier](research/R-013_S2B_lab_preparation_2026-10-06.md): una cuenta y canaries, LF01–12 con mapping/manual/positivos, source/plan pinados y rollback. Memoria/common-SID/privilegios + sintaxis14 y readonly ejecutados; FS/native/admin NO. Q-052 READY_FOR_DECISION. Continuación efectiva necesita permiso exacto; D-027/D-024 abiertos y R-013 no cerrado. A/S3 condicionales, no setup/elevación por source ni autoridad financiera nueva.
