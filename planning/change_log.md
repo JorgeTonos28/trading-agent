@@ -104,3 +104,15 @@ Contrato concreto F/C/R/S/P/H, filesystem/network/IPC/secrets, snapshots mínimo
 - Registros/ADR/contratos/profile/manifest/landscape/DoR/onboarding actualizados; D-027/D-024 RESEARCHING, D-020 dirección intacta. Team PAPER/Plus PRE-LIVE, lock/main/invariantes no cambiados. Hito se reporta completo solo tras commit/push y verificación.
 
 **Revisión adicional de alcance:** bootstrap parent nuevo exacto declarado con owner/DACL y borrado vacío no recursivo; attempt02/source/plan congelados y attempt03 valida 15 SDDL (14 FS + parent). Sin aplicación de ninguno. Evidencia/hitos anteriores de 14 se conservan como resultados históricos, no contador de acceptance.
+
+## 2026-10-06 — Q-052 / S2B-ADM-01 autorizado por owner
+
+- Propietario aprueba scope exacto temporal y se reserva toda elevación/password/login. Agent solo prepara/guía/verifica/ejecuta no privilegiado; secretos solo UI Windows.
+- Transacción pública `s2b-20261006-a6d74b2b`; baseline readonly 18:25 UTC: cuenta/root/parent ausentes, proceso actual no elevado, ningún cambio. Setup/FS/rollback no iniciados.
+- Registros/ADR/AGENTS/profile/bootstrap distinguen laboratorio autorizado de permisos PAPER finales no aprobados. Capturas NOT_AUTHORIZED originales intactas, old ADM-01 withheld; D-027/D-024 RESEARCHING. Runbook requiere acciones manuales concretas, no nueva aprobación.
+
+## 2026-10-06 — handoff owner-admin y QA de ejecución S2-B
+
+- Helper desechable en PowerShell 7 existente: create-new con descriptor inicial, scope/path/SID/marker/source, journal previo por creación y ledger protegido. Partial setup nunca se borra automáticamente; owner debe confirmar atribución. Rollback completo exige manifest/copia exportada hash/length/receipt y ausencia de proceso/profile; UNKNOWN bloquea borrado.
+- Primer QA de memoria tuvo ERROR del lector de fixture parent-kind (preservado), corregido; 5.1 policy bloqueó scripts (ERROR registrado, sin policy change). Host 7.6.5: parser/memoria15/compilación sin llamadas nativas PASS. QA Python 15/15 (3 source + 12 evaluador sintético), sin evidencia FS real ni modelo/API.
+- Autorización persistida en todos los contratos/perfiles/roadmap vigentes, capturas históricas intactas. Próxima acción es cuenta disabled segura por owner; no reaprobar scope. Setup, FS, rollback, aceptación S2-B siguen pendientes; D-027/D-024 RESEARCHING, main/implementation invariantes.

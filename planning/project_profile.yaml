@@ -207,7 +207,7 @@ capability_discovery:
   no_general_Skill_superiority_demonstrated: true
   autonomous_RC0_steps_1_and_2: COMPLETE_SPECIFICATION_AND_FOCUSED_SYNTHETIC_PROBES
   candidate_cohort_owner_approval: APPROVED_FOR_ACCEPTANCE_NOT_FINAL_SELECTION
-  next_package_action: WAIT_Q052_S2B_ADM01_OWNER_GATE_THEN_SCOPED_FILESYSTEM_LAB
+  next_package_action: PREPARE_VERIFY_THEN_OWNER_SECURE_UI_AND_ADMIN_SETUP_S2B_ADM01
   independent_coverage_gaps: independent_agent_review_documented_empirical_security_and_integrated_financial_pedagogy_not_closed
   proposed_architecture_direction: deterministic_local_always_on_core_plus_automatic_event_schedule_Codex_Team_jobs_APPROVED_DIRECTION_NOT_FROZEN
   representative_workload: WL_R_40_base_plus_10_interactive_logical_jobs_up_to_13_reserve_service_requests_NOT_STRATEGY_CADENCE
@@ -315,7 +315,7 @@ paper_agentic_hardening:
   workflow_contract: planning/08_job_workflow_recovery_contract_RC0.md
   audit_versions_deployment_contract: planning/08_audit_versions_deployment_contract_RC0.md
   dossier: planning/research/R-010_014_hardening_findings_2026-10-05.md
-  next_human_decision: Q052_S2B_ADM01_ONE_TEMP_ACCOUNT_NEW_FIXTURE_ACL_AND_ROLLBACK
+  next_human_decision: NONE_WITHIN_APPROVED_LAB_OWNER_ACTION_REQUIRED_FOR_UI_ADMIN_SETUP
   security_setup_executed: false
   paired_native_SDK_CLI_probe: 0.160.0_research_shadow_2_of_2_pass
   durable_semantic_probe: SQLite_disposable_20_checks_plus_11_lease_race_checks
@@ -344,7 +344,7 @@ s2_research_package:
   findings: planning/research/R-013_S2_findings_2026-10-05.md
   administrative_gate: planning/research/R-013_S2B_lab_ADM01.md
   historical_administrative_gate: planning/research/R-013_S2_administrative_gate_ADM01.md
-  stage: S2_B_LAB_READY_FOR_OWNER_GATE_NOT_AUTHORIZED_NOT_EXECUTED
+  stage: S2_B_LAB_AUTHORIZED_OWNER_ADMIN_ONLY_SETUP_PENDING
   security_tests_specified: 17
   blinding_tests_specified: 9
   reproducibility_tests_specified: 5
@@ -367,7 +367,7 @@ s2_independent_review:
 s2_variant_review:
   observed_on: 2026-10-06
   owner_administrative_decision: S2_ADM01_NOT_AUTHORIZED_DEFERRED
-  next_question: Q052_S2B_ADM01_AFTER_CLOSED_Q051
+  next_question: OWNER_ACTION_CREATE_DISABLED_ACCOUNT_THEN_SCOPED_ADMIN_SETUP
   comparison: planning/research/R-013_S2_variants_comparison_2026-10-06.md
   proposed_variant: S2_B_SINGLE_AGENT_RUNNER_EFFECTIVE_PER_JOB_CONTEXTS
   candidate_direction_approval: APPROVED_PROJECT_OWNER_2026_10_06
@@ -387,8 +387,11 @@ s2_variant_review:
 s2b_laboratory_preparation:
   gate: S2B-ADM-01
   question: Q-052
-  decision_status: READY_FOR_DECISION
-  authorized: false
+  decision_status: DECIDED
+  authorized: true
+  authorization_scope: TEMPORARY_LAB_ONLY
+  administrator: PROJECT_OWNER
+  agent_privileged_execution_allowed: false
   setup_executed: false
   filesystem_harness_executed: false
   fixture_accounts_proposed: 1
@@ -405,3 +408,21 @@ s2b_laboratory_preparation:
   full_native_acceptance: NOT_TESTED
   model_calls: 0
   configuration_changes: []
+
+s2b_lab_execution:
+  authorization: planning/research/probes/r013-s2b-lab-execution/authorization.json
+  runbook: planning/research/R-013_S2B_owner_execution_runbook.md
+  baseline: planning/research/probes/r013-s2b-lab-execution/owner-setup-baseline-01.json
+  current_state: planning/research/probes/r013-s2b-lab-execution/execution-state.json
+  last_preflight: planning/research/probes/r013-s2b-lab-execution/readonly-preflight-03.json
+  helper_runtime: EXISTING_POWERSHELL_7_64BIT
+  legacy_windows_powershell_5_1: POLICY_BLOCKED_NO_CHANGE
+  offline_evaluator_checks: 15_OFFLINE_SOURCE_AND_EVAL_PASS_NOT_FS
+  offline_check_breakdown: 3_SOURCE_AND_12_SYNTHETIC_EVALUATOR
+  execution_handoff_review: planning/research/R-013_S2B_execution_handoff_review_2026-10-06.md
+  effective_filesystem_acceptance: NOT_TESTED
+  owner_action: CREATE_DISABLED_ACCOUNT_SECURE_WINDOWS_UI
+  filesystem_tests: NOT_TESTED
+  setup_state: PENDING_OWNER
+  rollback_state: NOT_STARTED_NO_OS_RESOURCES_CREATED_BY_AGENT
+  secret_handling: OWNER_WINDOWS_UI_ONLY

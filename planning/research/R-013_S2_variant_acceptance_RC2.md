@@ -1,6 +1,6 @@
 # R-013 — acceptance por variante S2 RC2
 
-2026-10-06. **SPECIFIED / NOT_TESTED**, dirección candidata S2-B aprobada por propietario; realización técnica y setup aún no autorizados/aceptados. [Contrato RC2](../08_S2_agent_domain_contract_RC2.md), [comparativa](R-013_S2_variants_comparison_2026-10-06.md). No autoriza setup. S2-ADM-01 **DEFERRED / NOT_AUTHORIZED** por propietario.
+2026-10-06. **SPECIFIED / NOT_TESTED**, dirección candidata S2-B aprobada por propietario; realización técnica aún no aceptada; permisos operativos pendientes. Excepción temporal S2B-ADM-01 aprobada únicamente para el owner. [Contrato RC2](../08_S2_agent_domain_contract_RC2.md), [comparativa](R-013_S2_variants_comparison_2026-10-06.md). No autoriza setup. S2-ADM-01 **DEFERRED / NOT_AUTHORIZED** por propietario.
 
 ## Continuidad de criterios
 
@@ -41,4 +41,4 @@ Primero evaluar reparación o mínima separación S2-A por necesidad concreta si
 
 ## Endpoint S2-B y evidencia adicional — 2026-10-06
 
-Dirección S2-B aprobada; Q-051 DECIDED en ese alcance. [Laboratorio mínimo S2B-ADM-01](R-013_S2B_lab_ADM01.md), Q-052 READY_FOR_DECISION/NOT_AUTHORIZED. [Dossier](R-013_S2B_lab_preparation_2026-10-06.md) y fuentes distinguen memoria12+privilegios2, sintaxis14 y preflight readonly de **FS/thread/native NOT_TESTED**. Grant común/tránsito/default DACL se incluyen en VP04/LF09, con positivos adecuados. No setup ni retry bajo BASE para operaciones de job. Full process/IPC/egress/auth/cache/recovery/TP6 y SI17/BL9/RB5/VP8 pendientes; ningún gate efectivo se pasa por estos contadores. R-006 madura diseño, D-020 conserva aprobación, D-027/D-024 siguen RESEARCHING. ADM-01 tres cuentas DEFERRED; PAPER Team y Plus PRE-LIVE.
+Dirección S2-B aprobada; Q-051 DECIDED en ese alcance. [Laboratorio mínimo S2B-ADM-01](R-013_S2B_lab_ADM01.md), Q-052 DECIDED únicamente en autorización temporal **AUTHORIZED_OWNER_ADMIN_ONLY**. [Runbook por fases](R-013_S2B_owner_execution_runbook.md). Setup/login pendientes de acciones manuales del propietario; no permisos PAPER finales. [Dossier](R-013_S2B_lab_preparation_2026-10-06.md) y fuentes distinguen memoria12+privilegios2, sintaxis14 y preflight readonly de **FS/thread/native NOT_TESTED**. Grant común/tránsito/default DACL se incluyen en VP04/LF09, con positivos adecuados. Setup aún no ejecutado; no retry bajo BASE para operaciones de job. Full process/IPC/egress/auth/cache/recovery/TP6 y SI17/BL9/RB5/VP8 pendientes; ningún gate efectivo se pasa por estos contadores. R-006 madura diseño, D-020 conserva aprobación, D-027/D-024 siguen RESEARCHING. ADM-01 tres cuentas DEFERRED; PAPER Team y Plus PRE-LIVE.

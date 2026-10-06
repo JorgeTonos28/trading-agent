@@ -1,0 +1,13 @@
+{
+  "mode": "AST_AND_DESCRIPTOR_MEMORY_ONLY",
+  "host_ps_version": "7.6.5",
+  "host_ps_edition": "Core",
+  "helper_parser": "PASS",
+  "synthetic_descriptors": 15,
+  "synthetic_descriptor_validation": "PASS",
+  "helper_sha256": "1fb7074833c1ca5c56fd4c1f6d53e0206497e0b937804b4f6d34dcba527932c3",
+  "actual_fs_tests_executed": false,
+  "administrative_helper_executed": false,
+  "configuration_changes": [],
+  "actual_security_acceptance": "NOT_TESTED"
+}

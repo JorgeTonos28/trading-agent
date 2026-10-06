@@ -74,3 +74,7 @@ A-033/038 conservados como históricos: cuenta común con token irrestricto pued
 ## Supuesto concreto de laboratorio — 2026-10-06
 
 | A-040 | P1 | UNVERIFIED: token con restricting SID privado y cero privilegios puede acceder a sus recursos por RootDirectory relativo sin ampliar ACL Windows y mantener tránsito/own-scratch/peer deny. | NtCreateFile oficial + harness AST-only; todos positivos/negativos reales NOT_TESTED. SeChangeNotify retirado puede romper paths/DLL/runtime; no full Codex compatibility ni grants comunes seleccionados. |
+
+## Separación de superficie PowerShell — 2026-10-06
+
+| A-041 | P1 | PARTIAL/UNVERIFIED: helper owner-only puede aplicar exactamente los descriptores nuevos y revertirlos mediante PowerShell 7 existente. | AST + 15 descriptores en memoria + compilación de adapter Win32 sin llamadas nativas PASS; creación/ACL efectivas/rollback NOT_TESTED. Windows PowerShell 5.1 bloqueó el QA por execution policy, aunque la superficie 7 tiene RemoteSigned. No asumir equivalencia, no cambiar/bypass policy ni instalar. |

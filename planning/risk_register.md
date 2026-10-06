@@ -88,3 +88,9 @@ K-049/052 exigen aislamiento efectivo de recursos y linaje; no imponen una cuent
 ## Grant común y tránsito — 2026-10-06 (OPEN)
 
 | K-055 | P1 | Grants Users/Everyone heredados en datos excluidos, default DACL/owner de scratch o SeChangeNotify omiten la barrera esperada de directorio; adaptación runtime reexpone peer | Media/Alta cualitativa | Probe de memoria observó counterexample de grant común; LF09 exige READ peer child positivo + own real + peer real, privilegios/DACL/parent declarados. RootDirectory/pin quiescente no son sandbox completo, no ampliar ACL anteriores. VP04/SI/BL efectivos pendientes. | Security/Quant |
+
+## Ejecución del laboratorio S2B-ADM-01 — OPEN
+
+| K-056 | P1 | Setup parcial, fuente/superficie incompatible, copia de ledger perdida o procesos de propiedad UNKNOWN impiden reversión verificable | Probabilidad desconocida / impacto acotado a recursos temporales; sin credenciales | Journal sanitizado flushed antes de crear, ledger protegido y manifest completo, receipt + copia hash/length, no retry/cleanup ciego; partial requiere atribución owner, procesos UNKNOWN bloquean delete. 5.1 policy blocked no workaround: PowerShell 7 existente validado solo memoria/compile, pruebas reales pendientes. | Owner admin / Plan Architect verificación |
+
+Journal de repo y output BASE son candidatos de evidencia; no autenticidad adversarial ni autorización de borrado por sí solos. Quiescencia/operator confiables requeridos. No ampliar permisos/global policy para lograr PASS.

@@ -141,7 +141,7 @@
     "shadow_blinding": "NOT_VERIFIED",
     "fallback": "S3_REQUIRES_HUMAN_REEVALUATION",
     "reproducibility": "NOT_TESTED",
-    "administrative_gate": "S2B_ADM01_READY_FOR_DECISION_NOT_AUTHORIZED_NOT_EXECUTED"
+    "administrative_gate": "S2B_ADM01_AUTHORIZED_OWNER_ADMIN_ONLY_SETUP_PENDING"
   },
   "isolation_acceptance_matrix": "planning/research/R-013_S2_variant_acceptance_RC2.md",
   "isolation_administrative_gate": "planning/research/R-013_S2B_lab_ADM01.md",
@@ -150,7 +150,7 @@
     "planning/08_S2_isolation_spec_RC1.md",
     "planning/research/R-013_S2_acceptance_matrix_RC1.md"
   ],
-  "next_governance_item": "Q052_S2B_ADM01_ONE_TEMP_ACCOUNT_NEW_FIXTURE_ACL_AND_ROLLBACK",
+  "next_governance_item": "OWNER_ACTION_S2B_ADM01_SECURE_UI_AND_SCOPED_ADMIN_SETUP",
   "isolation_variant": {
     "proposed": "S2_B",
     "selected": false,
@@ -161,5 +161,14 @@
     "candidate_direction_approved": true
   },
   "historical_isolation_administrative_gate": "planning/research/R-013_S2_administrative_gate_ADM01.md",
-  "lab_evidence": "planning/research/R-013_S2B_lab_preparation_2026-10-06.md"
+  "lab_evidence": "planning/research/R-013_S2B_lab_preparation_2026-10-06.md",
+  "laboratory_administrative_authorization": {
+    "gate": "S2B-ADM-01",
+    "approved": true,
+    "scope": "TEMPORARY_LAB_ONLY",
+    "administrator": "PROJECT_OWNER",
+    "agent_privileged_execution_allowed": false,
+    "setup_executed": false,
+    "authorization_reference": "planning/research/probes/r013-s2b-lab-execution/authorization.json"
+  }
 }

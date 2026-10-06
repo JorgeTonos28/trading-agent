@@ -6,9 +6,9 @@
 
 El propietario autoriza diseñar/preparar pruebas; conserva S2-A como alternativa si tests demuestran insuficiencia de aislamiento por job y S3 como reserva si S2 no cumple seguridad. No selección final de mecanismo/launcher ni suficiencia operacional; D-027/D-024 RESEARCHING. Role packages no prescriben cuentas/sesiones.
 
-**No cambios administrativos autorizados:** Windows users, ACL, firewall, credenciales o configuración global. S2-ADM-01 de tres cuentas permanece DEFERRED/NOT_AUTHORIZED, no reactivado. Antes de cualquier laboratorio que requiera esos cambios: presentar recursos/política/diff y reversión concretos y detenerse con HUMAN_ACTION_REQUIRED. No ampliar grants para lograr compatibilidad sin gate; no fallback S1 ni migración silenciosa.
+**Permisos operacionales no autorizados:** excepción temporal S2B-ADM-01 aprobada después, solo owner-admin y recursos nuevos del laboratorio. Ningún otro Windows user/ACL, firewall, credencial/configuración global autorizado. S2-ADM-01 de tres cuentas permanece DEFERRED/NOT_AUTHORIZED, no reactivado. Antes de cualquier laboratorio que requiera esos cambios: presentar recursos/política/diff y reversión concretos y detenerse con HUMAN_ACTION_REQUIRED. No ampliar grants para lograr compatibilidad sin gate; no fallback S1 ni migración silenciosa.
 
-[Contrato RC2](../08_S2_agent_domain_contract_RC2.md), [acceptance por variante](../research/R-013_S2_variant_acceptance_RC2.md), [comparativa y límites de evidencia](../research/R-013_S2_variants_comparison_2026-10-06.md). Q-051 está cerrada solo en dirección. El laboratorio mínimo ya está preparado y revisado: [S2B-ADM-01](../research/R-013_S2B_lab_ADM01.md), Q-052 READY_FOR_DECISION / NOT_AUTHORIZED. La siguiente prueba efectiva necesita ese permiso concreto. No implementación, gasto, main, autoridad financiera, Strategy V1 o freeze autorizado.
+[Contrato RC2](../08_S2_agent_domain_contract_RC2.md), [acceptance por variante](../research/R-013_S2_variant_acceptance_RC2.md), [comparativa y límites de evidencia](../research/R-013_S2_variants_comparison_2026-10-06.md). Q-051 está cerrada solo en dirección. El laboratorio mínimo ya está preparado y revisado: [S2B-ADM-01](../research/R-013_S2B_lab_ADM01.md), Q-052 DECIDED en autorización exacta owner-admin del laboratorio; setup y pruebas requieren sus acciones manuales, documentadas en el runbook. No implementación, gasto, main, autoridad financiera, Strategy V1 o freeze autorizado.
 
 ## Propuesta comparativa histórica — 2026-10-06, antes de confirmación
 
@@ -73,3 +73,7 @@ Autorizado: especificación y pruebas no administrativas/destructivas con fixtur
 ## Laboratorio preparado después de aprobación de dirección — 2026-10-06
 
 [S2B-ADM-01](../research/R-013_S2B_lab_ADM01.md), Q-052 **READY_FOR_DECISION / NOT_AUTHORIZED**, sustituye únicamente la próxima solicitud administrativa, no la decisión candidata S2-B. Una cuenta temporal estándar + árbol/ACL nuevos + pruebas FS confiables y reversión; no red/auth/administración global. [Hallazgos nuevos](../research/R-013_S2B_lab_preparation_2026-10-06.md) precisan grants comunes/tránsito y límites del harness. Q-051 DECIDED en dirección; D-027/D-024 abiertos. Viejo ADM-01 DEFERRED, pruebas reales NOT_TESTED.
+
+## Gate administrativo del laboratorio autorizado — 2026-10-06
+
+Owner autoriza [S2B-ADM-01](../research/R-013_S2B_lab_ADM01.md) exacto, Q-052 DECIDED únicamente en permiso temporal. El propietario será administrador de cada paso privilegiado y proporcionará passwords/login exclusivamente en UI segura Windows. Agent puede preparar/verificar/ejecutar partes no privilegiadas; nunca elevarse o modificar scope/global settings. Capturas de preparación originales conservan NOT_AUTHORIZED. [Runbook](../research/R-013_S2B_owner_execution_runbook.md). Setup/tests reales todavía pendientes; no S2-B acceptance ni D-027/D-024 cierre.

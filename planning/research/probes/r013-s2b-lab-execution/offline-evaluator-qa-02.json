@@ -1,0 +1,92 @@
+{
+  "mode": "OFFLINE_SYNTHETIC_QA_NOT_NATIVE_FS",
+  "checks": [
+    {
+      "id": "PINNED_POLICY_UNCHANGED",
+      "state": "PASS",
+      "scope": "OFFLINE_SOURCE_OR_SYNTHETIC_EVALUATOR_ONLY"
+    },
+    {
+      "id": "PINNED_FS_SOURCE_UNCHANGED",
+      "state": "PASS",
+      "scope": "OFFLINE_SOURCE_OR_SYNTHETIC_EVALUATOR_ONLY"
+    },
+    {
+      "id": "FILESYSTEM_SOURCE_AST_ONLY",
+      "state": "PASS",
+      "scope": "OFFLINE_SOURCE_OR_SYNTHETIC_EVALUATOR_ONLY"
+    },
+    {
+      "id": "UNVERIFIED_EXTERNAL_POSITIVES_CANNOT_PASS",
+      "state": "PASS",
+      "scope": "OFFLINE_SOURCE_OR_SYNTHETIC_EVALUATOR_ONLY"
+    },
+    {
+      "id": "DENIAL_WITH_VERIFIED_SYNTHETIC_POSITIVES_SCOPED",
+      "state": "PASS",
+      "scope": "OFFLINE_SOURCE_OR_SYNTHETIC_EVALUATOR_ONLY"
+    },
+    {
+      "id": "FAILED_OPERATOR_POSITIVE_INVALIDATES_DENIAL",
+      "state": "PASS",
+      "scope": "OFFLINE_SOURCE_OR_SYNTHETIC_EVALUATOR_ONLY"
+    },
+    {
+      "id": "BINDING_MISMATCH_INVALIDATES_DENIAL",
+      "state": "PASS",
+      "scope": "OFFLINE_SOURCE_OR_SYNTHETIC_EVALUATOR_ONLY"
+    },
+    {
+      "id": "MISSING_OR_SHARING_ERROR_2_IS_ERROR",
+      "state": "PASS",
+      "scope": "OFFLINE_SOURCE_OR_SYNTHETIC_EVALUATOR_ONLY"
+    },
+    {
+      "id": "MISSING_OR_SHARING_ERROR_3_IS_ERROR",
+      "state": "PASS",
+      "scope": "OFFLINE_SOURCE_OR_SYNTHETIC_EVALUATOR_ONLY"
+    },
+    {
+      "id": "MISSING_OR_SHARING_ERROR_32_IS_ERROR",
+      "state": "PASS",
+      "scope": "OFFLINE_SOURCE_OR_SYNTHETIC_EVALUATOR_ONLY"
+    },
+    {
+      "id": "FORBIDDEN_GRANT_IS_FAIL_EVEN_WITHOUT_POSITIVES",
+      "state": "PASS",
+      "scope": "OFFLINE_SOURCE_OR_SYNTHETIC_EVALUATOR_ONLY"
+    },
+    {
+      "id": "UNATTRIBUTED_GRANT_BLOCKS_WITH_ERROR",
+      "state": "PASS",
+      "scope": "OFFLINE_SOURCE_OR_SYNTHETIC_EVALUATOR_ONLY"
+    },
+    {
+      "id": "MISSING_OBSERVATION_IS_NOT_TESTED",
+      "state": "PASS",
+      "scope": "OFFLINE_SOURCE_OR_SYNTHETIC_EVALUATOR_ONLY"
+    },
+    {
+      "id": "DUPLICATE_OBSERVATION_CANNOT_PASS",
+      "state": "PASS",
+      "scope": "OFFLINE_SOURCE_OR_SYNTHETIC_EVALUATOR_ONLY"
+    },
+    {
+      "id": "AGGREGATE_S2B_NEVER_ACCEPTED",
+      "state": "PASS",
+      "scope": "OFFLINE_SOURCE_OR_SYNTHETIC_EVALUATOR_ONLY"
+    }
+  ],
+  "counts": {
+    "PASS": 15,
+    "FAIL": 0
+  },
+  "actual_filesystem_tests_executed": false,
+  "actual_security_acceptance": "NOT_TESTED",
+  "configuration_changes": [],
+  "model_calls": 0,
+  "source_sha256": {
+    "evaluate_filesystem.py": "7b9b29a1c75f47c09fe2f07cd604a113f6999afe6ccf04274ed4225565147b2b",
+    "preparation_checks.py": "c6ace57ce39cff4c8755a6b50cca35733351d123331e6e501de1055a25fb60ad"
+  }
+}

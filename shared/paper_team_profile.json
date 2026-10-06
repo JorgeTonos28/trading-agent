@@ -26,7 +26,16 @@
     "effective_per_job_contexts_required": true,
     "candidate_direction_approved": true
   },
-  "administrative_gate_status": "S2B_ADM01_READY_FOR_DECISION_NOT_AUTHORIZED_NOT_EXECUTED",
+  "administrative_gate_status": "S2B_ADM01_AUTHORIZED_OWNER_ADMIN_ONLY_SETUP_PENDING",
   "historical_administrative_gate_status": "ADM01_OWNER_WITHHELD_DEFERRED",
-  "laboratory_fixture_is_operational_environment": false
+  "laboratory_fixture_is_operational_environment": false,
+  "laboratory_administrative_authorization": {
+    "gate": "S2B-ADM-01",
+    "approved": true,
+    "scope": "TEMPORARY_LAB_ONLY",
+    "administrator": "PROJECT_OWNER",
+    "agent_privileged_execution_allowed": false,
+    "setup_executed": false,
+    "authorization_reference": "planning/research/probes/r013-s2b-lab-execution/authorization.json"
+  }
 }

@@ -1,6 +1,6 @@
 # S2B-ADM-01 — laboratorio mínimo de filesystem, una cuenta base
 
-2026-10-06. **READY_FOR_DECISION / NOT_AUTHORIZED / NOT_EXECUTED.** S2-B dirección candidata aprobada en [ADR-012](../decisions/ADR-012-agent-process-isolation-proposed.md); D-027/D-024 RESEARCHING. Gate nuevo, no reapertura de S2-ADM-01 (tres cuentas, DEFERRED).
+2026-10-06. **AUTHORIZED_OWNER_ADMIN_ONLY / SETUP_PENDING / FS_NOT_EXECUTED.** S2-B dirección candidata aprobada en [ADR-012](../decisions/ADR-012-agent-process-isolation-proposed.md); D-027/D-024 RESEARCHING. Gate nuevo, no reapertura de S2-ADM-01 (tres cuentas, DEFERRED).
 
 ## 1. Decisión exacta
 
@@ -81,13 +81,13 @@ Antes de crear registrar transacción con `created_account_sid`, `created_resour
 5. Eliminar recursivamente únicamente el árbol nuevo resuelto exactamente a `C:\ProgramData\TradingOS-S2B-Probe\trial-01`. Verificar que todos los objetivos recursivos permanecen dentro de ese árbol y sin reparse; si existen enlaces, detener limpieza recursiva y solicitar tratamiento acotado del link, sin seguirlo. PowerShell nativo end-to-end/LiteralPath, sin cmd ni patterns. ACL nuevas desaparecen con esos objetos, ninguna ACL anterior se restaura o amplía. El padre nuevo `C:\ProgramData\TradingOS-S2B-Probe` queda fuera de trial-01: solo eliminar **no recursivamente**, si la transacción demuestra que se creó aquí, sigue vacío y no es reparse. Nunca eliminar ProgramData ni un padre preexistente.
 6. Comparar baseline/final: cuenta/SID deshabilitada y eliminada, perfil nuevo eliminado o pendiente explícito, árbol eliminado, código/evidencia protegidos copiados, cero servicio/task/firewall/policy/auth cambios. Solo si todo completado **REVERTED**; nunca reportar reversión completa si quedan residuos. No continuar PAPER con lab pendiente.
 
-Eliminar recursos nuevos descritos es parte de la autorización propuesta de reversión; **todavía no está autorizado**. Si se prefiere conservar evidencia local/árbol, será READINESS=LAB_RETAINED por decisión explícita, no rollback completo.
+Eliminar los recursos nuevos descritos está autorizado exclusivamente mediante la reversión por SID/path/ledger y los pasos administrativos del propietario. Todavía no se ha ejecutado. Si se prefiere conservar evidencia local/árbol, será READINESS=LAB_RETAINED por decisión explícita, no rollback completo.
 
 ## 6. Economía y gobierno
 
 PAPER_V1_VIABLE_FREE=CONDITIONAL; PAPER_V1_COST=sin suscripción/API nueva, cuenta local/controles host sin precio incremental esperado, tiempo admin y prueba no medidos; LIVE_COST=UNKNOWN; FREE_ALTERNATIVE=aplicar setup manualmente y native controls; PAID_INCREMENTAL_VALUE=no servicio pago propuesto; ECONOMIC_JUSTIFICATION_REQUIRED=antes de gasto. No instalar framework ni drivers. S3 licencia/recursos por evaluar solo si se justifica después.
 
-**HUMAN_ACTION_REQUIRED:** aprobar o rechazar **S2B-ADM-01: una cuenta temporal estándar + árbol canary y ACL nuevas + pruebas FS descritas + reversión por SID/path registrados**, e indicar si el propietario u otro administrador autorizado hará el setup/logon local seguro. Se requiere por la reserva administrativa explícita del propietario y AGENTS. No pedir aprobación de dirección S2-B otra vez. No firewall, Team auth, gasto, implementación o cierre D-027/D-024 en esta solicitud.
+**Gobierno resuelto:** propietario autoriza S2B-ADM-01 dentro de este alcance exacto y será el único administrador. Agent prepara/guía/verifica/ejecuta partes no privilegiadas; owner introduce secretos solo mediante UI segura Windows. [Autorización trazable](probes/r013-s2b-lab-execution/authorization.json). No pedir otra aprobación del gate. **USER_ACTION_REQUIRED** corresponde a las acciones administrativas/login concretas. HUMAN_ACTION_REQUIRED antes de ampliar scope; no red, auth Team, policy global, gasto o aceptación final.
 
 ## 7. Mapping de cobertura: ningún LF ejecutado
 
@@ -106,3 +106,13 @@ PAPER_V1_VIABLE_FREE=CONDITIONAL; PAPER_V1_COST=sin suscripción/API nueva, cuen
 | 12 | Operador vuelve a renderizar bindings, compara setup y ejecuta rollback con ledger; nuevo run después de reversión requiere recursos nuevos autorizados y otra referencia de transacción |
 
 Ledger externo mantiene estado de cada caso: NOT_TESTED/PASS_SCOPED/FAIL/ERROR/INVALID_POSITIVE, evidencia y exclusiones. Un proceso con exit 0 no pasa LF01–12. Todos los gates completos SI/BL/RB/VP permanecen NOT_TESTED.
+
+## Autorización posterior — propietario, 2026-10-06
+
+Los estados NOT_AUTHORIZED de fuentes/capturas de preparación describen su fecha original, no se reescriben. El owner aprueba únicamente cuenta estándar temporal/parent-tree/ACL declaradas/tests sintéticos/evidencia/reversión. Conserva cada exclusión original. Sole admin owner, secret input Windows UI only. [Guía de ejecución por fases](R-013_S2B_owner_execution_runbook.md) registra transacción, acciones manuales y evidencia; aún no cuenta/setup FS ejecutado por el agente. D-027/D-024 RESEARCHING.
+
+## Handoff concreto dentro de scope — 2026-10-06
+
+[Helper owner-only](probes/r013-s2b-lab-execution/owner_lab.ps1) y [runbook](R-013_S2B_owner_execution_runbook.md) automatizan exclusivamente nuevas creaciones/ACL declaradas cuando **el propietario** lo ejecuta con elevación. No provisioning del agente ni permiso operacional. Usa PowerShell 7 ya existente; 5.1 policy blocked se registra y no se modifica. APIs oficiales con create-new/descriptor inicial, mismas grants y 15 targets; trusted-evidence se crea antes de fixtures. Journal sanitizado es artefacto del repositorio, no configuración del host. Binder/ledger SID locales solo dentro de lab; copia local de metadatos de ledger, sin secretos, se retiene ignorada en `.local/` para comprobar export antes de rollback.
+
+Orden seguro de reversión del helper: cuenta deshabilitada + ausencia de procesos/perfil verificada → evidencia exportada → tree exacto → parent nuevo vacío → cuenta por SID revalidado. Mantiene identidad para verificar los paths hasta terminar, evita perder atribución por eliminar la cuenta antes del árbol; mismos recursos aprobados, sin restore de ACL anteriores. Un error parcial o UNKNOWN bloquea automatización y exige revisión owner y reversión de recursos atribuidos, no limpieza por patrón. No ejecución administrativa todavía.

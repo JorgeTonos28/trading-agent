@@ -94,5 +94,5 @@ Estados: cada Q muestra su prioridad; Q-030–Q-037 incluyen estado explícito. 
 
 ## Próximo gobierno concreto — 2026-10-06
 
-- Q-052 (P1, D-027/D-024/D-037, READY_FOR_DECISION): autorizar o rechazar **S2B-ADM-01**, una cuenta local estándar temporal `tos_probe_runner_b`, árbol canary nuevo/ACL exactas, pruebas FS acotadas y reversión por ledger SID/path. Indicar administrador legítimo para setup/logon local seguro. [Propuesta completa](research/R-013_S2B_lab_ADM01.md). NOT_AUTHORIZED; no Team login/red/ACL anteriores. La reserva administrativa del owner y AGENTS exige este gate.
+- Q-052 (P1, D-027/D-024/D-037, DECIDED en autorización de laboratorio): propietario autoriza **S2B-ADM-01**, una cuenta local estándar temporal `tos_probe_runner_b`, árbol canary nuevo/ACL exactas, pruebas FS acotadas y reversión por ledger SID/path. El administrador único será el propietario; los secretos se introducen mediante UI Windows, nunca chat/args/logs/Git. [Propuesta completa](research/R-013_S2B_lab_ADM01.md). AUTHORIZED_OWNER_ADMIN_ONLY, setup/login todavía pendientes; no Team login/red/ACL anteriores. No aceptación financiera/security/runtime ni cierre D-027/D-024.
 - Q-051 cerrado solo dirección. Q-050 egress/policy store abierto; viejo Q-049 DEFERRED. No Plus ni nueva selección de S2-B solicitada.
