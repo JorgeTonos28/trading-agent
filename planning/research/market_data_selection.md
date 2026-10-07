@@ -1,6 +1,6 @@
 # R-008 — Market Data: marco de comparación y economía por fase
 
-**Fecha:** 2026-10-02. **Estado:** `OPEN`, P1/D-022. Inicializa scorecard; no se investigaron precios ni se eligió proveedor en este hito. La selección debe satisfacer ADR-004 y las necesidades de candidatos Strategy V1, sin cambiar período/universo ni permitir look-ahead por conveniencia del plan gratuito.
+**Baseline:** 2026-10-02. **Actualizado:** 2026-10-07. **Estado:** `RESEARCHING`, P1/D-022. [Wave 01](R-007_008_provider_evidence_wave01_2026-10-07.md) actualiza evidencia y economía broker-native; demás fichas pendientes, ningún proveedor elegido. La selección debe satisfacer ADR-004 y las necesidades de candidatos Strategy V1, sin cambiar período/universo ni permitir look-ahead por conveniencia del plan gratuito.
 
 Comparar cobertura histórica/activos/delistings/corporate actions, ajustes/revisiones as-of, timestamps/publicación, granularidad, streaming/backfill, latencia/availability, rate limits, licencia para automatización/backtest/almacenamiento, calidad cruzada y recuperación. Documentar diferencias entre feed paper y live; muestras oficiales cuando sea viable antes de selección.
 
@@ -18,3 +18,9 @@ PAPER: included/free/local-first con calidad suficiente. LIVE: valor económico,
 | Alpha Vantage | UNKNOWN límites/licencia | UNKNOWN | UNKNOWN | Feed incluido/público por universo | Límites/latencia/cobertura a demostrar | YES si gasto |
 
 Todo candidato adicional completa estos campos y dimensiones funcionales antes de preselección. Precios/mensuales permanecen `UNKNOWN` hasta fuente/cotización fechada y escenario de carga; no inventar equivalencia de calidad entre planes gratis y pagos.
+
+## Evidencia y demanda vigente — 2026-10-07
+
+Las filas anteriores son inventario inicial fechado. [Wave broker/data](R-007_008_provider_evidence_wave01_2026-10-07.md) conserva precios documentados y gaps: IEX realtime, SIP histórico retrasado y fill paper NBBO tienen semánticas distintas; pin explícito feed/cobertura/clock, sin transferir paridad. Historia anunciada desde2016 deja sin resolver propuesta MATR 2005–2015 y warm-up. No se cambia protocolo por conveniencia comercial.
+
+[Demanda por candidato RC1](R-020_candidate_data_workload_contract_RC1.md) requiere corporate actions/as-of, raw y contabilidad de dividendos, universo histórico, granularidad de stops/gaps, derechos y validador secundario. No se descargó dataset de precios ni abrió una muestra reservada; calidad real y datasets admitidos UNKNOWN. Reuse de APIs/datasets antes de BUILD, sin selección, gasto o login target.

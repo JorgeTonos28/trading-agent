@@ -2,6 +2,18 @@
 
 > **Vigencia ADR-013 — 2026-10-07:** investigación = Team en workstation Windows institucional INFOTEP; target PAPER = Plus individual en PC personal del propietario; LIVE = UNKNOWN. Se conservan las notas/evidencias anteriores como historia. Team no prueba disponibilidad Plus ni seguridad del host personal. Diseño se resuelve durante Preparation; aceptación target R-030 se difiere antes de implementación/PAPER. S2B-ADM-01 = DEFERRED_TO_TARGET_PAPER_HOST; no acción administrativa institucional pendiente. `implementation_locked=true`.
 
+## Orden activo y endpoint — 2026-10-07
+
+Esta sección y los bloques ADR-013 finales gobiernan; las secuencias Team=PAPER o Plus exclusivamente PRE-LIVE de abajo son **históricas**.
+
+1. R-006/R-010/R-013 completaron el paquete documental/probes independiente del target. [ADR-014/B-RT1](decisions/ADR-014-agentic-design-checkpoint-proposed.md) y [checkpoint](14_agentic_architecture_design_checkpoint_RC0.md) READY_FOR_DECISION; no AGENTIC_ARCHITECTURE_DESIGN_COMPLETE ni PAPER_RUNTIME_ACCEPTED declarados aún.
+2. Paquete financiero independiente completado en alcance wave01: D-009 extracción funcional cerrada; [demanda Strategy RC1](research/R-020_candidate_data_workload_contract_RC1.md), [brokers/data](research/R-007_008_provider_evidence_wave01_2026-10-07.md) y [Smart Money](research/R-025_provider_evidence_wave01_2026-10-07.md) con probe público de metadata. Ninguna Strategy/broker/fuente/engine seleccionada ni backtest ejecutado.
+3. **Endpoint actual: Q-053 requiere gobierno humano de realización material**, no acceso Plus/administración INFOTEP. Revisión del scope B-RT1, con contingencias y aceptación target separadas; no volver a pedir la dirección S2-B ya aprobada.
+4. Siguiente paquete financiero: fuentes/PIT y reglas completas de familia video primero, comparación MATR/nuevos justificados; fichas broker restantes y order/protection matrix; históricos2005/corporate actions/rights/validador; scorecard ex ante D-011 y paridad motores D-023. Resolver fórmulas riesgo D-035 y motores/store/ops/evals con esa demanda. Plan Architect estructura alternativas; no pedir al owner que diseñe las reglas desde cero.
+5. Diseño Plan RC revisable en Team; transición target/aceptación P1 R-030 antes de DoR/freeze/implementación. Integración, backtests ejecutables, carga/recovery y PAPER corresponden Plus/PC personal. LIVE requiere decisión posterior; no hereda host/runtime.
+
+El endpoint del paquete autónomo actual permite presentar una decisión concreta y revisable bajo AGENTS.md. Tras esa decisión continuar los P0/P1 financieros, sin volver a Capability Discovery completa ni esperar el host para la investigación documental.
+
 
 **Endpoint histórico 2026-10-06, tras autorización y preparación del handoff:** Q-052 / [S2B-ADM-01](research/R-013_S2B_lab_ADM01.md) DECIDED en permiso temporal / AUTHORIZED_OWNER_ADMIN_ONLY / SETUP_PENDING. [Guía de ejecución](research/R-013_S2B_owner_execution_runbook.md), una cuenta estándar temporal, nuevo árbol canary/ACL, pruebas FS acotadas y rollback. Preparación no privilegiada completada; siguiente paso requiere crear la cuenta mediante Windows por el propietario, no reaprobar el gate. FS NOT_TESTED. Q-051 dirección S2-B cerrada; viejo S2-ADM-01 tres cuentas withheld/DEFERRED. D-027/D-024 abiertos, Plus PRE-LIVE e implementación bloqueada. Secuencias administrativas anteriores son antecedentes, no autorizaciones activas.
 

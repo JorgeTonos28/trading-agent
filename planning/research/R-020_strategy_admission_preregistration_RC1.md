@@ -28,10 +28,14 @@ Evaluar primero reglas, calidad/PIT/licencia, costes/replay, riesgo/operación, 
 
 ## 4. Dependencias y siguientes entregables
 
-R-025/R-007 datos alimentan admisión; D-011 protocolo de validación y R-009 paridad motor; broker D-009 limita ejecución reproducible; risk numérico P2 D-031 distinto del riesgo conceptual aprobado. D-008 puede avanzar especificación sin esperar D-024, pero selección final de Strategy V1 requiere evidencia/gobierno. No hay circularidad que permita implementar primero.
+R-025/R-007 datos alimentan admisión; D-011 protocolo de validación y R-009 paridad motor; broker D-021 limita ejecución reproducible; risk numérico P2 D-031 distinto del riesgo conceptual aprobado. D-008 puede avanzar especificación sin esperar D-024, pero selección final de Strategy V1 requiere evidencia/gobierno. No hay circularidad que permita implementar primero. Corrección de referencia 2026-10-07: el texto original decía D-009, que corresponde a extracción del video, no broker.
 
 Entregables siguientes: `CandidateRuleCard` por variante, `DatasetAdmissibilityCard` por fuente histórica y scorecard pre-resultados, variantes preregistradas y escenarios de conflicto. Campos mínimos: estado/evidence/source, clocks y missing, reglas completas vs OPEN, autoridad y dependencia-failure contract, costos/free alternative, engine/order assumptions, owner decisions restantes. Las fichas son documentos del repo; no estrategias productivas ni elección final. Investigación de acceso/datos puede continuar después de decisión de aislamiento sin activar broker/API paga.
 
 ## Avance documental del paquete
 
 [CandidateRuleCards del video](R-020_video_candidate_rule_cards_RC0.md) especifican ambigüedades y escenarios de stops/ladder/señales sin inventar entrada. [DatasetCard SEC](R-020_SEC_dataset_admissibility_RC0.md) verifica camino público de extracción y registra ausencia de timestamp first-available; no backtest/dataset/API probe ejecutado ni familia/proveedor seleccionado.
+
+## Avance 2026-10-07 y registro de exposición
+
+[Demanda RC1](R-020_candidate_data_workload_contract_RC1.md) enlaza candidatos/clocks/engine/órdenes/failures y waves broker/data/Smart Money; D-009 cerrado solo extracción funcional. No backtests ni resultados de MATR/variantes vistos. Al comprobar una referencia de inception de ETF, páginas públicas de emisores incluyeron retornos del fondo/benchmark: exposición incidental registrada, no usada para seleccionar/ajustar candidatos. No equivale a un backtest de estrategia ni certifica intacta ninguna muestra; el futuro preregistro debe considerar la exposición previa pertinente.

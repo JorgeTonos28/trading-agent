@@ -53,9 +53,9 @@ Estados: cada Q muestra su prioridad; Q-030–Q-037 incluyen estado explícito. 
 
 ## Strategy V1 Selection
 
-- Q-030 (P0, D-009, `RESEARCHING`): La transcripción separa infraestructura, trailing stop/ladder, señales congresuales, alertas, SIGNAL y opciones. ¿Qué mecanismos merece conservar, modificar, separar o descartar para **nuestro** Trading OS? Pantallas/prompts solo cuando aclaren el diseño; no auditar claims de rentabilidad.
+- Q-030 (P0, D-009, `DECIDED`, cierre técnico 2026-10-07): extracción funcional y tratamiento conservar/modificar/separar/descartar completos en dossier/mapa/rule cards, con revisión independiente documental. No estrategia seleccionada ni claims verificados; seguimiento de fuente solo por necesidad decisoria nuestra.
 - Q-031 (P0, D-008, `OPEN`): ¿Qué criterios y pesos compararán Video-Inspired Strategy V1, MATR_V1 y otros candidatos sin seleccionar por rendimiento observado? Debe cerrarse antes de evaluar resultados y luego someter selección al propietario.
-- Q-032 (P0, D-009/012, `OPEN`): ¿Existe alguna regla coherente de stop, reentrada y tamaño para VID-TS, dado que el video alterna stop inicial 10/20%, compra tras caída ~20% y deja al agente elegir cantidad? Pantallas originales, especificación explícita y escenarios de conflicto.
+- Q-032 (P0, D-008/011 y detalle D-035, `RESEARCHING`): ¿qué reglas propias completas de entrada, stop, reentrada y sizing hacen admisible VID-TS? El video no las define coherentemente; rule cards registran ambigüedades y conflictos. Diseñar variantes ex ante y contrastar datos/órdenes/riesgo, sin atribuir reglas inventadas al creador ni mantener D-009 abierto por esto.
 - Q-033 (P0, D-008/022/033, `OPEN`): ¿Puede VID-CONG o VID-ALERT obtener historia con disponibilidad PIT y derechos suficientes bajo ADR-004/005? Evaluación R-021; los dashboards del video no bastan.
 - Q-034 (P0, D-018, `DECIDED`): ADR-005 fija roles graduados y gates de admisión para todas las familias Smart Money; ninguna familia queda seleccionada. Evidencia PIT y proveedor por dataset siguen D-022/033 y Strategy V1 D-008.
 - Q-035 (P0, D-019, `DECIDED`): el propietario aprobó explicación factual desde B4 y reporte completo antes de DoD, derivados de traza real y sin autoridad de trading. Formato/evals detallados P1 después.

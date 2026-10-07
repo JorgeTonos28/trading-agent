@@ -1,6 +1,6 @@
 # R-007 — Comparación de brokers PAPER y ruta futura LIVE (marco RC0)
 
-**Fecha:** 2026-10-01. **Estado:** OPEN (marco de comparación RC0; fichas y probes pendientes). **Prioridad:** P1 para selección PAPER; pruebas de órdenes P2. **Decisión:** D-021, con aprobación humana antes de seleccionar. **Alpaca es referencia funcional del video, no broker elegido.** No abrir cuentas, conectar credenciales ni cursar órdenes durante preparación salvo probes desechables necesarios para cerrar decisiones del plan.
+**Baseline:** 2026-10-01. **Actualizado:** 2026-10-07. **Estado:** RESEARCHING; [wave documental 01](R-007_008_provider_evidence_wave01_2026-10-07.md) parcial, fichas restantes y probes pendientes. **Prioridad:** P1 para selección PAPER; pruebas de órdenes P2. **Decisión:** D-021, con aprobación humana antes de seleccionar. **Alpaca es referencia funcional del video, no broker elegido.** No abrir cuentas, conectar credenciales ni cursar órdenes durante preparación salvo probes desechables necesarios para cerrar decisiones del plan.
 
 ## Candidatos iniciales, sin selección
 
@@ -43,4 +43,10 @@ PAPER prioriza cuenta/API/datos paper sin gasto adicional **si cumplen calidad/s
 | tastytrade | UNKNOWN | UNKNOWN | UNKNOWN | Otros brokers paper por validar | API/streaming/cobertura por probar | YES antes de gasto |
 | TradeStation | UNKNOWN | UNKNOWN | UNKNOWN | Otros brokers paper por validar | API/semántica/fiabilidad por probar | YES antes de gasto |
 
-No se consultaron precios nuevos para estas filas; son campos abiertos de investigación, no juicio económico contra el proveedor. Cada broker adicional tendrá los mismos seis campos antes de entrar al scorecard.
+Estas filas conservan el inventario inicial 2026-10-02, no un precio vigente. Cada broker adicional tendrá los mismos seis campos antes de entrar al scorecard.
+
+## Evidencia y scorecard vigente parcial — 2026-10-07
+
+[Wave 01](R-007_008_provider_evidence_wave01_2026-10-07.md) actualiza los seis campos para Alpaca paper/data, IBKR y Tradier con fuentes oficiales. PAPER gratuito publicado no demuestra elegibilidad LIVE RD, permisos de cuenta ni paridad económica de fills. IBKR incluye RD en lista general, sin aprobación KYC; Tradier requiere distinguir streaming de mercado y eventos de cuenta. Todos SELECTED=NO; API adapters WRAP candidatos, nunca tools financieros de LLM.
+
+Fichas tastytrade/TradeStation/otros y matriz concreta protection/order lifecycle/recovery siguen pendientes. Pruebas account/host-specific se ejecutarán solo en target autorizado; la comparación documental continúa Team/INFOTEP, sin cuenta, credenciales ni órdenes.

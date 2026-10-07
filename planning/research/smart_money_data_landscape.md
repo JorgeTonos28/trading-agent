@@ -71,3 +71,9 @@ La necesidad de pagar puede justificarse por fiabilidad o datos aun sin demostra
 ## SEC/EDGAR — avance R-020/R-025 documental, 2026-10-05
 
 [DatasetAdmissibilityCard](R-020_SEC_dataset_admissibility_RC0.md): APIs de lectura públicas sin key y archives históricos verificadas documentalmente; no dataset/probe/selección. SEC declara ausencia de timestamp que indique primera disponibilidad del contenido en sec.gov, de modo que acceptance no equivale a publicación o recepción. Historia PIT/canal/quality/normalización siguen CONDITIONAL; comparar specialized vendors antes de construir extractor importante. Congresional, Form4,13F y demás familias siguen abiertas independientemente.
+
+## Evidencia y scorecard vigente parcial — 2026-10-07
+
+[Wave 01](R-025_provider_evidence_wave01_2026-10-07.md) actualiza precios/rutas/restricciones y seis campos económicos para Quiver/UW/Capitol/SEC. Las tablas anteriores son inventario inicial, no precios vigentes. Probe único de schema público Quiver sin auth observa campos temporales, **no** acceso a dataset, PIT ni licencia de uso. Documentación pública no habilita automáticamente MCP/API/servicios.
+
+Quiver/UW son REFERENCE_ONLY actualmente y WRAP futuros condicionados; SEC WRAP/ADAPT candidato sujeto a normalizador reusable, no BUILD por defecto. Capitol conserva integración/licencia UNKNOWN tras error de acceso documental, sin rechazo. Ningún proveedor ni familia seleccionado. Congreso, Form4,13F/hedge funds, options/blocks, revisions y flows siguen separados; faltan evidencia de clocks históricos, derechos y utilidad por familia.

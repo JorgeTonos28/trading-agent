@@ -134,3 +134,11 @@ Owner establece Team/INFOTEP research y Plus/PC personal target PAPER; LIVE UNKN
 ## 2026-10-07 — cierre técnico de extracción funcional D-009/R-019
 
 Dossier, mapa conservar/modificar/separar/descartar y rule cards cubren las piezas distintas del video. Revisión independiente documental no identifica otra omisión P0/P1 para ese scope; corregidos estado del dossier y Signal Engine frente a A+ y separados contratos establecidos de detalle abierto. Plan Architect cierra D-009 sin seleccionar Strategy V1 ni verificar claims de rentabilidad. Reglas/datos/validación permanecen R-020/021/025/D-008/011. No backtest, broker, cambio de autoridad ni implementación.
+
+## 2026-10-07 — wave financiera independiente de target
+
+- Demanda RC1 por candidato/clocks/engine/failure, protocolo ex ante y exposición incidental a retornos públicos de emisores (no backtests de estrategias). Strategy V1 OPEN, video primero/MATR benchmark.
+- R-007/008 fuentes primarias Alpaca/IBKR/Tradier: feed/fill/history/route y economía parcial; D-021/022 RESEARCHING, sin cuenta/API/órdenes/selección. Alternativas restantes abiertas.
+- R-025 SEC/Quiver/UW/Capitol y probe GET único de schema público sin auth/data/spend; campos temporales no prueban PIT ni licencia. Pricing/rights UNKNOWN conservados donde corresponde; fuentes Smart Money independientes.
+- Actualizados scorecards, preguntas, registros y foco financiero. Corregido broker D-009→D-021 en preregistro; slug IWM anterior `ishares-msci-united-kingdom-etf`→`ishares-russell-2000-etf`, sin certificar datasets/holdout. D-039 superseded retirado de IDs abiertos; dimensión legacy D027/024 alineada con checkpoint READY_FOR_DECISION de diseño.
+- Paquete autónomo cerrado en alcance wave01, Q-053/ADR-014 requiere owner por diseño material. No acceso Plus/admin INFOTEP, permiso Trading OS, gasto, merge main ni release. Próximo trabajo principal P0/P1 financiero tras checkpoint.

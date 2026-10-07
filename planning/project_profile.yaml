@@ -134,7 +134,7 @@ open_decision_ids:
   P0: [D-008, D-010, D-011]
   P1: [D-021, D-022, D-023, D-024, D-025, D-026, D-027, D-028, D-029, D-033, D-034, D-035, D-037]
   P2: [D-030, D-031, D-032]
-  P3: [D-039, D-040, D-041, D-042]
+  P3: [D-040, D-041, D-042]
   P4: [D-050, D-051]
 required_specialties:
   - quantitative_finance_and_backtesting
@@ -151,7 +151,7 @@ required_specialties:
   - pedagogy_and_explainability
 capability_discovery:
   required: true
-  current_focus: R-006_D-020_D-024
+  current_focus: FINANCIAL_P0_P1_STRATEGY_DATA_BROKER_RISK_WITH_AGENTIC_DESIGN_CHECKPOINT_Q053
   agentic_provider_scope: [OpenAI, Anthropic]
   other_agentic_frameworks_in_scope: false
   RESEARCH_AI_ENVIRONMENT: ChatGPT_Team
@@ -204,7 +204,7 @@ capability_discovery:
   no_general_Skill_superiority_demonstrated: true
   autonomous_RC0_steps_1_and_2: COMPLETE_SPECIFICATION_AND_FOCUSED_SYNTHETIC_PROBES
   candidate_cohort_owner_approval: APPROVED_FOR_ACCEPTANCE_NOT_FINAL_SELECTION
-  next_package_action: TEAM_RESOLVABLE_AGENTIC_DESIGN_REVIEW_THEN_STRATEGYV1_NO_CURRENT_ADMIN
+  next_package_action: OWNER_DESIGN_CHECKPOINT_Q053_THEN_CONTINUE_FINANCIAL_PREPARATION_NO_PLUS_OR_CURRENT_ADMIN
   independent_coverage_gaps: independent_agent_review_documented_empirical_security_and_integrated_financial_pedagogy_not_closed
   proposed_architecture_direction: deterministic_local_always_on_core_plus_automatic_event_schedule_Codex_native_jobs_target_Plus_ACCEPTANCE_DEFERRED
   representative_workload: WL_R_40_base_plus_10_interactive_logical_jobs_up_to_13_reserve_service_requests_NOT_STRATEGY_CADENCE
@@ -333,8 +333,8 @@ paper_isolation_direction:
   security_isolation: NOT_VERIFIED
   shadow_experimental_blinding: NOT_VERIFIED
   administrative_setup_authorized: false
-  D027: RESEARCHING
-  D024: RESEARCHING
+  D027: READY_FOR_DECISION_DESIGN_ONLY_TARGET_DEFERRED
+  D024: READY_FOR_DECISION_DESIGN_ONLY_TARGET_DEFERRED
 
 s2_research_package:
   specification: planning/08_S2_agent_domain_contract_RC2.md
@@ -447,3 +447,20 @@ agentic_design_checkpoint:
   APS_calendar_probe: 6_SYNTHETIC_CRITERIA_NOT_WORKFLOW_RECOVERY
   unresolved_transverse_design: [D-025, D-026, D-028, D-029, D-034, D-035]
   owner_action: DESIGN_CHECKPOINT_ONLY_NO_PLUS_OR_INSTITUTIONAL_ADMIN
+
+financial_preparation_wave:
+  updated_on: 2026-10-07
+  D009: DECIDED_FUNCTIONAL_EXTRACTION_ONLY
+  D008: OPEN_STRATEGY_V1_SELECTION
+  D021: RESEARCHING_NO_BROKER_SELECTED
+  D022: RESEARCHING_NO_DATASET_ADMITTED
+  D033: RESEARCHING_NO_SMART_MONEY_PROVIDER_SELECTED
+  candidates: VIDEO_COMPONENTS_FIRST_MATR_BENCHMARK_OTHER_JUSTIFIED
+  demand_contract: planning/research/R-020_candidate_data_workload_contract_RC1.md
+  broker_data_evidence: planning/research/R-007_008_provider_evidence_wave01_2026-10-07.md
+  smart_money_evidence: planning/research/R-025_provider_evidence_wave01_2026-10-07.md
+  public_schema_probe: METADATA_ONLY_HTTP200_NOT_PIT_OR_DATA_ACCESS_PROOF
+  strategy_backtest_results_observed: false
+  incidental_public_ETF_issuer_returns_seen: true
+  dataset_or_holdout_opened: false
+  incremental_spend: 0

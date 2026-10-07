@@ -112,3 +112,8 @@ Journal de repo y output BASE son candidatos de evidencia; no autenticidad adver
 - K-058 P1: launch cross-user/reboot exige privilegios inesperados, supervisor bajo A o credenciales/per-job login. AcquireRunnerLaunchCapability fail-closed; family/derechos/setup owner target, no servicio/privilegio automático.
 - K-059 P1: report/binding falsificado o copiado entre config/instances produce aceptación aparente. Registro/validator C externo protegido, scope fijo, instance/fingerprint/gate phase; B1 no prueba protección del store.
 - P2 residuo research: cleanup H7 auto-review rechazado dos veces (solo reason blocked by policy); procesos detenidos, ocho archivos TEMP ficticios/deps permanecen. H8 fixture retenido intencionalmente .local. No secreto/datos financieros ni workaround de borrado; no bloquea diseño ni implica rollback S2, que no se ejecutó.
+
+## Riesgos de admisión de fuentes/validación — 2026-10-07
+
+- K-060 P1: señales IEX/datos delayed y fills paper NBBO se tratan como mercado idéntico; simulación favorable omite costes/dividendos/liquidez. Pin feed/clocks y modelo económico independiente, pruebas de paridad y reconciliación; paper gratuito no prueba alpha.
+- K-061 P0/P1: escoger actor/reglas con resultados vistos o transformar filing/uploaded a disponibilidad exacta sin historia. Preregistro/exposure log, fuentes/canales y revisiones pareadas, UNKNOWN o variante conservadora explícita; criterios antes de muestras. Fuente paga/gratis no salta gate PIT/licencia.

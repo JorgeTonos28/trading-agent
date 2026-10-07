@@ -91,3 +91,8 @@ La workstation INFOTEP no es host PAPER ni dispone de privilegios administrativo
 - A-042 P1 UNVERIFIED: native keyring + HOME mínimo readonly/redirects privados puede operar Plus/restricted token sin carrier peer/Champion. Código pinado confirma HOME-derived namespace; WinCred tiene session namespace, no aislamiento por restrict SID demostrado. R-030/BL-AUTH puede invalidar candidato.
 - A-043 P1 UNVERIFIED: C obtiene capacidad legítima de launch A y mantiene lifecycle sin password en scripts, privilegios J, servicio privilegiado tácito o intervención por job. Family CreateProcessAsUserW definida; derechos/setup/compatibilidad target pendientes.
 - A-044 P1 PARTIAL: instance/fingerprint/fase y scope externo rechazan transferencia ficticia de evidencia. B1 16 casos sintéticos, no autenticidad/store protegido, Plus ni readiness completo.
+
+## Admisión financiera — 2026-10-07
+
+- A-045 P1 UNVERIFIED: los feeds/broker paper gratuitos satisfacen clocks, cobertura2005/warm-up, corporate actions, licencia y granularidad de los candidatos. Wave01 verifica ofertas/limitaciones, no datasets o fills reales; no sustituir feed de señal por NBBO simulado ni cambiar períodos sin decisión.
+- A-046 P1 UNVERIFIED: date/fileDate/uploaded de agregador permite reconstruir availability exacta. Probe público Quiver solo prueba declaración de campos, no valores/historia/revisiones/delivery. Contrastar canal primario-vendor y documentar supuestos conservadores, nunca PIT exacto ficticio.

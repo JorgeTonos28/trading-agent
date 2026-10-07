@@ -1,0 +1,66 @@
+{
+  "captured_at": "2026-10-07T18:10:29.712276+00:00",
+  "scope": "PUBLIC_DOCUMENTATION_METADATA_ONLY",
+  "url": "https://api.quiverquant.com/docs/schema.json",
+  "requests": 1,
+  "authentication_sent": false,
+  "data_endpoint_called": false,
+  "spend": 0,
+  "provider_selected": false,
+  "dataset_access_proven": false,
+  "PIT_quality_proven": false,
+  "source_sha256": "0b1243aa80c01f6128f0ac5c0c052c2539b7ed2dbaabfc4011df7b4199d9277a",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "response_bytes": 238296,
+  "response_sha256": "72b5c480c44494371c318c88072319795bf8440600998d81d297b5cd3de17af2",
+  "openapi_version": "3.0.3",
+  "api_version": "v1",
+  "license_reference": {
+    "name": "Terms of Service",
+    "url": "https://www.quiverquant.com/termsofservice/"
+  },
+  "clock_metadata": {
+    "Form4Entry": {
+      "exists": true,
+      "fields": {
+        "Date": {
+          "type": "string",
+          "format": "date-time",
+          "required": true
+        },
+        "fileDate": {
+          "type": "string",
+          "format": "date-time",
+          "required": true
+        },
+        "uploaded": {
+          "type": "string",
+          "format": "date-time",
+          "required": false
+        }
+      }
+    },
+    "CongressionalTrade": {
+      "exists": true,
+      "fields": {
+        "ReportDate": {
+          "type": "string",
+          "format": "date-time",
+          "required": false
+        },
+        "TransactionDate": {
+          "type": "string",
+          "format": "date-time",
+          "required": false
+        }
+      }
+    },
+    "InstitutionalHolding": {
+      "exists": false,
+      "interpretation": "UNKNOWN_SCHEMA_NAME_NOT_DATASET_ABSENCE"
+    }
+  },
+  "congress_endpoint_security_declared": true,
+  "verdict": "METADATA_OBSERVED_NOT_DATASET_ADMITTED"
+}
