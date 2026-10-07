@@ -123,3 +123,10 @@ Contrato concreto F/C/R/S/P/H, filesystem/network/IPC/secrets, snapshots mínimo
 ## 2026-10-07 — ADR-013 / D-043: supersession de entornos y gates
 
 Owner establece Team/INFOTEP research y Plus/PC personal target PAPER; LIVE UNKNOWN. ADR-010 y premisa PRE-LIVE-only R-029/D-039 parcialmente superseded, Deployment Source Policy intacta. Se preservan aprobaciones/evidencias; lab S2B-ADM-01 diferido, solicitud cuenta institucional retirada. Añadidos R-030, perfiles/schema v0.3 con historia v0.2, dimensiones diseño/target/operación, guard de no mutación en helper y reglas bootstrap. No OS setup/auth/financial implementation, gasto, merge main ni tag. Sigue lock.
+
+## 2026-10-07 — diseño agéntico candidato y probes independientes
+
+- B-RT1/ADR-014 propuestos: supervisor C fuera A/J, TokenPolicy/desktop/launch-capability, typed callbacks/canal/ledger y auth/config minimal. Source Codex corrige HOME/keyring, BL-AUTH explícito. No decisión/aprobación silenciosa.
+- ONBOARDING actual primero; historical routes conservadas. Instance/fingerprint/fase v0.3 + B1 16 casos ficticios; legacy v0.2 intacto.
+- H7 Temporal worker loss→redelivery intento2, toy unique receipt, cleanup parcial por auto-review. Review detecta env helper no limitado; fuente01 intacta y next-source corregida sin rerun. H8 APS calendario persist/restart/misfire 6 criterios, fixtures .local, deps TEMP sin instalación global.
+- Revisión independiente sin P0/P1 documental restante para presentar candidato. Target R-030 NOT_TESTED, lab DEFERRED_TO_TARGET_PAPER_HOST, main no modificado, implementation lock vigente. Próximo scope financiero independiente precede Q-053 owner checkpoint.

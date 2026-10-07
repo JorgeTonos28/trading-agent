@@ -297,6 +297,12 @@ Otherwise continue through the planned work package and only report completion a
 
 ## Plan completion
 
+### Current candidate design checkpoint — 2026-10-07
+
+R-006 is mature for the scoped design decision in `planning/14_agentic_architecture_design_checkpoint_RC0.md`. ADR-014/B-RT1 is READY_FOR_DECISION, **not approved**. It specifies C/A/J ownership, restricted-token policy, launch/auth lifecycle, typed tool stubs/channels, storage and instance/config evidence binding. Do not treat a proposed realization as an operational permission or accepted runtime. D-025/026/028/029/034/035 remain transverse design work that can continue in Team.
+
+The owner design checkpoint may establish AGENTIC_ARCHITECTURE_DESIGN_COMPLETE only in its declared capability/role/integration scope; PAPER_RUNTIME_ACCEPTED remains false until target evidence. R-030 is deferred to the personal Windows/Plus environment. Do not request Plus access or administrative action on INFOTEP. If acceptance requires a privileged service, broader grants, moving supervisor under Agent Runner, shared excluded content or owner login per routine job, reopen design and human governance instead of widening permissions automatically.
+
 The Preparation Program ends only when the project's formal Definition of Ready is satisfied.
 
 The final output of the Preparation Program will be:

@@ -428,9 +428,22 @@ s2b_lab_execution:
   secret_handling: OWNER_WINDOWS_UI_ONLY
 
 design_acceptance_dimensions:
-  D024: {design_status: RESEARCHING, target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED, operational_status: NOT_IMPLEMENTED}
-  D027: {design_status: RESEARCHING, target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED, operational_status: NOT_TESTED}
-  D037: {design_status: RESEARCHING, target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED, operational_status: NOT_IMPLEMENTED}
+  D024: {design_status: READY_FOR_DECISION, target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED, operational_status: NOT_IMPLEMENTED}
+  D027: {design_status: READY_FOR_DECISION, target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED, operational_status: NOT_TESTED}
+  D037: {design_status: READY_FOR_DECISION, target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED, operational_status: NOT_IMPLEMENTED}
   S2B_ADM01: {execution_status: DEFERRED_TO_TARGET_PAPER_HOST, current_host_execution_allowed: false}
   agentic_architecture_design_complete: false
   paper_runtime_accepted: false
+
+agentic_design_checkpoint:
+  artifact: planning/14_agentic_architecture_design_checkpoint_RC0.md
+  proposal: ADR-014_B_RT1
+  status: READY_FOR_DECISION_NOT_APPROVED
+  question: Q-053
+  R006_maturity: MATURE_FOR_DESIGN_DECISION
+  independent_review: planning/research/R-006_design_independent_review_2026-10-07.md
+  binding_probe: 16_SYNTHETIC_CASES_NOT_ENVIRONMENT_ACCEPTANCE
+  Temporal_worker_probe: AT_LEAST_ONCE_ATTEMPTS_1_2_CLEANUP_PARTIAL_ENV_HELPER_CAVEAT
+  APS_calendar_probe: 6_SYNTHETIC_CRITERIA_NOT_WORKFLOW_RECOVERY
+  unresolved_transverse_design: [D-025, D-026, D-028, D-029, D-034, D-035]
+  owner_action: DESIGN_CHECKPOINT_ONLY_NO_PLUS_OR_INSTITUTIONAL_ADMIN

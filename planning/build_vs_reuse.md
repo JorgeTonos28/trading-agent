@@ -84,3 +84,7 @@ REUSE_AS_IS discovery/instrucciones/Skills nativos (C-030); ADAPT modo de onboar
 ## Revisión de controles de aislamiento — 2026-10-06
 
 Reutilizar controles Windows antes de construir contención: restricted tokens candidatos WRAP (AccessCheck semántico 10/10, compatibilidad Codex UNKNOWN), AppContainer REFERENCE_ONLY hasta prueba autorizada, usuarios/DACL/IPC/egress REUSE_AS_IS/WRAP, Job Objects lifecycle sin garantía de sandbox. [Comparativa](research/R-013_S2_variants_comparison_2026-10-06.md). S2-B recomendado, no launcher custom seleccionado ni cuenta por rol necesaria; S2-A solo si necesidad demostrada, S3 reserva. Sin perfiles/ACL/users/firewall ni gasto; ADM-01 withheld. Codex/SDK/Skills disposiciones ADR-011 intactas.
+
+## Diseño candidato vigente — 2026-10-07
+
+[B-RT1](08_agentic_runtime_realization_RC1.md) y [checkpoint](14_agentic_architecture_design_checkpoint_RC0.md) concretan ownership/launch/auth/tools/state y binding; ADR-014 READY_FOR_DECISION, no aprobado. R-006 maduro para esta decisión; D-020 disposiciones aprobadas conservadas. Plus/PC personal R-030 aceptación diferida, LIVE UNKNOWN. No freeze ni permiso operacional; workspaces/AGENTS son packaging, no barrera. Costo incremental/autenticación/gates futuros no autorizados por este texto.

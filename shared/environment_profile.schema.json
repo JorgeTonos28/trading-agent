@@ -618,6 +618,14 @@
                   "OPERATIONAL",
                   "LIVE"
                 ]
+              },
+              "environment_instance_id": {
+                "type": "string",
+                "format": "uuid"
+              },
+              "effective_fingerprint": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
               }
             },
             "required": [
@@ -626,7 +634,9 @@
               "result",
               "version",
               "evidence_refs",
-              "gate_phase"
+              "gate_phase",
+              "environment_instance_id",
+              "effective_fingerprint"
             ],
             "additionalProperties": false
           }
@@ -734,6 +744,14 @@
             "ACCEPTED",
             "FAILED"
           ]
+        },
+        "environment_instance_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "effective_fingerprint": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
         }
       },
       "required": [
@@ -764,11 +782,13 @@
         "decision_reference",
         "design_status",
         "target_acceptance_status",
-        "operational_status"
+        "operational_status",
+        "environment_instance_id",
+        "effective_fingerprint"
       ],
       "additionalProperties": false,
       "$schema": "https://json-schema.org/draft/2020-12/schema",
-      "$id": "urn:trading-os:environment-profile:0.2.0-planning",
+      "$id": "urn:trading-os:environment-profile:0.3.0-planning",
       "title": "Sanitized environment observation; not credentials or financial readiness"
     }
   ]

@@ -105,3 +105,10 @@ Journal de repo y output BASE son candidatos de evidencia; no autenticidad adver
 - P1: diferir una pregunta genuina de diseño como si fuera test de host. Control: maturity audit R-006/R-010/R-013 e independiente; workflow/store/permissions/version choices siguen explícitos.
 - P1/P2: Plus/quota/auth o aislamiento no suficientes. Control: target acceptance fail-closed; reevaluar arquitectura con owner, sin S1 operativo, silent S3 ni gasto automático.
 - P3: asumir el host PAPER como LIVE. Control: FUTURE_LIVE_ENVIRONMENT UNKNOWN y decisión posterior a PAPER.
+
+## Realización B-RT1 / evidencia portable — OPEN
+
+- K-057 P1: keyring/logon session compartida transporta contenido entre attempts pese a HOME readonly. BL-AUTH arbitrary canary→relaunch y negative credential/process tests target; auth mínima no permite datos de jobs. FAIL obliga reparación/gobierno, no limpiar para ocultar.
+- K-058 P1: launch cross-user/reboot exige privilegios inesperados, supervisor bajo A o credenciales/per-job login. AcquireRunnerLaunchCapability fail-closed; family/derechos/setup owner target, no servicio/privilegio automático.
+- K-059 P1: report/binding falsificado o copiado entre config/instances produce aceptación aparente. Registro/validator C externo protegido, scope fijo, instance/fingerprint/gate phase; B1 no prueba protección del store.
+- P2 residuo research: cleanup H7 auto-review rechazado dos veces (solo reason blocked by policy); procesos detenidos, ocho archivos TEMP ficticios/deps permanecen. H8 fixture retenido intencionalmente .local. No secreto/datos financieros ni workaround de borrado; no bloquea diseño ni implica rollback S2, que no se ejecutó.

@@ -95,3 +95,9 @@ Dirección S2-B aprobada; Q-051 DECIDED en ese alcance. [Laboratorio mínimo S2B
 6. Transición autorizada a PC personal/Plus: fresh clone/R-030/seguridad; DoR y permiso de implementación solo tras gates requeridos. Sistema integrado/backtests/load/recovery/PAPER después; LIVE se decidirá posteriormente.
 
 No acceso Plus ni administración INFOTEP solicitados. No esperar esas pruebas para investigar diseño o P0/P1 financieros.
+
+## Endpoint actual de diseño agéntico — 2026-10-07
+
+Corrección ADR-013 sincronizada. Paquete autónomo capa agéntica completado en su scope de diseño; [checkpoint](14_agentic_architecture_design_checkpoint_RC0.md) / ADR-014 B-RT1 READY_FOR_DECISION tras review. Ninguna aceptación Plus/host ni administración solicitada. Antes de detenerse, avanzar el paquete independiente de Strategy/datos/broker, persistir y sincronizar; luego Q-053 exige aprobación humana material conforme AGENTS.md. No repetir S2-B direction ni solicitar Plus/admin INFOTEP.
+
+Tras decisión de diseño, foco principal: (1) admisión/reglas/candidatos Strategy V1; (2) broker/RD y data/PIT/Smart Money por dataset; (3) protocolo OOS/engine; (4) fórmulas riesgo; (5) workflow/storage/ops/tests con demanda definida. Diseñar Plan RC revisable en Team; gates target P1 y DoR/freeze preceden implementación, integración P2 precede PAPER. Si acceptance requiere cambio de trust/authority, reabrir owner antes de implementar.

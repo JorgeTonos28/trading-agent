@@ -76,3 +76,7 @@ Propietario aprueba S2-B como candidata principal, Q-051 cerrado en dirección. 
 ## Gate de diseño y aceptación actual — ADR-013
 
 Diseño D-037: rutas relativas, manual/programmatic entry del contrato común, paquetes/Skill versionados, dependencias/licencias y smoke protocol sin chat. Target R-030: carga/activación y permisos efectivos en fresh clone personal/Plus antes de implementar. No identidad OS/sesión por paquete seleccionada, no auth/cache transferida. S2B diferido al target, no solicitud de cuenta local INFOTEP.
+
+## Diseño candidato vigente — 2026-10-07
+
+[B-RT1](08_agentic_runtime_realization_RC1.md) y [checkpoint](14_agentic_architecture_design_checkpoint_RC0.md) concretan ownership/launch/auth/tools/state y binding; ADR-014 READY_FOR_DECISION, no aprobado. R-006 maduro para esta decisión; D-020 disposiciones aprobadas conservadas. Plus/PC personal R-030 aceptación diferida, LIVE UNKNOWN. No freeze ni permiso operacional; workspaces/AGENTS son packaging, no barrera. Costo incremental/autenticación/gates futuros no autorizados por este texto.

@@ -103,3 +103,9 @@ Estados: cada Q muestra su prioridad; Q-030–Q-037 incluyen estado explícito. 
 ## Entornos y gates vigentes — ADR-013
 
 D-043 DECIDED; no pregunta de acceso Plus/admin institucional pendiente. Q-052 conserva la autorización histórica temporal, ejecución DEFERRED_TO_TARGET_PAPER_HOST. Preguntas de diseño ahora: workflow/store y fronteras nativas/versiones; después Strategy V1 (D-008 OPEN), brokers/data/engine/riesgo. D-024/027/037 target acceptance diferido R-030, no resultados FAIL ni runtime aceptado. LIVE UNKNOWN.
+
+## Checkpoint de diseño material — 2026-10-07
+
+- Q-053 (P1, D-024/D-027/D-037, READY_FOR_DECISION): ¿aprobar B-RT1/ADR-014 como realización candidata y scope AGENTIC_ARCHITECTURE_DESIGN_COMPLETE, con acceptance target R-030 separado? Recomendación técnica y alternativas en ADR-014; no acceso Plus/admin institucional requerido. No implica permiso/freeze/implementación ni repetir dirección S2-B.
+- Q-042/Q-044/Q-045/Q-050 y sus notas anteriores conservan contexto histórico. Vigencia actual: Plus/personal es target PAPER; LIVE UNKNOWN; egress del host institucional no es gate PAPER. D-025/026/028/029 y Strategy workload siguen diseñables aquí; gates target no bloquean su investigación.
+- Auth shared-home/keyring namespace, token/desktop/launch capability, C/J typed channels y instance/fingerprint están especificados en B-RT1/R-028; **compatibilidad/eficacia** target NOT_TESTED, no preguntas de acceso ahora.

@@ -137,3 +137,7 @@ Propietario aprueba S2-B como candidata principal, Q-051 cerrado en dirección. 
 ## Contrato actual por fase — ADR-013
 
 IDs actuales AI/host separados; entorno observado v0.3 incluye RESEARCH_ENVIRONMENT / TARGET_PAPER_ENVIRONMENT / FUTURE_LIVE_ENVIRONMENT, ai_environment/compute_host y fase por test. Diseño EB/inventory/packages/recovery se especifica y revisa Team; ejecución target EB/TE en Plus/PC personal se difiere R-030, necesaria antes de implementación. Perfil v0.2 preservado no pasa a nuevo scope por cambiar nombre. READY_AGENT_ENVIRONMENT exige todos los requisitos mandatorios del scope PASSED; una aceptación diferida no es PASS. Fase OPERATIONAL completa tests del sistema construido antes de PAPER. Esta cláusula supersede la tabla antigua de entornos y su restricción Plus PRE-LIVE-only.
+
+## Diseño candidato vigente — 2026-10-07
+
+[B-RT1](08_agentic_runtime_realization_RC1.md) y [checkpoint](14_agentic_architecture_design_checkpoint_RC0.md) concretan ownership/launch/auth/tools/state y binding; ADR-014 READY_FOR_DECISION, no aprobado. R-006 maduro para esta decisión; D-020 disposiciones aprobadas conservadas. Plus/PC personal R-030 aceptación diferida, LIVE UNKNOWN. No freeze ni permiso operacional; workspaces/AGENTS son packaging, no barrera. Costo incremental/autenticación/gates futuros no autorizados por este texto.

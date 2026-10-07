@@ -17,7 +17,10 @@
     "planning/08_agent_security_contract_RC0.md",
     "planning/08_job_workflow_recovery_contract_RC0.md",
     "planning/08_audit_versions_deployment_contract_RC0.md",
-    "planning/08_S2_agent_domain_contract_RC2.md"
+    "planning/08_S2_agent_domain_contract_RC2.md",
+    "planning/08_agentic_runtime_realization_RC1.md",
+    "planning/research/R-028_instance_binding_RC1.md",
+    "planning/14_agentic_architecture_design_checkpoint_RC0.md"
   ],
   "packages": [
     "agents/onboarding/package.json",
@@ -120,6 +123,13 @@
         "PAPER_AGENT_ENVIRONMENT"
       ],
       "gate_phase": "TARGET_ENVIRONMENT_ACCEPTANCE"
+    },
+    {
+      "id": "target-instance-and-config-binding",
+      "required_scopes": [
+        "PAPER_AGENT_ENVIRONMENT"
+      ],
+      "gate_phase": "TARGET_ENVIRONMENT_ACCEPTANCE"
     }
   ],
   "external_prerequisites": [
@@ -159,7 +169,7 @@
     "planning/08_S2_isolation_spec_RC1.md",
     "planning/research/R-013_S2_acceptance_matrix_RC1.md"
   ],
-  "next_governance_item": "AGENTIC_DESIGN_CHECKPOINT_THEN_STRATEGY_V1_NO_TARGET_ACCESS_REQUEST_NOW",
+  "next_governance_item": "Q053_B_RT1_DESIGN_CHECKPOINT_NO_PLUS_OR_INSTITUTIONAL_ADMIN",
   "isolation_variant": {
     "proposed": "S2_B",
     "selected": false,
@@ -192,11 +202,14 @@
     "FUTURE_LIVE_ENVIRONMENT": "UNKNOWN"
   },
   "gate_phases": {
-    "design": "Preparation Team — contracts/architecture/review",
-    "target_environment": "R-030 personal Windows Plus — before implementation",
-    "operational": "Built integrated system — before autonomous PAPER",
+    "design": "Preparation Team \u2014 contracts/architecture/review",
+    "target_environment": "R-030 personal Windows Plus \u2014 before implementation",
+    "operational": "Built integrated system \u2014 before autonomous PAPER",
     "live": "Undecided after PAPER"
   },
   "live_environment_selected": false,
-  "paper_runtime_accepted": false
+  "paper_runtime_accepted": false,
+  "agentic_realization_proposal": "B_RT1_RESTRICTED_TOKEN_TRUSTED_C_SUPERVISOR_KEYRING_NATIVE_AUTH_NO_GENERIC_AGENT_TOOLS",
+  "agentic_design_status": "READY_FOR_DECISION_ADR014_NOT_APPROVED",
+  "agentic_architecture_design_complete": false
 }

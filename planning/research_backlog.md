@@ -66,3 +66,8 @@ R-013 continúa autónomo en especificación/preparación no administrativa bajo
 
 [Laboratorio/gate S2B-ADM-01](research/R-013_S2B_lab_ADM01.md) y [dossier](research/R-013_S2B_lab_preparation_2026-10-06.md): una cuenta y canaries, LF01–12 con mapping/manual/positivos, source/plan pinados y rollback. Memoria/common-SID/privilegios + sintaxis14 y readonly ejecutados; FS/native/admin NO. Q-052 DECIDED solo permiso temporal recibido. Continuación efectiva requiere acción owner Windows UI/admin dentro del scope; D-027/D-024 abiertos y R-013 no cerrado. A/S3 condicionales, no setup/elevación por source ni autoridad financiera nueva.
 
+## Cierre del paquete de diseño independiente — 2026-10-07
+
+R-006 MATURE_FOR_DESIGN_DECISION, D-020 direction preservada; R-010/R-013 scope de arquitectura candidato listo para owner con [B-RT1/checkpoint](14_agentic_architecture_design_checkpoint_RC0.md), no PAPER_RUNTIME_ACCEPTED. B1 16 casos; H7 Temporal redelivery y cleanup parcial/env-helper caveat; H8 calendario persistente 6 criterios. [Comparación engines/stores](research/R-010_workflow_storage_comparison_RC1.md). R-028 binding/bootstrap contractual completo para revisión, target gates R-030 diferidos.
+
+R-011/R-012/R-014/026/027 siguen P1 transversales: workload Strategy V1, elección engine/store, datos/retención/SLO y protocolos/fórmulas. No requieren Plus para diseño. Revisión independiente incorpora repairs de propiedad/launch/auth/WinCred/instance; aprobación B-RT1 es Q-053. No cerrar R-006 discovery permanente: necesidades nuevas requieren reuse check.

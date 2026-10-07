@@ -29,3 +29,9 @@ Estado `DEFERRED_TO_TARGET_PAPER_HOST`; LF01–12 siguen NOT_TESTED. La transacc
 Environment profile sanitizado con AI-plan/host separados; diff expected/observed; acciones AUTOMATED/USER_ACTION_REQUIRED/UNAVAILABLE/OPTIONAL/FALLBACK_AVAILABLE; resultados con fase, refs, source/versión; readiness calculado externamente. `READY_AGENT_ENVIRONMENT` no implica READY_FOR_IMPLEMENTATION global, PAPER ni LIVE.
 
 Esta ficha especifica pruebas futuras; no registra ejecuciones que no ocurrieron. LIVE target UNKNOWN, R-029 histórico no selecciona un entorno futuro.
+
+## Deltas candidatos B-RT1 / instancia
+
+Sujeto a gobierno de [B-RT1](../08_agentic_runtime_realization_RC1.md), TE-4 incluye TokenPolicy B-RT1-T1/desktop, supervisor C protegido, AcquireRunnerLaunchCapability y derechos reales, stubs J/READ_TOOL/SUBMIT_RESULT y canal mapping externo. TE-1/4 prueban native keyring/refresh, home readonly/redirects, **BL-AUTH WinCred arbitrary canary→relaunch** y peer/process-memory; auth común no demuestra blinding. Si exige mover supervisor a A, nuevo servicio privilegiado, grants amplios, contenido compartido excluido o login por job, volver a diseño/owner, no continuar como simple configuración.
+
+TE-2/7 exige [instance/fingerprint](R-028_instance_binding_RC1.md) por resultado y scope fijado externamente. B1 sintético comprueba lógica de bindings, no la autenticidad del registro ni target PASS. No usuarios, login, privilegios, desktops/policies/config nuevos realizados por esta adenda.

@@ -1,4 +1,40 @@
-# Onboarding — Trading OS en un entorno nuevo
+# Onboarding — Trading OS, ruta vigente ADR-013
+
+Estado: Preparation & Plan Hardening; `implementation_locked=true`. Research = ChatGPT Team + Windows institucional INFOTEP. Target PAPER = Plus individual + PC personal Windows del propietario. LIVE UNKNOWN. No configurar el entorno operacional ni solicitar Plus/admin institucional ahora.
+
+## Clone y entrada
+
+Preparación candidata en `plan-architect`; `main` baseline estable aprobado. Para leer/probar documentos candidatos:
+
+```powershell
+git clone https://github.com/JorgeTonos28/trading-agent.git
+cd trading-agent
+git switch plan-architect
+```
+
+Despliegue futuro desde release/tag versionado aprobado; no promover branch/main/tag automáticamente. Git no transporta login, cuentas, ACL, plugins externos, SIDs, certificados, secrets o historial del chat.
+
+Abre la raíz del clone en Codex durante Preparation y pide:
+
+> Lee AGENTS.md, ONBOARDING.md y shared/bootstrap_manifest.json. Ejecuta Bootstrap Mode de RESEARCH_ENVIRONMENT en Team/host institucional: inventario y checks permitidos, sin cambiar autenticación/configuración global, solicitar Plus ni instalar dominio PAPER. Guarda reporte sanitizado con diseño y target acceptance separados.
+
+En la futura transición **autorizada** a PC personal/Plus, el mismo entry point usa TARGET_PAPER_ENVIRONMENT y [R-030](planning/research/R-030_target_paper_environment_acceptance_RC0.md). Account login del dueño y cambios administrativos tienen gates propios; opening/cloning no autoriza setup.
+
+## Procedimiento actual
+
+1. Leer AGENTS raíz/rol; confirmar source commit/rama, [manifest](shared/bootstrap_manifest.json), [expected target](shared/paper_plus_personal_profile.json), [bootstrap](planning/07_environment_bootstrap_contract_RC0.md) y [packages](planning/07_agent_packaging_contract_RC0.md).
+2. Inventario por AI plan, host, superficie, versiones y config/policy observados. Separar detected/enabled/callable/probed. UNKNOWN permitido; Team no prueba Plus. No leer valores de secrets.
+3. Clasificar AUTOMATED / USER_ACTION_REQUIRED / UNAVAILABLE / OPTIONAL / FALLBACK_AVAILABLE. Ahora solo investigación/checks permitidos; no pedir ni ejecutar target setup. Futuro target: diff/gate/rollback antes de configuración autorizada, conservar settings del dueño.
+4. Gates DESIGN durante Preparation. Gates TARGET_ENVIRONMENT_ACCEPTANCE en PC personal/Plus **antes de implementación**, con fixtures no financieros EB/TE/SI/BL/RB/VP. Gates OPERATIONAL del sistema construido antes de PAPER. [Binding de instancia](planning/research/R-028_instance_binding_RC1.md) impide trasladar un PASS de otro entorno/configuración. No repetir toda investigación conductual Team.
+5. Perfil observado v0.3 según [schema](shared/environment_profile.schema.json), refs/hashes, instance/fingerprint, acción/gate/fase y readiness calculado externamente. El perfil expected no es observación; la rama v0.2 del schema conserva historia. Guardar reports privados en `.local/`; solo evidencia sanitizada revisada en Git.
+6. El reporte agéntico nunca concede READY_FOR_IMPLEMENTATION, PAPER, LIVE o resume financiero. Seguir DoR/freeze y demás P0/P1 del proyecto. [S2-B candidato](planning/08_agentic_runtime_realization_RC1.md) no técnicamente aceptado; S2B-ADM-01 diferido al target.
+
+Skill local `$trading-os-bootstrap` si está detectada/activada; si falta, usar este procedimiento y registrar la diferencia, sin instalar plugins para compensarla automáticamente. Roles reutilizables manual/programmatic comparten contratos; no una cuenta/sesión por carpeta. Plan Guardian inactivo hasta freeze aprobado.
+
+## Historia de onboarding conservada — ADR-009/010 y handoff anteriores
+
+Los textos siguientes preservan la evolución. Sus instrucciones de Team PAPER/Plus PRE-LIVE/account setup institucional **no son la ruta vigente**. Usar la ruta anterior y ADR-013/R-030.
+
 
 > **Vigencia ADR-013 — 2026-10-07:** investigación = Team en workstation Windows institucional INFOTEP; target PAPER = Plus individual en PC personal del propietario; LIVE = UNKNOWN. Se conservan las notas/evidencias anteriores como historia. Team no prueba disponibilidad Plus ni seguridad del host personal. Diseño se resuelve durante Preparation; aceptación target R-030 se difiere antes de implementación/PAPER. S2B-ADM-01 = DEFERRED_TO_TARGET_PAPER_HOST; no acción administrativa institucional pendiente. `implementation_locked=true`.
 

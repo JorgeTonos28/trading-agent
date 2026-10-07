@@ -1,5 +1,13 @@
 # 08 — seguridad y permisos de jobs PAPER RC0
 
+> **Vigencia ADR-013 — 2026-10-07:** Team/INFOTEP investigación y diseño; Plus individual/PC personal target PAPER; LIVE UNKNOWN. Aceptación target R-030 diferida antes de implementación, no prueba pasada. Lab S2B-ADM-01 DEFERRED_TO_TARGET_PAPER_HOST, sin solicitud administrativa institucional. Los scopes históricos se conservan.
+
+## Contratos vigentes y deltas
+
+La realización concreta propuesta está en `planning/08_agentic_runtime_realization_RC1.md` (B-RT1); conserva estos invariantes y remite acceptance al target R-030. Supervisor/control fuera A/J; ledger/admission en C; cuenta por rol no seleccionada. D-025/026 siguen abiertos como motores transversales bajo contratos invariantes; cambios de trust/authority reabren D-024/027. B-RT1 requiere revisión/gobierno material, no permiso OS.
+
+## Cuerpo de contratos e hitos previos — entorno actualizado por ADR-013
+
 **Vigencia 2026-10-06:** [S2-B RC2](08_S2_agent_domain_contract_RC2.md) propuesto; [comparativa](research/R-013_S2_variants_comparison_2026-10-06.md). Cuenta por rol no es requisito demostrado. Frontera financiera y blinding separados; S2-ADM-01 withheld/DEFERRED. Dirección revisada pendiente, no permisos efectivos.
 
 2026-10-05. D-027/R-013 **RESEARCHING**. Direcciones ADR-011 y ADR-012 S2 aprobadas en alcance candidato; controles efectivos y gate administrativo pendientes. No configuración de usuarios/firewall/VM, permisos finales o implementación autorizados.

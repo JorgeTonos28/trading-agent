@@ -211,3 +211,7 @@ Owner aprueba únicamente laboratorio nuevo/cuenta temporal/ACL documentadas/FS 
 ## Matriz actual de disponibilidad — ADR-013
 
 C-010, C-025a/C-029, C-017a/b, C-024/028, C-030/031: EXISTS=YES; AVAILABLE_IN_RESEARCH_AI_ENVIRONMENT=YES en los scopes/versions de las waves registradas; AVAILABLE_IN_TARGET_PAPER_PLUS=UNKNOWN; AVAILABLE_ON_TARGET_PAPER_HOST=UNKNOWN. La adquisición de assets públicos Apache/locales es gratuita e independiente del plan; su activación/ejecución Plus y aislamiento personal no están ensayados. SELECTED=APPROVED_DESIGN_DISPOSITION_ONLY bajo ADR-011, no FINAL_OPERATIONAL_SELECTION. Compatibilidad/economía operacional permanecen condicionadas por R-030; API separada no incluida. MCP/plugins solo reservas/referencia según RC2. LIVE UNKNOWN. Ver [aplicabilidad](13_environment_evidence_applicability.md) y [R-030](research/R-030_target_paper_environment_acceptance_RC0.md).
+
+## Diseño candidato vigente — 2026-10-07
+
+[B-RT1](08_agentic_runtime_realization_RC1.md) y [checkpoint](14_agentic_architecture_design_checkpoint_RC0.md) concretan ownership/launch/auth/tools/state y binding; ADR-014 READY_FOR_DECISION, no aprobado. R-006 maduro para esta decisión; D-020 disposiciones aprobadas conservadas. Plus/PC personal R-030 aceptación diferida, LIVE UNKNOWN. No freeze ni permiso operacional; workspaces/AGENTS son packaging, no barrera. Costo incremental/autenticación/gates futuros no autorizados por este texto.

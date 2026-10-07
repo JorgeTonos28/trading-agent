@@ -85,3 +85,9 @@ A-033/038 conservados como históricos: cuenta común con token irrestricto pued
 ## Corrección de entorno — 2026-10-07
 
 La workstation INFOTEP no es host PAPER ni dispone de privilegios administrativos requeridos (declaración owner). Team no garantiza Plus. Plus/personal es target PAPER, no LIVE seleccionado. Evidencia Team de conducta/método permanece aplicable dentro de su scope; auth/ACL/IPC/red/quota/host readiness se verifican en target. No asumir que un contrato de diseño demuestra aislamiento efectivo. ADR-013/R-030.
+
+## Auth/launch/binding del candidato B-RT1
+
+- A-042 P1 UNVERIFIED: native keyring + HOME mínimo readonly/redirects privados puede operar Plus/restricted token sin carrier peer/Champion. Código pinado confirma HOME-derived namespace; WinCred tiene session namespace, no aislamiento por restrict SID demostrado. R-030/BL-AUTH puede invalidar candidato.
+- A-043 P1 UNVERIFIED: C obtiene capacidad legítima de launch A y mantiene lifecycle sin password en scripts, privilegios J, servicio privilegiado tácito o intervención por job. Family CreateProcessAsUserW definida; derechos/setup/compatibilidad target pendientes.
+- A-044 P1 PARTIAL: instance/fingerprint/fase y scope externo rechazan transferencia ficticia de evidencia. B1 16 casos sintéticos, no autenticidad/store protegido, Plus ni readiness completo.

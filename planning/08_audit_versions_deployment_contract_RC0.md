@@ -1,5 +1,13 @@
 # 08 — storage, audit, versiones y deployment RC0
 
+> **Vigencia ADR-013 — 2026-10-07:** Team/INFOTEP investigación y diseño; Plus individual/PC personal target PAPER; LIVE UNKNOWN. Aceptación target R-030 diferida antes de implementación, no prueba pasada. Lab S2B-ADM-01 DEFERRED_TO_TARGET_PAPER_HOST, sin solicitud administrativa institucional. Los scopes históricos se conservan.
+
+## Contratos vigentes y deltas
+
+La realización concreta propuesta está en `planning/08_agentic_runtime_realization_RC1.md` (B-RT1); conserva estos invariantes y remite acceptance al target R-030. Supervisor/control fuera A/J; ledger/admission en C; cuenta por rol no seleccionada. D-025/026 siguen abiertos como motores transversales bajo contratos invariantes; cambios de trust/authority reabren D-024/027. B-RT1 requiere revisión/gobierno material, no permiso OS.
+
+## Cuerpo de contratos e hitos previos — entorno actualizado por ADR-013
+
 2026-10-05. D-026/D-028/R-012/014 **RESEARCHING**; R-010/D-024 abierto. Contratos candidatos, no schemas/runtime productivos.
 
 ## 1. Stores y límites
