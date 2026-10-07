@@ -27,3 +27,9 @@ No aprueba B-RT1/D-024/D-027/freeze/Plus/PAPER. Primera entrega no revisó H7; s
 Reviewer contrastó fuente/schema/hashes B1 y sus 16 casos con resultados: coinciden, scope FAKE explícito. Contrastó hashes H7 y attempts1/2; no exactly-once ni Activity-timeout observado directamente. Cleanup parcial/residuo correcto. No ejecutó scripts. H8 no revisado independientemente.
 
 **P2 identificado:** helper pwsh de H7 que consulta listeners no pasa env allowlist y hereda entorno completo, contrario al protocolo. No observó secretos leídos/expuestos; no repetir H7 para esconderlo. Fuente/resultados originales intactos, caveat en dossier y versión `h7_controller_next.py` corregida para eventual repetición (NOT_EXECUTED). H8 explícitamente limita env de sus hijos. No nuevo P0/P1 de diseño por este hallazgo.
+
+## Revisión documental independiente de D-009
+
+El mismo reviewer revisó dossier del video, mapa de capacidades y CandidateRuleCards, sin releer video/transcripción ni auditar cifras. No identificó omisión P0/P1 que impida cerrar **extracción funcional**; reglas de entrada, datos PIT y validación son decisiones posteriores.
+
+Requirió dos correcciones antes del cierre: estado del dossier todavía RESEARCHING por supuestos materiales faltantes, y Signal Engine «agente vs determinístico» abierto pese a A+. Ambas corregidas; mapa distingue contratos abstractos ya aprobados del detalle pendiente. Plan Architect registra cierre técnico D-009/R-019, sin seleccionar Strategy V1 ni afirmar rendimientos, broker o seguridad aceptados.

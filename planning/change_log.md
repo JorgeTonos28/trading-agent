@@ -130,3 +130,7 @@ Owner establece Team/INFOTEP research y Plus/PC personal target PAPER; LIVE UNKN
 - ONBOARDING actual primero; historical routes conservadas. Instance/fingerprint/fase v0.3 + B1 16 casos ficticios; legacy v0.2 intacto.
 - H7 Temporal worker loss→redelivery intento2, toy unique receipt, cleanup parcial por auto-review. Review detecta env helper no limitado; fuente01 intacta y next-source corregida sin rerun. H8 APS calendario persist/restart/misfire 6 criterios, fixtures .local, deps TEMP sin instalación global.
 - Revisión independiente sin P0/P1 documental restante para presentar candidato. Target R-030 NOT_TESTED, lab DEFERRED_TO_TARGET_PAPER_HOST, main no modificado, implementation lock vigente. Próximo scope financiero independiente precede Q-053 owner checkpoint.
+
+## 2026-10-07 — cierre técnico de extracción funcional D-009/R-019
+
+Dossier, mapa conservar/modificar/separar/descartar y rule cards cubren las piezas distintas del video. Revisión independiente documental no identifica otra omisión P0/P1 para ese scope; corregidos estado del dossier y Signal Engine frente a A+ y separados contratos establecidos de detalle abierto. Plan Architect cierra D-009 sin seleccionar Strategy V1 ni verificar claims de rentabilidad. Reglas/datos/validación permanecen R-020/021/025/D-008/011. No backtest, broker, cambio de autoridad ni implementación.

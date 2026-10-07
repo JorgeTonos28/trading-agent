@@ -1,6 +1,6 @@
 # R-019 — Reconstrucción crítica del video de origen
 
-**Fecha de revisión:** 2026-10-01. **Estado:** RESEARCHING (análisis narrativo completado; faltan materiales y pruebas reproducibles). **Fuente primaria:** [video de Samin Yasar](https://www.youtube.com/watch?v=2Et4Ao6usbA), «ChatGPT Just Changed the Stock Market Forever! (Tutorial)». Se abrió el panel de transcripción de YouTube y se exportaron sus subtítulos **en inglés, generados automáticamente**, con marcas de tiempo. Se revisó la transcripción completa, de 00:00 a 38:36, y se contrastaron visualmente fotogramas del ejemplo Tesla a 14:30/14:50 y del dashboard congresual a 23:26. Las marcas son aproximadas y el reconocimiento automático puede confundir términos, nombres y números. No se incorpora una copia íntegra de la transcripción al repositorio; los enlaces temporales permiten contrastar cada hallazgo con la fuente.
+**Fecha de revisión de fuente:** 2026-10-01. **Cierre documental:** 2026-10-07. **Estado:** D-009 DECIDED / R-019 extracción funcional completada en su alcance. Las reglas operativas, datos y validación continúan R-020/R-021/R-025/D-008/D-011; no son pendientes de reconstrucción del video. **Fuente primaria:** [video de Samin Yasar](https://www.youtube.com/watch?v=2Et4Ao6usbA), «ChatGPT Just Changed the Stock Market Forever! (Tutorial)». Se abrió el panel de transcripción de YouTube y se exportaron sus subtítulos **en inglés, generados automáticamente**, con marcas de tiempo. Se revisó la transcripción completa, de 00:00 a 38:36, y se contrastaron visualmente fotogramas del ejemplo Tesla a 14:30/14:50 y del dashboard congresual a 23:26. Las marcas son aproximadas y el reconocimiento automático puede confundir términos, nombres y números. No se incorpora una copia íntegra de la transcripción al repositorio; los enlaces temporales permiten contrastar cada hallazgo con la fuente.
 
 ## Conclusión de alcance
 
@@ -43,11 +43,11 @@ El video **no define una estrategia única lista para backtest**. Presenta (1) u
 4. **Horizonte y fuentes (P0).** Congresistas y correos de alertas son señales con latencia, universo, calidad y permisos distintos. Los datos de «whales» se mencionan sin implementación. Deben conservarse como líneas de investigación separadas.
 5. **Opciones (P4 bajo alcance actual).** La *wheel* es una estrategia financiera propia, con colas de pérdida y riesgo de asignación; se investiga como referencia, pero no compite en la selección PAPER V1 sin cambio de alcance aprobado.
 
-## Alcance de la investigación restante
+## Seguimiento condicional y transferencia a investigaciones propias
 
 - **Fuente visual original:** revisar pantallas adicionales solo cuando aclaren una capacidad, permiso, mecanismo u orden de operaciones que afecte nuestro diseño. Los fotogramas 14:30/14:50 y 23:26 ya fueron contrastados. No copiar claves ni datos sensibles.
 - **Prompts o artefactos del creador:** buscarlos únicamente si ayudan a entender una interfaz o regla aprovechable. No se abre una auditoría de rentabilidades promocionales; 164,99% y 72,3% permanecen `NO VERIFICADO` y fuera de los criterios de selección.
-- **Extracción funcional:** trasladar lo útil al mapa de capacidades del sistema, con decisión `conservar / modificar / separar / descartar` y clasificación Build vs. Reuse. Cualquier regla nueva se atribuye a nuestro proyecto, no al video.
+- **Extracción funcional completada:** el [mapa de capacidades](system_capability_map.md) registra `conservar / modificar / separar / descartar`; las CandidateRuleCards separan las piezas y Build vs. Reuse mantiene sus disposiciones. Cualquier regla nueva se atribuye a nuestro proyecto, no al video.
 - **Señales externas:** investigar una taxonomía amplia de Smart Money; Congreso es una fuente candidata entre varias. R-021 y R-025 cubren semántica PIT y proveedores.
 - **Selección de estrategia:** comparar candidatos admisibles, incluido MATR_V1, con protocolo preregistrado. Strategy V1 Selection permanece `OPEN` y requiere aprobación humana.
 
@@ -58,3 +58,7 @@ El panel de YouTube identifica los subtítulos como «Inglés (generado automát
 ## Seguimiento de especificación — R-020 RC0, 2026-10-05
 
 [CandidateRuleCards](R-020_video_candidate_rule_cards_RC0.md) separan módulo de posición VID-TS de señales externas VID-EXT/ALERT/WHEEL. Escenarios hipotéticos identifican ambigüedad porcentual/absoluta, base de escalón y conflicto stop/compra caída; no aprobar cifras del creador ni inventar entry-rule. [SEC DatasetCard](R-020_SEC_dataset_admissibility_RC0.md) amplía fuentes sin reducir Smart Money a Congreso. Video sigue inspiración funcional; no investigación principal para auditar sus resultados.
+
+## Cierre de D-009 — 2026-10-07
+
+Plan Architect cierra únicamente la extracción funcional tras revisión crítica independiente de este dossier, mapa y CandidateRuleCards. No faltan piezas documentales P0/P1 para ese alcance. No se volvió a verificar el video ni sus cifras en esta revisión; los retornos permanecen NO VERIFICADOS. La investigación de reglas, fuentes, ejecución y comparación continúa en decisiones distintas. **Strategy V1 Selection = OPEN; MATR_V1 no seleccionada.**
