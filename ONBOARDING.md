@@ -1,5 +1,8 @@
 # Onboarding — Trading OS en un entorno nuevo
 
+> **Vigencia ADR-013 — 2026-10-07:** investigación = Team en workstation Windows institucional INFOTEP; target PAPER = Plus individual en PC personal del propietario; LIVE = UNKNOWN. Se conservan las notas/evidencias anteriores como historia. Team no prueba disponibilidad Plus ni seguridad del host personal. Diseño se resuelve durante Preparation; aceptación target R-030 se difiere antes de implementación/PAPER. S2B-ADM-01 = DEFERRED_TO_TARGET_PAPER_HOST; no acción administrativa institucional pendiente. `implementation_locked=true`.
+
+
 **Estado:** preparación, `implementation_locked=true`. Este procedimiento prepara y verifica capacidades agénticas; no instala un sistema de trading ni autoriza PAPER/LIVE. Paquetes y contratos RC0 son candidatos, no freeze D-020/D-024.
 
 ## Comenzar
@@ -65,3 +68,7 @@ Q-051 está DECIDED en dirección, no pedirla nuevamente. Preparar laboratorio m
 ## Gate mínimo S2-B preparado — 2026-10-06
 
 [S2B-ADM-01](planning/research/R-013_S2B_lab_ADM01.md) corresponde a una cuenta **temporal de laboratorio**, no un usuario por rol ni Runner operacional instalado. AUTHORIZED_OWNER_ADMIN_ONLY desde autorización posterior: USER_ACTION_REQUIRED para cuenta/ACL/login temporales del propietario. Bootstrap/agente no se elevan, no crean cuentas ni aplican policy; permisos operativos siguen sin aprobación. Memoria/PLAN_ONLY/readonly no prueban FS/EB/TP4. Binder local/secretos fuera de Git; rollback SID/path solo recursos nuevos. Team PAPER sin Plus, native auth/egress/full process/recovery y aceptación siguen pendientes. Paquetes no cambian autoridad ni D-024.
+
+## Entrada vigente — ADR-013
+
+Durante Preparation en Team/INFOTEP: leer AGENTS, manifest/perfil esperado activo y contratos; inventariar sin secretos; registrar diseño y checks permitidos. No configurar dominio operacional ni solicitar Plus/admin aquí. En transición futura autorizada: fresh clone en PC personal/Plus → gate R-030 → configuración concreta aprobada → SI/BL/RB/VP + smokes → readiness report. R-030 se requiere antes de implementación; sistema construido/carga/PAPER se validan después. LIVE no seleccionado. Históricos paper_team_profile y TP sirven de evidencia fechada, no perfil operacional vigente. Helper histórico S2B Setup/Rollback bloqueado hasta gate/rebind target.

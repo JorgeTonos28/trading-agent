@@ -1,5 +1,8 @@
 # R-006 — Shortlist condicional y revisión de madurez RC0
 
+> **Vigencia ADR-013 — 2026-10-07:** investigación = Team en workstation Windows institucional INFOTEP; target PAPER = Plus individual en PC personal del propietario; LIVE = UNKNOWN. Se conservan las notas/evidencias anteriores como historia. Team no prueba disponibilidad Plus ni seguridad del host personal. Diseño se resuelve durante Preparation; aceptación target R-030 se difiere antes de implementación/PAPER. S2B-ADM-01 = DEFERRED_TO_TARGET_PAPER_HOST; no acción administrativa institucional pendiente. `implementation_locked=true`.
+
+
 **Antecedente conservado:** la recomendación vigente está en [shortlist RC1](R-006_shortlist_RC1.md). Pasos autónomos 1–2 completos en especificación y regresión focalizada; RC1 detalla endpoint/gobierno/Plus y otros pendientes sin declarar selección. Esta RC0 no se elimina ni reescribe como si sus probes ya hubieran incluido el contrato posterior.
 
 **Fecha:** 2026-10-05. **Estado:** `RESEARCHING`; suficiente evidencia para shortlist, **no** para selección/freeze. D-020 no se cierra y D-024 permanece `OPEN`. Ningún candidato tiene `SELECTED=YES`. [Wave 04](R-006_probe_wave_04_2026-10-05.md) compara veinte turnos Team; [wave 05](R-006_probe_wave_05_2026-10-05.md) completa MCP local, metadata/licencias de plugins, más activos financieros y experimento de schema por rol. ADR-001/002/006/007/008 siguen vigentes.

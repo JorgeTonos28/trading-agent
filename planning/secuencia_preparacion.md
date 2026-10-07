@@ -1,6 +1,9 @@
-# Secuencia vigente de Preparation Program — ADR-010
+# Secuencia de Preparation Program — vigencia ADR-013
 
-**Endpoint vigente 2026-10-06, tras autorización y preparación del handoff:** Q-052 / [S2B-ADM-01](research/R-013_S2B_lab_ADM01.md) DECIDED en permiso temporal / AUTHORIZED_OWNER_ADMIN_ONLY / SETUP_PENDING. [Guía de ejecución](research/R-013_S2B_owner_execution_runbook.md), una cuenta estándar temporal, nuevo árbol canary/ACL, pruebas FS acotadas y rollback. Preparación no privilegiada completada; siguiente paso requiere crear la cuenta mediante Windows por el propietario, no reaprobar el gate. FS NOT_TESTED. Q-051 dirección S2-B cerrada; viejo S2-ADM-01 tres cuentas withheld/DEFERRED. D-027/D-024 abiertos, Plus PRE-LIVE e implementación bloqueada. Secuencias administrativas anteriores son antecedentes, no autorizaciones activas.
+> **Vigencia ADR-013 — 2026-10-07:** investigación = Team en workstation Windows institucional INFOTEP; target PAPER = Plus individual en PC personal del propietario; LIVE = UNKNOWN. Se conservan las notas/evidencias anteriores como historia. Team no prueba disponibilidad Plus ni seguridad del host personal. Diseño se resuelve durante Preparation; aceptación target R-030 se difiere antes de implementación/PAPER. S2B-ADM-01 = DEFERRED_TO_TARGET_PAPER_HOST; no acción administrativa institucional pendiente. `implementation_locked=true`.
+
+
+**Endpoint histórico 2026-10-06, tras autorización y preparación del handoff:** Q-052 / [S2B-ADM-01](research/R-013_S2B_lab_ADM01.md) DECIDED en permiso temporal / AUTHORIZED_OWNER_ADMIN_ONLY / SETUP_PENDING. [Guía de ejecución](research/R-013_S2B_owner_execution_runbook.md), una cuenta estándar temporal, nuevo árbol canary/ACL, pruebas FS acotadas y rollback. Preparación no privilegiada completada; siguiente paso requiere crear la cuenta mediante Windows por el propietario, no reaprobar el gate. FS NOT_TESTED. Q-051 dirección S2-B cerrada; viejo S2-ADM-01 tres cuentas withheld/DEFERRED. D-027/D-024 abiertos, Plus PRE-LIVE e implementación bloqueada. Secuencias administrativas anteriores son antecedentes, no autorizaciones activas.
 
 2026-10-05. Team actual para preparación, futura implementación tras DoR, backtests y PAPER. Plus individual es candidato PRE-LIVE R-029 P3; no espera de acceso Plus. Implementation lock vigente.
 
@@ -81,3 +84,14 @@ Q-051 cerrado en dirección candidata. Continuar R-013: especificar laboratorio 
 ## Endpoint S2-B y evidencia adicional — 2026-10-06
 
 Dirección S2-B aprobada; Q-051 DECIDED en ese alcance. [Laboratorio mínimo S2B-ADM-01](research/R-013_S2B_lab_ADM01.md), Q-052 READY_FOR_DECISION/NOT_AUTHORIZED. [Dossier](research/R-013_S2B_lab_preparation_2026-10-06.md) y fuentes distinguen memoria12+privilegios2, sintaxis14 y preflight readonly de **FS/thread/native NOT_TESTED**. Grant común/tránsito/default DACL se incluyen en VP04/LF09, con positivos adecuados. No setup ni retry bajo BASE para operaciones de job. Full process/IPC/egress/auth/cache/recovery/TP6 y SI17/BL9/RB5/VP8 pendientes; ningún gate efectivo se pasa por estos contadores. R-006 madura diseño, D-020 conserva aprobación, D-027/D-024 siguen RESEARCHING. ADM-01 tres cuentas DEFERRED; PAPER Team y Plus PRE-LIVE.
+
+## Secuencia vigente — ADR-013, 2026-10-07
+
+1. Registrar research Team/INFOTEP y target PAPER Plus/personal; defer lab, mantener historia y lock.
+2. R-006/R-010/R-013: completar preguntas arquitectónicas resolubles en Team, contratos/review y checkpoint de diseño acotado; separar R-030 target acceptance P1.
+3. R-020/001/019/021: cerrar definición de candidatos Strategy V1 y metodología OOS preregistrada, sin resultados consultados ni selección implícita MATR.
+4. R-007/008/025/009: brokers/RD, precios/historia y señales externas, engine y paridad; reunir evidencia para decisiones humanas materiales.
+5. R-027/011/012/014: fórmulas riesgo, workflow/storage/operación y protocolos restantes; Plan v1.0 diseño revisado/freeze con gobierno.
+6. Transición autorizada a PC personal/Plus: fresh clone/R-030/seguridad; DoR y permiso de implementación solo tras gates requeridos. Sistema integrado/backtests/load/recovery/PAPER después; LIVE se decidirá posteriormente.
+
+No acceso Plus ni administración INFOTEP solicitados. No esperar esas pruebas para investigar diseño o P0/P1 financieros.

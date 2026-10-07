@@ -1,5 +1,8 @@
 # ADR-011 — dirección agéntica PAPER Team aprobada
 
+> **Vigencia ADR-013 — 2026-10-07:** investigación = Team en workstation Windows institucional INFOTEP; target PAPER = Plus individual en PC personal del propietario; LIVE = UNKNOWN. Se conservan las notas/evidencias anteriores como historia. Team no prueba disponibilidad Plus ni seguridad del host personal. Diseño se resuelve durante Preparation; aceptación target R-030 se difiere antes de implementación/PAPER. S2B-ADM-01 = DEFERRED_TO_TARGET_PAPER_HOST; no acción administrativa institucional pendiente. `implementation_locked=true`.
+
+
 2026-10-05. Estado **DECIDED**, opción A aprobada explícitamente por el propietario; alcance: dirección arquitectónica candidata y disposiciones de diseño RC2. D-020 selección propuesta / D-024 dirección arquitectónica; **no cierre final de D-024 ni freeze**. ADR-010 ya aprobó Team PAPER, no esta elección de ejecución/permisos.
 
 ## Propuesta presentada y aprobada (historia de la decisión)

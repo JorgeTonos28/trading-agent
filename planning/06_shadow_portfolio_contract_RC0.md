@@ -1,5 +1,8 @@
 # Portfolio Manager Shadow — contrato y evaluación RC0
 
+> **Vigencia ADR-013 — 2026-10-07:** investigación = Team en workstation Windows institucional INFOTEP; target PAPER = Plus individual en PC personal del propietario; LIVE = UNKNOWN. Se conservan las notas/evidencias anteriores como historia. Team no prueba disponibilidad Plus ni seguridad del host personal. Diseño se resuelve durante Preparation; aceptación target R-030 se difiere antes de implementación/PAPER. S2B-ADM-01 = DEFERRED_TO_TARGET_PAPER_HOST; no acción administrativa institucional pendiente. `implementation_locked=true`.
+
+
 **Fecha:** 2026-10-05. **Estado:** `RESEARCHING` D-034/R-026. Detalla obligación ya aprobada A+, sin promover autoridad ni seleccionar runtime, estrategia, umbrales o broker. Usa [contrato común](06_agent_evidence_contract_RC0.md), ADR-004 PIT y ADR-006 controles independientes. Probe sintético != estrategia validada.
 
 ## 1. Entrada y salida

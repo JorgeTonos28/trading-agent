@@ -1,11 +1,14 @@
 # Capability Landscape — plantilla de investigación inicial
 
-**Vigencia ADR-011 — 2026-10-05:** propietario aprobó opción A y disposiciones RC2 como dirección de diseño PAPER: núcleo financiero local determinístico always-on + jobs Codex Team automáticos por evento/calendario, sin aprobación por job rutinario. D-020 DECIDED únicamente en dirección Build-vs-Reuse; versiones/permisos/runtime final siguen D-024 RESEARCHING. No implementación, gasto, capacidad sostenida ni autoridad financiera adicional. Plus permanece PRE-LIVE.
+> **Vigencia ADR-013 — 2026-10-07:** investigación = Team en workstation Windows institucional INFOTEP; target PAPER = Plus individual en PC personal del propietario; LIVE = UNKNOWN. Se conservan las notas/evidencias anteriores como historia. Team no prueba disponibilidad Plus ni seguridad del host personal. Diseño se resuelve durante Preparation; aceptación target R-030 se difiere antes de implementación/PAPER. S2B-ADM-01 = DEFERRED_TO_TARGET_PAPER_HOST; no acción administrativa institucional pendiente. `implementation_locked=true`.
+
+
+**Antecedente ADR-011 — 2026-10-05:** propietario aprobó opción A y disposiciones RC2 como dirección de diseño PAPER: núcleo financiero local determinístico always-on + jobs Codex Team automáticos por evento/calendario, sin aprobación por job rutinario. D-020 DECIDED únicamente en dirección Build-vs-Reuse; versiones/permisos/runtime final siguen D-024 RESEARCHING. No implementación, gasto, capacidad sostenida ni autoridad financiera adicional. Plus permanece PRE-LIVE.
 
 
 **Hito histórico previo a aprobación ADR-011 — wave07:** [RC2 Team](research/R-006_shortlist_RC2_team.md) documenta madurez para decisión acotada: 8/8 jobs, SDK/bootstrap 14/14, evaluación 16/16; perfil PAPER PARTIAL. D-020 READY_FOR_DECISION, D-024 RESEARCHING; próximo gobierno ADR-011 dirección nativa, sin cierre final/freeze ni acceso Plus.
 
-## Matriz vigente PAPER Team — ADR-010
+## Matriz histórica PAPER Team — ADR-010
 
 EXISTS=YES en todos los candidatos siguientes; SELECTED=NO. Los resultados específicos Team ahora son aplicables al target PAPER, sin convertirlos en seguridad/cuota sostenida probada. AVAILABLE_IN_FUTURE_PLUS=UNKNOWN para activación/runtime dependientes del plan; acceso a código público no equivale a runtime disponible.
 
@@ -24,7 +27,7 @@ EXISTS=YES en todos los candidatos siguientes; SELECTED=NO. Los resultados espec
 
 Las tablas fechadas siguientes conservan los ejes Plus originales; no son la disponibilidad PAPER vigente ni sus próximos pasos. La matriz anterior y ADR-010 prevalecen.
 
-**Vigencia actual — ADR-010, 2026-10-05:** CURRENT_RESEARCH_ENVIRONMENT=Team; PAPER_RUNTIME_ENVIRONMENT=Team actual; FUTURE_LIVE_ENVIRONMENT=Plus individual candidato. Las cláusulas anteriores que exigían Plus para PAPER/D-020/D-024 quedan parcialmente SUPERSEDED. La evidencia original se conserva; Plus es gate P3 PRE-LIVE (R-029/D-039), sin dependencia para PAPER. Aceptación activa: [Team TP1–7](research/R-006_team_runtime_acceptance_RC0.md). No selección final ni implementación autorizada.
+**Antecedente — ADR-010, 2026-10-05:** CURRENT_RESEARCH_ENVIRONMENT=Team; PAPER_RUNTIME_ENVIRONMENT=Team actual; FUTURE_LIVE_ENVIRONMENT=Plus individual candidato. Las cláusulas anteriores que exigían Plus para PAPER/D-020/D-024 quedan parcialmente SUPERSEDED. La evidencia original se conserva; Plus es gate P3 PRE-LIVE (R-029/D-039), sin dependencia para PAPER. Aceptación activa: [Team TP1–7](research/R-006_team_runtime_acceptance_RC0.md). No selección final ni implementación autorizada.
 
 **Lectura:** registros/tablas actuales y esta adenda gobiernan; notas fechadas de hitos previos se conservan como historia, incluidos sus antiguos siguientes pasos Plus.
 
@@ -163,7 +166,7 @@ Cohorte RC1 aprobada solo para aceptación; SELECTED=NO. ADR-009 añade D-037/R-
 
 ## Alcance de selección ADR-011
 
-**Vigencia ADR-011 — 2026-10-05:** propietario aprobó opción A y disposiciones RC2 como dirección de diseño PAPER: núcleo financiero local determinístico always-on + jobs Codex Team automáticos por evento/calendario, sin aprobación por job rutinario. D-020 DECIDED únicamente en dirección Build-vs-Reuse; versiones/permisos/runtime final siguen D-024 RESEARCHING. No implementación, gasto, capacidad sostenida ni autoridad financiera adicional. Plus permanece PRE-LIVE.
+**Antecedente ADR-011 — 2026-10-05:** propietario aprobó opción A y disposiciones RC2 como dirección de diseño PAPER: núcleo financiero local determinístico always-on + jobs Codex Team automáticos por evento/calendario, sin aprobación por job rutinario. D-020 DECIDED únicamente en dirección Build-vs-Reuse; versiones/permisos/runtime final siguen D-024 RESEARCHING. No implementación, gasto, capacidad sostenida ni autoridad financiera adicional. Plus permanece PRE-LIVE.
 
 Se conserva A+, G1+G2 y ADR-006. Las futuras dependencias obligatorias de Strategy V1 tendrán fallo explícito. No modificación de main ni release de despliegue.
 
@@ -204,3 +207,7 @@ S2-B dirección candidata aprobada; restricted tokens/AccessCheck/NtCreateFile *
 ## S2B-ADM-01: autorización y handoff — 2026-10-06
 
 Owner aprueba únicamente laboratorio nuevo/cuenta temporal/ACL documentadas/FS sintético/reversión; administrador único owner, passwords solo UI Windows. [Runbook](research/R-013_S2B_owner_execution_runbook.md), [evidencia de preparación](research/probes/r013-s2b-lab-execution/README.md). Native Windows APIs CreateDirectoryW/CreateFileW se **WRAP** en helper desechable owner, no sandbox de producción propio ni mecanismo final seleccionado. PowerShell 7 existente tiene validación AST/memoria/compilación; Windows PowerShell 5.1 bloqueó scripts y no se altera esa política. No se instaló runtime ni facturación; disponibilidad real bajo Runner/Team completo UNKNOWN. C-035 sigue candidato, FS/proceso/native Codex/egress/IPC/auth NOT_TESTED; D-027/D-024 abiertos. Contratos económicos intactos, sin nuevo proveedor.
+
+## Matriz actual de disponibilidad — ADR-013
+
+C-010, C-025a/C-029, C-017a/b, C-024/028, C-030/031: EXISTS=YES; AVAILABLE_IN_RESEARCH_AI_ENVIRONMENT=YES en los scopes/versions de las waves registradas; AVAILABLE_IN_TARGET_PAPER_PLUS=UNKNOWN; AVAILABLE_ON_TARGET_PAPER_HOST=UNKNOWN. La adquisición de assets públicos Apache/locales es gratuita e independiente del plan; su activación/ejecución Plus y aislamiento personal no están ensayados. SELECTED=APPROVED_DESIGN_DISPOSITION_ONLY bajo ADR-011, no FINAL_OPERATIONAL_SELECTION. Compatibilidad/economía operacional permanecen condicionadas por R-030; API separada no incluida. MCP/plugins solo reservas/referencia según RC2. LIVE UNKNOWN. Ver [aplicabilidad](13_environment_evidence_applicability.md) y [R-030](research/R-030_target_paper_environment_acceptance_RC0.md).

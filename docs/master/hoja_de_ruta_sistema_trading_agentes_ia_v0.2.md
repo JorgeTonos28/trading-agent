@@ -856,8 +856,8 @@ Cada revisión producirá un `Plan Consistency Report`.
 - MCPs seleccionados;
 - Build-vs-Reuse completado;
 - dependencias y licencias revisadas;
-- ruta reproducible de Environment Bootstrap, Portability & Agent Packaging desde entorno nuevo + repositorio hasta entorno agéntico configurado y verificado, con perfiles, acciones manuales/automáticas, smoke y acceptance gates de preparación específicos del Team PAPER (ADR-009/010, D-037/R-028), protocolos de validación operacional P2 y migración Plus P3 separada;
-- D-024 no cerrado sin esta ruta; readiness agéntico no sustituye READY_FOR_IMPLEMENTATION, PAPER ni LIVE.
+- ruta reproducible de Environment Bootstrap, Portability & Agent Packaging desde entorno nuevo + repositorio hasta entorno agéntico configurado y verificado, con perfiles, acciones manuales/automáticas, smoke y contratos/gates de diseño en Team y acceptance específico Plus/PC personal antes de implementación (ADR-009/013, D-037/R-028/R-030); validación operacional integrada P2 y selección LIVE posterior separadas;
+- D-024 de diseño no cerrado sin esta ruta especificada/revisada; aceptación target permanece dimensión independiente y obligatoria antes de implementación. Readiness agéntico no sustituye READY_FOR_IMPLEMENTATION, PAPER ni LIVE.
 
 ### Quant
 
@@ -4832,3 +4832,7 @@ Tras aprobación del owner de S2-B como dirección candidata principal, el [paqu
 ### Autorización temporal posterior S2B-ADM-01 — 2026-10-06
 
 El owner aprueba el [gate exacto](../../planning/research/R-013_S2B_lab_ADM01.md), Q-052 DECIDED solo en ese permiso; propietario es único administrador, secretos exclusivamente UI Windows, agente no privilegiado. [Runbook](../../planning/research/R-013_S2B_owner_execution_runbook.md): cuenta deshabilitada → preview/setup owner → verificación → login seguro temporal/FS sintético → evidencia → rollback exacto. Los bloques/capturas anteriores NOT_AUTHORIZED preservan su momento histórico. Sin setup/FS ejecutado aún, aceptación S2-B/PAPER no demostrada; D-027/D-024/DoR abiertos, no main/implementación/gasto ni otra exclusión alterada.
+
+## Corrección trazable de entornos — ADR-013, 2026-10-07
+
+Research = Team + Windows institucional INFOTEP; target PAPER = Plus individual + PC personal del propietario; LIVE UNKNOWN. ADR-010 permanece histórico, Deployment Source Policy vigente. S2B-ADM-01 DEFERRED_TO_TARGET_PAPER_HOST, sin FAIL/REJECTED ni solicitud administrativa institucional. Diseño P0/P1 y protocolos se cierran durante Preparation; target acceptance R-030 P1 se ejecuta antes de implementación; integración/carga P2 antes de PAPER. MASTER_PLAN puede prepararse/revisarse con esas obligaciones explícitas; READY_FOR_IMPLEMENTATION exige su cumplimiento y freeze aprobado, manteniendo lock. AGENTIC_ARCHITECTURE_DESIGN_COMPLETE no implica PAPER_RUNTIME_ACCEPTED ni DoR global. No pruebas Plus o administrativas ejecutadas por esta corrección.

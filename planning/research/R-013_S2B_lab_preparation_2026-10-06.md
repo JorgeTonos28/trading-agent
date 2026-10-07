@@ -1,5 +1,8 @@
 # R-013 — preparación de laboratorio S2-B
 
+> **Vigencia ADR-013 — 2026-10-07:** investigación = Team en workstation Windows institucional INFOTEP; target PAPER = Plus individual en PC personal del propietario; LIVE = UNKNOWN. Se conservan las notas/evidencias anteriores como historia. Team no prueba disponibilidad Plus ni seguridad del host personal. Diseño se resuelve durante Preparation; aceptación target R-030 se difiere antes de implementación/PAPER. S2B-ADM-01 = DEFERRED_TO_TARGET_PAPER_HOST; no acción administrativa institucional pendiente. `implementation_locked=true`.
+
+
 2026-10-06. Dirección candidata aprobada, **laboratorio listo para revisión / no autorizado / no ejecutado**. [ADR-012](../decisions/ADR-012-agent-process-isolation-proposed.md), [gate exacto S2B-ADM-01](R-013_S2B_lab_ADM01.md). D-027/D-024 RESEARCHING. No implementación ni cambios Windows. La aprobación publicada en b0d6818 no otorga permisos administrativos.
 
 ## Evidencia y alcance

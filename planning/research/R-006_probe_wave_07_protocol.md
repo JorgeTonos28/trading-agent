@@ -1,5 +1,8 @@
 # R-006 wave 07 — protocolo preregistrado Team
 
+> **Vigencia ADR-013 — 2026-10-07:** investigación = Team en workstation Windows institucional INFOTEP; target PAPER = Plus individual en PC personal del propietario; LIVE = UNKNOWN. Se conservan las notas/evidencias anteriores como historia. Team no prueba disponibilidad Plus ni seguridad del host personal. Diseño se resuelve durante Preparation; aceptación target R-030 se difiere antes de implementación/PAPER. S2B-ADM-01 = DEFERRED_TO_TARGET_PAPER_HOST; no acción administrativa institucional pendiente. `implementation_locked=true`.
+
+
 2026-10-05. ADR-010, PAPER_RUNTIME_ENVIRONMENT=Team. Probes desechables, no implementación. Modelo gpt-6.1-sol / medium, CLI actual 0.159.0-alpha.12.1, SDK Python público 0.160.0 pinado; no instalar/actualizar global ni activar API facturada.
 
 ## Preguntas y límites

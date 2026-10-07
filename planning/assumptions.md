@@ -1,8 +1,11 @@
 # Assumptions Register — 2026-10-01
 
+> **Vigencia ADR-013 — 2026-10-07:** investigación = Team en workstation Windows institucional INFOTEP; target PAPER = Plus individual en PC personal del propietario; LIVE = UNKNOWN. Se conservan las notas/evidencias anteriores como historia. Team no prueba disponibilidad Plus ni seguridad del host personal. Diseño se resuelve durante Preparation; aceptación target R-030 se difiere antes de implementación/PAPER. S2B-ADM-01 = DEFERRED_TO_TARGET_PAPER_HOST; no acción administrativa institucional pendiente. `implementation_locked=true`.
+
+
 **Estado vigente posterior — wave07:** [RC2 Team](research/R-006_shortlist_RC2_team.md) documenta madurez para decisión acotada: 8/8 jobs, SDK/bootstrap 14/14, evaluación 16/16; perfil PAPER PARTIAL. D-020 READY_FOR_DECISION, D-024 RESEARCHING; próximo gobierno ADR-011 dirección nativa, sin cierre final/freeze ni acceso Plus.
 
-**Vigencia actual — ADR-010, 2026-10-05:** CURRENT_RESEARCH_ENVIRONMENT=Team; PAPER_RUNTIME_ENVIRONMENT=Team actual; FUTURE_LIVE_ENVIRONMENT=Plus individual candidato. Las cláusulas anteriores que exigían Plus para PAPER/D-020/D-024 quedan parcialmente SUPERSEDED. La evidencia original se conserva; Plus es gate P3 PRE-LIVE (R-029/D-039), sin dependencia para PAPER. Aceptación activa: [Team TP1–7](research/R-006_team_runtime_acceptance_RC0.md). No selección final ni implementación autorizada.
+**Antecedente — ADR-010, 2026-10-05:** CURRENT_RESEARCH_ENVIRONMENT=Team; PAPER_RUNTIME_ENVIRONMENT=Team actual; FUTURE_LIVE_ENVIRONMENT=Plus individual candidato. Las cláusulas anteriores que exigían Plus para PAPER/D-020/D-024 quedan parcialmente SUPERSEDED. La evidencia original se conserva; Plus es gate P3 PRE-LIVE (R-029/D-039), sin dependencia para PAPER. Aceptación activa: [Team TP1–7](research/R-006_team_runtime_acceptance_RC0.md). No selección final ni implementación autorizada.
 
 **Lectura:** registros/tablas actuales y esta adenda gobiernan; notas fechadas de hitos previos se conservan como historia, incluidos sus antiguos siguientes pasos Plus.
 
@@ -78,3 +81,7 @@ A-033/038 conservados como históricos: cuenta común con token irrestricto pued
 ## Separación de superficie PowerShell — 2026-10-06
 
 | A-041 | P1 | PARTIAL/UNVERIFIED: helper owner-only puede aplicar exactamente los descriptores nuevos y revertirlos mediante PowerShell 7 existente. | AST + 15 descriptores en memoria + compilación de adapter Win32 sin llamadas nativas PASS; creación/ACL efectivas/rollback NOT_TESTED. Windows PowerShell 5.1 bloqueó el QA por execution policy, aunque la superficie 7 tiene RemoteSigned. No asumir equivalencia, no cambiar/bypass policy ni instalar. |
+
+## Corrección de entorno — 2026-10-07
+
+La workstation INFOTEP no es host PAPER ni dispone de privilegios administrativos requeridos (declaración owner). Team no garantiza Plus. Plus/personal es target PAPER, no LIVE seleccionado. Evidencia Team de conducta/método permanece aplicable dentro de su scope; auth/ACL/IPC/red/quota/host readiness se verifican en target. No asumir que un contrato de diseño demuestra aislamiento efectivo. ADR-013/R-030.

@@ -1,5 +1,8 @@
 # R-010–014 — paquete autónomo de hardening PAPER RC0
 
+> **Vigencia ADR-013 — 2026-10-07:** investigación = Team en workstation Windows institucional INFOTEP; target PAPER = Plus individual en PC personal del propietario; LIVE = UNKNOWN. Se conservan las notas/evidencias anteriores como historia. Team no prueba disponibilidad Plus ni seguridad del host personal. Diseño se resuelve durante Preparation; aceptación target R-030 se difiere antes de implementación/PAPER. S2B-ADM-01 = DEFERRED_TO_TARGET_PAPER_HOST; no acción administrativa institucional pendiente. `implementation_locked=true`.
+
+
 2026-10-05. Preregistro después de ADR-011 A. Documentación y experimentos desechables; `implementation_locked=true`. D-024 no se congela. CURRENT_RESEARCH_ENVIRONMENT y PAPER_RUNTIME_ENVIRONMENT = Team; Plus solo PRE-LIVE.
 
 ## Preguntas y endpoint

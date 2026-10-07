@@ -1,5 +1,8 @@
 # R-013 — acceptance por variante S2 RC2
 
+> **Vigencia ADR-013 — 2026-10-07:** investigación = Team en workstation Windows institucional INFOTEP; target PAPER = Plus individual en PC personal del propietario; LIVE = UNKNOWN. Se conservan las notas/evidencias anteriores como historia. Team no prueba disponibilidad Plus ni seguridad del host personal. Diseño se resuelve durante Preparation; aceptación target R-030 se difiere antes de implementación/PAPER. S2B-ADM-01 = DEFERRED_TO_TARGET_PAPER_HOST; no acción administrativa institucional pendiente. `implementation_locked=true`.
+
+
 2026-10-06. **SPECIFIED / NOT_TESTED**, dirección candidata S2-B aprobada por propietario; realización técnica aún no aceptada; permisos operativos pendientes. Excepción temporal S2B-ADM-01 aprobada únicamente para el owner. [Contrato RC2](../08_S2_agent_domain_contract_RC2.md), [comparativa](R-013_S2_variants_comparison_2026-10-06.md). No autoriza setup. S2-ADM-01 **DEFERRED / NOT_AUTHORIZED** por propietario.
 
 ## Continuidad de criterios

@@ -1,5 +1,8 @@
 # ADR-012 — aislamiento PAPER: dirección candidata S2-B aprobada
 
+> **Vigencia ADR-013 — 2026-10-07:** investigación = Team en workstation Windows institucional INFOTEP; target PAPER = Plus individual en PC personal del propietario; LIVE = UNKNOWN. Se conservan las notas/evidencias anteriores como historia. Team no prueba disponibilidad Plus ni seguridad del host personal. Diseño se resuelve durante Preparation; aceptación target R-030 se difiere antes de implementación/PAPER. S2B-ADM-01 = DEFERRED_TO_TARGET_PAPER_HOST; no acción administrativa institucional pendiente. `implementation_locked=true`.
+
+
 ## Estado vigente — confirmación explícita del propietario, 2026-10-06
 
 **DECIDED: S2-B como dirección candidata principal de validación PAPER.** Una identidad base Agent Runner, con aislamiento efectivo por job; mantener la arquitectura simple preservando la frontera AI/Agent Domain → Trusted Financial Core. Security isolation y experimental blinding tienen contratos y evidencia separados.

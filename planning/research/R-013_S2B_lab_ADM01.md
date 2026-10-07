@@ -1,5 +1,8 @@
 # S2B-ADM-01 — laboratorio mínimo de filesystem, una cuenta base
 
+> **Vigencia ADR-013 — 2026-10-07:** investigación = Team en workstation Windows institucional INFOTEP; target PAPER = Plus individual en PC personal del propietario; LIVE = UNKNOWN. Se conservan las notas/evidencias anteriores como historia. Team no prueba disponibilidad Plus ni seguridad del host personal. Diseño se resuelve durante Preparation; aceptación target R-030 se difiere antes de implementación/PAPER. S2B-ADM-01 = DEFERRED_TO_TARGET_PAPER_HOST; no acción administrativa institucional pendiente. `implementation_locked=true`.
+
+
 2026-10-06. **AUTHORIZED_OWNER_ADMIN_ONLY / SETUP_PENDING / FS_NOT_EXECUTED.** S2-B dirección candidata aprobada en [ADR-012](../decisions/ADR-012-agent-process-isolation-proposed.md); D-027/D-024 RESEARCHING. Gate nuevo, no reapertura de S2-ADM-01 (tres cuentas, DEFERRED).
 
 ## 1. Decisión exacta

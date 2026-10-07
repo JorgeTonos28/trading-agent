@@ -1,5 +1,5 @@
 schema_version: 1
-updated_on: 2026-10-06
+updated_on: 2026-10-07
 project:
   name: Trading OS
   purpose: auditable_agentic_quantitative_trading_platform
@@ -71,13 +71,15 @@ baseline_decisions:
   - id: ADR-006
     result: PAPER V1 deterministic risk uses the most restrictive applicable independent exposure/cash, estimated protection, gap/slippage, liquidity and concurrent-reservation constraints; no numerical policy approved
   - id: ADR-007
-    result: R-006 agentic layer limited to OpenAI and Anthropic; Team current and public assets preferred for PAPER under superseding ADR-010; Plus candidate PRE-LIVE; paid execution requires ADR-008 approval
+    result: R-006 agentic layer limited to OpenAI and Anthropic; Plus target and public assets preferred for PAPER under superseding ADR-013; Team research only; LIVE unknown; paid execution requires ADR-008 approval
   - id: ADR-009
     result: Candidate cohort approved for acceptance only; reproducible environment bootstrap and reusable role packages required before D-024 and DoR
   - id: ADR-010
-    result: Team current for preparation_implementation_after_DoR_backtests_and_PAPER; individual_Plus_candidate_PRELIVE; approved_versioned_release_tag_for_deployment; no_main_promotion_now
+    result: Historical environment assignment superseded by ADR-013; approved_versioned_release_tag_for_deployment and no_main_promotion remain
   - id: ADR-011
     result: Option_A_candidate_PAPER_direction_and_RC2_reuse_dispositions_approved_automatic_event_schedule_jobs_no_financial_authority_no_final_freeze
+  - id: ADR-013
+    result: Team_INFOTEP_research; Plus_personal_Windows_target_PAPER; LIVE_UNKNOWN; design_separate_from_target_acceptance; S2B_lab_deferred_to_target
   - id: ADR-008
     result: PAPER zero_or_low_incremental_cost_first; LIVE economic_value_first; paid services research allowed, explicit approval before spend; free_or_included_or_self_created methodology acquisition only
 strategy_v1:
@@ -152,29 +154,24 @@ capability_discovery:
   current_focus: R-006_D-020_D-024
   agentic_provider_scope: [OpenAI, Anthropic]
   other_agentic_frameworks_in_scope: false
-  CURRENT_RESEARCH_ENVIRONMENT:
-    purpose: preparation_research_and_PAPER_target_behavior_runtime_probes
-    observed_plan_type: team
-    observed_on: 2026-10-05
-    entitlement_transfers_to_target: false
-  PAPER_RUNTIME_ENVIRONMENT:
-    subscription: Team_current
-    purpose: preparation_implementation_after_DoR_backtesting_and_PAPER_V1
-    actual_capability_entitlements: per_instance_surface_probe_evidence
-  FUTURE_LIVE_ENVIRONMENT:
-    subscription: ChatGPT_Plus_individual_candidate
-    purpose: PRELIVE_migration_after_validated_PAPER
-    actual_capability_entitlements: unverified
+  RESEARCH_AI_ENVIRONMENT: ChatGPT_Team
+  RESEARCH_HOST: INFOTEP_institutional_Windows_workstation
+  TARGET_PAPER_AI_ENVIRONMENT: ChatGPT_Plus_individual
+  TARGET_PAPER_COMPUTE_HOST: owner_administered_personal_Windows_PC
+  FUTURE_LIVE_ENVIRONMENT: UNKNOWN
+  environment_decision: ADR-013_D-043
+  target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED
+  operational_status: NOT_IMPLEMENTED
   plus_entitlements_require_empirical_verification: true
   missing_target_access_blocks_discovery: false
-  behavioral_environment: CURRENT_RESEARCH_ENVIRONMENT_Team
-  prelive_plus_acceptance_scope: finalist_access_activation_quotas_tools_auth_state_recovery_operational_sufficiency
+  behavioral_environment: RESEARCH_AI_ENVIRONMENT_Team
+  target_paper_plus_acceptance_scope: finalist_access_activation_quotas_tools_auth_state_recovery_operational_sufficiency
   repeat_entire_behavioral_research_in_Plus: false
   deterministic_local_always_on_core_with_intermittent_Codex: APPROVED_DESIGN_DIRECTION_ADR011
   api_billing_separate_from_plus: true
   siwc_plan_usage_candidate: conditional_separate_OAuth_route_not_selected_native_Team_preferred_for_probe
   paper_v1_cost_preference: [Tier_0, Tier_1]
-  tier_0: included_in_current_Team_or_public_reusable_assets
+  tier_0: included_in_target_Plus_or_public_reusable_assets_Team_research_not_entitlement_evidence
   tier_1: free_limited_free_account_or_local_open_source_without_material_cost
   tier_2_excluded_by_default: true
   tier_2_research_allowed_without_spend: true
@@ -207,9 +204,9 @@ capability_discovery:
   no_general_Skill_superiority_demonstrated: true
   autonomous_RC0_steps_1_and_2: COMPLETE_SPECIFICATION_AND_FOCUSED_SYNTHETIC_PROBES
   candidate_cohort_owner_approval: APPROVED_FOR_ACCEPTANCE_NOT_FINAL_SELECTION
-  next_package_action: PREPARE_VERIFY_THEN_OWNER_SECURE_UI_AND_ADMIN_SETUP_S2B_ADM01
+  next_package_action: TEAM_RESOLVABLE_AGENTIC_DESIGN_REVIEW_THEN_STRATEGYV1_NO_CURRENT_ADMIN
   independent_coverage_gaps: independent_agent_review_documented_empirical_security_and_integrated_financial_pedagogy_not_closed
-  proposed_architecture_direction: deterministic_local_always_on_core_plus_automatic_event_schedule_Codex_Team_jobs_APPROVED_DIRECTION_NOT_FROZEN
+  proposed_architecture_direction: deterministic_local_always_on_core_plus_automatic_event_schedule_Codex_native_jobs_target_Plus_ACCEPTANCE_DEFERRED
   representative_workload: WL_R_40_base_plus_10_interactive_logical_jobs_up_to_13_reserve_service_requests_NOT_STRATEGY_CADENCE
   seventh_probe_wave: planning/research/R-006_probe_wave_07_2026-10-05.md
   Team_bounded_jobs_passed: 8
@@ -217,15 +214,16 @@ capability_discovery:
   Team_environment_profile: planning/research/probes/r006-team-paper/environment-profile-PAPER-Team-RC0.json
   Team_context_rehydration: PROBED_NOT_DURABLE_RECOVERY
   Team_sustained_workload_acceptance: NOT_EXECUTED
-  P1_final_runtime_capacity_evidence: PARTIAL_final_criteria_and_sufficiency_required_before_freeze
+  P1_final_runtime_capacity_evidence: DESIGN_WORKLOAD_PROTOCOL_REQUIRED_TARGET_MEASUREMENT_DEFERRED_R030
   architecture_direction_proposal: planning/decisions/ADR-011-paper-team-agentic-direction-proposed.md
   final_selection_status: DESIGN_DISPOSITIONS_APPROVED_FINAL_RUNTIME_OPEN_D024
   plus_runtime_gate: planning/research/R-006_plus_runtime_gate_RC0.md
-  plus_runtime_gate_status: SUPERSEDED_FOR_PAPER_RECLASSIFIED_P3_R029
+  plus_runtime_gate_status: TARGET_PAPER_ACCEPTANCE_DEFERRED_R030_HISTORICAL_PROTOCOLS_PRESERVED
   team_runtime_gate: planning/research/R-006_team_runtime_acceptance_RC0.md
-  prelive_migration_gate: planning/research/R-029_pre_live_environment_migration_gate_RC0.md
-  plus_blocks_paper_architecture_or_implementation: false
-  dimensions: [EXISTS, AVAILABLE_IN_RESEARCH_ENVIRONMENT, AVAILABLE_IN_PAPER_TEAM, AVAILABLE_IN_FUTURE_PLUS, TECHNICALLY_COMPATIBLE, ECONOMICALLY_REASONABLE, SELECTED]
+  target_paper_gate: planning/research/R-030_target_paper_environment_acceptance_RC0.md
+  missing_Plus_blocks_design_research: false
+  target_acceptance_required_before_implementation: true
+  dimensions: [EXISTS, AVAILABLE_IN_RESEARCH_AI_ENVIRONMENT, AVAILABLE_IN_TARGET_PAPER_PLUS, AVAILABLE_ON_TARGET_PAPER_HOST, TECHNICALLY_COMPATIBLE, ECONOMICALLY_REASONABLE, SELECTED]
   dispositions: [REUSE_AS_IS, ADAPT, PORT, WRAP, REFERENCE_ONLY, BUILD, REJECT]
   families:
     - OpenAI_Skills_Plugins_Codex_MCP_Agents_and_financial_analysis
@@ -285,9 +283,11 @@ environment_portability:
   priority: P1
   design_status: CONTRACT_RC0_LOCAL_AND_FRESH_CLONE_EVIDENCE_COMPLETE_TARGET_GATES_OPEN
   gates: [D-020, D-024, Definition_of_Ready]
-  CURRENT_RESEARCH_ENVIRONMENT: Team
-  PAPER_RUNTIME_ENVIRONMENT: Team_current
-  FUTURE_LIVE_ENVIRONMENT: individual_Plus_candidate_PRELIVE
+  RESEARCH_AI_ENVIRONMENT: ChatGPT_Team
+  RESEARCH_HOST: INFOTEP_institutional_Windows
+  TARGET_PAPER_AI_ENVIRONMENT: ChatGPT_Plus_individual
+  TARGET_PAPER_COMPUTE_HOST: owner_personal_Windows
+  FUTURE_LIVE_ENVIRONMENT: UNKNOWN
   candidate_cohort: APPROVED_NOT_SELECTED
   one_session_per_role: NOT_SELECTED
   repository_only_no_chat_dependency: required
@@ -303,7 +303,7 @@ bootstrap_evidence:
   clone_completion_checks: 9
   Team_fresh_clone_acceptance: PARTIAL
   sustained_PAPER_operational_acceptance: NOT_EXECUTED
-  prelive_Plus_acceptance_executed: false
+  target_Plus_acceptance_executed: false
   observed_readiness: PARTIAL
   portable_hash_policy: SHA256_git_blob_at_pinned_commit
   desktop_UI_folder_inheritance: NOT_TESTED
@@ -315,7 +315,7 @@ paper_agentic_hardening:
   workflow_contract: planning/08_job_workflow_recovery_contract_RC0.md
   audit_versions_deployment_contract: planning/08_audit_versions_deployment_contract_RC0.md
   dossier: planning/research/R-010_014_hardening_findings_2026-10-05.md
-  next_human_decision: NONE_WITHIN_APPROVED_LAB_OWNER_ACTION_REQUIRED_FOR_UI_ADMIN_SETUP
+  next_human_decision: NO_PLUS_OR_INSTITUTIONAL_ADMIN_ACTION_NOW_DESIGN_CHECKPOINT_FIRST
   security_setup_executed: false
   paired_native_SDK_CLI_probe: 0.160.0_research_shadow_2_of_2_pass
   durable_semantic_probe: SQLite_disposable_20_checks_plus_11_lease_race_checks
@@ -344,7 +344,7 @@ s2_research_package:
   findings: planning/research/R-013_S2_findings_2026-10-05.md
   administrative_gate: planning/research/R-013_S2B_lab_ADM01.md
   historical_administrative_gate: planning/research/R-013_S2_administrative_gate_ADM01.md
-  stage: S2_B_LAB_AUTHORIZED_OWNER_ADMIN_ONLY_SETUP_PENDING
+  stage: DEFERRED_TO_TARGET_PAPER_HOST
   security_tests_specified: 17
   blinding_tests_specified: 9
   reproducibility_tests_specified: 5
@@ -367,7 +367,7 @@ s2_independent_review:
 s2_variant_review:
   observed_on: 2026-10-06
   owner_administrative_decision: S2_ADM01_NOT_AUTHORIZED_DEFERRED
-  next_question: OWNER_ACTION_CREATE_DISABLED_ACCOUNT_THEN_SCOPED_ADMIN_SETUP
+  next_question: NO_CURRENT_HOST_ACTION_DESIGN_REVIEW
   comparison: planning/research/R-013_S2_variants_comparison_2026-10-06.md
   proposed_variant: S2_B_SINGLE_AGENT_RUNNER_EFFECTIVE_PER_JOB_CONTEXTS
   candidate_direction_approval: APPROVED_PROJECT_OWNER_2026_10_06
@@ -421,8 +421,16 @@ s2b_lab_execution:
   offline_check_breakdown: 3_SOURCE_AND_12_SYNTHETIC_EVALUATOR
   execution_handoff_review: planning/research/R-013_S2B_execution_handoff_review_2026-10-06.md
   effective_filesystem_acceptance: NOT_TESTED
-  owner_action: CREATE_DISABLED_ACCOUNT_SECURE_WINDOWS_UI
+  owner_action: NONE_NOW_DEFERRED_TARGET_INSTANCE_REVALIDATION
   filesystem_tests: NOT_TESTED
-  setup_state: PENDING_OWNER
+  setup_state: DEFERRED_TO_TARGET_PAPER_HOST
   rollback_state: NOT_STARTED_NO_OS_RESOURCES_CREATED_BY_AGENT
   secret_handling: OWNER_WINDOWS_UI_ONLY
+
+design_acceptance_dimensions:
+  D024: {design_status: RESEARCHING, target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED, operational_status: NOT_IMPLEMENTED}
+  D027: {design_status: RESEARCHING, target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED, operational_status: NOT_TESTED}
+  D037: {design_status: RESEARCHING, target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED, operational_status: NOT_IMPLEMENTED}
+  S2B_ADM01: {execution_status: DEFERRED_TO_TARGET_PAPER_HOST, current_host_execution_allowed: false}
+  agentic_architecture_design_complete: false
+  paper_runtime_accepted: false

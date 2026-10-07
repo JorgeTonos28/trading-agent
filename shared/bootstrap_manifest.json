@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.2.0-planning",
+  "schema_version": "0.3.0-planning",
   "status": "CANDIDATE_NOT_SELECTED",
   "source_of_truth": "repository",
   "implementation_locked": true,
@@ -7,7 +7,7 @@
   "root_instruction": "AGENTS.md",
   "entry_point": "ONBOARDING.md",
   "profile_schema": "shared/environment_profile.schema.json",
-  "expected_profile": "shared/paper_team_profile.json",
+  "expected_profile": "shared/paper_plus_personal_profile.json",
   "contracts": [
     "planning/07_environment_bootstrap_contract_RC0.md",
     "planning/07_agent_packaging_contract_RC0.md",
@@ -39,13 +39,13 @@
     "EB-6",
     "EB-7",
     "EB-8",
-    "TP-1",
-    "TP-2",
-    "TP-3",
-    "TP-4",
-    "TP-5",
-    "TP-6",
-    "TP-7"
+    "TE-1",
+    "TE-2",
+    "TE-3",
+    "TE-4",
+    "TE-5",
+    "TE-6",
+    "TE-7"
   ],
   "requirements": [
     {
@@ -53,63 +53,73 @@
       "required_scopes": [
         "PREPARATION_ONBOARDING",
         "PAPER_AGENT_ENVIRONMENT"
-      ]
+      ],
+      "gate_phase": "DESIGN"
     },
     {
       "id": "global-role-rules",
       "required_scopes": [
         "PREPARATION_ONBOARDING",
         "PAPER_AGENT_ENVIRONMENT"
-      ]
+      ],
+      "gate_phase": "DESIGN"
     },
     {
       "id": "sanitized-inventory-actions",
       "required_scopes": [
         "PREPARATION_ONBOARDING",
         "PAPER_AGENT_ENVIRONMENT"
-      ]
+      ],
+      "gate_phase": "DESIGN"
     },
     {
-      "id": "team-identity",
+      "id": "target-plus-personal-identity",
       "required_scopes": [
         "PAPER_AGENT_ENVIRONMENT"
-      ]
+      ],
+      "gate_phase": "TARGET_ENVIRONMENT_ACCEPTANCE"
     },
     {
       "id": "final-selection-approval",
       "required_scopes": [
         "PAPER_AGENT_ENVIRONMENT"
-      ]
+      ],
+      "gate_phase": "DESIGN"
     },
     {
-      "id": "team-TP1-7",
+      "id": "target-TE1-7",
       "required_scopes": [
         "PAPER_AGENT_ENVIRONMENT"
-      ]
+      ],
+      "gate_phase": "TARGET_ENVIRONMENT_ACCEPTANCE"
     },
     {
       "id": "portability-EB1-8",
       "required_scopes": [
         "PAPER_AGENT_ENVIRONMENT"
-      ]
+      ],
+      "gate_phase": "TARGET_ENVIRONMENT_ACCEPTANCE"
     },
     {
       "id": "S2-security-effective",
       "required_scopes": [
         "PAPER_AGENT_ENVIRONMENT"
-      ]
+      ],
+      "gate_phase": "TARGET_ENVIRONMENT_ACCEPTANCE"
     },
     {
       "id": "S2-shadow-blinding",
       "required_scopes": [
         "PAPER_AGENT_ENVIRONMENT"
-      ]
+      ],
+      "gate_phase": "TARGET_ENVIRONMENT_ACCEPTANCE"
     },
     {
       "id": "S2-domain-bootstrap",
       "required_scopes": [
         "PAPER_AGENT_ENVIRONMENT"
-      ]
+      ],
+      "gate_phase": "TARGET_ENVIRONMENT_ACCEPTANCE"
     }
   ],
   "external_prerequisites": [
@@ -121,9 +131,8 @@
   "topology": "UNSELECTED_D024",
   "configuration_mutations": "ONLY_CONCRETE_ALLOWED_CHANGES_WITH_DIFF_NO_SECRETS",
   "automatic_installation": false,
-  "environment_decision": "planning/decisions/ADR-010-team-paper-and-prelive-plus-migration.md",
-  "paper_acceptance": "planning/research/R-006_team_runtime_acceptance_RC0.md",
-  "pre_live_migration_gate": "planning/research/R-029_pre_live_environment_migration_gate_RC0.md",
+  "environment_decision": "planning/decisions/ADR-013-research-and-target-paper-environments.md",
+  "paper_acceptance": "planning/research/R-030_target_paper_environment_acceptance_RC0.md",
   "deployment_source_policy": {
     "candidate_branch": "plan-architect",
     "stable_approved_branch": "main",
@@ -141,7 +150,7 @@
     "shadow_blinding": "NOT_VERIFIED",
     "fallback": "S3_REQUIRES_HUMAN_REEVALUATION",
     "reproducibility": "NOT_TESTED",
-    "administrative_gate": "S2B_ADM01_AUTHORIZED_OWNER_ADMIN_ONLY_SETUP_PENDING"
+    "administrative_gate": "DEFERRED_TO_TARGET_PAPER_HOST"
   },
   "isolation_acceptance_matrix": "planning/research/R-013_S2_variant_acceptance_RC2.md",
   "isolation_administrative_gate": "planning/research/R-013_S2B_lab_ADM01.md",
@@ -150,7 +159,7 @@
     "planning/08_S2_isolation_spec_RC1.md",
     "planning/research/R-013_S2_acceptance_matrix_RC1.md"
   ],
-  "next_governance_item": "OWNER_ACTION_S2B_ADM01_SECURE_UI_AND_SCOPED_ADMIN_SETUP",
+  "next_governance_item": "AGENTIC_DESIGN_CHECKPOINT_THEN_STRATEGY_V1_NO_TARGET_ACCESS_REQUEST_NOW",
   "isolation_variant": {
     "proposed": "S2_B",
     "selected": false,
@@ -169,6 +178,25 @@
     "administrator": "PROJECT_OWNER",
     "agent_privileged_execution_allowed": false,
     "setup_executed": false,
-    "authorization_reference": "planning/research/probes/r013-s2b-lab-execution/authorization.json"
-  }
+    "authorization_reference": "planning/research/probes/r013-s2b-lab-execution/authorization.json",
+    "current_execution_allowed": false,
+    "current_applicability": "DEFERRED_TO_TARGET_PAPER_HOST",
+    "target_instance_revalidation_required": true
+  },
+  "historical_migration_gate": "planning/research/R-029_pre_live_environment_migration_gate_RC0.md",
+  "environments": {
+    "RESEARCH_AI_ENVIRONMENT": "ChatGPT Team",
+    "RESEARCH_HOST": "INFOTEP_INSTITUTIONAL_WINDOWS",
+    "TARGET_PAPER_AI_ENVIRONMENT": "ChatGPT Plus individual",
+    "TARGET_PAPER_COMPUTE_HOST": "OWNER_PERSONAL_WINDOWS",
+    "FUTURE_LIVE_ENVIRONMENT": "UNKNOWN"
+  },
+  "gate_phases": {
+    "design": "Preparation Team — contracts/architecture/review",
+    "target_environment": "R-030 personal Windows Plus — before implementation",
+    "operational": "Built integrated system — before autonomous PAPER",
+    "live": "Undecided after PAPER"
+  },
+  "live_environment_selected": false,
+  "paper_runtime_accepted": false
 }

@@ -1,5 +1,8 @@
 # R-006 — Protocolo conductual Team, preregistrado
 
+> **Vigencia ADR-013 — 2026-10-07:** investigación = Team en workstation Windows institucional INFOTEP; target PAPER = Plus individual en PC personal del propietario; LIVE = UNKNOWN. Se conservan las notas/evidencias anteriores como historia. Team no prueba disponibilidad Plus ni seguridad del host personal. Diseño se resuelve durante Preparation; aceptación target R-030 se difiere antes de implementación/PAPER. S2B-ADM-01 = DEFERRED_TO_TARGET_PAPER_HOST; no acción administrativa institucional pendiente. `implementation_locked=true`.
+
+
 **Fecha:** 2026-10-05. **Estado:** diseño de experimento desechable, sin selección ni implementación. Aplica ADR-001/002/004/007/008. El usuario autoriza conducta Team; no API facturada ni broker. Datos y cantidades completamente sintéticos, nunca parámetros financieros aprobados.
 
 ## Comparación y muestra

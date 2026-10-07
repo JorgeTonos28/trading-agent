@@ -36,3 +36,7 @@ Los snapshots de preparación anteriores NOT_AUTHORIZED permanecen intactos como
 **HUMAN_ACTION_REQUIRED:** acción Windows de cuenta disabled del owner; ningún nuevo consentimiento del gate. Tras verificación: preview/setup owner, OPERATOR positivos, login BASE seguro, FS, seal, procedimientos manuales restantes y rollback. Owner deberá actuar nuevamente en pasos privilegiados/login conforme runbook.
 
 Reportar PASS_SCOPED/FAIL/ERROR/INVALID_POSITIVE/NOT_TESTED por caso, alcance/limitaciones, viabilidad, rollback/residuos. Filesystem PASS nunca acepta S2-B. Después de FS, proponer **S2B-PROC-01** para proceso/supervisor/token/handles/descendants/private desktop/IPC; no ejecutarlo por este gate. Egress y auth Team separados, sin dinero/API/global changes.
+
+## Applicability 2026-10-07 — ADR-013
+
+DEFERRED_TO_TARGET_PAPER_HOST; no institutional execution/request. authorization.json and history are original evidence. Active helper now refuses Setup/Rollback before any filesystem/identity/admin action. Reviewed previous bytes/hash are archived as history/*.ps1.txt; old QA does not validate new helper execution. Future personal-PC owner gate/rebind/new transaction required. No native FS test or rollback ran.

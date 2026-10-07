@@ -1,5 +1,8 @@
 # S2 RC2 — Agent Domain y contención por job
 
+> **Vigencia ADR-013 — 2026-10-07:** investigación = Team en workstation Windows institucional INFOTEP; target PAPER = Plus individual en PC personal del propietario; LIVE = UNKNOWN. Se conservan las notas/evidencias anteriores como historia. Team no prueba disponibilidad Plus ni seguridad del host personal. Diseño se resuelve durante Preparation; aceptación target R-030 se difiere antes de implementación/PAPER. S2B-ADM-01 = DEFERRED_TO_TARGET_PAPER_HOST; no acción administrativa institucional pendiente. `implementation_locked=true`.
+
+
 2026-10-06. **APPROVED_CANDIDATE_DIRECTION / NOT_ACCEPTED**: propietario confirma S2-B después de la comparativa el 2026-10-06. No permiso administrativo ni implementación. Sustituye como propuesta vigente el mapeo obligatorio rol→cuenta de [S2-A RC1](08_S2_isolation_spec_RC1.md). El objetivo S2 aprobado permanece: frontera financiera técnica. [Comparativa/evidencia](research/R-013_S2_variants_comparison_2026-10-06.md), [ADR-012](decisions/ADR-012-agent-process-isolation-proposed.md).
 
 ## 1. Dominios, procesos y confianza

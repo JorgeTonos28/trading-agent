@@ -1,5 +1,8 @@
 # R-013 — acceptance S2 y escalamiento S3 RC1
 
+> **Vigencia ADR-013 — 2026-10-07:** investigación = Team en workstation Windows institucional INFOTEP; target PAPER = Plus individual en PC personal del propietario; LIVE = UNKNOWN. Se conservan las notas/evidencias anteriores como historia. Team no prueba disponibilidad Plus ni seguridad del host personal. Diseño se resuelve durante Preparation; aceptación target R-030 se difiere antes de implementación/PAPER. S2B-ADM-01 = DEFERRED_TO_TARGET_PAPER_HOST; no acción administrativa institucional pendiente. `implementation_locked=true`.
+
+
 > **Proyección vigente 2026-10-06:** [RC2 por variante](R-013_S2_variant_acceptance_RC2.md) conserva SI17/BL9/RB5 y revisa la realización por cuenta/contexto y stages. Las referencias ADM01/02/03 siguientes son históricas, no autorizaciones ni la secuencia activa. S2-ADM-01 DEFERRED; todos los tests efectivos NOT_TESTED.
 
 2026-10-05. P1 D-027/D-024. [Contrato S2](../08_S2_isolation_spec_RC1.md), [ADR-012](../decisions/ADR-012-agent-process-isolation-proposed.md). **Especificación, no aceptación**. Cuenta Team; Plus PRE-LIVE. No permisos administrativos implícitos.

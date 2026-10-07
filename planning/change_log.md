@@ -1,5 +1,8 @@
 # Change Log de planificación
 
+> **Vigencia ADR-013 — 2026-10-07:** investigación = Team en workstation Windows institucional INFOTEP; target PAPER = Plus individual en PC personal del propietario; LIVE = UNKNOWN. Se conservan las notas/evidencias anteriores como historia. Team no prueba disponibilidad Plus ni seguridad del host personal. Diseño se resuelve durante Preparation; aceptación target R-030 se difiere antes de implementación/PAPER. S2B-ADM-01 = DEFERRED_TO_TARGET_PAPER_HOST; no acción administrativa institucional pendiente. `implementation_locked=true`.
+
+
 | Fecha | Cambio | Razón | Efecto arquitectónico |
 |---|---|---|---|
 | 2026-10-05 | ADR-009: cohorte RC1 aprobada solo como candidata; requisito Environment Bootstrap/Portability/Agent Packaging, D-037/R-028 P1 y nuevo gate DoR/D-024 | Solicitud del propietario: fresh clone sin memoria Team y paquetes reutilizables manual/programáticamente | Obligación aprobada; mecanismo y runtime abiertos, Plus UNKNOWN. Protocolo de probes preregistrado, sin implementación ni instalación/config global |
@@ -56,7 +59,7 @@ Propietario declara Team para preparación/implementación tras DoR/backtests/PA
 
 ## 2026-10-05 — aprobación ADR-011 A y disposiciones RC2
 
-**Vigencia ADR-011 — 2026-10-05:** propietario aprobó opción A y disposiciones RC2 como dirección de diseño PAPER: núcleo financiero local determinístico always-on + jobs Codex Team automáticos por evento/calendario, sin aprobación por job rutinario. D-020 DECIDED únicamente en dirección Build-vs-Reuse; versiones/permisos/runtime final siguen D-024 RESEARCHING. No implementación, gasto, capacidad sostenida ni autoridad financiera adicional. Plus permanece PRE-LIVE.
+**Antecedente ADR-011 — 2026-10-05:** propietario aprobó opción A y disposiciones RC2 como dirección de diseño PAPER: núcleo financiero local determinístico always-on + jobs Codex Team automáticos por evento/calendario, sin aprobación por job rutinario. D-020 DECIDED únicamente en dirección Build-vs-Reuse; versiones/permisos/runtime final siguen D-024 RESEARCHING. No implementación, gasto, capacidad sostenida ni autoridad financiera adicional. Plus permanece PRE-LIVE.
 
 Se conserva A+, G1+G2 y ADR-006. Las futuras dependencias obligatorias de Strategy V1 tendrán fallo explícito. No modificación de main ni release de despliegue.
 
@@ -116,3 +119,7 @@ Contrato concreto F/C/R/S/P/H, filesystem/network/IPC/secrets, snapshots mínimo
 - Helper desechable en PowerShell 7 existente: create-new con descriptor inicial, scope/path/SID/marker/source, journal previo por creación y ledger protegido. Partial setup nunca se borra automáticamente; owner debe confirmar atribución. Rollback completo exige manifest/copia exportada hash/length/receipt y ausencia de proceso/profile; UNKNOWN bloquea borrado.
 - Primer QA de memoria tuvo ERROR del lector de fixture parent-kind (preservado), corregido; 5.1 policy bloqueó scripts (ERROR registrado, sin policy change). Host 7.6.5: parser/memoria15/compilación sin llamadas nativas PASS. QA Python 15/15 (3 source + 12 evaluador sintético), sin evidencia FS real ni modelo/API.
 - Autorización persistida en todos los contratos/perfiles/roadmap vigentes, capturas históricas intactas. Próxima acción es cuenta disabled segura por owner; no reaprobar scope. Setup, FS, rollback, aceptación S2-B siguen pendientes; D-027/D-024 RESEARCHING, main/implementation invariantes.
+
+## 2026-10-07 — ADR-013 / D-043: supersession de entornos y gates
+
+Owner establece Team/INFOTEP research y Plus/PC personal target PAPER; LIVE UNKNOWN. ADR-010 y premisa PRE-LIVE-only R-029/D-039 parcialmente superseded, Deployment Source Policy intacta. Se preservan aprobaciones/evidencias; lab S2B-ADM-01 diferido, solicitud cuenta institucional retirada. Añadidos R-030, perfiles/schema v0.3 con historia v0.2, dimensiones diseño/target/operación, guard de no mutación en helper y reglas bootstrap. No OS setup/auth/financial implementation, gasto, merge main ni tag. Sigue lock.

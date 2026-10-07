@@ -1,5 +1,8 @@
 # R-010–014 — hardening PAPER: evidencia y checkpoint
 
+> **Vigencia ADR-013 — 2026-10-07:** investigación = Team en workstation Windows institucional INFOTEP; target PAPER = Plus individual en PC personal del propietario; LIVE = UNKNOWN. Se conservan las notas/evidencias anteriores como historia. Team no prueba disponibilidad Plus ni seguridad del host personal. Diseño se resuelve durante Preparation; aceptación target R-030 se difiere antes de implementación/PAPER. S2B-ADM-01 = DEFERRED_TO_TARGET_PAPER_HOST; no acción administrativa institucional pendiente. `implementation_locked=true`.
+
+
 2026-10-05. Dirección ADR-011 A aprobada; D-020 DECIDED en disposiciones de diseño. **D-024 RESEARCHING**; no freeze, implementación, permisos finales, gasto, main ni deployment tag. PAPER Team; Plus candidato PRE-LIVE, no bloquea.
 
 ## 1. Entregables y alcance

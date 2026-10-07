@@ -1,8 +1,11 @@
 # Risk Register — 2026-10-01
 
+> **Vigencia ADR-013 — 2026-10-07:** investigación = Team en workstation Windows institucional INFOTEP; target PAPER = Plus individual en PC personal del propietario; LIVE = UNKNOWN. Se conservan las notas/evidencias anteriores como historia. Team no prueba disponibilidad Plus ni seguridad del host personal. Diseño se resuelve durante Preparation; aceptación target R-030 se difiere antes de implementación/PAPER. S2B-ADM-01 = DEFERRED_TO_TARGET_PAPER_HOST; no acción administrativa institucional pendiente. `implementation_locked=true`.
+
+
 **Estado vigente posterior — wave07:** [RC2 Team](research/R-006_shortlist_RC2_team.md) documenta madurez para decisión acotada: 8/8 jobs, SDK/bootstrap 14/14, evaluación 16/16; perfil PAPER PARTIAL. D-020 READY_FOR_DECISION, D-024 RESEARCHING; próximo gobierno ADR-011 dirección nativa, sin cierre final/freeze ni acceso Plus.
 
-**Vigencia actual — ADR-010, 2026-10-05:** CURRENT_RESEARCH_ENVIRONMENT=Team; PAPER_RUNTIME_ENVIRONMENT=Team actual; FUTURE_LIVE_ENVIRONMENT=Plus individual candidato. Las cláusulas anteriores que exigían Plus para PAPER/D-020/D-024 quedan parcialmente SUPERSEDED. La evidencia original se conserva; Plus es gate P3 PRE-LIVE (R-029/D-039), sin dependencia para PAPER. Aceptación activa: [Team TP1–7](research/R-006_team_runtime_acceptance_RC0.md). No selección final ni implementación autorizada.
+**Antecedente — ADR-010, 2026-10-05:** CURRENT_RESEARCH_ENVIRONMENT=Team; PAPER_RUNTIME_ENVIRONMENT=Team actual; FUTURE_LIVE_ENVIRONMENT=Plus individual candidato. Las cláusulas anteriores que exigían Plus para PAPER/D-020/D-024 quedan parcialmente SUPERSEDED. La evidencia original se conserva; Plus es gate P3 PRE-LIVE (R-029/D-039), sin dependencia para PAPER. Aceptación activa: [Team TP1–7](research/R-006_team_runtime_acceptance_RC0.md). No selección final ni implementación autorizada.
 
 **Lectura:** registros/tablas actuales y esta adenda gobiernan; notas fechadas de hitos previos se conservan como historia, incluidos sus antiguos siguientes pasos Plus.
 
@@ -94,3 +97,11 @@ K-049/052 exigen aislamiento efectivo de recursos y linaje; no imponen una cuent
 | K-056 | P1 | Setup parcial, fuente/superficie incompatible, copia de ledger perdida o procesos de propiedad UNKNOWN impiden reversión verificable | Probabilidad desconocida / impacto acotado a recursos temporales; sin credenciales | Journal sanitizado flushed antes de crear, ledger protegido y manifest completo, receipt + copia hash/length, no retry/cleanup ciego; partial requiere atribución owner, procesos UNKNOWN bloquean delete. 5.1 policy blocked no workaround: PowerShell 7 existente validado solo memoria/compile, pruebas reales pendientes. | Owner admin / Plan Architect verificación |
 
 Journal de repo y output BASE son candidatos de evidencia; no autenticidad adversarial ni autorización de borrado por sí solos. Quiescencia/operator confiables requeridos. No ampliar permisos/global policy para lograr PASS.
+
+## Riesgos de transición y aceptación — ADR-013
+
+- P1: validar accidentalmente PAPER desde Team/host institucional. Control: AI-plan/host separados, perfiles v0.3, R-030, nunca transferir PASS host-specific.
+- P1: ejecutar transacción/admin histórica en host inapropiado o fresh clone. Control: lab DEFERRED_TO_TARGET_PAPER_HOST, guard Setup/Rollback, rebind target owner-only antes de ejecución.
+- P1: diferir una pregunta genuina de diseño como si fuera test de host. Control: maturity audit R-006/R-010/R-013 e independiente; workflow/store/permissions/version choices siguen explícitos.
+- P1/P2: Plus/quota/auth o aislamiento no suficientes. Control: target acceptance fail-closed; reevaluar arquitectura con owner, sin S1 operativo, silent S3 ni gasto automático.
+- P3: asumir el host PAPER como LIVE. Control: FUTURE_LIVE_ENVIRONMENT UNKNOWN y decisión posterior a PAPER.

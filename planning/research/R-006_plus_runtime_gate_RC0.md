@@ -1,5 +1,8 @@
 # R-006 — Plus Acceptance Gate RC3
 
+> **Vigencia ADR-013 — 2026-10-07:** investigación = Team en workstation Windows institucional INFOTEP; target PAPER = Plus individual en PC personal del propietario; LIVE = UNKNOWN. Se conservan las notas/evidencias anteriores como historia. Team no prueba disponibilidad Plus ni seguridad del host personal. Diseño se resuelve durante Preparation; aceptación target R-030 se difiere antes de implementación/PAPER. S2B-ADM-01 = DEFERRED_TO_TARGET_PAPER_HOST; no acción administrativa institucional pendiente. `implementation_locked=true`.
+
+
 **RECLASIFICADO / HISTÓRICO — ADR-010:** este contrato Plus y sus criterios originales se preservan. Su dependencia PAPER queda SUPERSEDED; es P3 PRE-LIVE, [R-029](R-029_pre_live_environment_migration_gate_RC0.md)/D-039 DEFERRED. El gate activo PAPER es [Team TP1–7](R-006_team_runtime_acceptance_RC0.md). No pedir acceso Plus ni bloquear D-020/D-024/implementación/PAPER por este archivo.
 
 ## Contrato anterior conservado

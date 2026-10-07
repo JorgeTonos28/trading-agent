@@ -2,13 +2,13 @@
   "schema_version": "s2b-lab-current-state-v1",
   "gate": "S2B-ADM-01",
   "transaction_id": "s2b-20261006-a6d74b2b",
-  "recorded_at": "2026-10-06T19:05:03.042158+00:00",
+  "recorded_at": "2026-10-07",
   "owner_authorization": "AUTHORIZED_EXACT_TEMP_LAB_SCOPE",
   "administrator": "PROJECT_OWNER",
   "agent_privileged_execution_allowed": false,
   "preparation_state": "CHECKED_INDEPENDENT_REVIEW_HANDOFF_READY",
-  "execution_state": "WAITING_OWNER_ACCOUNT_UI",
-  "next_action": "OWNER_CREATE_STANDARD_DISABLED_TOS_PROBE_RUNNER_B_VIA_WINDOWS_UI",
+  "execution_state": "DEFERRED_TO_TARGET_PAPER_HOST",
+  "next_action": "NO_CURRENT_HOST_ACTION_COMPLETE_DESIGN_RESEARCH",
   "latest_os_observation": "2026-10-06T19:03:54.9351570Z",
   "latest_preflight": "readonly-preflight-03.json",
   "account_state_observed": "ABSENT",
@@ -41,7 +41,7 @@
     "QA_PARENT_KIND_ERROR_REPAIRED",
     "WINDOWS_POWERSHELL_5_1_POLICY_BLOCKED_NOT_CHANGED"
   ],
-  "rollback_status": "NOT_STARTED_NO_TEMP_ACCOUNT_OR_TREE_OBSERVED",
+  "rollback_status": "NOT_STARTED_NO_OS_RESOURCES_CREATED_BY_AGENT_HISTORICAL_OBSERVATION_ONLY",
   "lab_os_residue_observed": [],
   "persistent_artifacts": "PLANNING_DOCUMENTS_SOURCES_AND_SANITIZED_EVIDENCE_IN_REPOSITORY",
   "s2b_viability": "CANDIDATE_REQUIRES_NATIVE_VALIDATION",
@@ -49,11 +49,20 @@
   "D027": "RESEARCHING",
   "D024": "RESEARCHING",
   "implementation_locked": true,
-  "next_security_gate_proposed": "S2B_PROC_01_FULL_PROCESS_SUPERVISOR_TOKEN_HANDLES_CHILDREN_PRIVATE_DESKTOP_IPC_NOT_AUTHORIZED",
-  "source_hashes": {
+  "next_security_gate_proposed": "TARGET_R030_LAB_REBIND_THEN_FS_FULL_PROCESS_NETWORK_IPC_AUTH_NO_CURRENT_EXECUTION",
+  "independent_review": "planning/research/R-013_S2B_execution_handoff_review_2026-10-06.md",
+  "current_decision": "ADR-013_D-043",
+  "research_host": "INFOTEP_INSTITUTIONAL_WINDOWS",
+  "target_host": "OWNER_PERSONAL_WINDOWS",
+  "current_host_execution_allowed": false,
+  "historical_source_hashes": {
     "owner_lab.ps1": "7f6ac7b77b14d420b482d241888f43adfd7f282842573d46de5c437b427499cd",
     "evaluate_filesystem.py": "7b9b29a1c75f47c09fe2f07cd604a113f6999afe6ccf04274ed4225565147b2b",
     "readonly_preflight.ps1": "d6638c4a5f5906acb9133c6e54fc39c8486bb49c3e64d95cb67ac870fc3c9282"
   },
-  "independent_review": "planning/research/R-013_S2B_execution_handoff_review_2026-10-06.md"
+  "latest_os_observation_is_current": false,
+  "current_source_hashes": {
+    "owner_lab.ps1": "a32dd62c49a882efbbef524a9a3f80c39ab9e600801246c86838275db186ee34"
+  },
+  "current_helper_qa": "DEFER_GUARD_ONLY_PREVIOUS_QA_APPLIES_TO_ARCHIVED_SOURCE_NOT_NATIVE_ACCEPTANCE"
 }

@@ -1,5 +1,8 @@
 # R-006 — shortlist RC2 y madurez PAPER Team
 
+> **Vigencia ADR-013 — 2026-10-07:** investigación = Team en workstation Windows institucional INFOTEP; target PAPER = Plus individual en PC personal del propietario; LIVE = UNKNOWN. Se conservan las notas/evidencias anteriores como historia. Team no prueba disponibilidad Plus ni seguridad del host personal. Diseño se resuelve durante Preparation; aceptación target R-030 se difiere antes de implementación/PAPER. S2B-ADM-01 = DEFERRED_TO_TARGET_PAPER_HOST; no acción administrativa institucional pendiente. `implementation_locked=true`.
+
+
 2026-10-05. Vigente tras ADR-010; sustituye **recomendación/next-step** RC1 para PAPER, conserva RC1 y pruebas históricas. Cohorte candidata ya aprobada, selección final **NO**; D-020 DECIDED en disposiciones de diseño ADR-011; D-024 RESEARCHING (dirección A aprobada; freeze no listo). No implementación.
 
 ## 1. Disposiciones de diseño aprobadas

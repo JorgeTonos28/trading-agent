@@ -5,6 +5,10 @@ Agent may read/parse/Plan; owner alone executes Setup/Rollback with elevation.
 #>
 [CmdletBinding()]
 param([ValidateSet('Plan','Inspect','Setup','Rollback')][string]$Phase = 'Plan')
+# ADR-013: archived transaction is deferred; no institutional or fresh-clone mutation.
+if ($Phase -in @('Setup','Rollback')) {
+    throw 'DEFERRED_TO_TARGET_PAPER_HOST: target owner gate and new transaction binding required; no mutation.'
+}
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 if ($env:OS -ne 'Windows_NT' -or -not [Environment]::Is64BitProcess) {

@@ -1,0 +1,3 @@
+# Preserve archived pre-supersession bytes used for provenance/hash checks.
+shared/history/* -text
+planning/research/probes/r013-s2b-lab-execution/history/* -text

@@ -1,5 +1,8 @@
 # R-013 — S2-A, S2-B y S3: cuentas, seguridad y blinding
 
+> **Vigencia ADR-013 — 2026-10-07:** investigación = Team en workstation Windows institucional INFOTEP; target PAPER = Plus individual en PC personal del propietario; LIVE = UNKNOWN. Se conservan las notas/evidencias anteriores como historia. Team no prueba disponibilidad Plus ni seguridad del host personal. Diseño se resuelve durante Preparation; aceptación target R-030 se difiere antes de implementación/PAPER. S2B-ADM-01 = DEFERRED_TO_TARGET_PAPER_HOST; no acción administrativa institucional pendiente. `implementation_locked=true`.
+
+
 2026-10-06. **READY_FOR_DECISION: recomendar S2-B como dirección candidata revisada.** D-027/D-024 RESEARCHING. El propietario no autoriza S2-ADM-01; no crear usuarios ni modificar ACL/firewall/políticas. Comparativa de diseño, sin aceptación operacional. [ADR-012](../decisions/ADR-012-agent-process-isolation-proposed.md).
 
 ## 1. Corrección de la premisa

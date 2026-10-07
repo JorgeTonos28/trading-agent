@@ -1,9 +1,12 @@
 # Environment Bootstrap / Onboarding / Portability — RC0
 
-**Vigencia ADR-011 — 2026-10-05:** propietario aprobó opción A y disposiciones RC2 como dirección de diseño PAPER: núcleo financiero local determinístico always-on + jobs Codex Team automáticos por evento/calendario, sin aprobación por job rutinario. D-020 DECIDED únicamente en dirección Build-vs-Reuse; versiones/permisos/runtime final siguen D-024 RESEARCHING. No implementación, gasto, capacidad sostenida ni autoridad financiera adicional. Plus permanece PRE-LIVE.
+> **Vigencia ADR-013 — 2026-10-07:** investigación = Team en workstation Windows institucional INFOTEP; target PAPER = Plus individual en PC personal del propietario; LIVE = UNKNOWN. Se conservan las notas/evidencias anteriores como historia. Team no prueba disponibilidad Plus ni seguridad del host personal. Diseño se resuelve durante Preparation; aceptación target R-030 se difiere antes de implementación/PAPER. S2B-ADM-01 = DEFERRED_TO_TARGET_PAPER_HOST; no acción administrativa institucional pendiente. `implementation_locked=true`.
 
 
-**Vigencia actual — ADR-010, 2026-10-05:** CURRENT_RESEARCH_ENVIRONMENT=Team; PAPER_RUNTIME_ENVIRONMENT=Team actual; FUTURE_LIVE_ENVIRONMENT=Plus individual candidato. Las cláusulas anteriores que exigían Plus para PAPER/D-020/D-024 quedan parcialmente SUPERSEDED. La evidencia original se conserva; Plus es gate P3 PRE-LIVE (R-029/D-039), sin dependencia para PAPER. Aceptación activa: [Team TP1–7](research/R-006_team_runtime_acceptance_RC0.md). No selección final ni implementación autorizada.
+**Antecedente ADR-011 — 2026-10-05:** propietario aprobó opción A y disposiciones RC2 como dirección de diseño PAPER: núcleo financiero local determinístico always-on + jobs Codex Team automáticos por evento/calendario, sin aprobación por job rutinario. D-020 DECIDED únicamente en dirección Build-vs-Reuse; versiones/permisos/runtime final siguen D-024 RESEARCHING. No implementación, gasto, capacidad sostenida ni autoridad financiera adicional. Plus permanece PRE-LIVE.
+
+
+**Antecedente — ADR-010, 2026-10-05:** CURRENT_RESEARCH_ENVIRONMENT=Team; PAPER_RUNTIME_ENVIRONMENT=Team actual; FUTURE_LIVE_ENVIRONMENT=Plus individual candidato. Las cláusulas anteriores que exigían Plus para PAPER/D-020/D-024 quedan parcialmente SUPERSEDED. La evidencia original se conserva; Plus es gate P3 PRE-LIVE (R-029/D-039), sin dependencia para PAPER. Aceptación activa: [Team TP1–7](research/R-006_team_runtime_acceptance_RC0.md). No selección final ni implementación autorizada.
 
 2026-10-05. Requisito ADR-009 aprobado; mecanismo candidato D-037/R-028 P1. D-020 READY_FOR_DECISION/D-024 RESEARCHING. Fuente de verdad: repo, [ONBOARDING](../ONBOARDING.md), [manifest](../shared/bootstrap_manifest.json), perfiles y evidencia versionada. No implementar Trading OS.
 
@@ -130,3 +133,7 @@ Propietario aprueba S2-B como candidata principal, Q-051 cerrado en dirección. 
 ## Gate mínimo S2-B preparado — 2026-10-06
 
 [S2B-ADM-01](research/R-013_S2B_lab_ADM01.md) corresponde a una cuenta **temporal de laboratorio**, no un usuario por rol ni Runner operacional instalado. AUTHORIZED_OWNER_ADMIN_ONLY desde autorización posterior: USER_ACTION_REQUIRED para cuenta/ACL/login temporales del propietario. Bootstrap/agente no se elevan, no crean cuentas ni aplican policy; permisos operativos siguen sin aprobación. Memoria/PLAN_ONLY/readonly no prueban FS/EB/TP4. Binder local/secretos fuera de Git; rollback SID/path solo recursos nuevos. Team PAPER sin Plus, native auth/egress/full process/recovery y aceptación siguen pendientes. Paquetes no cambian autoridad ni D-024.
+
+## Contrato actual por fase — ADR-013
+
+IDs actuales AI/host separados; entorno observado v0.3 incluye RESEARCH_ENVIRONMENT / TARGET_PAPER_ENVIRONMENT / FUTURE_LIVE_ENVIRONMENT, ai_environment/compute_host y fase por test. Diseño EB/inventory/packages/recovery se especifica y revisa Team; ejecución target EB/TE en Plus/PC personal se difiere R-030, necesaria antes de implementación. Perfil v0.2 preservado no pasa a nuevo scope por cambiar nombre. READY_AGENT_ENVIRONMENT exige todos los requisitos mandatorios del scope PASSED; una aceptación diferida no es PASS. Fase OPERATIONAL completa tests del sistema construido antes de PAPER. Esta cláusula supersede la tabla antigua de entornos y su restricción Plus PRE-LIVE-only.
