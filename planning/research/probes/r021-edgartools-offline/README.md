@@ -1,0 +1,17 @@
+# R-021 E1 — EdgarTools offline, protocolo antes del probe
+
+2026-10-13. Candidato normalizador **de datos** E-SEC-01, no runtime/Skill/MCP agéntico. PyPI declara5.62.0/Python>=3.10; latest docs pueden referirse a otra versión. Instalar sólo package base pinado y dependencies en `.local/r021-edgar-deps`, sin extras AI/cloud ni config global. Registrar versiones/hashes de artefactos/licencia y fuente usada. No source install dentro de Trading OS operativo.
+
+Fixture XML ficticio: P con footnote exchange, P con private purchase, F/tax, M/derivative, missing price, amendment y joint owners. Expectativas: conservar código/cantidad/footnote/form/owner/derivative/missing; observar `market_trades` y plan classification como categorías del proveedor, **no** aprobar semántica de inversión automáticamente. Footnote no menciona plan ≠ prueba de discretionary trade. P no distingue necesariamente exchange/private; counting owners no duplica el hecho. Precio faltante no se convierte en cero válido.
+
+Runner sin credenciales ni contactos SEC. Bloquear sockets/DNS antes de importar librería, con hook de auditoría de Python; sin Company/get_filings/EDGAR requests. Outputs limitados a metadata y campos ficticios; no rendering de reports con datos de mercado. Import/parse que intente red se registra ERROR/LIMITATION, sin inventar identidad/email ni habilitar llamadas para obtener PASS. Este bloqueo de probe Python no demuestra S2/full-process/network security.
+
+Captura create-exclusive; intentos/fuentes preservados. Observar límite de package/version/adapter por resultados; no modificar fixture o stubbear enrichment sin declararlo. Ningún precio histórico ni backtest/holdout, broker/orden, gasto, cuenta/Plus/admin, cleanupH7. La evidencia ayuda ADAPT/WRAP/REFERENCE_ONLY, no selecciona proveedor/dataset/engine ni acredita PIT. Engine/library policy de producción continúa abierta.
+
+## Captura ejecutada y reproducción
+
+Attempt01 ejecutado el2026-10-13: [fuente](probe_attempt01.py), [result](result-01.json), [44 dependencias/versiones/hashes](dependencies-01.json), [launcher ejecutado archivado](executed_launcher_archive.py). El launcher se ejecutó desde `.local/run_edgar_probe.py`; su cálculo de root depende de esa ubicación y usa Python3.14 del host. El archivo archivado es evidencia, **no ejecutar desde esta carpeta**. stdout acotado, stderr sólo contador53líneas; captura fuente/result inmutable. No afirmar network-free: audit registra un connect bloqueado, fase desconocida.
+
+Para reproducir, fresh clone a workspace research sin secretos; instalar sólo pin5.62.0/base en `.local/r021-edgar-deps` desde PyPI y verificar metadata contra hashes. Copiar launcher archivado a `.local/run_edgar_probe.py`, revisar path del intérprete existente, y preparar **otro directorio de attempt** con fuente/protocolo/hash/resultado nuevos. No ejecutar contra result-01 existente ni borrar/reescribir una captura para poder repetir. El probe niega overwrite antes de importar. Registrar plataforma/deps y divergencias; no equivalencia implícita de versiones ni gate operacional.
+
+7/7 PASS_STRUCTURAL de expectativas autor; full factory BLOCKED_OR_ERROR/IdentityNotSetError. Form y rama derivada seleccionados por caller; owners sólo conteo raw, footnotes sólo referencia. [Límites y disposición](../../R-021_edgartools_findings_2026-10-13.md). No dataset/PIT/estrategia/proceso Windows aceptado.

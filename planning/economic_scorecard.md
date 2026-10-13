@@ -62,3 +62,7 @@ Una recomendación paga debe identificar una condición comprobable (por ejemplo
 ## Wave financiera02 — 2026-10-13
 
 [Data](research/R-008_market_data_evidence_wave02_2026-10-13.md), [brokers](research/R-007_order_protection_matrix_RC1.md), [engines](research/R-009_backtesting_reuse_RC0.md) y [normalizador SEC](research/R-021_external_dataset_admission_RC1.md) completan seis campos con prices publicados/UNKNOWN. LEAN source libre ≠ CLI gratis; software free ≠ datos/coste operativo incluido. Nuevos servicios sólo estudiados, gasto0; fuente/documentación accesible no prueba entitlement o rights de target.
+
+## Actualización financiera — 2026-10-13, retención y probe E1
+
+[Retención R-008](research/R-008_data_retention_gate_RC1.md): Tiingo Starter REJECT/PAPER_V1_VIABLE_FREE=NO sólo para rol durable. Coste0 no acredita rights; paid CONDITIONAL y alternativas gratis aún no agotadas. [EdgarTools E1](research/R-021_edgartools_findings_2026-10-13.md): licencia0, compatibilidad PARTIAL/ADAPT-WRAP candidato,44deps y mantenimiento/escala UNKNOWN; no fuente seleccionada ni API operativa. Dossiers conservan seis campos económicos/lock-in/condición para pagar. Gasto incremental0.

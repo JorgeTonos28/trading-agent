@@ -37,3 +37,7 @@ Escenario mensual: un investigador, lotes EOD y caching; volumen todavía UNKNOW
 2. Probe normalizador offline con pin/fixture (sin datos reales/retorno), después cobertura/revisiones/primary-vendor.
 3. Dataset de precios y benchmark compatibles, granularidad/acciones corporativas y engine paridad.
 4. Regla/actor/threshold/decay/config y OOS pre-registrados; admission ADR-005 y Strategy selection D-008 con owner. Ningún proveedor seleccionado por fecha declarada ni gratuitidad.
+
+## Evidencia posterior E1 — 2026-10-13
+
+[Probe offline pin5.62.0](R-021_edgartools_findings_2026-10-13.md) ejecutado:7/7checks de tablas sintéticas, factory completo ERROR/IdentityNotSetError. P privado permanece market_trades; form/clase de tabla son caller-supplied. TECHNICALLY_COMPATIBLE=PARTIAL, ADAPT/WRAP candidato, SELECTED=NO. Software público probado parcialmente, no extracción histórica/ownership/PIT/rights admitidos. La nota anterior «no instalado ni probado» describe la wave documental previa. Footnotes completas, plan trivaluado, mappings as-of/amendments y canal/receipts siguen pendientes.

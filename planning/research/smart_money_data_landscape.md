@@ -81,3 +81,7 @@ Quiver/UW son REFERENCE_ONLY actualmente y WRAP futuros condicionados; SEC WRAP/
 ## Normalización y admisión — 2026-10-13
 
 [R-021 RC1](R-021_external_dataset_admission_RC1.md): Form4 códigoP no prueba por sí mismo exchange transaction; 13F holdings no whole portfolio/trade timing. EdgarTools MIT es ADAPT/WRAP candidato **de datos**, no selector de MCP/Skill/runtime. Probe XML sintético aún preparado/no ejecutado; no parser construido ni datos admitidos. [Wave data02](R-008_market_data_evidence_wave02_2026-10-13.md) añade reserva especializada analyst/news/imbalance paga, sin gasto, entitlement o PIT demostrados.
+
+## E1 normalizador SEC — 2026-10-13
+
+[EdgarTools findings](R-021_edgartools_findings_2026-10-13.md):7/7table-only sintéticos y full factory ERROR; no disponibilidad histórica/PIT demostrada. ADAPT/WRAP normalizador candidato, ningún proveedor/familia seleccionado. Footnotes/planes/owners/mapping temporal y primary-vendor siguen gates; no extraer «conviction» del label market_trades.

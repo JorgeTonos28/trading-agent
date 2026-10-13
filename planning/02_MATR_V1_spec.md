@@ -64,3 +64,7 @@ Exposición de proceso 2026-10-07: la consulta de fichas de emisores para compro
 ## 7. Próximo paquete de decisión
 
 Esta ficha alimenta R-020. La decisión siguiente **no** es confirmar MATR_V1 por defecto, sino comparar Video-Inspired Strategy V1, MATR_V1 y otros candidatos justificados mediante criterios preregistrados; después presentar una recomendación de Strategy V1 al propietario. M-01/M-03/M-05/M-07/M-11 siguen requiriendo evidencia y coordinación con D-014/021/022/030. No se aprueba nada por el silencio del propietario.
+
+## Semántica técnica y evaluación propuesta — 2026-10-13
+
+[Cálculos RC1](research/R-020_shared_calculation_semantics_RC1.md) concretan propuesta SMA/ROC/WilderATR/warm-up/raw-vs-adjusted/corporateevents/cash, sin cerrar M03 ni seleccionar MATR; paridad engine y configuración faltantes. [Q055 O-B](research/D-011_OOS_policy_decision_RC0.md) preserva fechas baseline y propone comparación entre candidatos antes de confirmación; INTEGRITY_UNKNOWN hasta exposure ledger/M11, sin resultados nuevos ni waiver. ADR015 aplica referenciaR2 conceptual y p_authnew/pending; porcentajes del borrador no quedan aprobados. D010/011 RESEARCHING.

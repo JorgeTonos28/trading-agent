@@ -158,3 +158,10 @@ Plan/data/decision/research/profile artifacts actualizados, implementation lock/
 ## 2026-10-13 — ADR-015: R2 aprobado por owner, condiciones acotadas
 
 Q054 DECIDED referencia principal actual→protección confirmada; R1/atribución/P&L/loss-drawdown/exposure/cash/liquidity/gap independientes. No auto-add de perdedoras por menor R2; señal/config/eval/reservas necesarias. p_auth nuevas/pending y protección condicional, UNCERTAIN missing/invalid/crossed jamás0, costos/claims sin doble conteo ni exposición omitida. Escenarios RC1 preparados; D035 RESEARCHING fórmulas/tests/params, no nueva ejecución ni alpha. Registros/profile/dependencias actualizados, sin implementación/Plus/admin/spend/main. Continúa secuencia financiera sin ronda agéntica nueva.
+
+## 2026-10-13 — wave03 financiera después de aprobación R2
+
+- E1 real EdgarTools5.62.0/base44deps en workspace ignorado; fuente/captura/versiones/hashes/launcher preservados.7/7estructural, factoryIdentityNotSetError y connectaudit bloqueado sin fase; callerform/clase/rawowners límites explicitados. No dataset/PIT/isolation aceptado, ADAPT/WRAP candidato/no selección.
+- R008terms primarios retención: Starter durable REJECT, paid condicional/no excepción Power; recomendación previa de primerfreeprobe superseded con adenda. Yahoo/Stooq/otros UNKNOWN, sin concluir ausenciafree ni contratar. Fuente/data no descargada.
+- Semánticas comunes RC1 y O-B/Q055 propuestos con alternativas/gobierno. Reviewindependiente P1holdout y P2Power/callerbranch reparados, no P0nuevo. Reserva INTEGRITY_UNKNOWN/exposureledger y reevaluación owner antes de abrir si no íntegra. D011global RESEARCHING, Q055 READY sóloconceptual; metrics/sample/costs pendientes.
+- Todos los registros/dependencias/profile/source pointers actualizados; nextownerQ055, no nuevoR006/admin/Plus/backtest/histórico/spend/TradingOS. main/lock/targetdeferral/A+/G1+G2/ADR006 intactos. H7researchresidue sin cambios.

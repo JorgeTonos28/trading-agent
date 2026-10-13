@@ -126,3 +126,9 @@ Q-054 / [D-035 referencia de riesgo](research/D-035_risk_measurement_decision_RC
 ## Aprobación vigente R2 — ADR-015, 2026-10-13
 
 Owner aprueba R2 conceptual y acotado; R1/P&L/controles independientes conservados. Menor R2 no autoriza ampliar perdedoras: señal/regla Champion, nueva evaluación integral y reservas reconciliadas obligatorias. p_auth pending/new y protección condicional conservados. Missing/invalid/unconfirmed/crossed stop sin fill verificado => UNCERTAIN, nunca riesgo0. Costes/pérdidas/claims sin doble conteo ni exposición oculta; casos ganancias/pérdidas/partial/top-up/gap/rapid-move R-027 RC1. Q-054 DECIDED, **D-035 global RESEARCHING**, fórmulas/params/pruebas siguen abiertas. Sin selección Strategy/broker, implementación, gasto o target acceptance. [ADR-015](decisions/ADR-015-remaining-risk-reference-R2.md).
+
+## Endpoint financiero vigente — wave03, 2026-10-13
+
+ADR015/R2 aprobado y sincronizado; no volver a pedir Q054. Paquete autónomo posterior: E1 normalizadoroffline/pins/deps/capture, gate durable R008/free alternatives, cálculos comunes RC1 y arquitectura OOS con review/repairs completados en su scope. **Q055/O-B READY_FOR_DECISION es el próximo HUMAN_ACTION_REQUIRED**, elección material de admisión/evaluación entre candidatos; D011 completo y Strategy siguen abiertos. No pedir Plus/admin/gasto ni reabrir investigación agéntica general.
+
+Tras ownerQ055: cerrar CandidateConfigs/criterios/weights/costs antes de resultados, evaluar alternativas de histórico durable/secondarysource y externalPIT/rights, broker/protection restante, motor/paridad QP1–10 y risk formulas. El trabajo que necesita target permanece R030 antes de implementación; ningún permiso financiero surge del protocolo. H7 ocho residuos conservados.

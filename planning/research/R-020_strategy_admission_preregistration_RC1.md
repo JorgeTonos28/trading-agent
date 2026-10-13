@@ -39,3 +39,7 @@ Entregables siguientes: `CandidateRuleCard` por variante, `DatasetAdmissibilityC
 ## Avance 2026-10-07 y registro de exposición
 
 [Demanda RC1](R-020_candidate_data_workload_contract_RC1.md) enlaza candidatos/clocks/engine/órdenes/failures y waves broker/data/Smart Money; D-009 cerrado solo extracción funcional. No backtests ni resultados de MATR/variantes vistos. Al comprobar una referencia de inception de ETF, páginas públicas de emisores incluyeron retornos del fondo/benchmark: exposición incidental registrada, no usada para seleccionar/ajustar candidatos. No equivale a un backtest de estrategia ni certifica intacta ninguna muestra; el futuro preregistro debe considerar la exposición previa pertinente.
+
+## Propuesta de evaluación wave03 — 2026-10-13
+
+[O-B/Q055](D-011_OOS_policy_decision_RC0.md) READY_FOR_DECISION sólo arquitectura development/selection/confirmation/cohorts, reserva PROPOSED_RESERVE/INTEGRITY_UNKNOWN hasta exposure ledger/M11. Criterios mínimos/metrics/sample/costs siguen OPEN antes de resultados; no Strategy/config/holdout certificado. [Semánticas comunes RC1](R-020_shared_calculation_semantics_RC1.md) pendientes de paridad/config. E1 no resuelve PIT y Starter durable no satisface rights; admisión se verifica por dataset sin alterar safety/economía.

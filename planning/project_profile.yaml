@@ -315,7 +315,7 @@ paper_agentic_hardening:
   workflow_contract: planning/08_job_workflow_recovery_contract_RC0.md
   audit_versions_deployment_contract: planning/08_audit_versions_deployment_contract_RC0.md
   dossier: planning/research/R-010_014_hardening_findings_2026-10-05.md
-  next_human_decision: NONE_R2_REFERENCE_APPROVED_CONTINUE_FINANCIAL_PREPARATION
+  next_human_decision: Q055_OOS_ARCHITECTURE_CONCEPTUAL_ONLY
   security_setup_executed: false
   paired_native_SDK_CLI_probe: 0.160.0_research_shadow_2_of_2_pass
   durable_semantic_probe: SQLite_disposable_20_checks_plus_11_lease_race_checks
@@ -485,7 +485,7 @@ financial_preparation_wave02:
   risk_reference_proposal: planning/research/D-035_risk_measurement_decision_RC0.md
   independent_review: planning/research/R-020_027_independent_review_2026-10-13.md
   algebra_probe: 8_SYNTHETIC_OBSERVATIONS_NOT_RISK_ENGINE
-  next_human_decision: NONE_Q054_DECIDED_CONTINUE_STRATEGY_DATA_ENGINE_BROKER
+  next_human_decision: Q055_OOS_ARCHITECTURE_CONCEPTUAL_ONLY
   selected_strategy: null
   selected_broker: null
   selected_market_data: null
@@ -510,4 +510,27 @@ risk_reference_approval:
   final_formulas_approved: false
   numeric_thresholds_approved: false
   scenarios: planning/research/R-027_R2_scenarios_RC1.md
+  implementation_locked: true
+
+financial_preparation_wave03:
+  updated_on: 2026-10-13
+  OOS_proposal: planning/research/D-011_OOS_policy_decision_RC0.md
+  next_human_decision: Q055_O_B_EVALUATION_ARCHITECTURE
+  Q055: READY_FOR_DECISION
+  D011_global: RESEARCHING
+  Strategy_V1: OPEN
+  confirmation_period: PROPOSED_RESERVE_2023_2026_09_30
+  confirmation_integrity: UNKNOWN_PENDING_EXPOSURE_LEDGER_M11
+  calculation_semantics: PROPOSED_RC1_NOT_PARITY_ACCEPTED
+  SEC_normalizer: EDGARTOOLS_5_62_0_ADAPT_WRAP_CANDIDATE_NOT_SELECTED
+  E1_table_fixture_passes: 7
+  E1_table_fixture_total: 7
+  E1_factory: BLOCKED_OR_ERROR_IdentityNotSetError
+  E1_dataset_PIT_proven: false
+  Tiingo_Starter_durable_role: REJECT_TERMS_RETENTION
+  other_free_data_routes_sufficient: UNKNOWN_NOT_EXHAUSTED
+  no_new_strategy_results_or_confirmatory_dataset_accessed: true
+  historical_backtests_executed: false
+  independent_review: planning/research/D-011_R-021_independent_review_2026-10-13.md
+  incremental_spend: 0
   implementation_locked: true

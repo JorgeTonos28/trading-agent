@@ -28,3 +28,7 @@ Las filas anteriores son inventario inicial fechado. [Wave broker/data](R-007_00
 ## Wave02 — 2026-10-13
 
 [Evidencia/data economics](R-008_market_data_evidence_wave02_2026-10-13.md) actualiza Tiingo/Massive/Alpha Vantage con fuentes oficiales. Tiingo Starter merece primer coverage/rights probe por historia gratuita anunciada; no seleccionado. Free Massive/Alpha no resuelve ventanas2005+/warm-up por profundidad. Precios y horarios comerciales no demuestran PIT exacto. No cuentas/datasets/holdout ni gasto.
+
+## Gate durable vigente — 2026-10-13
+
+[R-008 retención RC1](R-008_data_retention_gate_RC1.md) reemplaza la prioridad histórica de Tiingo Starter: REJECT para pipeline persistente, PAPER_V1_VIABLE_FREE=NO en ese scope. Tiingo paid CONDITIONAL; no rechazo permanente ni permiso de gasto. Resto de alternativas gratuitas no certificadas ni descartadas. D-022 RESEARCHING; retención de raw, outputs y derived traces debe ser compatible con replay/auditoría, separando derechos de datos de registros broker propios.

@@ -128,3 +128,9 @@ Journal de repo y output BASE son candidatos de evidencia; no autenticidad adver
 ## Condiciones ADR-015 — 2026-10-13
 
 K-062 medida R2 conceptualmente resuelta; riesgo de usar presupuesto libre como señal de averaging-down permanece controlado por Champion config+fresh intent/eval/reservas. K-064 cash/claims/mappings aún pendiente de pruebas. Protección incierta/crossed no representa0; R027 RC1 espera fail-closed/trace y no liquida automáticamente. Aprobar método no acepta semántica operativa ni Risk Engine.
+
+## Riesgos financieros wave03 — 2026-10-13
+
+- K-066 P1: licencia gratuita o paid activa prohíbe retención que audit/replay necesitan; datos o métricas persistidos indebidamente o evidencia eliminada para encajar en precio. Gate rights/retention por artefacto/origen R008RC1; Starter durable REJECT, no borrar registros broker propios ni reducir audit silenciosamente. Owner antes de contratar.
+- K-067 P0: declarar intacta la reserva tras exposición incidental, seleccionar/tunear sobre confirmación o comparar CAGR de ventanas distintas como iguales. Q055 O-B propuesto/exposure ledger/INTEGRITY_UNKNOWN y reevaluación owner si no se acredita independencia, criterios antes de resultados.
+- K-068 P1: parser market_trades se interpreta como compra exchange o convicción; caller-supplied form/clase y rawowners tratados como end-to-end. E1 PARTIAL, clasificación determinística versionada/UNKNOWN; full factoryerror preservado, dataset/semántica/PIT gates separados.

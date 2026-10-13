@@ -30,3 +30,7 @@ Massive [pricing](https://massive.com/pricing) anuncia Benzinga news/analyst rat
 ## Alcance y siguientes pasos
 
 API examples y snippets comerciales pueden contener números/precios, no se llamaron endpoints ni se consultó backtest/holdout. Exposición previa de fichas emisores ya documentada; ningún retorno usado para ajustar estos criterios. Próxima wave: rights/coverage por ticker, muestras cross-source y clocks (en entorno/autorización apropiados), normalizador filings offline, pins/paridad engine y config completa. Costes y datos se evalúan conjuntamente con hipótesis, no elegir por plan más barato.
+
+## Adenda de vigencia — retención, 2026-10-13
+
+[Gate de retención RC1](R-008_data_retention_gate_RC1.md) **supersede la recomendación de primer probe gratuito y la celda CONDITIONAL de Starter para el rol persistente**. Tiingo Starter PAPER_V1_VIABLE_FREE=NO, REJECT durable core/audit/backtest bajo términos observados. Power/otros pagos siguen condicionales a rights/retención/economía; no contratación autorizada. Oferta/historia anunciadas anteriores se preservan como evidencia comercial, no licencia suficiente. No concluir ausencia de alternativas gratis; Yahoo/Stooq/otros con rights/calidad UNKNOWN, broker-native y proveedores pendientes siguen comparación.
