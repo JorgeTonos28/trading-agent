@@ -315,7 +315,7 @@ paper_agentic_hardening:
   workflow_contract: planning/08_job_workflow_recovery_contract_RC0.md
   audit_versions_deployment_contract: planning/08_audit_versions_deployment_contract_RC0.md
   dossier: planning/research/R-010_014_hardening_findings_2026-10-05.md
-  next_human_decision: Q054_FINANCIAL_RISK_REFERENCE_TARGET_DEFERRED_NO_PLUS_OR_CURRENT_ADMIN
+  next_human_decision: NONE_R2_REFERENCE_APPROVED_CONTINUE_FINANCIAL_PREPARATION
   security_setup_executed: false
   paired_native_SDK_CLI_probe: 0.160.0_research_shadow_2_of_2_pass
   durable_semantic_probe: SQLite_disposable_20_checks_plus_11_lease_race_checks
@@ -485,12 +485,29 @@ financial_preparation_wave02:
   risk_reference_proposal: planning/research/D-035_risk_measurement_decision_RC0.md
   independent_review: planning/research/R-020_027_independent_review_2026-10-13.md
   algebra_probe: 8_SYNTHETIC_OBSERVATIONS_NOT_RISK_ENGINE
-  next_human_decision: Q-054_D035_REMAINING_RISK_REFERENCE_ONLY
+  next_human_decision: NONE_Q054_DECIDED_CONTINUE_STRATEGY_DATA_ENGINE_BROKER
   selected_strategy: null
   selected_broker: null
   selected_market_data: null
   selected_backtesting_engine: null
-  risk_measurement_approved: false
+  risk_measurement_approved: true
   historical_backtests_executed: false
   implementation_locked: true
   incremental_spend: 0
+
+risk_reference_approval:
+  ADR: ADR-015
+  approved_on: 2026-10-13
+  approved_by: project_owner
+  primary_reference: R2_CURRENT_VALUE_TO_CONFIRMED_PROTECTION
+  scope: CONCEPTUAL_ONLY
+  D035_global: RESEARCHING
+  R1_attribution_preserved: true
+  independent_controls_preserved: true
+  automatic_loser_topup_authorized: false
+  pending_new_reference: p_auth_CONSERVATIVE_CONDITIONAL_PROTECTION
+  invalid_missing_crossed_protection: UNCERTAIN_NOT_ZERO
+  final_formulas_approved: false
+  numeric_thresholds_approved: false
+  scenarios: planning/research/R-027_R2_scenarios_RC1.md
+  implementation_locked: true

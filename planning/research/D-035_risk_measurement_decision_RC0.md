@@ -1,6 +1,6 @@
 # D-035 / Q-054 — referencia de riesgo y capacidad reservada — propuesta RC0
 
-2026-10-13 · P1 **READY_FOR_DECISION — referencia de riesgo acotada tras crítica independiente** · ADR-006 conceptual B aprobado; números D-031 abiertos. Regla financiera material a aprobar por owner; no implementación ni ampliación G1+G2. [Candidatos](R-020_candidate_rules_RC1.md) necesitan una definición común de sizing/riesgo antes de freeze, no una métrica distinta por estrategia. [Revisión independiente](R-020_027_independent_review_2026-10-13.md) verifica reparaciones y aptitud para presentar, sin cerrar D-035 completo.
+2026-10-13 · Propuesta original conservada; **Q-054/R2 referencia conceptual DECIDED por owner en ADR-015**, D-035 global RESEARCHING. Números D-031 abiertos; sin implementación ni ampliación G1+G2. [Candidatos](R-020_candidate_rules_RC1.md) necesitan definición común de sizing/riesgo antes de freeze. [Revisión independiente](R-020_027_independent_review_2026-10-13.md) permitió presentar el scope, no cierra D-035 completo. Alternativas/comparación siguientes son antecedente; condiciones vigentes al final y en ADR-015.
 
 ## 1. Decisión concreta
 
@@ -43,3 +43,7 @@ Idempotencia/reservas/estado/audit transaccionales siguen ADR-003 y D-026: model
 ## 4. Alcance de una eventual aprobación
 
 Solo referencia R2 para riesgo remanente y contrato algebraico/reservas; ninguna cifra/gap/percent/límite, broker, engine, Strategy V1, código, PAPER o LIVE aprobado. Entry analytics se conservan, loss/drawdown caps se definen aparte y se evita contarlos dos veces. D-035 no se declara DECIDED sin owner y revisión; parámetros/pruebas siguen abiertos por scope. Cambiar estrategia/risk sin esta decisión alteraría sizing, por lo que éste es el próximo gobierno material; demás investigación independiente se completa antes de presentar.
+
+## Aprobación vigente R2 — ADR-015, 2026-10-13
+
+Owner aprueba R2 conceptual y acotado; R1/P&L/controles independientes conservados. Menor R2 no autoriza ampliar perdedoras: señal/regla Champion, nueva evaluación integral y reservas reconciliadas obligatorias. p_auth pending/new y protección condicional conservados. Missing/invalid/unconfirmed/crossed stop sin fill verificado => UNCERTAIN, nunca riesgo0. Costes/pérdidas/claims sin doble conteo ni exposición oculta; casos ganancias/pérdidas/partial/top-up/gap/rapid-move R-027 RC1. Q-054 DECIDED, **D-035 global RESEARCHING**, fórmulas/params/pruebas siguen abiertas. Sin selección Strategy/broker, implementación, gasto o target acceptance. [ADR-015](../decisions/ADR-015-remaining-risk-reference-R2.md).

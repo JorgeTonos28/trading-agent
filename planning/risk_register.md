@@ -124,3 +124,7 @@ Journal de repo y output BASE son candidatos de evidencia; no autenticidad adver
 - K-063 P0/P1: partial/top-up/split cambia p0/H/q/stops y crea falsa activación/cobertura. CandidateConfig episode/lot/rebase OPEN obligatorio, mapping broker probado antes de freeze.
 - K-064 P1: descontar hold broker y reserve dos veces, o liberar claim propio durante revalidation. C_base/cash-claims exclusivos, projection/txn atomico y eventos reconciliados; NO PASS transaccional por algebra8/8.
 - K-065 P1: engine libre/CLI pago confundidos, docs2.x vs install1.x o OHLCsyntheticpath tratado como tick observado. R009 pin/ruta económica, QP1–10 y realismo/costs explícitos, no engine construido desde cero por defecto.
+
+## Condiciones ADR-015 — 2026-10-13
+
+K-062 medida R2 conceptualmente resuelta; riesgo de usar presupuesto libre como señal de averaging-down permanece controlado por Champion config+fresh intent/eval/reservas. K-064 cash/claims/mappings aún pendiente de pruebas. Protección incierta/crossed no representa0; R027 RC1 espera fail-closed/trace y no liquida automáticamente. Aprobar método no acepta semántica operativa ni Risk Engine.

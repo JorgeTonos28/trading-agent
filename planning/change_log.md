@@ -154,3 +154,7 @@ Reglas propias de variantes video/contexto de posición y configs obligatorios O
 R027/Q054 referencia R1/R2/R3 y reservas especificados; probe8/8 aritmético ficticio. Review encuentra tres P1 reparados (p_auth, ownclaim, G2 vs protección), episode/split OPEN antes de freeze y P2 nombre-salida. Source/result01 íntegros, next-source no ejecutado create-exclusive. Revisión posterior permite presentar referenciaR2, sin cerrar todoD035. Demanda workflow/storage/observabilidad parametrizada por finanzas, no expandir R006/010/013.
 
 Plan/data/decision/research/profile artifacts actualizados, implementation lock/target deferral/invariantes/main intactos; ocho H7researchfiles conservados sin cleanup. Próximo HUMAN_ACTION_REQUIRED Q054 medida financiera, no Plus/admin/gasto.
+
+## 2026-10-13 — ADR-015: R2 aprobado por owner, condiciones acotadas
+
+Q054 DECIDED referencia principal actual→protección confirmada; R1/atribución/P&L/loss-drawdown/exposure/cash/liquidity/gap independientes. No auto-add de perdedoras por menor R2; señal/config/eval/reservas necesarias. p_auth nuevas/pending y protección condicional, UNCERTAIN missing/invalid/crossed jamás0, costos/claims sin doble conteo ni exposición omitida. Escenarios RC1 preparados; D035 RESEARCHING fórmulas/tests/params, no nueva ejecución ni alpha. Registros/profile/dependencias actualizados, sin implementación/Plus/admin/spend/main. Continúa secuencia financiera sin ronda agéntica nueva.

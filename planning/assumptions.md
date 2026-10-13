@@ -102,3 +102,7 @@ La workstation INFOTEP no es host PAPER ni dispone de privilegios administrativo
 - A-047 P1 UNVERIFIED: free histórico anunciado satisface cobertura2005/warm-up/revisiones/rights de candidatos. Tiingo candidato prioritario, otros free con gaps documentados; ningún dataset admitido.
 - A-048 P1 UNVERIFIED: broker bracket/trailing soportado equivale al ratchet/partial/replacement requerido. MatrizR007 identifica gaps/races, B1–5 NOT_TESTED.
 - A-049 P1 PARTIAL: álgebra de riesgo/reservas reduce ambigüedad. A1 8/8 ficticio y review no prueban engine, broker/cash mapping, concurrenttxn o benchmarks; R2 propietario pendiente.
+
+## R2 conceptual — ADR-015
+
+Referencia principal DECIDED por owner. No asumir que toda marca/stop en datos es protección confirmada, que menor R2 genera autorización de compra, ni que el registro de escenario prueba ejecución. R1/P&L y loss/drawdown independientes, p_auth y claims tienen pruebas/mapping pendientes.

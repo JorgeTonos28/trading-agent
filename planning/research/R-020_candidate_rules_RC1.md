@@ -39,3 +39,7 @@ EOD evento/publicación, datos por sesión y protección siempre supervisada loc
 ## Fuentes y límites
 
 Video aporta módulo/narrativa; nuevas entradas/ratchet son propuestas nuestras. [SEC códigos Form4](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-69) distingue P/A/F/M/G; [13F FAQ](https://www.sec.gov/rules-regulations/staff-guidance/frequently-asked-questions-about-form-13f) trata holdings, clases y confidential treatment. [Admisión de datos RC1](R-021_external_dataset_admission_RC1.md) y [órdenes](R-007_order_protection_matrix_RC1.md) documentan limits. No conclusiones de retorno, ningún dataset histórico ni holdout consultados.
+
+## Aprobación vigente R2 — ADR-015, 2026-10-13
+
+Owner aprueba R2 conceptual y acotado; R1/P&L/controles independientes conservados. Menor R2 no autoriza ampliar perdedoras: señal/regla Champion, nueva evaluación integral y reservas reconciliadas obligatorias. p_auth pending/new y protección condicional conservados. Missing/invalid/unconfirmed/crossed stop sin fill verificado => UNCERTAIN, nunca riesgo0. Costes/pérdidas/claims sin doble conteo ni exposición oculta; casos ganancias/pérdidas/partial/top-up/gap/rapid-move R-027 RC1. Q-054 DECIDED, **D-035 global RESEARCHING**, fórmulas/params/pruebas siguen abiertas. Sin selección Strategy/broker, implementación, gasto o target acceptance. [ADR-015](../decisions/ADR-015-remaining-risk-reference-R2.md).

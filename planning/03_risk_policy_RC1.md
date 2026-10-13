@@ -68,3 +68,7 @@ La tabla autoriza G1+G2 dentro de sus condiciones; no autoriza `REDUCE_EXPOSURE`
 ## Fórmulas P1 propuestas — 2026-10-13
 
 [D-035/Q-054](research/D-035_risk_measurement_decision_RC0.md) compara R1 entry-to-stop, R2 equity actual-to-protection y R3 presupuestos duales. Recomendación R2 para riesgo remanente; puede ser menos restrictivo en perdedoras y requiere owner. Contrato especifica claims exclusivos, p_auth pending/new, revalidación own claim sin liberación y costos únicos; ocho observaciones algebraicas ficticias no prueban engine/transacciones/broker. Review crítica completada, scope referencia READY_FOR_DECISION; **no todo D-035 cerrado**, ADR-006/números/G1+G2 intactos.
+
+## Aprobación vigente R2 — ADR-015, 2026-10-13
+
+Owner aprueba R2 conceptual y acotado; R1/P&L/controles independientes conservados. Menor R2 no autoriza ampliar perdedoras: señal/regla Champion, nueva evaluación integral y reservas reconciliadas obligatorias. p_auth pending/new y protección condicional conservados. Missing/invalid/unconfirmed/crossed stop sin fill verificado => UNCERTAIN, nunca riesgo0. Costes/pérdidas/claims sin doble conteo ni exposición oculta; casos ganancias/pérdidas/partial/top-up/gap/rapid-move R-027 RC1. Q-054 DECIDED, **D-035 global RESEARCHING**, fórmulas/params/pruebas siguen abiertas. Sin selección Strategy/broker, implementación, gasto o target acceptance. [ADR-015](decisions/ADR-015-remaining-risk-reference-R2.md).

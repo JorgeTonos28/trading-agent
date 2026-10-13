@@ -115,5 +115,9 @@ D-043 DECIDED; no pregunta de acceso Plus/admin institucional pendiente. Q-052 c
 
 ## Próximo gobierno financiero — 2026-10-13
 
-- Q-054 (P1, D-035, READY_FOR_DECISION): ¿R1 capital entry-to-stop, R2 riesgo restante desde equity actual — recomendado — o R3 dual budgets? [Paquete](research/D-035_risk_measurement_decision_RC0.md) muestra casos ficticios/trade-offs y reviewer confirma reparaciones; aprobar referencia/contrato acotado, no números ni D-035 entero.
+- Q-054 (P1, D-035, DECIDED 2026-10-13 owner): ADR-015 aprueba R2 principal, R1/controles independientes conservados y condiciones de señal/top-up/p_auth/incertidumbre/no doble conteo; sin fórmulas finales/params/pruebas ni selección de estrategia/broker.
 - Strategy D-008 OPEN: config/universo/entry/exits/lote/as-of/sizing/protección/params y admisión de data deben completarse antes de freeze; no entrada inventada por LLM. No nuevas preguntas de arquitectura fundamental agéntica; target R-030 diferido.
+
+## Aprobación vigente R2 — ADR-015, 2026-10-13
+
+Owner aprueba R2 conceptual y acotado; R1/P&L/controles independientes conservados. Menor R2 no autoriza ampliar perdedoras: señal/regla Champion, nueva evaluación integral y reservas reconciliadas obligatorias. p_auth pending/new y protección condicional conservados. Missing/invalid/unconfirmed/crossed stop sin fill verificado => UNCERTAIN, nunca riesgo0. Costes/pérdidas/claims sin doble conteo ni exposición oculta; casos ganancias/pérdidas/partial/top-up/gap/rapid-move R-027 RC1. Q-054 DECIDED, **D-035 global RESEARCHING**, fórmulas/params/pruebas siguen abiertas. Sin selección Strategy/broker, implementación, gasto o target acceptance. [ADR-015](decisions/ADR-015-remaining-risk-reference-R2.md).
