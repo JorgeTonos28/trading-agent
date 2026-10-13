@@ -1,5 +1,8 @@
 # Open Questions — inventario inicial
 
+**Vigencia aprobada — 2026-10-13, ADR-014 / propietario:** `AGENTIC_ARCHITECTURE_DESIGN_COMPLETE` en el alcance capacidades/roles/fronteras/integración B-RT1. `design_status=DESIGN_DECIDED`; `TARGET_ACCEPTANCE_DEFERRED`; `PAPER_RUNTIME_ACCEPTED=false`; `implementation_locked=true`. Un Runner, control confiable externo, core/secretos fuera AI, aislamiento/contexto mínimo por job, allowlists, identidad/lifecycle por attempt y admisión/audit externos son el contrato aprobado. Keyring, HOME readonly, token, desktop, IPC carrier y launch exactos son **mecanismos candidatos sustituibles**, no invariantes irreversibles; cambios preservan fronteras/autoridad con evidencia y gobierno correspondiente. R-030 acepta eficacia en Plus/PC personal. Investigación agéntica fundamental Team completada; no expandir R-006/010/013 por refinamiento indefinido. LIVE UNKNOWN; residuos H7 conservados sin evasión de policy.
+
+
 > **Vigencia ADR-013 — 2026-10-07:** investigación = Team en workstation Windows institucional INFOTEP; target PAPER = Plus individual en PC personal del propietario; LIVE = UNKNOWN. Se conservan las notas/evidencias anteriores como historia. Team no prueba disponibilidad Plus ni seguridad del host personal. Diseño se resuelve durante Preparation; aceptación target R-030 se difiere antes de implementación/PAPER. S2B-ADM-01 = DEFERRED_TO_TARGET_PAPER_HOST; no acción administrativa institucional pendiente. `implementation_locked=true`.
 
 
@@ -106,6 +109,6 @@ D-043 DECIDED; no pregunta de acceso Plus/admin institucional pendiente. Q-052 c
 
 ## Checkpoint de diseño material — 2026-10-07
 
-- Q-053 (P1, D-024/D-027/D-037, READY_FOR_DECISION): ¿aprobar B-RT1/ADR-014 como realización candidata y scope AGENTIC_ARCHITECTURE_DESIGN_COMPLETE, con acceptance target R-030 separado? Recomendación técnica y alternativas en ADR-014; no acceso Plus/admin institucional requerido. No implica permiso/freeze/implementación ni repetir dirección S2-B.
+- Q-053 (P1, D-024/D-027/D-037, DECIDED 2026-10-13 owner): ADR-014/B-RT1 aprobado como realización candidata en scope documentado; AGENTIC_ARCHITECTURE_DESIGN_COMPLETE, target aceptación diferida. Mecanismos específicos sustituibles, no permisos operacionales ni nueva acción owner requerida por este checkpoint.
 - Q-042/Q-044/Q-045/Q-050 y sus notas anteriores conservan contexto histórico. Vigencia actual: Plus/personal es target PAPER; LIVE UNKNOWN; egress del host institucional no es gate PAPER. D-025/026/028/029 y Strategy workload siguen diseñables aquí; gates target no bloquean su investigación.
 - Auth shared-home/keyring namespace, token/desktop/launch capability, C/J typed channels y instance/fingerprint están especificados en B-RT1/R-028; **compatibilidad/eficacia** target NOT_TESTED, no preguntas de acceso ahora.

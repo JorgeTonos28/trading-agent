@@ -1,6 +1,6 @@
 {
   "schema_version": "0.3.0-planning",
-  "status": "CANDIDATE_NOT_SELECTED",
+  "status": "APPROVED_DESIGN_TARGET_ACCEPTANCE_DEFERRED",
   "source_of_truth": "repository",
   "implementation_locked": true,
   "authority": "NONE",
@@ -138,7 +138,7 @@
     "owner_official_native_login",
     "tools_required_by_selected_route"
   ],
-  "topology": "UNSELECTED_D024",
+  "topology": "B_RT1_APPROVED_CANDIDATE_DESIGN_MECHANISMS_NOT_FROZEN",
   "configuration_mutations": "ONLY_CONCRETE_ALLOWED_CHANGES_WITH_DIFF_NO_SECRETS",
   "automatic_installation": false,
   "environment_decision": "planning/decisions/ADR-013-research-and-target-paper-environments.md",
@@ -149,7 +149,7 @@
     "deployment_snapshot": "approved_versioned_release_or_tag",
     "automatic_promotion": false
   },
-  "agentic_design_decision": "planning/decisions/ADR-011-paper-team-agentic-direction-proposed.md",
+  "agentic_design_decision": "planning/decisions/ADR-014-agentic-design-checkpoint-proposed.md",
   "security_direction_proposal": "planning/decisions/ADR-012-agent-process-isolation-proposed.md",
   "operational_permissions_approved": false,
   "security_direction_decision": "planning/decisions/ADR-012-agent-process-isolation-proposed.md",
@@ -169,7 +169,7 @@
     "planning/08_S2_isolation_spec_RC1.md",
     "planning/research/R-013_S2_acceptance_matrix_RC1.md"
   ],
-  "next_governance_item": "Q053_B_RT1_DESIGN_CHECKPOINT_NO_PLUS_OR_INSTITUTIONAL_ADMIN",
+  "next_governance_item": "FINANCIAL_P0_P1_WHEN_MATERIAL_DECISION_READY",
   "isolation_variant": {
     "proposed": "S2_B",
     "selected": false,
@@ -177,7 +177,8 @@
     "core_outside_runner": true,
     "effective_per_job_contexts_required": true,
     "actual_acceptance": "NOT_TESTED",
-    "candidate_direction_approved": true
+    "candidate_direction_approved": true,
+    "design_status": "DESIGN_DECIDED"
   },
   "historical_isolation_administrative_gate": "planning/research/R-013_S2_administrative_gate_ADM01.md",
   "lab_evidence": "planning/research/R-013_S2B_lab_preparation_2026-10-06.md",
@@ -209,7 +210,9 @@
   },
   "live_environment_selected": false,
   "paper_runtime_accepted": false,
-  "agentic_realization_proposal": "B_RT1_RESTRICTED_TOKEN_TRUSTED_C_SUPERVISOR_KEYRING_NATIVE_AUTH_NO_GENERIC_AGENT_TOOLS",
-  "agentic_design_status": "READY_FOR_DECISION_ADR014_NOT_APPROVED",
-  "agentic_architecture_design_complete": false
+  "agentic_realization_proposal": "B_RT1_CONTRACT_APPROVED_CONCRETE_MECHANISMS_CANDIDATES",
+  "agentic_design_status": "DESIGN_DECIDED_OWNER_2026_10_13",
+  "agentic_architecture_design_complete": true,
+  "target_acceptance_status": "TARGET_ACCEPTANCE_DEFERRED",
+  "mechanism_freeze": false
 }

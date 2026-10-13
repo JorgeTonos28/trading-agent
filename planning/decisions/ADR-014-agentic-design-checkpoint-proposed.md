@@ -1,6 +1,11 @@
 # ADR-014 — Checkpoint de diseño agéntico PAPER
 
-**Fecha:** 2026-10-07. **Estado:** READY_FOR_DECISION / PROPOSED. **Decisiones:** D-024/D-027, contractual D-037. **Aprobador necesario:** propietario. Sin aceptación runtime/seguridad ni implementación.
+**Vigencia aprobada — 2026-10-13, ADR-014 / propietario:** `AGENTIC_ARCHITECTURE_DESIGN_COMPLETE` en el alcance capacidades/roles/fronteras/integración B-RT1. `design_status=DESIGN_DECIDED`; `TARGET_ACCEPTANCE_DEFERRED`; `PAPER_RUNTIME_ACCEPTED=false`; `implementation_locked=true`. Un Runner, control confiable externo, core/secretos fuera AI, aislamiento/contexto mínimo por job, allowlists, identidad/lifecycle por attempt y admisión/audit externos son el contrato aprobado. Keyring, HOME readonly, token, desktop, IPC carrier y launch exactos son **mecanismos candidatos sustituibles**, no invariantes irreversibles; cambios preservan fronteras/autoridad con evidencia y gobierno correspondiente. R-030 acepta eficacia en Plus/PC personal. Investigación agéntica fundamental Team completada; no expandir R-006/010/013 por refinamiento indefinido. LIVE UNKNOWN; residuos H7 conservados sin evasión de policy.
+
+
+**Propuesta original:** 2026-10-07. **Aprobación:** 2026-10-13, propietario por instrucción directa. **Estado:** DECIDED / APPROVED_CANDIDATE_DESIGN_ONLY, con precisión de mecanismos sustituibles indicada arriba. **Decisiones:** D-024/D-027/D-037 diseño. Sin aceptación runtime/seguridad ni implementación.
+
+El cuerpo de propuesta siguiente conserva alternativas/evidencia previas; sus solicitudes de aprobación quedaron satisfechas por esta decisión, y los mecanismos concretos se interpretan según la precisión del propietario, no como permisos finales.
 
 ## Contexto
 

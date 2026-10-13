@@ -297,11 +297,13 @@ Otherwise continue through the planned work package and only report completion a
 
 ## Plan completion
 
-### Current candidate design checkpoint — 2026-10-07
+### Approved candidate design checkpoint — 2026-10-13
 
-R-006 is mature for the scoped design decision in `planning/14_agentic_architecture_design_checkpoint_RC0.md`. ADR-014/B-RT1 is READY_FOR_DECISION, **not approved**. It specifies C/A/J ownership, restricted-token policy, launch/auth lifecycle, typed tool stubs/channels, storage and instance/config evidence binding. Do not treat a proposed realization as an operational permission or accepted runtime. D-025/026/028/029/034/035 remain transverse design work that can continue in Team.
+The owner approved ADR-014/B-RT1 and AGENTIC_ARCHITECTURE_DESIGN_COMPLETE only within its documented capability/role/trust-boundary/integration scope. D-024/D-027/D-037 design_status is DESIGN_DECIDED; TARGET_ACCEPTANCE_DEFERRED and implementation_locked=true remain. PAPER_RUNTIME_ACCEPTED=false. Fundamental Team agentic architecture research is complete unless material new evidence invalidates the design. Do not expand R-006/R-010/R-013 by indefinite refinement; continue financial P0/P1.
 
-The owner design checkpoint may establish AGENTIC_ARCHITECTURE_DESIGN_COMPLETE only in its declared capability/role/integration scope; PAPER_RUNTIME_ACCEPTED remains false until target evidence. R-030 is deferred to the personal Windows/Plus environment. Do not request Plus access or administrative action on INFOTEP. If acceptance requires a privileged service, broader grants, moving supervisor under Agent Runner, shared excluded content or owner login per routine job, reopen design and human governance instead of widening permissions automatically.
+One Agent Runner, trusted supervisor/control outside the AI domain, financial core/secrets outside AI, effective per-job isolation/minimal snapshots, allowlists, attempt identity/lifecycle, structured outputs and external admission/audit/versioning are the approved contract. Exact keyring, readonly HOME, restricted-token implementation, desktop, IPC carrier and launch mechanisms are replaceable candidates, not irreversible invariants. Target-compatible replacements must preserve the same trust/authority and follow applicable evidence, change records and human governance; no automatic permission expansion or weakening. R-030 remains deferred to personal Windows/Plus; do not request Plus access or administration on INFOTEP. New privileged services, broader grants, moving supervisor into AI, shared excluded content or routine per-job owner login require reopening material governance.
+
+D-025/026/028/029/034/035 remain financial-demand-dependent transverse design work. Preserve eight synthetic H7 files as documented research residue; do not expand privileges or evade deletion policy to remove them.
 
 The Preparation Program ends only when the project's formal Definition of Ready is satisfied.
 

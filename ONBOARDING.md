@@ -1,5 +1,8 @@
 # Onboarding — Trading OS, ruta vigente ADR-013
 
+**Vigencia aprobada — 2026-10-13, ADR-014 / propietario:** `AGENTIC_ARCHITECTURE_DESIGN_COMPLETE` en el alcance capacidades/roles/fronteras/integración B-RT1. `design_status=DESIGN_DECIDED`; `TARGET_ACCEPTANCE_DEFERRED`; `PAPER_RUNTIME_ACCEPTED=false`; `implementation_locked=true`. Un Runner, control confiable externo, core/secretos fuera AI, aislamiento/contexto mínimo por job, allowlists, identidad/lifecycle por attempt y admisión/audit externos son el contrato aprobado. Keyring, HOME readonly, token, desktop, IPC carrier y launch exactos son **mecanismos candidatos sustituibles**, no invariantes irreversibles; cambios preservan fronteras/autoridad con evidencia y gobierno correspondiente. R-030 acepta eficacia en Plus/PC personal. Investigación agéntica fundamental Team completada; no expandir R-006/010/013 por refinamiento indefinido. LIVE UNKNOWN; residuos H7 conservados sin evasión de policy.
+
+
 Estado: Preparation & Plan Hardening; `implementation_locked=true`. Research = ChatGPT Team + Windows institucional INFOTEP. Target PAPER = Plus individual + PC personal Windows del propietario. LIVE UNKNOWN. No configurar el entorno operacional ni solicitar Plus/admin institucional ahora.
 
 ## Clone y entrada

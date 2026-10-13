@@ -142,3 +142,7 @@ Dossier, mapa conservar/modificar/separar/descartar y rule cards cubren las piez
 - R-025 SEC/Quiver/UW/Capitol y probe GET único de schema público sin auth/data/spend; campos temporales no prueban PIT ni licencia. Pricing/rights UNKNOWN conservados donde corresponde; fuentes Smart Money independientes.
 - Actualizados scorecards, preguntas, registros y foco financiero. Corregido broker D-009→D-021 en preregistro; slug IWM anterior `ishares-msci-united-kingdom-etf`→`ishares-russell-2000-etf`, sin certificar datasets/holdout. D-039 superseded retirado de IDs abiertos; dimensión legacy D027/024 alineada con checkpoint READY_FOR_DECISION de diseño.
 - Paquete autónomo cerrado en alcance wave01, Q-053/ADR-014 requiere owner por diseño material. No acceso Plus/admin INFOTEP, permiso Trading OS, gasto, merge main ni release. Próximo trabajo principal P0/P1 financiero tras checkpoint.
+
+## 2026-10-13 — owner aprueba ADR-014/B-RT1 y cierre de diseño fundamental
+
+Q-053 DECIDED; AGENTIC_ARCHITECTURE_DESIGN_COMPLETE únicamente en alcance aprobado. D-024/027/037 diseño DECIDED con target aceptación P1 R-030 diferida, operacional no aceptado; lock true. Keyring/HOME/token/desktop/IPC/launch siguen mecanismos candidatos sustituibles mediante evidencia/gobierno que preserve contrato, no invariantes irreversibles. R-006/010/013 no se expanden por refinamiento; foco financiero P0/P1. Historia/evidencia/source policy intactas, sin main/implementación/admin/Plus/gasto. Residuos H7 conservados; no cleanup ni workaround nuevos.

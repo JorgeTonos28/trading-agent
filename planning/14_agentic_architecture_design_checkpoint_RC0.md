@@ -1,6 +1,9 @@
 # Checkpoint — arquitectura agéntica de diseño PAPER
 
-2026-10-07 · **READY_FOR_DECISION**, no aprobado · D-024/D-027/D-037 · ADR-013 vigente.
+**Vigencia aprobada — 2026-10-13, ADR-014 / propietario:** `AGENTIC_ARCHITECTURE_DESIGN_COMPLETE` en el alcance capacidades/roles/fronteras/integración B-RT1. `design_status=DESIGN_DECIDED`; `TARGET_ACCEPTANCE_DEFERRED`; `PAPER_RUNTIME_ACCEPTED=false`; `implementation_locked=true`. Un Runner, control confiable externo, core/secretos fuera AI, aislamiento/contexto mínimo por job, allowlists, identidad/lifecycle por attempt y admisión/audit externos son el contrato aprobado. Keyring, HOME readonly, token, desktop, IPC carrier y launch exactos son **mecanismos candidatos sustituibles**, no invariantes irreversibles; cambios preservan fronteras/autoridad con evidencia y gobierno correspondiente. R-030 acepta eficacia en Plus/PC personal. Investigación agéntica fundamental Team completada; no expandir R-006/010/013 por refinamiento indefinido. LIVE UNKNOWN; residuos H7 conservados sin evasión de policy.
+
+
+Propuesta 2026-10-07 · **DECIDED — aprobado por propietario 2026-10-13 en scope de diseño** · D-024/D-027/D-037 · ADR-013 vigente. La evaluación original siguiente se conserva; su endpoint Q-053 está satisfecho. Los mecanismos técnicos quedan candidatos según la precisión del propietario.
 
 ## Dictamen y alcance exacto
 
@@ -10,7 +13,7 @@ Recomiendo aprobar [B-RT1](08_agentic_runtime_realization_RC1.md) como **realiza
 
 Si el propietario aprueba esta realización, puede declararse **AGENTIC_ARCHITECTURE_DESIGN_COMPLETE en este scope**: contratos de capacidades/roles y fronteras de integración/autoridad, launcher/auth/state/failure/recovery requeridos y ruta de aceptación reproducible. No equivale a cerrar todos los P1 del sistema, elegir versiones operacionales finales, congelar Plan/permiso efectivo ni implementar.
 
-Actualmente: `AGENTIC_ARCHITECTURE_DESIGN_COMPLETE = PENDING_OWNER_DESIGN_CHECKPOINT`; `PAPER_RUNTIME_ACCEPTED = false`; `implementation_locked = true`. Mantener estados principales D-024/D-027/D-037 abiertos hasta sus cierres completos, con dimensiones separadas. No convertir un readiness de investigación en aceptación target.
+Estado desde aprobación 2026-10-13: `AGENTIC_ARCHITECTURE_DESIGN_COMPLETE = true` **solo scope documentado**; `PAPER_RUNTIME_ACCEPTED = false`; `implementation_locked = true`. D-024/D-027/D-037 DECIDED en diseño, `target_acceptance_status=TARGET_ACCEPTANCE_DEFERRED` R-030 P1 antes de implementación y operación NOT_TESTED/NOT_IMPLEMENTED. No convertir cierre de diseño en aceptación target.
 
 ## Qué se resolvió en Team
 

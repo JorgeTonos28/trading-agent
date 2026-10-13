@@ -1,5 +1,5 @@
 schema_version: 1
-updated_on: 2026-10-07
+updated_on: 2026-10-13
 project:
   name: Trading OS
   purpose: auditable_agentic_quantitative_trading_platform
@@ -132,7 +132,7 @@ system_design:
   risk_architecture_decision_package: planning/research/D-012_risk_budget_architecture_decision_RC0.md
 open_decision_ids:
   P0: [D-008, D-010, D-011]
-  P1: [D-021, D-022, D-023, D-024, D-025, D-026, D-027, D-028, D-029, D-033, D-034, D-035, D-037]
+  P1: [D-021, D-022, D-023, D-025, D-026, D-028, D-029, D-033, D-034, D-035]
   P2: [D-030, D-031, D-032]
   P3: [D-040, D-041, D-042]
   P4: [D-050, D-051]
@@ -151,7 +151,7 @@ required_specialties:
   - pedagogy_and_explainability
 capability_discovery:
   required: true
-  current_focus: FINANCIAL_P0_P1_STRATEGY_DATA_BROKER_RISK_WITH_AGENTIC_DESIGN_CHECKPOINT_Q053
+  current_focus: FINANCIAL_P0_P1_STRATEGY_RULES_DATA_PIT_BROKER_BACKTEST_RISK
   agentic_provider_scope: [OpenAI, Anthropic]
   other_agentic_frameworks_in_scope: false
   RESEARCH_AI_ENVIRONMENT: ChatGPT_Team
@@ -204,7 +204,7 @@ capability_discovery:
   no_general_Skill_superiority_demonstrated: true
   autonomous_RC0_steps_1_and_2: COMPLETE_SPECIFICATION_AND_FOCUSED_SYNTHETIC_PROBES
   candidate_cohort_owner_approval: APPROVED_FOR_ACCEPTANCE_NOT_FINAL_SELECTION
-  next_package_action: OWNER_DESIGN_CHECKPOINT_Q053_THEN_CONTINUE_FINANCIAL_PREPARATION_NO_PLUS_OR_CURRENT_ADMIN
+  next_package_action: FINANCIAL_CANDIDATE_RULES_AND_PROVIDER_ADMISSION_NO_PLUS_OR_CURRENT_ADMIN
   independent_coverage_gaps: independent_agent_review_documented_empirical_security_and_integrated_financial_pedagogy_not_closed
   proposed_architecture_direction: deterministic_local_always_on_core_plus_automatic_event_schedule_Codex_native_jobs_target_Plus_ACCEPTANCE_DEFERRED
   representative_workload: WL_R_40_base_plus_10_interactive_logical_jobs_up_to_13_reserve_service_requests_NOT_STRATEGY_CADENCE
@@ -333,8 +333,8 @@ paper_isolation_direction:
   security_isolation: NOT_VERIFIED
   shadow_experimental_blinding: NOT_VERIFIED
   administrative_setup_authorized: false
-  D027: READY_FOR_DECISION_DESIGN_ONLY_TARGET_DEFERRED
-  D024: READY_FOR_DECISION_DESIGN_ONLY_TARGET_DEFERRED
+  D027: DESIGN_DECIDED_TARGET_ACCEPTANCE_DEFERRED
+  D024: DESIGN_DECIDED_TARGET_ACCEPTANCE_DEFERRED
 
 s2_research_package:
   specification: planning/08_S2_agent_domain_contract_RC2.md
@@ -428,25 +428,25 @@ s2b_lab_execution:
   secret_handling: OWNER_WINDOWS_UI_ONLY
 
 design_acceptance_dimensions:
-  D024: {design_status: READY_FOR_DECISION, target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED, operational_status: NOT_IMPLEMENTED}
-  D027: {design_status: READY_FOR_DECISION, target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED, operational_status: NOT_TESTED}
-  D037: {design_status: READY_FOR_DECISION, target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED, operational_status: NOT_IMPLEMENTED}
+  D024: {design_status: DESIGN_DECIDED, target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED, operational_status: NOT_IMPLEMENTED}
+  D027: {design_status: DESIGN_DECIDED, target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED, operational_status: NOT_TESTED}
+  D037: {design_status: DESIGN_DECIDED, target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED, operational_status: NOT_IMPLEMENTED}
   S2B_ADM01: {execution_status: DEFERRED_TO_TARGET_PAPER_HOST, current_host_execution_allowed: false}
-  agentic_architecture_design_complete: false
+  agentic_architecture_design_complete: true
   paper_runtime_accepted: false
 
 agentic_design_checkpoint:
   artifact: planning/14_agentic_architecture_design_checkpoint_RC0.md
   proposal: ADR-014_B_RT1
-  status: READY_FOR_DECISION_NOT_APPROVED
+  status: APPROVED_CANDIDATE_DESIGN_OWNER_2026_10_13
   question: Q-053
-  R006_maturity: MATURE_FOR_DESIGN_DECISION
+  R006_maturity: FUNDAMENTAL_DESIGN_RESEARCH_COMPLETE
   independent_review: planning/research/R-006_design_independent_review_2026-10-07.md
   binding_probe: 16_SYNTHETIC_CASES_NOT_ENVIRONMENT_ACCEPTANCE
   Temporal_worker_probe: AT_LEAST_ONCE_ATTEMPTS_1_2_CLEANUP_PARTIAL_ENV_HELPER_CAVEAT
   APS_calendar_probe: 6_SYNTHETIC_CRITERIA_NOT_WORKFLOW_RECOVERY
   unresolved_transverse_design: [D-025, D-026, D-028, D-029, D-034, D-035]
-  owner_action: DESIGN_CHECKPOINT_ONLY_NO_PLUS_OR_INSTITUTIONAL_ADMIN
+  owner_action: NONE_THIS_CHECKPOINT_APPROVED_CONTINUE_FINANCIAL_P0_P1
 
 financial_preparation_wave:
   updated_on: 2026-10-07
@@ -464,3 +464,12 @@ financial_preparation_wave:
   incidental_public_ETF_issuer_returns_seen: true
   dataset_or_holdout_opened: false
   incremental_spend: 0
+
+pending_target_acceptance_P1:
+  gate: R-030
+  design_decisions: [D-024, D-027, D-037]
+  status: TARGET_ACCEPTANCE_DEFERRED
+  required_before_implementation: true
+  scope: personal_Windows_Plus_auth_isolation_bootstrap_smoke_recovery_capacity
+  mechanism_freeze: false
+  owner_approval: ADR-014_2026-10-13_candidate_design_only

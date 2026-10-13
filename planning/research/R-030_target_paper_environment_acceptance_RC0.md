@@ -1,5 +1,8 @@
 # R-030 — Target PAPER Environment Transition & Acceptance — RC0
 
+**Vigencia aprobada — 2026-10-13, ADR-014 / propietario:** `AGENTIC_ARCHITECTURE_DESIGN_COMPLETE` en el alcance capacidades/roles/fronteras/integración B-RT1. `design_status=DESIGN_DECIDED`; `TARGET_ACCEPTANCE_DEFERRED`; `PAPER_RUNTIME_ACCEPTED=false`; `implementation_locked=true`. Un Runner, control confiable externo, core/secretos fuera AI, aislamiento/contexto mínimo por job, allowlists, identidad/lifecycle por attempt y admisión/audit externos son el contrato aprobado. Keyring, HOME readonly, token, desktop, IPC carrier y launch exactos son **mecanismos candidatos sustituibles**, no invariantes irreversibles; cambios preservan fronteras/autoridad con evidencia y gobierno correspondiente. R-030 acepta eficacia en Plus/PC personal. Investigación agéntica fundamental Team completada; no expandir R-006/010/013 por refinamiento indefinido. LIVE UNKNOWN; residuos H7 conservados sin evasión de policy.
+
+
 2026-10-07 · **P1 · TARGET_ACCEPTANCE_DEFERRED** · ADR-013/D-043; D-024/D-027/D-037. No ejecución ahora ni solicitud de acceso Plus/admin institucional.
 
 ## Matriz por fase
@@ -32,6 +35,6 @@ Esta ficha especifica pruebas futuras; no registra ejecuciones que no ocurrieron
 
 ## Deltas candidatos B-RT1 / instancia
 
-Sujeto a gobierno de [B-RT1](../08_agentic_runtime_realization_RC1.md), TE-4 incluye TokenPolicy B-RT1-T1/desktop, supervisor C protegido, AcquireRunnerLaunchCapability y derechos reales, stubs J/READ_TOOL/SUBMIT_RESULT y canal mapping externo. TE-1/4 prueban native keyring/refresh, home readonly/redirects, **BL-AUTH WinCred arbitrary canary→relaunch** y peer/process-memory; auth común no demuestra blinding. Si exige mover supervisor a A, nuevo servicio privilegiado, grants amplios, contenido compartido excluido o login por job, volver a diseño/owner, no continuar como simple configuración.
+Contrato [B-RT1](../08_agentic_runtime_realization_RC1.md) aprobado 2026-10-13; TE-4 verifica supervisor C protegido, aislamiento/identidad/lifecycle efectivos, tools mínimos y admisión externa. TokenPolicy B-RT1-T1, desktop, AcquireRunnerLaunchCapability y carrier IPC son mecanismos candidatos, no requisito irreversible de una API concreta. TE-1/4 prueban auth/refresh y persistencia permitida; keyring/HOME readonly/redirects y **BL-AUTH WinCred canary→relaunch** aplican si se conserva ese mecanismo. Un reemplazo debe cubrir amenazas equivalentes y registrar evidencia/gobierno antes de aceptación, nunca eliminar un test por conveniencia. Si exige mover supervisor a A, nuevo servicio privilegiado, grants amplios, contenido compartido excluido o login por job, volver a owner por cambio material, no ampliar permisos automáticamente.
 
 TE-2/7 exige [instance/fingerprint](R-028_instance_binding_RC1.md) por resultado y scope fijado externamente. B1 sintético comprueba lógica de bindings, no la autenticidad del registro ni target PASS. No usuarios, login, privilegios, desktops/policies/config nuevos realizados por esta adenda.

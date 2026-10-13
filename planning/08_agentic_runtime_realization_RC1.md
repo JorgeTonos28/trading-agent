@@ -1,5 +1,8 @@
 # Realización agéntica PAPER candidata — RC1 / B-RT1
 
+**Vigencia aprobada — 2026-10-13, ADR-014 / propietario:** `AGENTIC_ARCHITECTURE_DESIGN_COMPLETE` en el alcance capacidades/roles/fronteras/integración B-RT1. `design_status=DESIGN_DECIDED`; `TARGET_ACCEPTANCE_DEFERRED`; `PAPER_RUNTIME_ACCEPTED=false`; `implementation_locked=true`. Un Runner, control confiable externo, core/secretos fuera AI, aislamiento/contexto mínimo por job, allowlists, identidad/lifecycle por attempt y admisión/audit externos son el contrato aprobado. Keyring, HOME readonly, token, desktop, IPC carrier y launch exactos son **mecanismos candidatos sustituibles**, no invariantes irreversibles; cambios preservan fronteras/autoridad con evidencia y gobierno correspondiente. R-030 acepta eficacia en Plus/PC personal. Investigación agéntica fundamental Team completada; no expandir R-006/010/013 por refinamiento indefinido. LIVE UNKNOWN; residuos H7 conservados sin evasión de policy.
+
+
 2026-10-07 · R-006/R-010/R-013 · D-024/D-027 **READY_FOR_DECISION de este diseño propuesto**, no permiso final, selección operacional ni prueba S2-B. ADR-011 A/ADR-012 S2-B/ADR-013 delimitan la propuesta. Cambios administrativos solo en target con gates futuros.
 
 ## 1. Procesos y ownership concretos
