@@ -315,7 +315,7 @@ paper_agentic_hardening:
   workflow_contract: planning/08_job_workflow_recovery_contract_RC0.md
   audit_versions_deployment_contract: planning/08_audit_versions_deployment_contract_RC0.md
   dossier: planning/research/R-010_014_hardening_findings_2026-10-05.md
-  next_human_decision: NO_PLUS_OR_INSTITUTIONAL_ADMIN_ACTION_NOW_DESIGN_CHECKPOINT_FIRST
+  next_human_decision: Q054_FINANCIAL_RISK_REFERENCE_TARGET_DEFERRED_NO_PLUS_OR_CURRENT_ADMIN
   security_setup_executed: false
   paired_native_SDK_CLI_probe: 0.160.0_research_shadow_2_of_2_pass
   durable_semantic_probe: SQLite_disposable_20_checks_plus_11_lease_race_checks
@@ -473,3 +473,24 @@ pending_target_acceptance_P1:
   scope: personal_Windows_Plus_auth_isolation_bootstrap_smoke_recovery_capacity
   mechanism_freeze: false
   owner_approval: ADR-014_2026-10-13_candidate_design_only
+
+financial_preparation_wave02:
+  updated_on: 2026-10-13
+  candidate_rules: planning/research/R-020_candidate_rules_RC1.md
+  external_admission: planning/research/R-021_external_dataset_admission_RC1.md
+  order_protection: planning/research/R-007_order_protection_matrix_RC1.md
+  market_data: planning/research/R-008_market_data_evidence_wave02_2026-10-13.md
+  engines: planning/research/R-009_backtesting_reuse_RC0.md
+  financial_workload: planning/research/R-011_012_014_financial_demand_RC1.md
+  risk_reference_proposal: planning/research/D-035_risk_measurement_decision_RC0.md
+  independent_review: planning/research/R-020_027_independent_review_2026-10-13.md
+  algebra_probe: 8_SYNTHETIC_OBSERVATIONS_NOT_RISK_ENGINE
+  next_human_decision: Q-054_D035_REMAINING_RISK_REFERENCE_ONLY
+  selected_strategy: null
+  selected_broker: null
+  selected_market_data: null
+  selected_backtesting_engine: null
+  risk_measurement_approved: false
+  historical_backtests_executed: false
+  implementation_locked: true
+  incremental_spend: 0

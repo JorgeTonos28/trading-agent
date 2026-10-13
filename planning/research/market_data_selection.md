@@ -24,3 +24,7 @@ Todo candidato adicional completa estos campos y dimensiones funcionales antes d
 Las filas anteriores son inventario inicial fechado. [Wave broker/data](R-007_008_provider_evidence_wave01_2026-10-07.md) conserva precios documentados y gaps: IEX realtime, SIP histórico retrasado y fill paper NBBO tienen semánticas distintas; pin explícito feed/cobertura/clock, sin transferir paridad. Historia anunciada desde2016 deja sin resolver propuesta MATR 2005–2015 y warm-up. No se cambia protocolo por conveniencia comercial.
 
 [Demanda por candidato RC1](R-020_candidate_data_workload_contract_RC1.md) requiere corporate actions/as-of, raw y contabilidad de dividendos, universo histórico, granularidad de stops/gaps, derechos y validador secundario. No se descargó dataset de precios ni abrió una muestra reservada; calidad real y datasets admitidos UNKNOWN. Reuse de APIs/datasets antes de BUILD, sin selección, gasto o login target.
+
+## Wave02 — 2026-10-13
+
+[Evidencia/data economics](R-008_market_data_evidence_wave02_2026-10-13.md) actualiza Tiingo/Massive/Alpha Vantage con fuentes oficiales. Tiingo Starter merece primer coverage/rights probe por historia gratuita anunciada; no seleccionado. Free Massive/Alpha no resuelve ventanas2005+/warm-up por profundidad. Precios y horarios comerciales no demuestran PIT exacto. No cuentas/datasets/holdout ni gasto.

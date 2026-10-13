@@ -77,3 +77,7 @@ La necesidad de pagar puede justificarse por fiabilidad o datos aun sin demostra
 [Wave 01](R-025_provider_evidence_wave01_2026-10-07.md) actualiza precios/rutas/restricciones y seis campos económicos para Quiver/UW/Capitol/SEC. Las tablas anteriores son inventario inicial, no precios vigentes. Probe único de schema público Quiver sin auth observa campos temporales, **no** acceso a dataset, PIT ni licencia de uso. Documentación pública no habilita automáticamente MCP/API/servicios.
 
 Quiver/UW son REFERENCE_ONLY actualmente y WRAP futuros condicionados; SEC WRAP/ADAPT candidato sujeto a normalizador reusable, no BUILD por defecto. Capitol conserva integración/licencia UNKNOWN tras error de acceso documental, sin rechazo. Ningún proveedor ni familia seleccionado. Congreso, Form4,13F/hedge funds, options/blocks, revisions y flows siguen separados; faltan evidencia de clocks históricos, derechos y utilidad por familia.
+
+## Normalización y admisión — 2026-10-13
+
+[R-021 RC1](R-021_external_dataset_admission_RC1.md): Form4 códigoP no prueba por sí mismo exchange transaction; 13F holdings no whole portfolio/trade timing. EdgarTools MIT es ADAPT/WRAP candidato **de datos**, no selector de MCP/Skill/runtime. Probe XML sintético aún preparado/no ejecutado; no parser construido ni datos admitidos. [Wave data02](R-008_market_data_evidence_wave02_2026-10-13.md) añade reserva especializada analyst/news/imbalance paga, sin gasto, entitlement o PIT demostrados.

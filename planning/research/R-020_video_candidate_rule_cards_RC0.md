@@ -46,3 +46,7 @@ Form4/13F son candidatos de **fuente**, no estrategias aprobadas ni señal posit
 ## VID-ALERT / VID-WHEEL / MATR
 
 VID-ALERT: metodología de ingesta/parsing/reference útil; historia autorizada, receipt timestamps y reglas completas UNKNOWN, no entrar a backtest con supuestos. VID-WHEEL: DEFERRED fuera del alcance derivado PAPER V1. MATR: [ficha existente](../02_MATR_V1_spec.md) sigue benchmark/candidato con M-01–11; no desplaza primera investigación del video ni se selecciona por sencillez. Ningún scorecard de rendimiento abierto.
+
+## Seguimiento RC1 — 2026-10-13
+
+[Reglas propuestas propias](R-020_candidate_rules_RC1.md) completan alternativas de entrada/eventos/módulo, sin atribuirlas al video ni sustituir configuración OPEN por defaults. Episodios/lotes/top-ups/splits deben fijarse antes de freeze. G2 sólo entradas verificadas; protección/replace sigue autorización específica de Risk y regla probada, no G3.

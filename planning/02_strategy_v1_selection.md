@@ -42,3 +42,9 @@ El futuro paquete al propietario mostrará cada candidato, evidencia primaria, r
 ## Avance R-020 posterior ADR-011 — 2026-10-05
 
 [Preregistro RC1](research/R-020_strategy_admission_preregistration_RC1.md), [CandidateRuleCards video](research/R-020_video_candidate_rule_cards_RC0.md) y [DatasetCard SEC](research/R-020_SEC_dataset_admissibility_RC0.md) avanzan admisión antes de rendimiento. VID-TS no define entrada; trailing porcentual/absoluto y ladder/stop tienen conflictos explicitados. SEC público no implica clock de primera disponibilidad histórico; acceptance no sustituye publication/receipt. MATR sigue candidato/benchmark. **Strategy V1 Selection=OPEN**, ningún backtest, riesgo numérico, broker/datos o estrategia aprobados.
+
+## Avance financiero — 2026-10-13
+
+[Alternativas de reglas RC1](research/R-020_candidate_rules_RC1.md) separan VID-CONG-EOD/F4-EOD/13F-REBAL y VID-PRICE-ENTRY propio, módulo de posición y MATR benchmark. Campos config/corporateactions/episodio/partial/top-up obligatorios todavía OPEN. [Datos externos](research/R-021_external_dataset_admission_RC1.md) y [market data wave02](research/R-008_market_data_evidence_wave02_2026-10-13.md) prueban disponibilidad documental, no datasets PIT/rights admitidos. [Engine shortlist](research/R-009_backtesting_reuse_RC0.md) y [broker/protection](research/R-007_order_protection_matrix_RC1.md) diferencian rutas y pruebas target.
+
+Strategy V1 sigue OPEN; no selección/retorno/holdout. El siguiente gobierno material Q-054 resuelve referencia de medición de riesgo común a sizing, no estrategia ganadora. No política numérica, broker o engine aprobados.

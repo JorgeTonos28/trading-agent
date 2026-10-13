@@ -75,3 +75,7 @@ Antes del gate de carga nativa: incluir serialización/revocación de vistas cua
 ## Contexto de launch/recovery S2 revisado — 2026-10-06
 
 [RC2](08_S2_agent_domain_contract_RC2.md) permite proponer un Runner común con permisos efectivos por job; no asumir usuario/sesión por rol. Trusted scheduler/export/admission permanecen fuera de procesos model/tools; supervisor protegido sin token/handles heredables por job. Manifest versiona base principal, contexto restringido, policy, role/job/attempt/epoch, export/hash y herramientas; mismo SID o role JSON no autentica intento. Retry crea contexto nuevo, no duplica efectos; drift/audit/auth failure bloquea launch, sin HOLD, elevación o S1 fallback. RB/VP y TP6 bajo permisos finales pendientes. ADM-01 withheld, dirección B y futuro setup no aprobados.
+
+## Vigencia financiera tras ADR-014 — 2026-10-13
+
+Owner cierra diseño agéntico B-RT1 en scope, mecanismos candidatos; target R-030 diferido. [Demanda financiera RC1](research/R-011_012_014_financial_demand_RC1.md) gobierna trabajo transversal D-025/026/028/029 pendiente. No más refinamiento fundamental R-006/010/013; workload/engine/storage financieros no reabren agentes salvo nueva evidencia material.

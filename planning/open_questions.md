@@ -112,3 +112,8 @@ D-043 DECIDED; no pregunta de acceso Plus/admin institucional pendiente. Q-052 c
 - Q-053 (P1, D-024/D-027/D-037, DECIDED 2026-10-13 owner): ADR-014/B-RT1 aprobado como realización candidata en scope documentado; AGENTIC_ARCHITECTURE_DESIGN_COMPLETE, target aceptación diferida. Mecanismos específicos sustituibles, no permisos operacionales ni nueva acción owner requerida por este checkpoint.
 - Q-042/Q-044/Q-045/Q-050 y sus notas anteriores conservan contexto histórico. Vigencia actual: Plus/personal es target PAPER; LIVE UNKNOWN; egress del host institucional no es gate PAPER. D-025/026/028/029 y Strategy workload siguen diseñables aquí; gates target no bloquean su investigación.
 - Auth shared-home/keyring namespace, token/desktop/launch capability, C/J typed channels y instance/fingerprint están especificados en B-RT1/R-028; **compatibilidad/eficacia** target NOT_TESTED, no preguntas de acceso ahora.
+
+## Próximo gobierno financiero — 2026-10-13
+
+- Q-054 (P1, D-035, READY_FOR_DECISION): ¿R1 capital entry-to-stop, R2 riesgo restante desde equity actual — recomendado — o R3 dual budgets? [Paquete](research/D-035_risk_measurement_decision_RC0.md) muestra casos ficticios/trade-offs y reviewer confirma reparaciones; aprobar referencia/contrato acotado, no números ni D-035 entero.
+- Strategy D-008 OPEN: config/universo/entry/exits/lote/as-of/sizing/protección/params y admisión de data deben completarse antes de freeze; no entrada inventada por LLM. No nuevas preguntas de arquitectura fundamental agéntica; target R-030 diferido.

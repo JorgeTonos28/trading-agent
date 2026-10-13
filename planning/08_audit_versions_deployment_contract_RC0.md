@@ -59,3 +59,7 @@ Bootstrap/deploy liga SIDs de instancia nueva, config/policy y versión exacta s
 ## Stores y versiones con Agent Runner — 2026-10-06
 
 [RC2](08_S2_agent_domain_contract_RC2.md): namespace por job y contexto efectivo, no cuenta obligatoria por rol. Raw/sealed/comparisons/registry/audit y code/config protegidos por control externo; job no tiene credenciales SQL/store ni write a receipts/grants. Supervisor/context token/policy binding se versionan además del rol; receipt tras copy/seal precede join Champion/Shadow. Auth persistente se separa de history/prompt/peer output; survivors explícitos. Probe AccessCheck no genera audit OS ni verifica permisos reales. Release/tag aprobado, main estable y manifest/source policy intactos; ADM-01 withheld, nuevo gate posterior a variante.
+
+## Scope aprobado y demanda pendiente — 2026-10-13
+
+ADR-014 owner: AGENTIC_ARCHITECTURE_DESIGN_COMPLETE acotado, target R-030 diferido; keyring/HOME/token/desktop/IPC/launch reemplazables por mecanismos que preserven contrato con evidencia/gobierno. [Demanda financiera](research/R-011_012_014_financial_demand_RC1.md) define unidades/events/retención/runbooks a investigar antes de engine/store/SLO. No autoselección ni aceptación operacional.

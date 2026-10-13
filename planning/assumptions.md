@@ -96,3 +96,9 @@ La workstation INFOTEP no es host PAPER ni dispone de privilegios administrativo
 
 - A-045 P1 UNVERIFIED: los feeds/broker paper gratuitos satisfacen clocks, cobertura2005/warm-up, corporate actions, licencia y granularidad de los candidatos. Wave01 verifica ofertas/limitaciones, no datasets o fills reales; no sustituir feed de señal por NBBO simulado ni cambiar períodos sin decisión.
 - A-046 P1 UNVERIFIED: date/fileDate/uploaded de agregador permite reconstruir availability exacta. Probe público Quiver solo prueba declaración de campos, no valores/historia/revisiones/delivery. Contrastar canal primario-vendor y documentar supuestos conservadores, nunca PIT exacto ficticio.
+
+## Wave financiera02 — 2026-10-13
+
+- A-047 P1 UNVERIFIED: free histórico anunciado satisface cobertura2005/warm-up/revisiones/rights de candidatos. Tiingo candidato prioritario, otros free con gaps documentados; ningún dataset admitido.
+- A-048 P1 UNVERIFIED: broker bracket/trailing soportado equivale al ratchet/partial/replacement requerido. MatrizR007 identifica gaps/races, B1–5 NOT_TESTED.
+- A-049 P1 PARTIAL: álgebra de riesgo/reservas reduce ambigüedad. A1 8/8 ficticio y review no prueban engine, broker/cash mapping, concurrenttxn o benchmarks; R2 propietario pendiente.

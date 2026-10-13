@@ -169,7 +169,7 @@
     "planning/08_S2_isolation_spec_RC1.md",
     "planning/research/R-013_S2_acceptance_matrix_RC1.md"
   ],
-  "next_governance_item": "FINANCIAL_P0_P1_WHEN_MATERIAL_DECISION_READY",
+  "next_governance_item": "Q054_FINANCIAL_RISK_REFERENCE_NOT_AGENTIC_REOPENING",
   "isolation_variant": {
     "proposed": "S2_B",
     "selected": false,

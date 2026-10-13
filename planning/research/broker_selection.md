@@ -50,3 +50,7 @@ Estas filas conservan el inventario inicial 2026-10-02, no un precio vigente. Ca
 [Wave 01](R-007_008_provider_evidence_wave01_2026-10-07.md) actualiza los seis campos para Alpaca paper/data, IBKR y Tradier con fuentes oficiales. PAPER gratuito publicado no demuestra elegibilidad LIVE RD, permisos de cuenta ni paridad económica de fills. IBKR incluye RD en lista general, sin aprobación KYC; Tradier requiere distinguir streaming de mercado y eventos de cuenta. Todos SELECTED=NO; API adapters WRAP candidatos, nunca tools financieros de LLM.
 
 Fichas tastytrade/TradeStation/otros y matriz concreta protection/order lifecycle/recovery siguen pendientes. Pruebas account/host-specific se ejecutarán solo en target autorizado; la comparación documental continúa Team/INFOTEP, sin cuenta, credenciales ni órdenes.
+
+## Matriz de órdenes/protección — 2026-10-13
+
+[RC1 cinco brokers](R-007_order_protection_matrix_RC1.md) distingue trial/simulator/api/paper-live y B1–5 NOT_TESTED. Bracket/OTO/trailing/parciales/session/replace necesitan mapping concreto; tastytrade fills artificiales y resets no validan P&L/recovery multiday. TradeStation instant SIM tampoco demuestra fill-realism. Broker OPEN a selección, sin cuenta ni acceso operativo desde AI.

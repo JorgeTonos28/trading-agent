@@ -117,3 +117,10 @@ Journal de repo y output BASE son candidatos de evidencia; no autenticidad adver
 
 - K-060 P1: señales IEX/datos delayed y fills paper NBBO se tratan como mercado idéntico; simulación favorable omite costes/dividendos/liquidez. Pin feed/clocks y modelo económico independiente, pruebas de paridad y reconciliación; paper gratuito no prueba alpha.
 - K-061 P0/P1: escoger actor/reglas con resultados vistos o transformar filing/uploaded a disponibilidad exacta sin historia. Preregistro/exposure log, fuentes/canales y revisiones pareadas, UNKNOWN o variante conservadora explícita; criterios antes de muestras. Fuente paga/gratis no salta gate PIT/licencia.
+
+## Riesgos financieros de reglas/modelos — 2026-10-13
+
+- K-062 P1: entry-to-stop0 en posición ganadora oculta pérdida futura de equity, o R2 en perdedora libera capacidad frente a R1. Q-054 gobierno explícito de medida, loss/drawdown y gap independientes, no valor elegido implícitamente.
+- K-063 P0/P1: partial/top-up/split cambia p0/H/q/stops y crea falsa activación/cobertura. CandidateConfig episode/lot/rebase OPEN obligatorio, mapping broker probado antes de freeze.
+- K-064 P1: descontar hold broker y reserve dos veces, o liberar claim propio durante revalidation. C_base/cash-claims exclusivos, projection/txn atomico y eventos reconciliados; NO PASS transaccional por algebra8/8.
+- K-065 P1: engine libre/CLI pago confundidos, docs2.x vs install1.x o OHLCsyntheticpath tratado como tick observado. R009 pin/ruta económica, QP1–10 y realismo/costs explícitos, no engine construido desde cero por defecto.

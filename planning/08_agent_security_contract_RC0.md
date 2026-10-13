@@ -69,3 +69,7 @@ UNKNOWN sobre control obligatorio no es permiso. Si S2 falla, mantener jobs no o
 ## Especificación vigente por variante — 2026-10-06
 
 [RC2](08_S2_agent_domain_contract_RC2.md) y [acceptance proyectado](research/R-013_S2_variant_acceptance_RC2.md) conservan objetivos SI/BL/RB. El bloque RC1 anterior documenta el endpoint histórico; ADM-01 no autorizado, retirado de la secuencia activa por owner. Próximo gobierno: S2-B dirección candidata revisada; no setup. Ninguna cuenta por rol obligatoria; todo proceso job sigue confinado fuera de F/control. No cierre D-027/D-024.
+
+## Contrato aprobado, mecanismos target — 2026-10-13
+
+ADR-014/B-RT1 diseño aprobado dentro de scope; controles efectivos/pruebas auth/FS/process/IPC/red/blinding R-030 deferred. Mecanismos concretos candidatos sustituibles, no redefinir host-specific como diseño abierto ni ejecutar setup INFOTEP. Cambiar trust/authority/broad grants requiere gobierno; no nuevas expansiones R-013 por refinamiento.

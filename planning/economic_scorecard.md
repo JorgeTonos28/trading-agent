@@ -58,3 +58,7 @@ Una recomendación paga debe identificar una condición comprobable (por ejemplo
 ## Aplicación documental financiera — 2026-10-07
 
 [Broker/data wave01](research/R-007_008_provider_evidence_wave01_2026-10-07.md) y [Smart Money wave01](research/R-025_provider_evidence_wave01_2026-10-07.md) incorporan los seis campos, precios publicados cuando existen y UNKNOWN explícitos para operación, escala, rights y beneficio. Distinguen datos Alpaca de la suscripción ChatGPT y pago anual de mensual. No presupuesto, contratación, selección ni gasto aprobados. Los scorecards iniciales se conservan fechados; las waves posteriores actualizan evidencia sin convertir claims comerciales en calidad/PIT demostrados.
+
+## Wave financiera02 — 2026-10-13
+
+[Data](research/R-008_market_data_evidence_wave02_2026-10-13.md), [brokers](research/R-007_order_protection_matrix_RC1.md), [engines](research/R-009_backtesting_reuse_RC0.md) y [normalizador SEC](research/R-021_external_dataset_admission_RC1.md) completan seis campos con prices publicados/UNKNOWN. LEAN source libre ≠ CLI gratis; software free ≠ datos/coste operativo incluido. Nuevos servicios sólo estudiados, gasto0; fuente/documentación accesible no prueba entitlement o rights de target.
