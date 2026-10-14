@@ -4843,3 +4843,7 @@ Research = Team + Windows institucional INFOTEP; target PAPER = Plus individual 
 ## Aprobación acotada de referencia de riesgo — ADR-015, 2026-10-13
 
 [ADR-015](../../planning/decisions/ADR-015-remaining-risk-reference-R2.md) registra R2 como referencia principal de riesgo restante desde valor actual a protección confirmada, R1/atribución y controles independientes conservados. No auto-ampliación de perdedoras por menor riesgo; p_auth pending/new, protección condicional y UNCERTAIN nunca0, no doble contabilización ni exposición oculta. D-035 global sigue RESEARCHING para fórmulas/pruebas/params; implementation_locked=true. Sin umbrales, Strategy/broker, G3, Plus/admin o gasto aprobados. Ejemplos numéricos previos son candidatos no política validada.
+
+## Aprobación vigente O-B — 2026-10-14
+
+[ADR-016](../../planning/decisions/ADR-016-strategy-evaluation-O-B.md) registra Q055 DECIDED conceptual; D011 global RESEARCHING, Strategy OPEN. Reserva PROPOSED_RESERVE/INTEGRITY_UNKNOWN hasta exposure ledger/M11; alternativa prospectiva con gobierno si contaminada. Ensayos incluidos descartes, suficiencia/INSUFFICIENT_EVIDENCE, comparabilidad, walk-forward/sensibilidad/costes/retrasos y horizonte/latencia/caducidad quedan exigidos antes de resultados. Ningún modelo/umbral/estrategia/broker/data aprobado; lock y target deferral vigentes. Continúa paquete financiero sin solicitar Plus/admin ni investigación agéntica general.

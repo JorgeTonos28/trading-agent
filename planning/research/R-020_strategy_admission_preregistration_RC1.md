@@ -43,3 +43,7 @@ Entregables siguientes: `CandidateRuleCard` por variante, `DatasetAdmissibilityC
 ## Propuesta de evaluación wave03 — 2026-10-13
 
 [O-B/Q055](D-011_OOS_policy_decision_RC0.md) READY_FOR_DECISION sólo arquitectura development/selection/confirmation/cohorts, reserva PROPOSED_RESERVE/INTEGRITY_UNKNOWN hasta exposure ledger/M11. Criterios mínimos/metrics/sample/costs siguen OPEN antes de resultados; no Strategy/config/holdout certificado. [Semánticas comunes RC1](R-020_shared_calculation_semantics_RC1.md) pendientes de paridad/config. E1 no resuelve PIT y Starter durable no satisface rights; admisión se verifica por dataset sin alterar safety/economía.
+
+## Aprobación vigente O-B — 2026-10-14
+
+[ADR-016](../decisions/ADR-016-strategy-evaluation-O-B.md) registra Q055 DECIDED conceptual; D011 global RESEARCHING, Strategy OPEN. Reserva PROPOSED_RESERVE/INTEGRITY_UNKNOWN hasta exposure ledger/M11; alternativa prospectiva con gobierno si contaminada. Ensayos incluidos descartes, suficiencia/INSUFFICIENT_EVIDENCE, comparabilidad, walk-forward/sensibilidad/costes/retrasos y horizonte/latencia/caducidad quedan exigidos antes de resultados. Ningún modelo/umbral/estrategia/broker/data aprobado; lock y target deferral vigentes. Continúa paquete financiero sin solicitar Plus/admin ni investigación agéntica general.

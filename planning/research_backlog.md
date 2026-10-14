@@ -84,3 +84,7 @@ Owner aprueba R2 conceptual y acotado; R1/P&L/controles independientes conservad
 ## Paquete financiero wave03 y endpoint — 2026-10-13
 
 R020 semánticas comunes RC1, R021 E1 ejecutado y R008retención RC1 completados en scope; [review](research/D-011_R-021_independent_review_2026-10-13.md) y [Q055O-B](research/D-011_OOS_policy_decision_RC0.md) con repairs P1/P2 documentados. R008 Starter durable REJECT, alternativas restantes sin suficiencia certificada. R020/R021/D011 siguen investigación global; siguiente gobierno material Q055 arquitectura de evaluación, no Plus/admin ni nueva ronda agéntica. Tras decisión: CandidateConfigs, criterios/costs/cobertura antes de resultados, fichas fuente/broker restantes, engine/QP, risk formulas/storage/ops por demanda. No esperar target para investigar; backtests/aceptación operativa se realizan en PC personal.
+
+## Aprobación vigente O-B — 2026-10-14
+
+[ADR-016](decisions/ADR-016-strategy-evaluation-O-B.md) registra Q055 DECIDED conceptual; D011 global RESEARCHING, Strategy OPEN. Reserva PROPOSED_RESERVE/INTEGRITY_UNKNOWN hasta exposure ledger/M11; alternativa prospectiva con gobierno si contaminada. Ensayos incluidos descartes, suficiencia/INSUFFICIENT_EVIDENCE, comparabilidad, walk-forward/sensibilidad/costes/retrasos y horizonte/latencia/caducidad quedan exigidos antes de resultados. Ningún modelo/umbral/estrategia/broker/data aprobado; lock y target deferral vigentes. Continúa paquete financiero sin solicitar Plus/admin ni investigación agéntica general.

@@ -1,6 +1,6 @@
 # D-011 / Q-055 — arquitectura de evaluación entre candidatos — propuesta RC0
 
-2026-10-13 · P0 **Q-055 READY_FOR_DECISION, scope conceptual** · D-011 global RESEARCHING; Strategy V1 OPEN. No nuevos resultados de estrategias ni dataset confirmatorio consultados en esta wave. No cambios a fechas de MATR por este documento. Selección/validación condicionadas a datos/rights/PIT y configs completas; [R2 ADR-015](../decisions/ADR-015-remaining-risk-reference-R2.md).
+2026-10-13 · P0 **Q-055 DECIDED por owner2026-10-14, ADR-016; propuesta original conservada** · D-011 global RESEARCHING; Strategy V1 OPEN. No nuevos resultados de estrategias ni dataset confirmatorio consultados en esta wave. No cambios a fechas de MATR por este documento. Selección/validación condicionadas a datos/rights/PIT y configs completas; [R2 ADR-015](../decisions/ADR-015-remaining-risk-reference-R2.md).
 
 ## Problema material
 
@@ -31,3 +31,7 @@ La arquitectura de evaluación determina qué candidatos pueden compararse, cóm
 Recomiendo O-B como arquitectura de evaluación, manteniendo O-A/O-C alternativas documentadas. Decisión owner pedida **sólo sobre separación development/selección/confirmación y trato de candidatos con historia incompleta**, no Strategy/broker/data winner ni gasto, ni acceso Plus/admin. Material para selección de primera estrategia y evidencia; AGENTS requiere gobierno cuando alternativas alteran arquitectura/scope. No borrar declaración owner MATR nunca backtesteada; exposición incidental de fichas de emisores ya registrada no acredita untouched OOS por sí sola.
 
 Fundamento metodológico: [CFA Backtesting & Simulation](https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/backtesting-and-simulation) trata hipótesis/reglas, walk-forward, sesgos y escenarios. O-B y ventanas son propuesta propia del proyecto, no recomendación específica de CFA ni garantía de retorno. [Revisión independiente y reparaciones](D-011_R-021_independent_review_2026-10-13.md) habilitan presentar este scope conceptual; no aprobación del owner ni cierre total D-011. Núcleo agéntico ADR-014 completo en su scope, no nueva ronda R-006.
+
+## Aprobación vigente O-B — 2026-10-14
+
+[ADR-016](../decisions/ADR-016-strategy-evaluation-O-B.md) registra Q055 DECIDED conceptual; D011 global RESEARCHING, Strategy OPEN. Reserva PROPOSED_RESERVE/INTEGRITY_UNKNOWN hasta exposure ledger/M11; alternativa prospectiva con gobierno si contaminada. Ensayos incluidos descartes, suficiencia/INSUFFICIENT_EVIDENCE, comparabilidad, walk-forward/sensibilidad/costes/retrasos y horizonte/latencia/caducidad quedan exigidos antes de resultados. Ningún modelo/umbral/estrategia/broker/data aprobado; lock y target deferral vigentes. Continúa paquete financiero sin solicitar Plus/admin ni investigación agéntica general.

@@ -68,3 +68,7 @@ Esta ficha alimenta R-020. La decisión siguiente **no** es confirmar MATR_V1 po
 ## Semántica técnica y evaluación propuesta — 2026-10-13
 
 [Cálculos RC1](research/R-020_shared_calculation_semantics_RC1.md) concretan propuesta SMA/ROC/WilderATR/warm-up/raw-vs-adjusted/corporateevents/cash, sin cerrar M03 ni seleccionar MATR; paridad engine y configuración faltantes. [Q055 O-B](research/D-011_OOS_policy_decision_RC0.md) preserva fechas baseline y propone comparación entre candidatos antes de confirmación; INTEGRITY_UNKNOWN hasta exposure ledger/M11, sin resultados nuevos ni waiver. ADR015 aplica referenciaR2 conceptual y p_authnew/pending; porcentajes del borrador no quedan aprobados. D010/011 RESEARCHING.
+
+## Aprobación vigente O-B — 2026-10-14
+
+[ADR-016](decisions/ADR-016-strategy-evaluation-O-B.md) registra Q055 DECIDED conceptual; D011 global RESEARCHING, Strategy OPEN. Reserva PROPOSED_RESERVE/INTEGRITY_UNKNOWN hasta exposure ledger/M11; alternativa prospectiva con gobierno si contaminada. Ensayos incluidos descartes, suficiencia/INSUFFICIENT_EVIDENCE, comparabilidad, walk-forward/sensibilidad/costes/retrasos y horizonte/latencia/caducidad quedan exigidos antes de resultados. Ningún modelo/umbral/estrategia/broker/data aprobado; lock y target deferral vigentes. Continúa paquete financiero sin solicitar Plus/admin ni investigación agéntica general.

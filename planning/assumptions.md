@@ -112,3 +112,7 @@ Referencia principal DECIDED por owner. No asumir que toda marca/stop en datos e
 - A-050 P1 PARTIAL: parser público de Form4 puede ser reutilizable. E1 sólo tablas, full factoryerror, enriquecimiento/footnotes/owners/mapping/PIT no demostrados; no REUSE_AS_IS como señal.
 - A-051 P0 UNVERIFIED: reserva2023–2026-09-30 tiene independencia suficiente. Exposure ledger/M-11 debe considerar exposición incidental; estado INTEGRITY_UNKNOWN. Q055 O-B conceptual no lo certifica ni fija sample/thresholds.
 - A-052 P1 UNVERIFIED: existe ruta gratuita suficiente para histórico durable/as-of. Starter candidato refutado para ese rol; alternativas no agotadas, no justificar gasto por descarte de una sola fuente.
+
+## ADR-016 — 2026-10-14
+
+A051 integridad de reserva permanece UNVERIFIED, no resuelta por aprobación O-B. A-053 P0 UNVERIFIED: suficientes señales/regímenes independientes y ventaja robusta a retrasos/costes para cada candidato. Debe evaluarse con criterios previos y métodos que contemplen dependencia/múltiples ensayos; INSUFFICIENT_EVIDENCE no equivale a fallo económico.

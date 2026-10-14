@@ -52,3 +52,7 @@ Strategy V1 sigue OPEN; no selección/retorno/holdout. El siguiente gobierno mat
 ## Vigencia wave03 — 2026-10-13
 
 Q054 referenciaR2 DECIDED por ADR015; D035 restante abierto. [Cálculos comunes RC1](research/R-020_shared_calculation_semantics_RC1.md) propuesta técnica sin Strategy seleccionada; [O-B/Q055](research/D-011_OOS_policy_decision_RC0.md) READY_FOR_DECISION conceptual, no fechas reinterpretadas. [E1](research/R-021_edgartools_findings_2026-10-13.md) estructuralPARTIAL y [retención](research/R-008_data_retention_gate_RC1.md) restringen admisión, no eligen al ganador. Strategy V1 OPEN. Reserva2023–2026-09-30 INTEGRITY_UNKNOWN hasta exposure ledger/M11, no nuevos resultados/dataset confirmatorio en wave03.
+
+## Aprobación vigente O-B — 2026-10-14
+
+[ADR-016](decisions/ADR-016-strategy-evaluation-O-B.md) registra Q055 DECIDED conceptual; D011 global RESEARCHING, Strategy OPEN. Reserva PROPOSED_RESERVE/INTEGRITY_UNKNOWN hasta exposure ledger/M11; alternativa prospectiva con gobierno si contaminada. Ensayos incluidos descartes, suficiencia/INSUFFICIENT_EVIDENCE, comparabilidad, walk-forward/sensibilidad/costes/retrasos y horizonte/latencia/caducidad quedan exigidos antes de resultados. Ningún modelo/umbral/estrategia/broker/data aprobado; lock y target deferral vigentes. Continúa paquete financiero sin solicitar Plus/admin ni investigación agéntica general.
