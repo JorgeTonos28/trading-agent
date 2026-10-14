@@ -133,3 +133,7 @@ A051 integridad de reserva permanece UNVERIFIED, no resuelta por aprobación O-B
 - A-058 P1 UNVERIFIED: yield público equivale a retorno realizable/cash broker. R008 distingue descuento/constant maturity/roll/carry real; vintages y modelo no admitidos.
 - A-059 P0 UNVERIFIED: bajar volatilidad/exposición demuestra eficiencia incremental. Counterexample E3, espejo REAL con ledger/clock propios; beta/mix y cola permanecen pendientes.
 - A-060 P1 PARTIAL: Form4 public parser preserva información necesaria. F2 flags/footnote substrings sólo componentes; None ambiguo, duplicados y planes anteriores a2023 UNKNOWN. No dataset admitido.
+
+## Estado vigente K2 — ADR-018, 2026-10-14
+
+[ADR-018](decisions/ADR-018-PRICE-MATR-benchmark-package-K2.md): Q057/K2 DECIDED por propietario. EW6-BH primario, cash y espejo EW6-BH-LAMBDA-REAL obligatorios; SPY/SPY-SMA200 secundarios y mensual sólo sensibilidad predefinida. Exposición no equivale a riesgo: composición/beta/factores y limitaciones, diferencia económica frente a SPY visible, políticas reproducibles/as-of y gates conjuntos sin score compensatorio. Scope sólo ETF PRICE–MATR; márgenes/modelos/datasets y Strategy no aprobados. D011 RESEARCHING, holdout UNKNOWN, lock/targetdeferral; continuar trabajo técnico sin repetir Q056/Q057.

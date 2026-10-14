@@ -68,3 +68,7 @@ Q054 referenciaR2 DECIDED por ADR015; D035 restante abierto. [Cálculos comunes 
 ## Comparación económica posterior — 2026-10-14
 
 [PAIR-01/02](research/R-020_PRICE_MATR_pairing_spec_RC0.md) y [RC3](research/R-020_economic_qualification_contract_RC3.md) desarrollan PRICE vs MATR con ledger/benchmark/cash/clock común y ablations explícitas. [Q057](research/D-011_benchmark_qualification_decision_RC0.md) propone referencia primaria de esta cohorte, no selección Strategy. Form4 primera externa sigue candidata NOT_ADMITTED; plan-agnostic es nueva hipótesis, no relajación silenciosa del filtro. Strategy V1 OPEN, F0 incompleto, holdout UNKNOWN.
+
+## Estado vigente K2 — ADR-018, 2026-10-14
+
+[ADR-018](decisions/ADR-018-PRICE-MATR-benchmark-package-K2.md): Q057/K2 DECIDED por propietario. EW6-BH primario, cash y espejo EW6-BH-LAMBDA-REAL obligatorios; SPY/SPY-SMA200 secundarios y mensual sólo sensibilidad predefinida. Exposición no equivale a riesgo: composición/beta/factores y limitaciones, diferencia económica frente a SPY visible, políticas reproducibles/as-of y gates conjuntos sin score compensatorio. Scope sólo ETF PRICE–MATR; márgenes/modelos/datasets y Strategy no aprobados. D011 RESEARCHING, holdout UNKNOWN, lock/targetdeferral; continuar trabajo técnico sin repetir Q056/Q057.

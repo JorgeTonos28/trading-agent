@@ -104,3 +104,7 @@ Q056 READY es el siguiente gobierno material antes de efecto/muestra/endpoint; D
 R020 RC3/PAIR-01/02, R008 cash y R021 semántica Form4 completados en scope documental con E3/F2 y [review](research/R-020_021_economic_independent_review_2026-10-14.md). No investigación global cerrada: fuentes/PIT/rights/returnmodels, métodos/precision y StrategyConfig aún abiertos. Próximo gobierno material [Q057](research/D-011_benchmark_qualification_decision_RC0.md), no Q056 repetido.
 
 Después de esa referencia: fijar métricas candidatas/MethodApplicabilityCard, márgenes y mínimos justificados antes de resultados; completar fuente cash+ETF y Form4/amendments/firstdelivery/rights, broker/order matrix y engineparidad; fórmulas/operación por demanda. Target R030 sigue diferido, no Plus/admin aquí. El estudio plan-agnostic no ejecutado es alternativa registrada, no admisión ni sustitución de filtro S-F4-01.
+
+## Estado vigente K2 — ADR-018, 2026-10-14
+
+[ADR-018](decisions/ADR-018-PRICE-MATR-benchmark-package-K2.md): Q057/K2 DECIDED por propietario. EW6-BH primario, cash y espejo EW6-BH-LAMBDA-REAL obligatorios; SPY/SPY-SMA200 secundarios y mensual sólo sensibilidad predefinida. Exposición no equivale a riesgo: composición/beta/factores y limitaciones, diferencia económica frente a SPY visible, políticas reproducibles/as-of y gates conjuntos sin score compensatorio. Scope sólo ETF PRICE–MATR; márgenes/modelos/datasets y Strategy no aprobados. D011 RESEARCHING, holdout UNKNOWN, lock/targetdeferral; continuar trabajo técnico sin repetir Q056/Q057.

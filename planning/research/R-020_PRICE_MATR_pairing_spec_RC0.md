@@ -25,3 +25,7 @@ La propuesta seal puede perder mejoras de ratchet durante entrylargo y exige med
 ## Readiness técnica
 
 Propuestas SMA/ROC/WilderATR/strictfilters se especifican en semánticasRC1; aún faltan paridadengine y fuentes. Broker/data costs/latency/freshness/entryexpiry/risknums yparamsratchet no se cierran desde un escenario sintético. Esta pairing spec reduce demanda/ambigüedad, no afirma backtest admission ni prescribe alcance de Form4; su cohorte exige DataCard/universe propio.
+
+## Estado vigente K2 — ADR-018, 2026-10-14
+
+[ADR-018](../decisions/ADR-018-PRICE-MATR-benchmark-package-K2.md): Q057/K2 DECIDED por propietario. EW6-BH primario, cash y espejo EW6-BH-LAMBDA-REAL obligatorios; SPY/SPY-SMA200 secundarios y mensual sólo sensibilidad predefinida. Exposición no equivale a riesgo: composición/beta/factores y limitaciones, diferencia económica frente a SPY visible, políticas reproducibles/as-of y gates conjuntos sin score compensatorio. Scope sólo ETF PRICE–MATR; márgenes/modelos/datasets y Strategy no aprobados. D011 RESEARCHING, holdout UNKNOWN, lock/targetdeferral; continuar trabajo técnico sin repetir Q056/Q057.

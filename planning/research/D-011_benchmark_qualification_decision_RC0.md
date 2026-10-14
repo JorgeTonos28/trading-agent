@@ -1,6 +1,6 @@
 # Q-057 — referencias y contrato de calificación PRICE–MATR
 
-2026-10-14 · READY_FOR_DECISION tras revisión crítica independiente; propuesta no aprobada. Q056/B aprobado; **no se repite** elección retorno/riesgo. D008/011 siguen OPEN/RESEARCHING; márgenes/modelos/datos y F0 no aprobados. Holdout INTEGRITY_UNKNOWN.
+2026-10-14 · DECIDED K2 por propietario; formulación original y alternativas conservadas. La aprobación ADR018 no fija márgenes/modelos/datos. Q056/B aprobado; **no se repite** elección retorno/riesgo. D008/011 siguen OPEN/RESEARCHING; márgenes/modelos/datos y F0 no aprobados. Holdout INTEGRITY_UNKNOWN.
 
 ## Problema concreto
 
@@ -32,3 +32,7 @@ Razón de recomendación K2: vínculo del benchmark con el universo definido de 
 [RC3](R-020_economic_qualification_contract_RC3.md) define cash/gross-cost/λ/estados; [cash sources](R-008_cash_benchmark_admission_RC0.md) distingue yields de retornos; [E3](R-020_economic_probe_findings_2026-10-14.md) demuestra counterexample de exposure/cash en fixtures y sensibilidad de muestra. [Pairing](R-020_PRICE_MATR_pairing_spec_RC0.md) conserva cambios/variantes; [Form4](R-021_Form4_semantic_admission_RC2.md) queda candidata no admitida. Ningún backtest histórico/candidato/resultados de reserva observado. La evidencia funda el **diseño del criterio**, no rentabilidad de las referencias.
 
 Decisión pedida sólo: **K1/K2/K3 de referencia primaria y gates conjuntos para PRICE–MATR**. No aprobar δ_NI/εcash/ρ/q/α, capital, modelos, Strategy/broker/data, implementación/operación/target. Después presentar márgenes y efectos técnicos con utilidad y muestra, antes de resultados; no ensancharlos por factibilidad. No nueva ronda abstracta de dirección B ni solicitud Plus/admin. Trading OS sigue bloqueado, main estable.
+
+## Estado vigente K2 — ADR-018, 2026-10-14
+
+[ADR-018](../decisions/ADR-018-PRICE-MATR-benchmark-package-K2.md): Q057/K2 DECIDED por propietario. EW6-BH primario, cash y espejo EW6-BH-LAMBDA-REAL obligatorios; SPY/SPY-SMA200 secundarios y mensual sólo sensibilidad predefinida. Exposición no equivale a riesgo: composición/beta/factores y limitaciones, diferencia económica frente a SPY visible, políticas reproducibles/as-of y gates conjuntos sin score compensatorio. Scope sólo ETF PRICE–MATR; márgenes/modelos/datasets y Strategy no aprobados. D011 RESEARCHING, holdout UNKNOWN, lock/targetdeferral; continuar trabajo técnico sin repetir Q056/Q057.

@@ -152,3 +152,7 @@ Q055/O-B aprobado/sincronizado; paquete autónomo posterior completado en diseñ
 ADR017/Q056 aprobado y sincronizado. Paquete autónomo económico: RC3 conjunto, cash real vs oportunidad, PRICE–MATR/ablations, Form4 plan/purchase/amendments, E3/F2 y review con límites. No resultados PRICE/MATR; registry8 hipótesis/0trials, F0 incompleto, holdout INTEGRITY_UNKNOWN.
 
 Siguiente decisión material: [Q057 referencias K1/K2/K3](research/D-011_benchmark_qualification_decision_RC0.md). Recomendar K2 por universo común y baseline buy-and-hold, no por retorno observado. Su elección precede la justificación de márgenes; no pedir de nuevo dirección B. Después: modelos/efectos/sample propuestos→gobierno numérico previo→Configs/dataPIT/rights/costs→F0→comparación y confirmación independientes; broker/engine/risk/storage en scopes propios. No Plus/admin/gasto/main ni ronda agéntica general.
+
+## Estado vigente K2 — ADR-018, 2026-10-14
+
+[ADR-018](decisions/ADR-018-PRICE-MATR-benchmark-package-K2.md): Q057/K2 DECIDED por propietario. EW6-BH primario, cash y espejo EW6-BH-LAMBDA-REAL obligatorios; SPY/SPY-SMA200 secundarios y mensual sólo sensibilidad predefinida. Exposición no equivale a riesgo: composición/beta/factores y limitaciones, diferencia económica frente a SPY visible, políticas reproducibles/as-of y gates conjuntos sin score compensatorio. Scope sólo ETF PRICE–MATR; márgenes/modelos/datasets y Strategy no aprobados. D011 RESEARCHING, holdout UNKNOWN, lock/targetdeferral; continuar trabajo técnico sin repetir Q056/Q057.

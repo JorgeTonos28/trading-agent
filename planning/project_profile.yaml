@@ -604,10 +604,11 @@ financial_preparation_wave05:
   cash_admission: planning/research/R-008_cash_benchmark_admission_RC0.md
   Form4_semantics: planning/research/R-021_Form4_semantic_admission_RC2.md
   independent_review: planning/research/R-020_021_economic_independent_review_2026-10-14.md
-  next_material_proposal: Q057_PRIMARY_BENCHMARK_AND_JOINT_GATES_PRICE_MATR
-  Q057: READY_FOR_DECISION_NOT_APPROVED
+  next_material_proposal: NONE_CONTINUE_STATISTICAL_PROTOCOL_DATA_ADMISSION_AND_MARGIN_FORMULATION
+  Q057: DECIDED_PACKAGE_ONLY_ADR018
   recommendation: K2_EW6_BUY_AND_HOLD_CASH_AND_MATCHED_REAL
-  benchmark_selected: false
+  benchmark_package_approved: true
+  benchmark_realization_frozen: false
   numeric_margins_approved: false
   primary_risk_metric_selected: false
   declared_hypotheses: 8
@@ -625,3 +626,19 @@ financial_preparation_wave05:
   implementation_locked: true
   target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED
   incremental_spend: 0
+
+benchmark_package_approval:
+  ADR: ADR-018
+  Q057: DECIDED
+  approved_on: 2026-10-14
+  scope: ETF_PRICE_MATR_COHORT_ONLY
+  primary: B-EW6-BH
+  obligatory: [B-CASH, B-EW6-BH-LAMBDA-REAL]
+  secondary: [SPY_BUY_AND_HOLD, SPY_SMA200]
+  sensitivity_only: EW6_MONTHLY_PREDEFINED
+  exposure_is_not_risk_equivalence: true
+  SPY_opportunity_cost_visible: true
+  numeric_margins_approved: false
+  source_and_realization_admitted: false
+  implementation_locked: true
+  target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED

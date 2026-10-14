@@ -169,7 +169,7 @@
     "planning/08_S2_isolation_spec_RC1.md",
     "planning/research/R-013_S2_acceptance_matrix_RC1.md"
   ],
-  "next_governance_item": "Q057_READY_FOR_DECISION_PRICE_MATR_PRIMARY_BENCHMARK_AND_JOINT_GATES_NOT_NUMERIC_MARGIN",
+  "next_governance_item": "NONE_Q056_Q057_APPROVED_CONTINUE_TECHNICAL_PROTOCOL_SOURCES_AND_MARGIN_PROPOSAL",
   "isolation_variant": {
     "proposed": "S2_B",
     "selected": false,
@@ -216,5 +216,6 @@
   "target_acceptance_status": "TARGET_ACCEPTANCE_DEFERRED",
   "mechanism_freeze": false,
   "economic_contract": "planning/research/R-020_economic_qualification_contract_RC3.md",
-  "economic_reference_proposal": "planning/research/D-011_benchmark_qualification_decision_RC0.md"
+  "economic_reference_proposal": "planning/research/D-011_benchmark_qualification_decision_RC0.md",
+  "benchmark_package_approval": "planning/decisions/ADR-018-PRICE-MATR-benchmark-package-K2.md"
 }

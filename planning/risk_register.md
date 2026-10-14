@@ -157,3 +157,7 @@ K067 conserva integridad UNKNOWN y O-B aprobado sólo conceptual. Riesgos adicio
 - K-075 P0: margin ampliado para pasar muestra, ES ratio inestable convertido en0 o cola bootstrap inválida omitida. MethodApplicability previa, incertidumbre/INSUFFICIENT preservadas; probe19/19 no alpha.
 - K-076 P1: flagFalse/ausente interpreta compra discrecional, P interpreta exchange, amendment reemplaza íntegramente o footnotes duplicadas sobrescritas. Raw XML/version/UNKNOWN, rowmapping y quarantine, F2 sólo componentes.
 - K-077 P1: QA rehash silenciosamente declaraciones antiguas por EOL/adendas. Preserve raw SHA+capturedEOL y GitblobSHA/commit; nueva variante/hash antes de nuevos resultados, no alterar captures para PASS.
+
+## Estado vigente K2 — ADR-018, 2026-10-14
+
+[ADR-018](decisions/ADR-018-PRICE-MATR-benchmark-package-K2.md): Q057/K2 DECIDED por propietario. EW6-BH primario, cash y espejo EW6-BH-LAMBDA-REAL obligatorios; SPY/SPY-SMA200 secundarios y mensual sólo sensibilidad predefinida. Exposición no equivale a riesgo: composición/beta/factores y limitaciones, diferencia económica frente a SPY visible, políticas reproducibles/as-of y gates conjuntos sin score compensatorio. Scope sólo ETF PRICE–MATR; márgenes/modelos/datasets y Strategy no aprobados. D011 RESEARCHING, holdout UNKNOWN, lock/targetdeferral; continuar trabajo técnico sin repetir Q056/Q057.

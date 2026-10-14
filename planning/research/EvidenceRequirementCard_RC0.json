@@ -7,7 +7,7 @@
   "owner_direction_dependency": "Q-056_DECIDED_ADR017",
   "economic_endpoint": "NET_RETURN_NONINFERIORITY_AND_MATERIAL_RISK_REDUCTION_CONCEPTUAL",
   "minimum_economic_effect": null,
-  "benchmark": null,
+  "benchmark": "B-EW6-BH_PACKAGE_APPROVED_REALIZATION_PENDING",
   "non_inferiority_margin": null,
   "risk_improvement_minimum": null,
   "family_error_budget": null,
@@ -37,13 +37,15 @@
   "all_candidates_unqualified_outcome": "NO_STRATEGY_QUALIFIED",
   "numeric_margin_owner_approval_required_before_results": true,
   "economic_contract": "R-020_economic_qualification_contract_RC3.md",
-  "benchmark_proposal_dependency": "Q-057_NOT_APPROVED",
-  "matched_exposure_benchmark": null,
-  "monetary_benchmark": null,
+  "benchmark_proposal_dependency": "Q057_DECIDED_ADR018",
+  "matched_exposure_benchmark": "B-EW6-BH-LAMBDA-REAL_PACKAGE_APPROVED_REALIZATION_PENDING",
+  "monetary_benchmark": "B-CASH_REQUIRED_SOURCE_AND_MODEL_PENDING",
   "cash_real_separated_from_opportunity": true,
   "own_benchmark_ledger_costs_required": true,
   "interval_exposure_clock_required": true,
   "risk_metric": null,
   "tail_level": null,
-  "numerical_probes_are_acceptance": false
+  "numerical_probes_are_acceptance": false,
+  "exposure_does_not_establish_risk_equivalence": true,
+  "SPY_opportunity_cost_report_required": true
 }
