@@ -88,3 +88,9 @@ R020 semánticas comunes RC1, R021 E1 ejecutado y R008retención RC1 completados
 ## Aprobación vigente O-B — 2026-10-14
 
 [ADR-016](decisions/ADR-016-strategy-evaluation-O-B.md) registra Q055 DECIDED conceptual; D011 global RESEARCHING, Strategy OPEN. Reserva PROPOSED_RESERVE/INTEGRITY_UNKNOWN hasta exposure ledger/M11; alternativa prospectiva con gobierno si contaminada. Ensayos incluidos descartes, suficiencia/INSUFFICIENT_EVIDENCE, comparabilidad, walk-forward/sensibilidad/costes/retrasos y horizonte/latencia/caducidad quedan exigidos antes de resultados. Ningún modelo/umbral/estrategia/broker/data aprobado; lock y target deferral vigentes. Continúa paquete financiero sin solicitar Plus/admin ni investigación agéntica general.
+
+## Wave04 autónoma — endpoint económico, 2026-10-14
+
+R020: [RC2](research/R-020_evaluation_protocol_RC2.md), cinco fichas comparables en diseño/demanda, registry/exposure ledger/EvidenceCard y horizon/latency/freshness. EvidenceCard NULL conserva pendientes, no preregistro sellado. ProbeE2 statsmodels/arch19/19 sólo sintético, dataset/alpha/target NOT_TESTED. R007/008 timing fuentes primarias y economía/rights desconocidos documentados. [Review](research/R-020_evaluation_independent_review_2026-10-14.md) incorpora cuatro P1 y dos P2 reparados.
+
+Q056 READY es el siguiente gobierno material antes de efecto/muestra/endpoint; D008/011 siguen abiertos. Después: objetivo→EvidenceCard numérica/método validado→Configs/data rights/PIT/costs/latency→F0→comparación/selección de diseño→F1/confirmación y target/DoR en scopes propios. No API paga/Plus/admin requerida para el trabajo de diseño independiente; ejecutables/backtests de estrategias y carga real target PC personal.

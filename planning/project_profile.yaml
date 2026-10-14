@@ -315,7 +315,7 @@ paper_agentic_hardening:
   workflow_contract: planning/08_job_workflow_recovery_contract_RC0.md
   audit_versions_deployment_contract: planning/08_audit_versions_deployment_contract_RC0.md
   dossier: planning/research/R-010_014_hardening_findings_2026-10-05.md
-  next_human_decision: NONE_Q055_DECIDED_CONTINUE_FINANCIAL_PACKAGE
+  next_human_decision: Q056_PRIMARY_ECONOMIC_OBJECTIVE_CONCEPTUAL_ONLY
   security_setup_executed: false
   paired_native_SDK_CLI_probe: 0.160.0_research_shadow_2_of_2_pass
   durable_semantic_probe: SQLite_disposable_20_checks_plus_11_lease_race_checks
@@ -485,7 +485,7 @@ financial_preparation_wave02:
   risk_reference_proposal: planning/research/D-035_risk_measurement_decision_RC0.md
   independent_review: planning/research/R-020_027_independent_review_2026-10-13.md
   algebra_probe: 8_SYNTHETIC_OBSERVATIONS_NOT_RISK_ENGINE
-  next_human_decision: NONE_Q055_DECIDED_CONTINUE_FINANCIAL_PACKAGE
+  next_human_decision: Q056_PRIMARY_ECONOMIC_OBJECTIVE_CONCEPTUAL_ONLY
   selected_strategy: null
   selected_broker: null
   selected_market_data: null
@@ -515,7 +515,7 @@ risk_reference_approval:
 financial_preparation_wave03:
   updated_on: 2026-10-14
   OOS_proposal: planning/research/D-011_OOS_policy_decision_RC0.md
-  next_human_decision: NONE_Q055_DECIDED_CONTINUE_FINANCIAL_PACKAGE
+  next_human_decision: Q056_PRIMARY_ECONOMIC_OBJECTIVE_CONCEPTUAL_ONLY
   Q055: DECIDED_CONCEPTUAL_ADR016
   D011_global: RESEARCHING
   Strategy_V1: OPEN
@@ -550,3 +550,31 @@ evaluation_architecture_approval:
   selected_strategy: null
   target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED
   implementation_locked: true
+
+financial_preparation_wave04:
+  updated_on: 2026-10-14
+  evaluation_protocol: planning/research/R-020_evaluation_protocol_RC2.md
+  candidate_scorecard: planning/research/R-020_comparable_candidate_scorecard_RC2.md
+  registry: planning/research/experiment_registry.json
+  exposure_ledger: planning/research/exposure_ledger.md
+  evidence_card: planning/research/EvidenceRequirementCard_RC0.json
+  horizon_latency_freshness: planning/research/R-020_decision_horizon_latency_RC0.md
+  broker_data_sources: planning/research/R-007_008_timing_evidence_2026-10-14.md
+  independent_review: planning/research/R-020_evaluation_independent_review_2026-10-14.md
+  declared_hypotheses: 5
+  strategy_trials_executed: 0
+  F0_preregistration: NOT_FROZEN_INCOMPLETE
+  confirmation_integrity: INTEGRITY_UNKNOWN
+  reuse_probe_E2_checks: 19
+  reuse_probe_E2_passes: 19
+  reuse_probe_E2_scope: SYNTHETIC_PRIMITIVES_NOT_STATISTICAL_OR_TARGET_ACCEPTANCE
+  statistical_model_selected: false
+  transitive_licenses_reviewed: false
+  next_human_decision: Q056_PRIMARY_ECONOMIC_OBJECTIVE_CONCEPTUAL_ONLY
+  Q056: READY_FOR_DECISION
+  selected_strategy: null
+  selected_broker: null
+  data_admitted: false
+  incremental_spend: 0
+  implementation_locked: true
+  target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED

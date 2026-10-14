@@ -59,3 +59,7 @@ La reserva de presupuesto se libera solo al conciliar fill/cancel/reject termina
 Las APIs/SDKs oficiales de brokers son candidatos a `WRAP`, no gateways de riesgo. [Alpaca Orders](https://docs.alpaca.markets/us/docs/orders-at-alpaca) muestra ID cliente y stream; [IBKR TWS API](https://interactivebrokers.github.io/tws-api/order_submission.html) usa `orderId` y eventos distintos. Ambas quedan `REFERENCE_ONLY` para este contrato hasta D-021; no se elige broker por facilidad de documentación. Frameworks de workflow, esquema/validación y ledger se comparan en D-020/025/026 antes de `BUILD`. Ninguna Skill, plugin, MCP ni LLM recibe endpoint genérico de orden.
 
 **D-013 queda cerrado solo como contrato abstracto.** La selección de broker y mapeo de IDs/estados/tipos de orden se resuelve en D-021 (P1); arquitectura de reservas en D-012/ADR-006 y semántica de fórmulas en D-035 (P1); clocks en D-014 (P0); persistencia en D-026 (P1); probes de cancel/replace/stop, paper fills y failure recovery en D-030/031 (P2). Una dependencia que no cumpla estas garantías reabre D-013 por change record, no se omite silenciosamente.
+
+## Gates temporales broker — wave04
+
+[Timing sources](research/R-007_008_timing_evidence_2026-10-14.md) añaden auctiondeadline/OPGpermissions, GTCexpiry, gatewayauth/restart y presetversion. Misseddeadline no fillOpen ficticio; pendingcancel puede ejecutar/reservas conservadas. Expiry de señal no cancela protección ni concede G3. Pruebas target permanecen B1–5NOT_TESTED.

@@ -138,3 +138,10 @@ K-062 medida R2 conceptualmente resuelta; riesgo de usar presupuesto libre como 
 ## ADR-016 — controles de evaluación, 2026-10-14
 
 K067 conserva integridad UNKNOWN y O-B aprobado sólo conceptual. Riesgos adicionales: número de variantes oculto, operaciones correlacionadas tratadas como muestra independiente, sesgo por regímenes elegidos tras resultados y retrasos omitidos. Registro íntegro de ensayos, criterios previos, estados INSUFFICIENT_EVIDENCE y evaluación temporal/económica por candidato obligatorios. No comparar información de Shadow tardía como contemporánea ni trasladar returns de feed ideal a broker execution.
+
+## Wave04 — controles estadísticos y temporales
+
+- K-069 P0: elegir endpoint/margen/método tras ver ganador o confundir selección con confirmación. Q056gobierno, EvidenceCard/F0 y MethodApplicabilityCard previos; todas variantes/discards/attempts, no modelo favorable tardío.
+- K-070 P1: holding horizon largo/expiry futuro encubre quote/estado stale o feeddelayed. Freshness por input, marcasRisk y protección independientes, deadline/reconcile y escenarios; no filledOpen ideal ni GTCeterno.
+- K-071 P1: independencia ficticia por filas/partialfills/activos y p-valuesNaN/inputs inválidos. Clusters/serialdependence/pairedblocks y admissionexterno, INSUFFICIENT_EVIDENCE/NOT_EVALUATED/NO_ESTIMABLE; primitivePASS no alpha.
+- K-072 P1: IBKRpresets no versionados/authweekly o AlpacaOPGpermissions/GTC90d no modelados. Contracts/source/config/recovery/B1–5target, no hiddensettings ni bypass2FA, FinancialCore fueraAI.

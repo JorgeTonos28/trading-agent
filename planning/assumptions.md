@@ -116,3 +116,9 @@ Referencia principal DECIDED por owner. No asumir que toda marca/stop en datos e
 ## ADR-016 — 2026-10-14
 
 A051 integridad de reserva permanece UNVERIFIED, no resuelta por aprobación O-B. A-053 P0 UNVERIFIED: suficientes señales/regímenes independientes y ventaja robusta a retrasos/costes para cada candidato. Debe evaluarse con criterios previos y métodos que contemplen dependencia/múltiples ensayos; INSUFFICIENT_EVIDENCE no equivale a fallo económico.
+
+## Wave04 — 2026-10-14
+
+- A-054 P0 UNVERIFIED: muestra efectiva/precision y beneficio económico suficiente del candidato.19/19primitives no informa power/alpha; endpoint preferenciaQ056 y EvidenceCard previos requeridos.
+- A-055 P1 PARTIAL: delayedhistoricalSIP puede servir a señalEOD. Docs acceso15min/no subscription, pero rights/coverage2005/firstdelivery/PIT/freshRisk no demostrados; no stack free certificado.
+- A-056 P1 PARTIAL: statsmodels/arch primitives compatibles research. Toyrepeat yknownvectorPASS no prueba estimadores/modelo/runtime personal ni licencias transitivas completas.

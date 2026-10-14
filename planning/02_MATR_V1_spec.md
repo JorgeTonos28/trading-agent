@@ -72,3 +72,7 @@ Esta ficha alimenta R-020. La decisión siguiente **no** es confirmar MATR_V1 po
 ## Aprobación vigente O-B — 2026-10-14
 
 [ADR-016](decisions/ADR-016-strategy-evaluation-O-B.md) registra Q055 DECIDED conceptual; D011 global RESEARCHING, Strategy OPEN. Reserva PROPOSED_RESERVE/INTEGRITY_UNKNOWN hasta exposure ledger/M11; alternativa prospectiva con gobierno si contaminada. Ensayos incluidos descartes, suficiencia/INSUFFICIENT_EVIDENCE, comparabilidad, walk-forward/sensibilidad/costes/retrasos y horizonte/latencia/caducidad quedan exigidos antes de resultados. Ningún modelo/umbral/estrategia/broker/data aprobado; lock y target deferral vigentes. Continúa paquete financiero sin solicitar Plus/admin ni investigación agéntica general.
+
+## Wave04 — comparación previa a rendimiento
+
+[Fichas comparables RC2](research/R-020_comparable_candidate_scorecard_RC2.md) y [protocolo](research/R-020_evaluation_protocol_RC2.md): cinco hipótesis declaradas, sin datos admitidos/retornos/selección, registrytrials0. Prioridad de investigación PRICE vs MATR y F4 como fuente externa a admitir, no resultado ni cierre D008. Q056 preferencia retorno/riesgo READY conceptual, criterios numéricos/métodos/Configs aún abiertos; F0 no sellado. Reserva UNKNOWN/M11, baselineMATR2005+ intacto.

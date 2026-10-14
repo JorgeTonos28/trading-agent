@@ -34,3 +34,7 @@ API examples y snippets comerciales pueden contener números/precios, no se llam
 ## Adenda de vigencia — retención, 2026-10-13
 
 [Gate de retención RC1](R-008_data_retention_gate_RC1.md) **supersede la recomendación de primer probe gratuito y la celda CONDITIONAL de Starter para el rol persistente**. Tiingo Starter PAPER_V1_VIABLE_FREE=NO, REJECT durable core/audit/backtest bajo términos observados. Power/otros pagos siguen condicionales a rights/retención/economía; no contratación autorizada. Oferta/historia anunciadas anteriores se preservan como evidencia comercial, no licencia suficiente. No concluir ausencia de alternativas gratis; Yahoo/Stooq/otros con rights/calidad UNKNOWN, broker-native y proveedores pendientes siguen comparación.
+
+## Evidencia temporal wave03 — 2026-10-14
+
+[Timing/data/broker](R-007_008_timing_evidence_2026-10-14.md) verifica delayedhistoricalSIP/Basic y rutaIBKR auth/presets/cancelstates. Source/feed/deadline/coverage/rights y Riskfreshness separados, B1–5target aún NOT_TESTED. No broker/proveedor seleccionado ni cuenta/config/autenticación/data call. Rutas gratuitas no resuelven2005+ ni audit rights automáticamente.

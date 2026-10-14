@@ -1,0 +1,142 @@
+{
+  "schema_version": "planning-0.1",
+  "updated_on": "2026-10-14",
+  "stage": "PREPARATION",
+  "authority": "NO_FINANCIAL_AUTHORITY",
+  "declared_variant_count": 5,
+  "executed_strategy_trial_count": 0,
+  "execution_attempt_count": 0,
+  "history_complete": false,
+  "legacy_exposure_ledger": "exposure_ledger.md",
+  "freeze_status": "NOT_PREREGISTERED_F0_INCOMPLETE",
+  "variants": [
+    {
+      "id": "S-PRICE-01",
+      "family": "VID_PRICE_EOD",
+      "kind": "DECLARED_HYPOTHESIS_NOT_EXECUTED",
+      "specification": "R-020_comparable_candidate_scorecard_RC2.md",
+      "spec_sha256_at_declaration": "75d19411f0aae856e47b2fd9189c5bdf02f4bfebcd48aef54aad5a18f934a215",
+      "declared_on": "2026-10-14",
+      "parameter_proposals_not_approved": {
+        "breakout_sessions": 126,
+        "initial_ATR_multiple": 3,
+        "max_positions": 3,
+        "a": "OPEN",
+        "h": "OPEN",
+        "b": "OPEN"
+      },
+      "configuration_complete": false,
+      "data_admission": "NOT_ADMITTED",
+      "performance": "NOT_EVALUATED",
+      "risk_budget": "NOT_APPROVED",
+      "selection_status": "NOT_SELECTED",
+      "trial_runs": []
+    },
+    {
+      "id": "S-MATR-01",
+      "family": "MATR_BENCHMARK",
+      "kind": "DECLARED_HYPOTHESIS_NOT_EXECUTED",
+      "specification": "../02_MATR_V1_spec.md",
+      "spec_sha256_at_declaration": "aa2f0fda7b01fb9d76972fafb97b6b7f07743106e241f2428a9e11e78a1e6fdc",
+      "declared_on": "2026-10-14",
+      "parameter_proposals_not_approved": {
+        "SMA": 200,
+        "ROC": 126,
+        "ATR": 20,
+        "initial_ATR_multiple": 3,
+        "max_positions": 3
+      },
+      "configuration_complete": false,
+      "data_admission": "NOT_ADMITTED",
+      "performance": "NOT_EVALUATED",
+      "risk_budget": "NOT_APPROVED",
+      "selection_status": "NOT_SELECTED",
+      "trial_runs": []
+    },
+    {
+      "id": "S-F4-01",
+      "family": "VID_F4_EOD",
+      "kind": "DECLARED_HYPOTHESIS_NOT_EXECUTED",
+      "specification": "R-020_candidate_rules_RC1.md",
+      "spec_sha256_at_declaration": "c05de36c6ade1056b8ee31e589846e5d3028eb974a2c628cc0638595ac4607a9",
+      "declared_on": "2026-10-14",
+      "parameter_proposals_not_approved": {
+        "actor_universe": "OPEN",
+        "plan_filter": "OPEN",
+        "holding_horizon": "OPEN"
+      },
+      "configuration_complete": false,
+      "data_admission": "NOT_ADMITTED",
+      "performance": "NOT_EVALUATED",
+      "risk_budget": "NOT_APPROVED",
+      "selection_status": "NOT_SELECTED",
+      "trial_runs": []
+    },
+    {
+      "id": "S-CONG-01",
+      "family": "VID_CONG_EOD",
+      "kind": "DECLARED_HYPOTHESIS_NOT_EXECUTED",
+      "specification": "R-020_candidate_rules_RC1.md",
+      "spec_sha256_at_declaration": "c05de36c6ade1056b8ee31e589846e5d3028eb974a2c628cc0638595ac4607a9",
+      "declared_on": "2026-10-14",
+      "parameter_proposals_not_approved": {
+        "actors": "OPEN",
+        "holding_horizon": "OPEN"
+      },
+      "configuration_complete": false,
+      "data_admission": "NOT_ADMITTED",
+      "performance": "NOT_EVALUATED",
+      "risk_budget": "NOT_APPROVED",
+      "selection_status": "NOT_SELECTED",
+      "trial_runs": []
+    },
+    {
+      "id": "S-13F-01",
+      "family": "VID_13F_REBAL",
+      "kind": "DECLARED_HYPOTHESIS_NOT_EXECUTED",
+      "specification": "R-020_candidate_rules_RC1.md",
+      "spec_sha256_at_declaration": "c05de36c6ade1056b8ee31e589846e5d3028eb974a2c628cc0638595ac4607a9",
+      "declared_on": "2026-10-14",
+      "parameter_proposals_not_approved": {
+        "managers": "OPEN",
+        "target_weights": "OPEN"
+      },
+      "configuration_complete": false,
+      "data_admission": "NOT_ADMITTED",
+      "performance": "NOT_EVALUATED",
+      "risk_budget": "NOT_APPROVED",
+      "selection_status": "NOT_SELECTED",
+      "trial_runs": []
+    }
+  ],
+  "run_record_required_fields": [
+    "id",
+    "spec_hash",
+    "dataset_version",
+    "source_commit",
+    "phase",
+    "selector",
+    "exposure",
+    "benchmark",
+    "costs",
+    "latency",
+    "seed",
+    "method_applicability",
+    "status",
+    "results_ref",
+    "discard_reason"
+  ],
+  "allowed_run_status": [
+    "SUCCESS",
+    "ERROR",
+    "ABORTED",
+    "TIMED_OUT",
+    "INVALID"
+  ],
+  "synthetic_probe_refs": [
+    "probes/r027-risk-algebra",
+    "probes/r021-edgartools-offline/README.md",
+    "probes/r020-evaluation/README.md"
+  ],
+  "synthetic_probes_are_strategy_trials": false
+}

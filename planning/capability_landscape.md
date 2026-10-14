@@ -218,3 +218,7 @@ C-010, C-025a/C-029, C-017a/b, C-024/028, C-030/031: EXISTS=YES; AVAILABLE_IN_RE
 ## Diseño candidato vigente — 2026-10-07
 
 [B-RT1](08_agentic_runtime_realization_RC1.md) y [checkpoint](14_agentic_architecture_design_checkpoint_RC0.md) concretan ownership/launch/auth/tools/state y binding; ADR-014 READY_FOR_DECISION, no aprobado. R-006 maduro para esta decisión; D-020 disposiciones aprobadas conservadas. Plus/PC personal R-030 aceptación diferida, LIVE UNKNOWN. No freeze ni permiso operacional; workspaces/AGENTS son packaging, no barrera. Costo incremental/autenticación/gates futuros no autorizados por este texto.
+
+## Quant primitives — wave04, sin reabrir capa agéntica
+
+statsmodels0.15.0/arch8.0.0: EXISTS=YES, AVAILABLE_IN_RESEARCH=YES prueba parcial, AVAILABLE_IN_TARGET_PAPER_PLUS/HOST=UNKNOWN (software local no acredita runtime), TECHNICALLY_COMPATIBLE=PARTIAL, ECONOMICALLY_REASONABLE=UNKNOWN mantenimiento/calidad, SELECTED=NO. [DossierE2](research/R-020_eval_findings_2026-10-14.md), [métodos/economía/licencias](research/R-020_evaluation_protocol_RC2.md): REUSE_AS_IS primitives+WRAP candidato, DSR/PBO REFERENCE_ONLY hasta validación.19/19fixture, ninguna suite/Skill/runtimeIA nuevo ni alpha demostrado. Transitive license review pendiente antes de selección; no BUILD suite estadística general por defecto.

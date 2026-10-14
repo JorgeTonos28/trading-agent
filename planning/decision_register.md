@@ -109,3 +109,9 @@ Owner aprueba R2 conceptual y acotado; R1/P&L/controles independientes conservad
 ## Aprobación vigente O-B — 2026-10-14
 
 [ADR-016](decisions/ADR-016-strategy-evaluation-O-B.md) registra Q055 DECIDED conceptual; D011 global RESEARCHING, Strategy OPEN. Reserva PROPOSED_RESERVE/INTEGRITY_UNKNOWN hasta exposure ledger/M11; alternativa prospectiva con gobierno si contaminada. Ensayos incluidos descartes, suficiencia/INSUFFICIENT_EVIDENCE, comparabilidad, walk-forward/sensibilidad/costes/retrasos y horizonte/latencia/caducidad quedan exigidos antes de resultados. Ningún modelo/umbral/estrategia/broker/data aprobado; lock y target deferral vigentes. Continúa paquete financiero sin solicitar Plus/admin ni investigación agéntica general.
+
+## Paquete financiero wave04 — 2026-10-14
+
+D011 RESEARCHING: ADR016/Q055 DECIDED sólo O-B. [RC2](research/R-020_evaluation_protocol_RC2.md) concreta F0/F1/method/sample/registry y [horizonte](research/R-020_decision_horizon_latency_RC0.md); F0 NOT_FROZEN, reserve UNKNOWN. [Scorecard](research/R-020_comparable_candidate_scorecard_RC2.md) compara diseño/demanda de cinco candidatos, ninguno admitido/seleccionado. [Q056 objetivo económico](research/D-011_economic_endpoint_decision_RC0.md) READY_FOR_DECISION conceptual tras review, antes de definir efecto/muestra: A más retorno, B eficiencia retorno/riesgo recomendada, C demostrador operacional. No criterio numérico/modelo ganador fijado.
+
+D021/022 siguen RESEARCHING con [wave timing](research/R-007_008_timing_evidence_2026-10-14.md): delayedSIP/feeds/deadlines/GTC/auth/presets y gates target. D023/025/026/028/029/033/034/035 mantienen pruebas/stack/retención/demanda restantes; libraries primitives no cierran esos scopes.

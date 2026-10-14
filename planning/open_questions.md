@@ -129,3 +129,7 @@ Owner aprueba R2 conceptual y acotado; R1/P&L/controles independientes conservad
 ## Aprobación vigente O-B — 2026-10-14
 
 [ADR-016](decisions/ADR-016-strategy-evaluation-O-B.md) registra Q055 DECIDED conceptual; D011 global RESEARCHING, Strategy OPEN. Reserva PROPOSED_RESERVE/INTEGRITY_UNKNOWN hasta exposure ledger/M11; alternativa prospectiva con gobierno si contaminada. Ensayos incluidos descartes, suficiencia/INSUFFICIENT_EVIDENCE, comparabilidad, walk-forward/sensibilidad/costes/retrasos y horizonte/latencia/caducidad quedan exigidos antes de resultados. Ningún modelo/umbral/estrategia/broker/data aprobado; lock y target deferral vigentes. Continúa paquete financiero sin solicitar Plus/admin ni investigación agéntica general.
+
+## Q-056 — preferencia económica necesaria para preregistro
+
+- Q-056 (P0, D008/D011, READY_FOR_DECISION): ¿qué mejora primaria buscamos frente al benchmark común: **A retorno incremental**, **B conservar retorno dentro de margen previo y reducir riesgo** (recomendación), o **C sólo demostrar operación sin claim económico**? B puede aceptar menor retorno dentro de margen; esa preferencia no pertenece al Architect. [Problema/evidencia/alternativas/trade-offs](research/D-011_economic_endpoint_decision_RC0.md). Sólo dirección conceptual, no margen/medida/p-value/power/Strategy/broker/params aún. Sin ello EvidenceRequirementCard/efecto/muestra no se pueden cerrar honestamente. O-B aprobado; no se repite Q055. Target/Plus/admin no son solicitud actual.

@@ -32,3 +32,7 @@ Las filas anteriores son inventario inicial fechado. [Wave broker/data](R-007_00
 ## Gate durable vigente — 2026-10-13
 
 [R-008 retención RC1](R-008_data_retention_gate_RC1.md) reemplaza la prioridad histórica de Tiingo Starter: REJECT para pipeline persistente, PAPER_V1_VIABLE_FREE=NO en ese scope. Tiingo paid CONDITIONAL; no rechazo permanente ni permiso de gasto. Resto de alternativas gratuitas no certificadas ni descartadas. D-022 RESEARCHING; retención de raw, outputs y derived traces debe ser compatible con replay/auditoría, separando derechos de datos de registros broker propios.
+
+## Evidencia temporal wave03 — 2026-10-14
+
+[Timing/data/broker](R-007_008_timing_evidence_2026-10-14.md) verifica delayedhistoricalSIP/Basic y rutaIBKR auth/presets/cancelstates. Source/feed/deadline/coverage/rights y Riskfreshness separados, B1–5target aún NOT_TESTED. No broker/proveedor seleccionado ni cuenta/config/autenticación/data call. Rutas gratuitas no resuelven2005+ ni audit rights automáticamente.

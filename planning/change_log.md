@@ -169,3 +169,11 @@ Q054 DECIDED referencia principal actual→protección confirmada; R1/atribució
 ## 2026-10-14 — ADR-016: owner aprueba Q055/O-B
 
 Decisión conceptual y siete condiciones registradas; reserva INTEGRITY_UNKNOWN, variantes/descartes, muestra efectiva/INSUFFICIENT_EVIDENCE, comparabilidad, validación temporal y horizon/latency/expiry obligatorios. Q055 DECIDED, D011 RESEARCHING, sin selección Strategy/data/broker/modelo/params. Propuesta/historia/fechas MATR intactas; dependencia/registro/perfil/roadmap/AGENTS actualizados. Próximo paquete autónomo financiero: protocolo estadístico, exposure ledger, candidatas/reglas/latencias y datos/broker. Sin implementar, gasto, target acceptance, main/release o nueva ronda agéntica.
+
+## 2026-10-14 — wave04 estadística, temporal y comparabilidad
+
+ProtocoloRC2 y cinco hipótesis (trials0), exposureledger parcial/reservaUNKNOWN, EvidenceRequirementCardNULL/F0incompleto, horizon/expiry/freshness y folds/costs/latencies propuestos. No claim preregistro sellado/comparación de rendimiento/alpha. Scorecard prioriza completar PRICE vs MATR en universo común y admisión F4, no selección Strategy ni eliminación Smart Money.
+
+Fuentes oficiales Alpaca delayed historicalSIP/deadlines/feedpin/expiry y IBKR auth/presets/cancelstates: doc evidencia/gates/scorecards económicos, sin cuenta/config/data calls o protección aceptada. Primitives statsmodels0.15/arch8 pinadas sólo local15deps, probeE2 19/19 ficticio; NaNdevuelto requiere admissionexterno, no método final ni pruebas estadísticas de trading. Fuente/result/deps/launcher capturados, transitivas por revisar, no rerun.
+
+Review independiente repara cuatroP1 (F0/F1/target, effect/scope, methodapplicability, freshness), dosP2 (manifestdeps/naming) por Architect. Q056 dirección económica propuestaB READY sóloconceptual; no aprobada. Registros/perfil/dependencias/source pointers actualizados. Lock/targetdeferral/main/A+/G1+G2/R2 invariantes, cero gasto, sin nueva investigación agéntica ni limpiezaH7.

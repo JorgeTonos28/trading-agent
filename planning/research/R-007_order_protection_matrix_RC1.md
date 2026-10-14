@@ -29,3 +29,7 @@ Para tastytrade/TradeStation: EXISTS=YES documentación; AVAILABLE_TO_US=UNKNOWN
 ## Resultado y dependencia
 
 Se recomienda reducir primero las variantes a reglas/protección/data factibles, comparar Alpaca e IBKR como primeras rutas documentales integrables **sin seleccionar ninguno**, y mantener restantes ante gaps. Elegibilidad/cuenta real/costes y negativa de orden en target pueden cambiar shortlist. D-008 puede diseñar reglas ahora; freeze requerirá contrato broker concreto, no etiqueta «supports stops».
+
+## Evidencia temporal wave03 — 2026-10-14
+
+[Timing/data/broker](R-007_008_timing_evidence_2026-10-14.md) verifica delayedhistoricalSIP/Basic y rutaIBKR auth/presets/cancelstates. Source/feed/deadline/coverage/rights y Riskfreshness separados, B1–5target aún NOT_TESTED. No broker/proveedor seleccionado ni cuenta/config/autenticación/data call. Rutas gratuitas no resuelven2005+ ni audit rights automáticamente.

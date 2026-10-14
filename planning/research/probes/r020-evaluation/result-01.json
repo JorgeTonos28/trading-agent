@@ -1,0 +1,97 @@
+{
+  "observed_on": "2026-10-14",
+  "scope": "SYNTHETIC_PRIMITIVES_NOT_STRATEGY_BACKTEST",
+  "source_sha256": "c20a9e66dbde8f1797905a16f81a5810711df5c0dd9c75d0d4a23930366c5a88",
+  "strategy_trials_executed": 0,
+  "target_acceptance": false,
+  "checks": [
+    {
+      "id": "HOLM_KNOWN_VECTOR",
+      "status": "PASS"
+    },
+    {
+      "id": "HOLM_FAKE_ALPHA_ONLY",
+      "status": "PASS"
+    },
+    {
+      "id": "HOLM_PRESERVES_CALLER_IDS",
+      "status": "PASS"
+    },
+    {
+      "id": "EXTERNAL_REJECT_NAN_REQUIRED",
+      "status": "PASS"
+    },
+    {
+      "id": "EXTERNAL_REJECT_EMPTY_REQUIRED",
+      "status": "PASS"
+    },
+    {
+      "id": "BLOCK_PAIRED_COLUMNS",
+      "status": "PASS"
+    },
+    {
+      "id": "BLOCK_LENGTH_PRESERVED",
+      "status": "PASS"
+    },
+    {
+      "id": "BLOCK_SEED_REPEATABLE",
+      "status": "PASS"
+    },
+    {
+      "id": "BLOCK_SAMPLE_NOT_ORIGINAL_ORDER",
+      "status": "PASS"
+    },
+    {
+      "id": "AVAILABLE_LATE",
+      "status": "PASS"
+    },
+    {
+      "id": "EXPIRED",
+      "status": "PASS"
+    },
+    {
+      "id": "DEADLINE_MISSED",
+      "status": "PASS"
+    },
+    {
+      "id": "COVERAGE_UNKNOWN",
+      "status": "PASS"
+    },
+    {
+      "id": "MISSING_CONTRACT",
+      "status": "PASS"
+    },
+    {
+      "id": "VALID_TIME_ORDER",
+      "status": "PASS"
+    },
+    {
+      "id": "REVERSE_TIME",
+      "status": "PASS"
+    },
+    {
+      "id": "SAMPLE_INSUFFICIENT",
+      "status": "PASS"
+    },
+    {
+      "id": "SAMPLE_UNSPECIFIED",
+      "status": "PASS"
+    },
+    {
+      "id": "SAMPLE_COUNT_NOT_ALPHA",
+      "status": "PASS"
+    }
+  ],
+  "versions": {
+    "statsmodels": "0.15.0",
+    "arch": "8.0.0",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pandas": "3.0.6"
+  },
+  "NaN_library_behavior": "RETURNED_NAN",
+  "blocked_network_events": [],
+  "pass_count": 19,
+  "total": 19,
+  "risk_or_strategy_engine_tested": false
+}

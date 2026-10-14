@@ -54,3 +54,7 @@ Fichas tastytrade/TradeStation/otros y matriz concreta protection/order lifecycl
 ## Matriz de órdenes/protección — 2026-10-13
 
 [RC1 cinco brokers](R-007_order_protection_matrix_RC1.md) distingue trial/simulator/api/paper-live y B1–5 NOT_TESTED. Bracket/OTO/trailing/parciales/session/replace necesitan mapping concreto; tastytrade fills artificiales y resets no validan P&L/recovery multiday. TradeStation instant SIM tampoco demuestra fill-realism. Broker OPEN a selección, sin cuenta ni acceso operativo desde AI.
+
+## Evidencia temporal wave03 — 2026-10-14
+
+[Timing/data/broker](R-007_008_timing_evidence_2026-10-14.md) verifica delayedhistoricalSIP/Basic y rutaIBKR auth/presets/cancelstates. Source/feed/deadline/coverage/rights y Riskfreshness separados, B1–5target aún NOT_TESTED. No broker/proveedor seleccionado ni cuenta/config/autenticación/data call. Rutas gratuitas no resuelven2005+ ni audit rights automáticamente.

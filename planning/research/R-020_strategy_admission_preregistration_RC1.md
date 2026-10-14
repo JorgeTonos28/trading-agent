@@ -47,3 +47,7 @@ Entregables siguientes: `CandidateRuleCard` por variante, `DatasetAdmissibilityC
 ## Aprobación vigente O-B — 2026-10-14
 
 [ADR-016](../decisions/ADR-016-strategy-evaluation-O-B.md) registra Q055 DECIDED conceptual; D011 global RESEARCHING, Strategy OPEN. Reserva PROPOSED_RESERVE/INTEGRITY_UNKNOWN hasta exposure ledger/M11; alternativa prospectiva con gobierno si contaminada. Ensayos incluidos descartes, suficiencia/INSUFFICIENT_EVIDENCE, comparabilidad, walk-forward/sensibilidad/costes/retrasos y horizonte/latencia/caducidad quedan exigidos antes de resultados. Ningún modelo/umbral/estrategia/broker/data aprobado; lock y target deferral vigentes. Continúa paquete financiero sin solicitar Plus/admin ni investigación agéntica general.
+
+## Evaluación comparable wave04 — 2026-10-14
+
+[ScorecardRC2](R-020_comparable_candidate_scorecard_RC2.md), [evalRC2](R-020_evaluation_protocol_RC2.md) y [horizon](R-020_decision_horizon_latency_RC0.md) añaden fichas/precondiciones/registry/freshness; no Configs aprobados ni preregistro sellado. [Exposureledger](exposure_ledger.md) parcial conserva integridad UNKNOWN, sin apertura de reserva. [Q056](D-011_economic_endpoint_decision_RC0.md) requiere preferencia económica antes de completar efecto/muestra;19/19sintéticos no evidencia de rentabilidad/operación.

@@ -136,3 +136,9 @@ Tras ownerQ055: cerrar CandidateConfigs/criterios/weights/costs antes de resulta
 ## Aprobación vigente O-B — 2026-10-14
 
 [ADR-016](decisions/ADR-016-strategy-evaluation-O-B.md) registra Q055 DECIDED conceptual; D011 global RESEARCHING, Strategy OPEN. Reserva PROPOSED_RESERVE/INTEGRITY_UNKNOWN hasta exposure ledger/M11; alternativa prospectiva con gobierno si contaminada. Ensayos incluidos descartes, suficiencia/INSUFFICIENT_EVIDENCE, comparabilidad, walk-forward/sensibilidad/costes/retrasos y horizonte/latencia/caducidad quedan exigidos antes de resultados. Ningún modelo/umbral/estrategia/broker/data aprobado; lock y target deferral vigentes. Continúa paquete financiero sin solicitar Plus/admin ni investigación agéntica general.
+
+## Endpoint wave04 — 2026-10-14
+
+Q055/O-B aprobado/sincronizado; paquete autónomo posterior completado en diseño/probes sintéticos: evalRC2, horizon/freshness, registry/exposure/EvidenceCard, cinco rule fichas comparables, delayedSIP/broker timing y review. Strategy OPEN; datasets NOT_ADMITTED; F0 NOT_FROZEN; reserva INTEGRITY_UNKNOWN. No Alpha/DoR/target pass.
+
+**HUMAN_ACTION_REQUIRED Q056:** preferencia económica material del comparador (A más retorno vs B retorno no inferior+menos riesgo vs C operación solamente). Recomendar B no permite adoptarlo automáticamente: admite trade-off que debe elegir owner. Después cerrar efecto/muestra/benchmark/criterios previamente a resultados y completar Configs/datos/broker/engine/risk/workflow/storage según demanda. Nuevos gaps de fuente2016+ no autorizan cambiar research2005+ MATR. H7residue intacto, no Plus/admin INFOTEP ni ronda agéntica nueva.
