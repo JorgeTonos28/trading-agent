@@ -174,3 +174,12 @@ K067 conserva integridad UNKNOWN y O-B aprobado sólo conceptual. Riesgos adicio
 ## Vigencia M1 — ADR-019, 2026-10-14
 
 [ADR-019](decisions/ADR-019-PRICE-MATR-economic-utility-M1.md): Q058/M1 DECIDED sólo utilidad ex ante ETF PRICE–MATR: δNI1ppCAGR/año, εcash+1ppneto/año, ρES20%, q95. Siete condiciones: no adaptar a potencia, inferencia válida antes dePASS, guardrails complementarias, escala/costes previos sin capital favorable, espejo defendible, estados separados y NO_STRATEGY_QUALIFIED. Números no equivalen a método/datos/Strategy/backtest aceptados; D011RESEARCHING/F0incompleto, reservaUNKNOWN/lock/targetdeferral. Continuar técnica sin reabrir B/K2/M1.
+
+## Riesgos wave07
+
+- K-084 P0: NULLconjunta/AND0 oculta error marginal de CI o baja potencia de otrogate. E5/E6screen, MVleastfavourable/familia/MCprecision antes dePASS; no elegir método por backtestfavor.
+- K-085 P0: recoverycensurado convierte a0/FAILtotal o DDhistórico se trata como maxDD futuroestimado sin modelo. TablaQ059/RC5 tipos/scope/agregación yestimando/path explícito.
+- K-086 P1: expiry deentrada caduca protección o señal de exit elude materialpause; slots/remains dobles/cashventa no reconciliado usados. Configsemánticas y G1G2precedence, broker mapping stillNOT_ADMITTED.
+- K-087 P1: Riskcap genera por sísolo target, menorR2 causaadds, partialavg baja protección oATR seactualiza retroactivamente. Strategytarget OPEN/cutoffATR/rawrebase/desiredmonotone/qtyconfirmed, no autoridadagent ni G3.
+- K-088 P0: parámetros propuestos se presentan como Strategy seleccionada o se rehacen hashdeclarado tras revisión. IDs/parents nuevos yrawcapture+activerevision, configuraciónfalse y0trials.
+- K-089 P1: elegir capital/coste postresultado para calificar o atribuir mismosoverhead areferencia.20celdaspredefinidas noanchor elegido, UNKNOWNoperational ystreams separados.

@@ -33,3 +33,7 @@ Propuestas SMA/ROC/WilderATR/strictfilters se especifican en semánticasRC1; aú
 ## Benchmark reproducible — wave06
 
 [Benchmark reproducible](R-020_K2_benchmark_book_RC0.md) añade especificación y límites; Q057 aprobado en paquete, Q058 números propuestos. Sin fuente/modelo/Strategy admitidos ni performance. E4 sólo cálculo/meanpilot, no cobertura CAGR/ES/DD; M11 parcial/holdoutUNKNOWN. Versiones/declaraciones anteriores conservadas, no rehash histórico.
+
+## Avance técnico posterior — wave07
+
+[R-020_PRICE_MATR_rule_configurations_RC0.md](R-020_PRICE_MATR_rule_configurations_RC0.md) especifica propuestas/gates, no método/dataset/Strategy admitidos. M1 aprobado/ADR019; Q059 guardrails distintas propuestas. E5/E6screens no statisticalacceptance, costos/scale/fuente/financialtarget pendientes. Versiones anteriores conservadas; no benchmark/margen cambiados por resultados.

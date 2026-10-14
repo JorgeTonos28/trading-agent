@@ -687,3 +687,32 @@ economic_utility_approval:
   confirmation_integrity: INTEGRITY_UNKNOWN
   implementation_locked: true
   target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED
+
+financial_preparation_wave07:
+  updated_on: 2026-10-14
+  evaluation_contract: planning/research/R-020_evaluation_contract_RC5.md
+  protocol_design_status: SPECIFIED_CANDIDATE_GUARDRAILS_OPEN
+  method_acceptance_status: NOT_ACCEPTED
+  DataCards: planning/research/datacards/financial_dataset_cards_RC0.json
+  DataCards_state: ALL_NOT_ADMITTED
+  rule_presets: planning/research/candidate_configs/PRICE_MATR_rules_RC0.json
+  configuration_complete: false
+  deterministic_allocation_target: OPEN_REQUIRED
+  cost_scale_scenarios: planning/research/R-020_cost_scale_scenarios_RC0.md
+  hypothetical_cost_scale_cells: 20
+  selected_operational_capital: null
+  selected_strategy: null
+  declared_variants: 10
+  executed_strategy_trials: 0
+  E5_checks: 8
+  E6_checks: 11
+  E5_E6_scope: SYNTHETIC_SCREEN_NOT_METHOD_OR_STATISTICAL_ACCEPTANCE
+  independent_review: planning/research/R-020_wave07_independent_review_2026-10-14.md
+  next_governance: Q059_COMPLEMENTARY_GUARDRAILS
+  Q059: READY_FOR_DECISION_NOT_APPROVED
+  recommendation: G_R1_NO_DD_OR_VOLATILITY_DETERIORATION_AND_VALID_REPORTS
+  F0: NOT_FROZEN_INCOMPLETE
+  confirmation_integrity: INTEGRITY_UNKNOWN
+  implementation_locked: true
+  target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED
+  incremental_spend: 0

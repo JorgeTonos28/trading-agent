@@ -3,7 +3,7 @@
   "updated_on": "2026-10-14",
   "stage": "PREPARATION",
   "authority": "NO_FINANCIAL_AUTHORITY",
-  "declared_variant_count": 8,
+  "declared_variant_count": 10,
   "executed_strategy_trial_count": 0,
   "execution_attempt_count": 0,
   "history_complete": false,
@@ -189,6 +189,84 @@
       "spec_git_blob_sha256_at_declaration": "992174685e837a644e04990823ebf89b8d5408fb7f2aebdbd4be9d51fee90841",
       "git_blob_hash_provenance": "VERIFIED_DECLARATION_SOURCE_COMMIT",
       "declaration_source_commit": "b0e3c4467c34f5e8ebca3704af7545fa5fc15656"
+    },
+    {
+      "id": "S-PRICE-01-CFG-P1",
+      "parent": "S-PRICE-01",
+      "family": "S-PRICE-01",
+      "kind": "DECLARED_PARAMETERIZATION_NOT_EXECUTED",
+      "specification": "candidate_configs/history/PRICE_MATR_rules_RC0_before_review.json",
+      "spec_sha256_at_declaration": "8e6d8763c9a6a45a9b28d325e20200730a997aa0c660fff31875469866c17a35",
+      "spec_git_blob_sha256_at_declaration": "8e6d8763c9a6a45a9b28d325e20200730a997aa0c660fff31875469866c17a35",
+      "captured_eol_at_declaration": "LF",
+      "declaration_source": "SAME_COMMIT_AS_WAVE07_REGISTRY_WITH_RAW_HASH",
+      "git_blob_hash_provenance": "VERIFIED_STAGED_ORIGINAL_AND_ACTIVE_REPAIR_SAME_COMMIT",
+      "declared_on": "2026-10-14",
+      "parameter_proposals_not_approved": {
+        "config_id": "S-PRICE-01-CFG-P1",
+        "risk_budget": "OPEN",
+        "broker_data": "NOT_SELECTED"
+      },
+      "configuration_complete": false,
+      "data_admission": "NOT_ADMITTED",
+      "performance": "NOT_EVALUATED",
+      "risk_budget": "NOT_APPROVED",
+      "selection_status": "NOT_SELECTED",
+      "trial_runs": [],
+      "active_specification": "candidate_configs/PRICE_MATR_rules_RC0.json",
+      "active_spec_sha256": "5443a739c2b27f3c58454cedcebe22643e2abb600f455802e3b9843835471f55",
+      "declaration_revision_history": [
+        {
+          "version": "RC0_PRE_REVIEW",
+          "sha256": "8e6d8763c9a6a45a9b28d325e20200730a997aa0c660fff31875469866c17a35",
+          "source": "candidate_configs/history/PRICE_MATR_rules_RC0_before_review.json"
+        },
+        {
+          "version": "RC0_REVIEW_REPAIRS",
+          "sha256": "5443a739c2b27f3c58454cedcebe22643e2abb600f455802e3b9843835471f55",
+          "source": "candidate_configs/PRICE_MATR_rules_RC0.json",
+          "reason": "STOP_REFERENCE_PRECEDENCE_EXPIRY_TARGET_CONTRACTS_NOT_MARKET_RESULTS"
+        }
+      ]
+    },
+    {
+      "id": "S-MATR-01-CFG-M1",
+      "parent": "S-MATR-01",
+      "family": "S-MATR-01",
+      "kind": "DECLARED_PARAMETERIZATION_NOT_EXECUTED",
+      "specification": "candidate_configs/history/PRICE_MATR_rules_RC0_before_review.json",
+      "spec_sha256_at_declaration": "8e6d8763c9a6a45a9b28d325e20200730a997aa0c660fff31875469866c17a35",
+      "spec_git_blob_sha256_at_declaration": "8e6d8763c9a6a45a9b28d325e20200730a997aa0c660fff31875469866c17a35",
+      "captured_eol_at_declaration": "LF",
+      "declaration_source": "SAME_COMMIT_AS_WAVE07_REGISTRY_WITH_RAW_HASH",
+      "git_blob_hash_provenance": "VERIFIED_STAGED_ORIGINAL_AND_ACTIVE_REPAIR_SAME_COMMIT",
+      "declared_on": "2026-10-14",
+      "parameter_proposals_not_approved": {
+        "config_id": "S-MATR-01-CFG-M1",
+        "risk_budget": "OPEN",
+        "broker_data": "NOT_SELECTED"
+      },
+      "configuration_complete": false,
+      "data_admission": "NOT_ADMITTED",
+      "performance": "NOT_EVALUATED",
+      "risk_budget": "NOT_APPROVED",
+      "selection_status": "NOT_SELECTED",
+      "trial_runs": [],
+      "active_specification": "candidate_configs/PRICE_MATR_rules_RC0.json",
+      "active_spec_sha256": "5443a739c2b27f3c58454cedcebe22643e2abb600f455802e3b9843835471f55",
+      "declaration_revision_history": [
+        {
+          "version": "RC0_PRE_REVIEW",
+          "sha256": "8e6d8763c9a6a45a9b28d325e20200730a997aa0c660fff31875469866c17a35",
+          "source": "candidate_configs/history/PRICE_MATR_rules_RC0_before_review.json"
+        },
+        {
+          "version": "RC0_REVIEW_REPAIRS",
+          "sha256": "5443a739c2b27f3c58454cedcebe22643e2abb600f455802e3b9843835471f55",
+          "source": "candidate_configs/PRICE_MATR_rules_RC0.json",
+          "reason": "STOP_REFERENCE_PRECEDENCE_EXPIRY_TARGET_CONTRACTS_NOT_MARKET_RESULTS"
+        }
+      ]
     }
   ],
   "run_record_required_fields": [
@@ -221,12 +299,15 @@
     "probes/r020-evaluation/README.md",
     "probes/r020-economic-contract/README.md",
     "probes/r021-form4-semantics/README.md",
-    "probes/r020-benchmark-inference/README.md"
+    "probes/r020-benchmark-inference/README.md",
+    "probes/r020-endpoint-screen/README.md",
+    "probes/r020-least-favourable/README.md"
   ],
   "synthetic_probes_are_strategy_trials": false,
   "declaration_source_commit": "1727470289d1479300b81260ca91ed3597aeeed0",
   "declaration_hash_policy": "SHA256_RAW_BYTES_AT_DECLARATION_KEEP_HISTORY_AS_DOCS_EVOLVE",
   "economic_objective_approval": "ADR-017_Q056_CONCEPTUAL_ONLY",
   "portable_hash_policy": "KEEP_RAW_CAPTURE_SHA_AND_EOL;_VERIFY_GIT_BLOB_SHA_AT_DECLARATION_COMMIT;NEVER_REHASH_HISTORY_AFTER_ADENDAS",
-  "benchmark_package_approval": "ADR018_Q057_K2_PACKAGE_ONLY"
+  "benchmark_package_approval": "ADR018_Q057_K2_PACKAGE_ONLY",
+  "economic_utility_approval": "ADR019_Q058_M1_UTILITY_ONLY"
 }

@@ -230,3 +230,7 @@ arch8/statsmodels0.15: E3 19/19 fixtures, REUSE_AS_IS primitive + WRAP admission
 ## Componentes quant wave06
 
 [E4](research/R-020_E4_findings_2026-10-14.md) reutiliza arch/statsmodels/numpy deE2:14/14arithmetic/components y piloto de media, no método validado; Inf→finitebound exige WRAP inputadmission. EXISTS/AVAILABLE_IN_RESEARCH=YES scope pinado, TARGET_PLUS/HOST UNKNOWN, TECH_COMPATIBLE=PARTIAL, ECONOMICALLY_REASONABLE=UNKNOWN operación, SELECTED=NO. [Sources](research/R-008_sources_evidence_wave03_2026-10-14.md) APIs/dataWRAP candidatos, no nuevos Skills/MCP/agent runtime. Economía y transitivelicenses pendientes; no BUILD motor estadístico/proveedor general.
+
+## Reuse estadístico y contratos wave07
+
+arch/numpy/statsmodelsE2 reutilizados E5/E6:8/8 y11/11componentes, screensCAGR/ES/null no metodologíaaceptada; no nuevaslibs/buildsuitegeneral/runtimeAI. EXISTS/researchavailableYESenpin, TARGET_PLUS/HOSTUNKNOWN, TECHCOMPATIBLEpartial, ECONOMICREASONABLEUNKNOWNops, SELECTEDNO. E5basicalert yE6MCboundswide preservados; wrappers deinputs/source/version antes de producción, licenciastransitivas/target pendientes. [Findings](research/R-020_E5_findings_2026-10-14.md).

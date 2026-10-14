@@ -153,3 +153,7 @@ P0/D008-D011 · DECIDED M1 por owner/ADR019, [propuesta original M0/M1/M2](resea
 ## Vigencia M1 — ADR-019, 2026-10-14
 
 [ADR-019](decisions/ADR-019-PRICE-MATR-economic-utility-M1.md): Q058/M1 DECIDED sólo utilidad ex ante ETF PRICE–MATR: δNI1ppCAGR/año, εcash+1ppneto/año, ρES20%, q95. Siete condiciones: no adaptar a potencia, inferencia válida antes dePASS, guardrails complementarias, escala/costes previos sin capital favorable, espejo defendible, estados separados y NO_STRATEGY_QUALIFIED. Números no equivalen a método/datos/Strategy/backtest aceptados; D011RESEARCHING/F0incompleto, reservaUNKNOWN/lock/targetdeferral. Continuar técnica sin reabrir B/K2/M1.
+
+## Q-059 — guardrails complementarios nuevos
+
+P0/D011, READY_FOR_DECISION. [G-R1/G-R2](research/D-011_complementary_guardrails_proposal_RC0.md) definen cuánto deterioro DD/σ admitir además de ES20. Recomendar G-R1: no deterioro de DD frenteEW6-BH ni σ frenteespejo, con incertidumbre/método admisibles; recovery/pérdidas/stress reportados con censura/limitaciones y modelo válido. G-R2 tolera+1ppMDD/+5%σ, propuesta no autorizada. B/K2/M1 no se preguntan de nuevo; tampoco Risklimits/estrategia/capital/métodos oF0 por esta decisión.

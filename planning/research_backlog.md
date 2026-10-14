@@ -118,3 +118,9 @@ Tras margen/efecto: guardrails económicos, MethodApplicability/calibración CAG
 ## Vigencia M1 — ADR-019, 2026-10-14
 
 [ADR-019](decisions/ADR-019-PRICE-MATR-economic-utility-M1.md): Q058/M1 DECIDED sólo utilidad ex ante ETF PRICE–MATR: δNI1ppCAGR/año, εcash+1ppneto/año, ρES20%, q95. Siete condiciones: no adaptar a potencia, inferencia válida antes dePASS, guardrails complementarias, escala/costes previos sin capital favorable, espejo defendible, estados separados y NO_STRATEGY_QUALIFIED. Números no equivalen a método/datos/Strategy/backtest aceptados; D011RESEARCHING/F0incompleto, reservaUNKNOWN/lock/targetdeferral. Continuar técnica sin reabrir B/K2/M1.
+
+## Wave07 y frontera de gobierno
+
+R020protocolRC5, DataCards/precios/cash/mirror/F4, rulepresets propuestos, costscale y E5/E6 completados en scope design/screen. Validacióninferencial MV01–08 aún abierta: ningún método se selecciona por tasa favorable. Fuente/rights/PIT/protección/targetnumeric siguen gates antes de F0. [Q059](research/D-011_complementary_guardrails_proposal_RC0.md) siguiente gobierno material; después calibración de guardrails/estimandos definitivos con precisión y familia previas, costos/escala/source y Configs financieras.
+
+No backtests/marketdata/reserva ni cap/risknumeric aprobados. R009paridadengine y R007broker siguen por demanda, targetR030 separado antes de implementación. No solicitar Plus/admin institucional o nuevas preferencias B/K2/M1.

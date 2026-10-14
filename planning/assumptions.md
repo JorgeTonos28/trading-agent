@@ -148,3 +148,10 @@ A051 integridad de reserva permanece UNVERIFIED, no resuelta por aprobación O-B
 ## Vigencia M1 — ADR-019, 2026-10-14
 
 [ADR-019](decisions/ADR-019-PRICE-MATR-economic-utility-M1.md): Q058/M1 DECIDED sólo utilidad ex ante ETF PRICE–MATR: δNI1ppCAGR/año, εcash+1ppneto/año, ρES20%, q95. Siete condiciones: no adaptar a potencia, inferencia válida antes dePASS, guardrails complementarias, escala/costes previos sin capital favorable, espejo defendible, estados separados y NO_STRATEGY_QUALIFIED. Números no equivalen a método/datos/Strategy/backtest aceptados; D011RESEARCHING/F0incompleto, reservaUNKNOWN/lock/targetdeferral. Continuar técnica sin reabrir B/K2/M1.
+
+## Supuestos wave07
+
+- A-065 P0 UNVERIFIED: CI de CAGR/ES tiene cobertura suficiente bajo dependencia/regímenes y familia real. E5/E6 no aceptan método; AND bajo no valida nullmarginal/leastfavourable supremum.
+- A-066 P1 UNVERIFIED: dos rulepresets con parámetros especificados son configuraciones financieras ejecutables. Target/caps/broker/source/protección/fees siguen OPEN;10declaraciones no10estrategias admitidas.
+- A-067 P0 UNVERIFIED: ES menor implica DD/vol/recuperación adecuados. Q059 guardrails nueva materialidad, censura y tiposde evidencia separados.
+- A-068 P1 UNVERIFIED: coste/capital pueden elegirse porcelda favorable oF0significa costo0 real. Scenariosprevios y anchorowner antes de resultados; costos/scaleUNKNOWN→operacionalNOT_EVALUATED.

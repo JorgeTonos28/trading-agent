@@ -80,3 +80,7 @@ Q054 referenciaR2 DECIDED por ADR015; D035 restante abierto. [Cálculos comunes 
 ## Vigencia M1 — ADR-019, 2026-10-14
 
 [ADR-019](decisions/ADR-019-PRICE-MATR-economic-utility-M1.md): Q058/M1 DECIDED sólo utilidad ex ante ETF PRICE–MATR: δNI1ppCAGR/año, εcash+1ppneto/año, ρES20%, q95. Siete condiciones: no adaptar a potencia, inferencia válida antes dePASS, guardrails complementarias, escala/costes previos sin capital favorable, espejo defendible, estados separados y NO_STRATEGY_QUALIFIED. Números no equivalen a método/datos/Strategy/backtest aceptados; D011RESEARCHING/F0incompleto, reservaUNKNOWN/lock/targetdeferral. Continuar técnica sin reabrir B/K2/M1.
+
+## Rulepresets y evidencia wave07
+
+[Configurations](research/R-020_PRICE_MATR_rule_configurations_RC0.md) conIDs hijos dePRICE/MATR, numparams propuestos sin aprobar/seleccionar yfinancialtarget/risk/broker/source pendientes. [DataCards](research/R-020_dataset_cards_RC0.md)allNOT_ADMITTED, [RC5](research/R-020_evaluation_contract_RC5.md) diseño sin métodoaceptado yQ059 controles nuevos. Registry10declaraciones,0trials; no Strategy recomendada porretorno ni selección implícitaMATR.

@@ -38,3 +38,7 @@ M-11 conserva integridad UNKNOWN. Este incremento no cierra inventario ni demues
 | X12 | Ficticios E4 y ejemplos de riqueza/coste de margen | Probes/docs2026-10-14 | No observaciones reales/alpha, no cambio de ventana ni apertura de reserva |
 
 M11 repositoryaudit e9b36dc parcial; ningún hallazgo establece integridad o contaminación suficiente automáticamente. Reserva INTEGRITY_UNKNOWN.
+
+## Wave07 exposición — 2026-10-14
+
+X13: E5/E6paths/parameters/MCstatistics ySC0costs/capital sonficticios, no precios/backtests/margenporretorno. Lecturadocsarch8 repitecontextométodo yaX10, sin ejemploSPYdatasetdownload. Nueva parametrizaciónPRICE/MATR noinformadaporresultadosdemercado; registrydocumentadraft/repair. HoldoutINTEGRITY_UNKNOWN yM11partial, no apertura/reserva ni certificación porprobes.

@@ -62,3 +62,7 @@ El snapshot de decisión fija conjunto de observaciones y sus revisiones, univer
 ## Demanda wave06
 
 [BookK2](research/R-020_K2_benchmark_book_RC0.md) precisa pay-date/receivable/cash y targets/realizados; [SEC](research/R-021_SEC_availability_admission_RC3.md) precisa PAC/rebuilds/canales, no dailydate=availability. Costesoperativos por uso/escala y streams separados, no brokerstate modificado. Nuevos vendors documentados no admitidos, derechos/quality/PIT pendientes.
+
+## DataCards wave07
+
+[Four cards](research/R-020_dataset_cards_RC0.md) yJSON comprueban6ETF/rawactions/paydates/clocks/cash/vintage/espejo/F4versionrequirements, estadoallNOT_ADMITTED. Indicadores/financialmarks/fills tienen freshnessdistintas ynoheredaravailability defieldlabel. Source/quality/rights/paridad siguenabiertas; ningúnbenchmark aceptado porDOCS_ONLY.

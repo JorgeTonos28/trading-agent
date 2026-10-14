@@ -209,3 +209,11 @@ QA wave06: JSON/YAML,331 enlaces locales, campos numéricos nulos/F0 bloqueado, 
 Utilidades1ppNI/1ppcash/20%ES95 y siete condiciones registradas. Unidades/alcance claros en card/perfil, historia/alternativas conservadas. Inferencia/guardrails/scale/costs/datasets/configs no aprobados, D011 abierto y F0incompleto. Siguiente trabajo autónomo técnico, no volver a pedir B/K2/M1. Sin datos/backtests/implementación/gasto/main/target/admin.
 
 Propagación documental: helper privado tuvo SyntaxError antes de editar artefactos; ADR019 quedó en commit propio ed35008. Se corrigió el helper y se propagó estado mediante commit documental compañero, sin reescribir historia. No probe/captura modificado ni gate pasado por ese error/reparación.
+
+## 2026-10-14 — wave07 técnica después de M1
+
+RC5designcontract completaestimandos/gates/MV/scopeestado, no métodoaceptado; E5actualCAGR/ES8/8screens yE6nullcases11/11sinM1cambio, basicNIalert/MCwide/ANDmasking/supremumnotproven. Datosficticios,nofinancialtrials/historia/reserva/instalación/gasto/target. Archivosfuente/captura/launcher/deps yE5/E6precedentes intactos.
+
+4DataCards/6ETFscopeallNOT_ADMITTED,20costscalehypotheticalcells sinKselección,2childrulepresetsnuevosnoStrategy/risk/broker aprobados. StopATR/p0/parciales/preference/expiry/slots/StrategyTargetOPEN reparados trasreview; JSONpre-review archivado yregistryoriginalSHA+revisionactiva,10declaraciones/trials0. Q059 READY nueva elección deDD/σguardrails/reportes, no B/K2/M1. Censura válida/reportcompleteness ymodeladmission distintos degatesnuméricos; noRisklimitsinventados/autoridad nueva. Perfil/card/contratos/registro/dependencias actualizados; F0incompleto/holdoutUNKNOWN/main/H7/lock/targetdeferred preservados.
+
+QA:374enlaceslocales/JSON/YAML, M1unidades/valores, Q059noaprobado,4DataCardsNOT_ADMITTED/2configs financieramenteincompletas,10decl/trials0, hashesoriginales+repair/commit/E5E6/launcher/deps/AST correctos. Se verifican bytesstaged de captures/history antes de commit; sin rerun, main permanece a28d6f3.

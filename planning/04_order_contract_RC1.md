@@ -67,3 +67,7 @@ Las APIs/SDKs oficiales de brokers son candidatos a `WRAP`, no gateways de riesg
 ## Demanda PRICE–MATR wave05
 
 [Pairing](research/R-020_PRICE_MATR_pairing_spec_RC0.md) propone sello de entry antes de ratchet agregado, con protección inmediata de parciales y p0/fills/qty/HWM reconciliados. Es mecanismo candidato a contrastar, no protección broker aceptada ni regla Champion aprobada; lote/seal y coste de retraso permanecen en Config/gates broker/engine. Stop deseado no confirmado, crossed/missing no riesgo cero; ADR015/G1+G2 intactos.
+
+## Demanda de presets wave07
+
+[Rules](research/R-020_PRICE_MATR_rule_configurations_RC0.md) explicita ATR_signal frozen/rawrebase/p0partialexfees/desiredmonotone, materialpauseantesdehealthyexit/replace/entry, expiryentrada separado deprotección, slots/cashreconciliado ytargetStrategyOPEN. Broker mapping yprotección efectiva requieren pruebas, no pasan porsemánticaJSON; G1G2/noG3/autoridadRoot intactos.

@@ -1,0 +1,197 @@
+{
+  "scope": "SYNTHETIC_LEAST_FAVOURABLE_SCREEN_NOT_STATISTICAL_ACCEPTANCE",
+  "source_sha256": "8f1665c4ac2ed34c3aa4c5a1962f0b230583aa84336ecf66bd2000fd27d43202",
+  "observed_on": "2026-10-14",
+  "checks": [
+    {
+      "id": "NI_POPULATION_BOUNDARY",
+      "status": "PASS"
+    },
+    {
+      "id": "CASH_POPULATION_BOUNDARY",
+      "status": "PASS"
+    },
+    {
+      "id": "ES_POPULATION_BOUNDARY",
+      "status": "PASS"
+    },
+    {
+      "id": "TAIL_POSITIVE_REFERENCE",
+      "status": "PASS"
+    },
+    {
+      "id": "FRACTIONAL_MASS_NO_TIE_OVERCOUNT",
+      "status": "PASS"
+    },
+    {
+      "id": "DRAWDOWN_BASE_NOT_RESET_AT_YEAR",
+      "status": "PASS"
+    },
+    {
+      "id": "RECOVERY_CENSORED_NOT_ZERO",
+      "status": "PASS"
+    },
+    {
+      "id": "NI_NULL_POPULATION_ONE_NULL_OTHER_POSITIVE",
+      "status": "PASS"
+    },
+    {
+      "id": "CASH_NULL_POPULATION_ONE_NULL_OTHER_POSITIVE",
+      "status": "PASS"
+    },
+    {
+      "id": "ES_NULL_POPULATION_ONE_NULL_OTHER_POSITIVE",
+      "status": "PASS"
+    },
+    {
+      "id": "CAPTURED_THREE_NULL_CASES_NOT_COVERAGE_PASS",
+      "status": "PASS"
+    }
+  ],
+  "strategy_trials": 0,
+  "method_validated": false,
+  "settings": {
+    "MC": 160,
+    "n": 1008,
+    "burn": 512,
+    "B": 999,
+    "block": 20,
+    "seed": 20261016,
+    "method": "percentile",
+    "size": 0.95,
+    "phi": 0.4,
+    "correlation": 0.8,
+    "margins_fixed_ADR019": true
+  },
+  "screen": [
+    {
+      "case": "NI_NULL",
+      "target_null_index": 0,
+      "population_contrasts": [
+        5.204170427930421e-18,
+        0.060000000000000005,
+        0.003224576226663856
+      ],
+      "sigma": [
+        0.001696053661747965,
+        0.008,
+        0.004
+      ],
+      "MC_total": 160,
+      "errors": 0,
+      "endpoint_pass_counts": [
+        8,
+        145,
+        160
+      ],
+      "AND_false_qualification_count": 2,
+      "MC_intervals": [
+        {
+          "count": 8,
+          "rate": 0.05,
+          "Wilson95": [
+            0.025550596478834536,
+            0.09555097917552016
+          ]
+        },
+        {
+          "count": 2,
+          "rate": 0.0125,
+          "Wilson95": [
+            0.0034346711081265358,
+            0.04442536918409104
+          ]
+        }
+      ]
+    },
+    {
+      "case": "CASH_NULL",
+      "target_null_index": 1,
+      "population_contrasts": [
+        0.05,
+        1.734723475976807e-18,
+        0.003224576226663634
+      ],
+      "sigma": [
+        0.0016413385553503135,
+        0.008,
+        0.004
+      ],
+      "MC_total": 160,
+      "errors": 0,
+      "endpoint_pass_counts": [
+        30,
+        9,
+        160
+      ],
+      "AND_false_qualification_count": 0,
+      "MC_intervals": [
+        {
+          "count": 9,
+          "rate": 0.05625,
+          "Wilson95": [
+            0.029872301755764157,
+            0.10343619645894672
+          ]
+        },
+        {
+          "count": 0,
+          "rate": 0.0,
+          "Wilson95": [
+            0.0,
+            0.023446195171505202
+          ]
+        }
+      ]
+    },
+    {
+      "case": "ES_NULL",
+      "target_null_index": 2,
+      "population_contrasts": [
+        0.10999999999999999,
+        0.09,
+        -1.9949319973733282e-16
+      ],
+      "sigma": [
+        0.003355063154426019,
+        0.008,
+        0.004
+      ],
+      "MC_total": 160,
+      "errors": 0,
+      "endpoint_pass_counts": [
+        79,
+        114,
+        6
+      ],
+      "AND_false_qualification_count": 5,
+      "MC_intervals": [
+        {
+          "count": 6,
+          "rate": 0.0375,
+          "Wilson95": [
+            0.017297923166500116,
+            0.0793898073671422
+          ]
+        },
+        {
+          "count": 5,
+          "rate": 0.03125,
+          "Wilson95": [
+            0.013420516687644407,
+            0.07106029128564173
+          ]
+        }
+      ]
+    }
+  ],
+  "pass_count": 11,
+  "total": 11,
+  "elapsed_seconds": 110.31451689987443,
+  "blocked_network_events": [],
+  "versions": {
+    "numpy": "2.5.4",
+    "arch": "8.0.0",
+    "statsmodels": "0.15.0"
+  }
+}

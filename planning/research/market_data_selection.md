@@ -44,3 +44,7 @@ Las filas anteriores son inventario inicial fechado. [Wave broker/data](R-007_00
 ## Alternativas/rights adicionales — wave06
 
 [Alternativas/rights adicionales](R-008_sources_evidence_wave03_2026-10-14.md) añade especificación y límites; Q057 aprobado en paquete, Q058 números propuestos. Sin fuente/modelo/Strategy admitidos ni performance. E4 sólo cálculo/meanpilot, no cobertura CAGR/ES/DD; M11 parcial/holdoutUNKNOWN. Versiones/declaraciones anteriores conservadas, no rehash histórico.
+
+## Avance técnico posterior — wave07
+
+[R-020_dataset_cards_RC0.md](R-020_dataset_cards_RC0.md) especifica propuestas/gates, no método/dataset/Strategy admitidos. M1 aprobado/ADR019; Q059 guardrails distintas propuestas. E5/E6screens no statisticalacceptance, costos/scale/fuente/financialtarget pendientes. Versiones anteriores conservadas; no benchmark/margen cambiados por resultados.

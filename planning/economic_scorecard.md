@@ -82,3 +82,7 @@ Una recomendación paga debe identificar una condición comprobable (por ejemplo
 ## Vigencia M1 — ADR-019, 2026-10-14
 
 [ADR-019](decisions/ADR-019-PRICE-MATR-economic-utility-M1.md): Q058/M1 DECIDED sólo utilidad ex ante ETF PRICE–MATR: δNI1ppCAGR/año, εcash+1ppneto/año, ρES20%, q95. Siete condiciones: no adaptar a potencia, inferencia válida antes dePASS, guardrails complementarias, escala/costes previos sin capital favorable, espejo defendible, estados separados y NO_STRATEGY_QUALIFIED. Números no equivalen a método/datos/Strategy/backtest aceptados; D011RESEARCHING/F0incompleto, reservaUNKNOWN/lock/targetdeferral. Continuar técnica sin reabrir B/K2/M1.
+
+## Escala/costes predefinidos — wave07
+
+[SC0](research/R-020_cost_scale_scenarios_RC0.md)20celdas hipotéticas, fixed/variable/incremental/sunk/oneoff/time separados. Grilla noKoperacional ni budget/gasto aprobados; F0no costosreales0. NI/cashafterops deS; pasivosowncosts. Todaseldas/anchorprevio, no capitalfavorable retrospectivo. M1utilidadaprobada distinta de costos/modelos/operaciónaceptados.

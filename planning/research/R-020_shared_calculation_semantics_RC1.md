@@ -25,3 +25,7 @@ Episode/lot policy debe definir referencia/HWM al llenar, ante partials/adds y a
 ## Dependencias y cierre pendiente
 
 M-01/02/03 semánticas se proponen; M-04–08 requieren configuración exacta/episodios/órdenes/lotes/datos. M-09/10 requiere DatasetCard as-of/inception/liquidez/costs; M-11 sigue [OOS propuesto](D-011_OOS_policy_decision_RC0.md), ninguna muestra reservada abierta ni suficiente por parser PASS. R-009 QP1–10 y revisión independiente antes de selección técnica; mantener open fields en decision register sin convertir documento en aprobación por silencio. Pedagogía podrá mostrar raw-vs-adjusted, stops y clocks con fuentes/contrafactuales etiquetados.
+
+## Avance técnico posterior — wave07
+
+[R-020_PRICE_MATR_rule_configurations_RC0.md](R-020_PRICE_MATR_rule_configurations_RC0.md) especifica propuestas/gates, no método/dataset/Strategy admitidos. M1 aprobado/ADR019; Q059 guardrails distintas propuestas. E5/E6screens no statisticalacceptance, costos/scale/fuente/financialtarget pendientes. Versiones anteriores conservadas; no benchmark/margen cambiados por resultados.

@@ -166,3 +166,9 @@ Después: criterios/guardrails/modelos/calibración/suficiencia antes de F0, fue
 ## Vigencia M1 — ADR-019, 2026-10-14
 
 [ADR-019](decisions/ADR-019-PRICE-MATR-economic-utility-M1.md): Q058/M1 DECIDED sólo utilidad ex ante ETF PRICE–MATR: δNI1ppCAGR/año, εcash+1ppneto/año, ρES20%, q95. Siete condiciones: no adaptar a potencia, inferencia válida antes dePASS, guardrails complementarias, escala/costes previos sin capital favorable, espejo defendible, estados separados y NO_STRATEGY_QUALIFIED. Números no equivalen a método/datos/Strategy/backtest aceptados; D011RESEARCHING/F0incompleto, reservaUNKNOWN/lock/targetdeferral. Continuar técnica sin reabrir B/K2/M1.
+
+## Endpoint wave07 — 2026-10-14
+
+M1 aprobado/sincronizadoADR019. Trabajo técnico solicitado: RC5 diseño (no método aceptado),4DataCards NOT_ADMITTED/6ETFobligaciones,2presets con versión propia financieros incompletos,20costscenario cells sinK elegido y E5/E6screening realCAGR/ES/pseudonullcase con incertidumbre/limites preservados. ReviewP1 guardrails/semánticas reparado.
+
+HUMAN_ACTION_REQUIRED siguiente [Q059](research/D-011_complementary_guardrails_proposal_RC0.md): tolerancia complementaria DD/σ, no B/K2/M1. Recomendar G-R1 conservador, G-R2 opción con deterioro permitido distinto. Contrato definitivo precede fullcalibration/MethodApplicability y F0; sources/configs/risk/broker/engine en scopes propios. No pasar DoR/target por documentos o método porfixtures, ni cambiar márgenes por muestra.

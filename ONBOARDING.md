@@ -127,3 +127,7 @@ ADR018/Q057DECIDED; no volver a pedir K2. [Q058](planning/research/D-011_economi
 ## Vigencia M1 — ADR-019, 2026-10-14
 
 [ADR-019](planning/decisions/ADR-019-PRICE-MATR-economic-utility-M1.md): Q058/M1 DECIDED sólo utilidad ex ante ETF PRICE–MATR: δNI1ppCAGR/año, εcash+1ppneto/año, ρES20%, q95. Siete condiciones: no adaptar a potencia, inferencia válida antes dePASS, guardrails complementarias, escala/costes previos sin capital favorable, espejo defendible, estados separados y NO_STRATEGY_QUALIFIED. Números no equivalen a método/datos/Strategy/backtest aceptados; D011RESEARCHING/F0incompleto, reservaUNKNOWN/lock/targetdeferral. Continuar técnica sin reabrir B/K2/M1.
+
+## Estado Preparation — wave07
+
+M1DECIDED/ADR019, no volverapreguntarB/K2/M1. [Q059](planning/research/D-011_complementary_guardrails_proposal_RC0.md) proponeguardrails económicos nuevos; [RC5](planning/research/R-020_evaluation_contract_RC5.md) métodoNOT_ACCEPTED, DataCardsNOT_ADMITTED ypresets financierosincompletos. source/registry/versions persistidossin dependencechat; noPASSoperacional ni desbloqueodeDoR/target.

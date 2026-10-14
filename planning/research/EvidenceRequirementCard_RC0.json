@@ -63,5 +63,16 @@
   "margin_approval": "ADR019_Q058_M1",
   "margin_units": "NI_AND_CASH_DECIMAL_ANNUAL_CAGR_DIFFERENCES;RHO_FRACTION;Q_PROBABILITY",
   "sample_or_method_approved": false,
-  "guardrails_frozen": false
+  "guardrails_frozen": false,
+  "evaluation_contract": "R-020_evaluation_contract_RC5.md",
+  "guardrail_proposal": "D-011_complementary_guardrails_proposal_RC0.md",
+  "guardrail_approval": null,
+  "guardrail_method_accepted": false,
+  "DataCards": "datacards/financial_dataset_cards_RC0.json",
+  "cost_scale_scenarios": "R-020_cost_scale_scenarios_RC0.md",
+  "configured_rule_presets": "candidate_configs/PRICE_MATR_rules_RC0.json",
+  "method_acceptance": "NOT_ACCEPTED",
+  "null_screening_refs": [
+    "R-020_E5_findings_2026-10-14.md"
+  ]
 }
