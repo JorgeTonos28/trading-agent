@@ -144,3 +144,7 @@ A051 integridad de reserva permanece UNVERIFIED, no resuelta por aprobación O-B
 - A-062 P0 UNVERIFIED: inferencia de CAGR/ES con bloques tiene cobertura/power adecuados. Piloto de media evidencia fragilidad iid, no valida método; Inf puede producir límite finito, admission previa obligatoria.
 - A-063 P1 UNVERIFIED: full/quarterlyindex SEC actual acredita availability histórica. PAC/rebuilds generan diferencias; raw versions/channel/receipt pendientes.
 - A-064 P1 UNVERIFIED: coste operativo incrementa cero o se puede cargar también a benchmark pasivo. Uso/escala/K/accrual pendientes; net_after_ops y net_trading separados, UNKNOWN bloquea claim operacional.
+
+## Vigencia M1 — ADR-019, 2026-10-14
+
+[ADR-019](decisions/ADR-019-PRICE-MATR-economic-utility-M1.md): Q058/M1 DECIDED sólo utilidad ex ante ETF PRICE–MATR: δNI1ppCAGR/año, εcash+1ppneto/año, ρES20%, q95. Siete condiciones: no adaptar a potencia, inferencia válida antes dePASS, guardrails complementarias, escala/costes previos sin capital favorable, espejo defendible, estados separados y NO_STRATEGY_QUALIFIED. Números no equivalen a método/datos/Strategy/backtest aceptados; D011RESEARCHING/F0incompleto, reservaUNKNOWN/lock/targetdeferral. Continuar técnica sin reabrir B/K2/M1.

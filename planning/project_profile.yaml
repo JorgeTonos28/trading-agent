@@ -652,7 +652,7 @@ financial_preparation_wave06:
   source_evidence: planning/research/R-008_sources_evidence_wave03_2026-10-14.md
   SEC_admission: planning/research/R-021_SEC_availability_admission_RC3.md
   M11: PARTIAL_REPOSITORY_AUDIT_INTEGRITY_UNKNOWN
-  Q058: READY_FOR_DECISION_NOT_APPROVED
+  Q058: DECIDED_UTILITY_ONLY_ADR019
   recommendation: M1_1PP_NI_1PP_CASH_20PCT_ES95
   numeric_margins_approved: false
   benchmark_realization_frozen: false
@@ -668,3 +668,22 @@ financial_preparation_wave06:
   implementation_locked: true
   target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED
   incremental_spend: 0
+
+economic_utility_approval:
+  ADR: ADR-019
+  Q058: DECIDED
+  scope: ETF_PRICE_MATR_ONLY
+  delta_NI_CAGR_annual: 0.01
+  epsilon_cash_CAGR_annual: 0.01
+  rho_ES: 0.20
+  q_ES: 0.95
+  utility_approved: true
+  method_and_sample_validated: false
+  complementary_guardrails_frozen: false
+  operational_capital_selected: false
+  economic_operational_costs_known: false
+  F0: NOT_FROZEN_INCOMPLETE
+  next_work: STATISTICAL_VALIDATION_DATACARDS_CONFIGURATIONS_AND_COMPARABILITY
+  confirmation_integrity: INTEGRITY_UNKNOWN
+  implementation_locked: true
+  target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED

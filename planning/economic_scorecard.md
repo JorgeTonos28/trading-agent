@@ -78,3 +78,7 @@ Una recomendación paga debe identificar una condición comprobable (por ejemplo
 ## Fuentes y utilidad wave06
 
 [R008wave03](research/R-008_sources_evidence_wave03_2026-10-14.md) incorpora EODHD/Twelve/Norgate/Nasdaq con seis campos, fijos/variable/scale/lock-in y diferencias de historia/rights/calidad. Sin cuenta/gasto/provider seleccionado; ni free insuficiencia universal ni paid quality demostrada. [Q058](research/D-011_economic_margins_proposal_RC0.md) muestra F/K ficticio, no budget/capital; overhead se asigna aS, no a referencias pasivas para borrar oportunidad. Runtime/library license0 no opscost0.
+
+## Vigencia M1 — ADR-019, 2026-10-14
+
+[ADR-019](decisions/ADR-019-PRICE-MATR-economic-utility-M1.md): Q058/M1 DECIDED sólo utilidad ex ante ETF PRICE–MATR: δNI1ppCAGR/año, εcash+1ppneto/año, ρES20%, q95. Siete condiciones: no adaptar a potencia, inferencia válida antes dePASS, guardrails complementarias, escala/costes previos sin capital favorable, espejo defendible, estados separados y NO_STRATEGY_QUALIFIED. Números no equivalen a método/datos/Strategy/backtest aceptados; D011RESEARCHING/F0incompleto, reservaUNKNOWN/lock/targetdeferral. Continuar técnica sin reabrir B/K2/M1.

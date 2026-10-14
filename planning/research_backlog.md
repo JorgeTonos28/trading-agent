@@ -114,3 +114,7 @@ Después de esa referencia: fijar métricas candidatas/MethodApplicabilityCard, 
 R020 bookK2/RC4/márgenes, M11 repositorio parcial y E4 completados en scope de diseño/probes; R008 nuevas alternativas y R021 canalSEC con PAC/índices/readiness. [Review](research/R-020_wave06_independent_review_2026-10-14.md) incorpora reparaciones de overhead/streams/targets. No cierre estadístico ni fuente; M11UNKNOWN. Siguiente gobierno numérico Q058, no preferencias abstractas.
 
 Tras margen/efecto: guardrails económicos, MethodApplicability/calibración CAGR/ES/DD/familia/precision previa, CandidateConfig, price+actions+cash/datasetrights/as-of y broker/engine parity; formulas/reservas/workflow por demanda. No capital/source UNKNOWN=0 ni calibración por pilot. R030/Plus/PC personal diferido antes de implementación, no solicitud actual.
+
+## Vigencia M1 — ADR-019, 2026-10-14
+
+[ADR-019](decisions/ADR-019-PRICE-MATR-economic-utility-M1.md): Q058/M1 DECIDED sólo utilidad ex ante ETF PRICE–MATR: δNI1ppCAGR/año, εcash+1ppneto/año, ρES20%, q95. Siete condiciones: no adaptar a potencia, inferencia válida antes dePASS, guardrails complementarias, escala/costes previos sin capital favorable, espejo defendible, estados separados y NO_STRATEGY_QUALIFIED. Números no equivalen a método/datos/Strategy/backtest aceptados; D011RESEARCHING/F0incompleto, reservaUNKNOWN/lock/targetdeferral. Continuar técnica sin reabrir B/K2/M1.

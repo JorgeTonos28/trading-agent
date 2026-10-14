@@ -203,3 +203,9 @@ E4 único14/14 arithmetic/components, MC160porDGP/499basicmeanbootstrap, indepen
 R008fuentes primarias EODHD/Twelve/Norgate/Nasdaq con rights/coverage/costs desconocidos y paidreserves sin gasto. SECnightindex/PAC/quarterlyrebuild noPITcertificado; M11inventario parcialGit sin datasetformatstracked no prueba integridad. Exposureledger ampliado. Review independiente repara overhead/streams/targets, target deferred/lock/main/H7/invariantes intactos.
 
 QA wave06: JSON/YAML,331 enlaces locales, campos numéricos nulos/F0 bloqueado, commits/EOL/hashes de declaraciones y capturas E3/F2/E4/dependencias/AST correctos. No probes repetidos, tests de estrategias o target; main/origin-main conservan a28d6f3. Q058 READY tras review exclusivamente utilidad/cola, no método o suficiencia.
+
+## 2026-10-14 — ADR019, owner aprueba Q058/M1
+
+Utilidades1ppNI/1ppcash/20%ES95 y siete condiciones registradas. Unidades/alcance claros en card/perfil, historia/alternativas conservadas. Inferencia/guardrails/scale/costs/datasets/configs no aprobados, D011 abierto y F0incompleto. Siguiente trabajo autónomo técnico, no volver a pedir B/K2/M1. Sin datos/backtests/implementación/gasto/main/target/admin.
+
+Propagación documental: helper privado tuvo SyntaxError antes de editar artefactos; ADR019 quedó en commit propio ed35008. Se corrigió el helper y se propagó estado mediante commit documental compañero, sin reescribir historia. No probe/captura modificado ni gate pasado por ese error/reparación.

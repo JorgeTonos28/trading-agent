@@ -1,6 +1,6 @@
 # Q-058 — márgenes y efecto mínimo económico PRICE–MATR
 
-2026-10-14 · READY_FOR_DECISION tras revisión independiente; propuesta nueva, no aprobada. Q056/B y Q057/K2 decididos; no se vuelven a preguntar. D011 RESEARCHING, fuentes no admitidas, F0 incompleto y reserva UNKNOWN.
+2026-10-14 · DECIDED M1 por propietario/ADR019; formulación original y alternativas conservadas. Q056/B y Q057/K2 decididos; no se vuelven a preguntar. D011 RESEARCHING, fuentes no admitidas, F0 incompleto y reserva UNKNOWN.
 
 ## Decisión material propuesta
 
@@ -38,3 +38,7 @@ También es válido rechazar los números o proponer otro presupuesto antes de r
 [RC4](R-020_statistical_method_contract_RC4.md) distingue ES(S)-ES(M) de ES(S-M), contraste sin ratio pero referencia positiva/estimable, familia y bloques. [E4](R-020_E4_findings_2026-10-14.md) muestra que independencia falsa puede inflar rechazo y que cuatro años ficticios no garantizan potencia. No usar sus tasas para escoger márgenes ni prometer que M1 se demostrará. La simulación no valida CAGR/ES/DD, α conjunta, block20 o cuotas target.
 
 Después de decisión: completar guardrails y MethodApplicabilityCard, precisiones/muestra/familia/errores con calibración adecuada a los estimandos, fuente prices+corporate events+cash y paridad. Todos se congelan antes de evaluar. Integridad UNKNOWN bloquea confirmación, sin modificar ventanas ni abrir reserva para estimar potencia. **No se pide otra preferencia económica abstracta**, sino un nuevo límite numérico de pérdida/beneficio aceptable.
+
+## Vigencia M1 — ADR-019, 2026-10-14
+
+[ADR-019](../decisions/ADR-019-PRICE-MATR-economic-utility-M1.md): Q058/M1 DECIDED sólo utilidad ex ante ETF PRICE–MATR: δNI1ppCAGR/año, εcash+1ppneto/año, ρES20%, q95. Siete condiciones: no adaptar a potencia, inferencia válida antes dePASS, guardrails complementarias, escala/costes previos sin capital favorable, espejo defendible, estados separados y NO_STRATEGY_QUALIFIED. Números no equivalen a método/datos/Strategy/backtest aceptados; D011RESEARCHING/F0incompleto, reservaUNKNOWN/lock/targetdeferral. Continuar técnica sin reabrir B/K2/M1.

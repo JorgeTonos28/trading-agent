@@ -123,3 +123,7 @@ Q056 aprobado/ADR017; no repetir elección conceptual. [Q057](planning/research/
 ## Preparation vigente — wave06
 
 ADR018/Q057DECIDED; no volver a pedir K2. [Q058](planning/research/D-011_economic_margins_proposal_RC0.md) propone utilidad numérica nueva. Source/probe/captura/registry preservados, book/modelos no frozen, ningún dato/runtime aceptado. Leer perfil y próximosgates, no Plus/admin institucional o desbloqueo financiero.
+
+## Vigencia M1 — ADR-019, 2026-10-14
+
+[ADR-019](planning/decisions/ADR-019-PRICE-MATR-economic-utility-M1.md): Q058/M1 DECIDED sólo utilidad ex ante ETF PRICE–MATR: δNI1ppCAGR/año, εcash+1ppneto/año, ρES20%, q95. Siete condiciones: no adaptar a potencia, inferencia válida antes dePASS, guardrails complementarias, escala/costes previos sin capital favorable, espejo defendible, estados separados y NO_STRATEGY_QUALIFIED. Números no equivalen a método/datos/Strategy/backtest aceptados; D011RESEARCHING/F0incompleto, reservaUNKNOWN/lock/targetdeferral. Continuar técnica sin reabrir B/K2/M1.

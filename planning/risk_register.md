@@ -170,3 +170,7 @@ K067 conserva integridad UNKNOWN y O-B aprobado sólo conceptual. Riesgos adicio
 - K-081 P1: índices SEC actuales/revisados reescriben universo histórico; acceptance/dailydate usado como receipt. PAC/version/canal gates, M11unknown no reservaabierta.
 - K-082 P0: overhead del sistema cargado a cash/EWpasivo para esconder oportunidad, o gastos/scaleUNKNOWN tratados como0. NI/cash net_after_incremental_ops deS contra costespropios debenchmark, ES net_trading; gobiernoeconómico no capital elegido.
 - K-083 P1: pagar por historia se confunde con derechos/PIT/quality; retención al terminar y sourceindicative ignoradas. R008wave03/phasedscorecards, no contratación ni eliminación de audit para encajar en precio.
+
+## Vigencia M1 — ADR-019, 2026-10-14
+
+[ADR-019](decisions/ADR-019-PRICE-MATR-economic-utility-M1.md): Q058/M1 DECIDED sólo utilidad ex ante ETF PRICE–MATR: δNI1ppCAGR/año, εcash+1ppneto/año, ρES20%, q95. Siete condiciones: no adaptar a potencia, inferencia válida antes dePASS, guardrails complementarias, escala/costes previos sin capital favorable, espejo defendible, estados separados y NO_STRATEGY_QUALIFIED. Números no equivalen a método/datos/Strategy/backtest aceptados; D011RESEARCHING/F0incompleto, reservaUNKNOWN/lock/targetdeferral. Continuar técnica sin reabrir B/K2/M1.

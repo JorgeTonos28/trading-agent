@@ -162,3 +162,7 @@ Siguiente decisión material: [Q057 referencias K1/K2/K3](research/D-011_benchma
 K2 registrado/sincronizado ADR018. Paquete autónomo: bookreproducible/RC4/streams, E4 arithmetic/MC, admisión documental SEC/vendor y auditoría parcialM11. No precios/backtests/reserva abiertos. Siguiente decisión nueva [Q058](research/D-011_economic_margins_proposal_RC0.md), presupuesto numéricoM1 propuesto previo a resultados; no repetir Q056/Q057 ni escoger márgenes para alcanzar power.
 
 Después: criterios/guardrails/modelos/calibración/suficiencia antes de F0, fuentes/reglas/paridad y financialP0/P1 según demanda. TargetR030 permanece separado; no main/implementación/gasto/admin ni nueva ronda agéntica.
+
+## Vigencia M1 — ADR-019, 2026-10-14
+
+[ADR-019](decisions/ADR-019-PRICE-MATR-economic-utility-M1.md): Q058/M1 DECIDED sólo utilidad ex ante ETF PRICE–MATR: δNI1ppCAGR/año, εcash+1ppneto/año, ρES20%, q95. Siete condiciones: no adaptar a potencia, inferencia válida antes dePASS, guardrails complementarias, escala/costes previos sin capital favorable, espejo defendible, estados separados y NO_STRATEGY_QUALIFIED. Números no equivalen a método/datos/Strategy/backtest aceptados; D011RESEARCHING/F0incompleto, reservaUNKNOWN/lock/targetdeferral. Continuar técnica sin reabrir B/K2/M1.

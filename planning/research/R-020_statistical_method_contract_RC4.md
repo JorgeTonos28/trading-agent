@@ -38,3 +38,7 @@ Todos insuficientes => NO_STRATEGY_QUALIFIED con razones; no cambiar margen ni u
 ## Reutilización
 
 arch8 primitives y statsmodels0.15/Wilson/Holm/Bonferroni: REUSE_AS_IS funciones + WRAP validación externa, candidato no selección. E4 sin instalación nueva; licencias transitivas/versiones/target siguen pendientes, no BUILD suite general. [ES, fuente de autores](https://arxiv.org/abs/cond-mat/0105191) sustenta la distinción de definición en distribuciones discretas; no valida nuestro tamaño de muestra ni porcentajes.
+
+## Vigencia M1 — ADR-019, 2026-10-14
+
+[ADR-019](../decisions/ADR-019-PRICE-MATR-economic-utility-M1.md): Q058/M1 DECIDED sólo utilidad ex ante ETF PRICE–MATR: δNI1ppCAGR/año, εcash+1ppneto/año, ρES20%, q95. Siete condiciones: no adaptar a potencia, inferencia válida antes dePASS, guardrails complementarias, escala/costes previos sin capital favorable, espejo defendible, estados separados y NO_STRATEGY_QUALIFIED. Números no equivalen a método/datos/Strategy/backtest aceptados; D011RESEARCHING/F0incompleto, reservaUNKNOWN/lock/targetdeferral. Continuar técnica sin reabrir B/K2/M1.
