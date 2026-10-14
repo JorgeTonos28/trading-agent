@@ -98,3 +98,9 @@ Q056 READY es el siguiente gobierno material antes de efecto/muestra/endpoint; D
 ## Aprobación económica vigente — 2026-10-14, ADR-017
 
 [ADR-017](decisions/ADR-017-economic-objective-return-risk-efficiency.md): Q056/B DECIDED conceptual. Retorno neto competitivo + reducción material de riesgo, no minimización del riesgo aislada. Margen de no inferioridad requiere fundamento y aprobación owner antes de resultados; cash/opportunity cost y comparadores de exposición obligatorios. A secundaria/C operacional independiente; NO_STRATEGY_QUALIFIED admitido si ninguno cumple. D011 RESEARCHING, F0 incompleto; holdout UNKNOWN, lock/targetdeferral vigentes. Continúa formulación técnica/PRICE–MATR/Form4 sin nueva elección conceptual abstracta.
+
+## Wave05 — paquete autónomo y dependencia económica
+
+R020 RC3/PAIR-01/02, R008 cash y R021 semántica Form4 completados en scope documental con E3/F2 y [review](research/R-020_021_economic_independent_review_2026-10-14.md). No investigación global cerrada: fuentes/PIT/rights/returnmodels, métodos/precision y StrategyConfig aún abiertos. Próximo gobierno material [Q057](research/D-011_benchmark_qualification_decision_RC0.md), no Q056 repetido.
+
+Después de esa referencia: fijar métricas candidatas/MethodApplicabilityCard, márgenes y mínimos justificados antes de resultados; completar fuente cash+ETF y Form4/amendments/firstdelivery/rights, broker/order matrix y engineparidad; fórmulas/operación por demanda. Target R030 sigue diferido, no Plus/admin aquí. El estudio plan-agnostic no ejecutado es alternativa registrada, no admisión ni sustitución de filtro S-F4-01.

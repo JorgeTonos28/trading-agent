@@ -169,7 +169,7 @@
     "planning/08_S2_isolation_spec_RC1.md",
     "planning/research/R-013_S2_acceptance_matrix_RC1.md"
   ],
-  "next_governance_item": "NEXT_EVIDENCE_BACKED_ECONOMIC_CRITERIA_OR_STRATEGY_PROPOSAL_Q056_DECIDED",
+  "next_governance_item": "Q057_READY_FOR_DECISION_PRICE_MATR_PRIMARY_BENCHMARK_AND_JOINT_GATES_NOT_NUMERIC_MARGIN",
   "isolation_variant": {
     "proposed": "S2_B",
     "selected": false,
@@ -203,9 +203,9 @@
     "FUTURE_LIVE_ENVIRONMENT": "UNKNOWN"
   },
   "gate_phases": {
-    "design": "Preparation Team \u2014 contracts/architecture/review",
-    "target_environment": "R-030 personal Windows Plus \u2014 before implementation",
-    "operational": "Built integrated system \u2014 before autonomous PAPER",
+    "design": "Preparation Team — contracts/architecture/review",
+    "target_environment": "R-030 personal Windows Plus — before implementation",
+    "operational": "Built integrated system — before autonomous PAPER",
     "live": "Undecided after PAPER"
   },
   "live_environment_selected": false,
@@ -214,5 +214,7 @@
   "agentic_design_status": "DESIGN_DECIDED_OWNER_2026_10_13",
   "agentic_architecture_design_complete": true,
   "target_acceptance_status": "TARGET_ACCEPTANCE_DEFERRED",
-  "mechanism_freeze": false
+  "mechanism_freeze": false,
+  "economic_contract": "planning/research/R-020_economic_qualification_contract_RC3.md",
+  "economic_reference_proposal": "planning/research/D-011_benchmark_qualification_decision_RC0.md"
 }

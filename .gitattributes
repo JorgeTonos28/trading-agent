@@ -1,3 +1,8 @@
 # Preserve archived pre-supersession bytes used for provenance/hash checks.
 shared/history/* -text whitespace=cr-at-eol
 planning/research/probes/r013-s2b-lab-execution/history/* -text whitespace=cr-at-eol
+# Preserve captured E3/F2 bytes independently of clone EOL settings.
+planning/research/probes/r020-economic-contract/*.py -text
+planning/research/probes/r020-economic-contract/*.json -text whitespace=cr-at-eol
+planning/research/probes/r021-form4-semantics/*.py -text
+planning/research/probes/r021-form4-semantics/*.json -text whitespace=cr-at-eol

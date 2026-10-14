@@ -18,3 +18,13 @@ Inventariar fuentes/capturas/commits/investigaciones anteriores y uso de resulta
 Auditoría no abre dataset reservado para comprobar si «se parece» a lo visto. Primero revisar proceso/evidencia disponible; owner confirma exposición externa relevante sólo cuando el paquete de auditoría esté preparado. Resultado: integridad suficientemente acreditada para scope explícito, contaminada o UNKNOWN con incertidumbres concretas. UNKNOWN bloquea apertura como confirmación; no equivale a contaminated/FAIL económico.
 
 Si contaminación relevante/no acreditación suficiente: preparar alternativa prospectiva, con fecha de freeze/control de acceso, criterios de muestra/horizonte y coste/recovery preregistrados; owner aprueba antes de uso confirmatorio. No reclasificar reserva a selección silenciosamente ni usarla para elegir candidato. Registry retiene exposiciones y versión; ninguna actualización del ledger declara rentabilidad ni implementa controles de acceso.
+
+## Exposición adicional wave05 — 2026-10-14
+
+| ID | Exposición registrada | Fuente/fecha | Uso y alcance |
+|---|---|---|---|
+| X07 | Tasas monetarias recientes en páginas oficiales Fed H15/FRED DTB3/DGS3MO | Lectura docs2026-10-14; fechas visibles octubre2026 | Definiciones/release/cash admission. Fuera de la reserva hasta30/09/2026; no historia descargada, retorno propio ni optimización |
+| X08 | Snippets no solicitados de terceros sobre estudios insiders con rendimientos/intervalos2023–2026 y ejemplo puntual público de Form4 | Búsqueda de documentación SEC2026-10-14 | No abiertas esas fuentes ni usados valores para hipótesis/selección; se registra exposición potencialmente solapada, no certificado de holdout intacto |
+| X09 | Series/ratios y tabla de potencia completamente ficticios de E3; XML propio F2 | Capturas probes2026-10-14 | Prueba de componentes/diseño; no dato real ni backtest. FixturePASS no admisión ni resultado confirmatorio |
+
+M-11 conserva integridad UNKNOWN. Este incremento no cierra inventario ni demuestra contaminación suficiente o independencia: requiere auditoría de proceso antes de apertura confirmatoria.

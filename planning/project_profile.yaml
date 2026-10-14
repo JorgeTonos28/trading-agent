@@ -596,3 +596,32 @@ economic_objective_approval:
   D011_global: RESEARCHING
   implementation_locked: true
   target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED
+
+financial_preparation_wave05:
+  updated_on: 2026-10-14
+  economic_contract: planning/research/R-020_economic_qualification_contract_RC3.md
+  pairing: planning/research/R-020_PRICE_MATR_pairing_spec_RC0.md
+  cash_admission: planning/research/R-008_cash_benchmark_admission_RC0.md
+  Form4_semantics: planning/research/R-021_Form4_semantic_admission_RC2.md
+  independent_review: planning/research/R-020_021_economic_independent_review_2026-10-14.md
+  next_material_proposal: Q057_PRIMARY_BENCHMARK_AND_JOINT_GATES_PRICE_MATR
+  Q057: READY_FOR_DECISION_NOT_APPROVED
+  recommendation: K2_EW6_BUY_AND_HOLD_CASH_AND_MATCHED_REAL
+  benchmark_selected: false
+  numeric_margins_approved: false
+  primary_risk_metric_selected: false
+  declared_hypotheses: 8
+  strategy_trials_executed: 0
+  E3_fixture_passes: 19
+  E3_fixture_total: 19
+  E3_constant_nonfinite_conf_int: NOT_TESTED
+  F2_component_passes: 13
+  F2_component_total: 13
+  F2_full_footnote_integrity: NOT_TESTED
+  F2_socket_connect_attempts_blocked: 1
+  dataset_admitted: false
+  F0: NOT_FROZEN_INCOMPLETE
+  confirmation_integrity: INTEGRITY_UNKNOWN
+  implementation_locked: true
+  target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED
+  incremental_spend: 0

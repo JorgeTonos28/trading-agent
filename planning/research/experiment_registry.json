@@ -3,7 +3,7 @@
   "updated_on": "2026-10-14",
   "stage": "PREPARATION",
   "authority": "NO_FINANCIAL_AUTHORITY",
-  "declared_variant_count": 5,
+  "declared_variant_count": 8,
   "executed_strategy_trial_count": 0,
   "execution_attempt_count": 0,
   "history_complete": false,
@@ -30,7 +30,10 @@
       "performance": "NOT_EVALUATED",
       "risk_budget": "NOT_APPROVED",
       "selection_status": "NOT_SELECTED",
-      "trial_runs": []
+      "trial_runs": [],
+      "spec_git_blob_sha256_at_declaration": "75d19411f0aae856e47b2fd9189c5bdf02f4bfebcd48aef54aad5a18f934a215",
+      "captured_eol_at_declaration": "LF",
+      "git_blob_hash_provenance": "VERIFIED_DECLARATION_SOURCE_COMMIT"
     },
     {
       "id": "S-MATR-01",
@@ -51,7 +54,10 @@
       "performance": "NOT_EVALUATED",
       "risk_budget": "NOT_APPROVED",
       "selection_status": "NOT_SELECTED",
-      "trial_runs": []
+      "trial_runs": [],
+      "spec_git_blob_sha256_at_declaration": "0a6886557b0c75647a4467299e3603d921ab908c02234671c0fbb780f8238c1e",
+      "captured_eol_at_declaration": "CRLF",
+      "git_blob_hash_provenance": "VERIFIED_DECLARATION_SOURCE_COMMIT"
     },
     {
       "id": "S-F4-01",
@@ -70,7 +76,10 @@
       "performance": "NOT_EVALUATED",
       "risk_budget": "NOT_APPROVED",
       "selection_status": "NOT_SELECTED",
-      "trial_runs": []
+      "trial_runs": [],
+      "spec_git_blob_sha256_at_declaration": "e4d75a34141aa4560b165dd31a3a2109c12b0cb7842339f4795ed12ba959347e",
+      "captured_eol_at_declaration": "CRLF",
+      "git_blob_hash_provenance": "VERIFIED_DECLARATION_SOURCE_COMMIT"
     },
     {
       "id": "S-CONG-01",
@@ -88,7 +97,10 @@
       "performance": "NOT_EVALUATED",
       "risk_budget": "NOT_APPROVED",
       "selection_status": "NOT_SELECTED",
-      "trial_runs": []
+      "trial_runs": [],
+      "spec_git_blob_sha256_at_declaration": "e4d75a34141aa4560b165dd31a3a2109c12b0cb7842339f4795ed12ba959347e",
+      "captured_eol_at_declaration": "CRLF",
+      "git_blob_hash_provenance": "VERIFIED_DECLARATION_SOURCE_COMMIT"
     },
     {
       "id": "S-13F-01",
@@ -106,7 +118,74 @@
       "performance": "NOT_EVALUATED",
       "risk_budget": "NOT_APPROVED",
       "selection_status": "NOT_SELECTED",
-      "trial_runs": []
+      "trial_runs": [],
+      "spec_git_blob_sha256_at_declaration": "e4d75a34141aa4560b165dd31a3a2109c12b0cb7842339f4795ed12ba959347e",
+      "captured_eol_at_declaration": "CRLF",
+      "git_blob_hash_provenance": "VERIFIED_DECLARATION_SOURCE_COMMIT"
+    },
+    {
+      "id": "A-PRICE-MATR-EXIT-01",
+      "family": "ENTRY_ABLATION_PRICE_MATR",
+      "kind": "DECLARED_HYPOTHESIS_NOT_EXECUTED",
+      "specification": "R-020_PRICE_MATR_pairing_spec_RC0.md",
+      "spec_sha256_at_declaration": "365bb0cf75cdbc75e6aea37832f4ea879fa8b4a4a9b15173d4af4d2295f13e62",
+      "declaration_source": "SAME_COMMIT_AS_WAVE05_REGISTRY_UPDATE_WITH_RAW_SOURCE_HASH",
+      "declared_on": "2026-10-14",
+      "parameter_proposals_not_approved": {
+        "identical_exits_stop_calendar": "REQUIRED_OPEN"
+      },
+      "configuration_complete": false,
+      "data_admission": "NOT_ADMITTED",
+      "performance": "NOT_EVALUATED",
+      "risk_budget": "NOT_APPROVED",
+      "selection_status": "NOT_SELECTED",
+      "trial_runs": [],
+      "captured_eol_at_declaration": "LF",
+      "spec_git_blob_sha256_at_declaration": "365bb0cf75cdbc75e6aea37832f4ea879fa8b4a4a9b15173d4af4d2295f13e62",
+      "git_blob_hash_provenance": "VERIFIED_STAGED_GIT_BLOB_SAME_COMMIT"
+    },
+    {
+      "id": "A-MATR-RATCHET-01",
+      "family": "POSITION_RATCHET_ABLATION",
+      "kind": "DECLARED_HYPOTHESIS_NOT_EXECUTED",
+      "specification": "R-020_PRICE_MATR_pairing_spec_RC0.md",
+      "spec_sha256_at_declaration": "365bb0cf75cdbc75e6aea37832f4ea879fa8b4a4a9b15173d4af4d2295f13e62",
+      "declaration_source": "SAME_COMMIT_AS_WAVE05_REGISTRY_UPDATE_WITH_RAW_SOURCE_HASH",
+      "declared_on": "2026-10-14",
+      "parameter_proposals_not_approved": {
+        "ratchet_params": "OPEN"
+      },
+      "configuration_complete": false,
+      "data_admission": "NOT_ADMITTED",
+      "performance": "NOT_EVALUATED",
+      "risk_budget": "NOT_APPROVED",
+      "selection_status": "NOT_SELECTED",
+      "trial_runs": [],
+      "captured_eol_at_declaration": "LF",
+      "spec_git_blob_sha256_at_declaration": "365bb0cf75cdbc75e6aea37832f4ea879fa8b4a4a9b15173d4af4d2295f13e62",
+      "git_blob_hash_provenance": "VERIFIED_STAGED_GIT_BLOB_SAME_COMMIT"
+    },
+    {
+      "id": "S-F4-PLANAGNOSTIC-00",
+      "family": "F4_PLAN_AGNOSTIC_ALTERNATIVE",
+      "kind": "DECLARED_HYPOTHESIS_NOT_EXECUTED",
+      "specification": "R-021_Form4_semantic_admission_RC2.md",
+      "spec_sha256_at_declaration": "992174685e837a644e04990823ebf89b8d5408fb7f2aebdbd4be9d51fee90841",
+      "declaration_source": "SAME_COMMIT_AS_WAVE05_REGISTRY_UPDATE_WITH_RAW_SOURCE_HASH",
+      "declared_on": "2026-10-14",
+      "parameter_proposals_not_approved": {
+        "PIT_and_purchase_class": "REQUIRED_NOT_ADMITTED",
+        "unknown_plan_policy": "OPEN"
+      },
+      "configuration_complete": false,
+      "data_admission": "NOT_ADMITTED",
+      "performance": "NOT_EVALUATED",
+      "risk_budget": "NOT_APPROVED",
+      "selection_status": "NOT_SELECTED",
+      "trial_runs": [],
+      "captured_eol_at_declaration": "LF",
+      "spec_git_blob_sha256_at_declaration": "992174685e837a644e04990823ebf89b8d5408fb7f2aebdbd4be9d51fee90841",
+      "git_blob_hash_provenance": "VERIFIED_STAGED_GIT_BLOB_SAME_COMMIT"
     }
   ],
   "run_record_required_fields": [
@@ -136,9 +215,13 @@
   "synthetic_probe_refs": [
     "probes/r027-risk-algebra",
     "probes/r021-edgartools-offline/README.md",
-    "probes/r020-evaluation/README.md"
+    "probes/r020-evaluation/README.md",
+    "probes/r020-economic-contract/README.md",
+    "probes/r021-form4-semantics/README.md"
   ],
   "synthetic_probes_are_strategy_trials": false,
   "declaration_source_commit": "1727470289d1479300b81260ca91ed3597aeeed0",
-  "declaration_hash_policy": "SHA256_RAW_BYTES_AT_DECLARATION_KEEP_HISTORY_AS_DOCS_EVOLVE"
+  "declaration_hash_policy": "SHA256_RAW_BYTES_AT_DECLARATION_KEEP_HISTORY_AS_DOCS_EVOLVE",
+  "economic_objective_approval": "ADR-017_Q056_CONCEPTUAL_ONLY",
+  "portable_hash_policy": "KEEP_RAW_CAPTURE_SHA_AND_EOL;_VERIFY_GIT_BLOB_SHA_AT_DECLARATION_COMMIT;NEVER_REHASH_HISTORY_AFTER_ADENDAS"
 }

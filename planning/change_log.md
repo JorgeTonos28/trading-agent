@@ -181,3 +181,11 @@ Review independiente repara cuatroP1 (F0/F1/target, effect/scope, methodapplicab
 ## 2026-10-14 — ADR-017, Q056/B aprobado
 
 Ocho condiciones owner registradas: retorno competitivo+riesgo material, cash/opportunity cost y exposición, Asecundaria/Coperacional independiente, preregistro/owner margin y NO_STRATEGY_QUALIFIED. D011/F0/números/selección permanecen abiertos, holdoutUNKNOWN/lock/targetdeferral. Historia Q056 conservada y estado actual DECIDED; AGENTS/roadmap/registros/perfil/card actualizados. No datos/backtests/implementación/gasto/admin/main. Siguiente trabajo autónomo técnico, no otra pregunta conceptual similar.
+
+## 2026-10-14 — wave05, formulación económica y Form4
+
+RC3 concreta ADR017/B con NI/cash/risk/guardrails conjuntos, estados y sample; R008cash distingue yield/return/carry, espejoREAL con ledger/costs/clock propios. PRICE–MATR PAIR-01/02 y protección/seal candidatos, sin Strategy seleccionada, top-up ni parámetros aprobados. Form4RC2 checkbox2023/planes por fila/códigoP privado/amendments; nueva hipótesis plan-agnostic no ejecutada, fuente NOT_ADMITTED.
+
+E3 19/19 sintéticos, F2 13/13 componentes con socket.connect bloqueado; sin nuevo install/spend/datos propios/backtest/alpha/target. Sources/results/launchers/manifests conservados, F2 markup completo y E3 constant/nonfiniteCI NOT_TESTED. Registry8 declaraciones/trials0; hash QA inicial ERROR por CRLF/LF reparado añadiendo EOL+GitblobSHA, raw históricos intactos. Exposureledger incluye tasas públicas y snippets no usados; holdout UNKNOWN.
+
+Revisión independiente corrigió cash/modelo y doublecost, baselineBH/λclocks, ESnoestimable/states/cashonly, ledgers divergentes de ablation y espejos por alternativa. Q057 READY_FOR_DECISION propuesta material de referencia ETF/gates, no márgenes/modelo/Strategy. Perfil/card/backlog/contratos actualizados; F0 incompleto, design agéntico completo en scope, lock/targetdeferral/main/H7/A+/G1+G2/R2 intactos.

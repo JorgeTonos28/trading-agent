@@ -35,5 +35,15 @@
   "cash_opportunity_cost_required": true,
   "exposure_comparator_required": true,
   "all_candidates_unqualified_outcome": "NO_STRATEGY_QUALIFIED",
-  "numeric_margin_owner_approval_required_before_results": true
+  "numeric_margin_owner_approval_required_before_results": true,
+  "economic_contract": "R-020_economic_qualification_contract_RC3.md",
+  "benchmark_proposal_dependency": "Q-057_NOT_APPROVED",
+  "matched_exposure_benchmark": null,
+  "monetary_benchmark": null,
+  "cash_real_separated_from_opportunity": true,
+  "own_benchmark_ledger_costs_required": true,
+  "interval_exposure_clock_required": true,
+  "risk_metric": null,
+  "tail_level": null,
+  "numerical_probes_are_acceptance": false
 }

@@ -80,3 +80,7 @@ Esta ficha alimenta R-020. La decisión siguiente **no** es confirmar MATR_V1 po
 ## Aprobación económica vigente — 2026-10-14, ADR-017
 
 [ADR-017](decisions/ADR-017-economic-objective-return-risk-efficiency.md): Q056/B DECIDED conceptual. Retorno neto competitivo + reducción material de riesgo, no minimización del riesgo aislada. Margen de no inferioridad requiere fundamento y aprobación owner antes de resultados; cash/opportunity cost y comparadores de exposición obligatorios. A secundaria/C operacional independiente; NO_STRATEGY_QUALIFIED admitido si ninguno cumple. D011 RESEARCHING, F0 incompleto; holdout UNKNOWN, lock/targetdeferral vigentes. Continúa formulación técnica/PRICE–MATR/Form4 sin nueva elección conceptual abstracta.
+
+## Adenda de investigación — 2026-10-14
+
+Baseline/reglas/ventanas originales conservados. [Pairing](research/R-020_PRICE_MATR_pairing_spec_RC0.md) distingue MATR baseline de MATR+ratchet y referencia EW6-BH de nuevo EW6-MONTHLY; ablations con ledgers divergentes no son misma cartera realizada. [Q057](research/D-011_benchmark_qualification_decision_RC0.md) propuesta previa a márgenes/resultados. MATR candidato/benchmark, no elegido ni backtest ejecutado. Registro conserva hash de declaración previa con EOL/commit, esta adenda no reescribe historia.

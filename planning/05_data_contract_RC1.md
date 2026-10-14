@@ -54,3 +54,7 @@ El snapshot de decisión fija conjunto de observaciones y sus revisiones, univer
 ## Demanda temporal por candidato — ADR016/wave04
 
 [Horizon/freshness](research/R-020_decision_horizon_latency_RC0.md) añade latency budget, expiry y freshness por fuente/quote/estado como obligaciones de evaluación. Receipt/available/bar labels no intercambiables, delayed feed no mark actual. [Exposureledger](research/exposure_ledger.md) y registry determinan scope selección/confirmación; ninguno demuestra PIT histórico por sí solo. Missing mandatoryinput y protección incierta siguen fail-closed; no relax por horizonte largo.
+
+## Demanda económica wave05
+
+[RC3](research/R-020_economic_qualification_contract_RC3.md) requiere cashREAL vs hurdle monetario separados, ledger/costs de referencia y λ conocido al inicio de intervalos por fills/cambios. λEOD no certifica exposición intraday. R008 cash y Form4RC2 requieren vintages/raw flags/rowmapping/amendments; todos sujetos a rights/admission. No feed/modelo elegido ni software operativo.

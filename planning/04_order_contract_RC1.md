@@ -63,3 +63,7 @@ Las APIs/SDKs oficiales de brokers son candidatos a `WRAP`, no gateways de riesg
 ## Gates temporales broker — wave04
 
 [Timing sources](research/R-007_008_timing_evidence_2026-10-14.md) añaden auctiondeadline/OPGpermissions, GTCexpiry, gatewayauth/restart y presetversion. Misseddeadline no fillOpen ficticio; pendingcancel puede ejecutar/reservas conservadas. Expiry de señal no cancela protección ni concede G3. Pruebas target permanecen B1–5NOT_TESTED.
+
+## Demanda PRICE–MATR wave05
+
+[Pairing](research/R-020_PRICE_MATR_pairing_spec_RC0.md) propone sello de entry antes de ratchet agregado, con protección inmediata de parciales y p0/fills/qty/HWM reconciliados. Es mecanismo candidato a contrastar, no protección broker aceptada ni regla Champion aprobada; lote/seal y coste de retraso permanecen en Config/gates broker/engine. Stop deseado no confirmado, crossed/missing no riesgo cero; ADR015/G1+G2 intactos.

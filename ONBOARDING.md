@@ -111,3 +111,7 @@ Q-051 está DECIDED en dirección, no pedirla nuevamente. Preparar laboratorio m
 ## Entrada vigente — ADR-013
 
 Durante Preparation en Team/INFOTEP: leer AGENTS, manifest/perfil esperado activo y contratos; inventariar sin secretos; registrar diseño y checks permitidos. No configurar dominio operacional ni solicitar Plus/admin aquí. En transición futura autorizada: fresh clone en PC personal/Plus → gate R-030 → configuración concreta aprobada → SI/BL/RB/VP + smokes → readiness report. R-030 se requiere antes de implementación; sistema construido/carga/PAPER se validan después. LIVE no seleccionado. Históricos paper_team_profile y TP sirven de evidencia fechada, no perfil operacional vigente. Helper histórico S2B Setup/Rollback bloqueado hasta gate/rebind target.
+
+## Estado vigente de Preparation — wave05, 2026-10-14
+
+Q056 aprobado/ADR017; no repetir elección conceptual. [Q057](planning/research/D-011_benchmark_qualification_decision_RC0.md) propone benchmark/gates económicos concretos PRICE–MATR antes de márgenes. Leer perfil/registry/RC3 y mantener null/UNKNOWN/NOT_ADMITTED: fixtures no aceptan datos o target. Plus/PC personal R030 sigue diferido; bootstrap no solicita acceso/admin institucional ni desbloquea implementación.

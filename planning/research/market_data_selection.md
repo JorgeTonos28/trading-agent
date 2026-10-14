@@ -36,3 +36,7 @@ Las filas anteriores son inventario inicial fechado. [Wave broker/data](R-007_00
 ## Evidencia temporal wave03 — 2026-10-14
 
 [Timing/data/broker](R-007_008_timing_evidence_2026-10-14.md) verifica delayedhistoricalSIP/Basic y rutaIBKR auth/presets/cancelstates. Source/feed/deadline/coverage/rights y Riskfreshness separados, B1–5target aún NOT_TESTED. No broker/proveedor seleccionado ni cuenta/config/autenticación/data call. Rutas gratuitas no resuelven2005+ ni audit rights automáticamente.
+
+## Referencia monetaria — wave05
+
+[Referencia monetaria](R-008_cash_benchmark_admission_RC0.md) añade condiciones de semántica, disponibilidad histórica/PIT y costes; no admisión de fuente ni selección de proveedor. E3/F2 sólo fixtures/componentes; datos/historia/rights y target no probados. Las fuentes restantes conservan su prioridad/alcance, no exclusión general por este probe.

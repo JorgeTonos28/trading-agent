@@ -146,3 +146,9 @@ Q055/O-B aprobado/sincronizado; paquete autónomo posterior completado en diseñ
 ## Aprobación económica vigente — 2026-10-14, ADR-017
 
 [ADR-017](decisions/ADR-017-economic-objective-return-risk-efficiency.md): Q056/B DECIDED conceptual. Retorno neto competitivo + reducción material de riesgo, no minimización del riesgo aislada. Margen de no inferioridad requiere fundamento y aprobación owner antes de resultados; cash/opportunity cost y comparadores de exposición obligatorios. A secundaria/C operacional independiente; NO_STRATEGY_QUALIFIED admitido si ninguno cumple. D011 RESEARCHING, F0 incompleto; holdout UNKNOWN, lock/targetdeferral vigentes. Continúa formulación técnica/PRICE–MATR/Form4 sin nueva elección conceptual abstracta.
+
+## Endpoint vigente wave05 — 2026-10-14
+
+ADR017/Q056 aprobado y sincronizado. Paquete autónomo económico: RC3 conjunto, cash real vs oportunidad, PRICE–MATR/ablations, Form4 plan/purchase/amendments, E3/F2 y review con límites. No resultados PRICE/MATR; registry8 hipótesis/0trials, F0 incompleto, holdout INTEGRITY_UNKNOWN.
+
+Siguiente decisión material: [Q057 referencias K1/K2/K3](research/D-011_benchmark_qualification_decision_RC0.md). Recomendar K2 por universo común y baseline buy-and-hold, no por retorno observado. Su elección precede la justificación de márgenes; no pedir de nuevo dirección B. Después: modelos/efectos/sample propuestos→gobierno numérico previo→Configs/dataPIT/rights/costs→F0→comparación y confirmación independientes; broker/engine/risk/storage en scopes propios. No Plus/admin/gasto/main ni ronda agéntica general.

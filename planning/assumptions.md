@@ -126,3 +126,10 @@ A051 integridad de reserva permanece UNVERIFIED, no resuelta por aprobación O-B
 ## Aprobación económica vigente — 2026-10-14, ADR-017
 
 [ADR-017](decisions/ADR-017-economic-objective-return-risk-efficiency.md): Q056/B DECIDED conceptual. Retorno neto competitivo + reducción material de riesgo, no minimización del riesgo aislada. Margen de no inferioridad requiere fundamento y aprobación owner antes de resultados; cash/opportunity cost y comparadores de exposición obligatorios. A secundaria/C operacional independiente; NO_STRATEGY_QUALIFIED admitido si ninguno cumple. D011 RESEARCHING, F0 incompleto; holdout UNKNOWN, lock/targetdeferral vigentes. Continúa formulación técnica/PRICE–MATR/Form4 sin nueva elección conceptual abstracta.
+
+## Supuestos wave05
+
+- A-057 P0 UNVERIFIED: cuatro años tienen precisión suficiente para márgenes económicamente razonables. E3 ilustra dependencia de dispersión/covarianza, no la estima en estrategias; jamás ampliar margen por conveniencia.
+- A-058 P1 UNVERIFIED: yield público equivale a retorno realizable/cash broker. R008 distingue descuento/constant maturity/roll/carry real; vintages y modelo no admitidos.
+- A-059 P0 UNVERIFIED: bajar volatilidad/exposición demuestra eficiencia incremental. Counterexample E3, espejo REAL con ledger/clock propios; beta/mix y cola permanecen pendientes.
+- A-060 P1 PARTIAL: Form4 public parser preserva información necesaria. F2 flags/footnote substrings sólo componentes; None ambiguo, duplicados y planes anteriores a2023 UNKNOWN. No dataset admitido.

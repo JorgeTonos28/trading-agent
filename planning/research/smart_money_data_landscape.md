@@ -85,3 +85,7 @@ Quiver/UW son REFERENCE_ONLY actualmente y WRAP futuros condicionados; SEC WRAP/
 ## E1 normalizador SEC — 2026-10-13
 
 [EdgarTools findings](R-021_edgartools_findings_2026-10-13.md):7/7table-only sintéticos y full factory ERROR; no disponibilidad histórica/PIT demostrada. ADAPT/WRAP normalizador candidato, ningún proveedor/familia seleccionado. Footnotes/planes/owners/mapping temporal y primary-vendor siguen gates; no extraer «conviction» del label market_trades.
+
+## Form4 candidata externa — wave05
+
+[Form4 candidata externa](R-021_Form4_semantic_admission_RC2.md) añade condiciones de semántica, disponibilidad histórica/PIT y costes; no admisión de fuente ni selección de proveedor. E3/F2 sólo fixtures/componentes; datos/historia/rights y target no probados. Las fuentes restantes conservan su prioridad/alcance, no exclusión general por este probe.

@@ -70,3 +70,7 @@ Una recomendación paga debe identificar una condición comprobable (por ejemplo
 ## Wave04 — primitives y datos temporales
 
 [Métodos OSS](research/R-020_evaluation_protocol_RC2.md) y [broker/data timing](research/R-007_008_timing_evidence_2026-10-14.md) registran seis campos por candidato. statsmodels/arch15deps locales software0/opsUNKNOWN; AlgoTraderPlus99USD/mes sólo referencia no gasto; delayedSIPBasic condicional EOD, no sustituto de Riskfreshness/rights/PIT/history2005. Licencias y mantenimiento por cerrar; costegratuito no criterio de mejoraeconómica ni aceptación operacional.
+
+## Cash y componentes financieros — wave05
+
+[R008 cash](research/R-008_cash_benchmark_admission_RC0.md) registra seis campos económicos: acceso docs0, historia/vintage/modelo/ingeniería UNKNOWN, free alternatives condicionadas y valor incremental de paid total-return/PIT sólo si gap demostrado. No suscripción ni acceso a API contratado. [E3](research/R-020_economic_probe_findings_2026-10-14.md)/[F2](research/R-021_Form4_probe_findings_2026-10-14.md) reutilizan libs/deps ya locales, gasto incremental0; ingeniería, mantenimiento, licencias transitivas/target y LIVEcost aún UNKNOWN. Gratuito no prueba calidad suficiente; ninguna fuente seleccionada.

@@ -137,3 +137,7 @@ Owner aprueba R2 conceptual y acotado; R1/P&L/controles independientes conservad
 ## Aprobación económica vigente — 2026-10-14, ADR-017
 
 [ADR-017](decisions/ADR-017-economic-objective-return-risk-efficiency.md): Q056/B DECIDED conceptual. Retorno neto competitivo + reducción material de riesgo, no minimización del riesgo aislada. Margen de no inferioridad requiere fundamento y aprobación owner antes de resultados; cash/opportunity cost y comparadores de exposición obligatorios. A secundaria/C operacional independiente; NO_STRATEGY_QUALIFIED admitido si ninguno cumple. D011 RESEARCHING, F0 incompleto; holdout UNKNOWN, lock/targetdeferral vigentes. Continúa formulación técnica/PRICE–MATR/Form4 sin nueva elección conceptual abstracta.
+
+## Q-057 — referencia económica concreta de PRICE–MATR
+
+P0 / D008-D011 · READY_FOR_DECISION, propuesta material en [dossier K1/K2/K3](research/D-011_benchmark_qualification_decision_RC0.md). Recomendar K2: seis ETF a igual peso inicial buy-and-hold como primario, oportunidad cash y espejo EW6-BH-LAMBDA-REAL obligatorio, gates económicos AND. K1 SPY primario/espejo SPY; K3 ambos primarios y ambos espejos/gates. El alcance es sólo esta cohorte, no Form4; elegir referencia cambia la pérdida de oportunidad que medirán los futuros márgenes. No números/modelo/Strategy/broker/data ni implementación aprobados. Q056 DECIDED, no nueva elección abstracta de objetivo; selección de benchmark sí requiere gobierno económico conforme ADR017.

@@ -41,3 +41,7 @@ Escenario mensual: un investigador, lotes EOD y caching; volumen todavía UNKNOW
 ## Evidencia posterior E1 — 2026-10-13
 
 [Probe offline pin5.62.0](R-021_edgartools_findings_2026-10-13.md) ejecutado:7/7checks de tablas sintéticas, factory completo ERROR/IdentityNotSetError. P privado permanece market_trades; form/clase de tabla son caller-supplied. TECHNICALLY_COMPATIBLE=PARTIAL, ADAPT/WRAP candidato, SELECTED=NO. Software público probado parcialmente, no extracción histórica/ownership/PIT/rights admitidos. La nota anterior «no instalado ni probado» describe la wave documental previa. Footnotes completas, plan trivaluado, mappings as-of/amendments y canal/receipts siguen pendientes.
+
+## Semántica Form4 posterior — wave05
+
+[Semántica Form4 posterior](R-021_Form4_semantic_admission_RC2.md) añade condiciones de semántica, disponibilidad histórica/PIT y costes; no admisión de fuente ni selección de proveedor. E3/F2 sólo fixtures/componentes; datos/historia/rights y target no probados. Las fuentes restantes conservan su prioridad/alcance, no exclusión general por este probe.

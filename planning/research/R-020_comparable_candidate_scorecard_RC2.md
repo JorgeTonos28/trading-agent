@@ -44,3 +44,7 @@ Diseño/especificación/admisión/metodología en Team; backtests reales/carga/i
 ## Aprobación económica vigente — 2026-10-14, ADR-017
 
 [ADR-017](../decisions/ADR-017-economic-objective-return-risk-efficiency.md): Q056/B DECIDED conceptual. Retorno neto competitivo + reducción material de riesgo, no minimización del riesgo aislada. Margen de no inferioridad requiere fundamento y aprobación owner antes de resultados; cash/opportunity cost y comparadores de exposición obligatorios. A secundaria/C operacional independiente; NO_STRATEGY_QUALIFIED admitido si ninguno cumple. D011 RESEARCHING, F0 incompleto; holdout UNKNOWN, lock/targetdeferral vigentes. Continúa formulación técnica/PRICE–MATR/Form4 sin nueva elección conceptual abstracta.
+
+## Avance posterior wave05
+
+Q056 aprobado/ADR017. [PAIR-01/02](R-020_PRICE_MATR_pairing_spec_RC0.md) aclara base común y cambios de entry/exits/ratchet; no retorno comparado ni causalidad por sólo igualar universo. [RC3](R-020_economic_qualification_contract_RC3.md) y [Q057](D-011_benchmark_qualification_decision_RC0.md) proponen referencia ETF y gates; [F4RC2](R-021_Form4_semantic_admission_RC2.md) conserva gaps de planes/semántica y alternativa plan-agnostic no ejecutada. Registry8 declara hipótesis/ablations, no ocho finalistas admitidos; todos sin performance ni configuración completa.

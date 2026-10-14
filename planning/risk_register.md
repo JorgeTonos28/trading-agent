@@ -149,3 +149,11 @@ K067 conserva integridad UNKNOWN y O-B aprobado sólo conceptual. Riesgos adicio
 ## Aprobación económica vigente — 2026-10-14, ADR-017
 
 [ADR-017](decisions/ADR-017-economic-objective-return-risk-efficiency.md): Q056/B DECIDED conceptual. Retorno neto competitivo + reducción material de riesgo, no minimización del riesgo aislada. Margen de no inferioridad requiere fundamento y aprobación owner antes de resultados; cash/opportunity cost y comparadores de exposición obligatorios. A secundaria/C operacional independiente; NO_STRATEGY_QUALIFIED admitido si ninguno cumple. D011 RESEARCHING, F0 incompleto; holdout UNKNOWN, lock/targetdeferral vigentes. Continúa formulación técnica/PRICE–MATR/Form4 sin nueva elección conceptual abstracta.
+
+## Riesgos wave05
+
+- K-073 P0: benchmark seleccionado después de resultados o mensualmente rebalanceado presentado como baseline buy-and-hold. Q057 previo y IDs/ledgers/espejos por alternativa, ámbito ETF explícito.
+- K-074 P1: carry/yield ficticio, doble cash/fees o λ de cierre que usa información futura para fabricar matched risk. R008/RC3, cashREAL y gross-minus-own-cost, intervalos conocidos/clock/delay; diagnóstico limitado si datos insuficientes.
+- K-075 P0: margin ampliado para pasar muestra, ES ratio inestable convertido en0 o cola bootstrap inválida omitida. MethodApplicability previa, incertidumbre/INSUFFICIENT preservadas; probe19/19 no alpha.
+- K-076 P1: flagFalse/ausente interpreta compra discrecional, P interpreta exchange, amendment reemplaza íntegramente o footnotes duplicadas sobrescritas. Raw XML/version/UNKNOWN, rowmapping y quarantine, F2 sólo componentes.
+- K-077 P1: QA rehash silenciosamente declaraciones antiguas por EOL/adendas. Preserve raw SHA+capturedEOL y GitblobSHA/commit; nueva variante/hash antes de nuevos resultados, no alterar captures para PASS.
