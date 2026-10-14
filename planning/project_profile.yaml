@@ -315,7 +315,7 @@ paper_agentic_hardening:
   workflow_contract: planning/08_job_workflow_recovery_contract_RC0.md
   audit_versions_deployment_contract: planning/08_audit_versions_deployment_contract_RC0.md
   dossier: planning/research/R-010_014_hardening_findings_2026-10-05.md
-  next_human_decision: Q056_PRIMARY_ECONOMIC_OBJECTIVE_CONCEPTUAL_ONLY
+  next_human_decision: NONE_Q056_APPROVED_CONTINUE_TECHNICAL_PROTOCOL
   security_setup_executed: false
   paired_native_SDK_CLI_probe: 0.160.0_research_shadow_2_of_2_pass
   durable_semantic_probe: SQLite_disposable_20_checks_plus_11_lease_race_checks
@@ -485,7 +485,7 @@ financial_preparation_wave02:
   risk_reference_proposal: planning/research/D-035_risk_measurement_decision_RC0.md
   independent_review: planning/research/R-020_027_independent_review_2026-10-13.md
   algebra_probe: 8_SYNTHETIC_OBSERVATIONS_NOT_RISK_ENGINE
-  next_human_decision: Q056_PRIMARY_ECONOMIC_OBJECTIVE_CONCEPTUAL_ONLY
+  next_human_decision: NONE_Q056_APPROVED_CONTINUE_TECHNICAL_PROTOCOL
   selected_strategy: null
   selected_broker: null
   selected_market_data: null
@@ -515,7 +515,7 @@ risk_reference_approval:
 financial_preparation_wave03:
   updated_on: 2026-10-14
   OOS_proposal: planning/research/D-011_OOS_policy_decision_RC0.md
-  next_human_decision: Q056_PRIMARY_ECONOMIC_OBJECTIVE_CONCEPTUAL_ONLY
+  next_human_decision: NONE_Q056_APPROVED_CONTINUE_TECHNICAL_PROTOCOL
   Q055: DECIDED_CONCEPTUAL_ADR016
   D011_global: RESEARCHING
   Strategy_V1: OPEN
@@ -570,11 +570,29 @@ financial_preparation_wave04:
   reuse_probe_E2_scope: SYNTHETIC_PRIMITIVES_NOT_STATISTICAL_OR_TARGET_ACCEPTANCE
   statistical_model_selected: false
   transitive_licenses_reviewed: false
-  next_human_decision: Q056_PRIMARY_ECONOMIC_OBJECTIVE_CONCEPTUAL_ONLY
-  Q056: READY_FOR_DECISION
+  next_human_decision: NONE_Q056_APPROVED_CONTINUE_TECHNICAL_PROTOCOL
+  Q056: DECIDED_CONCEPTUAL_ADR017
   selected_strategy: null
   selected_broker: null
   data_admitted: false
   incremental_spend: 0
+  implementation_locked: true
+  target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED
+
+economic_objective_approval:
+  ADR: ADR-017
+  Q056: DECIDED
+  approved_on: 2026-10-14
+  objective: COMPETITIVE_NET_RETURN_AND_MATERIAL_RISK_REDUCTION
+  risk_minimization_without_return_allowed: false
+  owner_approval_of_margin_before_results_required: true
+  cash_opportunity_cost_required: true
+  exposure_comparator_required: true
+  return_incremental_secondary: true
+  operational_gate_independent: true
+  no_candidate_qualifies_outcome: NO_STRATEGY_QUALIFIED
+  numeric_margin_approved: false
+  Strategy_V1: OPEN
+  D011_global: RESEARCHING
   implementation_locked: true
   target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED

@@ -1,6 +1,6 @@
 # Q-056 / D-008–011 — objetivo económico del comparador
 
-2026-10-14 · **READY_FOR_DECISION conceptual, no aprobación** tras revisión crítica independiente. Este problema es distinto de O-B ya aprobado. Strategy OPEN; no resultados de candidatos vistos. [Scorecard](R-020_comparable_candidate_scorecard_RC2.md) y [protocolo](R-020_evaluation_protocol_RC2.md).
+2026-10-14 · **DECIDED opción B por owner, ADR-017; propuesta original conservada**. Este problema es distinto de O-B ya aprobado. Strategy OPEN; no resultados de candidatos vistos. [Scorecard](R-020_comparable_candidate_scorecard_RC2.md) y [protocolo](R-020_evaluation_protocol_RC2.md).
 
 ## Problema que necesita gobierno
 
@@ -17,3 +17,7 @@ No es necesario que el propietario escoja alpha/power/fórmula ahora. Primero el
 **Recomendación:** B para una primera estrategia long-only con control determinístico, A como lectura secundaria; no ordenar automáticamente por Sharpe/Calmar. Es una recomendación normativa sobre objetivo, no evidencia de que un candidato mejore riesgo o retorno. En B retorno neto y riesgo medido usan misma base/calendario; margen de no inferioridad y reducción mínima de riesgo se fijan antes de resultados, no se deducen del mejor candidato. Máximo drawdown es path-dependent: el método/intervalo necesita validación, no un t-test de trades ni una cifra aislada. Cash/uninvested periods se incluyen; no igualar riesgo mediante leverage/short no autorizados. Las exposiciones y drawdown tolerables de Risk Policy siguen separados.
 
 Podemos continuar documentando fuentes/brokers y pruebas de contratos independientemente, pero cerrar el endpoint primario de F0 y declarar candidatos estadísticamente comparables exige esta preferencia material. Alcance de aprobación pedida: **A/B/C dirección del objetivo de evaluación**, no muestra/p-values/márgenes/umbral numérico todavía. Formalizar contrato técnico después; owner aprueba los cambios materiales que correspondan. No reinterpretar B como permiso de pérdidas nuevas ni exención de resultado neto OOS/§23. Separar estas opciones del **probe E2** estadístico, que sólo es evidencia sintética.
+
+## Aprobación económica vigente — 2026-10-14, ADR-017
+
+[ADR-017](../decisions/ADR-017-economic-objective-return-risk-efficiency.md): Q056/B DECIDED conceptual. Retorno neto competitivo + reducción material de riesgo, no minimización del riesgo aislada. Margen de no inferioridad requiere fundamento y aprobación owner antes de resultados; cash/opportunity cost y comparadores de exposición obligatorios. A secundaria/C operacional independiente; NO_STRATEGY_QUALIFIED admitido si ninguno cumple. D011 RESEARCHING, F0 incompleto; holdout UNKNOWN, lock/targetdeferral vigentes. Continúa formulación técnica/PRICE–MATR/Form4 sin nueva elección conceptual abstracta.

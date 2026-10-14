@@ -40,3 +40,7 @@ Criterios ya obligatorios ADR016: rights/PIT/coverage, toda búsqueda registrada
 ## 4. Ruta de evidencia sin circularidad
 
 Diseño/especificación/admisión/metodología en Team; backtests reales/carga/integración y validación operacional en PC personal. D008 selección de diseño necesita gobierno y contrato congelado, no alpha inventada antes de probar. DoR/target acceptance antes de implementación; evidence forward/PAPER/promoción antes de autonomía/LIVE. Gate estadístico de suficiencia no se sustituye por aprobación de owner ni por objetivo pedagógico.
+
+## Aprobación económica vigente — 2026-10-14, ADR-017
+
+[ADR-017](../decisions/ADR-017-economic-objective-return-risk-efficiency.md): Q056/B DECIDED conceptual. Retorno neto competitivo + reducción material de riesgo, no minimización del riesgo aislada. Margen de no inferioridad requiere fundamento y aprobación owner antes de resultados; cash/opportunity cost y comparadores de exposición obligatorios. A secundaria/C operacional independiente; NO_STRATEGY_QUALIFIED admitido si ninguno cumple. D011 RESEARCHING, F0 incompleto; holdout UNKNOWN, lock/targetdeferral vigentes. Continúa formulación técnica/PRICE–MATR/Form4 sin nueva elección conceptual abstracta.

@@ -4,8 +4,8 @@
   "scope": "PRE_RESULT_TEMPLATE_NOT_APPROVED",
   "state": "NOT_EVALUATED",
   "freeze_eligible": false,
-  "owner_direction_dependency": "Q-056",
-  "economic_endpoint": null,
+  "owner_direction_dependency": "Q-056_DECIDED_ADR017",
+  "economic_endpoint": "NET_RETURN_NONINFERIORITY_AND_MATERIAL_RISK_REDUCTION_CONCEPTUAL",
   "minimum_economic_effect": null,
   "benchmark": null,
   "non_inferiority_margin": null,
@@ -31,5 +31,9 @@
   "confirmation_integrity": "PROPOSED_RESERVE_INTEGRITY_UNKNOWN",
   "on_missing_requirement": "NOT_EVALUATED",
   "on_insufficient_sample": "INSUFFICIENT_EVIDENCE",
-  "owner_economic_direction_does_not_set_numeric_parameters": true
+  "owner_economic_direction_does_not_set_numeric_parameters": true,
+  "cash_opportunity_cost_required": true,
+  "exposure_comparator_required": true,
+  "all_candidates_unqualified_outcome": "NO_STRATEGY_QUALIFIED",
+  "numeric_margin_owner_approval_required_before_results": true
 }

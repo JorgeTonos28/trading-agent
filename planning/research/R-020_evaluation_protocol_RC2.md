@@ -61,3 +61,7 @@ Checklist F0: configs evaluables por candidato, admisión por dataset/scope, reg
 ## MethodApplicabilityCard obligatoria
 
 Por método registrar frecuencia/annualización/benchmark, endpoint y dependencia serial/cross-sectional, momentos/longitud de muestra, familia completa y inputs faltantes. PSR/DSR requieren justificar además dependencia de retornos y estimación entre trials; no reemplazar T por N_effective sin derivación validada. CSCV/PBO necesita matriz/cohorte/selector completos y particiones válidas para dependencia temporal: la limitación de autocorrelación del paper §5.1 se evalúa, no se sortea barajando sesiones. Holm exige p-values válidos y familia previa; no corrige por sí solo búsqueda adaptativa oculta. Inaplicabilidad => NO_ESTIMABLE con motivo; no sustituir por otro método favorable después de mirar resultados. Valores/modelo final continúan OPEN.
+
+## Aprobación económica vigente — 2026-10-14, ADR-017
+
+[ADR-017](../decisions/ADR-017-economic-objective-return-risk-efficiency.md): Q056/B DECIDED conceptual. Retorno neto competitivo + reducción material de riesgo, no minimización del riesgo aislada. Margen de no inferioridad requiere fundamento y aprobación owner antes de resultados; cash/opportunity cost y comparadores de exposición obligatorios. A secundaria/C operacional independiente; NO_STRATEGY_QUALIFIED admitido si ninguno cumple. D011 RESEARCHING, F0 incompleto; holdout UNKNOWN, lock/targetdeferral vigentes. Continúa formulación técnica/PRICE–MATR/Form4 sin nueva elección conceptual abstracta.

@@ -122,3 +122,7 @@ A051 integridad de reserva permanece UNVERIFIED, no resuelta por aprobación O-B
 - A-054 P0 UNVERIFIED: muestra efectiva/precision y beneficio económico suficiente del candidato.19/19primitives no informa power/alpha; endpoint preferenciaQ056 y EvidenceCard previos requeridos.
 - A-055 P1 PARTIAL: delayedhistoricalSIP puede servir a señalEOD. Docs acceso15min/no subscription, pero rights/coverage2005/firstdelivery/PIT/freshRisk no demostrados; no stack free certificado.
 - A-056 P1 PARTIAL: statsmodels/arch primitives compatibles research. Toyrepeat yknownvectorPASS no prueba estimadores/modelo/runtime personal ni licencias transitivas completas.
+
+## Aprobación económica vigente — 2026-10-14, ADR-017
+
+[ADR-017](decisions/ADR-017-economic-objective-return-risk-efficiency.md): Q056/B DECIDED conceptual. Retorno neto competitivo + reducción material de riesgo, no minimización del riesgo aislada. Margen de no inferioridad requiere fundamento y aprobación owner antes de resultados; cash/opportunity cost y comparadores de exposición obligatorios. A secundaria/C operacional independiente; NO_STRATEGY_QUALIFIED admitido si ninguno cumple. D011 RESEARCHING, F0 incompleto; holdout UNKNOWN, lock/targetdeferral vigentes. Continúa formulación técnica/PRICE–MATR/Form4 sin nueva elección conceptual abstracta.

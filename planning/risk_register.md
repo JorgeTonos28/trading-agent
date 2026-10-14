@@ -145,3 +145,7 @@ K067 conserva integridad UNKNOWN y O-B aprobado sólo conceptual. Riesgos adicio
 - K-070 P1: holding horizon largo/expiry futuro encubre quote/estado stale o feeddelayed. Freshness por input, marcasRisk y protección independientes, deadline/reconcile y escenarios; no filledOpen ideal ni GTCeterno.
 - K-071 P1: independencia ficticia por filas/partialfills/activos y p-valuesNaN/inputs inválidos. Clusters/serialdependence/pairedblocks y admissionexterno, INSUFFICIENT_EVIDENCE/NOT_EVALUATED/NO_ESTIMABLE; primitivePASS no alpha.
 - K-072 P1: IBKRpresets no versionados/authweekly o AlpacaOPGpermissions/GTC90d no modelados. Contracts/source/config/recovery/B1–5target, no hiddensettings ni bypass2FA, FinancialCore fueraAI.
+
+## Aprobación económica vigente — 2026-10-14, ADR-017
+
+[ADR-017](decisions/ADR-017-economic-objective-return-risk-efficiency.md): Q056/B DECIDED conceptual. Retorno neto competitivo + reducción material de riesgo, no minimización del riesgo aislada. Margen de no inferioridad requiere fundamento y aprobación owner antes de resultados; cash/opportunity cost y comparadores de exposición obligatorios. A secundaria/C operacional independiente; NO_STRATEGY_QUALIFIED admitido si ninguno cumple. D011 RESEARCHING, F0 incompleto; holdout UNKNOWN, lock/targetdeferral vigentes. Continúa formulación técnica/PRICE–MATR/Form4 sin nueva elección conceptual abstracta.

@@ -60,3 +60,7 @@ Q054 referenciaR2 DECIDED por ADR015; D035 restante abierto. [Cálculos comunes 
 ## Wave04 — comparación previa a rendimiento
 
 [Fichas comparables RC2](research/R-020_comparable_candidate_scorecard_RC2.md) y [protocolo](research/R-020_evaluation_protocol_RC2.md): cinco hipótesis declaradas, sin datos admitidos/retornos/selección, registrytrials0. Prioridad de investigación PRICE vs MATR y F4 como fuente externa a admitir, no resultado ni cierre D008. Q056 preferencia retorno/riesgo READY conceptual, criterios numéricos/métodos/Configs aún abiertos; F0 no sellado. Reserva UNKNOWN/M11, baselineMATR2005+ intacto.
+
+## Aprobación económica vigente — 2026-10-14, ADR-017
+
+[ADR-017](decisions/ADR-017-economic-objective-return-risk-efficiency.md): Q056/B DECIDED conceptual. Retorno neto competitivo + reducción material de riesgo, no minimización del riesgo aislada. Margen de no inferioridad requiere fundamento y aprobación owner antes de resultados; cash/opportunity cost y comparadores de exposición obligatorios. A secundaria/C operacional independiente; NO_STRATEGY_QUALIFIED admitido si ninguno cumple. D011 RESEARCHING, F0 incompleto; holdout UNKNOWN, lock/targetdeferral vigentes. Continúa formulación técnica/PRICE–MATR/Form4 sin nueva elección conceptual abstracta.

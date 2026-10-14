@@ -177,3 +177,7 @@ ProtocoloRC2 y cinco hipótesis (trials0), exposureledger parcial/reservaUNKNOWN
 Fuentes oficiales Alpaca delayed historicalSIP/deadlines/feedpin/expiry y IBKR auth/presets/cancelstates: doc evidencia/gates/scorecards económicos, sin cuenta/config/data calls o protección aceptada. Primitives statsmodels0.15/arch8 pinadas sólo local15deps, probeE2 19/19 ficticio; NaNdevuelto requiere admissionexterno, no método final ni pruebas estadísticas de trading. Fuente/result/deps/launcher capturados, transitivas por revisar, no rerun.
 
 Review independiente repara cuatroP1 (F0/F1/target, effect/scope, methodapplicability, freshness), dosP2 (manifestdeps/naming) por Architect. Q056 dirección económica propuestaB READY sóloconceptual; no aprobada. Registros/perfil/dependencias/source pointers actualizados. Lock/targetdeferral/main/A+/G1+G2/R2 invariantes, cero gasto, sin nueva investigación agéntica ni limpiezaH7.
+
+## 2026-10-14 — ADR-017, Q056/B aprobado
+
+Ocho condiciones owner registradas: retorno competitivo+riesgo material, cash/opportunity cost y exposición, Asecundaria/Coperacional independiente, preregistro/owner margin y NO_STRATEGY_QUALIFIED. D011/F0/números/selección permanecen abiertos, holdoutUNKNOWN/lock/targetdeferral. Historia Q056 conservada y estado actual DECIDED; AGENTS/roadmap/registros/perfil/card actualizados. No datos/backtests/implementación/gasto/admin/main. Siguiente trabajo autónomo técnico, no otra pregunta conceptual similar.

@@ -138,5 +138,7 @@
     "probes/r021-edgartools-offline/README.md",
     "probes/r020-evaluation/README.md"
   ],
-  "synthetic_probes_are_strategy_trials": false
+  "synthetic_probes_are_strategy_trials": false,
+  "declaration_source_commit": "1727470289d1479300b81260ca91ed3597aeeed0",
+  "declaration_hash_policy": "SHA256_RAW_BYTES_AT_DECLARATION_KEEP_HISTORY_AS_DOCS_EVOLVE"
 }
