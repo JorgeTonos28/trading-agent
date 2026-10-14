@@ -161,3 +161,12 @@ K067 conserva integridad UNKNOWN y O-B aprobado sólo conceptual. Riesgos adicio
 ## Estado vigente K2 — ADR-018, 2026-10-14
 
 [ADR-018](decisions/ADR-018-PRICE-MATR-benchmark-package-K2.md): Q057/K2 DECIDED por propietario. EW6-BH primario, cash y espejo EW6-BH-LAMBDA-REAL obligatorios; SPY/SPY-SMA200 secundarios y mensual sólo sensibilidad predefinida. Exposición no equivale a riesgo: composición/beta/factores y limitaciones, diferencia económica frente a SPY visible, políticas reproducibles/as-of y gates conjuntos sin score compensatorio. Scope sólo ETF PRICE–MATR; márgenes/modelos/datasets y Strategy no aprobados. D011 RESEARCHING, holdout UNKNOWN, lock/targetdeferral; continuar trabajo técnico sin repetir Q056/Q057.
+
+## Riesgos wave06
+
+- K-078 P1: fees heterogéneos/dividend reinvest restablecen equal-weight tácitamente, cash receivable gastado antes de disponibilidad. Booktargets/realizados/deriva/as-of y futura paridadengine.
+- K-079 P0: ES(S-M) sustituye diferencias deES, cola95nominal50 se trata como independiente, o MC14/14 se declara calibraciónPASS. RC4 estimando, referencepositive/mass/clusters y pilotlimits; incertidumbre/métodos previos.
+- K-080 P1: inputsInf producen outputs finitos y pasan admission por error. Validación finitud/escala/clocks antes de librería; E4observación preservada.
+- K-081 P1: índices SEC actuales/revisados reescriben universo histórico; acceptance/dailydate usado como receipt. PAC/version/canal gates, M11unknown no reservaabierta.
+- K-082 P0: overhead del sistema cargado a cash/EWpasivo para esconder oportunidad, o gastos/scaleUNKNOWN tratados como0. NI/cash net_after_incremental_ops deS contra costespropios debenchmark, ES net_trading; gobiernoeconómico no capital elegido.
+- K-083 P1: pagar por historia se confunde con derechos/PIT/quality; retención al terminar y sourceindicative ignoradas. R008wave03/phasedscorecards, no contratación ni eliminación de audit para encajar en precio.

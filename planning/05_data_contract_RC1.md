@@ -58,3 +58,7 @@ El snapshot de decisión fija conjunto de observaciones y sus revisiones, univer
 ## Demanda económica wave05
 
 [RC3](research/R-020_economic_qualification_contract_RC3.md) requiere cashREAL vs hurdle monetario separados, ledger/costs de referencia y λ conocido al inicio de intervalos por fills/cambios. λEOD no certifica exposición intraday. R008 cash y Form4RC2 requieren vintages/raw flags/rowmapping/amendments; todos sujetos a rights/admission. No feed/modelo elegido ni software operativo.
+
+## Demanda wave06
+
+[BookK2](research/R-020_K2_benchmark_book_RC0.md) precisa pay-date/receivable/cash y targets/realizados; [SEC](research/R-021_SEC_availability_admission_RC3.md) precisa PAC/rebuilds/canales, no dailydate=availability. Costesoperativos por uso/escala y streams separados, no brokerstate modificado. Nuevos vendors documentados no admitidos, derechos/quality/PIT pendientes.

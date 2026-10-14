@@ -137,3 +137,10 @@ A051 integridad de reserva permanece UNVERIFIED, no resuelta por aprobación O-B
 ## Estado vigente K2 — ADR-018, 2026-10-14
 
 [ADR-018](decisions/ADR-018-PRICE-MATR-benchmark-package-K2.md): Q057/K2 DECIDED por propietario. EW6-BH primario, cash y espejo EW6-BH-LAMBDA-REAL obligatorios; SPY/SPY-SMA200 secundarios y mensual sólo sensibilidad predefinida. Exposición no equivale a riesgo: composición/beta/factores y limitaciones, diferencia económica frente a SPY visible, políticas reproducibles/as-of y gates conjuntos sin score compensatorio. Scope sólo ETF PRICE–MATR; márgenes/modelos/datasets y Strategy no aprobados. D011 RESEARCHING, holdout UNKNOWN, lock/targetdeferral; continuar trabajo técnico sin repetir Q056/Q057.
+
+## Supuestos wave06
+
+- A-061 P1 PARTIAL: benchmark equal-weight y reinversión preservan contabilidad comparable. Targets1/6 no garantizan pesos realizados exactos; policy/data/engine aún no aceptados, fixturesE4 no ledger completo.
+- A-062 P0 UNVERIFIED: inferencia de CAGR/ES con bloques tiene cobertura/power adecuados. Piloto de media evidencia fragilidad iid, no valida método; Inf puede producir límite finito, admission previa obligatoria.
+- A-063 P1 UNVERIFIED: full/quarterlyindex SEC actual acredita availability histórica. PAC/rebuilds generan diferencias; raw versions/channel/receipt pendientes.
+- A-064 P1 UNVERIFIED: coste operativo incrementa cero o se puede cargar también a benchmark pasivo. Uso/escala/K/accrual pendientes; net_after_ops y net_trading separados, UNKNOWN bloquea claim operacional.

@@ -28,3 +28,7 @@ Power/otros paid: **CONDITIONAL**, no seleccionados; retención tras cancelació
 Tiingo free durable:NO, acceso0/opsUNKNOWN; paid30personal/50internal-commercial mensuales publicados y otros términos, escala/durable retention/lock-in/beneficio UNKNOWN. FREE_ALTERNATIVE=filas candidatas sin suficiencia certificada. PAID_INCREMENTAL_VALUE=historia/calidad/rights utilizables/continuidad si demostrado; ECONOMIC_JUSTIFICATION_REQUIRED=YES. LIVE costo/exit/deletion/contract por cotizar según scope; vendor pago no evita PIT/data-quality gates. Mensual un investigador/seisETF, volumen y usos no cerrados.
 
 Antes de proponer excepción económica: comparar rutas Tier0/1 restantes y demostrar gap material + costo/beneficio/rights + aprobación owner. No presupuesto ni ninguna activación de API. Mantener contratos durables/versionados del proyecto; no reducir auditoría silenciosamente para declarar viable una fuente gratuita.
+
+## Extensión de retención — wave06
+
+[Extensión de retención](R-008_sources_evidence_wave03_2026-10-14.md) añade especificación y límites; Q057 aprobado en paquete, Q058 números propuestos. Sin fuente/modelo/Strategy admitidos ni performance. E4 sólo cálculo/meanpilot, no cobertura CAGR/ES/DD; M11 parcial/holdoutUNKNOWN. Versiones/declaraciones anteriores conservadas, no rehash histórico.

@@ -108,3 +108,9 @@ Después de esa referencia: fijar métricas candidatas/MethodApplicabilityCard, 
 ## Estado vigente K2 — ADR-018, 2026-10-14
 
 [ADR-018](decisions/ADR-018-PRICE-MATR-benchmark-package-K2.md): Q057/K2 DECIDED por propietario. EW6-BH primario, cash y espejo EW6-BH-LAMBDA-REAL obligatorios; SPY/SPY-SMA200 secundarios y mensual sólo sensibilidad predefinida. Exposición no equivale a riesgo: composición/beta/factores y limitaciones, diferencia económica frente a SPY visible, políticas reproducibles/as-of y gates conjuntos sin score compensatorio. Scope sólo ETF PRICE–MATR; márgenes/modelos/datasets y Strategy no aprobados. D011 RESEARCHING, holdout UNKNOWN, lock/targetdeferral; continuar trabajo técnico sin repetir Q056/Q057.
+
+## Wave06 y dependencia siguiente
+
+R020 bookK2/RC4/márgenes, M11 repositorio parcial y E4 completados en scope de diseño/probes; R008 nuevas alternativas y R021 canalSEC con PAC/índices/readiness. [Review](research/R-020_wave06_independent_review_2026-10-14.md) incorpora reparaciones de overhead/streams/targets. No cierre estadístico ni fuente; M11UNKNOWN. Siguiente gobierno numérico Q058, no preferencias abstractas.
+
+Tras margen/efecto: guardrails económicos, MethodApplicability/calibración CAGR/ES/DD/familia/precision previa, CandidateConfig, price+actions+cash/datasetrights/as-of y broker/engine parity; formulas/reservas/workflow por demanda. No capital/source UNKNOWN=0 ni calibración por pilot. R030/Plus/PC personal diferido antes de implementación, no solicitud actual.

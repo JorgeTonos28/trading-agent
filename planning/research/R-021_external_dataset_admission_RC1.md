@@ -45,3 +45,7 @@ Escenario mensual: un investigador, lotes EOD y caching; volumen todavía UNKNOW
 ## Semántica Form4 posterior — wave05
 
 [Semántica Form4 posterior](R-021_Form4_semantic_admission_RC2.md) añade condiciones de semántica, disponibilidad histórica/PIT y costes; no admisión de fuente ni selección de proveedor. E3/F2 sólo fixtures/componentes; datos/historia/rights y target no probados. Las fuentes restantes conservan su prioridad/alcance, no exclusión general por este probe.
+
+## Canal SEC y revisiones — wave06
+
+[Canal SEC y revisiones](R-021_SEC_availability_admission_RC3.md) añade especificación y límites; Q057 aprobado en paquete, Q058 números propuestos. Sin fuente/modelo/Strategy admitidos ni performance. E4 sólo cálculo/meanpilot, no cobertura CAGR/ES/DD; M11 parcial/holdoutUNKNOWN. Versiones/declaraciones anteriores conservadas, no rehash histórico.

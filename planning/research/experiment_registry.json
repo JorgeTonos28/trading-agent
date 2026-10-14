@@ -142,7 +142,8 @@
       "trial_runs": [],
       "captured_eol_at_declaration": "LF",
       "spec_git_blob_sha256_at_declaration": "365bb0cf75cdbc75e6aea37832f4ea879fa8b4a4a9b15173d4af4d2295f13e62",
-      "git_blob_hash_provenance": "VERIFIED_STAGED_GIT_BLOB_SAME_COMMIT"
+      "git_blob_hash_provenance": "VERIFIED_DECLARATION_SOURCE_COMMIT",
+      "declaration_source_commit": "b0e3c4467c34f5e8ebca3704af7545fa5fc15656"
     },
     {
       "id": "A-MATR-RATCHET-01",
@@ -163,7 +164,8 @@
       "trial_runs": [],
       "captured_eol_at_declaration": "LF",
       "spec_git_blob_sha256_at_declaration": "365bb0cf75cdbc75e6aea37832f4ea879fa8b4a4a9b15173d4af4d2295f13e62",
-      "git_blob_hash_provenance": "VERIFIED_STAGED_GIT_BLOB_SAME_COMMIT"
+      "git_blob_hash_provenance": "VERIFIED_DECLARATION_SOURCE_COMMIT",
+      "declaration_source_commit": "b0e3c4467c34f5e8ebca3704af7545fa5fc15656"
     },
     {
       "id": "S-F4-PLANAGNOSTIC-00",
@@ -185,7 +187,8 @@
       "trial_runs": [],
       "captured_eol_at_declaration": "LF",
       "spec_git_blob_sha256_at_declaration": "992174685e837a644e04990823ebf89b8d5408fb7f2aebdbd4be9d51fee90841",
-      "git_blob_hash_provenance": "VERIFIED_STAGED_GIT_BLOB_SAME_COMMIT"
+      "git_blob_hash_provenance": "VERIFIED_DECLARATION_SOURCE_COMMIT",
+      "declaration_source_commit": "b0e3c4467c34f5e8ebca3704af7545fa5fc15656"
     }
   ],
   "run_record_required_fields": [
@@ -217,11 +220,13 @@
     "probes/r021-edgartools-offline/README.md",
     "probes/r020-evaluation/README.md",
     "probes/r020-economic-contract/README.md",
-    "probes/r021-form4-semantics/README.md"
+    "probes/r021-form4-semantics/README.md",
+    "probes/r020-benchmark-inference/README.md"
   ],
   "synthetic_probes_are_strategy_trials": false,
   "declaration_source_commit": "1727470289d1479300b81260ca91ed3597aeeed0",
   "declaration_hash_policy": "SHA256_RAW_BYTES_AT_DECLARATION_KEEP_HISTORY_AS_DOCS_EVOLVE",
   "economic_objective_approval": "ADR-017_Q056_CONCEPTUAL_ONLY",
-  "portable_hash_policy": "KEEP_RAW_CAPTURE_SHA_AND_EOL;_VERIFY_GIT_BLOB_SHA_AT_DECLARATION_COMMIT;NEVER_REHASH_HISTORY_AFTER_ADENDAS"
+  "portable_hash_policy": "KEEP_RAW_CAPTURE_SHA_AND_EOL;_VERIFY_GIT_BLOB_SHA_AT_DECLARATION_COMMIT;NEVER_REHASH_HISTORY_AFTER_ADENDAS",
+  "benchmark_package_approval": "ADR018_Q057_K2_PACKAGE_ONLY"
 }

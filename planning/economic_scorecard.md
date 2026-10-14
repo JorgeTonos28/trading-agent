@@ -74,3 +74,7 @@ Una recomendación paga debe identificar una condición comprobable (por ejemplo
 ## Cash y componentes financieros — wave05
 
 [R008 cash](research/R-008_cash_benchmark_admission_RC0.md) registra seis campos económicos: acceso docs0, historia/vintage/modelo/ingeniería UNKNOWN, free alternatives condicionadas y valor incremental de paid total-return/PIT sólo si gap demostrado. No suscripción ni acceso a API contratado. [E3](research/R-020_economic_probe_findings_2026-10-14.md)/[F2](research/R-021_Form4_probe_findings_2026-10-14.md) reutilizan libs/deps ya locales, gasto incremental0; ingeniería, mantenimiento, licencias transitivas/target y LIVEcost aún UNKNOWN. Gratuito no prueba calidad suficiente; ninguna fuente seleccionada.
+
+## Fuentes y utilidad wave06
+
+[R008wave03](research/R-008_sources_evidence_wave03_2026-10-14.md) incorpora EODHD/Twelve/Norgate/Nasdaq con seis campos, fijos/variable/scale/lock-in y diferencias de historia/rights/calidad. Sin cuenta/gasto/provider seleccionado; ni free insuficiencia universal ni paid quality demostrada. [Q058](research/D-011_economic_margins_proposal_RC0.md) muestra F/K ficticio, no budget/capital; overhead se asigna aS, no a referencias pasivas para borrar oportunidad. Runtime/library license0 no opscost0.

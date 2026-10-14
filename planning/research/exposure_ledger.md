@@ -28,3 +28,13 @@ Si contaminación relevante/no acreditación suficiente: preparar alternativa pr
 | X09 | Series/ratios y tabla de potencia completamente ficticios de E3; XML propio F2 | Capturas probes2026-10-14 | Prueba de componentes/diseño; no dato real ni backtest. FixturePASS no admisión ni resultado confirmatorio |
 
 M-11 conserva integridad UNKNOWN. Este incremento no cierra inventario ni demuestra contaminación suficiente o independencia: requiere auditoría de proceso antes de apertura confirmatoria.
+
+## Exposición adicional wave06 — 2026-10-14
+
+| ID | Exposición registrada | Fuente/fecha | Uso y alcance |
+|---|---|---|---|
+| X10 | Documentación arch/papers ES menciona ejemplos SPY/S&P y períodos históricos | Búsqueda/lectura métodos2026-10-14 | No descargados ejemplos/datasets ni usados retornos para elegir margen. Referencias externas no resultados propios; conservar alcance no exhaustivo |
+| X11 | Quotes puntuales y variaciones visibles en página de pricing Twelve Data | Lectura pricing2026-10-14, timestamps exactos no reconstruidos | No llamadas a precios, valores no usados/copiados como dataset o resultado; exposición pública incidental, no certify holdout |
+| X12 | Ficticios E4 y ejemplos de riqueza/coste de margen | Probes/docs2026-10-14 | No observaciones reales/alpha, no cambio de ventana ni apertura de reserva |
+
+M11 repositoryaudit e9b36dc parcial; ningún hallazgo establece integridad o contaminación suficiente automáticamente. Reserva INTEGRITY_UNKNOWN.

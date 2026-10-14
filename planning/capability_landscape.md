@@ -226,3 +226,7 @@ statsmodels0.15.0/arch8.0.0: EXISTS=YES, AVAILABLE_IN_RESEARCH=YES prueba parcia
 ## Primitives financieros — wave05
 
 arch8/statsmodels0.15: E3 19/19 fixtures, REUSE_AS_IS primitive + WRAP admission candidato, no estimador/modelo final/alpha. EdgarTools5.62 F2 13/13 componentes; helper interno de flag/footnotes WRAP/ADAPT candidato con rawstatus/duplicados/regression, no end-to-end REUSE_AS_IS. EXISTS=YES; AVAILABLE_IN_RESEARCH_AI_ENVIRONMENT=YES para capturas locales; AVAILABLE_IN_TARGET_PAPER_PLUS/AVAILABLE_ON_TARGET_PAPER_HOST=UNKNOWN; TECHNICALLY_COMPATIBLE=PARTIAL; ECONOMICALLY_REASONABLE=UNKNOWN operación/calidad; SELECTED=NO. [Dossiers E3](research/R-020_economic_probe_findings_2026-10-14.md)/[F2](research/R-021_Form4_probe_findings_2026-10-14.md), costes en economic_scorecard. No nuevos Skills/MCP/runtimesIA ni reapertura del diseño agéntico aprobado.
+
+## Componentes quant wave06
+
+[E4](research/R-020_E4_findings_2026-10-14.md) reutiliza arch/statsmodels/numpy deE2:14/14arithmetic/components y piloto de media, no método validado; Inf→finitebound exige WRAP inputadmission. EXISTS/AVAILABLE_IN_RESEARCH=YES scope pinado, TARGET_PLUS/HOST UNKNOWN, TECH_COMPATIBLE=PARTIAL, ECONOMICALLY_REASONABLE=UNKNOWN operación, SELECTED=NO. [Sources](research/R-008_sources_evidence_wave03_2026-10-14.md) APIs/dataWRAP candidatos, no nuevos Skills/MCP/agent runtime. Economía y transitivelicenses pendientes; no BUILD motor estadístico/proveedor general.

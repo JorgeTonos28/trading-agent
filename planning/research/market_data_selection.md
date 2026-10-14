@@ -40,3 +40,7 @@ Las filas anteriores son inventario inicial fechado. [Wave broker/data](R-007_00
 ## Referencia monetaria — wave05
 
 [Referencia monetaria](R-008_cash_benchmark_admission_RC0.md) añade condiciones de semántica, disponibilidad histórica/PIT y costes; no admisión de fuente ni selección de proveedor. E3/F2 sólo fixtures/componentes; datos/historia/rights y target no probados. Las fuentes restantes conservan su prioridad/alcance, no exclusión general por este probe.
+
+## Alternativas/rights adicionales — wave06
+
+[Alternativas/rights adicionales](R-008_sources_evidence_wave03_2026-10-14.md) añade especificación y límites; Q057 aprobado en paquete, Q058 números propuestos. Sin fuente/modelo/Strategy admitidos ni performance. E4 sólo cálculo/meanpilot, no cobertura CAGR/ES/DD; M11 parcial/holdoutUNKNOWN. Versiones/declaraciones anteriores conservadas, no rehash histórico.

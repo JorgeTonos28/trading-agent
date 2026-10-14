@@ -642,3 +642,29 @@ benchmark_package_approval:
   source_and_realization_admitted: false
   implementation_locked: true
   target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED
+
+financial_preparation_wave06:
+  updated_on: 2026-10-14
+  benchmark_book: planning/research/R-020_K2_benchmark_book_RC0.md
+  statistical_contract: planning/research/R-020_statistical_method_contract_RC4.md
+  economic_margin_proposal: planning/research/D-011_economic_margins_proposal_RC0.md
+  independent_review: planning/research/R-020_wave06_independent_review_2026-10-14.md
+  source_evidence: planning/research/R-008_sources_evidence_wave03_2026-10-14.md
+  SEC_admission: planning/research/R-021_SEC_availability_admission_RC3.md
+  M11: PARTIAL_REPOSITORY_AUDIT_INTEGRITY_UNKNOWN
+  Q058: READY_FOR_DECISION_NOT_APPROVED
+  recommendation: M1_1PP_NI_1PP_CASH_20PCT_ES95
+  numeric_margins_approved: false
+  benchmark_realization_frozen: false
+  statistical_method_validated: false
+  strategy_trials_executed: 0
+  E4_component_passes: 14
+  E4_component_total: 14
+  E4_MC_replications_per_DGP: 160
+  E4_pilot: SYNTHETIC_ANNUAL_MEAN_NOT_CAGR_ES_OR_ALPHA_CALIBRATION
+  incremental_ops_known: false
+  selected_strategy: null
+  source_admitted: false
+  implementation_locked: true
+  target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED
+  incremental_spend: 0

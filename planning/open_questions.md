@@ -145,3 +145,7 @@ P0 / D008-D011 · DECIDED K2 por owner/ADR018; propuesta original conservada en 
 ## Estado vigente K2 — ADR-018, 2026-10-14
 
 [ADR-018](decisions/ADR-018-PRICE-MATR-benchmark-package-K2.md): Q057/K2 DECIDED por propietario. EW6-BH primario, cash y espejo EW6-BH-LAMBDA-REAL obligatorios; SPY/SPY-SMA200 secundarios y mensual sólo sensibilidad predefinida. Exposición no equivale a riesgo: composición/beta/factores y limitaciones, diferencia económica frente a SPY visible, políticas reproducibles/as-of y gates conjuntos sin score compensatorio. Scope sólo ETF PRICE–MATR; márgenes/modelos/datasets y Strategy no aprobados. D011 RESEARCHING, holdout UNKNOWN, lock/targetdeferral; continuar trabajo técnico sin repetir Q056/Q057.
+
+## Q-058 — utilidad numérica de calificación
+
+P0/D008-D011 · READY_FOR_DECISION, [propuesta nueva M0/M1/M2](research/D-011_economic_margins_proposal_RC0.md). Recomendar M1: margenNI1pp CAGR/año, exceso mínimo cash1pp neto/año, reducciónES20% con cola95, sujeto a evidencia/precision y comparador defendibles. Números no aprobados, Q056/Q057 no se reabren. Trade-off de oportunidad, gastos/escala y muestra ficticia documentados, sin estimar parámetros del mercado. Aprobación eventual sólo presupuestos económicos/definición de cola, no calib/modelo/dataset/Strategy/capital/DoR.

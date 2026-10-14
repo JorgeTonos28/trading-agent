@@ -193,3 +193,13 @@ Revisión independiente corrigió cash/modelo y doublecost, baselineBH/λclocks,
 ## 2026-10-14 — ADR018, Q057/K2 aprobado
 
 Owner aprueba paquete ETF EW6-BH/cash/λREAL con siete condiciones: exposición≠riesgo, SPYvisible, reproducibilidad/as-of, gates conjuntos, suficiencia y scopeETF. Históricos/propuestas/alternativas conservados, nueva decisión trazable; perfil/roadmap/AGENTS/registro/card/contratos actualizados. Métricas/márgenes/datasets/Strategy no aprobados. Siguiente trabajo autónomo técnico, no nueva elección de preferencias. HoldoutUNKNOWN, lock/targetdeferral/main/H7/A+/G1+G2/R2 intactos.
+
+## 2026-10-14 — wave06, realización K2 y utilidad propuesta
+
+Booktargets/realizados/deriva/reinversión/cash/corporate/clocks y factores; RC4ESfraccional/contraste/familia/applicability e inputs finitos. Streams NI/cash net_after_ops(S), ESfinance net_trading, benchmarks owncosts/no overhead ajeno. Q058 READY_FOR_DECISION nuevos budgets1pp/1pp/20%ES95 propuestos normativos, no estimaciones, aprobación pendiente; modelos/guardrails/source F0 aún abiertos.
+
+E4 único14/14 arithmetic/components, MC160porDGP/499basicmeanbootstrap, independenciaAR infravalora incertidumbre, Inf→finite0 preservado. No calibPASS/CAGR/ES/backtest/alpha/target, deps reutilizadas/newinstall0. Capturas/launcher/metadata archivados, newdeclarations dewave05 ancladasb0e3c44 sin modificar rawSHA.
+
+R008fuentes primarias EODHD/Twelve/Norgate/Nasdaq con rights/coverage/costs desconocidos y paidreserves sin gasto. SECnightindex/PAC/quarterlyrebuild noPITcertificado; M11inventario parcialGit sin datasetformatstracked no prueba integridad. Exposureledger ampliado. Review independiente repara overhead/streams/targets, target deferred/lock/main/H7/invariantes intactos.
+
+QA wave06: JSON/YAML,331 enlaces locales, campos numéricos nulos/F0 bloqueado, commits/EOL/hashes de declaraciones y capturas E3/F2/E4/dependencias/AST correctos. No probes repetidos, tests de estrategias o target; main/origin-main conservan a28d6f3. Q058 READY tras review exclusivamente utilidad/cola, no método o suficiencia.

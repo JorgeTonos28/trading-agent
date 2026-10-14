@@ -169,7 +169,7 @@
     "planning/08_S2_isolation_spec_RC1.md",
     "planning/research/R-013_S2_acceptance_matrix_RC1.md"
   ],
-  "next_governance_item": "NONE_Q056_Q057_APPROVED_CONTINUE_TECHNICAL_PROTOCOL_SOURCES_AND_MARGIN_PROPOSAL",
+  "next_governance_item": "Q058_READY_FOR_DECISION_NUMERIC_UTILITY_AND_TAIL_ONLY_NOT_METHOD_OR_STRATEGY",
   "isolation_variant": {
     "proposed": "S2_B",
     "selected": false,
@@ -217,5 +217,8 @@
   "mechanism_freeze": false,
   "economic_contract": "planning/research/R-020_economic_qualification_contract_RC3.md",
   "economic_reference_proposal": "planning/research/D-011_benchmark_qualification_decision_RC0.md",
-  "benchmark_package_approval": "planning/decisions/ADR-018-PRICE-MATR-benchmark-package-K2.md"
+  "benchmark_package_approval": "planning/decisions/ADR-018-PRICE-MATR-benchmark-package-K2.md",
+  "statistical_contract": "planning/research/R-020_statistical_method_contract_RC4.md",
+  "benchmark_book": "planning/research/R-020_K2_benchmark_book_RC0.md",
+  "economic_margin_proposal": "planning/research/D-011_economic_margins_proposal_RC0.md"
 }

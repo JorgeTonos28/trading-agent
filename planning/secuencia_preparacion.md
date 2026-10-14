@@ -156,3 +156,9 @@ Siguiente decisión material: [Q057 referencias K1/K2/K3](research/D-011_benchma
 ## Estado vigente K2 — ADR-018, 2026-10-14
 
 [ADR-018](decisions/ADR-018-PRICE-MATR-benchmark-package-K2.md): Q057/K2 DECIDED por propietario. EW6-BH primario, cash y espejo EW6-BH-LAMBDA-REAL obligatorios; SPY/SPY-SMA200 secundarios y mensual sólo sensibilidad predefinida. Exposición no equivale a riesgo: composición/beta/factores y limitaciones, diferencia económica frente a SPY visible, políticas reproducibles/as-of y gates conjuntos sin score compensatorio. Scope sólo ETF PRICE–MATR; márgenes/modelos/datasets y Strategy no aprobados. D011 RESEARCHING, holdout UNKNOWN, lock/targetdeferral; continuar trabajo técnico sin repetir Q056/Q057.
+
+## Endpoint financiero wave06 — 2026-10-14
+
+K2 registrado/sincronizado ADR018. Paquete autónomo: bookreproducible/RC4/streams, E4 arithmetic/MC, admisión documental SEC/vendor y auditoría parcialM11. No precios/backtests/reserva abiertos. Siguiente decisión nueva [Q058](research/D-011_economic_margins_proposal_RC0.md), presupuesto numéricoM1 propuesto previo a resultados; no repetir Q056/Q057 ni escoger márgenes para alcanzar power.
+
+Después: criterios/guardrails/modelos/calibración/suficiencia antes de F0, fuentes/reglas/paridad y financialP0/P1 según demanda. TargetR030 permanece separado; no main/implementación/gasto/admin ni nueva ronda agéntica.

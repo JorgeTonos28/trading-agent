@@ -6,3 +6,5 @@ planning/research/probes/r020-economic-contract/*.py -text
 planning/research/probes/r020-economic-contract/*.json -text whitespace=cr-at-eol
 planning/research/probes/r021-form4-semantics/*.py -text
 planning/research/probes/r021-form4-semantics/*.json -text whitespace=cr-at-eol
+planning/research/probes/r020-benchmark-inference/*.py -text
+planning/research/probes/r020-benchmark-inference/*.json -text whitespace=cr-at-eol

@@ -88,3 +88,7 @@ Baseline/reglas/ventanas originales conservados. [Pairing](research/R-020_PRICE_
 ## Estado vigente K2 — ADR-018, 2026-10-14
 
 [ADR-018](decisions/ADR-018-PRICE-MATR-benchmark-package-K2.md): Q057/K2 DECIDED por propietario. EW6-BH primario, cash y espejo EW6-BH-LAMBDA-REAL obligatorios; SPY/SPY-SMA200 secundarios y mensual sólo sensibilidad predefinida. Exposición no equivale a riesgo: composición/beta/factores y limitaciones, diferencia económica frente a SPY visible, políticas reproducibles/as-of y gates conjuntos sin score compensatorio. Scope sólo ETF PRICE–MATR; márgenes/modelos/datasets y Strategy no aprobados. D011 RESEARCHING, holdout UNKNOWN, lock/targetdeferral; continuar trabajo técnico sin repetir Q056/Q057.
+
+## Investigación posterior — wave06
+
+Benchmark K2 aprobado como paquete. [Book](research/R-020_K2_benchmark_book_RC0.md) y [RC4](research/R-020_statistical_method_contract_RC4.md) candidatos de realización/modelo; [Q058](research/D-011_economic_margins_proposal_RC0.md) propone números previos, no estrategia/márgenes ya decididos. RawSHA de declaraciónMATR queda anclado a1727470, posteriores adendas no lo sobrescriben. Ningún backtest; fechas/controlholdout conservados.

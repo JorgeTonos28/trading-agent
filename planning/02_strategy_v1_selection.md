@@ -72,3 +72,7 @@ Q054 referenciaR2 DECIDED por ADR015; D035 restante abierto. [Cálculos comunes 
 ## Estado vigente K2 — ADR-018, 2026-10-14
 
 [ADR-018](decisions/ADR-018-PRICE-MATR-benchmark-package-K2.md): Q057/K2 DECIDED por propietario. EW6-BH primario, cash y espejo EW6-BH-LAMBDA-REAL obligatorios; SPY/SPY-SMA200 secundarios y mensual sólo sensibilidad predefinida. Exposición no equivale a riesgo: composición/beta/factores y limitaciones, diferencia económica frente a SPY visible, políticas reproducibles/as-of y gates conjuntos sin score compensatorio. Scope sólo ETF PRICE–MATR; márgenes/modelos/datasets y Strategy no aprobados. D011 RESEARCHING, holdout UNKNOWN, lock/targetdeferral; continuar trabajo técnico sin repetir Q056/Q057.
+
+## Protocolo económico wave06
+
+[BookK2](research/R-020_K2_benchmark_book_RC0.md)/[RC4](research/R-020_statistical_method_contract_RC4.md) desarrollan paquete aprobado: beta/factores/streams/costs y métricas explícitas; [Q058](research/D-011_economic_margins_proposal_RC0.md) propuesta numérica, no selección ni marginal aprobado. Fuentes aún no admitidas; [M11](research/R-020_M11_repository_audit_RC0.md) parcial. StrategyV1 OPEN, F0 incompleto, target/lock intactos.

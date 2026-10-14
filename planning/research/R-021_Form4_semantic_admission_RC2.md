@@ -23,3 +23,7 @@ Amendment publica nueva vista desde availability nueva; doc4/A puede ser parcial
 ## Build-vs-Reuse y criterios de probe
 
 Biblioteca públicaMIT candidata ADAPT/WRAP; rawfootnotes/flag parser REUSE_AS_IS sólo si pruebas/scope lo justifican, seleccionadoNO. Código0/ops/mapping/historia UNKNOWN y seis campos económicos del dossierE1 vigentes; no frontendMCP o runtime nuevo. Probe usar fixtures sintéticos y no factory con enrichment, ni contacto falso. Nulos/conflictos/negaciones/plan global/amendmentpartial/reference ausente deberán quedar identificables; gate dataset/PIT permanece NOT_TESTED.
+
+## Histórico/dissemination — wave06
+
+[Histórico/dissemination](R-021_SEC_availability_admission_RC3.md) añade especificación y límites; Q057 aprobado en paquete, Q058 números propuestos. Sin fuente/modelo/Strategy admitidos ni performance. E4 sólo cálculo/meanpilot, no cobertura CAGR/ES/DD; M11 parcial/holdoutUNKNOWN. Versiones/declaraciones anteriores conservadas, no rehash histórico.

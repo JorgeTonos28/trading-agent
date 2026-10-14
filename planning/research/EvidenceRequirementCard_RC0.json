@@ -47,5 +47,13 @@
   "tail_level": null,
   "numerical_probes_are_acceptance": false,
   "exposure_does_not_establish_risk_equivalence": true,
-  "SPY_opportunity_cost_report_required": true
+  "SPY_opportunity_cost_report_required": true,
+  "statistical_contract": "R-020_statistical_method_contract_RC4.md",
+  "benchmark_realization": "R-020_K2_benchmark_book_RC0.md",
+  "margin_proposal": "D-011_economic_margins_proposal_RC0.md",
+  "numeric_margin_proposal_approved": false,
+  "NI_cash_stream": "NET_AFTER_INCREMENTAL_OPS_OF_S_BENCHMARK_OWN_COSTS",
+  "risk_stream": "NET_TRADING_S_AND_MIRROR",
+  "incremental_ops_known": false,
+  "capital_selected": false
 }
