@@ -155,3 +155,7 @@ A051 integridad de reserva permanece UNVERIFIED, no resuelta por aprobación O-B
 - A-066 P1 UNVERIFIED: dos rulepresets con parámetros especificados son configuraciones financieras ejecutables. Target/caps/broker/source/protección/fees siguen OPEN;10declaraciones no10estrategias admitidas.
 - A-067 P0 UNVERIFIED: ES menor implica DD/vol/recuperación adecuados. Q059 guardrails nueva materialidad, censura y tiposde evidencia separados.
 - A-068 P1 UNVERIFIED: coste/capital pueden elegirse porcelda favorable oF0significa costo0 real. Scenariosprevios y anchorowner antes de resultados; costos/scaleUNKNOWN→operacionalNOT_EVALUATED.
+
+## Vigencia G-R1 — ADR-020, 2026-10-15
+
+[ADR-020](decisions/ADR-020-PRICE-MATR-complementary-guardrails-G-R1.md): Q-059/G-R1 DECIDED en preferencia económica ex ante: no deterioro de DD frente a EW6-BH completo ni de volatilidad diaria frente al espejo K2 admisible. ES95/M1 primario y NI/cash/K2 conjuntos; recuperación/underwater/pérdidas/gaps/slippage/extremos obligatorios. DD exige estimando/horizonte/path/incertidumbre y aplicabilidad válidos; una trayectoria/bootstrap genérico no demuestra futuro. Volatilidad incluye upside/downside. Guardrails relativas no son límites absolutos Risk D-031. G-R2 no aprobado ni fallback. Estados separados y NO_STRATEGY_QUALIFIED; ningún método/dato/broker/Strategy/F0/implementación aceptado. Continuar P0/P1 financieros en checkpoints agrupados; holdout UNKNOWN/lock/targetdeferral.

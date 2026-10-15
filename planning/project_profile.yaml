@@ -708,11 +708,29 @@ financial_preparation_wave07:
   E6_checks: 11
   E5_E6_scope: SYNTHETIC_SCREEN_NOT_METHOD_OR_STATISTICAL_ACCEPTANCE
   independent_review: planning/research/R-020_wave07_independent_review_2026-10-14.md
-  next_governance: Q059_COMPLEMENTARY_GUARDRAILS
-  Q059: READY_FOR_DECISION_NOT_APPROVED
+  next_governance: NONE_PENDING_UNTIL_NEXT_MATERIAL_FINANCIAL_CHECKPOINT
+  Q059: DECIDED_G_R1_UTILITY_ONLY_ADR020
   recommendation: G_R1_NO_DD_OR_VOLATILITY_DETERIORATION_AND_VALID_REPORTS
   F0: NOT_FROZEN_INCOMPLETE
   confirmation_integrity: INTEGRITY_UNKNOWN
   implementation_locked: true
   target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED
   incremental_spend: 0
+
+complementary_guardrail_approval:
+  ADR: ADR-020
+  Q059: DECIDED
+  approved_on: 2026-10-15
+  choice: G-R1
+  DD_reference: B-EW6-BH_FULL
+  daily_volatility_reference: B-EW6-BH-LAMBDA-REAL_ADMISSIBLE
+  maximum_deterioration: 0
+  utility_approved: true
+  method_accepted: false
+  G_R2_approved: false
+  absolute_Risk_limits_approved: false
+  F0: NOT_FROZEN_INCOMPLETE
+  next_work: GROUPED_FINANCIAL_RULE_DATA_EXECUTION_METHOD_PREREGISTRATION
+  confirmation_integrity: INTEGRITY_UNKNOWN
+  implementation_locked: true
+  target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED

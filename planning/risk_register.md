@@ -183,3 +183,7 @@ K067 conserva integridad UNKNOWN y O-B aprobado sólo conceptual. Riesgos adicio
 - K-087 P1: Riskcap genera por sísolo target, menorR2 causaadds, partialavg baja protección oATR seactualiza retroactivamente. Strategytarget OPEN/cutoffATR/rawrebase/desiredmonotone/qtyconfirmed, no autoridadagent ni G3.
 - K-088 P0: parámetros propuestos se presentan como Strategy seleccionada o se rehacen hashdeclarado tras revisión. IDs/parents nuevos yrawcapture+activerevision, configuraciónfalse y0trials.
 - K-089 P1: elegir capital/coste postresultado para calificar o atribuir mismosoverhead areferencia.20celdaspredefinidas noanchor elegido, UNKNOWNoperational ystreams separados.
+
+## Vigencia G-R1 — ADR-020, 2026-10-15
+
+[ADR-020](decisions/ADR-020-PRICE-MATR-complementary-guardrails-G-R1.md): Q-059/G-R1 DECIDED en preferencia económica ex ante: no deterioro de DD frente a EW6-BH completo ni de volatilidad diaria frente al espejo K2 admisible. ES95/M1 primario y NI/cash/K2 conjuntos; recuperación/underwater/pérdidas/gaps/slippage/extremos obligatorios. DD exige estimando/horizonte/path/incertidumbre y aplicabilidad válidos; una trayectoria/bootstrap genérico no demuestra futuro. Volatilidad incluye upside/downside. Guardrails relativas no son límites absolutos Risk D-031. G-R2 no aprobado ni fallback. Estados separados y NO_STRATEGY_QUALIFIED; ningún método/dato/broker/Strategy/F0/implementación aceptado. Continuar P0/P1 financieros en checkpoints agrupados; holdout UNKNOWN/lock/targetdeferral.

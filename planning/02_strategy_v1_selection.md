@@ -84,3 +84,7 @@ Q054 referenciaR2 DECIDED por ADR015; D035 restante abierto. [Cálculos comunes 
 ## Rulepresets y evidencia wave07
 
 [Configurations](research/R-020_PRICE_MATR_rule_configurations_RC0.md) conIDs hijos dePRICE/MATR, numparams propuestos sin aprobar/seleccionar yfinancialtarget/risk/broker/source pendientes. [DataCards](research/R-020_dataset_cards_RC0.md)allNOT_ADMITTED, [RC5](research/R-020_evaluation_contract_RC5.md) diseño sin métodoaceptado yQ059 controles nuevos. Registry10declaraciones,0trials; no Strategy recomendada porretorno ni selección implícitaMATR.
+
+## Vigencia G-R1 — ADR-020, 2026-10-15
+
+[ADR-020](decisions/ADR-020-PRICE-MATR-complementary-guardrails-G-R1.md): Q-059/G-R1 DECIDED en preferencia económica ex ante: no deterioro de DD frente a EW6-BH completo ni de volatilidad diaria frente al espejo K2 admisible. ES95/M1 primario y NI/cash/K2 conjuntos; recuperación/underwater/pérdidas/gaps/slippage/extremos obligatorios. DD exige estimando/horizonte/path/incertidumbre y aplicabilidad válidos; una trayectoria/bootstrap genérico no demuestra futuro. Volatilidad incluye upside/downside. Guardrails relativas no son límites absolutos Risk D-031. G-R2 no aprobado ni fallback. Estados separados y NO_STRATEGY_QUALIFIED; ningún método/dato/broker/Strategy/F0/implementación aceptado. Continuar P0/P1 financieros en checkpoints agrupados; holdout UNKNOWN/lock/targetdeferral.

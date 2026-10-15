@@ -1,6 +1,6 @@
 {
   "schema_version": "planning-0.1",
-  "updated_on": "2026-10-14",
+  "updated_on": "2026-10-15",
   "scope": "PRE_RESULT_PARTIALLY_APPROVED_UTILITY_METHOD_PENDING",
   "state": "NOT_EVALUATED",
   "freeze_eligible": false,
@@ -66,7 +66,7 @@
   "guardrails_frozen": false,
   "evaluation_contract": "R-020_evaluation_contract_RC5.md",
   "guardrail_proposal": "D-011_complementary_guardrails_proposal_RC0.md",
-  "guardrail_approval": null,
+  "guardrail_approval": "ADR020_Q059_G_R1",
   "guardrail_method_accepted": false,
   "DataCards": "datacards/financial_dataset_cards_RC0.json",
   "cost_scale_scenarios": "R-020_cost_scale_scenarios_RC0.md",
@@ -74,5 +74,12 @@
   "method_acceptance": "NOT_ACCEPTED",
   "null_screening_refs": [
     "R-020_E5_findings_2026-10-14.md"
-  ]
+  ],
+  "guardrail_utility_approved": true,
+  "guardrail_thresholds": {
+    "DD_max_deterioration_vs_full_EW6_BH": 0,
+    "daily_volatility_max_deterioration_vs_admissible_K2_mirror": 0,
+    "absolute_Risk_limits_approved": false
+  },
+  "G_R2_approved": false
 }

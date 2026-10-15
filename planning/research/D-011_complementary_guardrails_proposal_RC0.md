@@ -1,6 +1,8 @@
 # Q-059 — guardrails complementarias de calificación
 
-2026-10-14. READY_FOR_DECISION tras revisión independiente; propuesta material nueva, no aprobada. B/K2/M1 DECIDED y no se reabren. D011 queda abierto; utilidadES20% no aprueba tolerancia de drawdown/volatilidad. Guardrails económicos distintas de hardlimits RiskD031.
+**Vigencia 2026-10-15: Q-059/G-R1 DECIDED por [ADR-020](../decisions/ADR-020-PRICE-MATR-complementary-guardrails-G-R1.md); G-R2 no aprobado. Este documento conserva la propuesta de 2026-10-14 y su comparación, no una decisión aún pendiente.**
+
+2026-10-14, historial: READY_FOR_DECISION tras revisión independiente; propuesta entonces no aprobada. B/K2/M1 DECIDED y no se reabren. D011 queda abierto; utilidadES20% no aprueba tolerancia de drawdown/volatilidad. Guardrails económicos distintas de hardlimits RiskD031.
 
 ## Problema
 

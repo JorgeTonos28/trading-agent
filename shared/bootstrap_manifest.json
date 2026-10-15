@@ -169,7 +169,7 @@
     "planning/08_S2_isolation_spec_RC1.md",
     "planning/research/R-013_S2_acceptance_matrix_RC1.md"
   ],
-  "next_governance_item": "Q059_READY_FOR_DECISION_NEW_COMPLEMENTARY_GUARDRAILS_NOT_B_K2_M1",
+  "next_governance_item": "NONE_PENDING_RESEARCH_GROUPED_FINANCIAL_CHECKPOINT",
   "isolation_variant": {
     "proposed": "S2_B",
     "selected": false,
@@ -223,5 +223,6 @@
   "economic_margin_proposal": "planning/research/D-011_economic_margins_proposal_RC0.md",
   "economic_utility_approval": "planning/decisions/ADR-019-PRICE-MATR-economic-utility-M1.md",
   "evaluation_contract": "planning/research/R-020_evaluation_contract_RC5.md",
-  "DataCards": "planning/research/datacards/financial_dataset_cards_RC0.json"
+  "DataCards": "planning/research/datacards/financial_dataset_cards_RC0.json",
+  "complementary_guardrails": "Q059_G_R1_UTILITY_APPROVED_ADR020_METHOD_NOT_ACCEPTED"
 }
