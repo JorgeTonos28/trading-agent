@@ -734,3 +734,22 @@ complementary_guardrail_approval:
   confirmation_integrity: INTEGRITY_UNKNOWN
   implementation_locked: true
   target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED
+
+paper_economic_reference_approval:
+  ADR: ADR-021
+  D044: DECIDED
+  Q060: DECIDED
+  approved_on: 2026-10-15
+  reference_capital_USD: 10000
+  sensitivity_capitals_USD: [2000, 5000, 10000, 25000, 50000]
+  cost_evaluation_required_in_all_five: true
+  hypothetical_monthly_costs_USD: [0, 20, 60, 100]
+  preserve_hypothetical_cells: 20
+  all_admitted_actual_and_stress_cost_models_at_every_scale: true
+  cost_UNKNOWN_is_not_zero_or_omittable: true
+  require_PASS_at_all_scales_as_new_gate: false
+  actual_operating_costs_known: false
+  account_funding_approved: false
+  LIVE_capital_selected: false
+  implementation_locked: true
+  target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED

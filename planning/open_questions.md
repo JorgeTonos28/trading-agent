@@ -148,7 +148,7 @@ P0 / D008-D011 · DECIDED K2 por owner/ADR018; propuesta original conservada en 
 
 ## Q-058 — utilidad numérica de calificación
 
-P0/D008-D011 · DECIDED M1 por owner/ADR019, [propuesta original M0/M1/M2](research/D-011_economic_margins_proposal_RC0.md). Recomendar M1: margenNI1pp CAGR/año, exceso mínimo cash1pp neto/año, reducciónES20% con cola95, sujeto a evidencia/precision y comparador defendibles. Números no aprobados, Q056/Q057 no se reabren. Trade-off de oportunidad, gastos/escala y muestra ficticia documentados, sin estimar parámetros del mercado. Aprobación eventual sólo presupuestos económicos/definición de cola, no calib/modelo/dataset/Strategy/capital/DoR.
+P0/D008-D011 · DECIDED M1 por owner/ADR019, [propuesta original M0/M1/M2](research/D-011_economic_margins_proposal_RC0.md). Recomendar M1: margenNI1pp CAGR/año, exceso mínimo cash1pp neto/año, reducciónES20% con cola95, sujeto a evidencia/precision y comparador defendibles. Números de utilidad aprobados por ADR019; métodos/datos/Strategy/capital no aprobados. Q056/Q057 no se reabren. Trade-off de oportunidad, gastos/escala y muestra ficticia documentados, sin estimar parámetros del mercado. Aprobación eventual sólo presupuestos económicos/definición de cola, no calib/modelo/dataset/Strategy/capital/DoR.
 
 ## Vigencia M1 — ADR-019, 2026-10-14
 
@@ -161,3 +161,9 @@ P0/D011, DECIDED G-R1 por ADR-020 el 2026-10-15; alternativas históricas siguen
 ## Vigencia G-R1 — ADR-020, 2026-10-15
 
 [ADR-020](decisions/ADR-020-PRICE-MATR-complementary-guardrails-G-R1.md): Q-059/G-R1 DECIDED en preferencia económica ex ante: no deterioro de DD frente a EW6-BH completo ni de volatilidad diaria frente al espejo K2 admisible. ES95/M1 primario y NI/cash/K2 conjuntos; recuperación/underwater/pérdidas/gaps/slippage/extremos obligatorios. DD exige estimando/horizonte/path/incertidumbre y aplicabilidad válidos; una trayectoria/bootstrap genérico no demuestra futuro. Volatilidad incluye upside/downside. Guardrails relativas no son límites absolutos Risk D-031. G-R2 no aprobado ni fallback. Estados separados y NO_STRATEGY_QUALIFIED; ningún método/dato/broker/Strategy/F0/implementación aceptado. Continuar P0/P1 financieros en checkpoints agrupados; holdout UNKNOWN/lock/targetdeferral.
+
+## Referencia PAPER y cobertura de costes — ADR-021, 2026-10-15
+
+[ADR-021](decisions/ADR-021-PAPER-economic-reference-capital.md): propietario fija nominalUSD10,000 antes de resultados y exige costes evaluados/reportados en las cinco escalasUSD2k/5k/10k/25k/50k, conservando20celdas hipotéticas previas. Todas las fuentes/modelos de coste admitidos se aplican a cada escala; UNKNOWN explícito, no0/omisión ni capital favorable elegido después. Principal10k no prometePASSuniversal ni exigePASSen5como nuevo gate implícito. Sin depósito/funding/capitalLIVE/gasto/risknumbers; costes reales/método/data/Strategy no aceptados. HoldoutUNKNOWN/lock/targetdeferral.
+
+Q-060 (P1/D044) DECIDED: propietario eligióUSD10k nominal y añadió costes en todas5escalas; no queda pregunta de capital principal pendiente.

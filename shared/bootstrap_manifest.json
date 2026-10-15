@@ -224,5 +224,8 @@
   "economic_utility_approval": "planning/decisions/ADR-019-PRICE-MATR-economic-utility-M1.md",
   "evaluation_contract": "planning/research/R-020_evaluation_contract_RC5.md",
   "DataCards": "planning/research/datacards/financial_dataset_cards_RC0.json",
-  "complementary_guardrails": "Q059_G_R1_UTILITY_APPROVED_ADR020_METHOD_NOT_ACCEPTED"
+  "complementary_guardrails": "Q059_G_R1_UTILITY_APPROVED_ADR020_METHOD_NOT_ACCEPTED",
+  "paper_economic_reference_approval": "planning/decisions/ADR-021-PAPER-economic-reference-capital.md",
+  "paper_reference_capital_USD": 10000,
+  "paper_costs_at_all_five_scales_required": true
 }

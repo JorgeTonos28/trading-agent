@@ -221,3 +221,7 @@ QA:374enlaceslocales/JSON/YAML, M1unidades/valores, Q059noaprobado,4DataCardsNOT
 ## 2026-10-15 — Q-059/G-R1 aprobado en utilidad (ADR-020)
 
 Se registran las siete condiciones del propietario; propagación a reglas globales/roadmap, registros/perfil, EvidenceCard/protocolos y bootstrap. Criterios relativos de DD/vol no sustituyen D031; G-R2 no aprobado. Guardrail utility aprobada y método/F0 no congelados son campos separados. Se conserva propuesta histórica y evidencia sintética sin reejecutar/recalificar. D011 RESEARCHING; reservaUNKNOWN/implementationlock/targetdeferral. Próximo trabajo autónomo agrupa configuración, admisión de datos/derechos, ejecución/engine, aplicabilidad estadística y preregistro.
+
+## 2026-10-15 — nominal10k y costes en5escalas aprobados (ADR-021)
+
+Respuesta owner fijaUSD10k principal antes de resultados; mensaje posterior exige preservar5escalas y evaluar costes en todas. Se registran20celdas previas + modelos reales/estrés por cadaK, UNKNOWN no0/omisión y scope explícito sin gatePASSuniversal añadido. Sin funding/gasto/LIVE/risknums. D044/Q060 DECIDED; datos/operationalcosts/statmethods/Strategy siguen abiertos. Propagación inmediata aSC0/perfil/registros/roadmap/AGENTS/bootstrap; refinamientos financieros técnicos en hito de research separado.

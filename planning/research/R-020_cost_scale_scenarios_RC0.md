@@ -1,10 +1,10 @@
-# SC0 — escala y costes ex ante, sin capital seleccionado
+# SC0 — escala y costes ex ante; referencia nominal aprobada
 
 2026-10-14. ADR019 exige escenarios previos. Grilla candidata de investigación, no presupuesto/contratación/capital o escenario operacional aceptado. Ningún precio/resultado de estrategia consultado para escogerla.
 
 ## Matriz fija de sensibilidad
 
-K hipotéticoUSD={2000,5000,10000,25000,50000}; fijo mensual incrementalF={0,20,60,100}. Ejecutar/reportar todas las20combinaciones admitidas, sin escoger ex post el K que pasa. Escenario principal operacional no elegido: debe declararse por gobierno antes de resultados pertinentes. En absence de ese input, comparabilidad por escenario es condicional, calificación operacional NOT_EVALUATED.
+K hipotéticoUSD={2000,5000,10000,25000,50000}; fijo mensual incrementalF={0,20,60,100}. Ejecutar/reportar todas las20combinaciones admitidas, sin escoger ex post el K que pasa. Vigencia ADR021/2026-10-15: **nominal principalUSD10,000 aprobado**, sin funding ni capitalLIVE. Evaluación/reporte de costes **obligatorios en las cinco escalas** para todos los modelos/costes reales y estrés admitidos, además de20celdas hipotéticas. Costes reales todavíaUNKNOWN impiden calificación operacional; no omitir celdas desconocidas ni volverlas0.
 
 | K USD hipotético | F0/mes | F20/mes | F60/mes | F100/mes |
 |---|---|---|---|---|
@@ -28,4 +28,8 @@ No cargar overhead AI/core a EW6-BH/SPY/cash pasivo para mejorar comparación. C
 
 Cost matrix de ejecución/spread debe provenir de feeds/broker/cantidad y establecer escenarios conservadores/costdelay antes de resultados, no de esta grillaF. Rotación/notional equivale a costes variables, no fees fijos repetidos dos veces. Paid source candidates tienen scorecards documentales, no costes de operación completos.
 
-Reportar passing/insufficient/no-evaluation por **todas** las celdas pertinentes y frontera de viabilidad; no «strategyqualified» global por una celda. Selección real K/costs necesita datos y gobierno aparte. PAPERzero/lowincremental primero, LIVEeconomicvalue posteriormente sin descartar pago permanentemente.
+Reportar passing/insufficient/no-evaluation por **todas** las celdas pertinentes y frontera de viabilidad; no «strategyqualified» global por una celda. Referencia nominal10k decidida; funding real/costes necesita datos y gobierno aparte. No convertir obligación de reportar5escalas en nuevo gatePASSenlas5. PAPERzero/lowincremental primero, LIVEeconomicvalue posteriormente sin descartar pago permanentemente.
+
+## Referencia PAPER y cobertura de costes — ADR-021, 2026-10-15
+
+[ADR-021](../decisions/ADR-021-PAPER-economic-reference-capital.md): propietario fija nominalUSD10,000 antes de resultados y exige costes evaluados/reportados en las cinco escalasUSD2k/5k/10k/25k/50k, conservando20celdas hipotéticas previas. Todas las fuentes/modelos de coste admitidos se aplican a cada escala; UNKNOWN explícito, no0/omisión ni capital favorable elegido después. Principal10k no prometePASSuniversal ni exigePASSen5como nuevo gate implícito. Sin depósito/funding/capitalLIVE/gasto/risknumbers; costes reales/método/data/Strategy no aceptados. HoldoutUNKNOWN/lock/targetdeferral.
