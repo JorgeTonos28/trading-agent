@@ -1,0 +1,12 @@
+{
+  "mode": "AST_AND_DESCRIPTOR_MEMORY_ONLY",
+  "helper_parser": "PASS",
+  "result": "ERROR",
+  "error": "OFFLINE_TEST_ASSUMED_BOOTSTRAP_PARENT_KIND_FIELD",
+  "note": "Parent kind is directory in helper; QA fixture reader failed before completing memory checks.",
+  "source_sha256": "06ddff07cf700ca31a04c1f6125fb12a035f330eab73fcd4ca9d6a5235dc4a74",
+  "administrative_helper_executed": false,
+  "actual_fs_tests_executed": false,
+  "configuration_changes": [],
+  "actual_security_acceptance": "NOT_TESTED"
+}

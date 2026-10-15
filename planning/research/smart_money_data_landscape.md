@@ -1,6 +1,6 @@
 # R-023/R-025 — Smart Money y proveedores de datos alternativos
 
-**Fecha:** 2026-10-01. **Estado:** RESEARCHING. **Prioridades:** contrato de señales P0 (R-023); comparación de proveedores P1 (R-025). **Decisiones:** D-014, D-018 y D-033. Ninguna familia de señales ni proveedor está seleccionado. «Smart Money» es una etiqueta de investigación, **no una señal homogénea ni sinónimo de operaciones congresuales**.
+**Fecha:** 2026-10-01. **Estado:** roles/admisión P0 cerrados en [ADR-005](../decisions/ADR-005-external-signal-admission.md) y [contrato RC1](../06_external_signal_admission_RC1.md); proveedores y datasets P1 `RESEARCHING` en R-025/D-033. **Decisiones:** D-014/D-018 `DECIDED` en semántica abstracta, D-033 abierta. Ninguna familia de señales ni proveedor está seleccionado. «Smart Money» es una etiqueta de investigación, **no una señal homogénea ni sinónimo de operaciones congresuales**.
 
 ## Familias de señales a investigar
 
@@ -41,7 +41,23 @@ Para todas: **fecha del hecho ≠ fecha de publicación ≠ fecha de recepción 
 6. **Calidad para backtest:** enlace a documento primario, identificadores estables, universo histórico, exclusiones, replay y controles de sesgo.
 7. **Utilidad en el sistema:** research, pedagogía, señal candidata, validación cruzada o descarte; valor marginal frente a otras fuentes.
 
-El resultado puede ser **varios proveedores especializados** o fuentes oficiales más normalización propia. Cada dataset recibirá disposición `REUSE_AS_IS / ADAPT / PORT / WRAP / REFERENCE_ONLY / BUILD / REJECT`, con criterio y coste. La elección de una fuente con gasto material requiere aprobación humana.
+El resultado puede ser **varios proveedores especializados** o fuentes oficiales más normalización propia. Cada dataset recibirá disposición `REUSE_AS_IS / ADAPT / PORT / WRAP / REFERENCE_ONLY / BUILD / REJECT` **por fase**, con criterio y coste. ADR-008 permite estudiar alternativas pagas; contratar/consumir con gasto incremental requiere aprobación humana. PAPER prioriza fuentes incluidas/gratuitas suficientemente fiables; LIVE admite valor incremental pago, sin presuponer alpha.
+
+## Scorecard económico por proveedor y después por dataset
+
+Aplicar [ADR-008/ficha común](../economic_scorecard.md): fijo/variable/mensual/escala, coste de backfill/almacenamiento, planes/add-ons, licencia automatizada, calidad/latencia/PIT frente a fuente gratuita, mantenimiento/lock-in, beneficio y condición para pagar. Las filas siguientes no actualizan precios; `UNKNOWN` requiere documentación/cotización vigente.
+
+| Candidato | PAPER_V1_VIABLE_FREE | PAPER_V1_COST | LIVE_COST | FREE_ALTERNATIVE | PAID_INCREMENTAL_VALUE | ECONOMIC_JUSTIFICATION_REQUIRED |
+|---|---|---|---|---|---|---|
+| Quiver | UNKNOWN por dataset/plan | UNKNOWN | UNKNOWN | SEC/EDGAR/registros oficiales según familia | Hipótesis: normalización, cobertura/PIT/latencia; medir | YES antes de gasto |
+| Unusual Whales | UNKNOWN por dataset/plan | UNKNOWN | UNKNOWN | Fuentes oficiales para filings; flow equivalente UNKNOWN | Hipótesis: flow/cobertura/historia/PIT; medir | YES antes de gasto |
+| Capitol Trades | UNKNOWN integración/licencia | UNKNOWN | UNKNOWN | Registros oficiales Congreso | Hipótesis: limpieza/entidades/cronología; medir | YES antes de gasto |
+| SEC/EDGAR directo | PARTIAL acceso público; workflow por probar | Acceso público; normalización/operación UNKNOWN | UNKNOWN operación/escala | Esta fuente primaria | Agregador solo si mejora calidad/continuidad/esfuerzo con evidencia | YES si gasto complementario |
+| Cámara/Senado oficial | UNKNOWN automatización/historia | UNKNOWN | UNKNOWN operación | Esta fuente primaria candidata | Agregador solo si mejora cronología/cobertura con evidencia | YES si gasto complementario |
+| Disclosed Capitol | UNKNOWN plan/licencia/PIT | UNKNOWN | UNKNOWN | Registros oficiales Congreso | Hipótesis: normalización/history/API; medir | YES antes de gasto |
+| Otros por descubrir | UNKNOWN | UNKNOWN | UNKNOWN | Por familia | Pendiente de diferencia medible | YES antes de gasto |
+
+La necesidad de pagar puede justificarse por fiabilidad o datos aun sin demostrar retorno predictivo; admitir la fuente como señal operativa sigue requiriendo los gates PIT/licencia/OOS de ADR-005 y selección Strategy V1. Un proveedor caro/gratis no obtiene admisión automática.
 
 ## Orden de probes (desechables, sin Trading OS)
 
@@ -50,4 +66,30 @@ El resultado puede ser **varios proveedores especializados** o fuentes oficiales
 3. Verificar que el histórico conserva el primer momento público y no solo el estado actual enriquecido.
 4. Medir cobertura/latencia y estimar esfuerzo de integración; decidir qué familias son factibles para V1, research-only o futuras.
 
-**Gate:** D-018 define el papel de señales externas y contrato PIT; D-033 selecciona proveedor(es) solo después del scorecard, o deja una familia diferida con razón explícita. No se requiere demostrar o refutar las cifras del video.
+**Gate:** D-018/ADR-005 define roles y admisión abstracta; ADR-004 fija semántica PIT. D-033 selecciona proveedor(es) solo después del scorecard, o deja una familia diferida con razón explícita. D-008 aprueba cualquier uso operativo en Strategy V1. No se requiere demostrar o refutar las cifras del video.
+
+## SEC/EDGAR — avance R-020/R-025 documental, 2026-10-05
+
+[DatasetAdmissibilityCard](R-020_SEC_dataset_admissibility_RC0.md): APIs de lectura públicas sin key y archives históricos verificadas documentalmente; no dataset/probe/selección. SEC declara ausencia de timestamp que indique primera disponibilidad del contenido en sec.gov, de modo que acceptance no equivale a publicación o recepción. Historia PIT/canal/quality/normalización siguen CONDITIONAL; comparar specialized vendors antes de construir extractor importante. Congresional, Form4,13F y demás familias siguen abiertas independientemente.
+
+## Evidencia y scorecard vigente parcial — 2026-10-07
+
+[Wave 01](R-025_provider_evidence_wave01_2026-10-07.md) actualiza precios/rutas/restricciones y seis campos económicos para Quiver/UW/Capitol/SEC. Las tablas anteriores son inventario inicial, no precios vigentes. Probe único de schema público Quiver sin auth observa campos temporales, **no** acceso a dataset, PIT ni licencia de uso. Documentación pública no habilita automáticamente MCP/API/servicios.
+
+Quiver/UW son REFERENCE_ONLY actualmente y WRAP futuros condicionados; SEC WRAP/ADAPT candidato sujeto a normalizador reusable, no BUILD por defecto. Capitol conserva integración/licencia UNKNOWN tras error de acceso documental, sin rechazo. Ningún proveedor ni familia seleccionado. Congreso, Form4,13F/hedge funds, options/blocks, revisions y flows siguen separados; faltan evidencia de clocks históricos, derechos y utilidad por familia.
+
+## Normalización y admisión — 2026-10-13
+
+[R-021 RC1](R-021_external_dataset_admission_RC1.md): Form4 códigoP no prueba por sí mismo exchange transaction; 13F holdings no whole portfolio/trade timing. EdgarTools MIT es ADAPT/WRAP candidato **de datos**, no selector de MCP/Skill/runtime. Probe XML sintético aún preparado/no ejecutado; no parser construido ni datos admitidos. [Wave data02](R-008_market_data_evidence_wave02_2026-10-13.md) añade reserva especializada analyst/news/imbalance paga, sin gasto, entitlement o PIT demostrados.
+
+## E1 normalizador SEC — 2026-10-13
+
+[EdgarTools findings](R-021_edgartools_findings_2026-10-13.md):7/7table-only sintéticos y full factory ERROR; no disponibilidad histórica/PIT demostrada. ADAPT/WRAP normalizador candidato, ningún proveedor/familia seleccionado. Footnotes/planes/owners/mapping temporal y primary-vendor siguen gates; no extraer «conviction» del label market_trades.
+
+## Form4 candidata externa — wave05
+
+[Form4 candidata externa](R-021_Form4_semantic_admission_RC2.md) añade condiciones de semántica, disponibilidad histórica/PIT y costes; no admisión de fuente ni selección de proveedor. E3/F2 sólo fixtures/componentes; datos/historia/rights y target no probados. Las fuentes restantes conservan su prioridad/alcance, no exclusión general por este probe.
+
+## Canal SEC y revisiones — wave06
+
+[Canal SEC y revisiones](R-021_SEC_availability_admission_RC3.md) añade especificación y límites; Q057 aprobado en paquete, Q058 números propuestos. Sin fuente/modelo/Strategy admitidos ni performance. E4 sólo cálculo/meanpilot, no cobertura CAGR/ES/DD; M11 parcial/holdoutUNKNOWN. Versiones/declaraciones anteriores conservadas, no rehash histórico.

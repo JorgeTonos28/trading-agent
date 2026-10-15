@@ -1,0 +1,199 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "enum": [
+        "r006-spine-1"
+      ]
+    },
+    "role": {
+      "type": "string",
+      "enum": [
+        "PEDAGOGY"
+      ]
+    },
+    "authority": {
+      "type": "string",
+      "enum": [
+        "NONE"
+      ]
+    },
+    "snapshot_id": {
+      "type": "string"
+    },
+    "snapshot_hash": {
+      "type": "string"
+    },
+    "decision_at": {
+      "type": "string"
+    },
+    "knowledge_asof": {
+      "type": "string"
+    },
+    "content_status": {
+      "type": "string",
+      "enum": [
+        "COMPLETE",
+        "PARTIAL",
+        "INSUFFICIENT_EVIDENCE",
+        "ABSTAIN"
+      ]
+    },
+    "procedure_marker": {
+      "type": "string"
+    },
+    "facts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fact_id": {
+            "type": "string"
+          },
+          "source_id": {
+            "type": "string"
+          },
+          "field": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string",
+            "pattern": "^-?\\d+(\\.\\d+)?$"
+          },
+          "unit": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "fact_id",
+          "source_id",
+          "field",
+          "value",
+          "unit"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "calculations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "calculation_id": {
+            "type": "string"
+          },
+          "formula": {
+            "type": "string",
+            "enum": [
+              "cash_minus_reservations@toy-1",
+              "quantity_times_price@toy-1"
+            ]
+          },
+          "input_fact_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "result": {
+            "type": "string",
+            "pattern": "^-?\\d+(\\.\\d+)?$"
+          },
+          "unit": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "calculation_id",
+          "formula",
+          "input_fact_ids",
+          "result",
+          "unit"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "unknowns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "trade_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "timeline_source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "explanation": {
+          "type": "string"
+        },
+        "sizing_motive": {
+          "type": "string",
+          "enum": [
+            "DOCUMENTED",
+            "UNKNOWN"
+          ]
+        },
+        "concepts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "question": {
+          "type": "string"
+        },
+        "answer_key": {
+          "type": "string"
+        },
+        "result_state": {
+          "type": "string",
+          "enum": [
+            "PENDING",
+            "KNOWN",
+            "NOT_EVALUABLE"
+          ]
+        }
+      },
+      "required": [
+        "trade_ids",
+        "timeline_source_ids",
+        "explanation",
+        "sizing_motive",
+        "concepts",
+        "question",
+        "answer_key",
+        "result_state"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "role",
+    "authority",
+    "snapshot_id",
+    "snapshot_hash",
+    "decision_at",
+    "knowledge_asof",
+    "content_status",
+    "procedure_marker",
+    "facts",
+    "calculations",
+    "unknowns",
+    "payload"
+  ],
+  "additionalProperties": false
+}

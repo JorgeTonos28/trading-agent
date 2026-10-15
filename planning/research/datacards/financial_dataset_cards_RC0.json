@@ -1,0 +1,237 @@
+{
+  "updated_on": "2026-10-15",
+  "state": "SOURCE_DOCS_ONLY_ALL_CARDS_NOT_ADMITTED",
+  "cards": [
+    {
+      "schema_version": "planning-0.1",
+      "updated_on": "2026-10-14",
+      "stage": "PREPARATION",
+      "implementation_locked": true,
+      "financial_authority": "NONE",
+      "admission": "NOT_ADMITTED",
+      "source_selected": null,
+      "dataset_version": null,
+      "source_hash": null,
+      "rights_accepted": false,
+      "quality_accepted": false,
+      "PIT_accepted": false,
+      "target_acceptance": "TARGET_ACCEPTANCE_DEFERRED",
+      "id": "DC-ETF-01",
+      "role": "ETF_PRICE_ACTIONS",
+      "documentation": "../R-020_dataset_cards_RC0.md",
+      "required_evidence": [
+        "ACCESS",
+        "HISTORY",
+        "PIT",
+        "RIGHTS",
+        "QUALITY",
+        "MAPPING",
+        "CALENDAR_AND_UNITS"
+      ],
+      "history_accessed": false,
+      "evidence_refs": [
+        "../R-008_dataset_admission_wave04_2026-10-15.md"
+      ],
+      "instruments": [
+        {
+          "symbol_reference": "SPY",
+          "historical_security_id": null,
+          "inception_verified_for_dataset": false,
+          "coverage_verified": false,
+          "source": null
+        },
+        {
+          "symbol_reference": "QQQ",
+          "historical_security_id": null,
+          "inception_verified_for_dataset": false,
+          "coverage_verified": false,
+          "source": null
+        },
+        {
+          "symbol_reference": "IWM",
+          "historical_security_id": null,
+          "inception_verified_for_dataset": false,
+          "coverage_verified": false,
+          "source": null
+        },
+        {
+          "symbol_reference": "EFA",
+          "historical_security_id": null,
+          "inception_verified_for_dataset": false,
+          "coverage_verified": false,
+          "source": null
+        },
+        {
+          "symbol_reference": "TLT",
+          "historical_security_id": null,
+          "inception_verified_for_dataset": false,
+          "coverage_verified": false,
+          "source": null
+        },
+        {
+          "symbol_reference": "GLD",
+          "historical_security_id": null,
+          "inception_verified_for_dataset": false,
+          "coverage_verified": false,
+          "source": null
+        }
+      ],
+      "windows": {
+        "development": "2005-2018_PLUS_PRIOR_WARMUP",
+        "selection": "2019-2022_COMMON",
+        "confirmation": "2023-2026-09-30_PROPOSED_RESERVE_INTEGRITY_UNKNOWN"
+      },
+      "required_fields": [
+        "raw_OHLCV",
+        "bar_end",
+        "available_at",
+        "source_revision",
+        "exchange_calendar",
+        "historical_security_id",
+        "split_event",
+        "distribution_ex_date",
+        "distribution_pay_date",
+        "currency",
+        "raw_and_transform_hash"
+      ],
+      "missing_policy": "EXPLICIT_ABSTENTION_OR_QUARANTINE_NOT_HIDDEN_FORWARD_FILL",
+      "feed_and_fill_acceptance": false,
+      "instrument_subcards": "ETF_instrument_admission_RC1.json"
+    },
+    {
+      "schema_version": "planning-0.1",
+      "updated_on": "2026-10-14",
+      "stage": "PREPARATION",
+      "implementation_locked": true,
+      "financial_authority": "NONE",
+      "admission": "NOT_ADMITTED",
+      "source_selected": null,
+      "dataset_version": null,
+      "source_hash": null,
+      "rights_accepted": false,
+      "quality_accepted": false,
+      "PIT_accepted": false,
+      "target_acceptance": "TARGET_ACCEPTANCE_DEFERRED",
+      "id": "DC-CASH-01",
+      "role": "MONETARY_OPPORTUNITY",
+      "documentation": "../R-020_dataset_cards_RC0.md",
+      "required_evidence": [
+        "ACCESS",
+        "HISTORY",
+        "PIT",
+        "RIGHTS",
+        "QUALITY",
+        "MAPPING",
+        "CALENDAR_AND_UNITS"
+      ],
+      "history_accessed": false,
+      "evidence_refs": [],
+      "candidates": [
+        "DGS3MO",
+        "DTB3",
+        "SOFR_REFERENCE_ONLY_UNTIL_ADMISSION",
+        "PUBLIC_BILL_RETURN_OR_INDEX_IF_RIGHTS"
+      ],
+      "return_model": null,
+      "publication_basis_roll_daycount": null,
+      "vintage_verified": false,
+      "real_broker_carry_equivalent": false
+    },
+    {
+      "schema_version": "planning-0.1",
+      "updated_on": "2026-10-14",
+      "stage": "PREPARATION",
+      "implementation_locked": true,
+      "financial_authority": "NONE",
+      "admission": "NOT_ADMITTED",
+      "source_selected": null,
+      "dataset_version": null,
+      "source_hash": null,
+      "rights_accepted": false,
+      "quality_accepted": false,
+      "PIT_accepted": false,
+      "target_acceptance": "TARGET_ACCEPTANCE_DEFERRED",
+      "id": "DC-MIRROR-01",
+      "role": "MATCHED_EXPOSURE_REAL",
+      "documentation": "../R-020_dataset_cards_RC0.md",
+      "required_evidence": [
+        "ACCESS",
+        "HISTORY",
+        "PIT",
+        "RIGHTS",
+        "QUALITY",
+        "MAPPING",
+        "CALENDAR_AND_UNITS"
+      ],
+      "history_accessed": false,
+      "evidence_refs": [],
+      "depends_on": [
+        "DC-ETF-01",
+        "ADMITTED_FINANCIAL_SNAPSHOTS_OF_CANDIDATE"
+      ],
+      "required_fields": [
+        "interval_start_state",
+        "qty",
+        "mark",
+        "NAV_financial",
+        "snapshot_version",
+        "known_at",
+        "fills",
+        "own_fees",
+        "cash_eligibility",
+        "factor_diagnostics"
+      ],
+      "lambda_EOD_only_status": "DIAGNOSTIC_LIMITED_NOT_CONFIRMATORY_EFFICIENCY",
+      "risk_equivalence_proven": false
+    },
+    {
+      "schema_version": "planning-0.1",
+      "updated_on": "2026-10-14",
+      "stage": "PREPARATION",
+      "implementation_locked": true,
+      "financial_authority": "NONE",
+      "admission": "NOT_ADMITTED",
+      "source_selected": null,
+      "dataset_version": null,
+      "source_hash": null,
+      "rights_accepted": false,
+      "quality_accepted": false,
+      "PIT_accepted": false,
+      "target_acceptance": "TARGET_ACCEPTANCE_DEFERRED",
+      "id": "DC-F4-01",
+      "role": "FORM4_FIRST_EXTERNAL_CANDIDATE",
+      "documentation": "../R-020_dataset_cards_RC0.md",
+      "required_evidence": [
+        "ACCESS",
+        "HISTORY",
+        "PIT",
+        "RIGHTS",
+        "QUALITY",
+        "MAPPING",
+        "CALENDAR_AND_UNITS"
+      ],
+      "history_accessed": false,
+      "evidence_refs": [],
+      "depends_on": [
+        "ADMITTED_EQUITY_PRICE_UNIVERSE_NOT_AUTOMATIC_K2"
+      ],
+      "required_fields": [
+        "document_raw",
+        "header",
+        "filing_version",
+        "row",
+        "owners",
+        "issuer_security_asof",
+        "footnote_exhibit_refs",
+        "PAC_and_amendment_link",
+        "channel_availability",
+        "receipt",
+        "plan_status",
+        "purchase_class"
+      ],
+      "normalizer_scope": "E1_F2_PARTIAL_OFFLINE_COMPONENTS",
+      "historical_channel_receipts_verified": false,
+      "benchmark_selected": null
+    }
+  ]
+}

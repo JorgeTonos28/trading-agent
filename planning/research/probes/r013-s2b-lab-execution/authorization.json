@@ -1,0 +1,40 @@
+{
+  "schema_version": "s2b-lab-authorization-v1",
+  "gate": "S2B-ADM-01",
+  "status": "AUTHORIZED_OWNER_ADMIN_ONLY_NOT_EXECUTED",
+  "recorded_at": "2026-10-06T18:27:22.860222+00:00",
+  "approved_by": "PROJECT_OWNER_DIRECT_USER_INSTRUCTION_2026_10_06",
+  "administrator": "PROJECT_OWNER_MANUAL_WINDOWS_ELEVATION_ONLY",
+  "agent_administrative_execution_allowed": false,
+  "owner_secret_input": "WINDOWS_SECURE_INTERFACE_ONLY_NEVER_CHAT_ARGS_LOGS_GIT",
+  "account_name": "tos_probe_runner_b",
+  "transaction_id": "s2b-20261006-a6d74b2b",
+  "account_description": "TOS S2B-ADM-01 s2b-20261006-a6d74b2b",
+  "root": "C:\\ProgramData\\TradingOS-S2B-Probe\\trial-01",
+  "new_parent": "C:\\ProgramData\\TradingOS-S2B-Probe",
+  "policy_reference": "planning/research/probes/r013-s2b-lab-prep/lab-policy-plan.json",
+  "scope": [
+    "NEW_TEMP_STANDARD_ACCOUNT",
+    "NEW_DECLARED_PARENT_AND_TRIAL_TREE",
+    "DECLARED_ACL_ONLY_NEW_RESOURCES",
+    "SYNTHETIC_FS_TESTS",
+    "SANITIZED_EVIDENCE",
+    "RECORDED_SID_PATH_LEDGER_ROLLBACK"
+  ],
+  "out_of_scope": [
+    "FIREWALL",
+    "GPO_LOCAL_SECURITY_POLICY",
+    "EXISTING_ACCOUNTS",
+    "BROKER_FINANCIAL_CREDENTIALS",
+    "TEAM_AUTH",
+    "SERVICES_TASKS_DAEMONS",
+    "GLOBAL_CODEX_CONFIG",
+    "VM_INSTALLATION",
+    "OTHER_OS_PATH_CHANGES",
+    "SPEND"
+  ],
+  "setup_executed": false,
+  "filesystem_tests_executed": false,
+  "rollback_status": "NOT_STARTED_NO_OS_RESOURCES_CREATED_BY_AGENT",
+  "actual_security_acceptance": "NOT_TESTED"
+}

@@ -1,0 +1,59 @@
+{
+  "observed_on": "2026-10-15",
+  "attempt": "QE0-03",
+  "python": "3.14.6",
+  "source_sha256": "2f040caa9500b71ac3ba22777482bf3c588531830fb58be4252e4124cc4cad28",
+  "wheel_sha256": "295b67b127f67429ebb9d937bd11448f930bee697fca6a8e0ec1de343ad3c68c",
+  "rows": [
+    {
+      "id": "ARTIFACT_HASH",
+      "status": "PASS",
+      "detail": "295b67b127f67429ebb9d937bd11448f930bee697fca6a8e0ec1de343ad3c68c"
+    },
+    {
+      "id": "CORE_IMPORT_VERSION",
+      "status": "PASS",
+      "detail": "1.231.0"
+    },
+    {
+      "id": "SYNTHETIC_EQUITY",
+      "status": "PASS",
+      "detail": {
+        "size_precision": 0,
+        "price_increment": "0.01"
+      }
+    },
+    {
+      "id": "FRACTIONAL_MODEL_BEHAVIOR",
+      "status": "PASS",
+      "detail": {
+        "rejected": "ValueError",
+        "fractional_supported": false
+      }
+    },
+    {
+      "id": "BACKTEST_ENGINE_IMPORT",
+      "status": "PASS",
+      "detail": "IMPORTED_NOT_RUN"
+    },
+    {
+      "id": "EMPTY_ENGINE_CONSTRUCTOR_DISPOSE",
+      "status": "PASS",
+      "detail": "NO_DATA_NO_STRATEGIES_NO_ORDERS_NOT_RUN"
+    }
+  ],
+  "counts": {
+    "PASS": 6,
+    "FAIL": 0,
+    "ERROR": 0
+  },
+  "scope": "ARTIFACT_AND_COMPONENT_ONLY",
+  "engine_selected": false,
+  "backtest_executed": false,
+  "QP1_10_accepted": false,
+  "history_accessed": false,
+  "strategy_trials": 0,
+  "target_acceptance": "TARGET_ACCEPTANCE_DEFERRED",
+  "implementation_locked": true,
+  "incremental_spend": 0
+}

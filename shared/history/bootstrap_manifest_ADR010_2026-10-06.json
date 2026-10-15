@@ -1,0 +1,174 @@
+{
+  "schema_version": "0.2.0-planning",
+  "status": "CANDIDATE_NOT_SELECTED",
+  "source_of_truth": "repository",
+  "implementation_locked": true,
+  "authority": "NONE",
+  "root_instruction": "AGENTS.md",
+  "entry_point": "ONBOARDING.md",
+  "profile_schema": "shared/environment_profile.schema.json",
+  "expected_profile": "shared/paper_team_profile.json",
+  "contracts": [
+    "planning/07_environment_bootstrap_contract_RC0.md",
+    "planning/07_agent_packaging_contract_RC0.md",
+    "planning/06_agent_evidence_contract_RC0.md",
+    "planning/06_shadow_portfolio_contract_RC0.md",
+    "planning/06_pedagogical_contract_RC0.md",
+    "planning/08_agent_security_contract_RC0.md",
+    "planning/08_job_workflow_recovery_contract_RC0.md",
+    "planning/08_audit_versions_deployment_contract_RC0.md",
+    "planning/08_S2_agent_domain_contract_RC2.md"
+  ],
+  "packages": [
+    "agents/onboarding/package.json",
+    "agents/plan-guardian/package.json",
+    "agents/quant-research/package.json",
+    "agents/market-research/package.json",
+    "agents/portfolio-manager-shadow/package.json",
+    "agents/pedagogical/package.json"
+  ],
+  "shared_skills": [
+    ".agents/skills/trading-os-bootstrap/SKILL.md"
+  ],
+  "required_gates": [
+    "EB-1",
+    "EB-2",
+    "EB-3",
+    "EB-4",
+    "EB-5",
+    "EB-6",
+    "EB-7",
+    "EB-8",
+    "TP-1",
+    "TP-2",
+    "TP-3",
+    "TP-4",
+    "TP-5",
+    "TP-6",
+    "TP-7"
+  ],
+  "requirements": [
+    {
+      "id": "clone-integrity",
+      "required_scopes": [
+        "PREPARATION_ONBOARDING",
+        "PAPER_AGENT_ENVIRONMENT"
+      ]
+    },
+    {
+      "id": "global-role-rules",
+      "required_scopes": [
+        "PREPARATION_ONBOARDING",
+        "PAPER_AGENT_ENVIRONMENT"
+      ]
+    },
+    {
+      "id": "sanitized-inventory-actions",
+      "required_scopes": [
+        "PREPARATION_ONBOARDING",
+        "PAPER_AGENT_ENVIRONMENT"
+      ]
+    },
+    {
+      "id": "team-identity",
+      "required_scopes": [
+        "PAPER_AGENT_ENVIRONMENT"
+      ]
+    },
+    {
+      "id": "final-selection-approval",
+      "required_scopes": [
+        "PAPER_AGENT_ENVIRONMENT"
+      ]
+    },
+    {
+      "id": "team-TP1-7",
+      "required_scopes": [
+        "PAPER_AGENT_ENVIRONMENT"
+      ]
+    },
+    {
+      "id": "portability-EB1-8",
+      "required_scopes": [
+        "PAPER_AGENT_ENVIRONMENT"
+      ]
+    },
+    {
+      "id": "S2-security-effective",
+      "required_scopes": [
+        "PAPER_AGENT_ENVIRONMENT"
+      ]
+    },
+    {
+      "id": "S2-shadow-blinding",
+      "required_scopes": [
+        "PAPER_AGENT_ENVIRONMENT"
+      ]
+    },
+    {
+      "id": "S2-domain-bootstrap",
+      "required_scopes": [
+        "PAPER_AGENT_ENVIRONMENT"
+      ]
+    }
+  ],
+  "external_prerequisites": [
+    "Git/repository_access",
+    "Codex_client",
+    "owner_official_native_login",
+    "tools_required_by_selected_route"
+  ],
+  "topology": "UNSELECTED_D024",
+  "configuration_mutations": "ONLY_CONCRETE_ALLOWED_CHANGES_WITH_DIFF_NO_SECRETS",
+  "automatic_installation": false,
+  "environment_decision": "planning/decisions/ADR-010-team-paper-and-prelive-plus-migration.md",
+  "paper_acceptance": "planning/research/R-006_team_runtime_acceptance_RC0.md",
+  "pre_live_migration_gate": "planning/research/R-029_pre_live_environment_migration_gate_RC0.md",
+  "deployment_source_policy": {
+    "candidate_branch": "plan-architect",
+    "stable_approved_branch": "main",
+    "deployment_snapshot": "approved_versioned_release_or_tag",
+    "automatic_promotion": false
+  },
+  "agentic_design_decision": "planning/decisions/ADR-011-paper-team-agentic-direction-proposed.md",
+  "security_direction_proposal": "planning/decisions/ADR-012-agent-process-isolation-proposed.md",
+  "operational_permissions_approved": false,
+  "security_direction_decision": "planning/decisions/ADR-012-agent-process-isolation-proposed.md",
+  "security_direction_status": "APPROVED_CANDIDATE_S2_B_NOT_ACCEPTED",
+  "administrative_setup_authorized": false,
+  "isolation_gates": {
+    "security": "NOT_VERIFIED",
+    "shadow_blinding": "NOT_VERIFIED",
+    "fallback": "S3_REQUIRES_HUMAN_REEVALUATION",
+    "reproducibility": "NOT_TESTED",
+    "administrative_gate": "S2B_ADM01_AUTHORIZED_OWNER_ADMIN_ONLY_SETUP_PENDING"
+  },
+  "isolation_acceptance_matrix": "planning/research/R-013_S2_variant_acceptance_RC2.md",
+  "isolation_administrative_gate": "planning/research/R-013_S2B_lab_ADM01.md",
+  "isolation_review": "planning/research/R-013_S2B_lab_independent_review_2026-10-06.md",
+  "historical_isolation_contracts": [
+    "planning/08_S2_isolation_spec_RC1.md",
+    "planning/research/R-013_S2_acceptance_matrix_RC1.md"
+  ],
+  "next_governance_item": "OWNER_ACTION_S2B_ADM01_SECURE_UI_AND_SCOPED_ADMIN_SETUP",
+  "isolation_variant": {
+    "proposed": "S2_B",
+    "selected": false,
+    "account_per_role": "NOT_ASSUMED",
+    "core_outside_runner": true,
+    "effective_per_job_contexts_required": true,
+    "actual_acceptance": "NOT_TESTED",
+    "candidate_direction_approved": true
+  },
+  "historical_isolation_administrative_gate": "planning/research/R-013_S2_administrative_gate_ADM01.md",
+  "lab_evidence": "planning/research/R-013_S2B_lab_preparation_2026-10-06.md",
+  "laboratory_administrative_authorization": {
+    "gate": "S2B-ADM-01",
+    "approved": true,
+    "scope": "TEMPORARY_LAB_ONLY",
+    "administrator": "PROJECT_OWNER",
+    "agent_privileged_execution_allowed": false,
+    "setup_executed": false,
+    "authorization_reference": "planning/research/probes/r013-s2b-lab-execution/authorization.json"
+  }
+}

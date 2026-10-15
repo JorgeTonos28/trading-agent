@@ -1,0 +1,19 @@
+{
+  "probe": "R006-TEAM-BOOTSTRAP-SDK-COMPLETION",
+  "captured_at": "2026-10-05T18:38:04.690677+00:00",
+  "source_commit": "c53a1305084d6bcf8fccea8e028d54f50e25e8a7",
+  "sdk_version": "0.160.0",
+  "source_sha256": "980426d809ddc2e790d2571137472d156b1d4f4daac0597d7544cb90f844d6dc",
+  "selected": false,
+  "future_plus": "UNKNOWN_PRELIVE",
+  "metadata": [],
+  "checks": {},
+  "output": null,
+  "observed_environment": {
+    "type": "chatgpt",
+    "plan_type": "team"
+  },
+  "error_class": "KeyError",
+  "cleanup": "COMPLETED",
+  "passed": false
+}

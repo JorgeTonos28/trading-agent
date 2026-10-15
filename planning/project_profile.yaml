@@ -1,11 +1,27 @@
 schema_version: 1
-updated_on: 2026-10-01
+updated_on: 2026-10-15
 project:
   name: Trading OS
   purpose: auditable_agentic_quantitative_trading_platform
   authoritative_roadmap: docs/master/hoja_de_ruta_sistema_trading_agentes_ia_v0.2.md
   role_now: Plan Architect
   role_after_freeze: Plan Guardian
+version_control:
+  remote: https://github.com/JorgeTonos28/trading-agent
+  stable_default_branch: main
+  stable_baseline_commit: a28d6f3
+  working_branch: plan-architect
+  promotion_policy: reviewed_approved_milestones_only
+  deployment_snapshot: approved_versioned_release_or_tag
+  automatic_merge_or_deployment_tag: false
+  commit_policy: milestone_based_descriptive_commits
+  allowed_commit_prefixes: [planning, research, decision, docs]
+operating_rules:
+  autonomous_continuation: true
+  informational_checkpoint_is_endpoint: false
+  persist_commit_push_then_continue: true
+  stop_marker: HUMAN_ACTION_REQUIRED
+  independent_work_before_blocker_escalation: true
 stage:
   current: PREPARATION_AND_PLAN_HARDENING
   implementation_locked: true
@@ -42,12 +58,40 @@ baseline_decisions:
     result: Trading OS Plugin is an intended capability layer; final runtime and contents remain open
   - id: ADR-000
     result: Strategy V1 selection is OPEN; MATR_V1 remains a candidate and benchmark, not the selected Champion
+  - id: ADR-001
+    result: A+ approved for PAPER V1; one deterministic operational Champion with multiple possible signal families, plus isolated Shadow Portfolio Manager and factual pedagogy
+  - id: ADR-002
+    result: G1+G2 PAPER V1 incident boundary; block new entries and reconcile, cancel only verified pending entries, preserve protection, require human resume after material pause; G3 not authorized
+  - id: ADR-003
+    result: Broker-independent internal order identity, durable command before send, event ledger and reconciliation; UNKNOWN never permits blind resend; G2 cancellation has separate deterministic risk authorization
+  - id: ADR-004
+    result: Point-in-time observations carry distinct clocks, channel-specific availability evidence and eligible_from; replay uses as-of revisions and snapshots, with raw tradable price separate from as-of adjusted views
+  - id: ADR-005
+    result: External data families begin as research only; promotion to operational Champion input requires semantic, PIT, quality, license, OOS, risk and human-governance gates; no family or provider selected
+  - id: ADR-006
+    result: PAPER V1 deterministic risk uses the most restrictive applicable independent exposure/cash, estimated protection, gap/slippage, liquidity and concurrent-reservation constraints; no numerical policy approved
+  - id: ADR-007
+    result: R-006 agentic layer limited to OpenAI and Anthropic; Plus target and public assets preferred for PAPER under superseding ADR-013; Team research only; LIVE unknown; paid execution requires ADR-008 approval
+  - id: ADR-009
+    result: Candidate cohort approved for acceptance only; reproducible environment bootstrap and reusable role packages required before D-024 and DoR
+  - id: ADR-010
+    result: Historical environment assignment superseded by ADR-013; approved_versioned_release_tag_for_deployment and no_main_promotion remain
+  - id: ADR-011
+    result: Option_A_candidate_PAPER_direction_and_RC2_reuse_dispositions_approved_automatic_event_schedule_jobs_no_financial_authority_no_final_freeze
+  - id: ADR-013
+    result: Team_INFOTEP_research; Plus_personal_Windows_target_PAPER; LIVE_UNKNOWN; design_separate_from_target_acceptance; S2B_lab_deferred_to_target
+  - id: ADR-008
+    result: PAPER zero_or_low_incremental_cost_first; LIVE economic_value_first; paid services research allowed, explicit approval before spend; free_or_included_or_self_created methodology acquisition only
 strategy_v1:
   selection_status: OPEN
   priority: P0
   selected_strategy: null
   candidate_minimum: [VIDEO_INSPIRED_V1, MATR_V1]
   first_to_decompose: VIDEO_INSPIRED_V1
+  admission_preregistration: planning/research/R-020_strategy_admission_preregistration_RC1.md
+  candidate_rule_cards: planning/research/R-020_video_candidate_rule_cards_RC0.md
+  SEC_dataset_card: planning/research/R-020_SEC_dataset_admissibility_RC0.md
+  candidate_results_consulted_this_package: false
   video_is_functional_and_architectural_inspiration: true
   literal_replication_required: false
   creator_performance_audit_required: false
@@ -65,9 +109,30 @@ system_design:
   external_signal_roles: [research, candidate_signal, cross_validation, pedagogy]
   broker_selection_status: OPEN
   alpaca_status: video_reference_and_candidate_only
+  paper_v1_contract: planning/paper_v1_capability_contract_RC1.md
+  paper_v1_contract_status: A_PLUS_FUNCTIONAL_SCOPE_APPROVED_DETAILS_OPEN
+  champion_operational_count_initial: 1
+  champion_may_combine_signal_families: true
+  operational_signal_and_intent_assembly: deterministic
+  portfolio_manager_mode_paper_v1: SHADOW
+  shadow_proposal_operational_authority: none
+  shadow_comparison_required: true
+  pedagogical_agent_factual_from_phase: B4
+  pedagogical_contract_complete_before_paper_v1_done: true
+  incident_autonomy_paper_v1: G1_PLUS_G2
+  automatic_general_reduction_or_liquidation: false
+  protective_orders_preserved_on_incident: true
+  human_resume_after_material_pause: true
+  data_pit_contract: planning/05_data_contract_RC1.md
+  data_pit_contract_scope: abstract_semantics_decided_dataset_admission_open
+  external_signal_contract: planning/06_external_signal_admission_RC1.md
+  external_signal_families_selected: []
+  risk_architecture_method_status: DECIDED_CONCEPTUAL_OPTION_B
+  risk_numeric_policy_status: OPEN_D_031
+  risk_architecture_decision_package: planning/research/D-012_risk_budget_architecture_decision_RC0.md
 open_decision_ids:
-  P0: [D-008, D-009, D-010, D-011, D-012, D-013, D-014, D-015, D-016, D-017, D-018, D-019]
-  P1: [D-020, D-021, D-022, D-023, D-024, D-025, D-026, D-027, D-028, D-029, D-033]
+  P0: [D-008, D-010, D-011]
+  P1: [D-021, D-022, D-023, D-025, D-026, D-028, D-029, D-033, D-034, D-035]
   P2: [D-030, D-031, D-032]
   P3: [D-040, D-041, D-042]
   P4: [D-050, D-051]
@@ -86,19 +151,105 @@ required_specialties:
   - pedagogy_and_explainability
 capability_discovery:
   required: true
-  dimensions: [EXISTS, AVAILABLE_TO_US, TECHNICALLY_COMPATIBLE, ECONOMICALLY_REASONABLE, SELECTED]
+  current_focus: FINANCIAL_P0_P1_STRATEGY_RULES_DATA_PIT_BROKER_BACKTEST_RISK
+  agentic_provider_scope: [OpenAI, Anthropic]
+  other_agentic_frameworks_in_scope: false
+  RESEARCH_AI_ENVIRONMENT: ChatGPT_Team
+  RESEARCH_HOST: INFOTEP_institutional_Windows_workstation
+  TARGET_PAPER_AI_ENVIRONMENT: ChatGPT_Plus_individual
+  TARGET_PAPER_COMPUTE_HOST: owner_administered_personal_Windows_PC
+  FUTURE_LIVE_ENVIRONMENT: UNKNOWN
+  environment_decision: ADR-013_D-043
+  target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED
+  operational_status: NOT_IMPLEMENTED
+  plus_entitlements_require_empirical_verification: true
+  missing_target_access_blocks_discovery: false
+  behavioral_environment: RESEARCH_AI_ENVIRONMENT_Team
+  target_paper_plus_acceptance_scope: finalist_access_activation_quotas_tools_auth_state_recovery_operational_sufficiency
+  repeat_entire_behavioral_research_in_Plus: false
+  deterministic_local_always_on_core_with_intermittent_Codex: APPROVED_DESIGN_DIRECTION_ADR011
+  api_billing_separate_from_plus: true
+  siwc_plan_usage_candidate: conditional_separate_OAuth_route_not_selected_native_Team_preferred_for_probe
+  paper_v1_cost_preference: [Tier_0, Tier_1]
+  tier_0: included_in_target_Plus_or_public_reusable_assets_Team_research_not_entitlement_evidence
+  tier_1: free_limited_free_account_or_local_open_source_without_material_cost
+  tier_2_excluded_by_default: true
+  tier_2_research_allowed_without_spend: true
+  tier_2_exception: documented_material_incremental_value_and_costs_plus_explicit_owner_approval_before_contracting_or_spend
+  agent_capability_gate: D-024_must_remain_open_until_R-006_maturity_review
+  no_final_runtime_or_agent_plugin_selection_before_gate: true
+  research_plan: planning/research/R-006_agentic_capability_discovery_plan.md
+  first_probe_wave: planning/research/R-006_probe_wave_01_2026-10-01.md
+  second_probe_wave: planning/research/R-006_probe_wave_02_2026-10-02.md
+  third_probe_wave: planning/research/R-006_probe_wave_03_2026-10-02.md
+  fourth_probe_wave: planning/research/R-006_probe_wave_04_2026-10-05.md
+  fifth_probe_wave: planning/research/R-006_probe_wave_05_2026-10-05.md
+  role_evidence_contract: planning/06_agent_evidence_contract_RC0.md
+  shadow_contract: planning/06_shadow_portfolio_contract_RC0.md
+  pedagogy_contract: planning/06_pedagogical_contract_RC0.md
+  representative_workload_acceptance: planning/research/R-006_workload_acceptance_RC0.md
+  focused_regression_protocol: planning/research/R-006_probe_wave_06_protocol.md
+  sixth_probe_wave: planning/research/R-006_probe_wave_06_2026-10-05.md
+  native_codex_sdk_candidate: planning/research/R-006_codex_sdk_findings_2026-10-05.md
+  conditional_shortlist: planning/research/R-006_shortlist_RC2_team.md
+  discovery_maturity: MATURE_FOR_SCOPED_PAPER_ARCHITECTURE_DECISION_OPERATIONAL_GATES_OPEN
+  baseline_behavioral_turns: 20
+  baseline_behavioral_predefined_complete_passes: 19
+  focused_behavioral_turns: 10
+  focused_behavioral_admission_v1: 8
+  focused_behavioral_admission_v2_amended_citation_check: 10
+  local_contract_checks_v2: 39
+  native_codex_sdk_smoke_turns: 1
+  native_codex_sdk_smoke_checks: 7
+  no_general_Skill_superiority_demonstrated: true
+  autonomous_RC0_steps_1_and_2: COMPLETE_SPECIFICATION_AND_FOCUSED_SYNTHETIC_PROBES
+  candidate_cohort_owner_approval: APPROVED_FOR_ACCEPTANCE_NOT_FINAL_SELECTION
+  next_package_action: FINANCIAL_CANDIDATE_RULES_AND_PROVIDER_ADMISSION_NO_PLUS_OR_CURRENT_ADMIN
+  independent_coverage_gaps: independent_agent_review_documented_empirical_security_and_integrated_financial_pedagogy_not_closed
+  proposed_architecture_direction: deterministic_local_always_on_core_plus_automatic_event_schedule_Codex_native_jobs_target_Plus_ACCEPTANCE_DEFERRED
+  representative_workload: WL_R_40_base_plus_10_interactive_logical_jobs_up_to_13_reserve_service_requests_NOT_STRATEGY_CADENCE
+  seventh_probe_wave: planning/research/R-006_probe_wave_07_2026-10-05.md
+  Team_bounded_jobs_passed: 8
+  SDK_bootstrap_completion_checks_passed: 14
+  Team_environment_profile: planning/research/probes/r006-team-paper/environment-profile-PAPER-Team-RC0.json
+  Team_context_rehydration: PROBED_NOT_DURABLE_RECOVERY
+  Team_sustained_workload_acceptance: NOT_EXECUTED
+  P1_final_runtime_capacity_evidence: DESIGN_WORKLOAD_PROTOCOL_REQUIRED_TARGET_MEASUREMENT_DEFERRED_R030
+  architecture_direction_proposal: planning/decisions/ADR-011-paper-team-agentic-direction-proposed.md
+  final_selection_status: DESIGN_DISPOSITIONS_APPROVED_FINAL_RUNTIME_OPEN_D024
+  plus_runtime_gate: planning/research/R-006_plus_runtime_gate_RC0.md
+  plus_runtime_gate_status: TARGET_PAPER_ACCEPTANCE_DEFERRED_R030_HISTORICAL_PROTOCOLS_PRESERVED
+  team_runtime_gate: planning/research/R-006_team_runtime_acceptance_RC0.md
+  target_paper_gate: planning/research/R-030_target_paper_environment_acceptance_RC0.md
+  missing_Plus_blocks_design_research: false
+  target_acceptance_required_before_implementation: true
+  dimensions: [EXISTS, AVAILABLE_IN_RESEARCH_AI_ENVIRONMENT, AVAILABLE_IN_TARGET_PAPER_PLUS, AVAILABLE_ON_TARGET_PAPER_HOST, TECHNICALLY_COMPATIBLE, ECONOMICALLY_REASONABLE, SELECTED]
   dispositions: [REUSE_AS_IS, ADAPT, PORT, WRAP, REFERENCE_ONLY, BUILD, REJECT]
   families:
     - OpenAI_Skills_Plugins_Codex_MCP_Agents_and_financial_analysis
     - Anthropic_Financial_Services_Skills_templates_connectors_workflows
-    - other_AI_labs
-    - open_source_agent_and_workflow_frameworks
     - quantitative_frameworks_and_backtest_engines
     - broker_APIs
     - market_data_providers
     - alternative_data_providers
     - smart_money_congress_insider_13F_options_flow_dark_pool_revisions_fund_flows
     - storage_observability_and_security_tools
+economic_policy:
+  decision: ADR-008_D-036
+  objective: highest_quality_reliability_capability_at_lowest_reasonable_cost
+  PAPER_V1: ZERO_OR_LOW_INCREMENTAL_COST_FIRST
+  LIVE: ECONOMIC_VALUE_FIRST
+  paid_services_may_be_researched: true
+  contracting_billing_or_incremental_spend_requires_explicit_owner_approval: true
+  free_preference_conditional_on_sufficient_quality: true
+  paper_exclusion_is_not_permanent_architecture_rejection: true
+  methodology_acquisition: free_public_existing_entitlement_or_self_created_adapted_only
+  paid_methodology_acquisition_allowed: false
+  runtime_data_infrastructure_evaluated_separately: true
+  economic_fields: [PAPER_V1_VIABLE_FREE, PAPER_V1_COST, LIVE_COST, FREE_ALTERNATIVE, PAID_INCREMENTAL_VALUE, ECONOMIC_JUSTIFICATION_REQUIRED]
+  scorecard: planning/economic_scorecard.md
+  live_evaluation: unit_economics_net_expected_value_and_operational_benefit_with_uncertainty
+  approved_incremental_spend: NONE
 governance:
   decision_states: [OPEN, RESEARCHING, READY_FOR_DECISION, DECIDED, DEFERRED, SUPERSEDED]
   priority_meanings:
@@ -118,6 +269,525 @@ governance:
     - leverage_short_selling_derivatives
     - material_security_architecture
     - major_scope_changes
+    - promotion_of_shadow_portfolio_manager_to_operational_authority
+    - final_agent_runtime_topology_skills_plugins_mcp_and_plugin_architecture_D_024
+    - contracting_billing_or_any_incremental_spend
   closure_rule: No P0/P1 open, every Definition of Ready gate evidenced, independent critical review, owner approval and plan freeze
   source_of_truth: planning/ registers plus approved master plan and ADRs
   creator_performance_claims: Record as unverified when applicable; no dedicated audit unless necessary for a project decision
+
+environment_portability:
+  requirement: APPROVED_ADR009
+  decision: D-037
+  research: R-028
+  priority: P1
+  design_status: CONTRACT_RC0_LOCAL_AND_FRESH_CLONE_EVIDENCE_COMPLETE_TARGET_GATES_OPEN
+  gates: [D-020, D-024, Definition_of_Ready]
+  RESEARCH_AI_ENVIRONMENT: ChatGPT_Team
+  RESEARCH_HOST: INFOTEP_institutional_Windows
+  TARGET_PAPER_AI_ENVIRONMENT: ChatGPT_Plus_individual
+  TARGET_PAPER_COMPUTE_HOST: owner_personal_Windows
+  FUTURE_LIVE_ENVIRONMENT: UNKNOWN
+  candidate_cohort: APPROVED_NOT_SELECTED
+  one_session_per_role: NOT_SELECTED
+  repository_only_no_chat_dependency: required
+  agent_readiness_is_trading_readiness: false
+
+bootstrap_evidence:
+  dossier: planning/research/R-028_bootstrap_findings_2026-10-05.md
+  source_commit_tested: 9e0dbed
+  role_packages_metadata_verified: 6
+  native_fixture_smoke_turns: 5
+  fresh_clone_role_smoke_turns: 2
+  offline_checks: 31
+  clone_completion_checks: 9
+  Team_fresh_clone_acceptance: PARTIAL
+  sustained_PAPER_operational_acceptance: NOT_EXECUTED
+  target_Plus_acceptance_executed: false
+  observed_readiness: PARTIAL
+  portable_hash_policy: SHA256_git_blob_at_pinned_commit
+  desktop_UI_folder_inheritance: NOT_TESTED
+  SDK_folder_inheritance: VERIFIED_scoped_clone_c53a130_completion02
+  failures_preserved: account_RPC_internal_TEMP_cleanup_WinError32_manifest_self_hash_KeyError
+
+paper_agentic_hardening:
+  security_contract: planning/08_agent_security_contract_RC0.md
+  workflow_contract: planning/08_job_workflow_recovery_contract_RC0.md
+  audit_versions_deployment_contract: planning/08_audit_versions_deployment_contract_RC0.md
+  dossier: planning/research/R-010_014_hardening_findings_2026-10-05.md
+  next_human_decision: NONE_Q056_APPROVED_CONTINUE_TECHNICAL_PROTOCOL
+  security_setup_executed: false
+  paired_native_SDK_CLI_probe: 0.160.0_research_shadow_2_of_2_pass
+  durable_semantic_probe: SQLite_disposable_20_checks_plus_11_lease_race_checks
+  quota_sustained_acceptance: NOT_EXECUTED
+  queue_sensitivity: SIMULATED_not_Team_capacity_acceptance
+  independent_review: agent_read_only_IR01_IR07_not_human_audit_or_architecture_approval
+  final_D024_freeze: NOT_AUTHORIZED
+
+paper_isolation_direction:
+  decision: ADR-012
+  status: APPROVED_CANDIDATE_S2_B_NOT_ACCEPTED
+  approved_by: project_owner
+  fallback: S3_REEVALUATION_REQUIRES_HUMAN_DECISION
+  S1: SECRET_FREE_RESEARCH_ONLY
+  security_isolation: NOT_VERIFIED
+  shadow_experimental_blinding: NOT_VERIFIED
+  administrative_setup_authorized: false
+  D027: DESIGN_DECIDED_TARGET_ACCEPTANCE_DEFERRED
+  D024: DESIGN_DECIDED_TARGET_ACCEPTANCE_DEFERRED
+
+s2_research_package:
+  specification: planning/08_S2_agent_domain_contract_RC2.md
+  historical_S2_A_specification: planning/08_S2_isolation_spec_RC1.md
+  acceptance_matrix: planning/research/R-013_S2_variant_acceptance_RC2.md
+  historical_acceptance_matrix: planning/research/R-013_S2_acceptance_matrix_RC1.md
+  findings: planning/research/R-013_S2_findings_2026-10-05.md
+  administrative_gate: planning/research/R-013_S2B_lab_ADM01.md
+  historical_administrative_gate: planning/research/R-013_S2_administrative_gate_ADM01.md
+  stage: DEFERRED_TO_TARGET_PAPER_HOST
+  security_tests_specified: 17
+  blinding_tests_specified: 9
+  reproducibility_tests_specified: 5
+  non_admin_expected_observations: 7
+  effective_S2_acceptance: NOT_TESTED
+  runtime_auth_by_domain: NOT_TESTED
+  current_token_elevated: false
+  observed_local_firewall_merge: false
+  observed_firewall_block_logging: false
+  effective_firewall_setting_origin: UNKNOWN
+  configuration_changes: []
+
+s2_independent_review:
+  artifact: planning/research/R-013_S2_independent_review_2026-10-05.md
+  reviewer: independent_hardening_review_read_only
+  contract_findings: ADDRESSED_ENFORCEMENT_PENDING
+  probe_environment_correction: ATTEMPT03_ALL_CHILD_ENV_ALLOWLISTED
+  actual_security_acceptance: NOT_TESTED
+
+s2_variant_review:
+  observed_on: 2026-10-06
+  owner_administrative_decision: S2_ADM01_NOT_AUTHORIZED_DEFERRED
+  next_question: NO_CURRENT_HOST_ACTION_DESIGN_REVIEW
+  comparison: planning/research/R-013_S2_variants_comparison_2026-10-06.md
+  proposed_variant: S2_B_SINGLE_AGENT_RUNNER_EFFECTIVE_PER_JOB_CONTEXTS
+  candidate_direction_approval: APPROVED_PROJECT_OWNER_2026_10_06
+  account_per_role: NOT_ASSUMED
+  S2_A: CONDITIONAL_ON_DEMONSTRATED_S2_B_LIMITATION
+  S3: FORMAL_RESERVE_REQUIRES_HUMAN_REEVALUATION
+  probe: planning/research/probes/r013-s2-variants/README.md
+  semantic_AccessCheck_checks_passed: 10
+  focused_owner_standard_right_observations: 27
+  focused_owner_is_operational_supervisor_test: false
+  failed_probe_attempt_preserved: true
+  whole_Codex_compatibility: UNKNOWN
+  security_blinding_operational_acceptance: NOT_TESTED
+  configuration_changes: []
+  independent_review: planning/research/R-013_S2_independent_review_2026-10-06.md
+
+s2b_laboratory_preparation:
+  gate: S2B-ADM-01
+  question: Q-052
+  decision_status: DECIDED
+  authorized: true
+  authorization_scope: TEMPORARY_LAB_ONLY
+  administrator: PROJECT_OWNER
+  agent_privileged_execution_allowed: false
+  setup_executed: false
+  filesystem_harness_executed: false
+  fixture_accounts_proposed: 1
+  role_OS_accounts_proposed: 0
+  resources_proposed: 14
+  bootstrap_parents_proposed: 1
+  dossier: planning/research/R-013_S2B_lab_preparation_2026-10-06.md
+  independent_review: planning/research/R-013_S2B_lab_independent_review_2026-10-06.md
+  common_sid_semantic_observations: 12
+  transient_privilege_observations: 2
+  synthetic_SDDL_syntax_validations: 15
+  preflight: READ_ONLY_NAME_AND_ROOT_ABSENT_NOT_AUTHORITY
+  filesystem_acceptance: NOT_TESTED
+  full_native_acceptance: NOT_TESTED
+  model_calls: 0
+  configuration_changes: []
+
+s2b_lab_execution:
+  authorization: planning/research/probes/r013-s2b-lab-execution/authorization.json
+  runbook: planning/research/R-013_S2B_owner_execution_runbook.md
+  baseline: planning/research/probes/r013-s2b-lab-execution/owner-setup-baseline-01.json
+  current_state: planning/research/probes/r013-s2b-lab-execution/execution-state.json
+  last_preflight: planning/research/probes/r013-s2b-lab-execution/readonly-preflight-03.json
+  helper_runtime: EXISTING_POWERSHELL_7_64BIT
+  legacy_windows_powershell_5_1: POLICY_BLOCKED_NO_CHANGE
+  offline_evaluator_checks: 15_OFFLINE_SOURCE_AND_EVAL_PASS_NOT_FS
+  offline_check_breakdown: 3_SOURCE_AND_12_SYNTHETIC_EVALUATOR
+  execution_handoff_review: planning/research/R-013_S2B_execution_handoff_review_2026-10-06.md
+  effective_filesystem_acceptance: NOT_TESTED
+  owner_action: NONE_NOW_DEFERRED_TARGET_INSTANCE_REVALIDATION
+  filesystem_tests: NOT_TESTED
+  setup_state: DEFERRED_TO_TARGET_PAPER_HOST
+  rollback_state: NOT_STARTED_NO_OS_RESOURCES_CREATED_BY_AGENT
+  secret_handling: OWNER_WINDOWS_UI_ONLY
+
+design_acceptance_dimensions:
+  D024: {design_status: DESIGN_DECIDED, target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED, operational_status: NOT_IMPLEMENTED}
+  D027: {design_status: DESIGN_DECIDED, target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED, operational_status: NOT_TESTED}
+  D037: {design_status: DESIGN_DECIDED, target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED, operational_status: NOT_IMPLEMENTED}
+  S2B_ADM01: {execution_status: DEFERRED_TO_TARGET_PAPER_HOST, current_host_execution_allowed: false}
+  agentic_architecture_design_complete: true
+  paper_runtime_accepted: false
+
+agentic_design_checkpoint:
+  artifact: planning/14_agentic_architecture_design_checkpoint_RC0.md
+  proposal: ADR-014_B_RT1
+  status: APPROVED_CANDIDATE_DESIGN_OWNER_2026_10_13
+  question: Q-053
+  R006_maturity: FUNDAMENTAL_DESIGN_RESEARCH_COMPLETE
+  independent_review: planning/research/R-006_design_independent_review_2026-10-07.md
+  binding_probe: 16_SYNTHETIC_CASES_NOT_ENVIRONMENT_ACCEPTANCE
+  Temporal_worker_probe: AT_LEAST_ONCE_ATTEMPTS_1_2_CLEANUP_PARTIAL_ENV_HELPER_CAVEAT
+  APS_calendar_probe: 6_SYNTHETIC_CRITERIA_NOT_WORKFLOW_RECOVERY
+  unresolved_transverse_design: [D-025, D-026, D-028, D-029, D-034, D-035]
+  owner_action: NONE_THIS_CHECKPOINT_APPROVED_CONTINUE_FINANCIAL_P0_P1
+
+financial_preparation_wave:
+  updated_on: 2026-10-07
+  D009: DECIDED_FUNCTIONAL_EXTRACTION_ONLY
+  D008: OPEN_STRATEGY_V1_SELECTION
+  D021: RESEARCHING_NO_BROKER_SELECTED
+  D022: RESEARCHING_NO_DATASET_ADMITTED
+  D033: RESEARCHING_NO_SMART_MONEY_PROVIDER_SELECTED
+  candidates: VIDEO_COMPONENTS_FIRST_MATR_BENCHMARK_OTHER_JUSTIFIED
+  demand_contract: planning/research/R-020_candidate_data_workload_contract_RC1.md
+  broker_data_evidence: planning/research/R-007_008_provider_evidence_wave01_2026-10-07.md
+  smart_money_evidence: planning/research/R-025_provider_evidence_wave01_2026-10-07.md
+  public_schema_probe: METADATA_ONLY_HTTP200_NOT_PIT_OR_DATA_ACCESS_PROOF
+  strategy_backtest_results_observed: false
+  incidental_public_ETF_issuer_returns_seen: true
+  dataset_or_holdout_opened: false
+  incremental_spend: 0
+
+pending_target_acceptance_P1:
+  gate: R-030
+  design_decisions: [D-024, D-027, D-037]
+  status: TARGET_ACCEPTANCE_DEFERRED
+  required_before_implementation: true
+  scope: personal_Windows_Plus_auth_isolation_bootstrap_smoke_recovery_capacity
+  mechanism_freeze: false
+  owner_approval: ADR-014_2026-10-13_candidate_design_only
+
+financial_preparation_wave02:
+  updated_on: 2026-10-14
+  candidate_rules: planning/research/R-020_candidate_rules_RC1.md
+  external_admission: planning/research/R-021_external_dataset_admission_RC1.md
+  order_protection: planning/research/R-007_order_protection_matrix_RC1.md
+  market_data: planning/research/R-008_market_data_evidence_wave02_2026-10-13.md
+  engines: planning/research/R-009_backtesting_reuse_RC0.md
+  financial_workload: planning/research/R-011_012_014_financial_demand_RC1.md
+  risk_reference_proposal: planning/research/D-035_risk_measurement_decision_RC0.md
+  independent_review: planning/research/R-020_027_independent_review_2026-10-13.md
+  algebra_probe: 8_SYNTHETIC_OBSERVATIONS_NOT_RISK_ENGINE
+  next_human_decision: NONE_Q056_APPROVED_CONTINUE_TECHNICAL_PROTOCOL
+  selected_strategy: null
+  selected_broker: null
+  selected_market_data: null
+  selected_backtesting_engine: null
+  risk_measurement_approved: true
+  historical_backtests_executed: false
+  implementation_locked: true
+  incremental_spend: 0
+
+risk_reference_approval:
+  ADR: ADR-015
+  approved_on: 2026-10-13
+  approved_by: project_owner
+  primary_reference: R2_CURRENT_VALUE_TO_CONFIRMED_PROTECTION
+  scope: CONCEPTUAL_ONLY
+  D035_global: RESEARCHING
+  R1_attribution_preserved: true
+  independent_controls_preserved: true
+  automatic_loser_topup_authorized: false
+  pending_new_reference: p_auth_CONSERVATIVE_CONDITIONAL_PROTECTION
+  invalid_missing_crossed_protection: UNCERTAIN_NOT_ZERO
+  final_formulas_approved: false
+  numeric_thresholds_approved: false
+  scenarios: planning/research/R-027_R2_scenarios_RC1.md
+  implementation_locked: true
+
+financial_preparation_wave03:
+  updated_on: 2026-10-14
+  OOS_proposal: planning/research/D-011_OOS_policy_decision_RC0.md
+  next_human_decision: NONE_Q056_APPROVED_CONTINUE_TECHNICAL_PROTOCOL
+  Q055: DECIDED_CONCEPTUAL_ADR016
+  D011_global: RESEARCHING
+  Strategy_V1: OPEN
+  confirmation_period: PROPOSED_RESERVE_2023_2026_09_30
+  confirmation_integrity: UNKNOWN_PENDING_EXPOSURE_LEDGER_M11
+  calculation_semantics: PROPOSED_RC1_NOT_PARITY_ACCEPTED
+  SEC_normalizer: EDGARTOOLS_5_62_0_ADAPT_WRAP_CANDIDATE_NOT_SELECTED
+  E1_table_fixture_passes: 7
+  E1_table_fixture_total: 7
+  E1_factory: BLOCKED_OR_ERROR_IdentityNotSetError
+  E1_dataset_PIT_proven: false
+  Tiingo_Starter_durable_role: REJECT_TERMS_RETENTION
+  other_free_data_routes_sufficient: UNKNOWN_NOT_EXHAUSTED
+  no_new_strategy_results_or_confirmatory_dataset_accessed: true
+  historical_backtests_executed: false
+  independent_review: planning/research/D-011_R-021_independent_review_2026-10-13.md
+  incremental_spend: 0
+  implementation_locked: true
+
+evaluation_architecture_approval:
+  ADR: ADR-016
+  approved_on: 2026-10-14
+  Q055: DECIDED
+  direction: O_B_ADMISSIBLE_CANDIDATES_INDEPENDENT_CONFIRMATION
+  scope: CONCEPTUAL_ONLY
+  D011_global: RESEARCHING
+  confirmation_integrity: UNKNOWN_EXPOSURE_LEDGER_M11_REQUIRED
+  experiment_registry_includes_discarded_results: true
+  insufficient_sample_state: INSUFFICIENT_EVIDENCE
+  horizon_latency_expiry_required: true
+  final_statistical_model_selected: false
+  selected_strategy: null
+  target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED
+  implementation_locked: true
+
+financial_preparation_wave04:
+  updated_on: 2026-10-14
+  evaluation_protocol: planning/research/R-020_evaluation_protocol_RC2.md
+  candidate_scorecard: planning/research/R-020_comparable_candidate_scorecard_RC2.md
+  registry: planning/research/experiment_registry.json
+  exposure_ledger: planning/research/exposure_ledger.md
+  evidence_card: planning/research/EvidenceRequirementCard_RC0.json
+  horizon_latency_freshness: planning/research/R-020_decision_horizon_latency_RC0.md
+  broker_data_sources: planning/research/R-007_008_timing_evidence_2026-10-14.md
+  independent_review: planning/research/R-020_evaluation_independent_review_2026-10-14.md
+  declared_hypotheses: 5
+  strategy_trials_executed: 0
+  F0_preregistration: NOT_FROZEN_INCOMPLETE
+  confirmation_integrity: INTEGRITY_UNKNOWN
+  reuse_probe_E2_checks: 19
+  reuse_probe_E2_passes: 19
+  reuse_probe_E2_scope: SYNTHETIC_PRIMITIVES_NOT_STATISTICAL_OR_TARGET_ACCEPTANCE
+  statistical_model_selected: false
+  transitive_licenses_reviewed: false
+  next_human_decision: NONE_Q056_APPROVED_CONTINUE_TECHNICAL_PROTOCOL
+  Q056: DECIDED_CONCEPTUAL_ADR017
+  selected_strategy: null
+  selected_broker: null
+  data_admitted: false
+  incremental_spend: 0
+  implementation_locked: true
+  target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED
+
+economic_objective_approval:
+  ADR: ADR-017
+  Q056: DECIDED
+  approved_on: 2026-10-14
+  objective: COMPETITIVE_NET_RETURN_AND_MATERIAL_RISK_REDUCTION
+  risk_minimization_without_return_allowed: false
+  owner_approval_of_margin_before_results_required: true
+  cash_opportunity_cost_required: true
+  exposure_comparator_required: true
+  return_incremental_secondary: true
+  operational_gate_independent: true
+  no_candidate_qualifies_outcome: NO_STRATEGY_QUALIFIED
+  numeric_margin_approved: false
+  Strategy_V1: OPEN
+  D011_global: RESEARCHING
+  implementation_locked: true
+  target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED
+
+financial_preparation_wave05:
+  updated_on: 2026-10-14
+  economic_contract: planning/research/R-020_economic_qualification_contract_RC3.md
+  pairing: planning/research/R-020_PRICE_MATR_pairing_spec_RC0.md
+  cash_admission: planning/research/R-008_cash_benchmark_admission_RC0.md
+  Form4_semantics: planning/research/R-021_Form4_semantic_admission_RC2.md
+  independent_review: planning/research/R-020_021_economic_independent_review_2026-10-14.md
+  next_material_proposal: NONE_CONTINUE_STATISTICAL_PROTOCOL_DATA_ADMISSION_AND_MARGIN_FORMULATION
+  Q057: DECIDED_PACKAGE_ONLY_ADR018
+  recommendation: K2_EW6_BUY_AND_HOLD_CASH_AND_MATCHED_REAL
+  benchmark_package_approved: true
+  benchmark_realization_frozen: false
+  numeric_margins_approved: false
+  primary_risk_metric_selected: false
+  declared_hypotheses: 8
+  strategy_trials_executed: 0
+  E3_fixture_passes: 19
+  E3_fixture_total: 19
+  E3_constant_nonfinite_conf_int: NOT_TESTED
+  F2_component_passes: 13
+  F2_component_total: 13
+  F2_full_footnote_integrity: NOT_TESTED
+  F2_socket_connect_attempts_blocked: 1
+  dataset_admitted: false
+  F0: NOT_FROZEN_INCOMPLETE
+  confirmation_integrity: INTEGRITY_UNKNOWN
+  implementation_locked: true
+  target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED
+  incremental_spend: 0
+
+benchmark_package_approval:
+  ADR: ADR-018
+  Q057: DECIDED
+  approved_on: 2026-10-14
+  scope: ETF_PRICE_MATR_COHORT_ONLY
+  primary: B-EW6-BH
+  obligatory: [B-CASH, B-EW6-BH-LAMBDA-REAL]
+  secondary: [SPY_BUY_AND_HOLD, SPY_SMA200]
+  sensitivity_only: EW6_MONTHLY_PREDEFINED
+  exposure_is_not_risk_equivalence: true
+  SPY_opportunity_cost_visible: true
+  numeric_margins_approved: false
+  source_and_realization_admitted: false
+  implementation_locked: true
+  target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED
+
+financial_preparation_wave06:
+  updated_on: 2026-10-14
+  benchmark_book: planning/research/R-020_K2_benchmark_book_RC0.md
+  statistical_contract: planning/research/R-020_statistical_method_contract_RC4.md
+  economic_margin_proposal: planning/research/D-011_economic_margins_proposal_RC0.md
+  independent_review: planning/research/R-020_wave06_independent_review_2026-10-14.md
+  source_evidence: planning/research/R-008_sources_evidence_wave03_2026-10-14.md
+  SEC_admission: planning/research/R-021_SEC_availability_admission_RC3.md
+  M11: PARTIAL_REPOSITORY_AUDIT_INTEGRITY_UNKNOWN
+  Q058: DECIDED_UTILITY_ONLY_ADR019
+  recommendation: M1_1PP_NI_1PP_CASH_20PCT_ES95
+  numeric_margins_approved: false
+  benchmark_realization_frozen: false
+  statistical_method_validated: false
+  strategy_trials_executed: 0
+  E4_component_passes: 14
+  E4_component_total: 14
+  E4_MC_replications_per_DGP: 160
+  E4_pilot: SYNTHETIC_ANNUAL_MEAN_NOT_CAGR_ES_OR_ALPHA_CALIBRATION
+  incremental_ops_known: false
+  selected_strategy: null
+  source_admitted: false
+  implementation_locked: true
+  target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED
+  incremental_spend: 0
+
+economic_utility_approval:
+  ADR: ADR-019
+  Q058: DECIDED
+  scope: ETF_PRICE_MATR_ONLY
+  delta_NI_CAGR_annual: 0.01
+  epsilon_cash_CAGR_annual: 0.01
+  rho_ES: 0.20
+  q_ES: 0.95
+  utility_approved: true
+  method_and_sample_validated: false
+  complementary_guardrails_frozen: false
+  operational_capital_selected: false
+  economic_operational_costs_known: false
+  F0: NOT_FROZEN_INCOMPLETE
+  next_work: STATISTICAL_VALIDATION_DATACARDS_CONFIGURATIONS_AND_COMPARABILITY
+  confirmation_integrity: INTEGRITY_UNKNOWN
+  implementation_locked: true
+  target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED
+
+financial_preparation_wave07:
+  updated_on: 2026-10-14
+  evaluation_contract: planning/research/R-020_evaluation_contract_RC5.md
+  protocol_design_status: SPECIFIED_CANDIDATE_GUARDRAILS_OPEN
+  method_acceptance_status: NOT_ACCEPTED
+  DataCards: planning/research/datacards/financial_dataset_cards_RC0.json
+  DataCards_state: ALL_NOT_ADMITTED
+  rule_presets: planning/research/candidate_configs/PRICE_MATR_rules_RC0.json
+  configuration_complete: false
+  deterministic_allocation_target: OPEN_REQUIRED
+  cost_scale_scenarios: planning/research/R-020_cost_scale_scenarios_RC0.md
+  hypothetical_cost_scale_cells: 20
+  selected_operational_capital: null
+  selected_strategy: null
+  declared_variants: 10
+  executed_strategy_trials: 0
+  E5_checks: 8
+  E6_checks: 11
+  E5_E6_scope: SYNTHETIC_SCREEN_NOT_METHOD_OR_STATISTICAL_ACCEPTANCE
+  independent_review: planning/research/R-020_wave07_independent_review_2026-10-14.md
+  next_governance: NONE_PENDING_UNTIL_NEXT_MATERIAL_FINANCIAL_CHECKPOINT
+  Q059: DECIDED_G_R1_UTILITY_ONLY_ADR020
+  recommendation: G_R1_NO_DD_OR_VOLATILITY_DETERIORATION_AND_VALID_REPORTS
+  F0: NOT_FROZEN_INCOMPLETE
+  confirmation_integrity: INTEGRITY_UNKNOWN
+  implementation_locked: true
+  target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED
+  incremental_spend: 0
+
+complementary_guardrail_approval:
+  ADR: ADR-020
+  Q059: DECIDED
+  approved_on: 2026-10-15
+  choice: G-R1
+  DD_reference: B-EW6-BH_FULL
+  daily_volatility_reference: B-EW6-BH-LAMBDA-REAL_ADMISSIBLE
+  maximum_deterioration: 0
+  utility_approved: true
+  method_accepted: false
+  G_R2_approved: false
+  absolute_Risk_limits_approved: false
+  F0: NOT_FROZEN_INCOMPLETE
+  next_work: GROUPED_FINANCIAL_RULE_DATA_EXECUTION_METHOD_PREREGISTRATION
+  confirmation_integrity: INTEGRITY_UNKNOWN
+  implementation_locked: true
+  target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED
+
+paper_economic_reference_approval:
+  ADR: ADR-021
+  D044: DECIDED
+  Q060: DECIDED
+  approved_on: 2026-10-15
+  reference_capital_USD: 10000
+  sensitivity_capitals_USD: [2000, 5000, 10000, 25000, 50000]
+  cost_evaluation_required_in_all_five: true
+  hypothetical_monthly_costs_USD: [0, 20, 60, 100]
+  preserve_hypothetical_cells: 20
+  all_admitted_actual_and_stress_cost_models_at_every_scale: true
+  cost_UNKNOWN_is_not_zero_or_omittable: true
+  require_PASS_at_all_scales_as_new_gate: false
+  actual_operating_costs_known: false
+  account_funding_approved: false
+  LIVE_capital_selected: false
+  implementation_locked: true
+  target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED
+
+financial_preparation_wave08:
+  updated_on: 2026-10-15
+  protocol: planning/research/R-020_preregistration_readiness_RC6.md
+  approved_utility: [ADR-017, ADR-018, ADR-019, ADR-020]
+  nominal_reference_approval: ADR-021
+  nominal_reference_USD: 10000
+  sensitivity_cost_evaluation_all_five_required: true
+  new_EQ3_rule_hypotheses: 2
+  active_research_rules: planning/research/candidate_configs/PRICE_MATR_rules_RC1.json
+  declared_variants: 12
+  executed_strategy_trials: 0
+  financial_configuration_complete: false
+  datasets_admitted: 0
+  parent_DataCards: 4
+  ETF_instrument_subcards_not_admitted: 6
+  GLD_warmup_200_before_Jan2005: IMPOSSIBLE_CALENDAR_BOUND_NOT_DATA_QA
+  DD_E: CANDIDATE_RESEARCH_AUTHORIZED_NOT_ADMITTED
+  extra_observed_DD_veto_approved: false
+  I0_rule_required_before_F0: true
+  statistical_method_status: NOT_ACCEPTED
+  engine_selected: false
+  broker_selected: false
+  QE0_scope: ARTIFACT_COMPONENT_IMPORT_EMPTY_INIT_NOT_PARITY
+  QE0_attempt_counts: [PASS2_ERROR2, PASS4_ERROR1, PASS6_ERROR0]
+  QE1_ROUND: FIVE_COMPONENT_CHECKS_NOT_ADAPTER_QP6
+  E7: FOURTEEN_ARITHMETIC_CHECKS_NOT_INFERENCE
+  next_external_evidence: R008_VENDOR_LICENSE_COVERAGE_CLARIFICATIONS
+  external_messages_sent: 0
+  owner_communication_gate: EXPLICIT_AUTHORIZATION_AND_PERSONAL_SENDER_OR_OWNER_SENDS
+  F0: NOT_FROZEN_INCOMPLETE
+  confirmation_integrity: INTEGRITY_UNKNOWN
+  implementation_locked: true
+  target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED
+  incremental_spend: 0
+
+profile_resolution_policy: APPROVAL_BLOCKS_AND_LATEST_DATED_WAVE_SUPERSEDE_HISTORICAL_SNAPSHOTS
+active_financial_checkpoint: financial_preparation_wave08

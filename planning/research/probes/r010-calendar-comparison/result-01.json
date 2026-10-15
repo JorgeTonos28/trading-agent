@@ -1,0 +1,52 @@
+{
+  "captured_at": "2026-10-07T18:01:50.113539+00:00",
+  "scope": "SYNTHETIC_CALENDAR_NOT_WORKFLOW_OR_PAPER_ACCEPTANCE",
+  "versions": {
+    "APScheduler": "3.11.3",
+    "SQLAlchemy": "2.1.4",
+    "tzlocal": "5.4.4"
+  },
+  "source_sha256": "caac66c08d2ea37feed67b4f3e52c106b1ddc4f81194ca0ba0cdbe7bd69c807c",
+  "criteria": {
+    "H8-1": "PASS",
+    "H8-2": "PASS",
+    "H8-3": "PASS",
+    "H8-4": "PASS",
+    "H8-5": "PASS",
+    "H8-6": "PASS"
+  },
+  "observations": {
+    "stage": {
+      "persisted_ids": [
+        "eligible",
+        "expired"
+      ]
+    },
+    "restart": {
+      "events": [
+        {
+          "id": "eligible",
+          "code": "EXECUTED"
+        },
+        {
+          "id": "expired",
+          "code": "MISSED"
+        }
+      ],
+      "remaining_ids": []
+    },
+    "inspect": {
+      "remaining_ids": []
+    },
+    "receipts": [
+      "eligible"
+    ],
+    "duplicate_rejected": true
+  },
+  "error_class": null,
+  "fixture_retained": true,
+  "fixture_locator_private": ".local/h8-fixture-binding.json",
+  "in_flight_recovery_tested": false,
+  "paper_runtime_accepted": false,
+  "OS_admin_changes": []
+}

@@ -1,0 +1,174 @@
+{
+  "probe": "R028_NATIVE_DISCOVERY_01",
+  "target_plus": "UNKNOWN",
+  "selected": false,
+  "config": {
+    "forced_login_method": "chatgpt",
+    "model_provider": "openai",
+    "features.shell_tool": false,
+    "features.unified_exec": false,
+    "features.multi_agent": false,
+    "features.apps": false,
+    "features.skill_mcp_dependency_install": false,
+    "web_search": "disabled",
+    "mcp_servers": {},
+    "plugins": {},
+    "history.persistence": "none"
+  },
+  "trials": [
+    {
+      "case": "root",
+      "cwd": "repo",
+      "instruction_sources": [
+        "repo/AGENTS.md"
+      ],
+      "output": {
+        "global_marker": "R028-ROOT-91",
+        "role_marker": "NONE",
+        "skill_marker": "NONE",
+        "authority": "NONE"
+      },
+      "status": "completed",
+      "seconds": 19.804,
+      "item_types": {
+        "userMessage": 1,
+        "agentMessage": 1
+      },
+      "tool_requests": 0
+    },
+    {
+      "case": "research",
+      "cwd": "repo/agents/research",
+      "instruction_sources": [
+        "repo/AGENTS.md",
+        "repo/agents/research/AGENTS.md"
+      ],
+      "output": {
+        "global_marker": "R028-ROOT-91",
+        "role_marker": "R028-RESEARCH-42",
+        "skill_marker": "R028-LOCAL-68",
+        "authority": "NONE"
+      },
+      "status": "completed",
+      "seconds": 11.919,
+      "item_types": {
+        "userMessage": 1,
+        "reasoning": 1,
+        "agentMessage": 1
+      },
+      "tool_requests": 0
+    },
+    {
+      "case": "shadow",
+      "cwd": "repo/agents/shadow",
+      "instruction_sources": [
+        "repo/AGENTS.md",
+        "repo/agents/shadow/AGENTS.md"
+      ],
+      "output": {
+        "global_marker": "R028-ROOT-91",
+        "role_marker": "R028-SHADOW-73",
+        "skill_marker": "NONE",
+        "authority": "NONE"
+      },
+      "status": "completed",
+      "seconds": 6.152,
+      "item_types": {
+        "userMessage": 1,
+        "agentMessage": 1
+      },
+      "tool_requests": 0
+    },
+    {
+      "case": "isolated",
+      "cwd": "isolated-shadow",
+      "instruction_sources": [
+        "isolated-shadow/AGENTS.md"
+      ],
+      "output": {
+        "global_marker": "NONE",
+        "role_marker": "R028-SHADOW-73",
+        "skill_marker": "NONE",
+        "authority": "NONE"
+      },
+      "status": "completed",
+      "seconds": 35.981,
+      "item_types": {
+        "userMessage": 1,
+        "reasoning": 1,
+        "agentMessage": 1
+      },
+      "tool_requests": 0
+    },
+    {
+      "case": "override",
+      "cwd": "repo/agents/shadow",
+      "instruction_sources": [
+        "repo/AGENTS.md",
+        "repo/agents/shadow/AGENTS.override.md"
+      ],
+      "output": {
+        "global_marker": "R028-ROOT-91",
+        "role_marker": "R028-OVERRIDE-19",
+        "skill_marker": "NONE",
+        "authority": "NONE"
+      },
+      "status": "completed",
+      "seconds": 7.25,
+      "item_types": {
+        "userMessage": 1,
+        "agentMessage": 1
+      },
+      "tool_requests": 0
+    }
+  ],
+  "inventories": [
+    {
+      "case": "root",
+      "skills": [
+        {
+          "name": "r028-common",
+          "enabled": true,
+          "scope": "repo"
+        }
+      ]
+    },
+    {
+      "case": "research",
+      "skills": [
+        {
+          "name": "r028-common",
+          "enabled": true,
+          "scope": "repo"
+        },
+        {
+          "name": "r028-local",
+          "enabled": true,
+          "scope": "repo"
+        }
+      ]
+    },
+    {
+      "case": "shadow",
+      "skills": [
+        {
+          "name": "r028-common",
+          "enabled": true,
+          "scope": "repo"
+        }
+      ]
+    },
+    {
+      "case": "isolated",
+      "skills": []
+    }
+  ],
+  "account": {
+    "type": "chatgpt",
+    "plan_type": "team"
+  },
+  "inference_authorized_by_environment_check": true,
+  "cli_version": "codex-cli 0.159.0-alpha.12.1",
+  "model": "gpt-6.1-sol",
+  "source_sha256": "ef0c0896bda5da8256a8e99e63a1d601ae76166d761dd46f2bcc82453f1b1eb3"
+}

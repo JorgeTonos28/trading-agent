@@ -1,7 +1,15 @@
 # Change Log de planificación
 
+> **Vigencia ADR-013 — 2026-10-07:** investigación = Team en workstation Windows institucional INFOTEP; target PAPER = Plus individual en PC personal del propietario; LIVE = UNKNOWN. Se conservan las notas/evidencias anteriores como historia. Team no prueba disponibilidad Plus ni seguridad del host personal. Diseño se resuelve durante Preparation; aceptación target R-030 se difiere antes de implementación/PAPER. S2B-ADM-01 = DEFERRED_TO_TARGET_PAPER_HOST; no acción administrativa institucional pendiente. `implementation_locked=true`.
+
+
 | Fecha | Cambio | Razón | Efecto arquitectónico |
 |---|---|---|---|
+| 2026-10-05 | ADR-009: cohorte RC1 aprobada solo como candidata; requisito Environment Bootstrap/Portability/Agent Packaging, D-037/R-028 P1 y nuevo gate DoR/D-024 | Solicitud del propietario: fresh clone sin memoria Team y paquetes reutilizables manual/programáticamente | Obligación aprobada; mecanismo y runtime abiertos, Plus UNKNOWN. Protocolo de probes preregistrado, sin implementación ni instalación/config global |
+| 2026-10-05 | Codex SDK nativo C-029 smoke Python 7/7 tras reparar enum del harness; shortlist RC1 y madurez/arquitectura candidata, Plus Gate RC2, matrices y registros sincronizados | Completar paquete autónomo RC0 pasos 1–2 con transporte reutilizable y distinguir pendientes exclusivos Plus de seguridad/finanzas/DoD | Propuesta principal local determinística always-on + jobs Codex intermitentes; requiere orientación humana/acceso Plus. D-020 RESEARCHING/D-024 OPEN, SELECTED=NO, main estable/implementación bloqueada, sin gasto |
+| 2026-10-05 | Wave 06: 10 turnos Team con contratos por rol; admission v1 8/10 por cita calificada, v2 10/10 tras aclaración registrada; 36/36 y 39/39 negativos/positivos offline; discovery de Codex SDK C-029 | Verificar correcciones de rol/derivación/qty/causa; preservar fallo de evaluador y distinguir SDK nativo de Agents SDK API | Evidencia sintética, no seguridad real/performance ni Plus; no superioridad de Skill/selección. Probe SDK inicial falla por enum del harness antes de inferencia y se conserva |
+| 2026-10-05 | R-006 pasos 1–2: contratos RC0 por rol/evidencia, PM shadow y pedagogía completa; workload WL-L/R/S y matriz de aceptación; wave 06 preregistrada y 36 checks offline | Cerrar ambigüedades concretas de waves 04/05 y preparar criterios Plus sin acceso target | D-034/R-026 RESEARCHING; arquitectura/runtime/Skills siguen propuestas no seleccionadas; cifras de workload son parámetros experimentales, no política financiera |
+| 2026-10-05 | Añadida Autonomous Continuation Rule a AGENTS y mandato/perfil del Plan Architect | Instrucción del propietario: persistir y sincronizar hitos, continuar el siguiente trabajo autorizado y detenerse solo en endpoint real o necesidad humana explícita | Regla operativa; sin cambio de arquitectura/autoridad; paquete R-006 pasos 1–2 continúa autónomamente |
 | 2026-10-01 | Inicializados perfil, registros, diagnóstico, backlog y secuencia en `.project/` | Primera ejecución del Plan Architect | Ninguno; baseline v0.2 preservado |
 | 2026-10-01 | Se usa como baseline el archivo `docs/master/hoja_de_ruta_sistema_trading_agentes_ia_v0.2.md` indicado por el usuario | El nombre citado en `AGENTS.md` no existe | Corrección de referencia pendiente; sin cambio de contenido |
 | 2026-10-01 | Por instrucción posterior del propietario, estado movido de `.project/` a `planning/`; `AGENTS.md` corregido para referir al roadmap existente y a `planning/` | Seguir la estructura de la hoja de ruta | Sin cambio de arquitectura; Q-028/029 resueltas |
@@ -11,3 +19,219 @@
 | 2026-10-01 | Revisada transcripción automática completa del video original y creado análisis temporal R-019; separados VID-TS, VID-CONG, VID-ALERT, VID-WHEEL, infraestructura y SIGNAL | La fuente primaria muestra varias técnicas, parámetros ambiguos y claims sin auditoría | D-008 permanece OPEN; D-009 sigue RESEARCHING por pantallas/artefactos faltantes; ningún rendimiento ni tecnología seleccionado |
 | 2026-10-01 | Reorientado R-019 como inspiración funcional/arquitectónica; sin investigación principal para auditar porcentajes del creador | Instrucción explícita del propietario: diseñar Trading OS propio, robusto y pedagógico | Claims `NO VERIFICADO`; prioridad del mapa de sistema, contratos y Capability Discovery; D-008 OPEN |
 | 2026-10-01 | Abiertos R-022/023/024/025 y D-018/019/033; creado mapa funcional, taxonomía Smart Money, scorecard de proveedores y marco de broker | Smart Money abarca múltiples fuentes; broker Alpaca es referencia, no selección; Pedagogical Agent es capacidad central | R-017 queda P4 solo para alpha incremental futuro; factibilidad PIT/proveedores V1 asciende a P0/P1; ningún proveedor ni broker elegido |
+| 2026-10-01 | Inicializado Git en `plan-architect`, commit de línea base `a28d6f3` y push al repositorio privado indicado por el propietario | Versionar formalmente hitos materiales | No cambia decisiones ni desbloquea implementación |
+| 2026-10-01 | Preparado `paper_v1_capability_contract_RC0.md`: capacidades, matriz de permisos, contratos informativos, etapas y opción A recomendada | Siguiente P0 de la secuencia; reconciliar arquitectura y pedagogía con §4–9 y §55–57 | D-015/016/019 pasan a READY_FOR_DECISION, sin aprobación aún; D-018 sigue RESEARCHING; Strategy V1, broker y stack abiertos |
+| 2026-10-01 | ADR-001 propuesto: explicita reducción temporal de autoridad del Portfolio Manager Agent frente a §8.1 y conciliación B4/B5/DoD | La propuesta es material y necesita gobierno humano; registrar alternativas antes de tocar baseline | Hoja v0.2 intacta; D-015/016/019 sin cerrar hasta aprobación explícita |
+| 2026-10-01 | Creada `main` desde `a28d6f3` y configurada como rama por defecto; `plan-architect` conserva el trabajo activo | Solicitud del propietario de referencia estable para diffs, revisión y promoción posterior | No se fusionan automáticamente decisiones del Plan Architect a `main` |
+| 2026-10-01 | Propietario aprobó A+ en ADR-001 y contrato PAPER V1 RC1: Champion/intent determinísticos, Portfolio Manager Agent shadow auditado, pedagogía factual B4 y completa antes de DoD | Sustituye opción A pasiva; preserva frontera financiera y crea evidencia para posible autoridad futura | D-015/016/019 DECIDED; R-026/D-034 P1 abiertos; Strategy V1, broker, proveedores, runtime y umbrales siguen abiertos |
+| 2026-10-01 | Preparados RC0 de riesgo, ciclo de órdenes y datos PIT con fuentes primarias y Build-vs-Reuse; D-012/013/014 pasan a RESEARCHING y D-017 a READY_FOR_DECISION | Siguiente bloque P0 tras A+; separar regla técnica, semántica broker y autoridad humana ante incidentes | G1/G2/G3 aún no aprobados; no se cambió política activa ni se inició implementación |
+| 2026-10-01 | Añadida disciplina Git/GitHub a `AGENTS.md`; commit `e2d4116` publicado en `plan-architect` | Instrucción explícita del propietario | `main` permanece estable; cambios materiales requieren commit y push antes de declarar cierre |
+| 2026-10-01 | Propietario aprobó G1+G2 para PAPER V1, conservación de protección, G3 no autorizado y reanudación humana tras pausa material; ADR-002 y riesgo RC1 | Cerrar frontera de autonomía D-017 sin aprobar umbrales ni liquidación general | D-017 DECIDED; D-012/013/014 y D-030/031 continúan abiertos; implementación bloqueada |
+| 2026-10-01 | ADR-003 cierra D-013 como contrato abstracto de órdenes: identidad interna independiente del broker, persistencia previa al envío, eventos deduplicados, `UNKNOWN` sin reenvío ciego y cancelación G2 autorizada | Documentación oficial de Alpaca e IBKR muestra semánticas de ID/eventos diferentes; no conviene imponer `client_order_id` universal | D-013 DECIDED; mapeo broker/probes siguen D-021/030; ningún broker seleccionado |
+| 2026-10-01 | ADR-004 cierra D-014 como contrato abstracto PIT: clocks por canal, evidencia de disponibilidad, `eligible_from`, revisiones as-of, precio bruto y vista ajustada as-of | SEC distingue aceptación de disponibilidad; LEAN documenta ajustes con historia futura según modo | D-014 DECIDED; admisión y delay por dataset/proveedor siguen D-018/022/033; ninguno seleccionado |
+| 2026-10-01 | ADR-005 cierra D-018 como roles/gates de señales externas: todas las familias empiezan en research; promoción a Champion requiere semántica, PIT, licencia, OOS, riesgo y aprobación de Strategy V1 | Congreso, Form 4, 13F, opciones, OTC/ATS y otras fuentes tienen retrasos/significados distintos según fuentes primarias | Ninguna familia, proveedor ni estrategia seleccionados; R-021/R-025 y D-008/022/033 siguen abiertos |
+| 2026-10-01 | Preparado paquete D-012 RC0: compara sizing por stop, control compuesto y VaR/CVaR; recomienda control compuesto sin fijar umbrales | FINRA confirma que stop/stop-limit no garantizan salida ni precio; el ejemplo MATR es candidato, no política universal | D-012 READY_FOR_DECISION para método; requiere aprobación humana; D-031 conserva parámetros/calibración |
+| 2026-10-01 | Propietario aprobó opción B conceptual de D-012; creado ADR-006 y sincronizados contratos/registros | Control independiente más restrictivo considera stop estimado, gap/slippage, exposición/cash, liquidez y reservas | D-012 DECIDED solo en arquitectura; D-031 y detalles de fórmulas/probes abiertos; G3 no autorizado; implementación bloqueada |
+| 2026-10-01 | Por instrucción del propietario, R-006/D-020 pasa a P0 foco inmediato; Agent Capability Gate bloquea cierre D-024. Creados plan R-006, inventario y probes preliminares | El diseño agéntico debe incorporar Build-vs-Reuse con acceso, licencia, coste y pruebas antes de freeze | Sin selección de runtime, topología, Skill, plugin o MCP; contratos financieros abstractos pueden continuar |
+| 2026-10-01 | ADR-007 acota R-006 a OpenAI/Anthropic y prioriza Plus/Codex + activos públicos Tier 0/1; se alinearon plan, landscape, inventario y registros antes de nuevos probes | Instrucción del propietario y facturación separada Plus/API | Candidatos agénticos externos fuera de alcance; SDK/API y premium Tier 2 excluidos por defecto; D-020 sigue RESEARCHING y D-024 OPEN |
+| 2026-10-01 | Probe wave 01 R-006: CLI/Codex/plugins de esta sesión, tres Skills y wrappers Anthropic en commit fijo, y documentación SIWC; se añadió C-025 | Evidencia práctica para separar contenido portable, conectores premium, API facturada y uso condicional del cupo Plus | La sesión informa Team, no verifica Plus; C-025 pendiente; D-020 RESEARCHING, D-024 OPEN, sin tecnología seleccionada |
+| 2026-10-02 | ADR-007 y R-006 distinguen `CURRENT_RESEARCH_ENVIRONMENT` Team de `TARGET_RUNTIME_ENVIRONMENT` Plus individual; fichas separan disponibilidad en ambos | Aclaración explícita del propietario sobre entorno de operación y presupuesto | Probes Team no prueban Plus; capacidades dependientes del plan mantienen `AVAILABLE_IN_TARGET_PLUS=UNKNOWN` sin evidencia específica; D-024 OPEN |
+| 2026-10-02 | R-006 wave 02: Skill de idea-generation adaptada solo como probe y fixture sintética PIT/inyección; validación de formato y clocks | Comprobar valor de activos Anthropic sin runtime Claude ni gasto incremental | C-017 `ADAPT` candidata, `SELECTED=NO`; no se probó activación Plus ni obediencia del modelo; D-020 RESEARCHING |
+| 2026-10-02 | R-006 desglosa fuentes oficiales de entitlement Plus por Codex base, directorio, ChatGPT Personal Skills y Codex Skills | Evitar inferir activación de una Skill/plugin desde plan general o sesión Team | Codex base es elegible documentalmente; configuración concreta en Plus sigue `UNKNOWN`; D-020 RESEARCHING |
+| 2026-10-02 | D-036/ADR-008 registra política económica por fase; ADR-007/AGENTS/master y fichas proveedor incorporan seis campos económicos | Instrucción del propietario: calidad al menor coste razonable; PAPER zero/low incremental, LIVE valor/economía unitaria; metodología gratuita | Pagos investigables, ninguna contratación/gasto aprobado; selección por fase/capa, gate Plus y D-024 abiertos |
+| 2026-10-02 | R-006 wave 03 sondea app-server local read-only y discovery efímero de Skill; gate Plus RC0 explícito | Probar ruta/documentación sin inferencia, paid API ni cambio de autenticación; registrar versión/schema local | Team y discovery confirmados; activación modelo/entitlement Plus/operación SIWC desconocidos; D-020 RESEARCHING y D-024 OPEN |
+
+| 2026-10-05 | ADR-007/AGENTS/R-006 y Plus Acceptance Gate separan conducta Team de aceptación Plus; se conserva alternativa local determinística con Codex intermitente | Instrucción del propietario: no bloquear discovery por acceso Plus ni repetir toda la investigación | Probes y shortlist autorizados sin gasto API; D-020 RESEARCHING, D-024 OPEN, implementación bloqueada |
+
+| 2026-10-05 | R-006 waves 04/05: 20 turnos Team, calibración inválida preservada, 19/20 checks predefinidos, MCP local 13 checks, cuatro negativos schema y shortlist RC0 condicional | Comparar método/valor incremental antes de congelar agentes; descubrimiento de tipos ambiguos, conflicto de superficies Data/licencia propietaria | Cohorte breve recomendada; roles/linaje/snapshots/workload siguen abiertos. D-020 RESEARCHING y D-024 OPEN; Plus Acceptance solo finalistas; sin Trading OS, broker ni gasto API |
+
+**Hito R-028 de diseño/probe (2026-10-05):** contratos bootstrap/packaging RC0, entry point, Skill propia validada, seis paquetes documentales y shared manifest/schema/perfil esperado. 31 checks offline; cinco smoke Team demuestran root/rol/Skill/aislado/override, sin tools. Intentos 01/02 fallan lectura cuenta; 03 metadata; 04 completa inferencia pero cleanup Windows falla tras persistir. No ocultar errores. Plus UNKNOWN; fresh clone pendiente en siguiente hito. C-030 REUSE_AS_IS, C-031 ADAPT y C-032 REFERENCE_ONLY propuestos, no selección final/implementación.
+
+**Hito R-028 fresh clone (2026-10-05):** commit 9e0dbed localmente clonado, six role chains/bootstrap Skill y two role smoke Team correctos. Harness conserva KeyError manifest self-hash tras 12 checks; completion 9/9 sin nueva inferencia y cleanup correcto. Perfil observado PARTIAL, 31 EOL deltas motivan Git blob hash portable separado de raw worktree. Target Plus no ejecutado; próxima acción requiere acceso dueño, no selección final/implementación ni cambio de main.
+
+## 2026-10-05 — D-038 / ADR-010: supersession de target PAPER
+
+Propietario declara Team para preparación/implementación tras DoR/backtests/PAPER y Plus individual candidato PRE-LIVE. Plus Gate pasa a R-029/D-039 P3, no bloquea D-020/D-024/PAPER. Actualizados instrucciones, profile, manifest/schema v0.2 (v0.1 preservado), paquetes, contratos, registros y secuencia. Gate Team TP diferencia arquitectura/DoR/operación P2. Source policy release/tag aprobado; sin merge main, selección final ni implementación. Próximo paquete autónomo: gaps SDK/Skills/tools, recovery y carga acotada Team.
+
+## 2026-10-05 — R-006 wave07 y decisión arquitectónica propuesta
+
+8/8 jobs Team, 7 funcionales + 1 failure, SDK oficial low-level tools/Skills/outputs y contexto reiniciado; payloads >32 KiB. Handler default auto-accept identificado, denegación explícita exigida. Fresh clone SDK completion 14/14 y 16 checks consolidación, profile v0.2 PAPER PARTIAL. Fallos harness TypeError/KeyError y lectura instructionSources preservados, sin repetir toda investigación. D-020 READY_FOR_DECISION/D-024 RESEARCHING; RC2 y ADR-011 listos para gobierno de dirección PAPER. Sustained WL-R/seguridad/durable recovery/P2 pendientes. Ningún gasto, trading, selección final/freeze ni main/release modificados.
+
+## 2026-10-05 — aprobación ADR-011 A y disposiciones RC2
+
+**Antecedente ADR-011 — 2026-10-05:** propietario aprobó opción A y disposiciones RC2 como dirección de diseño PAPER: núcleo financiero local determinístico always-on + jobs Codex Team automáticos por evento/calendario, sin aprobación por job rutinario. D-020 DECIDED únicamente en dirección Build-vs-Reuse; versiones/permisos/runtime final siguen D-024 RESEARCHING. No implementación, gasto, capacidad sostenida ni autoridad financiera adicional. Plus permanece PRE-LIVE.
+
+Se conserva A+, G1+G2 y ADR-006. Las futuras dependencias obligatorias de Strategy V1 tendrán fallo explícito. No modificación de main ni release de despliegue.
+
+## 2026-10-05 — P1 seguridad/workflow/audit, probes y revisión independiente
+
+Dirección aprobada ADR-011 operacionalizada como contratos de planificación 08 (sin runtime): automatización, permisos por dominio/holdout, mapping estados, leases/epoch/recovery y audit/versions/deploy. H1/H2 20 checks, suplemento11; restore3 checks lógicos+1policy. H4 public SDK/CLI0.160 resolver default2/2 Team; H6 Temporaldev1.9.1 schedule/restart10/10 sin worker/model/broker, fetchTLSfallido preservado. H3 cola virtual detecta bloqueo background y corrige denominador v2, v1 preservado. Reviewer independiente read-only IR01–07 y addendum H6; reparaciones documentales, enforcement pendiente. D-025–028 RESEARCHING; ADR-012 S2 vs S3 READY_FOR_DECISION en dirección. D-024 abierto, no freeze/implementación/gasto, main/tag sin cambios. Bootstrap referencias nuevas no actualiza readiness histórico.
+
+## 2026-10-05 — R-020 CandidateRuleCards y admisibilidad SEC
+
+Avance autónomo siguiente P0, independiente de permiso S2: video descompuesto en módulos/familias, escenarios de ambigüedad y entry-rule OPEN; MATR benchmark. Documentación SEC primaria confirma API pública sin key, archives e inexistencia de timestamp first-available; no acceptance→public/receipt ficticio. Fichas/prereg/exposure/holdout antes de rendimiento; sin dataset/backtest/API scraping o selección de fuente/estrategia. D-008 OPEN, ADR-012 sigue próximo gobierno material.
+
+## 2026-10-05 — ADR-012 S2 aprobado como dirección candidata
+
+Propietario aprueba separación Windows por dominio con permisos efectivos mínimos. S3 fallback formal, S1 solo research sin secretos. Separa gates security/blinding, exige negativos/audit/reproducibilidad y criterios de escalamiento predefinidos. Registros/instrucciones/profile/bootstrap/master actualizados sin borrar propuesta histórica. D-027/D-024 RESEARCHING. Setup administrativo no aprobado, no usuarios/ACL/firewall/credenciales modificados, no implementación/gasto/main. Próximo paquete autónomo R-013 especifica controles concretos y ensayos no administrativos antes de pedir el gate real.
+
+## 2026-10-05 — R-013 S2 especificación, preflight y gate administrativo
+
+Contrato concreto F/C/R/S/P/H, filesystem/network/IPC/secrets, snapshots mínimos/DAG, blinding separado, launch/recovery/audit/deployment/bootstrap. SI17/BL9/RB5 y criterios S2→S3 predefinidos; control positivo obligatorio, UNKNOWN no FAIL/migración. Preflight readonly host/token/ACL/firewall; local rule merge=False y block logging=False impiden asumir egress/logging. Siete observaciones/counterexamples sintéticas esperadas sin modelo/admin/secrets: no S2PASS. ADM-01 concreta tres cuentas estándar y ACL solo árbol canary nuevo, NO autorizada/ejecutada. Registros/profile/manifest y contratos relacionados actualizados; independiente review sin aprobación humana. D-027/D-024 RESEARCHING, main/release intactos; no Trading OS/gasto/Plus.
+
+**Revisión S2, reparaciones preservadas:** reviewer exige controlar persistencia propia del SID (profile/cache/TEMP/auth-adjacent) más allá del export; SI-16/BL-06 ampliados. Probe attempt-01 propagó env real no inspeccionada mediante os.environ.copy sin reportar valores; código/JSON originales conservados y caveat registrado. Attempt-02 utiliza solo allowlist OS/task con digest source. No elevar evidencia a S2 PASS ni afirmar env histórico libre de secrets.
+
+**Corrección completa probe env:** la reparación attempt-02 fue parcial por herencia default en NA-01/Git; attempt-03 whitelist de todos los child procesos, siete observaciones esperadas nuevamente y source digest. 01/02 sources/JSON preservados y README/findings precisan alcance. [Revisión independiente S2](research/R-013_S2_independent_review_2026-10-05.md) verifica corrección contractual/pins/gobierno; enforcement pendiente.
+
+## 2026-10-06 — revisión S2-A/S2-B/S3 antes de setup (material)
+
+- Instrucción explícita owner: S2-ADM-01 no autorizado. Gate/Q-049 DEFERRED, ninguna cuenta/ACL/firewall/perfil/credencial cambiada. Objetivo S2 aprobado conservado; granularidad rol→cuenta reabierta trazablemente.
+- R-013 compara amenazas security vs blinding, ataque cruzado concreto y trade-offs operativos/coste PAPER/LIVE. Recomendar S2-B candidato: Runner único con contextos efectivos por job, core/control fuera del modelo, supervisor/handles/auth/cache/red protegidos. No equivalencia prompts/workspaces = seguridad.
+- Build-vs-Reuse C-035 restricted tokens WRAP candidato y C-036 AppContainer REFERENCE_ONLY; AccessCheck transitorio in-memory 10/10 checks semánticos, intento01 WinError5 y fuente preservados. Sin launch/config efectiva; SI/BL/RB/VP no pasan por ese resultado.
+- ADR-012 revisado, RC2 contrato/proyección acceptance, AGENTS, registers/profile, bootstrap/manifest/packaging, Shadow/Pedagogy, workflow/audit, roadmap/secuencia/R-006 sincronizados. RC1 y hallazgos históricos retenidos; próxima Q-051 dirección candidata B, no nueva solicitud ADM-01.
+- Revisión crítica independiente requerida y persistida en R-013_S2_independent_review_2026-10-06.md. D-027/D-024 RESEARCHING; D-020 disposiciones, A+, G1+G2, ADR-006, Strategy V1 OPEN e implementation lock intactos. No promoción main ni gasto.
+- Hallazgo owner por principal/derechos efectivos incorporado a RC2/VP03–04. Focal in-memory de 27 observaciones: base owner permite READ_CONTROL/WRITE_DAC, ambos tokens restringidos los deniegan en fixtures; no bypass ni supervisor real probado. Reviewer verificó fuente/hash/tabla y que 10 checks repetidos son regresión, sin sumar nueva evidencia independiente. `financial_canary` rotulada ungranted-object, sin positivo ni protección financiera acreditada.
+
+## 2026-10-06 — propietario confirma S2-B (material decision)
+
+- ADR-012/Q-051 DECIDED solo dirección candidata principal S2-B, Runner único/contextos efectivos por job. Historial de propuesta/RC1/ADM-01 preservado; A/S3 mantienen condiciones aprobadas.
+- AGENTS, contratos/matriz RC2, registers/profile/bootstrap manifests, packaging/onboarding/capabilities, roadmap y secuencia reflejan aprobación. Sin selección de mecanismo ni acceptance real.
+- Próximo trabajo autónomo: laboratorio mínimo concreto/reversión y preparación no administrativa. Todos users/ACL/firewall/credentials/config global siguen sin autorización; ADM-01 tres cuentas DEFERRED. D-027/D-024 RESEARCHING, implementation lock/main y autoridad financiera intactos.
+
+## 2026-10-06 — laboratorio mínimo S2-B y revisión de controles
+
+- S2-B aprobado como dirección en b0d6818 publicado; no reabrir Q-051 ni ADM-01 tres cuentas withheld.
+- R-013 añade memoria12 comunes+2 privilegios, plan sintético14/14 y preflight readonly. Archiva attempt01/source/plan antes de corregir grants heredables SY/BA/OPERATOR; evidencia original intacta.
+- S2B-ADM-01/Q-052 READY_FOR_DECISION, no autorizado: una cuenta estándar temporal/árbol canary ACL nuevos, harness filesystem relativo preparado AST-only, LF01–12 con mapping automático/manual y rollback por SID/path. Zero admin/model/API/spend/real finance changes.
+- Revisión independiente corrige child peer positivo vs tránsito, pre-create parent checks/quiescence, compatibilidad de tránsito de Windows, cobertura no agregada y rollback padre separado no recursivo. Gates security/blinding/full native no pasados; A-040/K-055 abiertos.
+- Registros/ADR/contratos/profile/manifest/landscape/DoR/onboarding actualizados; D-027/D-024 RESEARCHING, D-020 dirección intacta. Team PAPER/Plus PRE-LIVE, lock/main/invariantes no cambiados. Hito se reporta completo solo tras commit/push y verificación.
+
+**Revisión adicional de alcance:** bootstrap parent nuevo exacto declarado con owner/DACL y borrado vacío no recursivo; attempt02/source/plan congelados y attempt03 valida 15 SDDL (14 FS + parent). Sin aplicación de ninguno. Evidencia/hitos anteriores de 14 se conservan como resultados históricos, no contador de acceptance.
+
+## 2026-10-06 — Q-052 / S2B-ADM-01 autorizado por owner
+
+- Propietario aprueba scope exacto temporal y se reserva toda elevación/password/login. Agent solo prepara/guía/verifica/ejecuta no privilegiado; secretos solo UI Windows.
+- Transacción pública `s2b-20261006-a6d74b2b`; baseline readonly 18:25 UTC: cuenta/root/parent ausentes, proceso actual no elevado, ningún cambio. Setup/FS/rollback no iniciados.
+- Registros/ADR/AGENTS/profile/bootstrap distinguen laboratorio autorizado de permisos PAPER finales no aprobados. Capturas NOT_AUTHORIZED originales intactas, old ADM-01 withheld; D-027/D-024 RESEARCHING. Runbook requiere acciones manuales concretas, no nueva aprobación.
+
+## 2026-10-06 — handoff owner-admin y QA de ejecución S2-B
+
+- Helper desechable en PowerShell 7 existente: create-new con descriptor inicial, scope/path/SID/marker/source, journal previo por creación y ledger protegido. Partial setup nunca se borra automáticamente; owner debe confirmar atribución. Rollback completo exige manifest/copia exportada hash/length/receipt y ausencia de proceso/profile; UNKNOWN bloquea borrado.
+- Primer QA de memoria tuvo ERROR del lector de fixture parent-kind (preservado), corregido; 5.1 policy bloqueó scripts (ERROR registrado, sin policy change). Host 7.6.5: parser/memoria15/compilación sin llamadas nativas PASS. QA Python 15/15 (3 source + 12 evaluador sintético), sin evidencia FS real ni modelo/API.
+- Autorización persistida en todos los contratos/perfiles/roadmap vigentes, capturas históricas intactas. Próxima acción es cuenta disabled segura por owner; no reaprobar scope. Setup, FS, rollback, aceptación S2-B siguen pendientes; D-027/D-024 RESEARCHING, main/implementation invariantes.
+
+## 2026-10-07 — ADR-013 / D-043: supersession de entornos y gates
+
+Owner establece Team/INFOTEP research y Plus/PC personal target PAPER; LIVE UNKNOWN. ADR-010 y premisa PRE-LIVE-only R-029/D-039 parcialmente superseded, Deployment Source Policy intacta. Se preservan aprobaciones/evidencias; lab S2B-ADM-01 diferido, solicitud cuenta institucional retirada. Añadidos R-030, perfiles/schema v0.3 con historia v0.2, dimensiones diseño/target/operación, guard de no mutación en helper y reglas bootstrap. No OS setup/auth/financial implementation, gasto, merge main ni tag. Sigue lock.
+
+## 2026-10-07 — diseño agéntico candidato y probes independientes
+
+- B-RT1/ADR-014 propuestos: supervisor C fuera A/J, TokenPolicy/desktop/launch-capability, typed callbacks/canal/ledger y auth/config minimal. Source Codex corrige HOME/keyring, BL-AUTH explícito. No decisión/aprobación silenciosa.
+- ONBOARDING actual primero; historical routes conservadas. Instance/fingerprint/fase v0.3 + B1 16 casos ficticios; legacy v0.2 intacto.
+- H7 Temporal worker loss→redelivery intento2, toy unique receipt, cleanup parcial por auto-review. Review detecta env helper no limitado; fuente01 intacta y next-source corregida sin rerun. H8 APS calendario persist/restart/misfire 6 criterios, fixtures .local, deps TEMP sin instalación global.
+- Revisión independiente sin P0/P1 documental restante para presentar candidato. Target R-030 NOT_TESTED, lab DEFERRED_TO_TARGET_PAPER_HOST, main no modificado, implementation lock vigente. Próximo scope financiero independiente precede Q-053 owner checkpoint.
+
+## 2026-10-07 — cierre técnico de extracción funcional D-009/R-019
+
+Dossier, mapa conservar/modificar/separar/descartar y rule cards cubren las piezas distintas del video. Revisión independiente documental no identifica otra omisión P0/P1 para ese scope; corregidos estado del dossier y Signal Engine frente a A+ y separados contratos establecidos de detalle abierto. Plan Architect cierra D-009 sin seleccionar Strategy V1 ni verificar claims de rentabilidad. Reglas/datos/validación permanecen R-020/021/025/D-008/011. No backtest, broker, cambio de autoridad ni implementación.
+
+## 2026-10-07 — wave financiera independiente de target
+
+- Demanda RC1 por candidato/clocks/engine/failure, protocolo ex ante y exposición incidental a retornos públicos de emisores (no backtests de estrategias). Strategy V1 OPEN, video primero/MATR benchmark.
+- R-007/008 fuentes primarias Alpaca/IBKR/Tradier: feed/fill/history/route y economía parcial; D-021/022 RESEARCHING, sin cuenta/API/órdenes/selección. Alternativas restantes abiertas.
+- R-025 SEC/Quiver/UW/Capitol y probe GET único de schema público sin auth/data/spend; campos temporales no prueban PIT ni licencia. Pricing/rights UNKNOWN conservados donde corresponde; fuentes Smart Money independientes.
+- Actualizados scorecards, preguntas, registros y foco financiero. Corregido broker D-009→D-021 en preregistro; slug IWM anterior `ishares-msci-united-kingdom-etf`→`ishares-russell-2000-etf`, sin certificar datasets/holdout. D-039 superseded retirado de IDs abiertos; dimensión legacy D027/024 alineada con checkpoint READY_FOR_DECISION de diseño.
+- Paquete autónomo cerrado en alcance wave01, Q-053/ADR-014 requiere owner por diseño material. No acceso Plus/admin INFOTEP, permiso Trading OS, gasto, merge main ni release. Próximo trabajo principal P0/P1 financiero tras checkpoint.
+
+## 2026-10-13 — owner aprueba ADR-014/B-RT1 y cierre de diseño fundamental
+
+Q-053 DECIDED; AGENTIC_ARCHITECTURE_DESIGN_COMPLETE únicamente en alcance aprobado. D-024/027/037 diseño DECIDED con target aceptación P1 R-030 diferida, operacional no aceptado; lock true. Keyring/HOME/token/desktop/IPC/launch siguen mecanismos candidatos sustituibles mediante evidencia/gobierno que preserve contrato, no invariantes irreversibles. R-006/010/013 no se expanden por refinamiento; foco financiero P0/P1. Historia/evidencia/source policy intactas, sin main/implementación/admin/Plus/gasto. Residuos H7 conservados; no cleanup ni workaround nuevos.
+
+## 2026-10-13 — paquete financiero wave02 tras checkpoint aprobado
+
+Reglas propias de variantes video/contexto de posición y configs obligatorios OPEN, MATR benchmark; PIT/Form4/13F/revisiones y EdgarTools normalizador de datos candidato, sin seleccionar MCP/framework nuevo. Cinco brokers/protection matrix B1–5, data Tiingo/Massive/Alpha prices/rights parcial, LEAN source/CLI y Nautilus stable/docs rutas distintas, QP1–10 NOT_TESTED. Sin cuenta/data download/holdout/backtest/engine install/gasto.
+
+R027/Q054 referencia R1/R2/R3 y reservas especificados; probe8/8 aritmético ficticio. Review encuentra tres P1 reparados (p_auth, ownclaim, G2 vs protección), episode/split OPEN antes de freeze y P2 nombre-salida. Source/result01 íntegros, next-source no ejecutado create-exclusive. Revisión posterior permite presentar referenciaR2, sin cerrar todoD035. Demanda workflow/storage/observabilidad parametrizada por finanzas, no expandir R006/010/013.
+
+Plan/data/decision/research/profile artifacts actualizados, implementation lock/target deferral/invariantes/main intactos; ocho H7researchfiles conservados sin cleanup. Próximo HUMAN_ACTION_REQUIRED Q054 medida financiera, no Plus/admin/gasto.
+
+## 2026-10-13 — ADR-015: R2 aprobado por owner, condiciones acotadas
+
+Q054 DECIDED referencia principal actual→protección confirmada; R1/atribución/P&L/loss-drawdown/exposure/cash/liquidity/gap independientes. No auto-add de perdedoras por menor R2; señal/config/eval/reservas necesarias. p_auth nuevas/pending y protección condicional, UNCERTAIN missing/invalid/crossed jamás0, costos/claims sin doble conteo ni exposición omitida. Escenarios RC1 preparados; D035 RESEARCHING fórmulas/tests/params, no nueva ejecución ni alpha. Registros/profile/dependencias actualizados, sin implementación/Plus/admin/spend/main. Continúa secuencia financiera sin ronda agéntica nueva.
+
+## 2026-10-13 — wave03 financiera después de aprobación R2
+
+- E1 real EdgarTools5.62.0/base44deps en workspace ignorado; fuente/captura/versiones/hashes/launcher preservados.7/7estructural, factoryIdentityNotSetError y connectaudit bloqueado sin fase; callerform/clase/rawowners límites explicitados. No dataset/PIT/isolation aceptado, ADAPT/WRAP candidato/no selección.
+- R008terms primarios retención: Starter durable REJECT, paid condicional/no excepción Power; recomendación previa de primerfreeprobe superseded con adenda. Yahoo/Stooq/otros UNKNOWN, sin concluir ausenciafree ni contratar. Fuente/data no descargada.
+- Semánticas comunes RC1 y O-B/Q055 propuestos con alternativas/gobierno. Reviewindependiente P1holdout y P2Power/callerbranch reparados, no P0nuevo. Reserva INTEGRITY_UNKNOWN/exposureledger y reevaluación owner antes de abrir si no íntegra. D011global RESEARCHING, Q055 READY sóloconceptual; metrics/sample/costs pendientes.
+- Todos los registros/dependencias/profile/source pointers actualizados; nextownerQ055, no nuevoR006/admin/Plus/backtest/histórico/spend/TradingOS. main/lock/targetdeferral/A+/G1+G2/ADR006 intactos. H7researchresidue sin cambios.
+
+## 2026-10-14 — ADR-016: owner aprueba Q055/O-B
+
+Decisión conceptual y siete condiciones registradas; reserva INTEGRITY_UNKNOWN, variantes/descartes, muestra efectiva/INSUFFICIENT_EVIDENCE, comparabilidad, validación temporal y horizon/latency/expiry obligatorios. Q055 DECIDED, D011 RESEARCHING, sin selección Strategy/data/broker/modelo/params. Propuesta/historia/fechas MATR intactas; dependencia/registro/perfil/roadmap/AGENTS actualizados. Próximo paquete autónomo financiero: protocolo estadístico, exposure ledger, candidatas/reglas/latencias y datos/broker. Sin implementar, gasto, target acceptance, main/release o nueva ronda agéntica.
+
+## 2026-10-14 — wave04 estadística, temporal y comparabilidad
+
+ProtocoloRC2 y cinco hipótesis (trials0), exposureledger parcial/reservaUNKNOWN, EvidenceRequirementCardNULL/F0incompleto, horizon/expiry/freshness y folds/costs/latencies propuestos. No claim preregistro sellado/comparación de rendimiento/alpha. Scorecard prioriza completar PRICE vs MATR en universo común y admisión F4, no selección Strategy ni eliminación Smart Money.
+
+Fuentes oficiales Alpaca delayed historicalSIP/deadlines/feedpin/expiry y IBKR auth/presets/cancelstates: doc evidencia/gates/scorecards económicos, sin cuenta/config/data calls o protección aceptada. Primitives statsmodels0.15/arch8 pinadas sólo local15deps, probeE2 19/19 ficticio; NaNdevuelto requiere admissionexterno, no método final ni pruebas estadísticas de trading. Fuente/result/deps/launcher capturados, transitivas por revisar, no rerun.
+
+Review independiente repara cuatroP1 (F0/F1/target, effect/scope, methodapplicability, freshness), dosP2 (manifestdeps/naming) por Architect. Q056 dirección económica propuestaB READY sóloconceptual; no aprobada. Registros/perfil/dependencias/source pointers actualizados. Lock/targetdeferral/main/A+/G1+G2/R2 invariantes, cero gasto, sin nueva investigación agéntica ni limpiezaH7.
+
+## 2026-10-14 — ADR-017, Q056/B aprobado
+
+Ocho condiciones owner registradas: retorno competitivo+riesgo material, cash/opportunity cost y exposición, Asecundaria/Coperacional independiente, preregistro/owner margin y NO_STRATEGY_QUALIFIED. D011/F0/números/selección permanecen abiertos, holdoutUNKNOWN/lock/targetdeferral. Historia Q056 conservada y estado actual DECIDED; AGENTS/roadmap/registros/perfil/card actualizados. No datos/backtests/implementación/gasto/admin/main. Siguiente trabajo autónomo técnico, no otra pregunta conceptual similar.
+
+## 2026-10-14 — wave05, formulación económica y Form4
+
+RC3 concreta ADR017/B con NI/cash/risk/guardrails conjuntos, estados y sample; R008cash distingue yield/return/carry, espejoREAL con ledger/costs/clock propios. PRICE–MATR PAIR-01/02 y protección/seal candidatos, sin Strategy seleccionada, top-up ni parámetros aprobados. Form4RC2 checkbox2023/planes por fila/códigoP privado/amendments; nueva hipótesis plan-agnostic no ejecutada, fuente NOT_ADMITTED.
+
+E3 19/19 sintéticos, F2 13/13 componentes con socket.connect bloqueado; sin nuevo install/spend/datos propios/backtest/alpha/target. Sources/results/launchers/manifests conservados, F2 markup completo y E3 constant/nonfiniteCI NOT_TESTED. Registry8 declaraciones/trials0; hash QA inicial ERROR por CRLF/LF reparado añadiendo EOL+GitblobSHA, raw históricos intactos. Exposureledger incluye tasas públicas y snippets no usados; holdout UNKNOWN.
+
+Revisión independiente corrigió cash/modelo y doublecost, baselineBH/λclocks, ESnoestimable/states/cashonly, ledgers divergentes de ablation y espejos por alternativa. Q057 READY_FOR_DECISION propuesta material de referencia ETF/gates, no márgenes/modelo/Strategy. Perfil/card/backlog/contratos actualizados; F0 incompleto, design agéntico completo en scope, lock/targetdeferral/main/H7/A+/G1+G2/R2 intactos.
+
+## 2026-10-14 — ADR018, Q057/K2 aprobado
+
+Owner aprueba paquete ETF EW6-BH/cash/λREAL con siete condiciones: exposición≠riesgo, SPYvisible, reproducibilidad/as-of, gates conjuntos, suficiencia y scopeETF. Históricos/propuestas/alternativas conservados, nueva decisión trazable; perfil/roadmap/AGENTS/registro/card/contratos actualizados. Métricas/márgenes/datasets/Strategy no aprobados. Siguiente trabajo autónomo técnico, no nueva elección de preferencias. HoldoutUNKNOWN, lock/targetdeferral/main/H7/A+/G1+G2/R2 intactos.
+
+## 2026-10-14 — wave06, realización K2 y utilidad propuesta
+
+Booktargets/realizados/deriva/reinversión/cash/corporate/clocks y factores; RC4ESfraccional/contraste/familia/applicability e inputs finitos. Streams NI/cash net_after_ops(S), ESfinance net_trading, benchmarks owncosts/no overhead ajeno. Q058 READY_FOR_DECISION nuevos budgets1pp/1pp/20%ES95 propuestos normativos, no estimaciones, aprobación pendiente; modelos/guardrails/source F0 aún abiertos.
+
+E4 único14/14 arithmetic/components, MC160porDGP/499basicmeanbootstrap, independenciaAR infravalora incertidumbre, Inf→finite0 preservado. No calibPASS/CAGR/ES/backtest/alpha/target, deps reutilizadas/newinstall0. Capturas/launcher/metadata archivados, newdeclarations dewave05 ancladasb0e3c44 sin modificar rawSHA.
+
+R008fuentes primarias EODHD/Twelve/Norgate/Nasdaq con rights/coverage/costs desconocidos y paidreserves sin gasto. SECnightindex/PAC/quarterlyrebuild noPITcertificado; M11inventario parcialGit sin datasetformatstracked no prueba integridad. Exposureledger ampliado. Review independiente repara overhead/streams/targets, target deferred/lock/main/H7/invariantes intactos.
+
+QA wave06: JSON/YAML,331 enlaces locales, campos numéricos nulos/F0 bloqueado, commits/EOL/hashes de declaraciones y capturas E3/F2/E4/dependencias/AST correctos. No probes repetidos, tests de estrategias o target; main/origin-main conservan a28d6f3. Q058 READY tras review exclusivamente utilidad/cola, no método o suficiencia.
+
+## 2026-10-14 — ADR019, owner aprueba Q058/M1
+
+Utilidades1ppNI/1ppcash/20%ES95 y siete condiciones registradas. Unidades/alcance claros en card/perfil, historia/alternativas conservadas. Inferencia/guardrails/scale/costs/datasets/configs no aprobados, D011 abierto y F0incompleto. Siguiente trabajo autónomo técnico, no volver a pedir B/K2/M1. Sin datos/backtests/implementación/gasto/main/target/admin.
+
+Propagación documental: helper privado tuvo SyntaxError antes de editar artefactos; ADR019 quedó en commit propio ed35008. Se corrigió el helper y se propagó estado mediante commit documental compañero, sin reescribir historia. No probe/captura modificado ni gate pasado por ese error/reparación.
+
+## 2026-10-14 — wave07 técnica después de M1
+
+RC5designcontract completaestimandos/gates/MV/scopeestado, no métodoaceptado; E5actualCAGR/ES8/8screens yE6nullcases11/11sinM1cambio, basicNIalert/MCwide/ANDmasking/supremumnotproven. Datosficticios,nofinancialtrials/historia/reserva/instalación/gasto/target. Archivosfuente/captura/launcher/deps yE5/E6precedentes intactos.
+
+4DataCards/6ETFscopeallNOT_ADMITTED,20costscalehypotheticalcells sinKselección,2childrulepresetsnuevosnoStrategy/risk/broker aprobados. StopATR/p0/parciales/preference/expiry/slots/StrategyTargetOPEN reparados trasreview; JSONpre-review archivado yregistryoriginalSHA+revisionactiva,10declaraciones/trials0. Q059 READY nueva elección deDD/σguardrails/reportes, no B/K2/M1. Censura válida/reportcompleteness ymodeladmission distintos degatesnuméricos; noRisklimitsinventados/autoridad nueva. Perfil/card/contratos/registro/dependencias actualizados; F0incompleto/holdoutUNKNOWN/main/H7/lock/targetdeferred preservados.
+
+QA:374enlaceslocales/JSON/YAML, M1unidades/valores, Q059noaprobado,4DataCardsNOT_ADMITTED/2configs financieramenteincompletas,10decl/trials0, hashesoriginales+repair/commit/E5E6/launcher/deps/AST correctos. Se verifican bytesstaged de captures/history antes de commit; sin rerun, main permanece a28d6f3.
+
+## 2026-10-15 — Q-059/G-R1 aprobado en utilidad (ADR-020)
+
+Se registran las siete condiciones del propietario; propagación a reglas globales/roadmap, registros/perfil, EvidenceCard/protocolos y bootstrap. Criterios relativos de DD/vol no sustituyen D031; G-R2 no aprobado. Guardrail utility aprobada y método/F0 no congelados son campos separados. Se conserva propuesta histórica y evidencia sintética sin reejecutar/recalificar. D011 RESEARCHING; reservaUNKNOWN/implementationlock/targetdeferral. Próximo trabajo autónomo agrupa configuración, admisión de datos/derechos, ejecución/engine, aplicabilidad estadística y preregistro.
+
+## 2026-10-15 — nominal10k y costes en5escalas aprobados (ADR-021)
+
+Respuesta owner fijaUSD10k principal antes de resultados; mensaje posterior exige preservar5escalas y evaluar costes en todas. Se registran20celdas previas + modelos reales/estrés por cadaK, UNKNOWN no0/omisión y scope explícito sin gatePASSuniversal añadido. Sin funding/gasto/LIVE/risknums. D044/Q060 DECIDED; datos/operationalcosts/statmethods/Strategy siguen abiertos. Propagación inmediata aSC0/perfil/registros/roadmap/AGENTS/bootstrap; refinamientos financieros técnicos en hito de research separado.
+
+## 2026-10-15 — wave08 financiero: configuración, fuentes, ejecución y evaluación
+
+RC6/DDapplicability,2nuevasEQ3 con target NAVsignal/3/wholefloor/estadoantesF0 (12declaraciones/0trials),6subcardsETF/W0inception-aware, grafoG2/protección y fórmulas/claimsR2 con solver/params pendientes. RightsTwelve/EODHD/otros no admitidos; consultas concretas2preparadas/sin enviar y permiso/remitente personal pendientes, sin declararbloqueo global. Scope Team diseño/probes, targetPlus/personalseparado.
+
+E7 ejecutado1vez14/14aritmética/path, no inferencia; QE0 intentos preservados2PASS2ERRORpytz→4PASS1ERRORpyarrow→6PASS0ERROR sóloimport/Equity/emptyinitdisposesinrun. QE1ROUND5/5específico, defaultpuedeexcederqty/floorexplícito; noadapter/QP.9wheels públicos locales/SHA/pin, numericdepspreviasreusadas; noinstallglobal/admin/secret/auth/billing. Capturas/gitattributes/provenance incluyennegativos, conexiónreset ycorrecciónfilenameportion. No productionTradingOS/backtest/marketdata/holdout.
+
+Review independiente encontró2P1: veto d_obs nuevo no autorizado y fresh/carry elegible tarde. Reparados: d_obs reporte, investigaciónDD-Eyaautorizada sin nuevogate; reglaI0antesF0/F1sólomaterializa. Reviewfinal confirmó ausenciaP0/P1para cerrar estehito, no métodos/data/engine/Strategy/DoR. ADR021 nominal10k/costs5escalas obligatorio propagado sinPASSuniversal añadido, ni capitalfavorable elegido después.
+
+QA:61paths modificados/nuevos,480enlaceslocales,10PythonAST,JSON/YAML, M1/G-R1/capital10k+5costscales,12decl0trials/4+6cardsNOadmitidas, provenance fuentes/resultados/9wheels y baselinemain intacto. Dos defectos del helperQA (normalización de../paraGit y matchingdemarcadoreshistóricos) corregidos; ninguna declaración histórica rehasheada ni probe rerun. Comprobación del índiceGit PASS:17archivoscapturados fuente/resultado/manifest yspecEQ3 conservanbytesexactos/SHA;62paths staged contandochangelog. Se permitenCRLFcapturados conatributocr-at-eol, sin reescribirfuentes ejecutadas. HoldoutINTEGRITY_UNKNOWN/implementation_locked=true/TARGET_ACCEPTANCE_DEFERRED permanecen.

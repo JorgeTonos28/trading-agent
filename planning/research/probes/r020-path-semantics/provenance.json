@@ -1,0 +1,9 @@
+{
+  "observed_on": "2026-10-15",
+  "runtime": "CPython3.14.6_STDLIB_ONLY",
+  "source_sha256": "7ee5317e803f11808e5ef0268fcbb62e37f04e44f0126786c080979194d91e27",
+  "result_sha256": "b350fc0b796669fbaa3280978b41dc3997540ab496c9c34d158c577b562188ce",
+  "launcher_sha256": "840d30b35af19f9eaa909f719ad3bb4632f37e7c0b8c1abde403ee02a3009a3a",
+  "new_dependencies": false,
+  "statistical_acceptance": false
+}

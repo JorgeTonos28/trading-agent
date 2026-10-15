@@ -1,0 +1,100 @@
+{
+  "scope": "SYNTHETIC_ALGEBRA_NOT_RISK_ENGINE_OR_BACKTEST",
+  "observed_on": "2026-10-13",
+  "source_sha256": "23fac8de5aa1a05c6a6d541ed313a4cd5a3a919de3ebb3794335c8d08add816b",
+  "network_calls": 0,
+  "financial_interfaces": 0,
+  "policies_approved": false,
+  "rows": [
+    {
+      "id": "GAIN_MARK_VS_ENTRY",
+      "observed": {
+        "entry": "0",
+        "remaining": "100"
+      },
+      "expected": {
+        "entry": "0",
+        "remaining": "100"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "LOSS_ALREADY_IN_EQUITY",
+      "observed": {
+        "entry": "200",
+        "remaining": "100"
+      },
+      "expected": {
+        "entry": "200",
+        "remaining": "100"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "PENDING_SALE_NOT_CASH",
+      "observed": {
+        "confirmed_free_cash": "25",
+        "cash_after_unconfirmed_sale": "25"
+      },
+      "expected": {
+        "confirmed_free_cash": "25",
+        "cash_after_unconfirmed_sale": "25"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "EXCLUSIVE_COVERAGE",
+      "observed": {
+        "correct": "100",
+        "double_counted": "160"
+      },
+      "expected": {
+        "correct": "100",
+        "double_counted": "160"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "MOST_RESTRICTIVE",
+      "observed": {
+        "quantity": "4"
+      },
+      "expected": {
+        "quantity": "4"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "FIXED_FEE",
+      "observed": {
+        "quantity": "3"
+      },
+      "expected": {
+        "quantity": "3"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "LOT_ROUND_DOWN",
+      "observed": {
+        "quantity": "30"
+      },
+      "expected": {
+        "quantity": "30"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "UNKNOWN_REQUIRED",
+      "observed": {
+        "positive_quantity_admissible": "False"
+      },
+      "expected": {
+        "positive_quantity_admissible": "False"
+      },
+      "status": "PASS"
+    }
+  ],
+  "pass": 8,
+  "total": 8
+}

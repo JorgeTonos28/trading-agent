@@ -1,0 +1,10 @@
+{
+  "probe": "R028_PROFILE_PUBLICATION_01",
+  "input": "environment-profile-research-observed.json",
+  "output": "environment-profile-research-RC1.json",
+  "change": "Only repository-relative evidence references; observations/readiness retained",
+  "schema_valid": true,
+  "all_local_evidence_refs_exist": true,
+  "target_plus_accepted": false,
+  "output_sha256": "0e78f06dd31331d8fbdfa08cdfed58cc30e5ce411de08535e0dc1d49ac9871ad"
+}

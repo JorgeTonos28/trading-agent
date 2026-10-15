@@ -1,0 +1,20 @@
+{
+  "probe": "H6_OUTPUT_EVALUATION",
+  "native_result_sha256": "808f251223ee7343f9b6c9ad8f2f8598347241fa38bdacb3117f415d433e2c40",
+  "source_sha256": "b097687f80e4b4b45e59d34854b7d618c6f09d3c9062b72fca097ec928335b57",
+  "checks": {
+    "listeners_loopback": true,
+    "duplicate_rejected_with_existing_workflow_error": true,
+    "same_workflow_and_run_after_crash": true,
+    "same_history_length_after_crash": true,
+    "pending_no_worker_status_preserved": true,
+    "automatic_schedule_started_once": true,
+    "schedule_same_run_after_crash": true,
+    "schedule_count_preserved": true,
+    "schedule_bounded_actions": true,
+    "own_server_stopped_and_cleaned": true
+  },
+  "passed": 10,
+  "total": 10,
+  "scope": "pending workflow and one schedule action survived development server restart; no worker activity/retry/model or production stack proof"
+}

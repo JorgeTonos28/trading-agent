@@ -1,0 +1,233 @@
+{
+  "schema_version": "0.3.0-planning",
+  "status": "APPROVED_DESIGN_TARGET_ACCEPTANCE_DEFERRED",
+  "source_of_truth": "repository",
+  "implementation_locked": true,
+  "authority": "NONE",
+  "root_instruction": "AGENTS.md",
+  "entry_point": "ONBOARDING.md",
+  "profile_schema": "shared/environment_profile.schema.json",
+  "expected_profile": "shared/paper_plus_personal_profile.json",
+  "contracts": [
+    "planning/07_environment_bootstrap_contract_RC0.md",
+    "planning/07_agent_packaging_contract_RC0.md",
+    "planning/06_agent_evidence_contract_RC0.md",
+    "planning/06_shadow_portfolio_contract_RC0.md",
+    "planning/06_pedagogical_contract_RC0.md",
+    "planning/08_agent_security_contract_RC0.md",
+    "planning/08_job_workflow_recovery_contract_RC0.md",
+    "planning/08_audit_versions_deployment_contract_RC0.md",
+    "planning/08_S2_agent_domain_contract_RC2.md",
+    "planning/08_agentic_runtime_realization_RC1.md",
+    "planning/research/R-028_instance_binding_RC1.md",
+    "planning/14_agentic_architecture_design_checkpoint_RC0.md"
+  ],
+  "packages": [
+    "agents/onboarding/package.json",
+    "agents/plan-guardian/package.json",
+    "agents/quant-research/package.json",
+    "agents/market-research/package.json",
+    "agents/portfolio-manager-shadow/package.json",
+    "agents/pedagogical/package.json"
+  ],
+  "shared_skills": [
+    ".agents/skills/trading-os-bootstrap/SKILL.md"
+  ],
+  "required_gates": [
+    "EB-1",
+    "EB-2",
+    "EB-3",
+    "EB-4",
+    "EB-5",
+    "EB-6",
+    "EB-7",
+    "EB-8",
+    "TE-1",
+    "TE-2",
+    "TE-3",
+    "TE-4",
+    "TE-5",
+    "TE-6",
+    "TE-7"
+  ],
+  "requirements": [
+    {
+      "id": "clone-integrity",
+      "required_scopes": [
+        "PREPARATION_ONBOARDING",
+        "PAPER_AGENT_ENVIRONMENT"
+      ],
+      "gate_phase": "DESIGN"
+    },
+    {
+      "id": "global-role-rules",
+      "required_scopes": [
+        "PREPARATION_ONBOARDING",
+        "PAPER_AGENT_ENVIRONMENT"
+      ],
+      "gate_phase": "DESIGN"
+    },
+    {
+      "id": "sanitized-inventory-actions",
+      "required_scopes": [
+        "PREPARATION_ONBOARDING",
+        "PAPER_AGENT_ENVIRONMENT"
+      ],
+      "gate_phase": "DESIGN"
+    },
+    {
+      "id": "target-plus-personal-identity",
+      "required_scopes": [
+        "PAPER_AGENT_ENVIRONMENT"
+      ],
+      "gate_phase": "TARGET_ENVIRONMENT_ACCEPTANCE"
+    },
+    {
+      "id": "final-selection-approval",
+      "required_scopes": [
+        "PAPER_AGENT_ENVIRONMENT"
+      ],
+      "gate_phase": "DESIGN"
+    },
+    {
+      "id": "target-TE1-7",
+      "required_scopes": [
+        "PAPER_AGENT_ENVIRONMENT"
+      ],
+      "gate_phase": "TARGET_ENVIRONMENT_ACCEPTANCE"
+    },
+    {
+      "id": "portability-EB1-8",
+      "required_scopes": [
+        "PAPER_AGENT_ENVIRONMENT"
+      ],
+      "gate_phase": "TARGET_ENVIRONMENT_ACCEPTANCE"
+    },
+    {
+      "id": "S2-security-effective",
+      "required_scopes": [
+        "PAPER_AGENT_ENVIRONMENT"
+      ],
+      "gate_phase": "TARGET_ENVIRONMENT_ACCEPTANCE"
+    },
+    {
+      "id": "S2-shadow-blinding",
+      "required_scopes": [
+        "PAPER_AGENT_ENVIRONMENT"
+      ],
+      "gate_phase": "TARGET_ENVIRONMENT_ACCEPTANCE"
+    },
+    {
+      "id": "S2-domain-bootstrap",
+      "required_scopes": [
+        "PAPER_AGENT_ENVIRONMENT"
+      ],
+      "gate_phase": "TARGET_ENVIRONMENT_ACCEPTANCE"
+    },
+    {
+      "id": "target-instance-and-config-binding",
+      "required_scopes": [
+        "PAPER_AGENT_ENVIRONMENT"
+      ],
+      "gate_phase": "TARGET_ENVIRONMENT_ACCEPTANCE"
+    }
+  ],
+  "external_prerequisites": [
+    "Git/repository_access",
+    "Codex_client",
+    "owner_official_native_login",
+    "tools_required_by_selected_route"
+  ],
+  "topology": "B_RT1_APPROVED_CANDIDATE_DESIGN_MECHANISMS_NOT_FROZEN",
+  "configuration_mutations": "ONLY_CONCRETE_ALLOWED_CHANGES_WITH_DIFF_NO_SECRETS",
+  "automatic_installation": false,
+  "environment_decision": "planning/decisions/ADR-013-research-and-target-paper-environments.md",
+  "paper_acceptance": "planning/research/R-030_target_paper_environment_acceptance_RC0.md",
+  "deployment_source_policy": {
+    "candidate_branch": "plan-architect",
+    "stable_approved_branch": "main",
+    "deployment_snapshot": "approved_versioned_release_or_tag",
+    "automatic_promotion": false
+  },
+  "agentic_design_decision": "planning/decisions/ADR-014-agentic-design-checkpoint-proposed.md",
+  "security_direction_proposal": "planning/decisions/ADR-012-agent-process-isolation-proposed.md",
+  "operational_permissions_approved": false,
+  "security_direction_decision": "planning/decisions/ADR-012-agent-process-isolation-proposed.md",
+  "security_direction_status": "APPROVED_CANDIDATE_S2_B_NOT_ACCEPTED",
+  "administrative_setup_authorized": false,
+  "isolation_gates": {
+    "security": "NOT_VERIFIED",
+    "shadow_blinding": "NOT_VERIFIED",
+    "fallback": "S3_REQUIRES_HUMAN_REEVALUATION",
+    "reproducibility": "NOT_TESTED",
+    "administrative_gate": "DEFERRED_TO_TARGET_PAPER_HOST"
+  },
+  "isolation_acceptance_matrix": "planning/research/R-013_S2_variant_acceptance_RC2.md",
+  "isolation_administrative_gate": "planning/research/R-013_S2B_lab_ADM01.md",
+  "isolation_review": "planning/research/R-013_S2B_lab_independent_review_2026-10-06.md",
+  "historical_isolation_contracts": [
+    "planning/08_S2_isolation_spec_RC1.md",
+    "planning/research/R-013_S2_acceptance_matrix_RC1.md"
+  ],
+  "next_governance_item": "R008_COMM01_PERSONAL_SENDER_AUTHORIZATION_OR_OWNER_SENDS_NO_FINANCIAL_SELECTION",
+  "isolation_variant": {
+    "proposed": "S2_B",
+    "selected": false,
+    "account_per_role": "NOT_ASSUMED",
+    "core_outside_runner": true,
+    "effective_per_job_contexts_required": true,
+    "actual_acceptance": "NOT_TESTED",
+    "candidate_direction_approved": true,
+    "design_status": "DESIGN_DECIDED"
+  },
+  "historical_isolation_administrative_gate": "planning/research/R-013_S2_administrative_gate_ADM01.md",
+  "lab_evidence": "planning/research/R-013_S2B_lab_preparation_2026-10-06.md",
+  "laboratory_administrative_authorization": {
+    "gate": "S2B-ADM-01",
+    "approved": true,
+    "scope": "TEMPORARY_LAB_ONLY",
+    "administrator": "PROJECT_OWNER",
+    "agent_privileged_execution_allowed": false,
+    "setup_executed": false,
+    "authorization_reference": "planning/research/probes/r013-s2b-lab-execution/authorization.json",
+    "current_execution_allowed": false,
+    "current_applicability": "DEFERRED_TO_TARGET_PAPER_HOST",
+    "target_instance_revalidation_required": true
+  },
+  "historical_migration_gate": "planning/research/R-029_pre_live_environment_migration_gate_RC0.md",
+  "environments": {
+    "RESEARCH_AI_ENVIRONMENT": "ChatGPT Team",
+    "RESEARCH_HOST": "INFOTEP_INSTITUTIONAL_WINDOWS",
+    "TARGET_PAPER_AI_ENVIRONMENT": "ChatGPT Plus individual",
+    "TARGET_PAPER_COMPUTE_HOST": "OWNER_PERSONAL_WINDOWS",
+    "FUTURE_LIVE_ENVIRONMENT": "UNKNOWN"
+  },
+  "gate_phases": {
+    "design": "Preparation Team — contracts/architecture/review",
+    "target_environment": "R-030 personal Windows Plus — before implementation",
+    "operational": "Built integrated system — before autonomous PAPER",
+    "live": "Undecided after PAPER"
+  },
+  "live_environment_selected": false,
+  "paper_runtime_accepted": false,
+  "agentic_realization_proposal": "B_RT1_CONTRACT_APPROVED_CONCRETE_MECHANISMS_CANDIDATES",
+  "agentic_design_status": "DESIGN_DECIDED_OWNER_2026_10_13",
+  "agentic_architecture_design_complete": true,
+  "target_acceptance_status": "TARGET_ACCEPTANCE_DEFERRED",
+  "mechanism_freeze": false,
+  "economic_contract": "planning/research/R-020_economic_qualification_contract_RC3.md",
+  "economic_reference_proposal": "planning/research/D-011_benchmark_qualification_decision_RC0.md",
+  "benchmark_package_approval": "planning/decisions/ADR-018-PRICE-MATR-benchmark-package-K2.md",
+  "statistical_contract": "planning/research/R-020_statistical_method_contract_RC4.md",
+  "benchmark_book": "planning/research/R-020_K2_benchmark_book_RC0.md",
+  "economic_margin_proposal": "planning/research/D-011_economic_margins_proposal_RC0.md",
+  "economic_utility_approval": "planning/decisions/ADR-019-PRICE-MATR-economic-utility-M1.md",
+  "evaluation_contract": "planning/research/R-020_preregistration_readiness_RC6.md",
+  "DataCards": "planning/research/datacards/financial_dataset_cards_RC0.json",
+  "complementary_guardrails": "Q059_G_R1_UTILITY_APPROVED_ADR020_METHOD_NOT_ACCEPTED",
+  "paper_economic_reference_approval": "planning/decisions/ADR-021-PAPER-economic-reference-capital.md",
+  "paper_reference_capital_USD": 10000,
+  "paper_costs_at_all_five_scales_required": true,
+  "active_financial_rule_hypotheses": "planning/research/candidate_configs/PRICE_MATR_rules_RC1.json",
+  "vendor_clarification_drafts": "planning/research/R-008_vendor_clarification_requests_RC0.md"
+}

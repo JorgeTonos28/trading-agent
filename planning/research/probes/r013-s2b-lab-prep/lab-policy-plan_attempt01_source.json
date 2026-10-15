@@ -1,0 +1,359 @@
+{
+  "schema_version": "r013-s2b-lab-plan-v1",
+  "status": "PLAN_ONLY_NOT_AUTHORIZED",
+  "implementation_locked": true,
+  "authority": "NONE",
+  "source": "ADR012_S2_B_APPROVED_CANDIDATE_NOT_ACCEPTED",
+  "gate": "S2B-ADM-01",
+  "account": {
+    "name": "tos_probe_runner_b",
+    "new_only": true,
+    "initially_enabled": false,
+    "member_group_sid": "S-1-5-32-545",
+    "credential_input": "OWNER_SECURE_LOCAL_ONLY",
+    "privileged_membership_allowed": false,
+    "standard_user_policy_changes_allowed": false
+  },
+  "root": "C:\\ProgramData\\TradingOS-S2B-Probe\\trial-01",
+  "existing_target_action": "STOP_DO_NOT_REUSE",
+  "scope": "NEW_ACCOUNT_AND_NEW_FIXTURE_TREE_ONLY",
+  "real_binding_before_apply": "LOCAL_PROTECTED_OPERATOR_AND_NEW_RUNNER_SID_REQUIRED_NEVER_APPLY_SAMPLE_BINDINGS",
+  "sample_bindings": {
+    "BASE": "S-1-5-21-42424242-43434343-44444444-12001",
+    "OPERATOR": "S-1-5-21-42424242-43434343-44444444-12002",
+    "JOB_SHADOW": "S-1-5-21-42424242-43434343-44444444-11001",
+    "JOB_PEDAGOGY": "S-1-5-21-42424242-43434343-44444444-11002"
+  },
+  "rights_masks": {
+    "Traverse": 1179808,
+    "Read": 1179785,
+    "ReadExecute": 1179817,
+    "Modify": 1245631,
+    "FullControl": 2032127
+  },
+  "common_protected_control": [
+    {
+      "principal": "SY",
+      "rights": "FullControl",
+      "inherit": ""
+    },
+    {
+      "principal": "BA",
+      "rights": "FullControl",
+      "inherit": ""
+    },
+    {
+      "principal": "OPERATOR",
+      "rights": "FullControl",
+      "inherit": ""
+    }
+  ],
+  "resources": [
+    {
+      "relative_path": "",
+      "kind": "directory",
+      "owner": "BA",
+      "group": "BA",
+      "dacl_protected": true,
+      "owner_rights_mask": 0,
+      "extra_allow": [
+        {
+          "principal": "BASE",
+          "rights": "Traverse",
+          "inherit": ""
+        },
+        {
+          "principal": "JOB_SHADOW",
+          "rights": "Traverse",
+          "inherit": ""
+        },
+        {
+          "principal": "JOB_PEDAGOGY",
+          "rights": "Traverse",
+          "inherit": ""
+        }
+      ],
+      "state": "NOT_CREATED"
+    },
+    {
+      "relative_path": "code",
+      "kind": "directory",
+      "owner": "BA",
+      "group": "BA",
+      "dacl_protected": true,
+      "owner_rights_mask": 0,
+      "extra_allow": [
+        {
+          "principal": "BASE",
+          "rights": "ReadExecute",
+          "inherit": "OICI"
+        },
+        {
+          "principal": "JOB_SHADOW",
+          "rights": "ReadExecute",
+          "inherit": "OICI"
+        },
+        {
+          "principal": "JOB_PEDAGOGY",
+          "rights": "ReadExecute",
+          "inherit": "OICI"
+        }
+      ],
+      "state": "NOT_CREATED"
+    },
+    {
+      "relative_path": "financial-canary",
+      "kind": "directory",
+      "owner": "BA",
+      "group": "BA",
+      "dacl_protected": true,
+      "owner_rights_mask": 0,
+      "extra_allow": [],
+      "state": "NOT_CREATED"
+    },
+    {
+      "relative_path": "financial-canary/core-marker.txt",
+      "kind": "file",
+      "owner": "BA",
+      "group": "BA",
+      "dacl_protected": true,
+      "owner_rights_mask": 0,
+      "extra_allow": [],
+      "state": "NOT_CREATED"
+    },
+    {
+      "relative_path": "shadow",
+      "kind": "directory",
+      "owner": "BA",
+      "group": "BA",
+      "dacl_protected": true,
+      "owner_rights_mask": 0,
+      "extra_allow": [
+        {
+          "principal": "BASE",
+          "rights": "Traverse",
+          "inherit": ""
+        },
+        {
+          "principal": "JOB_SHADOW",
+          "rights": "Traverse",
+          "inherit": ""
+        }
+      ],
+      "state": "NOT_CREATED"
+    },
+    {
+      "relative_path": "shadow/export",
+      "kind": "directory",
+      "owner": "BA",
+      "group": "BA",
+      "dacl_protected": true,
+      "owner_rights_mask": 0,
+      "extra_allow": [
+        {
+          "principal": "BASE",
+          "rights": "ReadExecute",
+          "inherit": ""
+        },
+        {
+          "principal": "JOB_SHADOW",
+          "rights": "ReadExecute",
+          "inherit": ""
+        }
+      ],
+      "state": "NOT_CREATED"
+    },
+    {
+      "relative_path": "shadow/export/snapshot.json",
+      "kind": "file",
+      "owner": "BA",
+      "group": "BA",
+      "dacl_protected": true,
+      "owner_rights_mask": 0,
+      "extra_allow": [
+        {
+          "principal": "BASE",
+          "rights": "Read",
+          "inherit": ""
+        },
+        {
+          "principal": "JOB_SHADOW",
+          "rights": "Read",
+          "inherit": ""
+        }
+      ],
+      "state": "NOT_CREATED"
+    },
+    {
+      "relative_path": "shadow/scratch",
+      "kind": "directory",
+      "owner": "BA",
+      "group": "BA",
+      "dacl_protected": true,
+      "owner_rights_mask": 0,
+      "extra_allow": [
+        {
+          "principal": "BASE",
+          "rights": "Modify",
+          "inherit": "OICI"
+        },
+        {
+          "principal": "JOB_SHADOW",
+          "rights": "Modify",
+          "inherit": "OICI"
+        }
+      ],
+      "state": "NOT_CREATED"
+    },
+    {
+      "relative_path": "pedagogy",
+      "kind": "directory",
+      "owner": "BA",
+      "group": "BA",
+      "dacl_protected": true,
+      "owner_rights_mask": 0,
+      "extra_allow": [
+        {
+          "principal": "BASE",
+          "rights": "Traverse",
+          "inherit": ""
+        },
+        {
+          "principal": "JOB_PEDAGOGY",
+          "rights": "Traverse",
+          "inherit": ""
+        }
+      ],
+      "state": "NOT_CREATED"
+    },
+    {
+      "relative_path": "pedagogy/export",
+      "kind": "directory",
+      "owner": "BA",
+      "group": "BA",
+      "dacl_protected": true,
+      "owner_rights_mask": 0,
+      "extra_allow": [
+        {
+          "principal": "BASE",
+          "rights": "ReadExecute",
+          "inherit": ""
+        },
+        {
+          "principal": "JOB_PEDAGOGY",
+          "rights": "ReadExecute",
+          "inherit": ""
+        }
+      ],
+      "state": "NOT_CREATED"
+    },
+    {
+      "relative_path": "pedagogy/export/champion-marker.json",
+      "kind": "file",
+      "owner": "BA",
+      "group": "BA",
+      "dacl_protected": true,
+      "owner_rights_mask": 0,
+      "extra_allow": [
+        {
+          "principal": "BASE",
+          "rights": "Read",
+          "inherit": ""
+        },
+        {
+          "principal": "JOB_PEDAGOGY",
+          "rights": "Read",
+          "inherit": ""
+        }
+      ],
+      "state": "NOT_CREATED"
+    },
+    {
+      "relative_path": "pedagogy/scratch",
+      "kind": "directory",
+      "owner": "BA",
+      "group": "BA",
+      "dacl_protected": true,
+      "owner_rights_mask": 0,
+      "extra_allow": [
+        {
+          "principal": "BASE",
+          "rights": "Modify",
+          "inherit": "OICI"
+        },
+        {
+          "principal": "JOB_PEDAGOGY",
+          "rights": "Modify",
+          "inherit": "OICI"
+        }
+      ],
+      "state": "NOT_CREATED"
+    },
+    {
+      "relative_path": "raw-results",
+      "kind": "directory",
+      "owner": "BA",
+      "group": "BA",
+      "dacl_protected": true,
+      "owner_rights_mask": 0,
+      "extra_allow": [
+        {
+          "principal": "BASE",
+          "rights": "Modify",
+          "inherit": "OICI"
+        }
+      ],
+      "state": "NOT_CREATED"
+    },
+    {
+      "relative_path": "trusted-evidence",
+      "kind": "directory",
+      "owner": "BA",
+      "group": "BA",
+      "dacl_protected": true,
+      "owner_rights_mask": 0,
+      "extra_allow": [],
+      "state": "NOT_CREATED"
+    }
+  ],
+  "test_contexts": {
+    "FS_A": "TRUSTED_BASE_HARNESS_WITH_TRANSIENT_RESTRICTED_THREAD_TOKENS_NOT_FULL_PROCESS_ISOLATION",
+    "job_os_accounts_created": 0,
+    "shadow_restricting_sids": [
+      "JOB_SHADOW"
+    ],
+    "pedagogy_restricting_sids": [
+      "JOB_PEDAGOGY"
+    ],
+    "shared_restricting_sid_selected": false,
+    "profile_registry_temp_complete_acceptance": "NOT_TESTED",
+    "full_native_Codex_acceptance": "NOT_TESTED",
+    "network_tests": "OUT_OF_SCOPE",
+    "model_calls": 0,
+    "callbacks_arbitrary_execution": false
+  },
+  "rollback": {
+    "only_created_sid_paths_marker": "REQUIRED",
+    "disable_account_before_wait": "REQUIRED",
+    "delete_new_account_by_recorded_sid": "PROPOSED_NOT_AUTHORIZED",
+    "remove_new_profile_if_created": "ONLY_EXACT_NEW_SID_UNLOADED_NONSPECIAL_PROFILE_BY_WINDOWS_INTERFACE",
+    "delete_tree": "ONLY_RESOLVED_AUTHORIZED_ROOT_NO_REPARSE",
+    "delete_empty_new_parents": "ONLY_TRANSACTION_RECORDED_NEW_PATHS",
+    "keep_normal_OS_audit_events": true,
+    "incomplete_state": "ROLLBACK_INCOMPLETE_USER_ACTION_REQUIRED"
+  },
+  "not_authorized": [
+    "firewall",
+    "GPO",
+    "global_user_rights",
+    "existing_accounts_ACL_profiles",
+    "AppContainer_profile",
+    "Codex_elevated_sandbox_setup",
+    "broker_secrets",
+    "services_scheduled_tasks",
+    "Team_login_auth_transfer",
+    "runtime_financial",
+    "spending"
+  ],
+  "readiness": "NOT_TESTED_NOT_OPERATIONAL"
+}

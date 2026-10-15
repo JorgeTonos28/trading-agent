@@ -1,0 +1,49 @@
+{
+  "schema_version": "0.3.0-planning",
+  "profile_type": "EXPECTED_NOT_OBSERVED",
+  "environment_kind": "TARGET_PAPER_ENVIRONMENT",
+  "plan": "ChatGPT Plus individual",
+  "surface": "NATIVE_CODEX_CANDIDATE_D024",
+  "capabilities": "OWNER_APPROVED_CANDIDATE_COHORT_NOT_FINAL_SELECTION",
+  "availability": "PER_CAPABILITY_INSTANCE_EVIDENCE_REQUIRED",
+  "economic_policy": "ADR008_PAPER_ZERO_LOW_INCREMENTAL",
+  "authority": "NONE",
+  "implementation_locked": true,
+  "native_api_billing_allowed": false,
+  "required_approval_for_extra_spend": true,
+  "decision": "ADR-013_D-043",
+  "isolation_direction": "APPROVED_CANDIDATE_S2_B_NOT_ACCEPTED",
+  "mandatory_isolation_acceptance": [
+    "S2_SECURITY",
+    "SHADOW_BLINDING",
+    "REPRODUCIBILITY"
+  ],
+  "administrative_setup_authorized": false,
+  "isolation_variant": {
+    "proposed": "S2_B",
+    "selected": false,
+    "account_per_role": "NOT_ASSUMED",
+    "effective_per_job_contexts_required": true,
+    "candidate_direction_approved": true
+  },
+  "administrative_gate_status": "DEFERRED_TO_TARGET_PAPER_HOST",
+  "historical_administrative_gate_status": "ADM01_OWNER_WITHHELD_DEFERRED",
+  "laboratory_fixture_is_operational_environment": false,
+  "laboratory_administrative_authorization": {
+    "gate": "S2B-ADM-01",
+    "approved": true,
+    "scope": "TEMPORARY_LAB_ONLY",
+    "administrator": "PROJECT_OWNER",
+    "agent_privileged_execution_allowed": false,
+    "setup_executed": false,
+    "authorization_reference": "planning/research/probes/r013-s2b-lab-execution/authorization.json",
+    "current_execution_allowed": false,
+    "current_applicability": "DEFERRED_TO_TARGET_PAPER_HOST",
+    "target_instance_revalidation_required": true
+  },
+  "ai_environment": "ChatGPT Plus individual",
+  "compute_host": "OWNER_PERSONAL_WINDOWS",
+  "design_status": "RESEARCHING",
+  "target_acceptance_status": "TARGET_ACCEPTANCE_DEFERRED",
+  "operational_status": "NOT_IMPLEMENTED"
+}

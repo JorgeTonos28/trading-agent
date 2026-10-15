@@ -1,0 +1,104 @@
+{
+  "probe": "R006-TEAM-BOOTSTRAP-SDK-COMPLETION",
+  "captured_at": "2026-10-05T18:39:27.169317+00:00",
+  "source_commit": "c53a1305084d6bcf8fccea8e028d54f50e25e8a7",
+  "sdk_version": "0.160.0",
+  "source_sha256": "16af83e35f755768852e1cca598a3f538e6566d0f1b559dbd4de0cd5237f79ff",
+  "selected": false,
+  "future_plus": "UNKNOWN_PRELIVE",
+  "metadata": [
+    {
+      "package_id": "market-research",
+      "instruction_sources": [
+        "AGENTS.md",
+        "agents/market-research/AGENTS.md"
+      ],
+      "bootstrap_skill_enabled": true,
+      "model": "gpt-6.1-sol",
+      "provider": "openai"
+    },
+    {
+      "package_id": "onboarding",
+      "instruction_sources": [
+        "AGENTS.md",
+        "agents/onboarding/AGENTS.md"
+      ],
+      "bootstrap_skill_enabled": true,
+      "model": "gpt-6.1-sol",
+      "provider": "openai"
+    },
+    {
+      "package_id": "pedagogical",
+      "instruction_sources": [
+        "AGENTS.md",
+        "agents/pedagogical/AGENTS.md"
+      ],
+      "bootstrap_skill_enabled": true,
+      "model": "gpt-6.1-sol",
+      "provider": "openai"
+    },
+    {
+      "package_id": "plan-guardian",
+      "instruction_sources": [
+        "AGENTS.md",
+        "agents/plan-guardian/AGENTS.md"
+      ],
+      "bootstrap_skill_enabled": true,
+      "model": "gpt-6.1-sol",
+      "provider": "openai"
+    },
+    {
+      "package_id": "portfolio-manager-shadow",
+      "instruction_sources": [
+        "AGENTS.md",
+        "agents/portfolio-manager-shadow/AGENTS.md"
+      ],
+      "bootstrap_skill_enabled": true,
+      "model": "gpt-6.1-sol",
+      "provider": "openai"
+    },
+    {
+      "package_id": "quant-research",
+      "instruction_sources": [
+        "AGENTS.md",
+        "agents/quant-research/AGENTS.md"
+      ],
+      "bootstrap_skill_enabled": true,
+      "model": "gpt-6.1-sol",
+      "provider": "openai"
+    }
+  ],
+  "checks": {
+    "six_packages": true,
+    "six_root_role_chains": true,
+    "six_bootstrap_skills": true,
+    "schema_valid": true,
+    "primary_plan_architect": true,
+    "logical_onboarding": true,
+    "Team_paper": true,
+    "Plus_future_candidate": true,
+    "Plus_not_blocking": true,
+    "lock": true,
+    "authority_none": true,
+    "deployment_release_or_tag": true,
+    "no_tools": true,
+    "completed": true
+  },
+  "output": {
+    "primary_role": "Plan Architect",
+    "logical_role": "BOOTSTRAP",
+    "paper_environment": "Team current",
+    "future_live_environment": "ChatGPT Plus individual — candidate, not approved LIVE runtime",
+    "plus_blocks_paper": false,
+    "implementation_locked": true,
+    "authority": "NONE",
+    "deployment_source": "plan-architect: preparation/candidate work; main: stable approved baseline; versioned approved release/tag: reproducible deployment snapshot"
+  },
+  "observed_environment": {
+    "type": "chatgpt",
+    "plan_type": "team"
+  },
+  "turn_status": "completed",
+  "cleanup": "COMPLETED",
+  "passed": true
+}

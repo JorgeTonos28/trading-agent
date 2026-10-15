@@ -1,0 +1,5 @@
+# R-028 — protocol B1, 2026-10-07
+
+Disposable synthetic schema/acceptance-policy probe, **not production verifier**. Preregistered cases: positive subset; missing instance/fingerprint; malformed UUID; cross-instance/fingerprint/phase/environment; fake Plus transfer from historical Team; empty tests; invented requirement replacing mandatory scope; missing refs; pending owner action; target status deferred. Run existing jsonschema dependencies, no native account/auth/host configuration.
+
+Acceptance requirement set is an external fixture, not derived from the report. Every requirement must have a matching test/evidence bound to the current fixture instance/config/phase. Schema validity alone is insufficient. Positive demonstrates only the two fake requirements in this experiment; no real TE/EB/security/runtime PASS. No secret or real host identity captured. Source hash, schema hash, cases and verdict are persisted in `result-01.json`. If a case fails, retain it; do not silently replace results.

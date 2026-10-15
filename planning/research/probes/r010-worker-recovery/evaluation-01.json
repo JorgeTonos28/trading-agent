@@ -1,0 +1,19 @@
+{
+  "scope": "PREREGISTERED_H7_CRITERIA_NOT_PAPER_SECURITY_ACCEPTANCE",
+  "criteria": {
+    "H7-1": "PASS",
+    "H7-2": "PASS",
+    "H7-3": "PASS",
+    "H7-4": "PASS",
+    "H7-5": "PASS",
+    "H7-6": "PASS",
+    "H7-7": "PARTIAL_PROCESSES_STOPPED_CLEANUP_BLOCKED"
+  },
+  "verdict": "PARTIAL_CLEANUP_BLOCKED_BEHAVIORAL_SCOPE_PASS",
+  "activity_attempts_observed": [
+    1,
+    2
+  ],
+  "exactly_once_effects_demonstrated": false,
+  "native_Codex_Plus_or_S2_demonstrated": false
+}

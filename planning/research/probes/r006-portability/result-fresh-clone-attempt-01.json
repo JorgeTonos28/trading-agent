@@ -1,0 +1,256 @@
+{
+  "probe": "R028_FRESH_CLONE_01",
+  "clone_source": "local_committed_repository_NOT_fresh_machine",
+  "commit": "9e0dbedd98c25d0158acf14fd18cc578adf00a7b",
+  "AVAILABLE_IN_TARGET_PLUS": "UNKNOWN",
+  "selected": false,
+  "roles": [
+    {
+      "package_id": "onboarding",
+      "instruction_sources": [
+        "AGENTS.md",
+        "agents/onboarding/AGENTS.md"
+      ],
+      "bootstrap_skill_discovered_enabled": true,
+      "status": "METADATA_ONLY",
+      "smoke": {
+        "status": "completed",
+        "output": {
+          "package_id": "onboarding",
+          "primary_role": "Plan Architect",
+          "logical_role": "BOOTSTRAP",
+          "implementation_locked": true,
+          "authority": "NONE",
+          "plan_guardian_active": false
+        },
+        "seconds": 20.857,
+        "tool_requests": 0,
+        "item_types": {
+          "userMessage": 1,
+          "reasoning": 1,
+          "agentMessage": 1
+        }
+      }
+    },
+    {
+      "package_id": "plan-guardian",
+      "instruction_sources": [
+        "AGENTS.md",
+        "agents/plan-guardian/AGENTS.md"
+      ],
+      "bootstrap_skill_discovered_enabled": true,
+      "status": "METADATA_ONLY"
+    },
+    {
+      "package_id": "quant-research",
+      "instruction_sources": [
+        "AGENTS.md",
+        "agents/quant-research/AGENTS.md"
+      ],
+      "bootstrap_skill_discovered_enabled": true,
+      "status": "METADATA_ONLY"
+    },
+    {
+      "package_id": "market-research",
+      "instruction_sources": [
+        "AGENTS.md",
+        "agents/market-research/AGENTS.md"
+      ],
+      "bootstrap_skill_discovered_enabled": true,
+      "status": "METADATA_ONLY"
+    },
+    {
+      "package_id": "portfolio-manager-shadow",
+      "instruction_sources": [
+        "AGENTS.md",
+        "agents/portfolio-manager-shadow/AGENTS.md"
+      ],
+      "bootstrap_skill_discovered_enabled": true,
+      "status": "METADATA_ONLY",
+      "smoke": {
+        "status": "completed",
+        "output": {
+          "package_id": "portfolio-manager-shadow",
+          "primary_role": "Plan Architect",
+          "logical_role": "PORTFOLIO_SHADOW",
+          "implementation_locked": true,
+          "authority": "NONE",
+          "plan_guardian_active": false
+        },
+        "seconds": 10.057,
+        "tool_requests": 0,
+        "item_types": {
+          "userMessage": 1,
+          "reasoning": 1,
+          "agentMessage": 1
+        }
+      }
+    },
+    {
+      "package_id": "pedagogical",
+      "instruction_sources": [
+        "AGENTS.md",
+        "agents/pedagogical/AGENTS.md"
+      ],
+      "bootstrap_skill_discovered_enabled": true,
+      "status": "METADATA_ONLY"
+    }
+  ],
+  "checks": [
+    {
+      "id": "clone_commit_exact",
+      "passed": true
+    },
+    {
+      "id": "all_assets_from_commit",
+      "passed": true
+    },
+    {
+      "id": "all_six_roles_have_root_and_local",
+      "passed": true
+    },
+    {
+      "id": "bootstrap_skill_discovered_all_roles",
+      "passed": true
+    },
+    {
+      "id": "onboarding_schema",
+      "passed": true
+    },
+    {
+      "id": "onboarding_role_correct",
+      "passed": true
+    },
+    {
+      "id": "onboarding_lock_authority_guardian",
+      "passed": true
+    },
+    {
+      "id": "onboarding_no_tools_and_complete",
+      "passed": true
+    },
+    {
+      "id": "portfolio-manager-shadow_schema",
+      "passed": true
+    },
+    {
+      "id": "portfolio-manager-shadow_role_correct",
+      "passed": true
+    },
+    {
+      "id": "portfolio-manager-shadow_lock_authority_guardian",
+      "passed": true
+    },
+    {
+      "id": "portfolio-manager-shadow_no_tools_and_complete",
+      "passed": true
+    }
+  ],
+  "worktree_asset_sha256": {
+    ".agents/skills/trading-os-bootstrap/SKILL.md": "61294815833061fb5fdb09a41431a0f837d02908c6de3c585101115cfd2b730c",
+    "AGENTS.md": "3b37053f3d28ec6833be53d65d1509ae948e920b4a3a8ca33f7ab1a9210a7b5f",
+    "ONBOARDING.md": "32b92bd98964d7d7b82f068f8769100c5bc3a686a974f9c09bcf51d1693a5f17",
+    "agents/market-research/AGENTS.md": "619a27f65d08657b2007c081d606f4182da592e8004af7169e0bb0db3561f27d",
+    "agents/market-research/package.json": "6077251ffe87ec107a4b30f93ce11a26c03db490ceccf266582a2fdb9eb7aed5",
+    "agents/onboarding/AGENTS.md": "4f7b0c70693fe3c8cb54d38b010fd8d7f738fc09e0d5b79cb01b22df3d68afc7",
+    "agents/onboarding/package.json": "374915df5da1ea5efad522a4631d1bd6fd6493fa5a348e239b528a2adadb9ab0",
+    "agents/pedagogical/AGENTS.md": "6a8f0115f618e81918650a5e7df0214fa75b838084a962569c1a15715294bd3f",
+    "agents/pedagogical/package.json": "41ab634892abbad3e76cedbe17e0e73840b74725b89c4af6f6e31f9dcbdc5a4a",
+    "agents/plan-guardian/AGENTS.md": "0f8439238314530a3be1db3b038bcbe85347dd0881fcb7dc2f8380882e6c690b",
+    "agents/plan-guardian/package.json": "0cf480720cbeefbbb4c9aa4f3baad30194a1942d68998b1219b8c6fd6a070cd3",
+    "agents/portfolio-manager-shadow/AGENTS.md": "395f209d0701575861cdc1eb5751c0e3407fae2dea21210e68bb2dd055fc31d0",
+    "agents/portfolio-manager-shadow/package.json": "eb88f1ed8275e844a49820feeacb48263c974c0aeda40025d366e4df1e6086ba",
+    "agents/quant-research/AGENTS.md": "8120d6a1322f02d5f1f5ca23492b9078a1f8327a0c97c3b0ab46b089d3f3bff0",
+    "agents/quant-research/package.json": "b42a650a9bd6d661fb56a904a7ab4e709e987e6788bc1167b61d754c697eee5e",
+    "planning/06_agent_evidence_contract_RC0.md": "1d9397a5f3124be9912de95fca00538ac868b78a44e85da88c73b7803d1865ce",
+    "planning/06_external_signal_admission_RC1.md": "d5926d18b45328b7c72835024375a9f1b4a72cd2d1b1a2182cf2c92bb87d4d22",
+    "planning/06_pedagogical_contract_RC0.md": "e32f4b9abe926105591ee3bdbe1783a78e44edc270516b25f0f3328b5ef2839f",
+    "planning/06_shadow_portfolio_contract_RC0.md": "42c961fb998a294fb6884c073fb8fb071d3a2ad9957cda23302a532630875e95",
+    "planning/07_agent_packaging_contract_RC0.md": "10081d809f94d33fc6307696bee5bddd08954b56cbbe0ea873db721e8f590777",
+    "planning/07_environment_bootstrap_contract_RC0.md": "11b3a4d0298c5d96640b1579591b45e6ce5b7954c2a008817cfeab92a0421c96",
+    "planning/decision_register.md": "5db958355c354d0a2ec061afb728bd521c3ae54c38a7b439361a9b402092c24c",
+    "planning/research/R-006_workload_acceptance_RC0.md": "5269488044a581ff086448c3fed750f129c1e07eadb195d45819f41308f7942f",
+    "planning/research/probes/r006-contracts/skills/pedagogy/SKILL.md": "14285f05a067c020b47517cbec40e16adad4dc21d58fadcc7d7e7d06602a2373",
+    "planning/research/probes/r006-contracts/skills/quant/SKILL.md": "ffbbb7a7e10025de96e98d73805ae20af6ec49e2ce5c8780ee2bfc4835c7ad2c",
+    "planning/research/probes/r006-contracts/skills/research/SKILL.md": "e68c18f8c22880b6c2fbf348f08630a5b2bc0c06934b89742f3e1d02a6e2a824",
+    "planning/research/probes/r006-contracts/skills/shadow/SKILL.md": "287c863a8cb3ab30aacfae8db492002d38b1e55004fafa6a1b833d5f7fe0aee4",
+    "planning/secuencia_preparacion.md": "6950a546060248803996d310a735a04d0ecc43b37be667f20eb23e50d991aab0",
+    "shared/environment_profile.schema.json": "7199053b496a09cf22a632c7a5c5b19c6ac07f9b931953f378b3edaa6637c656",
+    "shared/target_plus_profile.json": "25162f6d99279b329466af0b3c36b808042199643c6a648d83868faf7cf72331"
+  },
+  "git_blob_asset_sha256": {
+    ".agents/skills/trading-os-bootstrap/SKILL.md": "a743309c18ae17b280737ef9d67e9529bef5805772992f4799da580760f96d83",
+    "AGENTS.md": "a96ac4a1062a675fd8b87c1e05120de852492085d4879508f5ae0abe362b227d",
+    "ONBOARDING.md": "14de91f6c260effd940a3dfd020759bb1e4ee1a1874798ab070ffa34227a531b",
+    "agents/market-research/AGENTS.md": "91935ab44a029416ab73143b4d79b8cabf103f607da063e711397af03ea9fc79",
+    "agents/market-research/package.json": "9f43d240ed95e98f05f2958f77853023b93644561ab17d88edaebf7e3afeab40",
+    "agents/onboarding/AGENTS.md": "1b57ff9fb62519bc1fa4e644dd5c090e86afc0be6239795b35768ffd83838d94",
+    "agents/onboarding/package.json": "95e8037e06713d902c46a5ad9bdb30ee9311fb2cd677dee6637081e064600735",
+    "agents/pedagogical/AGENTS.md": "8b24bf44ad99c26a0986bd528f5ea572bdc0671b866829a25465da51c5b69744",
+    "agents/pedagogical/package.json": "ae421c5d891693eebd9636343024b3097f2bcaa32549d03386153d822c28722a",
+    "agents/plan-guardian/AGENTS.md": "52936213a8a62a4bb8adc9514d29eb533598005ba6712f88842279ebebab1e4c",
+    "agents/plan-guardian/package.json": "e3f4b0019f6059662dbfb54da1000cfbf17fd23f1847371658be52d7b2de5ebf",
+    "agents/portfolio-manager-shadow/AGENTS.md": "1f824c309fe3bd9f08a8a372267398838e2e1778b1e5a98fa1ef93c4acb0cf45",
+    "agents/portfolio-manager-shadow/package.json": "e0638e033a78c6351b2a6f8427ecde7d2d405ac48a2bfa6261e2e0a0cd650b31",
+    "agents/quant-research/AGENTS.md": "1d3882473a29878219c6dba49d7d4aec2987244c683498c64d75fdf389a892a8",
+    "agents/quant-research/package.json": "923af385a55ecca1c2bcd33a28b16ae543412ebf97d9bfca648c73136e4fc558",
+    "planning/06_agent_evidence_contract_RC0.md": "435649035ef9a0cc7522cc8b1dc8120d500cdd943e60d0e9fbc597a6e82a11a9",
+    "planning/06_external_signal_admission_RC1.md": "fdab142d9b4301e42fde095561f84197c8f52a292402fb14caea9ab516355139",
+    "planning/06_pedagogical_contract_RC0.md": "9348059bb1eb6bcc0ab7be16de5f410d02be807ecc546a4befda4639b1fa9225",
+    "planning/06_shadow_portfolio_contract_RC0.md": "32d6de94fffb890a84b0b2b3b696d8bc3bc7265b179be86ba228473e45f30bf6",
+    "planning/07_agent_packaging_contract_RC0.md": "42b8152c303026047de8de1e1e4a5ad2e37d60eb104a2f4a64b18a07c31f1910",
+    "planning/07_environment_bootstrap_contract_RC0.md": "d859e966b2f593b3984cb17a7fd491f1b3ac61c65d1d67c48b642f1be5655366",
+    "planning/decision_register.md": "409cd6a8b390d015b2ce9c8ad5b7ee86f1f8745775b222cf82aac408adeb9c48",
+    "planning/research/R-006_workload_acceptance_RC0.md": "1a8a5b955d24a9d55a0ef26fe9cf4ed999eba2258dcd11368826fc25409415e7",
+    "planning/research/probes/r006-contracts/skills/pedagogy/SKILL.md": "5ce1d593ce9de91ca021810dcf6fbcc9e0d3c20015d59b64dd8bd7e4429fdb24",
+    "planning/research/probes/r006-contracts/skills/quant/SKILL.md": "65d9704dece6dc4c189e4089980a16754346b495e089dfa19724f52c67bf011f",
+    "planning/research/probes/r006-contracts/skills/research/SKILL.md": "8ace180e5478d8b8c73df4034a8fcbdd7df33744b5b50c02a90caa6ed75f9a5b",
+    "planning/research/probes/r006-contracts/skills/shadow/SKILL.md": "6595768b8ec0f45fa74bac42ea411c67db58561ccf3fa1867f8a3c22cba862fd",
+    "planning/secuencia_preparacion.md": "6731009b691e25e07dd486df17601d612fad15982c433ace23542cf837e10268",
+    "shared/environment_profile.schema.json": "b968db16995539a6640346f952ec0f7a204ef11a069ed38d0b75151751178b6f",
+    "shared/target_plus_profile.json": "af7129f945f2f8e473baebe77e6a17214e489cab7f4e1ddd15254f35d182a63f"
+  },
+  "hash_policy": "git_blob_sha256_for_portable_identity; raw_worktree_sha256_for_local_observation",
+  "worktree_eol_only_differences": [
+    ".agents/skills/trading-os-bootstrap/SKILL.md",
+    "AGENTS.md",
+    "ONBOARDING.md",
+    "agents/market-research/AGENTS.md",
+    "agents/market-research/package.json",
+    "agents/onboarding/AGENTS.md",
+    "agents/onboarding/package.json",
+    "agents/pedagogical/AGENTS.md",
+    "agents/pedagogical/package.json",
+    "agents/plan-guardian/AGENTS.md",
+    "agents/plan-guardian/package.json",
+    "agents/portfolio-manager-shadow/AGENTS.md",
+    "agents/portfolio-manager-shadow/package.json",
+    "agents/quant-research/AGENTS.md",
+    "agents/quant-research/package.json",
+    "planning/06_agent_evidence_contract_RC0.md",
+    "planning/06_external_signal_admission_RC1.md",
+    "planning/06_pedagogical_contract_RC0.md",
+    "planning/06_shadow_portfolio_contract_RC0.md",
+    "planning/07_agent_packaging_contract_RC0.md",
+    "planning/07_environment_bootstrap_contract_RC0.md",
+    "planning/decision_register.md",
+    "planning/research/R-006_workload_acceptance_RC0.md",
+    "planning/research/probes/r006-contracts/skills/pedagogy/SKILL.md",
+    "planning/research/probes/r006-contracts/skills/quant/SKILL.md",
+    "planning/research/probes/r006-contracts/skills/research/SKILL.md",
+    "planning/research/probes/r006-contracts/skills/shadow/SKILL.md",
+    "planning/secuencia_preparacion.md",
+    "shared/environment_profile.schema.json",
+    "shared/target_plus_profile.json"
+  ],
+  "account": {
+    "type": "chatgpt",
+    "plan_type": "team"
+  },
+  "cli_version": "codex-cli 0.159.0-alpha.12.1",
+  "error_type": "KeyError",
+  "cleanup": "COMPLETED",
+  "passed": 12,
+  "total": 12,
+  "probe_source_sha256": "ab54018096abb79ee06155ee80f7c9f021315f019398596e63869a7848c002ba"
+}

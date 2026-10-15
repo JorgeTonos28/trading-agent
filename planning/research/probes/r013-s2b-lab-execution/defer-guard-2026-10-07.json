@@ -1,0 +1,16 @@
+{
+  "schema_version": "s2b-defer-guard-v1",
+  "decision": "ADR-013_D-043",
+  "execution_state": "DEFERRED_TO_TARGET_PAPER_HOST",
+  "scope": "ACTIVE_HELPER_EARLY_REJECTION_ONLY_NOT_ADMIN_OR_NATIVE_FS",
+  "checks": [
+    {"phase": "Setup", "exit_code": 1, "expected_rejection": "DEFERRED_TO_TARGET_PAPER_HOST", "result": "PASS"},
+    {"phase": "Rollback", "exit_code": 1, "expected_rejection": "DEFERRED_TO_TARGET_PAPER_HOST", "result": "PASS"}
+  ],
+  "guard_position": "AFTER_PARAMETER_BINDING_BEFORE_SCOPE_READ_IDENTITY_OR_FILESYSTEM_ACTION",
+  "account_acl_firewall_policy_auth_mutations": [],
+  "native_filesystem_acceptance": "NOT_TESTED",
+  "s2b_technically_accepted": false,
+  "historical_qa_source": "history/owner_lab_reviewed_2026-10-06.ps1.txt",
+  "historical_approval_preserved": true
+}
