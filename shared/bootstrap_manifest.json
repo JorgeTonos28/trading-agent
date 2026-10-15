@@ -169,7 +169,7 @@
     "planning/08_S2_isolation_spec_RC1.md",
     "planning/research/R-013_S2_acceptance_matrix_RC1.md"
   ],
-  "next_governance_item": "NONE_PENDING_RESEARCH_GROUPED_FINANCIAL_CHECKPOINT",
+  "next_governance_item": "R008_COMM01_PERSONAL_SENDER_AUTHORIZATION_OR_OWNER_SENDS_NO_FINANCIAL_SELECTION",
   "isolation_variant": {
     "proposed": "S2_B",
     "selected": false,
@@ -222,10 +222,12 @@
   "benchmark_book": "planning/research/R-020_K2_benchmark_book_RC0.md",
   "economic_margin_proposal": "planning/research/D-011_economic_margins_proposal_RC0.md",
   "economic_utility_approval": "planning/decisions/ADR-019-PRICE-MATR-economic-utility-M1.md",
-  "evaluation_contract": "planning/research/R-020_evaluation_contract_RC5.md",
+  "evaluation_contract": "planning/research/R-020_preregistration_readiness_RC6.md",
   "DataCards": "planning/research/datacards/financial_dataset_cards_RC0.json",
   "complementary_guardrails": "Q059_G_R1_UTILITY_APPROVED_ADR020_METHOD_NOT_ACCEPTED",
   "paper_economic_reference_approval": "planning/decisions/ADR-021-PAPER-economic-reference-capital.md",
   "paper_reference_capital_USD": 10000,
-  "paper_costs_at_all_five_scales_required": true
+  "paper_costs_at_all_five_scales_required": true,
+  "active_financial_rule_hypotheses": "planning/research/candidate_configs/PRICE_MATR_rules_RC1.json",
+  "vendor_clarification_drafts": "planning/research/R-008_vendor_clarification_requests_RC0.md"
 }

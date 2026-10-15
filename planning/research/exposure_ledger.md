@@ -42,3 +42,7 @@ M11 repositoryaudit e9b36dc parcial; ningún hallazgo establece integridad o con
 ## Wave07 exposición — 2026-10-14
 
 X13: E5/E6paths/parameters/MCstatistics ySC0costs/capital sonficticios, no precios/backtests/margenporretorno. Lecturadocsarch8 repitecontextométodo yaX10, sin ejemploSPYdatasetdownload. Nueva parametrizaciónPRICE/MATR noinformadaporresultadosdemercado; registrydocumentadraft/repair. HoldoutINTEGRITY_UNKNOWN yM11partial, no apertura/reserva ni certificación porprobes.
+
+## Exposición wave08 — 2026-10-15
+
+X14: búsqueda de metadata deGLD mostró incidentalmente una fila de performance de emisor con fechaJun2026 en snippetSSGA, sin abrir esa página ni usar cifras para hipótesis/params. PáginaGLD principal mostraba metadata y campos deprecios AWAITING. PaperDD menciona ejemplos SP5001950–2013; no datos/figuras descargados para comparación. Registrar solapamiento potencial como exposición incidental, no certifyholdoutintacto. E7/QE0/QE1 sólofixtures,metadata/software/cantidadespropias; ningún retorno/mercadodata real ni estrategia/backtest ejecutados. Nominal10k vino delowner antes de resultados. M11 sigueparcial/INTEGRITY_UNKNOWN.

@@ -1,5 +1,5 @@
 {
-  "updated_on": "2026-10-14",
+  "updated_on": "2026-10-15",
   "state": "SOURCE_DOCS_ONLY_ALL_CARDS_NOT_ADMITTED",
   "cards": [
     {
@@ -29,7 +29,9 @@
         "CALENDAR_AND_UNITS"
       ],
       "history_accessed": false,
-      "evidence_refs": [],
+      "evidence_refs": [
+        "../R-008_dataset_admission_wave04_2026-10-15.md"
+      ],
       "instruments": [
         {
           "symbol_reference": "SPY",
@@ -93,7 +95,8 @@
         "raw_and_transform_hash"
       ],
       "missing_policy": "EXPLICIT_ABSTENTION_OR_QUARANTINE_NOT_HIDDEN_FORWARD_FILL",
-      "feed_and_fill_acceptance": false
+      "feed_and_fill_acceptance": false,
+      "instrument_subcards": "ETF_instrument_admission_RC1.json"
     },
     {
       "schema_version": "planning-0.1",

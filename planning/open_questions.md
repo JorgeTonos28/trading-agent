@@ -167,3 +167,7 @@ P0/D011, DECIDED G-R1 por ADR-020 el 2026-10-15; alternativas históricas siguen
 [ADR-021](decisions/ADR-021-PAPER-economic-reference-capital.md): propietario fija nominalUSD10,000 antes de resultados y exige costes evaluados/reportados en las cinco escalasUSD2k/5k/10k/25k/50k, conservando20celdas hipotéticas previas. Todas las fuentes/modelos de coste admitidos se aplican a cada escala; UNKNOWN explícito, no0/omisión ni capital favorable elegido después. Principal10k no prometePASSuniversal ni exigePASSen5como nuevo gate implícito. Sin depósito/funding/capitalLIVE/gasto/risknumbers; costes reales/método/data/Strategy no aceptados. HoldoutUNKNOWN/lock/targetdeferral.
 
 Q-060 (P1/D044) DECIDED: propietario eligióUSD10k nominal y añadió costes en todas5escalas; no queda pregunta de capital principal pendiente.
+
+## R008-COMM01 — aclaraciones de fuentes y autorización de comunicación
+
+P1/D022, PREPARED_NOT_SENT. [Dos borradores](research/R-008_vendor_clarification_requests_RC0.md) revisables, sólo preguntas sobre derechos/cobertura/costes; no contratación/datos/cuentas. Enviar desde una cuenta personal requiere autorización explícita/remitente o acción directa del propietario. Respuestas no admiten dataset sin subcards/QA. No nueva pregunta de DD ni preferencias B/K2/M1/G-R1/capital ya decididas. No bloqueo global por este permiso; próximo bloque puede estructurar investigación independiente según secuencia.

@@ -225,3 +225,13 @@ Se registran las siete condiciones del propietario; propagación a reglas global
 ## 2026-10-15 — nominal10k y costes en5escalas aprobados (ADR-021)
 
 Respuesta owner fijaUSD10k principal antes de resultados; mensaje posterior exige preservar5escalas y evaluar costes en todas. Se registran20celdas previas + modelos reales/estrés por cadaK, UNKNOWN no0/omisión y scope explícito sin gatePASSuniversal añadido. Sin funding/gasto/LIVE/risknums. D044/Q060 DECIDED; datos/operationalcosts/statmethods/Strategy siguen abiertos. Propagación inmediata aSC0/perfil/registros/roadmap/AGENTS/bootstrap; refinamientos financieros técnicos en hito de research separado.
+
+## 2026-10-15 — wave08 financiero: configuración, fuentes, ejecución y evaluación
+
+RC6/DDapplicability,2nuevasEQ3 con target NAVsignal/3/wholefloor/estadoantesF0 (12declaraciones/0trials),6subcardsETF/W0inception-aware, grafoG2/protección y fórmulas/claimsR2 con solver/params pendientes. RightsTwelve/EODHD/otros no admitidos; consultas concretas2preparadas/sin enviar y permiso/remitente personal pendientes, sin declararbloqueo global. Scope Team diseño/probes, targetPlus/personalseparado.
+
+E7 ejecutado1vez14/14aritmética/path, no inferencia; QE0 intentos preservados2PASS2ERRORpytz→4PASS1ERRORpyarrow→6PASS0ERROR sóloimport/Equity/emptyinitdisposesinrun. QE1ROUND5/5específico, defaultpuedeexcederqty/floorexplícito; noadapter/QP.9wheels públicos locales/SHA/pin, numericdepspreviasreusadas; noinstallglobal/admin/secret/auth/billing. Capturas/gitattributes/provenance incluyennegativos, conexiónreset ycorrecciónfilenameportion. No productionTradingOS/backtest/marketdata/holdout.
+
+Review independiente encontró2P1: veto d_obs nuevo no autorizado y fresh/carry elegible tarde. Reparados: d_obs reporte, investigaciónDD-Eyaautorizada sin nuevogate; reglaI0antesF0/F1sólomaterializa. Reviewfinal confirmó ausenciaP0/P1para cerrar estehito, no métodos/data/engine/Strategy/DoR. ADR021 nominal10k/costs5escalas obligatorio propagado sinPASSuniversal añadido, ni capitalfavorable elegido después.
+
+QA:61paths modificados/nuevos,480enlaceslocales,10PythonAST,JSON/YAML, M1/G-R1/capital10k+5costscales,12decl0trials/4+6cardsNOadmitidas, provenance fuentes/resultados/9wheels y baselinemain intacto. Dos defectos del helperQA (normalización de../paraGit y matchingdemarcadoreshistóricos) corregidos; ninguna declaración histórica rehasheada ni probe rerun. Comprobación del índiceGit PASS:17archivoscapturados fuente/resultado/manifest yspecEQ3 conservanbytesexactos/SHA;62paths staged contandochangelog. Se permitenCRLFcapturados conatributocr-at-eol, sin reescribirfuentes ejecutadas. HoldoutINTEGRITY_UNKNOWN/implementation_locked=true/TARGET_ACCEPTANCE_DEFERRED permanecen.

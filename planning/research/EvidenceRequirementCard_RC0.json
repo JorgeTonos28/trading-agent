@@ -19,7 +19,7 @@
   "dependence_model": null,
   "minimum_effective_clusters": null,
   "minimum_regime_coverage": null,
-  "method_applicability_card": null,
+  "method_applicability_card": "R-020_drawdown_method_applicability_RC0.md",
   "coverage_and_missing_policy": null,
   "walk_forward_blocks_proposal": [
     "2019",
@@ -59,7 +59,7 @@
   "NI_cash_stream": "NET_AFTER_INCREMENTAL_OPS_OF_S_BENCHMARK_OWN_COSTS",
   "risk_stream": "NET_TRADING_S_AND_MIRROR",
   "incremental_ops_known": false,
-  "capital_selected": false,
+  "capital_selected": true,
   "margin_approval": "ADR019_Q058_M1",
   "margin_units": "NI_AND_CASH_DECIMAL_ANNUAL_CAGR_DIFFERENCES;RHO_FRACTION;Q_PROBABILITY",
   "sample_or_method_approved": false,
@@ -70,7 +70,7 @@
   "guardrail_method_accepted": false,
   "DataCards": "datacards/financial_dataset_cards_RC0.json",
   "cost_scale_scenarios": "R-020_cost_scale_scenarios_RC0.md",
-  "configured_rule_presets": "candidate_configs/PRICE_MATR_rules_RC0.json",
+  "configured_rule_presets": "candidate_configs/PRICE_MATR_rules_RC1.json",
   "method_acceptance": "NOT_ACCEPTED",
   "null_screening_refs": [
     "R-020_E5_findings_2026-10-14.md"
@@ -81,5 +81,31 @@
     "daily_volatility_max_deterioration_vs_admissible_K2_mirror": 0,
     "absolute_Risk_limits_approved": false
   },
-  "G_R2_approved": false
+  "G_R2_approved": false,
+  "drawdown_claim_realization": "CANDIDATE_DD_E_AUTHORIZED_RESEARCH_NOT_ADMITTED_NO_NEW_OWNER_GATE",
+  "drawdown_horizon": "PHASE_SPECIFIC_CALENDAR_TO_BE_FROZEN_BEFORE_RESULTS_NO_SHORTENING",
+  "preregistration_readiness": "R-020_preregistration_readiness_RC6.md",
+  "economic_reference_capital_USD": 10000,
+  "economic_reference_capital_approval": "ADR021_Q060",
+  "capital_selection_scope": "NOMINAL_PAPER_ECONOMIC_REFERENCE_ONLY",
+  "operational_account_funding_approved": false,
+  "sensitivity_capitals_USD": [
+    2000,
+    5000,
+    10000,
+    25000,
+    50000
+  ],
+  "cost_evaluation_all_five_required": true,
+  "all_admitted_cost_models_each_scale_required": true,
+  "hypothetical_fixed_costs_monthly_USD": [
+    0,
+    20,
+    60,
+    100
+  ],
+  "sensitivity_missing_cost_state": "UNKNOWN_NOT_ZERO_NOT_OMITTED",
+  "all_scales_PASS_required_as_new_gate": false,
+  "observed_DD_separate_hard_veto_approved": false,
+  "initial_state_rule_proposal": "FRESH_FLAT_EACH_PHASE_FIXED_BEFORE_F0_CARRY_SENSITIVITY_ONLY"
 }

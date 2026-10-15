@@ -1,0 +1,57 @@
+{
+  "observed_on": "2026-10-15",
+  "attempt": "QE0-02",
+  "python": "3.14.6",
+  "source_sha256": "586514e5fde33bdbf64cada87023f6611a03a3d423e7ffd457abc72647213d1d",
+  "wheel_sha256": "295b67b127f67429ebb9d937bd11448f930bee697fca6a8e0ec1de343ad3c68c",
+  "rows": [
+    {
+      "id": "ARTIFACT_HASH",
+      "status": "PASS",
+      "detail": "295b67b127f67429ebb9d937bd11448f930bee697fca6a8e0ec1de343ad3c68c"
+    },
+    {
+      "id": "CORE_IMPORT_VERSION",
+      "status": "PASS",
+      "detail": "1.231.0"
+    },
+    {
+      "id": "SYNTHETIC_EQUITY",
+      "status": "PASS",
+      "detail": {
+        "size_precision": 0,
+        "price_increment": "0.01"
+      }
+    },
+    {
+      "id": "FRACTIONAL_MODEL_BEHAVIOR",
+      "status": "PASS",
+      "detail": {
+        "rejected": "ValueError",
+        "fractional_supported": false
+      }
+    },
+    {
+      "id": "BACKTEST_ENGINE_IMPORT",
+      "status": "ERROR",
+      "detail": {
+        "type": "ModuleNotFoundError",
+        "missing_module": "pyarrow"
+      }
+    }
+  ],
+  "counts": {
+    "PASS": 4,
+    "FAIL": 0,
+    "ERROR": 1
+  },
+  "scope": "ARTIFACT_AND_COMPONENT_ONLY",
+  "engine_selected": false,
+  "backtest_executed": false,
+  "QP1_10_accepted": false,
+  "history_accessed": false,
+  "strategy_trials": 0,
+  "target_acceptance": "TARGET_ACCEPTANCE_DEFERRED",
+  "implementation_locked": true,
+  "incremental_spend": 0
+}

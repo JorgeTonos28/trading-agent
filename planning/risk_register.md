@@ -187,3 +187,14 @@ K067 conserva integridad UNKNOWN y O-B aprobado sólo conceptual. Riesgos adicio
 ## Vigencia G-R1 — ADR-020, 2026-10-15
 
 [ADR-020](decisions/ADR-020-PRICE-MATR-complementary-guardrails-G-R1.md): Q-059/G-R1 DECIDED en preferencia económica ex ante: no deterioro de DD frente a EW6-BH completo ni de volatilidad diaria frente al espejo K2 admisible. ES95/M1 primario y NI/cash/K2 conjuntos; recuperación/underwater/pérdidas/gaps/slippage/extremos obligatorios. DD exige estimando/horizonte/path/incertidumbre y aplicabilidad válidos; una trayectoria/bootstrap genérico no demuestra futuro. Volatilidad incluye upside/downside. Guardrails relativas no son límites absolutos Risk D-031. G-R2 no aprobado ni fallback. Estados separados y NO_STRATEGY_QUALIFIED; ningún método/dato/broker/Strategy/F0/implementación aceptado. Continuar P0/P1 financieros en checkpoints agrupados; holdout UNKNOWN/lock/targetdeferral.
+
+## Riesgos wave08
+
+- K-090 P0: añadir veto d_obs o sustituir claim esperado/predictivo sin gobierno. Review elimina veto no aprobado; DD-E sólo investigación, no PASS.
+- K-091 P0: elegir fresh/carry o reset tras resultados de selección. Regla antes deF0; F1 sólo materializa estado, sin resets anuales favorables.
+- K-092 P1: G2 cancela protección por dependencia parent/children; semánticaFIX transferidaTWS. Grafo/API/version/qty/efectos yB3; sin efecto seguro no cancelación automática.
+- K-093 P1: make_qty por defecto redondea hacia arriba. QE1ROUND prueba componente; futuro adapter floor validlot y boundRisk, no QP6 aceptado.
+- K-094 P1: GLD2004 se rellena con proxy para cumplir200sesionesenero2005; universe/window alterados. W0eligibility/subcards, sinwarmup completo ficticio ni fuente admitida por metadata.
+- K-095 P1: 10k principal oculta costes de otras escalas o UNKNOWN=0, se interpreta como funding/LIVE aprobado. ADR021 cobertura5obligatoria,20celdas+todosmodelos, scope explícito y no cherry-pickK.
+- K-096 P1: constructor6/6se presenta como engineparity/aceptaciónWindowsPlus o entorno de dependencias completo. QE0scope/import/init, clickfaltante, no QP/backtest/runtimeacceptance.
+- K-097 P1: storageprivado/derivedpermissions implican retención perpetua o compartirrawconIA. AclaracionesR008 pendientes, no vendor elegido; sin mensajes externos sin autorización.

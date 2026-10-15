@@ -1,5 +1,13 @@
 # Secuencia de Preparation Program — vigencia ADR-013
 
+## Ruta financiera actual — 2026-10-15
+
+1. G-R1/ADR020 y referencia nominal10k/ADR021 decididos. Costes evaluados en todas5escalas; no nuevos permisos financieros.
+2. Wave08/RC6 especificada y revisada, métodos/datos/engine/broker/configfinanciera aún no aceptados. No gate humano nuevo para investigar DD-E; no veto histórico añadido. Fresh/carry fijados antes deF0.
+3. R008 requiere aclaración externa de derechos/retención/uso privadoIA y cobertura: borradores listos, no enviados. Autorizar comunicación/remitente personal o propietario envía; después respuesta→subcard→muestra admisible/QA. Ninguna cuenta/gasto/Plus/admin se solicita.
+4. Trabajo independiente posterior: calibración/aplicabilidad de métodos con P/datasets/claim explícitos; QPsyntéticos por gaps concretos y mapping broker; riesgo/parámetros con gobierno cuando la propuesta esté fundamentada. Selección finalStrategy/broker no anticipada por documentos/imports. Otros pending no exclusivosPlus.
+5. F0 sólo con toda evidencia requerida; M11UNKNOWN/confirmación bloqueada; targetR030 separado antes deimplementación. Las notas de abajo son snapshots históricos cuando difieren de esta ruta.
+
 **Vigencia aprobada — 2026-10-13, ADR-014 / propietario:** `AGENTIC_ARCHITECTURE_DESIGN_COMPLETE` en el alcance capacidades/roles/fronteras/integración B-RT1. `design_status=DESIGN_DECIDED`; `TARGET_ACCEPTANCE_DEFERRED`; `PAPER_RUNTIME_ACCEPTED=false`; `implementation_locked=true`. Un Runner, control confiable externo, core/secretos fuera AI, aislamiento/contexto mínimo por job, allowlists, identidad/lifecycle por attempt y admisión/audit externos son el contrato aprobado. Keyring, HOME readonly, token, desktop, IPC carrier y launch exactos son **mecanismos candidatos sustituibles**, no invariantes irreversibles; cambios preservan fronteras/autoridad con evidencia y gobierno correspondiente. R-030 acepta eficacia en Plus/PC personal. Investigación agéntica fundamental Team completada; no expandir R-006/010/013 por refinamiento indefinido. LIVE UNKNOWN; residuos H7 conservados sin evasión de policy.
 
 
@@ -180,3 +188,11 @@ HUMAN_ACTION_REQUIRED siguiente [Q059](research/D-011_complementary_guardrails_p
 ## Referencia PAPER y cobertura de costes — ADR-021, 2026-10-15
 
 [ADR-021](decisions/ADR-021-PAPER-economic-reference-capital.md): propietario fija nominalUSD10,000 antes de resultados y exige costes evaluados/reportados en las cinco escalasUSD2k/5k/10k/25k/50k, conservando20celdas hipotéticas previas. Todas las fuentes/modelos de coste admitidos se aplican a cada escala; UNKNOWN explícito, no0/omisión ni capital favorable elegido después. Principal10k no prometePASSuniversal ni exigePASSen5como nuevo gate implícito. Sin depósito/funding/capitalLIVE/gasto/risknumbers; costes reales/método/data/Strategy no aceptados. HoldoutUNKNOWN/lock/targetdeferral.
+
+## Wave08 vigente — 2026-10-15
+
+ADR020/G-R1 y ADR021/nominal10k aprobados, sin método/Strategy/engine/broker/datos/Risknumeric aceptados. [RC6](research/R-020_preregistration_readiness_RC6.md), [configEQ3](research/R-020_configuration_completion_RC1.md), [DataCards](research/R-008_dataset_admission_wave04_2026-10-15.md), [brokerRC2](research/R-007_protection_dependency_contract_RC2.md), [RiskRC2](research/R-027_risk_formula_spec_RC2.md) y [engine/QE0](research/R-009_engine_components_wave02_2026-10-15.md) completan este bloque técnico en scope explícito.12declaraciones/0trials,4cards+6subcards NOT_ADMITTED;2nuevasEQ3 son hipótesis con target, no configuración financiera lista.
+
+Investigar DD-E ya está autorizado, sin nueva elección humana por una definición candidata: d_obs reporte, no veto histórico agregado. Fresh/flat de selección/confirmación y carry sólo sensibilidad se fijan antes deF0, no se eligen al ver selección. E7=14/14aritmética no inferencia; QE0=2PASS2ERROR→4PASS1ERROR→6PASS0ERROR sólo componentes/initvacío, sinrun; QE1ROUND=5/5componente no adapter. P1reparados y revisión documentada, no statisticalvalidation/DoR/target.
+
+Costes obligatorios en5escalas2k/5k/10k/25k/50k y todos modelos admitidos, conservando20celdas; principal10k no selecciona celda favorable, UNKNOWN explícito. Derechos/retención/usoIA/historia/calidad aún faltan. [Consultas de proveedor](research/R-008_vendor_clarification_requests_RC0.md) preparadas no enviadas; autorización/remitente personal o envío del propietario requeridos antes de contactar terceros. No declarar bloqueo global dePreparation mientras tareas independientes siguen posibles. HoldoutUNKNOWN/locktrue/targetdeferred, main/release intactos.

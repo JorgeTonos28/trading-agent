@@ -1,9 +1,9 @@
 {
   "schema_version": "planning-0.1",
-  "updated_on": "2026-10-14",
+  "updated_on": "2026-10-15",
   "stage": "PREPARATION",
   "authority": "NO_FINANCIAL_AUTHORITY",
-  "declared_variant_count": 10,
+  "declared_variant_count": 12,
   "executed_strategy_trial_count": 0,
   "execution_attempt_count": 0,
   "history_complete": false,
@@ -267,6 +267,48 @@
           "reason": "STOP_REFERENCE_PRECEDENCE_EXPIRY_TARGET_CONTRACTS_NOT_MARKET_RESULTS"
         }
       ]
+    },
+    {
+      "id": "S-PRICE-01-CFG-P1-EQ3",
+      "parent": "S-PRICE-01-CFG-P1",
+      "family": "ETF_PRICE_MATR_EQ3",
+      "kind": "DECLARED_RESEARCH_PARAMETERIZATION_NOT_EXECUTED",
+      "specification": "candidate_configs/PRICE_MATR_rules_RC1.json",
+      "spec_sha256_at_declaration": "dfeeddd8f4c39eb41af1468ce83e337b15b118567d3d40be124e48e9e9e80712",
+      "captured_eol_at_declaration": "CRLF",
+      "declared_on": "2026-10-15",
+      "declaration_source": "SAME_COMMIT_AS_WAVE08_REGISTRY_WITH_RAW_HASH",
+      "configuration_complete": false,
+      "F0_frozen": false,
+      "data_admission": "NOT_ADMITTED",
+      "performance": "NOT_EVALUATED",
+      "risk_budget": "NOT_APPROVED",
+      "selection_status": "NOT_SELECTED",
+      "trial_runs": [],
+      "declaration_note": "INITIAL_UNEXECUTED_DECLARATION_REVIEW_FIXED_I0_AND_ROUNDING_BEFORE_COMMIT_OR_RESULTS",
+      "spec_git_blob_sha256_at_declaration": "dfeeddd8f4c39eb41af1468ce83e337b15b118567d3d40be124e48e9e9e80712",
+      "git_blob_hash_provenance": "VERIFIED_STAGED_INITIAL_EQ3_DECLARATION_SAME_COMMIT"
+    },
+    {
+      "id": "S-MATR-01-CFG-M1-EQ3",
+      "parent": "S-MATR-01-CFG-M1",
+      "family": "ETF_PRICE_MATR_EQ3",
+      "kind": "DECLARED_RESEARCH_PARAMETERIZATION_NOT_EXECUTED",
+      "specification": "candidate_configs/PRICE_MATR_rules_RC1.json",
+      "spec_sha256_at_declaration": "dfeeddd8f4c39eb41af1468ce83e337b15b118567d3d40be124e48e9e9e80712",
+      "captured_eol_at_declaration": "CRLF",
+      "declared_on": "2026-10-15",
+      "declaration_source": "SAME_COMMIT_AS_WAVE08_REGISTRY_WITH_RAW_HASH",
+      "configuration_complete": false,
+      "F0_frozen": false,
+      "data_admission": "NOT_ADMITTED",
+      "performance": "NOT_EVALUATED",
+      "risk_budget": "NOT_APPROVED",
+      "selection_status": "NOT_SELECTED",
+      "trial_runs": [],
+      "declaration_note": "INITIAL_UNEXECUTED_DECLARATION_REVIEW_FIXED_I0_AND_ROUNDING_BEFORE_COMMIT_OR_RESULTS",
+      "spec_git_blob_sha256_at_declaration": "dfeeddd8f4c39eb41af1468ce83e337b15b118567d3d40be124e48e9e9e80712",
+      "git_blob_hash_provenance": "VERIFIED_STAGED_INITIAL_EQ3_DECLARATION_SAME_COMMIT"
     }
   ],
   "run_record_required_fields": [
@@ -301,7 +343,9 @@
     "probes/r021-form4-semantics/README.md",
     "probes/r020-benchmark-inference/README.md",
     "probes/r020-endpoint-screen/README.md",
-    "probes/r020-least-favourable/README.md"
+    "probes/r020-least-favourable/README.md",
+    "probes/r020-path-semantics/README.md",
+    "probes/r009-nautilus-artifact/README.md"
   ],
   "synthetic_probes_are_strategy_trials": false,
   "declaration_source_commit": "1727470289d1479300b81260ca91ed3597aeeed0",
@@ -309,5 +353,7 @@
   "economic_objective_approval": "ADR-017_Q056_CONCEPTUAL_ONLY",
   "portable_hash_policy": "KEEP_RAW_CAPTURE_SHA_AND_EOL;_VERIFY_GIT_BLOB_SHA_AT_DECLARATION_COMMIT;NEVER_REHASH_HISTORY_AFTER_ADENDAS",
   "benchmark_package_approval": "ADR018_Q057_K2_PACKAGE_ONLY",
-  "economic_utility_approval": "ADR019_Q058_M1_UTILITY_ONLY"
+  "economic_utility_approval": "ADR019_Q058_M1_UTILITY_ONLY",
+  "complementary_guardrail_approval": "ADR020_Q059_G_R1_UTILITY_ONLY",
+  "active_research_rules": "candidate_configs/PRICE_MATR_rules_RC1.json"
 }

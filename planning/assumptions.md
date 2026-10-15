@@ -159,3 +159,12 @@ A051 integridad de reserva permanece UNVERIFIED, no resuelta por aprobación O-B
 ## Vigencia G-R1 — ADR-020, 2026-10-15
 
 [ADR-020](decisions/ADR-020-PRICE-MATR-complementary-guardrails-G-R1.md): Q-059/G-R1 DECIDED en preferencia económica ex ante: no deterioro de DD frente a EW6-BH completo ni de volatilidad diaria frente al espejo K2 admisible. ES95/M1 primario y NI/cash/K2 conjuntos; recuperación/underwater/pérdidas/gaps/slippage/extremos obligatorios. DD exige estimando/horizonte/path/incertidumbre y aplicabilidad válidos; una trayectoria/bootstrap genérico no demuestra futuro. Volatilidad incluye upside/downside. Guardrails relativas no son límites absolutos Risk D-031. G-R2 no aprobado ni fallback. Estados separados y NO_STRATEGY_QUALIFIED; ningún método/dato/broker/Strategy/F0/implementación aceptado. Continuar P0/P1 financieros en checkpoints agrupados; holdout UNKNOWN/lock/targetdeferral.
+
+## Supuestos wave08
+
+- A-069 P0 UNVERIFIED: DD-E candidato admite modelo/método con cobertura/suficiencia PRICE–MATR. No garantía de futuros arbitrarios ni aceptación desde14fixtures.
+- A-070 P1 REFUTED en scope: cambiar sólo orden de retornos no cambiaDD. E7samewealth/ES/var peroDD19vs10.9, sóloficticio.
+- A-071 P1 REFUTED en scope: make_qty default conserva cota de cantidad decimal. QE1ROUNDmuestra1.6→2; floor1, pendienteadapter entero/tick/fees.
+- A-072 P1 REFUTED por metadata/cota: GLDpuede200sesionesprevias aenero2005; listar18nov2004loimpide. Cobertura real sigueNOT_TESTED.
+- A-073 P1 UNVERIFIED: derechos de dosvendors permiten rawarchive/replaydurable/usoIApersonal. Consultas listas, sin enviar ni asumir permisos por acceso público.
+- A-074 P1 DECIDED_INPUT: referencia nominalPAPER10k y costes evaluados en5escalas porADR021; no fundedcapital o costeactual demostrado.

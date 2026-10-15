@@ -13,3 +13,8 @@ planning/research/probes/r020-endpoint-screen/*.json -text whitespace=cr-at-eol
 planning/research/probes/r020-least-favourable/*.py -text
 planning/research/probes/r020-least-favourable/*.json -text whitespace=cr-at-eol
 planning/research/candidate_configs/history/* -text whitespace=cr-at-eol
+planning/research/probes/r020-path-semantics/*.py -text whitespace=cr-at-eol
+planning/research/probes/r020-path-semantics/*.json -text whitespace=cr-at-eol
+planning/research/probes/r009-nautilus-artifact/*.py -text whitespace=cr-at-eol
+planning/research/probes/r009-nautilus-artifact/*.json -text whitespace=cr-at-eol
+planning/research/candidate_configs/PRICE_MATR_rules_RC1.json -text whitespace=cr-at-eol
