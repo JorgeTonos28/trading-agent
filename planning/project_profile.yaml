@@ -863,7 +863,7 @@ financial_preparation_wave10:
   D035_parent: RESEARCHING
   D030_D031_design_priority: P1
   D030_D031_operational_tests_priority: P2
-  next_human_decision: Q061_FINAL_DD_CLAIM_NOT_G_R1_TOLERANCE
+  next_human_decision: NONE_Q061_APPROVED_CONTINUE_FINANCIAL_DESIGN
   financial_configuration_complete: false
   F0: NOT_FROZEN
   method: NOT_ACCEPTED
@@ -875,3 +875,23 @@ financial_preparation_wave10:
   vendor_status: AWAITING_VENDOR_RESPONSE
   vendor_exact_send_date: UNKNOWN_NOT_DECLARED
   incremental_spend: 0
+
+conditional_drawdown_claim_owner_approval:
+  recorded_on: 2026-10-23
+  question: Q061
+  state: DECIDED
+  adr: planning/decisions/ADR-022-conditional-expected-drawdown-claim.md
+  estimand: EXPECTED_MAXIMUM_DRAWDOWN_DIFFERENCE_UNDER_EXPLICIT_P_H_I0
+  benchmark: FULL_EW6_BH
+  deterioration_tolerance: 0
+  valid_upper_uncertainty_bound_must_be_nonpositive: true
+  DD_P_approved: false
+  distribution_probability_magnitude_quantiles_required_when_reliable: true
+  rare_improvements_majority_deterioration_material_disclosure: true
+  method_model_sufficiency_accepted: false
+  parent_D011: RESEARCHING
+  next_work: USABLE_DATA_BROKER_ENGINE_FINANCIAL_RULES_AND_MASTER_PLAN
+  further_DD_research: BOUNDED_VIABLE_TEAM_WORK_NOT_INDEFINITE
+  implementation_locked: true
+  target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED
+  confirmation_integrity: INTEGRITY_UNKNOWN

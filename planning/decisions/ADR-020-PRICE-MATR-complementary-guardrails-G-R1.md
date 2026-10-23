@@ -26,3 +26,7 @@ Aprueba criterios económicos, **no métodos estadísticos**, α, cobertura/pote
 Continuar configuraciones, fuentes/PIT/rights, semántica broker, backtesting/paridad, factibilidad estadística, riesgo y preregistro en checkpoints materiales. No solicitar aprobación por cada parámetro menor justificado. No validar estadística desde E4/E5/E6 sintéticos.
 
 Reserva INTEGRITY_UNKNOWN; implementation_locked=true; TARGET_ACCEPTANCE_DEFERRED. Sin cambios administrativos, gasto, Plus, main/release o autoridad financiera nueva.
+
+## Realización inferencial aprobada posteriormente — ADR-022
+
+Q061/DD-E condicionado quedó aprobado por propietario2026-10-23, sin cambiar tolerancia0 ni EW6 completo. Aplican las siete condiciones y límites de [ADR022](ADR-022-conditional-expected-drawdown-claim.md); no método/modelo/suficiencia aceptados ni DD-P aprobado.

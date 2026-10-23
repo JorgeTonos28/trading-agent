@@ -1,5 +1,7 @@
 # Q-061 — claim final de drawdown bajo G-R1
 
+**Vigencia owner 2026-10-23:** Q061 DECIDED, DD-E condicionado aprobado con siete condiciones en [ADR022](../decisions/ADR-022-conditional-expected-drawdown-claim.md). Las propuestas anteriores se conservan como antecedentes. Método/modelo/suficiencia no aceptados; DD-P sin aprobar. Foco siguiente datos/broker/engine/reglas, sin investigación DD indefinida.
+
 2026-10-23. **P0 / READY_FOR_DECISION**, propietario; D-011 RESEARCHING. Propuesta material de significado, no cambio de tolerancia G-R1 ni permiso para seguir investigando DD-E. No ADR aprobado por anticipado. B/K2/M1/G-R1, implementación bloqueada y target diferido intactos.
 
 ## Problema y evidencia nueva

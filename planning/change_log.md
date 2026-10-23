@@ -256,3 +256,9 @@ Twelve Data y EODHD: **AWAITING_VENDOR_RESPONSE**, equivalente a EXTERNAL_CLARIF
 - CA-S1 doce fixturesPASS con errores previos preservados y pago sólo identidad; wave06 alternativas/retención/IA/costes5escalas, no datos admitidos. Vendorownerreported AWAITING_VENDOR_RESPONSE, fecha exactaUNKNOWN.
 - E8 siete verificaciones matemáticas+sentinel distingue DD-E/DD-P; Q061 claimfinal propuesto, no aprobación ni modificación G-R1.
 - Matriz15 P0/P1 y D1 demanda transversal. D030/D031 diseño se reclasifica P1 trazablemente; validación operacional sigueP2. Review independiente/QA conservados. Sin históricos, gasto, administración, targetacceptance, merge/main/release o implementación.
+
+## Q-061 aprobado — ADR-022, 2026-10-23
+
+Propietario aprueba **DD-E condicionado** como interpretación inferencial G-R1: diferencia esperada de máximos DD frente a EW6-BH completo bajo P/H/I0 y supuestos explícitos, tolerancia0/upperbound válido≤0. Reportar DD observado/distribución/probabilidad/magnitud de deterioro/cuantiles cuando fiables; mejoras extremas infrecuentes con mayoría peor son limitación material visible, no «menor riesgo» sin contexto. DD-P no aprobado, sin umbral implícito. Separar incertidumbre datos/parámetros/modelo/MC; no bootstrap genérico o simulación abundante sin validación. Otros endpoints/Risk/gobierno independientes; no promoción automática. [ADR022](decisions/ADR-022-conditional-expected-drawdown-claim.md).
+
+Q061 DECIDED; D011 RESEARCHING/método no admitido. No otra pregunta DD conceptual; completar pruebas viables acotadas y priorizar datos/broker/engine/reglas/Planv1. Holdout INTEGRITY_UNKNOWN, implementation_locked=true, TARGET_ACCEPTANCE_DEFERRED.

@@ -1,5 +1,7 @@
 # Preregistro RC7 — grafo de decisión, inferencia y admisión
 
+**Vigencia owner 2026-10-23:** Q061 DECIDED, DD-E condicionado aprobado con siete condiciones en [ADR022](../decisions/ADR-022-conditional-expected-drawdown-claim.md). Las propuestas anteriores se conservan como antecedentes. Método/modelo/suficiencia no aceptados; DD-P sin aprobar. Foco siguiente datos/broker/engine/reglas, sin investigación DD indefinida.
+
 2026-10-23. Complementa y sustituye las filas vigentes de readiness RC6; preserva historia. **F0_NOT_FROZEN / METHOD_NOT_ACCEPTED**, D-011 RESEARCHING. B/K2/M1/G-R1 y ADR021 intactos. No estrategia, dato, broker o engine aceptado; holdout INTEGRITY_UNKNOWN.
 
 ## Corrección de dependencia D011-T1

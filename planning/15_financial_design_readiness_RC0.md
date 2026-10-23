@@ -21,7 +21,7 @@ No cerrar un parent P0/P1 por concluir un subitem. Capturas, errores, FAIL y lim
 |---|---|---|
 | P0 D008 | Selección/diseño Strategy V1, sin ganador obligatorio | Reglas/config y D011/datos/costes; propietario para decisión final |
 | P0 D010 | Especificación MATR candidata completamente vinculada | Reglas ya precisadas; fuente/calendario, order/protection/p_auth, Risk/costes y engine. PRICE mismas dependencias; no privilegiar MATR |
-| P0 D011 | ClaimDD final, métodos aplicables/validados, familia/selector/muestra, protocolo completo y confirmación | Q061 propietario; después calibración/admisión técnica, sin mover márgenes. IntegridadM11/ledger, no abrir reserva por conveniencia |
+| P0 D011 | ClaimDD DECIDED ADR022; métodos aplicables/validados, familia/selector/muestra, protocolo completo y confirmación | Q061 aprobado; falta admisión técnica de método/datos, sin mover márgenes. IntegridadM11/ledger, no abrir reserva por conveniencia |
 | P1 D021 | Broker/cuenta/eligibilidad y mapping seleccionado | IBKR/Alpaca finalistas, Tradier reserva; B1–5 evidencia por API/ruta y decisión humana. Parte práctica requiere cuenta target, no correo de históricos |
 | P1 D022 | Datos primarios, cash y validación secundaria admitidos |4cards+6subcards, rights/retention/IA/coverage/PIT/calidad; respuestas Twelve/EODHD sólo una ruta. Muestras autorizadas y pruebas técnicas pendientes |
 | P1 D023 | Motor/pin/packaging/modelos y paridad de diseño aceptables | LEAN principal de investigación, Nautilus alternativa; QP integrado, dependencias y modelo dividendos/liquidez, sin elegir por retorno |
@@ -47,4 +47,4 @@ No se necesita esperar ambos correos para los puntos independientes. Tampoco se 
 
 ## Secuencia ejecutable posterior y siguiente gobierno
 
-El paquete autónomo actual cubrió reglas, recursos, matching, compilación fuente, alternativas/PIT/costes y revisión. La siguiente decisión material es [Q061, claimDD](research/D-011_DD_claim_decision_RC1.md), no permiso para trabajar, accesoPlus, gasto o envío de correo. En paralelo posterior: B3/protection bindings y evidencia admisible de datos; QP/adaptaciones de engine; propuesta conjunta Risk/órdenes y stack D1. Las respuestas externas se evalúan cuando existan, sin autorizar usos por respuesta genérica.
+El paquete autónomo actual cubrió reglas, recursos, matching, compilación fuente, alternativas/PIT/costes y revisión. Q061 quedó aprobado en ADR022; la siguiente tarea autónoma es resolver datos/broker/engine y bindings financieros. No volver a pedir aprobación de su significado o tolerancia. En paralelo posterior: B3/protection bindings y evidencia admisible de datos; QP/adaptaciones de engine; propuesta conjunta Risk/órdenes y stack D1. Las respuestas externas se evalúan cuando existan, sin autorizar usos por respuesta genérica.

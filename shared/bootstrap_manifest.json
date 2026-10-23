@@ -203,9 +203,9 @@
     "FUTURE_LIVE_ENVIRONMENT": "UNKNOWN"
   },
   "gate_phases": {
-    "design": "Preparation Team — contracts/architecture/review",
-    "target_environment": "R-030 personal Windows Plus — before implementation",
-    "operational": "Built integrated system — before autonomous PAPER",
+    "design": "Preparation Team â€” contracts/architecture/review",
+    "target_environment": "R-030 personal Windows Plus â€” before implementation",
+    "operational": "Built integrated system â€” before autonomous PAPER",
     "live": "Undecided after PAPER"
   },
   "live_environment_selected": false,
@@ -224,7 +224,7 @@
   "economic_utility_approval": "planning/decisions/ADR-019-PRICE-MATR-economic-utility-M1.md",
   "evaluation_contract": "planning/research/R-020_preregistration_readiness_RC7.md",
   "DataCards": "planning/research/datacards/financial_dataset_cards_RC0.json",
-  "complementary_guardrails": "Q059_G_R1_UTILITY_APPROVED_ADR020_METHOD_NOT_ACCEPTED",
+  "complementary_guardrails": "Q059_G_R1_AND_Q061_DD_E_APPROVED_METHOD_NOT_ACCEPTED",
   "paper_economic_reference_approval": "planning/decisions/ADR-021-PAPER-economic-reference-capital.md",
   "paper_reference_capital_USD": 10000,
   "paper_costs_at_all_five_scales_required": true,
@@ -247,8 +247,9 @@
   "risk_formula_contract": "planning/research/R-027_risk_formula_spec_RC3.md",
   "candidate_rule_bindings": "planning/research/R-020_rule_binding_completion_RC2.md",
   "engine_recommendation": "planning/research/R-009_engine_recommendation_RC1.md",
-  "next_financial_governance": "Q061_DD_CLAIM",
+  "next_financial_governance": "NONE_Q061_APPROVED_CONTINUE_DATA_BROKER_ENGINE",
   "financial_statistical_method_accepted": false,
   "financial_datasets_admitted": 0,
-  "financial_strategy_trials": 0
+  "financial_strategy_trials": 0,
+  "conditional_drawdown_claim_approval": "planning/decisions/ADR-022-conditional-expected-drawdown-claim.md"
 }

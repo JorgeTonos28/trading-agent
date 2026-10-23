@@ -185,3 +185,9 @@ A051 integridad de reserva permanece UNVERIFIED, no resuelta por aprobación O-B
 - REFUTED como modelo: qty, lifecycle y encumbrance son estados mutuamente excluyentes. RiskRC3 separa dimensiones; R3 no prueba atomicidad.
 - NO_DEMONSTRADO: respuesta comercial genérica concede retención, IA/non-display, PIT y calidad. Vendor state sólo AWAITING_VENDOR_RESPONSE por owner; fecha exactaUNKNOWN.
 - UNKNOWN mantenidos: muestras reales/derechos, paridad, capacidad target, costes totales/variables, integridadholdout. Resultados sintéticos/builds no los cierran.
+
+## Q-061 aprobado — ADR-022, 2026-10-23
+
+Propietario aprueba **DD-E condicionado** como interpretación inferencial G-R1: diferencia esperada de máximos DD frente a EW6-BH completo bajo P/H/I0 y supuestos explícitos, tolerancia0/upperbound válido≤0. Reportar DD observado/distribución/probabilidad/magnitud de deterioro/cuantiles cuando fiables; mejoras extremas infrecuentes con mayoría peor son limitación material visible, no «menor riesgo» sin contexto. DD-P no aprobado, sin umbral implícito. Separar incertidumbre datos/parámetros/modelo/MC; no bootstrap genérico o simulación abundante sin validación. Otros endpoints/Risk/gobierno independientes; no promoción automática. [ADR022](decisions/ADR-022-conditional-expected-drawdown-claim.md).
+
+Q061 DECIDED; D011 RESEARCHING/método no admitido. No otra pregunta DD conceptual; completar pruebas viables acotadas y priorizar datos/broker/engine/reglas/Planv1. Holdout INTEGRITY_UNKNOWN, implementation_locked=true, TARGET_ACCEPTANCE_DEFERRED.

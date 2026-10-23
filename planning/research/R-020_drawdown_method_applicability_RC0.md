@@ -1,5 +1,7 @@
 # Drawdown — estimando, horizonte y admisión metodológica
 
+**Vigencia owner 2026-10-23:** Q061 DECIDED, DD-E condicionado aprobado con siete condiciones en [ADR022](../decisions/ADR-022-conditional-expected-drawdown-claim.md). Las propuestas anteriores se conservan como antecedentes. Método/modelo/suficiencia no aceptados; DD-P sin aprobar. Foco siguiente datos/broker/engine/reglas, sin investigación DD indefinida.
+
 2026-10-15. G-R1 aprobado en [ADR-020](../decisions/ADR-020-PRICE-MATR-complementary-guardrails-G-R1.md). **METHOD_NOT_ACCEPTED**. Este documento concreta propuestas técnicas; no demuestra futuro, no selecciona Strategy V1, no abre histórico/holdout. B/K2/M1/G-R1 no se relajan.
 
 ## Tres preguntas distintas

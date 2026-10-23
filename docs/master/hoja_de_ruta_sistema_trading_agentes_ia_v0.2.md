@@ -4867,3 +4867,7 @@ Research = Team + Windows institucional INFOTEP; target PAPER = Plus individual 
 ## Referencia PAPER y cobertura de costes — ADR-021, 2026-10-15
 
 [ADR-021](../../planning/decisions/ADR-021-PAPER-economic-reference-capital.md): propietario fija nominalUSD10,000 antes de resultados y exige costes evaluados/reportados en las cinco escalasUSD2k/5k/10k/25k/50k, conservando20celdas hipotéticas previas. Todas las fuentes/modelos de coste admitidos se aplican a cada escala; UNKNOWN explícito, no0/omisión ni capital favorable elegido después. Principal10k no prometePASSuniversal ni exigePASSen5como nuevo gate implícito. Sin depósito/funding/capitalLIVE/gasto/risknumbers; costes reales/método/data/Strategy no aceptados. HoldoutUNKNOWN/lock/targetdeferral.
+
+## Enmienda de interpretación DD — ADR-022, 2026-10-23
+
+Propietario aprueba Q061/DD-E condicionado, esperanza de máximos DD frente a EW6-BH completo bajo P/H/I0 y supuestos explícitos, tolerancia0/upperbound válido≤0. Aplican siete condiciones de [ADR022](../../planning/decisions/ADR-022-conditional-expected-drawdown-claim.md): distribución/frecuencia/magnitud/cuantiles fiables o UNKNOWN, limitaciones materiales visibles si mejoras raras ocultan mayoría peor; DD-P sin aprobar; incertidumbres diferenciadas y método/aplicabilidad por validar; otros endpoints/Risk/gobierno independientes. Sin Strategy/dato/broker/engine/método/operación aprobados. Priorizar ahora datos/broker/engine/reglas/Planv1; sin DD indefinido. HoldoutUNKNOWN/implementationlock/targetdeferral intactos.
