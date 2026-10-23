@@ -176,3 +176,12 @@ A051 integridad de reserva permanece UNVERIFIED, no resuelta por aprobación O-B
 - A-077 P1 UNVERIFIED: licencia local o uso interno non-display habilita IA externa/retención post-terminación. Evidencia por producto, plan, uso y seis categorías; respuesta genérica insuficiente.
 - A-078 P1 DECIDED_INPUT: propietario enviará consultas personalmente; preparación aprobada, envío automático NO autorizado. No envío demostrado, no EXTERNAL_CLARIFICATION_PENDING todavía.
 - A-079 P1 UNVERIFIED: petición de lectura no consume asignaciones/cuota ni omite filas. Gate previo de scope/licencia/budget; matriz CA07 sin ejecutar.
+
+## Supuestos cuestionados por wave10 — 2026-10-23
+
+- REFUTED en scope nativoQE2: consumoL1=True impone cap estricto de tamaño topofbook. El matcher continúa sintéticamente más profundo; L1 no prueba liquidez total real.
+- REFUTED en código LEAN pinado: modo Raw por sí solo separa receivable/pay-date. ApplyDividend requiere adaptación para ese contrato.
+- REFUTED lógicamente: mismo DD esperado implica misma frecuencia de deterioro. E8 muestra90%/10% con la misma esperanza, no datos de candidatos.
+- REFUTED como modelo: qty, lifecycle y encumbrance son estados mutuamente excluyentes. RiskRC3 separa dimensiones; R3 no prueba atomicidad.
+- NO_DEMONSTRADO: respuesta comercial genérica concede retención, IA/non-display, PIT y calidad. Vendor state sólo AWAITING_VENDOR_RESPONSE por owner; fecha exactaUNKNOWN.
+- UNKNOWN mantenidos: muestras reales/derechos, paridad, capacidad target, costes totales/variables, integridadholdout. Resultados sintéticos/builds no los cierran.

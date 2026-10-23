@@ -29,3 +29,5 @@ planning/research/probes/r020-dd-identification/*.json -text whitespace=cr-at-eo
 planning/research/probes/r008-pit-reconstruction/*.py -text whitespace=cr-at-eol
 planning/research/probes/r008-pit-reconstruction/*.json -text whitespace=cr-at-eol
 planning/research/probes/r008-pit-reconstruction/*.txt -text whitespace=cr-at-eol
+# Immutable failed serialization capture includes its original unfinished space.
+planning/research/probes/r008-pit-reconstruction/result-01.partial.txt -text -whitespace

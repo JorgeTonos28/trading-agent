@@ -1,5 +1,7 @@
 # Open Questions — inventario inicial
 
+**Checkpoint financiero vigente — 2026-10-23:** [readiness RC0](15_financial_design_readiness_RC0.md), [preregistro RC7](research/R-020_preregistration_readiness_RC7.md) y [evidencia ejecutada](research/R-020_financial_probe_findings_2026-10-23.md). Las notas fechadas anteriores se conservan como historia. D035-T1 semántica y D011-T1 grafo corregidos, no cierre de sus parents; D030/D031 diseño P1, pruebas operativas P2. Vendor inquiries AWAITING_VENDOR_RESPONSE por declaración owner, fecha exacta UNKNOWN; no respuestas/autorización. Próximo gobierno material Q061 claimDD, no accesoPlus/admin/gasto. Holdout INTEGRITY_UNKNOWN, implementation_locked=true, TARGET_ACCEPTANCE_DEFERRED.
+
 **Vigencia aprobada — 2026-10-13, ADR-014 / propietario:** `AGENTIC_ARCHITECTURE_DESIGN_COMPLETE` en el alcance capacidades/roles/fronteras/integración B-RT1. `design_status=DESIGN_DECIDED`; `TARGET_ACCEPTANCE_DEFERRED`; `PAPER_RUNTIME_ACCEPTED=false`; `implementation_locked=true`. Un Runner, control confiable externo, core/secretos fuera AI, aislamiento/contexto mínimo por job, allowlists, identidad/lifecycle por attempt y admisión/audit externos son el contrato aprobado. Keyring, HOME readonly, token, desktop, IPC carrier y launch exactos son **mecanismos candidatos sustituibles**, no invariantes irreversibles; cambios preservan fronteras/autoridad con evidencia y gobierno correspondiente. R-030 acepta eficacia en Plus/PC personal. Investigación agéntica fundamental Team completada; no expandir R-006/010/013 por refinamiento indefinido. LIVE UNKNOWN; residuos H7 conservados sin evasión de policy.
 
 
@@ -179,3 +181,9 @@ El propietario aprobó preparar [ambos correos definitivos](research/R-008_vendo
 ## 2026-10-23 — envío personal confirmado por declaración del propietario
 
 Twelve Data y EODHD: **AWAITING_VENDOR_RESPONSE**, equivalente a EXTERNAL_CLARIFICATION_PENDING; 2envíos declarados, no verificación de buzón. [Ledger](research/vendor_inquiries/status.json) separa fecha de declaración2026-10-23 de fecha exacta de envío UNKNOWN/no indicada. Sin respuesta ni derechos de uso/dataset admitido; no envío automático autorizado. No esperar respuestas para continuar preparación financiera P0/P1.
+
+## Pregunta material vigente — Q-061, P0/D011
+
+READY_FOR_DECISION: [claimDD final](research/D-011_DD_claim_decision_RC1.md). Recomendación DD-E condicionado, reportes de distribución/frecuencia/quantiles, sin nuevo umbral DD-P ni veto observado. Misma esperanza puede ocultar90% versus10% de trayectorias con deterioro en leyes ficticias E8. Owner decide significado final; método/modelo/validación no aceptados por aprobarlo. B/K2/M1/G-R1 y capital10k/costes5escalas no se reabren.
+
+D035-T1/D011-T1 resueltos técnicamente tras crítica, no parents. Bindings de broker/protección/datos/Risk/engine y readiness están agrupados en matriz15; no preguntar parámetros menores por separado. Twelve/EODHD AWAITING_VENDOR_RESPONSE, fecha exacta de envío no declarada, sin uso autorizado.

@@ -206,3 +206,16 @@ K067 conserva integridad UNKNOWN y O-B aprobado sólo conceptual. Riesgos adicio
 - K-100 P1: autoasignación de ISIN/scope amplio consume cuota o modo sin asignar omite datos. Scope explícito y gate antes de llamada, completitud no inferida de respuesta vacía.
 - K-101 P1: preparar correos se interpreta como autorización para enviarlos o se marca pendiente sin envío. AGENTS/ledger: owner delivery, 0envíos, automatic_send_authorized=false; actualizar sólo con evidencia real.
 - K-102 P1: respuesta comercial genérica admite dataset o archivo/IA/terminación por inferencia. Derechos contractuales, cobertura, calidad y evidencia técnica/PIT independientes; sin respuesta específica, no admisión. Investigación no bloqueada globalmente.
+
+## Riesgos concretados wave10 — 2026-10-23
+
+| ID | Prioridad | Riesgo / control pendiente |
+|---|---|---|
+| RF-W10-1 | P1 | Reserva/cash/exposición duplicados o liberados por cancelación parcial: RC3 separa dimensiones; txn/solver/mapping aún no aceptados |
+| RF-W10-2 | P1 | Fill/stop sintético optimista: L1 no es libro completo; OHLCambiguous, child fullfill y replace pueden dejar protección no confirmada. Binding/QP/B3 y perfil de incertidumbre obligatorios |
+| RF-W10-3 | P1 | Cash de dividendos anticipado/doble: adaptar y probar receivable/pay-date en motor, no sólo Raw |
+| RF-W10-4 | P1 | Pin/deps vulnerables: DotNetZip extracción/reachability y System.Drawing CVE con alcanceOS específico; remediar/auditar antes de admisión, no explotar ni aceptar por buildPASS |
+| RF-W10-5 | P1 | Retención/IA incompatible: Norgate borra Content/backups al expirar; derivados no sustituyen archivo reproducible. No paidadmission/transferencia IA automática |
+| RF-W10-6 | P0 | Confundir confianza de DD medio con probabilidad de trayectoria: Q061 claim final, método/aplicabilidad antes de PASS; mantener estados de evidencia |
+
+No control de esta tabla autoriza G3, gasto, broker/Strategy o implementación. R030 target diferido y H7residue preservados.

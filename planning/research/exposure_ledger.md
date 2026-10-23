@@ -50,3 +50,7 @@ X14: búsqueda de metadata deGLD mostró incidentalmente una fila de performance
 ## Exposición wave09 — 2026-10-23
 
 X15: lectura pública de términos Twelve mostró quotes puntuales en header; búsquedas amplias de documentación incluyeron snippets de terceros con cifras/fechas de mercados potencialmente solapadas con la reserva. No se abrieron esos terceros ni se usaron valores para reglas, márgenes o selección; no se reproducen rendimientos. Documentación Databento incluye ejemplos públicos de acciones corporativas/fechas, no resultados propios ni validación de candidatos. No API ni descarga de muestra/histórico, y ningún resultado PRICE–MATR consultado. Exposición incidental no acredita integridad ni contaminación suficiente; M11 sigue parcial y reserva INTEGRITY_UNKNOWN.
+
+## Exposición wave10 — 2026-10-23
+
+X16: búsqueda pública de documentación/precios/modelos de ejecución mostró snippets no solicitados de terceros y ejemplos documentales con fechas/valores potencialmente solapados con reserva. No se abrieron esos resultados ni se usaron rendimientos para reglas/márgenes/selección. QE2/R3/CA-S1/E8 usan exclusivamente ficticios; LEAN sparse source excluye Data/Tests/Algorithm.CSharp y no ejecuta estrategias. Ningún histórico PRICE–MATR consultado/descargado, cero trials. Capturas/código compilado no acreditan integridad; M11 sigue parcial/INTEGRITY_UNKNOWN. No se amplía acceso para auditar la reserva.

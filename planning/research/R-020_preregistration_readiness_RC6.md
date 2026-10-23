@@ -50,3 +50,7 @@ NOT_EVALUATED: falta requisito/ejecución. INVALID_DATA_OR_METHOD: input/modelo 
 [Wave05](R-008_alternative_actions_PIT_wave05_2026-10-23.md) examina acciones corporativas Databento como alternativa complementaria: revisión/alta/disponibilidad/recepción y replay observado versus reconstrucción se distinguen. Matriz CA01–09 especificada, NOT_EXECUTED; ninguna API/muestra/cuenta. WRAP condicionado/REFERENCE_ONLY actual; no source selected ni admisión. Derechos de retención/IA, cobertura/calidad, costes y paridad siguen pendientes. No esperar respuestas Twelve/EODHD para continuar P0/P1; envío automático prohibido. Las notas anteriores de autorización de comunicación son históricas, sustituidas por entrega personal del propietario.
 
 F0_NOT_FROZEN/METHOD_NOT_ACCEPTED; 12declaraciones, 0trials. Conservados B/K2/M1/G-R1, referencia10k y costes en todas5escalas,20celdas y UNKNOWN explícito; reserva INTEGRITY_UNKNOWN, locktrue/targetdeferred.
+
+## Vigencia técnica wave10 — 2026-10-23
+
+Readiness vigente RC7 corrige dependencia de Champion antes de F0; RC6 queda histórico, no exige promoción operacional antes de implementar.

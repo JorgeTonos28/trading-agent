@@ -247,3 +247,12 @@ Instrucción explícita del propietario: preparar correos Twelve Data/EODHD, no 
 ## 2026-10-23 — envío personal confirmado por declaración del propietario
 
 Twelve Data y EODHD: **AWAITING_VENDOR_RESPONSE**, equivalente a EXTERNAL_CLARIFICATION_PENDING; 2envíos declarados, no verificación de buzón. [Ledger](research/vendor_inquiries/status.json) separa fecha de declaración2026-10-23 de fecha exacta de envío UNKNOWN/no indicada. Sin respuesta ni derechos de uso/dataset admitido; no envío automático autorizado. No esperar respuestas para continuar preparación financiera P0/P1.
+
+## 2026-10-23 — wave10 financiero ejecutado y checkpoint
+
+- Matching Nautilus nativoQE2:01harnessERROR,02/03 7PASS/1FAIL repetible, flagliquiditynohardcap y OHLCpathambiguity preservados.
+- LEAN pinf3d841e source gratis: Commonbuild04PASS; QL1 Enginecomponent restore/buildPASS con una referencia Algorithm.CSharp retirada y manifest, sin launcher/Data/run. Warnings y dividendpaydategap abiertos; recomendación principal condicionada, no selección.
+- RiskRC3 y R3 21checks/66estados corrigen exclusividad qty/lifecycle/claims; cierre técnico D035-T1, parentabierto. RC7/RuleBinding corrigen cicloF0/Champion D011-T1; ninguna selección/método/F0 aprobado.
+- CA-S1 doce fixturesPASS con errores previos preservados y pago sólo identidad; wave06 alternativas/retención/IA/costes5escalas, no datos admitidos. Vendorownerreported AWAITING_VENDOR_RESPONSE, fecha exactaUNKNOWN.
+- E8 siete verificaciones matemáticas+sentinel distingue DD-E/DD-P; Q061 claimfinal propuesto, no aprobación ni modificación G-R1.
+- Matriz15 P0/P1 y D1 demanda transversal. D030/D031 diseño se reclasifica P1 trazablemente; validación operacional sigueP2. Review independiente/QA conservados. Sin históricos, gasto, administración, targetacceptance, merge/main/release o implementación.

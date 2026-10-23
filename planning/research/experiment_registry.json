@@ -1,6 +1,6 @@
 {
   "schema_version": "planning-0.1",
-  "updated_on": "2026-10-15",
+  "updated_on": "2026-10-23",
   "stage": "PREPARATION",
   "authority": "NO_FINANCIAL_AUTHORITY",
   "declared_variant_count": 12,
@@ -355,5 +355,8 @@
   "benchmark_package_approval": "ADR018_Q057_K2_PACKAGE_ONLY",
   "economic_utility_approval": "ADR019_Q058_M1_UTILITY_ONLY",
   "complementary_guardrail_approval": "ADR020_Q059_G_R1_UTILITY_ONLY",
-  "active_research_rules": "candidate_configs/PRICE_MATR_rules_RC1.json"
+  "active_research_rules": "candidate_configs/PRICE_MATR_rules_RC1.json",
+  "latest_component_probe_evidence": "R-020_financial_probe_findings_2026-10-23.md",
+  "active_rule_binding_clarification": "R-020_rule_binding_completion_RC2.md",
+  "clarification_changes_declared_hypotheses": false
 }

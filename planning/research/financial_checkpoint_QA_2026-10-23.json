@@ -1,0 +1,214 @@
+{
+  "as_of": "2026-10-23",
+  "scope": "ARTIFACT_HASH_INVARIANT_LINK_QA_NOT_RUNTIME_OR_STATISTICAL_ACCEPTANCE",
+  "checks": [
+    {
+      "id": "CHANGED_JSON_YAML_PY_PARSE",
+      "PASS": true
+    },
+    {
+      "id": "SOURCE_HASH_r009-matching-components/result-01.json",
+      "PASS": true
+    },
+    {
+      "id": "SOURCE_HASH_r009-matching-components/result-02.json",
+      "PASS": true
+    },
+    {
+      "id": "SOURCE_HASH_r009-matching-components/result-03.json",
+      "PASS": true
+    },
+    {
+      "id": "SOURCE_HASH_r027-resource-semantics/result-01.json",
+      "PASS": true
+    },
+    {
+      "id": "SOURCE_HASH_r020-dd-identification/result-01.json",
+      "PASS": true
+    },
+    {
+      "id": "SOURCE_HASH_r008-pit-reconstruction/result-01.json",
+      "PASS": true
+    },
+    {
+      "id": "SOURCE_HASH_r008-pit-reconstruction/result-02.json",
+      "PASS": true
+    },
+    {
+      "id": "SOURCE_HASH_r009-lean-source/result-01.json",
+      "PASS": true
+    },
+    {
+      "id": "SOURCE_HASH_r009-lean-source/result-02.json",
+      "PASS": true
+    },
+    {
+      "id": "SOURCE_HASH_r009-lean-source/result-03.json",
+      "PASS": true
+    },
+    {
+      "id": "SOURCE_HASH_r009-lean-source/result-04.json",
+      "PASS": true
+    },
+    {
+      "id": "SOURCE_HASH_r009-lean-source/engine-result-01.json",
+      "PASS": true
+    },
+    {
+      "id": "QE2_ERROR_ATTEMPT_RETAINED",
+      "PASS": true
+    },
+    {
+      "id": "QE2_FAIL_RETAINED_REPEAT_SAME_TRACE",
+      "PASS": true
+    },
+    {
+      "id": "R3_21_CHECKS_66_FINITE_STATES",
+      "PASS": true
+    },
+    {
+      "id": "E8_EIGHT_NOT_STATISTICAL_VALIDATION",
+      "PASS": true
+    },
+    {
+      "id": "CA01_PARTIAL_PRESERVED",
+      "PASS": true
+    },
+    {
+      "id": "CA02_TWELVE_COMPONENT_FIXTURES",
+      "PASS": true
+    },
+    {
+      "id": "QL1_RESTORE_BUILD_PASS",
+      "PASS": true
+    },
+    {
+      "id": "QL1_SAMPLE_REF_REMOVED_EXPLICIT",
+      "PASS": true
+    },
+    {
+      "id": "QL1_PATCH_HASH_Engine/QuantConnect.Lean.Engine.csproj",
+      "PASS": true
+    },
+    {
+      "id": "QL1_ORIGINAL_GIT_HASH_Engine/QuantConnect.Lean.Engine.csproj",
+      "PASS": true
+    },
+    {
+      "id": "QL1_ORIGINAL_GIT_HASH_Logging/QuantConnect.Logging.csproj",
+      "PASS": true
+    },
+    {
+      "id": "QL1_ORIGINAL_GIT_HASH_Common/QuantConnect.csproj",
+      "PASS": true
+    },
+    {
+      "id": "QL1_ORIGINAL_GIT_HASH_Configuration/QuantConnect.Configuration.csproj",
+      "PASS": true
+    },
+    {
+      "id": "QL1_ORIGINAL_GIT_HASH_Compression/QuantConnect.Compression.csproj",
+      "PASS": true
+    },
+    {
+      "id": "QL1_ORIGINAL_GIT_HASH_Indicators/QuantConnect.Indicators.csproj",
+      "PASS": true
+    },
+    {
+      "id": "QL1_ORIGINAL_GIT_HASH_Brokerages/QuantConnect.Brokerages.csproj",
+      "PASS": true
+    },
+    {
+      "id": "QL1_ORIGINAL_GIT_HASH_Api/QuantConnect.Api.csproj",
+      "PASS": true
+    },
+    {
+      "id": "QL1_ORIGINAL_GIT_HASH_Algorithm/QuantConnect.Algorithm.csproj",
+      "PASS": true
+    },
+    {
+      "id": "QL1_ORIGINAL_GIT_HASH_AlgorithmFactory/QuantConnect.AlgorithmFactory.csproj",
+      "PASS": true
+    },
+    {
+      "id": "QL1_CAPTURE_SOURCE_LICENSE",
+      "PASS": true
+    },
+    {
+      "id": "QL1_CAPTURE_SOURCE_Engine/QuantConnect.Lean.Engine.csproj",
+      "PASS": true
+    },
+    {
+      "id": "QL1_CAPTURE_SOURCE_Common/Securities/SecurityPortfolioManager.cs",
+      "PASS": true
+    },
+    {
+      "id": "QL1_CAPTURE_SOURCE_Compression/QuantConnect.Compression.csproj",
+      "PASS": true
+    },
+    {
+      "id": "QL1_CAPTURE_SOURCE_Configuration/QuantConnect.Configuration.csproj",
+      "PASS": true
+    },
+    {
+      "id": "QL1_CAPTURE_SOURCE_Logging/QuantConnect.Logging.csproj",
+      "PASS": true
+    },
+    {
+      "id": "QL1_BINARY_SHA",
+      "PASS": true
+    },
+    {
+      "id": "QL1_NO_CHECKED_OUT_MARKET_DATA",
+      "PASS": true
+    },
+    {
+      "id": "TWELVE_VARIANTS_UNCHANGED_ZERO_TRIALS",
+      "PASS": true
+    },
+    {
+      "id": "DECLARED_RC1_BYTES_UNCHANGED",
+      "PASS": true
+    },
+    {
+      "id": "FOUR_PLUS_SIX_CARDS_NOT_ADMITTED",
+      "PASS": true
+    },
+    {
+      "id": "VENDOR_OWNER_SENT_NO_REPLY_OR_USAGE",
+      "PASS": true
+    },
+    {
+      "id": "COST_ALL_FIVE",
+      "PASS": true
+    },
+    {
+      "id": "ACTIVE_PROFILE_LOCKS",
+      "PASS": true
+    },
+    {
+      "id": "BOOTSTRAP_NO_ACCEPTANCE_INFERRED",
+      "PASS": true
+    },
+    {
+      "id": "MAIN_UNCHANGED",
+      "PASS": true
+    },
+    {
+      "id": "WORKING_BRANCH",
+      "PASS": true
+    },
+    {
+      "id": "CHANGED_MARKDOWN_LINKS_EXIST",
+      "PASS": true
+    }
+  ],
+  "counts": {
+    "PASS": 50,
+    "FAIL": 0
+  },
+  "probes_rerun": false,
+  "implementation_locked": true,
+  "holdout": "INTEGRITY_UNKNOWN",
+  "target_acceptance": "TARGET_ACCEPTANCE_DEFERRED"
+}

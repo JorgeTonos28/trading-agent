@@ -222,7 +222,7 @@
   "benchmark_book": "planning/research/R-020_K2_benchmark_book_RC0.md",
   "economic_margin_proposal": "planning/research/D-011_economic_margins_proposal_RC0.md",
   "economic_utility_approval": "planning/decisions/ADR-019-PRICE-MATR-economic-utility-M1.md",
-  "evaluation_contract": "planning/research/R-020_preregistration_readiness_RC6.md",
+  "evaluation_contract": "planning/research/R-020_preregistration_readiness_RC7.md",
   "DataCards": "planning/research/datacards/financial_dataset_cards_RC0.json",
   "complementary_guardrails": "Q059_G_R1_UTILITY_APPROVED_ADR020_METHOD_NOT_ACCEPTED",
   "paper_economic_reference_approval": "planning/decisions/ADR-021-PAPER-economic-reference-capital.md",
@@ -241,6 +241,14 @@
     "declaration_received_on": "2026-10-23",
     "exact_send_date": null
   },
-  "latest_source_admission_research": "planning/research/R-008_alternative_actions_PIT_wave05_2026-10-23.md",
-  "source_acceptance_cases_status": "CA01_CA09_SPECIFIED_NOT_EXECUTED"
+  "latest_source_admission_research": "planning/research/R-008_sources_admission_wave06_2026-10-23.md",
+  "source_acceptance_cases_status": "CA_S1_SYNTHETIC_COMPONENT_ONLY_NO_VENDOR_ACCEPTANCE",
+  "financial_readiness": "planning/15_financial_design_readiness_RC0.md",
+  "risk_formula_contract": "planning/research/R-027_risk_formula_spec_RC3.md",
+  "candidate_rule_bindings": "planning/research/R-020_rule_binding_completion_RC2.md",
+  "engine_recommendation": "planning/research/R-009_engine_recommendation_RC1.md",
+  "next_financial_governance": "Q061_DD_CLAIM",
+  "financial_statistical_method_accepted": false,
+  "financial_datasets_admitted": 0,
+  "financial_strategy_trials": 0
 }

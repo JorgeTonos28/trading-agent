@@ -31,7 +31,8 @@
       "history_accessed": false,
       "evidence_refs": [
         "../R-008_dataset_admission_wave04_2026-10-15.md",
-        "../R-008_alternative_actions_PIT_wave05_2026-10-23.md"
+        "../R-008_alternative_actions_PIT_wave05_2026-10-23.md",
+        "../R-008_sources_admission_wave06_2026-10-23.md"
       ],
       "instruments": [
         {
@@ -117,7 +118,7 @@
     },
     {
       "schema_version": "planning-0.1",
-      "updated_on": "2026-10-14",
+      "updated_on": "2026-10-23",
       "stage": "PREPARATION",
       "implementation_locked": true,
       "financial_authority": "NONE",
@@ -156,7 +157,7 @@
     },
     {
       "schema_version": "planning-0.1",
-      "updated_on": "2026-10-14",
+      "updated_on": "2026-10-23",
       "stage": "PREPARATION",
       "implementation_locked": true,
       "financial_authority": "NONE",
@@ -203,7 +204,7 @@
     },
     {
       "schema_version": "planning-0.1",
-      "updated_on": "2026-10-14",
+      "updated_on": "2026-10-23",
       "stage": "PREPARATION",
       "implementation_locked": true,
       "financial_authority": "NONE",

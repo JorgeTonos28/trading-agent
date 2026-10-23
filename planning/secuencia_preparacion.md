@@ -1,5 +1,7 @@
 # Secuencia de Preparation Program — vigencia ADR-013
 
+**Checkpoint financiero vigente — 2026-10-23:** [readiness RC0](15_financial_design_readiness_RC0.md), [preregistro RC7](research/R-020_preregistration_readiness_RC7.md) y [evidencia ejecutada](research/R-020_financial_probe_findings_2026-10-23.md). Las notas fechadas anteriores se conservan como historia. D035-T1 semántica y D011-T1 grafo corregidos, no cierre de sus parents; D030/D031 diseño P1, pruebas operativas P2. Vendor inquiries AWAITING_VENDOR_RESPONSE por declaración owner, fecha exacta UNKNOWN; no respuestas/autorización. Próximo gobierno material Q061 claimDD, no accesoPlus/admin/gasto. Holdout INTEGRITY_UNKNOWN, implementation_locked=true, TARGET_ACCEPTANCE_DEFERRED.
+
 ## Ruta vigente — 2026-10-23: consultas listas, sin esperar respuestas
 
 1. Dos correos definitivos aprobados para preparación y [entrega personal](research/R-008_vendor_clarification_requests_RC0.md); envío automático NO autorizado desde ninguna cuenta. Vigencia posterior en esta ejecución: el propietario confirmó ambos envíos personales; AWAITING_VENDOR_RESPONSE / EXTERNAL_CLARIFICATION_PENDING, sin respuesta ni autorización. Fecha exacta de envío UNKNOWN; declaración recibida2026-10-23.
@@ -204,3 +206,14 @@ ADR020/G-R1 y ADR021/nominal10k aprobados, sin método/Strategy/engine/broker/da
 Investigar DD-E ya está autorizado, sin nueva elección humana por una definición candidata: d_obs reporte, no veto histórico agregado. Fresh/flat de selección/confirmación y carry sólo sensibilidad se fijan antes deF0, no se eligen al ver selección. E7=14/14aritmética no inferencia; QE0=2PASS2ERROR→4PASS1ERROR→6PASS0ERROR sólo componentes/initvacío, sinrun; QE1ROUND=5/5componente no adapter. P1reparados y revisión documentada, no statisticalvalidation/DoR/target.
 
 Costes obligatorios en5escalas2k/5k/10k/25k/50k y todos modelos admitidos, conservando20celdas; principal10k no selecciona celda favorable, UNKNOWN explícito. Derechos/retención/usoIA/historia/calidad aún faltan. [Consultas de proveedor](research/R-008_vendor_clarification_requests_RC0.md) preparadas no enviadas; autorización/remitente personal o envío del propietario requeridos antes de contactar terceros. No declarar bloqueo global dePreparation mientras tareas independientes siguen posibles. HoldoutUNKNOWN/locktrue/targetdeferred, main/release intactos.
+
+## Secuencia vigente tras wave10 — 2026-10-23
+
+Paquete autónomo ejecutado: reglas EQ3/bindings, RiskRC3, matching/builds y recomendaciones de reuse, alternativas/retención/PIT/costes, DD claim y revisión. [Matriz15](15_financial_design_readiness_RC0.md) separa diseño, datos/métodos y aceptación target. Cierres técnicos D035-T1 y D011-T1 no cierran parents.
+
+1. Q061 claim inferencial final DD con evidenciaE8, sin repetir preferencias económicas.
+2. En paralelo de investigación posterior: B3/rutas de protección, admisión de fuentes/cash con derechos y QP/seguridad de dependencias del motor. Evaluar respuestas comerciales sólo cuando existan.
+3. Unir configuración de investigación/familia/selector/métodos y perfil Risk/órdenes/costes; propuesta conjunta de política/selección cuando esté fundamentada. Nada de históricos prematuros.
+4. Completar stack transversal D1, observabilidad/evals/restore; review y master-plan candidato único. Freeze/main/release con gobierno; R030 personalPlus antes de implementar, operacional P2 separado.
+
+La siguiente consulta al propietario es Q061, no envío de correo ni cuentaPlus. No tratar correos en espera como bloqueo global. Sourceoftruth persiste en rama activa; main intacto.

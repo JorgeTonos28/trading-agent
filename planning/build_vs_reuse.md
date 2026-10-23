@@ -88,3 +88,7 @@ Reutilizar controles Windows antes de construir contención: restricted tokens c
 ## Diseño candidato vigente — 2026-10-07
 
 [B-RT1](08_agentic_runtime_realization_RC1.md) y [checkpoint](14_agentic_architecture_design_checkpoint_RC0.md) concretan ownership/launch/auth/tools/state y binding; ADR-014 READY_FOR_DECISION, no aprobado. R-006 maduro para esta decisión; D-020 disposiciones aprobadas conservadas. Plus/PC personal R-030 aceptación diferida, LIVE UNKNOWN. No freeze ni permiso operacional; workspaces/AGENTS son packaging, no barrera. Costo incremental/autenticación/gates futuros no autorizados por este texto.
+
+## Vigencia técnica wave10 — 2026-10-23
+
+Wave10: LEAN source principal condicionado de investigación, Nautilus alternativa; Common/Enginecomponent build y matching no aceptan fidelidad/seguridad. Ver research/R-009_engine_recommendation_RC1.md y matrix15; motores seleccionadosNO.

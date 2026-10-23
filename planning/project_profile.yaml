@@ -790,7 +790,7 @@ financial_preparation_wave08:
   incremental_spend: 0
 
 profile_resolution_policy: APPROVAL_BLOCKS_AND_LATEST_DATED_WAVE_SUPERSEDE_HISTORICAL_SNAPSHOTS
-active_financial_checkpoint: financial_preparation_wave09
+active_financial_checkpoint: financial_preparation_wave10
 
 vendor_communication_2026_10_23:
   preparation_approved: true
@@ -840,3 +840,38 @@ vendor_sent_owner_declaration:
   automatic_send_authorized: false
   blocks_independent_preparation: false
   supersedes: vendor_communication_2026_10_23
+
+financial_preparation_wave10:
+  updated_on: 2026-10-23
+  readiness: planning/15_financial_design_readiness_RC0.md
+  evaluation_contract: planning/research/R-020_preregistration_readiness_RC7.md
+  declared_variants: 12
+  executed_strategy_trials: 0
+  datasets_admitted: 0
+  parent_DataCards: 4
+  instrument_subcards: 6
+  broker_selected: false
+  engine_selected: false
+  engine_recommendation: LEAN_SOURCE_CONDITIONAL_PRIMARY_RESEARCH_NAUTILUS_ALTERNATIVE
+  QL1: ENGINE_COMPONENT_BUILD_PASS_SAMPLE_REFERENCE_REMOVED_NO_RUN
+  QE2: SEVEN_PASS_ONE_FAIL_REPEAT_SAME_TRACE_NOT_INTEGRATED_PARITY
+  R3: TWENTYONE_CHECKS_SIXTYSIX_STATES_NOT_TRANSACTIONS_OR_SOLVER
+  CA_S1: TWELVE_FIXTURES_PAYMENT_IDENTITY_NOT_TRANSITION_OR_VENDOR_ACCEPTANCE
+  E8: SEVEN_MATH_CHECKS_AND_ONE_DECLARATIVE_SENTINEL_NOT_INFERENCE_VALIDATION
+  technical_closures: [D035_T1_RESOURCE_DIMENSIONS, D011_T1_RESEARCH_ADMISSION_PHASE_GRAPH]
+  D011_parent: RESEARCHING
+  D035_parent: RESEARCHING
+  D030_D031_design_priority: P1
+  D030_D031_operational_tests_priority: P2
+  next_human_decision: Q061_FINAL_DD_CLAIM_NOT_G_R1_TOLERANCE
+  financial_configuration_complete: false
+  F0: NOT_FROZEN
+  method: NOT_ACCEPTED
+  nominal_reference_USD: 10000
+  mandatory_cost_capitals_USD: [2000, 5000, 10000, 25000, 50000]
+  confirmation_integrity: INTEGRITY_UNKNOWN
+  implementation_locked: true
+  target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED
+  vendor_status: AWAITING_VENDOR_RESPONSE
+  vendor_exact_send_date: UNKNOWN_NOT_DECLARED
+  incremental_spend: 0
