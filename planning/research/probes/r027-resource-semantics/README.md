@@ -1,0 +1,9 @@
+# R3 — recursos, protección y claims: experimento desechable
+
+Protocolo previo, 2026-10-23. Sólo Decimal/stdlib y números ficticios; ningún broker, DB, Risk Engine, snapshot operativo, histórico, LLM o red. Las funciones de coste/presupuesto son fixtures, no umbrales o política financiera aprobada. Valida contrajemplos de tres dimensiones (cantidad económica/lifecycle/encumbrance), cash efectivo frente a debit pendiente, cobertura parcial y gaps/costes/splits/solver. No valida transacciones reales/concurrencia/datos/protección broker.
+
+Expectativas manuales: orden10 a100/cash1000, fill4/remainder6 deja cash600, reserva600, free0; exposición con mark110=1040, no1640. Pending-cancel no libera; cancel6 confirmado conserva4 y libera600. Si cash broker aún1000, débito no reflejado400 más reserva600 conserva free0. Escenario qty10/mark100/stop90/gap80 pierde200, no300; split2 conserva riesgo100. Fee de salida conjunto5 no se multiplica al partir lote4+6. Stop cruzado o6unidades descubiertas no dan R2=0. Buffer/caps UNKNOWN bloquean autorización.
+
+Se enumeran66combinaciones fill/cancel/remainder de orden10 y se contrasta cashfree con efectivo liberado por cancelación y exposición con suma explícita por unidad. Solver finito de lote/fee y contraejemplo no monótono muestran por qué binary search exige prueba de monotonicidad; no solver productivo. Captura create-exclusive, hashfuente, todos errores/FAIL preservados. Evidencia aritmética/componente, nunca PASS D035 completo o límites absolutos D031.
+
+Resultado01:21checksPASS,0FAIL/ERROR,66estados finitos adicionales contrastados. Algunos checks construyen estados declarados UNCERTAIN; no prueban un validador de estados. La revisión independiente permite cerrar definición semántica D035-T1, no solver/atomicidad/concurrencia/durabilidad ni aceptación de protección.

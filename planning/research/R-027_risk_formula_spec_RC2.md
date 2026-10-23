@@ -1,5 +1,7 @@
 # D035/D031 — fórmulas, targets y reservas RC2
 
+**2026-10-23: corrección vigente en [RC3](R-027_risk_formula_spec_RC3.md).** La frase antigua de exclusividad filled/pending/live-claim/cancel-confirmed mezcla dimensiones y queda sustituida por cantidad económica, lifecycle y encumbrances separados. Texto RC2 conservado como antecedente; no aplicar aquella clasificación al ledger.
+
 2026-10-15. **Especificación candidata**, no Risk Engine ni números operativos aprobados. ADR006 controles independientes/mínimo, ADR015 R2, G1+G2 intactos. D035 RESEARCHING; D031 límites absolutos separados de G-R1.
 
 ## Magnitudes y dominios

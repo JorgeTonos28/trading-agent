@@ -32,7 +32,7 @@ Si falla el proceso después de enviar y antes de guardar respuesta, el recovere
 | Invariante | Criterio observable |
 |---|---|
 | Solo órdenes autorizadas | Cada comando de alta/replace enlaza un `RiskDecision` válido para intent, cuenta, versión y estado; cada G2 cancel enlaza `IncidentActionAuthorization` verificable |
-| Cantidad acotada | Suma de órdenes/fills/reservas de exposición nueva no supera la cantidad o riesgo aprobado; fill parcial no libera presupuesto prematuramente |
+| Cantidad acotada | Cantidades económicas disjuntas de filled/remainder/autorización no despachada no superan lo aprobado; encumbrances enlazan esas cantidades y no añaden unidades duplicadas. Lifecycle separado; fill parcial no libera presupuesto prematuramente. Precisión técnica2026-10-23 en RiskRC3 |
 | No duplicación tras incertidumbre | Ante timeout/reinicio no hay segundo envío mientras el primer intento sea `UNKNOWN`; búsqueda y reconciliación preceden una nueva decisión |
 | Eventos tolerantes a repetición | Mismo `execution_id`/evento no suma dos veces; corrección o bust se registra como hecho nuevo vinculado, no sobrescritura silenciosa |
 | Protección separada | Orden de entrada, salida, stop y legs se identifican por propósito y relación padre/hijo; G2 no cancela stop/protección |
@@ -40,7 +40,7 @@ Si falla el proceso después de enviar y antes de guardar respuesta, el recovere
 | Recuperación auditada | Se conserva comando, autorización, intento de envío, respuestas, eventos crudos, normalización y reconciliación con clocks/versiones |
 | Shadow aislado | `ShadowPortfolioProposal` no satisface tipos/autorizaciones de `TradeIntent`, `RiskDecision` ni `IncidentActionAuthorization` |
 
-La reserva de presupuesto se libera solo al conciliar fill/cancel/reject terminal y cantidad pendiente. ADR-006 fija el control compuesto; los detalles de fórmula/simultaneidad son D-035 y las garantías de almacenamiento/durabilidad son D-026. La interfaz del broker no se declara idempotente sin probe.
+La reserva se ajusta al conciliar fills y cantidad pendiente; fill convierte reserva pendiente en obligación/posición y no libera capacidad que siga consumida. Cancel/reject terminal extingue sólo la obligación verificada de su remainder; no borra fills. ADR-006 fija el control compuesto; [RiskRC3](research/R-027_risk_formula_spec_RC3.md) precisa cash reflejado/no reflejado y dimensiones. Fórmula/simultaneidad son D-035 y durabilidad D-026. La interfaz del broker no se declara idempotente sin probe.
 
 ## 4. Escenarios de aceptación del contrato
 
