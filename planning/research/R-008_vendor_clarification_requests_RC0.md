@@ -1,49 +1,30 @@
-# R008 — consultas preparadas de derechos/cobertura, sin enviar
+# R-008 — consultas definitivas de licencia/cobertura, envío personal
 
-2026-10-15. D022 P1/RESEARCHING. **DRAFT_NOT_SENT / OWNER_COMMUNICATION_AUTHORIZATION_REQUIRED**. No cuenta, contratación, keys, raw dataset, implementación o gasto autorizados. Son consultas técnicas para resolver gaps de admisión; no seleccionan proveedor. No se necesita Plus ni acción administrativa institucional.
+Actualizado 2026-10-23. D-022 P1/RESEARCHING. **READY_FOR_OWNER_SEND / NOT_SENT**. El propietario aprobó preparar ambas consultas y las enviará personalmente desde su correo personal. **El envío automático no está autorizado desde ninguna cuenta.** Esta instrucción sustituye el gate anterior de autorización/remitente, sin conceder permiso de contacto al agente. No cuentas, trials, contratos, credenciales, datasets ni gasto.
 
-## Motivo y fuentes
+## Versiones listas para enviar
 
-[Wave04](R-008_dataset_admission_wave04_2026-10-15.md): Twelve gratuito merece aclaración porque sus terms limitan retención al terminar; EODHD publica permiso de storage privado y ofrece historia paga, pero la retención/uso cloud/origen preciso sigue ambiguo. No se ha demostrado que no exista alternativa gratis suficiente. Los demás vendors conservan estado/scorecards; estas dos consultas no agotan discovery ni autorizan pagar.
+- [Twelve Data — correo completo en inglés](vendor_inquiries/twelve_data_email_final.txt).
+- [EODHD — correo completo en inglés](vendor_inquiries/eodhd_email_final.txt).
+- [Estado persistente de las dos consultas](vendor_inquiries/status.json).
 
-Los destinatarios constan en términos oficiales: [Twelve](https://twelvedata.com/terms) `support@twelvedata.com`; [EODHD](https://eodhd.com/financial-apis/terms-conditions) `sales@eodhistoricaldata.com`. Revalidar antes de enviar. Usar correo **personal autorizado por el propietario**, no inferir permiso de envío desde cuenta institucional o sesiónTeam. No incluir capital, reglas de estrategias, broker, credenciales ni archivos privados. No adjuntar datos. Propietario puede enviarlas directamente; el agente sólo envía si recibe autorización explícita de alcance y cuenta remitente.
+Destinatarios revalidados 2026-10-23 en [Twelve Terms](https://twelvedata.com/terms), support@twelvedata.com, y [EODHD Terms](https://eodhd.com/financial-apis/terms-conditions), sales@eodhistoricaldata.com. No se utilizó ninguna herramienta de correo ni se contactó a terceros.
 
-## Consulta 1 — Twelve Data
+Los textos preguntan por investigación, backtesting, PAPER automatizado y eventual trading automatizado de capital propio; clasificación personal/comercial y non-display por plan; historia/raw/actions/revisiones; seis categorías de conservación; terminación; procesamiento local frente a transmisión a IA externa; precio y cláusulas por producto/plan. EODHD añade procedencia y calidad de ETF estadounidenses, diferenciando precios indicativos de datos de bolsa. No incluyen institución, proyecto privado, reglas de estrategia, capital, credenciales ni adjuntos.
 
-**To:** support@twelvedata.com
+## Ciclo de comunicación y evidencia
 
-**Subject:** Personal research: US ETF history, retention and private AI processing
+| Evento comprobado | Estado de la consulta | Regla |
+|---|---|---|
+| Preparación aprobada; aún sin envío | READY_FOR_OWNER_SEND / NOT_SENT | Estado actual de ambas. Preparar no equivale a contactar |
+| Propietario confirma el envío de una consulta | EXTERNAL_CLARIFICATION_PENDING | Actualizar sólo esa consulta, fecha real y evidencia sanitizada; no deducir envío por tiempo transcurrido |
+| Llega respuesta | RECEIVED_UNASSESSED | Conservar fecha, producto/plan, scope, cláusulas/versión efectiva y restricciones; no admitir dataset |
+| Respuesta contrastada con contrato y evidencia | CLARIFICATION_ASSESSED | Enumerar resuelto/ambiguo/contradictorio; actualizar derechos por producto/uso, sin admisión automática |
 
-Hello,
+No hace falta guardar dirección personal, headers privados, tracking, tokens o adjuntos sensibles en Git. Una respuesta genérica de ventas no concede derechos de retención/IA/non-display ni demuestra cobertura, calidad o PIT. Si contradice términos, resolver la precedencia y obtener evidencia contractual aplicable antes de uso; no decidir unilateralmente que un email modifica el contrato.
 
-I am designing a personal, non-commercial research project on an owner-managed Windows PC. It is not an institutional deployment or a public redistribution service. Before selecting a data plan, could you clarify:
+## Trabajo independiente y admisión
 
-1. For SPY, QQQ, IWM, EFA, TLT and GLD, which plans provide daily unadjusted OHLCV back to each listing (including2004), splits and distributions with ex-date/pay-date? Are historical corrections, publication or availability timestamps supplied?
-2. Does a free individual plan permit automated low-frequency research/backtesting and private local raw/derived archives and backups for reproducible audit?
-3. May those archives be retained after subscription termination? Sections12.5/16 appear to require deletion. Does any audit exception apply to a private individual's reproducibility records, and which data would it cover?
-4. May small licensed extracts be processed privately by an AI service under the same individual's ChatGPT subscription, without public redistribution or model training by us? What additional terms, third-party restrictions or plan would apply?
-5. Please identify the applicable product/license and any required fixed/variable costs. This inquiry does not authorize an account, trial, subscription or purchase.
+Continuar PRICE–MATR, otras fuentes, PIT, broker/protección, motor/paridad, riesgo y preregistro sin esperar estas respuestas. No se ha probado que falte toda alternativa gratuita. La siguiente wave independiente examina acciones corporativas/PIT de Databento; tampoco selecciona proveedor ni admite datos.
 
-Thank you.
-
-## Consulta 2 — EODHD
-
-**To:** sales@eodhistoricaldata.com
-
-**Subject:** Personal ETF research: raw history, durable retention and AI use
-
-Hello,
-
-I am evaluating data for personal, non-commercial research on an owner-managed Windows PC. Before selecting a provider, please clarify:
-
-1. Which plan covers raw daily OHLCV, splits and cash distributions with ex-date/pay-date for SPY, QQQ, IWM, EFA, TLT and GLD from their listings, including2004? Which fields are raw versus adjusted, and are historical corrections/availability timestamps available?
-2. Your terms permit private storage and analysis. May raw data, derived research records and backups be kept permanently for reproducibility after cancellation? Please identify applicable restrictions and any additional license required.
-3. May minimal licensed extracts be processed privately through an individual ChatGPT subscription, without public redistribution or training models by us?
-4. For these exchange-listed US ETFs, what are the underlying data sources and limits of the indicative-prices disclaimer? This project would use separate broker data for execution; historical reproducibility and quality still matter.
-5. Please provide applicable product/license and fixed/variable pricing, including any non-display/cloud-processing requirements. This is an information request only; no trial, subscription, account or purchase is authorized.
-
-Thank you.
-
-## Evidencia de cierre
-
-Guardar respuesta fechada y producto/scope/terms efectivos, sanitizada; no incluir email personal completo si no es necesario para Git. Aclaración no demuestra cobertura/quality/PIT: seguir subcards y muestra admisible de desarrollo antes de selección/confirmación. Si proveedor requiere cuenta/login/contrato/gasto, nuevo gate concreto antes de actuar. Negativa/no respuesta no prueba ausencia de toda alternativa gratis. Mientras se espera pueden continuar tareas independientes; no declarar Preparation globalmente bloqueado ni datasets aceptados.
+Tras aclaración suficientemente específica: licencia aplicable → cobertura por seis subcards → muestra de desarrollo autorizada → QA cruzada/PIT/replay → evaluación de admisión. Derechos, cobertura, calidad y evidencia técnica verificable son requisitos separados. Cualquier cuenta/login/contrato o gasto conserva su gate. Reserva INTEGRITY_UNKNOWN; implementation_locked=true; TARGET_ACCEPTANCE_DEFERRED.

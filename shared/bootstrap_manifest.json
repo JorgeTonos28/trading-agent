@@ -169,7 +169,7 @@
     "planning/08_S2_isolation_spec_RC1.md",
     "planning/research/R-013_S2_acceptance_matrix_RC1.md"
   ],
-  "next_governance_item": "R008_COMM01_PERSONAL_SENDER_AUTHORIZATION_OR_OWNER_SENDS_NO_FINANCIAL_SELECTION",
+  "next_governance_item": "NO_NEW_OWNER_APPROVAL_REQUEST_CONTINUE_INDEPENDENT_FINANCIAL_PREPARATION",
   "isolation_variant": {
     "proposed": "S2_B",
     "selected": false,
@@ -229,5 +229,13 @@
   "paper_reference_capital_USD": 10000,
   "paper_costs_at_all_five_scales_required": true,
   "active_financial_rule_hypotheses": "planning/research/candidate_configs/PRICE_MATR_rules_RC1.json",
-  "vendor_clarification_drafts": "planning/research/R-008_vendor_clarification_requests_RC0.md"
+  "vendor_clarification_drafts": "planning/research/R-008_vendor_clarification_requests_RC0.md",
+  "vendor_inquiry_status": "planning/research/vendor_inquiries/status.json",
+  "vendor_delivery": {
+    "owner_sends_personally": true,
+    "automatic_send_authorized": false,
+    "external_messages_sent": 0,
+    "state": "READY_FOR_OWNER_SEND_NOT_SENT",
+    "blocks_independent_preparation": false
+  }
 }

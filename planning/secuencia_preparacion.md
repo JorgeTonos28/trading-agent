@@ -1,5 +1,13 @@
 # Secuencia de Preparation Program — vigencia ADR-013
 
+## Ruta vigente — 2026-10-23: consultas listas, sin esperar respuestas
+
+1. Dos correos definitivos aprobados para preparación y [entrega personal](research/R-008_vendor_clarification_requests_RC0.md); envío automático NO autorizado desde ninguna cuenta. Estado READY_FOR_OWNER_SEND/NOT_SENT, no EXTERNAL_CLARIFICATION_PENDING hasta confirmación del envío real.
+2. Continuar fuente alternativa/acciones corporativas/PIT y comparación por ventana admisible, sin datos de estrategia/holdout ni cuentas. La respuesta externa no es un bloqueo global.
+3. Continuar PRICE–MATR/configuración, broker/protección, motor/paridad, Risk y preregistro conforme a sus dependencias; agrupar evidencia suficiente antes de gobierno material. No seleccionar fuentes/Strategy/broker por avance documental.
+4. Una respuesta específica sólo resuelve el scope acreditado. Admisión aún exige licencia, cobertura, calidad y evidencia técnica/PIT verificable; ninguna respuesta comercial genérica basta.
+5. B/K2/M1/G-R1 y nominal10k decididos; costes obligatorios en las cinco escalas. F0 no congelado, M11/INTEGRITY_UNKNOWN, implementation_locked=true y TARGET_ACCEPTANCE_DEFERRED. Los siguientes bloques fechados conservan historia; no reabren permisos de envío.
+
 ## Ruta financiera actual — 2026-10-15
 
 1. G-R1/ADR020 y referencia nominal10k/ADR021 decididos. Costes evaluados en todas5escalas; no nuevos permisos financieros.

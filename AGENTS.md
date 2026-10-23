@@ -216,6 +216,10 @@ Continuously check for:
 
 ## Git and GitHub discipline
 
+### Vendor inquiries — owner delivery policy, 2026-10-23
+
+The owner approved preparing the Twelve Data and EODHD inquiries only and will send them personally from personal email. No automatic sending from any account is authorized. Use `planning/research/vendor_inquiries/status.json`: READY_FOR_OWNER_SEND/NOT_SENT until the owner confirms actual sending, then EXTERNAL_CLARIFICATION_PENDING for that inquiry. Never infer delivery from elapsed time. Do not include institutional or private project details. A generic sales response cannot admit a dataset: applicable licensing, coverage, quality and verifiable technical/PIT evidence remain separate gates. Continue independent financial P0/P1 work while clarification is pending; no account, trial, purchase or credential submission is authorized.
+
 GitHub is part of the project's persistent source of truth.
 
 Deployment Source Policy: `plan-architect` is preparation/candidate work; `main` is the stable approved baseline; a versioned approved release/tag is the reproducible deployment snapshot. Record its commit, manifest and acceptance evidence. Candidate probes may use pinned working-branch commits. Do not create/promote a deployment release or merge to main without the required checkpoint/approval.

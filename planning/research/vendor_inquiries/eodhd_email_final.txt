@@ -1,0 +1,22 @@
+To: sales@eodhistoricaldata.com
+Subject: Personal-use licensing and US ETF data provenance, retention and AI processing
+
+Hello EODHD team,
+
+I am evaluating market data for a private personal project. Could you answer the following separately for each applicable product and plan, including free plans where relevant, with references to the governing clauses?
+
+1. Permitted uses: Which plans permit personal research, backtesting, automated paper trading and, potentially later, automated trading using only my own capital? How are these uses classified? Are non-display, exchange or other additional licenses, declarations or fees required? Please distinguish historical, delayed and real-time products where applicable.
+
+2. Coverage and point-in-time history: For SPY, QQQ, IWM, EFA, TLT and GLD, which plans provide unadjusted daily OHLCV from listing, including 2004 where applicable, plus splits and cash distributions with ex-dividend and payment dates? Please identify raw versus adjusted fields and the availability of historical versions, corrections and publication/availability timestamps.
+
+3. US ETF price provenance and quality: Your disclaimer describes indicative prices and sources that may not be official exchanges. For these ETFs and the relevant historical products, are OHLCV values exchange/consolidated trade data, vendor reconstructions or indicative/derived prices? Which upstream sources are used, what do the daily close and volume represent, and how are missing observations, outliers and corrections handled? Please explain any source changes, limitations or documented quality checks relevant to backtesting and automated trading.
+
+4. Storage and retention: Please address separately local raw data, derived data, decision-time snapshots, research/backtest results, backups and audit records. What may be stored, retained and used during a subscription and after cancellation, expiry or termination?
+
+5. Processing rights: Please distinguish processing by my own local automated software from transmitting licensed data or limited extracts to an external AI service such as OpenAI/ChatGPT. For the latter, distinguish raw and derived extracts and specify third-party processing, redistribution, retention and model-training restrictions. I do not assume an individual AI subscription grants these rights.
+
+6. Plans and costs: Please identify the exact products/plans, applicable clauses, upstream restrictions and required fixed or usage-based charges. If additional written permission is needed, please explain the process.
+
+This is a preliminary information request only, with no commitment to an account, trial, subscription, purchase or credential submission. Please do not activate any service.
+
+Thank you.

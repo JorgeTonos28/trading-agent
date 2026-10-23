@@ -171,3 +171,7 @@ Q-060 (P1/D044) DECIDED: propietario eligióUSD10k nominal y añadió costes en 
 ## R008-COMM01 — aclaraciones de fuentes y autorización de comunicación
 
 P1/D022, PREPARED_NOT_SENT. [Dos borradores](research/R-008_vendor_clarification_requests_RC0.md) revisables, sólo preguntas sobre derechos/cobertura/costes; no contratación/datos/cuentas. Enviar desde una cuenta personal requiere autorización explícita/remitente o acción directa del propietario. Respuestas no admiten dataset sin subcards/QA. No nueva pregunta de DD ni preferencias B/K2/M1/G-R1/capital ya decididas. No bloqueo global por este permiso; próximo bloque puede estructurar investigación independiente según secuencia.
+
+## 2026-10-23 — consultas externas: preparación aprobada, entrega por propietario
+
+El propietario aprobó preparar [ambos correos definitivos](research/R-008_vendor_clarification_requests_RC0.md) y los enviará personalmente desde correo personal. Envío automático desde cualquier cuenta NO autorizado; el antiguo gate de autorización/remitente deja de ser la próxima aprobación requerida. [Ledger](research/vendor_inquiries/status.json): READY_FOR_OWNER_SEND/NOT_SENT, 0envíos; EXTERNAL_CLARIFICATION_PENDING sólo al confirmar envío real de cada consulta. Respuesta genérica no admite datos: licencia aplicable, cobertura, calidad y evidencia técnica/PIT verificable siguen independientes. Continuar los P0/P1 financieros sin esperar respuesta; no nuevo gasto/cuenta/trial/credenciales/selección. implementation_locked=true, TARGET_ACCEPTANCE_DEFERRED e INTEGRITY_UNKNOWN.

@@ -1,5 +1,5 @@
 schema_version: 1
-updated_on: 2026-10-15
+updated_on: 2026-10-23
 project:
   name: Trading OS
   purpose: auditable_agentic_quantitative_trading_platform
@@ -791,3 +791,15 @@ financial_preparation_wave08:
 
 profile_resolution_policy: APPROVAL_BLOCKS_AND_LATEST_DATED_WAVE_SUPERSEDE_HISTORICAL_SNAPSHOTS
 active_financial_checkpoint: financial_preparation_wave08
+
+vendor_communication_2026_10_23:
+  preparation_approved: true
+  delivery_by: OWNER_PERSONAL_EMAIL
+  automatic_send_authorized: false
+  status_ledger: planning/research/vendor_inquiries/status.json
+  current_status: READY_FOR_OWNER_SEND_NOT_SENT
+  external_messages_sent: 0
+  EXTERNAL_CLARIFICATION_PENDING_requires_actual_send_confirmation: true
+  generic_sales_reply_admits_dataset: false
+  independent_preparation_continues: true
+  supersedes_communication_gate: financial_preparation_wave08.owner_communication_gate
