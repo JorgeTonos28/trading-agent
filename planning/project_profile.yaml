@@ -828,3 +828,15 @@ financial_preparation_wave09:
   implementation_locked: true
   target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED
   incremental_spend: 0
+
+vendor_sent_owner_declaration:
+  recorded_on: 2026-10-23
+  status: AWAITING_VENDOR_RESPONSE
+  external_messages_sent_owner_reported: 2
+  exact_send_date: UNKNOWN_NOT_STATED
+  evidence: OWNER_DECLARATION_NOT_MAILBOX_VERIFIED
+  vendor_response_received: false
+  usage_authorization_received: false
+  automatic_send_authorized: false
+  blocks_independent_preparation: false
+  supersedes: vendor_communication_2026_10_23

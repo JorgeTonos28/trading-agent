@@ -243,3 +243,7 @@ Instrucción explícita del propietario: preparar correos Twelve Data/EODHD, no 
 ## 2026-10-23 — continuación independiente R-008: acciones corporativas y PIT
 
 [Wave05](research/R-008_alternative_actions_PIT_wave05_2026-10-23.md) documenta alternativa Databento, límites por componente/ventana y traps de revisiones/alta/filtrado/cuota. Matriz CA01–09 preregistrada NOT_EXECUTED, sin cuenta, descarga, API, SDK nuevo o gasto; no dato/engine/Strategy admitido. Scorecard económico, DataCard de demanda, readiness/cola y riesgos/supuestos/exposure actualizados. Se corrige texto obsoleto D023 «ningún engine instalado»: QE0 local de investigación ya documentado, no selección ni target acceptance. Correos conservan 0envíos y owner delivery; no espera de respuestas. No cambio B/K2/M1/G-R1/10k/5escalas ni apertura de holdout.
+
+## 2026-10-23 — envío personal confirmado por declaración del propietario
+
+Twelve Data y EODHD: **AWAITING_VENDOR_RESPONSE**, equivalente a EXTERNAL_CLARIFICATION_PENDING; 2envíos declarados, no verificación de buzón. [Ledger](research/vendor_inquiries/status.json) separa fecha de declaración2026-10-23 de fecha exacta de envío UNKNOWN/no indicada. Sin respuesta ni derechos de uso/dataset admitido; no envío automático autorizado. No esperar respuestas para continuar preparación financiera P0/P1.

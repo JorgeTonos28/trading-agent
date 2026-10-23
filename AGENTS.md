@@ -218,6 +218,8 @@ Continuously check for:
 
 ### Vendor inquiries — owner delivery policy, 2026-10-23
 
+Current owner declaration: both inquiries have been sent personally; use AWAITING_VENDOR_RESPONSE (external clarification pending), evidence=OWNER_DECLARATION, received 2026-10-23. Exact send date was not supplied: keep it UNKNOWN, distinct from declaration date. No vendor response, license or data admission is implied; no automatic sending permission is granted. The preparation-only/not-sent wording below is historical.
+
 The owner approved preparing the Twelve Data and EODHD inquiries only and will send them personally from personal email. No automatic sending from any account is authorized. Use `planning/research/vendor_inquiries/status.json`: READY_FOR_OWNER_SEND/NOT_SENT until the owner confirms actual sending, then EXTERNAL_CLARIFICATION_PENDING for that inquiry. Never infer delivery from elapsed time. Do not include institutional or private project details. A generic sales response cannot admit a dataset: applicable licensing, coverage, quality and verifiable technical/PIT evidence remain separate gates. Continue independent financial P0/P1 work while clarification is pending; no account, trial, purchase or credential submission is authorized.
 
 GitHub is part of the project's persistent source of truth.

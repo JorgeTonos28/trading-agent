@@ -234,9 +234,12 @@
   "vendor_delivery": {
     "owner_sends_personally": true,
     "automatic_send_authorized": false,
-    "external_messages_sent": 0,
-    "state": "READY_FOR_OWNER_SEND_NOT_SENT",
-    "blocks_independent_preparation": false
+    "external_messages_sent": 2,
+    "state": "AWAITING_VENDOR_RESPONSE",
+    "blocks_independent_preparation": false,
+    "evidence": "OWNER_DECLARATION",
+    "declaration_received_on": "2026-10-23",
+    "exact_send_date": null
   },
   "latest_source_admission_research": "planning/research/R-008_alternative_actions_PIT_wave05_2026-10-23.md",
   "source_acceptance_cases_status": "CA01_CA09_SPECIFIED_NOT_EXECUTED"

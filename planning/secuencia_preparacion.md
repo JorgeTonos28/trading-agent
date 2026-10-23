@@ -2,7 +2,7 @@
 
 ## Ruta vigente — 2026-10-23: consultas listas, sin esperar respuestas
 
-1. Dos correos definitivos aprobados para preparación y [entrega personal](research/R-008_vendor_clarification_requests_RC0.md); envío automático NO autorizado desde ninguna cuenta. Estado READY_FOR_OWNER_SEND/NOT_SENT, no EXTERNAL_CLARIFICATION_PENDING hasta confirmación del envío real.
+1. Dos correos definitivos aprobados para preparación y [entrega personal](research/R-008_vendor_clarification_requests_RC0.md); envío automático NO autorizado desde ninguna cuenta. Vigencia posterior en esta ejecución: el propietario confirmó ambos envíos personales; AWAITING_VENDOR_RESPONSE / EXTERNAL_CLARIFICATION_PENDING, sin respuesta ni autorización. Fecha exacta de envío UNKNOWN; declaración recibida2026-10-23.
 2. [Wave05 de fuente alternativa/acciones corporativas/PIT](research/R-008_alternative_actions_PIT_wave05_2026-10-23.md) documentada y [revisada independientemente](research/R-008_wave09_independent_review_2026-10-23.md), sin datos de estrategia/holdout ni cuentas. Matriz CA01–09 NOT_EXECUTED; sin fuente admitida. Continuar mapa por ventana/componente y las demás rutas; la respuesta externa no es un bloqueo global.
 3. Continuar PRICE–MATR/configuración, broker/protección, motor/paridad, Risk y preregistro conforme a sus dependencias; agrupar evidencia suficiente antes de gobierno material. No seleccionar fuentes/Strategy/broker por avance documental.
 4. Una respuesta específica sólo resuelve el scope acreditado. Admisión aún exige licencia, cobertura, calidad y evidencia técnica/PIT verificable; ninguna respuesta comercial genérica basta.

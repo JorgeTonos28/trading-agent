@@ -1,5 +1,7 @@
 # R-008 — consultas definitivas de licencia/cobertura, envío personal
 
+**Vigencia por declaración del propietario, recibida 2026-10-23:** ambas consultas enviadas personalmente; AWAITING_VENDOR_RESPONSE / EXTERNAL_CLARIFICATION_PENDING. Fecha exacta de envío no declarada, no inventada; fecha de declaración distinta. Sin respuesta ni autorización de uso. Ledger actualizado; textos siguientes de preparación/no envío son historia del checkpoint anterior. Envío automático sigue prohibido.
+
 Actualizado 2026-10-23. D-022 P1/RESEARCHING. **READY_FOR_OWNER_SEND / NOT_SENT**. El propietario aprobó preparar ambas consultas y las enviará personalmente desde su correo personal. **El envío automático no está autorizado desde ninguna cuenta.** Esta instrucción sustituye el gate anterior de autorización/remitente, sin conceder permiso de contacto al agente. No cuentas, trials, contratos, credenciales, datasets ni gasto.
 
 ## Versiones listas para enviar

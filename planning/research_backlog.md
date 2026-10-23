@@ -144,3 +144,7 @@ Costes obligatorios en5escalas2k/5k/10k/25k/50k y todos modelos admitidos, conse
 ## 2026-10-23 — consultas externas: preparación aprobada, entrega por propietario
 
 El propietario aprobó preparar [ambos correos definitivos](research/R-008_vendor_clarification_requests_RC0.md) y los enviará personalmente desde correo personal. Envío automático desde cualquier cuenta NO autorizado; el antiguo gate de autorización/remitente deja de ser la próxima aprobación requerida. [Ledger](research/vendor_inquiries/status.json): READY_FOR_OWNER_SEND/NOT_SENT, 0envíos; EXTERNAL_CLARIFICATION_PENDING sólo al confirmar envío real de cada consulta. Respuesta genérica no admite datos: licencia aplicable, cobertura, calidad y evidencia técnica/PIT verificable siguen independientes. Continuar los P0/P1 financieros sin esperar respuesta; no nuevo gasto/cuenta/trial/credenciales/selección. implementation_locked=true, TARGET_ACCEPTANCE_DEFERRED e INTEGRITY_UNKNOWN.
+
+## 2026-10-23 — envío personal confirmado por declaración del propietario
+
+Twelve Data y EODHD: **AWAITING_VENDOR_RESPONSE**, equivalente a EXTERNAL_CLARIFICATION_PENDING; 2envíos declarados, no verificación de buzón. [Ledger](research/vendor_inquiries/status.json) separa fecha de declaración2026-10-23 de fecha exacta de envío UNKNOWN/no indicada. Sin respuesta ni derechos de uso/dataset admitido; no envío automático autorizado. No esperar respuestas para continuar preparación financiera P0/P1.
