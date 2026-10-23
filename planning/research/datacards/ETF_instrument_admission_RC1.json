@@ -173,5 +173,6 @@
       "full_200_close_warmup_before_2005": "IMPOSSIBLE_BY_CALENDAR_BOUND"
     }
   ],
-  "source_research_not_admission": "../R-008_sources_admission_wave06_2026-10-23.md"
+  "source_research_not_admission": "../R-008_perpetual_retention_sources_RC0.md",
+  "access_probe_not_admission": "../probes/r008-kibot-access/result-01.json"
 }

@@ -48,3 +48,7 @@ No se necesita esperar ambos correos para los puntos independientes. Tampoco se 
 ## Secuencia ejecutable posterior y siguiente gobierno
 
 El paquete autónomo actual cubrió reglas, recursos, matching, compilación fuente, alternativas/PIT/costes y revisión. Q061 quedó aprobado en ADR022; la siguiente tarea autónoma es resolver datos/broker/engine y bindings financieros. No volver a pedir aprobación de su significado o tolerancia. En paralelo posterior: B3/protection bindings y evidencia admisible de datos; QP/adaptaciones de engine; propuesta conjunta Risk/órdenes y stack D1. Las respuestas externas se evalúan cuando existan, sin autorizar usos por respuesta genérica.
+
+## Actualización wave11 — 2026-10-23
+
+[Checkpoint16](16_financial_stack_checkpoint_RC0.md) es readiness vigente. Q061DECIDED; Q062familiastecnológicas READY_FOR_DECISION, no stack/pin/broker/target admitidos.

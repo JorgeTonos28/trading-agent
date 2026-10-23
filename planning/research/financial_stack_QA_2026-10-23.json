@@ -1,0 +1,208 @@
+{
+  "captured_utc": "2026-10-23T17:50:06.796960+00:00",
+  "scope": "REPOSITORY_CONSISTENCY_HASH_ARITHMETIC_AND_REVIEW_PACKAGING_NOT_FINANCIAL_ACCEPTANCE",
+  "baseline_commit": "183692066dd81cbca45896363a411f7cdd6adbae",
+  "checked_changed_files": 44,
+  "parse_counts": {
+    "json": 11,
+    "yaml": 1,
+    "python_ast": 3
+  },
+  "checks": [
+    {
+      "id": "CHANGED_STRUCTURED_FILES_PARSE",
+      "status": "PASS",
+      "detail": {
+        "counts": {
+          "json": 11,
+          "yaml": 1,
+          "python_ast": 3
+        },
+        "errors": []
+      }
+    },
+    {
+      "id": "QL2_SOURCE_HASHES_UNCHANGED",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL2_NINE_COMPONENT_OBSERVATIONS",
+      "status": "PASS",
+      "detail": "Component expectations, including full fill and early cash; NOT integrated parity or acceptance."
+    },
+    {
+      "id": "QL2_BUILD_STEPS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL2_POST_RUN_SOURCE_PIN",
+      "status": "PASS",
+      "detail": "Post-run observation, not runtime attestation or original preflight."
+    },
+    {
+      "id": "QL2_FOUR_SOURCE_FILES_AND_EOL",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL2_LOCAL_OUTPUT_HASHES_RETAINED",
+      "status": "PASS",
+      "detail": "Ignored local outputs only; no binary committed."
+    },
+    {
+      "id": "QL2_COMPONENT_SCOPE",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "KD1_SOURCE_HASHES_UNCHANGED",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "KD1_LIMITED_ACCESS_RESULT",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "KD1_DIAGNOSTIC_NOT_ADMISSION",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "KD1_NO_RAW_FILES",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "KD1_NO_PRIVATE_ACCOUNT_SPEND_HOLDOUT_OR_TRIAL",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "THREE_COST_MODELS_ALL_FIVE_CAPITALS",
+      "status": "PASS",
+      "detail": "Component arithmetic only; total/initial/variable unknowns retained; no CAGR inference."
+    },
+    {
+      "id": "NO_SPEND_AUTHORIZATION_IN_SCENARIOS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "TWELVE_VARIANTS_UNCHANGED_ZERO_TRIALS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "IMMUTABLE_RULE_CONFIGURATION_BYTES",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "TEN_DATACARDS_NOT_ADMITTED",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "PROFILE_CURRENT_FINANCIAL_CHECKPOINT",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "Q061_APPROVED_CLAIM_ONLY",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "DD_UNCERTAINTY_AND_REPORT_DIMENSIONS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "LOCK_TARGET_AND_INTEGRITY",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "VENDOR_AWAITING_OWNER_DECLARED_NOT_AUTHORIZED",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "CHANGED_MARKDOWN_LOCAL_LINKS",
+      "status": "PASS",
+      "detail": {
+        "checked": 392,
+        "missing": []
+      }
+    },
+    {
+      "id": "MANIFEST_REF_MASTER_PLAN_CANDIDATE",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "MANIFEST_REF_FINANCIAL_READINESS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "MANIFEST_REF_DD_REPORT_CONTRACT",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "MANIFEST_REF_ENGINE_RECOMMENDATION",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "MANIFEST_REF_BROKER_RECOMMENDATION",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "SCOPED_SECRET_MARKER_SCAN",
+      "status": "PASS",
+      "detail": {
+        "matched_files": [],
+        "limitation": "Not a full security audit; vendor-published guest identifiers are public, not owner credentials."
+      }
+    },
+    {
+      "id": "ONLY_PLANNING_AND_DOCUMENT_ARTIFACTS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "ACTIVE_BRANCH_AND_UNCHANGED_MAIN",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "WORKTREE_DIFF_WHITESPACE",
+      "status": "PASS",
+      "detail": {
+        "exit_code": 0,
+        "output": ""
+      }
+    }
+  ],
+  "counts": {
+    "PASS": 33,
+    "FAIL": 0
+  },
+  "broker_or_engine_selected": false,
+  "datasets_admitted": 0,
+  "strategy_trials": 0,
+  "statistical_method_accepted": false,
+  "PAPER_runtime_accepted": false,
+  "implementation_locked": true,
+  "target_acceptance": "TARGET_ACCEPTANCE_DEFERRED",
+  "holdout": "INTEGRITY_UNKNOWN",
+  "main_modified": false,
+  "limitation": "Reuses immutable probe captures; no probe rerun, external request, trading simulation, administrative action, or statistical validation in QA."
+}

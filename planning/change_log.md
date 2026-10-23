@@ -262,3 +262,13 @@ Twelve Data y EODHD: **AWAITING_VENDOR_RESPONSE**, equivalente a EXTERNAL_CLARIF
 Propietario aprueba **DD-E condicionado** como interpretación inferencial G-R1: diferencia esperada de máximos DD frente a EW6-BH completo bajo P/H/I0 y supuestos explícitos, tolerancia0/upperbound válido≤0. Reportar DD observado/distribución/probabilidad/magnitud de deterioro/cuantiles cuando fiables; mejoras extremas infrecuentes con mayoría peor son limitación material visible, no «menor riesgo» sin contexto. DD-P no aprobado, sin umbral implícito. Separar incertidumbre datos/parámetros/modelo/MC; no bootstrap genérico o simulación abundante sin validación. Otros endpoints/Risk/gobierno independientes; no promoción automática. [ADR022](decisions/ADR-022-conditional-expected-drawdown-claim.md).
 
 Q061 DECIDED; D011 RESEARCHING/método no admitido. No otra pregunta DD conceptual; completar pruebas viables acotadas y priorizar datos/broker/engine/reglas/Planv1. Holdout INTEGRITY_UNKNOWN, implementation_locked=true, TARGET_ACCEPTANCE_DEFERRED.
+
+## 2026-10-23 — wave11 datos, broker, engine y masterRC
+
+- Registrada aprobación owner Q061 enADR022, sietecondiciones y lock/integridad/target preservados, commit1836920. QA inicial falló por lectura cp1252 de JSON; corregida lecturaUTF8 y comprobaciones de invariantes PASS, sin cambios de evidenciapara ocultar error.
+- QL2 nativoC# sinAlgorithm/strategy/run: restore/build/runPASS,9checksdefaultfills/actions; límites de dividendpaydate/partial/dedupe por llamada explícitos, source/binary provenanceobservada después.
+- KD1 guestanónimo docs sin cuenta/secretosowner: loginPASS,6ERROR; diagnóstico una historyHTTP200/body401;0bar/raw, sin retries/bypass. RetenciónperpetuaKibot/FirstRate investigada, todos4+6cardsnoadmitidos. Costes3modelos×5escalas y FirstRateprimer-año/regimen separados,20celdasprevias conservadas.
+- BrokerRC4 verifica IBKRPro/funding, AlpacaPaperglobal y schemasPDTretirados2026; régimenporfirma no ampliación de riesgo. Q062familias AlpacaPaperOnly+LEANsource propuesta, no selección ni setup/gasto.
+- MasterPlanv1.0RC0 DRAFT/NOTREADY y checkpoint16 consolidan contratos/dependencias. Review crítica acotada confirma scope, sin P0/P1 nuevos; metodología no host-only, targetnoaceptado, mainintacto.
+
+QA wave11: primer arranque del checker no encontró PyYAML en el intérprete por defecto; se utilizó la dependencia local ya existente, sin instalación. La comprobación completa posterior pasó 33/33 checks de coherencia/hash/aritmética, no de aceptación financiera. Redacción del master RC0 y del paquete Q-062 aclarada; capturas/scripts/configuración inmutable conservados.

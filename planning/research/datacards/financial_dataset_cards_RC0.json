@@ -1,6 +1,6 @@
 {
   "updated_on": "2026-10-23",
-  "state": "SOURCE_DOCS_ONLY_ALL_CARDS_NOT_ADMITTED",
+  "state": "SOURCE_DOCS_AND_LIMITED_ACCESS_ATTEMPT_ALL_CARDS_NOT_ADMITTED",
   "cards": [
     {
       "schema_version": "planning-0.1",
@@ -32,7 +32,8 @@
       "evidence_refs": [
         "../R-008_dataset_admission_wave04_2026-10-15.md",
         "../R-008_alternative_actions_PIT_wave05_2026-10-23.md",
-        "../R-008_sources_admission_wave06_2026-10-23.md"
+        "../R-008_sources_admission_wave06_2026-10-23.md",
+        "../R-008_perpetual_retention_sources_RC0.md"
       ],
       "instruments": [
         {
@@ -114,7 +115,8 @@
           "CA09"
         ],
         "status": "NOT_EXECUTED"
-      }
+      },
+      "access_probe_result": "LOGIN_PASS_NO_HISTORICAL_BARS_DELIVERED_KD1"
     },
     {
       "schema_version": "planning-0.1",

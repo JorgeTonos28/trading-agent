@@ -29,3 +29,7 @@ Negativos previos a selección/aceptación: fill parcial con child held; cancel 
 SDKs/APIs oficiales: WRAP/ADAPT candidatos; no herramienta/MCP con credenciales de broker en AI. PAPER_V1_VIABLE_FREE=CONDITIONAL por broker/cuenta/datos; PAPER_V1_COST acceso paper0 donde documentado, fees/data/operación y fijo/variable/mensual efectivos UNKNOWN; LIVE_COST UNKNOWN por cuenta/mercado/volumen. FREE_ALTERNATIVE los otros finalistas por admitir. PAID_INCREMENTAL_VALUE mejores datos/ejecución/soporte sólo si medidos. ECONOMIC_JUSTIFICATION_REQUIRED=YES antes de gasto. Lock-in de sesiones/IDs/órdenes/market entitlements y salida/recovery deben medirse.
 
 Un investigador/seisETF/órdenes de baja frecuencia no define aún volumen/turnover; no inventar mensualización. Costes de todas rutas admitidas/estrés en2k/5k/10k/25k/50k, nominal10k y20celdas previas conservados. Elegibilidad, trading permissions, terms y pricing por producto no admitidos por esta nota.
+
+## Actualización wave11 — 2026-10-23
+
+[RC4](R-007_PAPER_broker_selection_packet_RC4.md) propone AlpacaPaperOnly como targetPAPER por acceso/coste documentados; IBKRrequierePro/fundingsegúndocsactuales. Q062ownerpendiente, ningún mapping/latencia/riesgo aceptado.

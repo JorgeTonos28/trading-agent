@@ -106,3 +106,7 @@ Costes obligatorios en5escalas2k/5k/10k/25k/50k y todos modelos admitidos, conse
 ## Vigencia técnica wave10 — 2026-10-23
 
 Wave10: research/source_cost_scenarios_wave06.json añade escenario publicado NorgatePlatinum630USD/año en las5escalas; no oferta mensual, totalUNKNOWN, no contratación. Veinte celdas hipotéticas previas preservadas.
+
+## Actualización wave11 — 2026-10-23
+
+[Sourcecostwave11](research/source_cost_scenarios_wave11.json): guestaccess0 anunciado pero acceso efectivohistorynoestablecido/totalUNKNOWN; paidKibot14/mo reserva, FirstRateupdates59.95/mo opcional+inicialUNKNOWN. Primer año11updates659.45 versus régimen12updates719.40 separados, todos5capitales y20celdas previas. No fee por depositar ni nominal10kautorizafunding.

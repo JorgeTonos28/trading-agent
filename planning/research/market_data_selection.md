@@ -60,3 +60,7 @@ Costes obligatorios en5escalas2k/5k/10k/25k/50k y todos modelos admitidos, conse
 ## Fuente alternativa/PIT — 2026-10-23
 
 [Wave05](R-008_alternative_actions_PIT_wave05_2026-10-23.md) examina acciones corporativas Databento como alternativa complementaria: revisión/alta/disponibilidad/recepción y replay observado versus reconstrucción se distinguen. Matriz CA01–09 especificada, NOT_EXECUTED; ninguna API/muestra/cuenta. WRAP condicionado/REFERENCE_ONLY actual; no source selected ni admisión. Derechos de retención/IA, cobertura/calidad, costes y paridad siguen pendientes. No esperar respuestas Twelve/EODHD para continuar P0/P1; envío automático prohibido. Las notas anteriores de autorización de comunicación son históricas, sustituidas por entrega personal del propietario.
+
+## Actualización wave11 — 2026-10-23
+
+[RetenciónpermanenteRC0](R-008_perpetual_retention_sources_RC0.md) agrega Kibot/FirstRate con derechos restringidos; KD1no recibióCSV, no fuenteadmitida. Twelve/EODHD awaiting; no esperar correos para decidir engine/broker. Docs2026/livefeed/PIT/cash separados.

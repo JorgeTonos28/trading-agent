@@ -191,3 +191,12 @@ A051 integridad de reserva permanece UNVERIFIED, no resuelta por aprobación O-B
 Propietario aprueba **DD-E condicionado** como interpretación inferencial G-R1: diferencia esperada de máximos DD frente a EW6-BH completo bajo P/H/I0 y supuestos explícitos, tolerancia0/upperbound válido≤0. Reportar DD observado/distribución/probabilidad/magnitud de deterioro/cuantiles cuando fiables; mejoras extremas infrecuentes con mayoría peor son limitación material visible, no «menor riesgo» sin contexto. DD-P no aprobado, sin umbral implícito. Separar incertidumbre datos/parámetros/modelo/MC; no bootstrap genérico o simulación abundante sin validación. Otros endpoints/Risk/gobierno independientes; no promoción automática. [ADR022](decisions/ADR-022-conditional-expected-drawdown-claim.md).
 
 Q061 DECIDED; D011 RESEARCHING/método no admitido. No otra pregunta DD conceptual; completar pruebas viables acotadas y priorizar datos/broker/engine/reglas/Planv1. Holdout INTEGRITY_UNKNOWN, implementation_locked=true, TARGET_ACCEPTANCE_DEFERRED.
+
+## Evidencia wave11 — 2026-10-23
+
+- No todo proveedor obliga borrar raw al expirar: licencias públicas Kibot/FirstRate admiten conservación bajo restricciones. No equivale a licencia IA/non-display ni datos de calidad/PIT admitidos.
+- LoginHTTP200/body200 no demuestra historyusable: KD1diagnóstico HTTP200/body401. Causa desconocida, sin cobertura rechazada ni bypass/retry.
+- DefaultLEAN Raw no modela pay-date; QL2 nativo lo confirma. Fullfill nativo no evidencia liquididad/partial; dobleApplyDividend no evidencia duplicatepipeline.
+- Paper API no siempre independiente de funding: requirementsTWSactual Profondeada. Depósito no fee ni autorización para mover10k.
+- No exigir campos PDT retirados2026-07-06 en Alpaca; FINRA tiene transición por firma, IBKR régimen aplicableUNKNOWN. Ninguna revisión normativa autoriza leverage.
+- Docehipótesis/0trials,4+6cards noadmitidas, reserveintegrityUNKNOWN, targetdeferred/lock preservados.

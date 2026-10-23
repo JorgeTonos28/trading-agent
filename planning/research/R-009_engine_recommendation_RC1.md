@@ -35,3 +35,7 @@ Importador/cash book/fee/slippage/order/broker model deben declararse explícita
 LEAN engine=REUSE_AS_IS + WRAP/ADAPT; Common source disponible/build parcial YES; target UNKNOWN; technically compatible CONDITIONAL; selected NO. Nautilus=REUSE_AS_IS + WRAP/ADAPT, componente nativo observado YES, resto CONDITIONAL. CLI/Cloud=REFERENCE_ONLY reserva paga; engine propio general BUILD no justificado.
 
 PAPER_V1_VIABLE_FREE=CONDITIONAL engine/data/ops; PAPER_V1_COST engines0 licencias fuente, dependencias/build/integración/almacenamiento/QA y mensual real UNKNOWN. LIVE_COST producto/escala/operación UNKNOWN. FREE_ALTERNATIVE otro motor OSS. PAID_INCREMENTAL_VALUE soporte/setup/continuidad si brecha y beneficio medidos. ECONOMIC_JUSTIFICATION_REQUIRED=YES antes de gasto. Lock-in APIs/normalización/traces/catalog y coste de salida por medir. Un investigador/seisETF no define carga real; registrar fijo/variable/mensual/escala, todas cinco escalas2k/5k/10k/25k/50k y20celdas hipotéticas, sin seleccionar celda favorable. No gasto ni target acceptance.
+
+## Actualización wave11 — 2026-10-23
+
+[PaqueteselecciónRC2](R-009_engine_selection_packet_RC2.md) añade QL2nativo9checks, no estrategia/backtest; Q062selecciónfamiliapendienteowner, pin/paridad/deps/modelos/targetnoaceptados.

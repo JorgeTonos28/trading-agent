@@ -225,3 +225,15 @@ No control de esta tabla autoriza G3, gasto, broker/Strategy o implementación. 
 Propietario aprueba **DD-E condicionado** como interpretación inferencial G-R1: diferencia esperada de máximos DD frente a EW6-BH completo bajo P/H/I0 y supuestos explícitos, tolerancia0/upperbound válido≤0. Reportar DD observado/distribución/probabilidad/magnitud de deterioro/cuantiles cuando fiables; mejoras extremas infrecuentes con mayoría peor son limitación material visible, no «menor riesgo» sin contexto. DD-P no aprobado, sin umbral implícito. Separar incertidumbre datos/parámetros/modelo/MC; no bootstrap genérico o simulación abundante sin validación. Otros endpoints/Risk/gobierno independientes; no promoción automática. [ADR022](decisions/ADR-022-conditional-expected-drawdown-claim.md).
 
 Q061 DECIDED; D011 RESEARCHING/método no admitido. No otra pregunta DD conceptual; completar pruebas viables acotadas y priorizar datos/broker/engine/reglas/Planv1. Holdout INTEGRITY_UNKNOWN, implementation_locked=true, TARGET_ACCEPTANCE_DEFERRED.
+
+## Riesgos wave11
+
+| ID | Prioridad | Hallazgo/control |
+|---|---|---|
+| RF-W11-1 | P1 | Papercash/dividendos/fees/fills no economictruth: bookbroker reconciliado separado de referencia analítica, sin cashinventado ni paridad implícita |
+| RF-W11-2 | P1 | Brokerselección por cuenta"gratis" sin B3: noentry sin mapping/protección admisibles; OTOreplace/fullfillgaps y ratchet siguen gates |
+| RF-W11-3 | P1 | Historia accesible anunciada pero body401: no tomarHTTP200 porCSV; desconocida cobertura; no retries persistentes/evadir auth |
+| RF-W11-4 | P1 | Dependencia en schema PDT obsoleto: versionar SDK/contratos y comprobar campos retirados; no generalizar cambios de firma a otra |
+| RF-W11-5 | P1 | Retención favorable sin pay-date/vintage: no convertir últimosadjustments en as-of, localvsIA separados, costes iniciales/totalUNKNOWN |
+
+No parent/gate operativo aceptado; fuentevalidez y target independientes del consenso de review.

@@ -104,3 +104,7 @@ Costes obligatorios en5escalas2k/5k/10k/25k/50k y todos modelos admitidos, conse
 ## Vigencia técnica wave10 — 2026-10-23
 
 Wave10: reglas/bindings RC2 y preregistroRC7, matriz15; PRICE/MATR siguen hipótesis comparables sin datos/método admitidos, Form4 investigación. Selección OPEN.
+
+## Actualización wave11 — 2026-10-23
+
+[MasterRC0](../docs/master/MASTER_PLAN_v1.0_RC0.md) integra selecciónabierta; EQ3reglas preservadas,12hipótesis/0trials. Q062 no selecciona Strategy o cambia p_auth/stop/budgets.

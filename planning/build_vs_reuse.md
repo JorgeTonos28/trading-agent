@@ -92,3 +92,7 @@ Reutilizar controles Windows antes de construir contención: restricted tokens c
 ## Vigencia técnica wave10 — 2026-10-23
 
 Wave10: LEAN source principal condicionado de investigación, Nautilus alternativa; Common/Enginecomponent build y matching no aceptan fidelidad/seguridad. Ver research/R-009_engine_recommendation_RC1.md y matrix15; motores seleccionadosNO.
+
+## Actualización wave11 — 2026-10-23
+
+[EngineRC2](research/R-009_engine_selection_packet_RC2.md), [brokerRC4](research/R-007_PAPER_broker_selection_packet_RC4.md) y Q062 preparan selección de familias: LEANreuse/adapt, SDK/APIswrap; reservasNautilus/IBKR, sin motor propio general/contratos pagados. Source/build/behavior no selección por anticipado.

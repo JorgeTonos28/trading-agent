@@ -1,5 +1,7 @@
 # Secuencia de Preparation Program — vigencia ADR-013
 
+**Vigencia financiera wave11 — 2026-10-23:** [checkpoint16](16_financial_stack_checkpoint_RC0.md) y [MasterPlanRC0](../docs/master/MASTER_PLAN_v1.0_RC0.md), DRAFT/NOT_READY. Q061 DECIDED ADR022; investigación DD actual acotada, método no aceptado. Q062 READY_FOR_DECISION propone seleccionar Alpaca Paper Only + LEAN source como familias de diseño PAPER, sin aceptación de pin/protección/target ni autorización de cuenta/gasto. Datos4+6cards NOT_ADMITTED; vendors AWAITING_VENDOR_RESPONSE. Holdout INTEGRITY_UNKNOWN, implementation_locked=true, TARGET_ACCEPTANCE_DEFERRED. Notas anteriores fechadas conservadas como historia.
+
 **Checkpoint financiero vigente — 2026-10-23:** [readiness RC0](15_financial_design_readiness_RC0.md), [preregistro RC7](research/R-020_preregistration_readiness_RC7.md) y [evidencia ejecutada](research/R-020_financial_probe_findings_2026-10-23.md). Las notas fechadas anteriores se conservan como historia. D035-T1 semántica y D011-T1 grafo corregidos, no cierre de sus parents; D030/D031 diseño P1, pruebas operativas P2. Vendor inquiries AWAITING_VENDOR_RESPONSE por declaración owner, fecha exacta UNKNOWN; no respuestas/autorización. Q061 DECIDED en ADR022; continuar datos/broker/engine y diseño financiero, sin accesoPlus/admin/gasto. Holdout INTEGRITY_UNKNOWN, implementation_locked=true, TARGET_ACCEPTANCE_DEFERRED.
 
 ## Ruta vigente — 2026-10-23: consultas listas, sin esperar respuestas
@@ -223,3 +225,7 @@ La siguiente consulta al propietario es Q061, no envío de correo ni cuentaPlus.
 Propietario aprueba **DD-E condicionado** como interpretación inferencial G-R1: diferencia esperada de máximos DD frente a EW6-BH completo bajo P/H/I0 y supuestos explícitos, tolerancia0/upperbound válido≤0. Reportar DD observado/distribución/probabilidad/magnitud de deterioro/cuantiles cuando fiables; mejoras extremas infrecuentes con mayoría peor son limitación material visible, no «menor riesgo» sin contexto. DD-P no aprobado, sin umbral implícito. Separar incertidumbre datos/parámetros/modelo/MC; no bootstrap genérico o simulación abundante sin validación. Otros endpoints/Risk/gobierno independientes; no promoción automática. [ADR022](decisions/ADR-022-conditional-expected-drawdown-claim.md).
 
 Q061 DECIDED; D011 RESEARCHING/método no admitido. No otra pregunta DD conceptual; completar pruebas viables acotadas y priorizar datos/broker/engine/reglas/Planv1. Holdout INTEGRITY_UNKNOWN, implementation_locked=true, TARGET_ACCEPTANCE_DEFERRED.
+
+## Endpoint wave11 — 2026-10-23
+
+Q061 aprobado/sincronizadoADR022. Ejecutados QL2componentes nativos y KD1/diagnósticoacotado; retenciónperpetua, brokeraccess/PDTactual y enginefamilies comparados; MasterRC0 y checkpoint16 preparados/revisados, no finalPlan. Paquete autónomo llega a Q062 de selección de familias tecnológicas, sin autorización de acceso/gasto o seguridad. Después de decisión: bindings concretos broker/engine/datos y configuración financiera, inputs Risk/cash/costes y stack D1; aplicar respuestas comerciales cuando existan, sin esperar como bloqueo global. No reabrir DD, capital10k o cincoescalas.

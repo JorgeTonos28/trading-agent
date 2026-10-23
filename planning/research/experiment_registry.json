@@ -358,5 +358,7 @@
   "active_research_rules": "candidate_configs/PRICE_MATR_rules_RC1.json",
   "latest_component_probe_evidence": "R-020_financial_probe_findings_2026-10-23.md",
   "active_rule_binding_clarification": "R-020_rule_binding_completion_RC2.md",
-  "clarification_changes_declared_hypotheses": false
+  "clarification_changes_declared_hypotheses": false,
+  "latest_native_component_evidence": "probes/r009-lean-components/result-01.json",
+  "latest_source_access_probe": "probes/r008-kibot-access/result-01.json"
 }

@@ -54,3 +54,7 @@ X15: lectura pública de términos Twelve mostró quotes puntuales en header; b�
 ## Exposición wave10 — 2026-10-23
 
 X16: búsqueda pública de documentación/precios/modelos de ejecución mostró snippets no solicitados de terceros y ejemplos documentales con fechas/valores potencialmente solapados con reserva. No se abrieron esos resultados ni se usaron rendimientos para reglas/márgenes/selección. QE2/R3/CA-S1/E8 usan exclusivamente ficticios; LEAN sparse source excluye Data/Tests/Algorithm.CSharp y no ejecuta estrategias. Ningún histórico PRICE–MATR consultado/descargado, cero trials. Capturas/código compilado no acreditan integridad; M11 sigue parcial/INTEGRITY_UNKNOWN. No se amplía acceso para auditar la reserva.
+
+## Exposición wave11 — 2026-10-23
+
+X17: páginas oficialesKibotmuestras/FirstRatecards contienen ejemplos públicos de precios/fechas2026 incluidos potencialmente enreserve y tablas de símbolos; búsquedas amplias incluyeron snippets no solicitados de terceros. No usados para reglas/márgenes/selección ni descargados ejemplos. KD1 pidió sólo2004-11-18–24, login respondió perohistorydiagnóstico401; no precios/bar recibidos o persistidos,0trials. QL2usaFICTION/preciospropios2030, sinAlgorithm/strategy/history. Exposiciónincidentalnoacreditareserveintacta; M11parcial/INTEGRITY_UNKNOWN, no aperturareservada.
