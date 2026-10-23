@@ -1,0 +1,11 @@
+{
+  "mode": "ATTEMPT_EXISTING_WINDOWS_POWERSHELL_5_1_SCRIPT_QA",
+  "state": "ERROR_EXECUTION_POLICY_BLOCKED_BEFORE_SCRIPT",
+  "evidence_origin": "OBSERVED_TOOL_EXIT_1_SECURITYERROR_UNAUTHORIZEDACCESS",
+  "native_fs_calls": 0,
+  "administrative_helper_executed": false,
+  "configuration_changes": [],
+  "policy_change_or_bypass_performed": false,
+  "actual_security_acceptance": "NOT_TESTED",
+  "resolution": "USE_EXISTING_POWERSHELL_7_OWNER_HELPER_NO_INSTALL_NO_POLICY_CHANGE"
+}

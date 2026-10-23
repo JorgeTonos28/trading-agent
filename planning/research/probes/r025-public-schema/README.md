@@ -1,0 +1,7 @@
+# R-025 S1 — public documentation probe
+
+2026-10-07, preregistered. One HTTPS GET of Quiver's publicly documented OpenAPI JSON, no auth headers/account/data queries, cap 4 MiB and timeout 20s. Store hash/status/version and limited clock-field metadata only, not the full schema/dataset. No tokens/billing/MCP/Skill installation.
+
+Checks: schema exists and parses; declaration of authenticated data endpoints; Form4 clock properties/required flags; Congress/13F clock properties where present. Public metadata access does not demonstrate dataset access, PIT accuracy, latency, coverage/history, license for our use, or provider selection. Missing fields retain UNKNOWN; an error is a metadata-probe error, not rejection of provider. Source/result are evidence for candidate cards, not a production connector.
+
+Observed result: HTTP200/JSON OpenAPI3.0.3, 238296 bytes; declared Form4/Congress clocks, literal InstitutionalHolding schema name not found (mapping UNKNOWN). Source SHA256 in result matches saved source; Python parser and JSON parse checked offline, no repeated request. Source bytes currently LF and match Git-normalized SHA256 `0b1243aa80c01f6128f0ac5c0c052c2539b7ed2dbaabfc4011df7b4199d9277a`. A clone with CRLF must distinguish local bytes from canonical Git source, not label newline conversion as a new execution. Report is sanitized documentation metadata, not an API entitlement test.

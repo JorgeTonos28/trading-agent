@@ -1,0 +1,9 @@
+# R-027 A1 — contrajemplos algebraicos preregistrados
+
+2026-10-13, previo a ejecución. Scope: calculadora desechable de escenarios ficticios Decimal, sin datos históricos/credenciales/red/runtime/órdenes/DB ni implementación Risk Engine. Números y presupuestos de fixtures no políticas aprobadas. Contrasta entry vs mark risk, exclusividad reserva, cancel/exit incierto, mínimo de constraints, fixed-fee y lot rounding; no modelos de ejecución, protección financiera ni capacidad aprobada.
+
+Ocho observaciones esperadas: (1) ganancias actuales dejan riesgo restante100 vs entry0; (2) posición perdedora tiene100 restante vs entry200; (3) sell pendiente no aporta cash; (4) posición4+remainder6 cubre100, duplicar reserva adiciona60 erróneo; (5) request100 y bounds8/5/7/6/4 da4; (6) cash35/price10/fee2 admite3, no4; (7) presupuesto100/unitrisk3/lote10 permite30, no40; (8) control obligatorio UNKNOWN no admite cantidad positiva. Verificador de fixture, no API productiva ni simulación del engine seleccionado.
+
+Guardar fuente/hash/resultado/desglose, sin rerun para esconder FAIL. No afirmar concurrencia real, broker safety, optimality general ni retorno. Source/expectations son del autor; crítica independiente requerida para interpretar consecuencias de diseño, no prueba independiente de producción.
+
+Ejecución01: ocho observaciones PASS; resultado/fuente01 intactos. La revisión P2 detectó que el script original `algebra_probe.py` sobrescribe el nombre fijo si se repite: se conserva como fuente histórica del hash, **no volver a ejecutarlo**. `algebra_probe_next.py` es fuente futura NOT_EXECUTED, rechaza salida existente y usa create-exclusive; una nueva ejecución necesita nuevo protocolo/salida y registrar alcance. No se repitió el probe para borrar el hallazgo. Nuevas precisiones de claims/p_auth/episodio están documentadas y no se atribuyen al PASS8/8.

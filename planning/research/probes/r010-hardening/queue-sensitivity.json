@@ -1,0 +1,1873 @@
+{
+  "probe": "H3_QUEUE_SENSITIVITY",
+  "source_sha256": "6255eb18d074f00439e24c60a9880205b805a22fa4185731b05d076b2cc07dc5",
+  "scope": "hypothetical nonpreemptive single worker; roles/service from wave07; virtual timing; no quota or capacity acceptance",
+  "wave07_sha256": "e31a0c420b8d6f690b300def70295d3d035bca2a288a948c83e4c1ace15d2a38",
+  "assumptions": "10 owner interactions as research cost proxy; 13 reserve attempts illustrative mix, not observed/final; shadow priority among ready only",
+  "reserve63": [
+    {
+      "multiplier": 1,
+      "required": 63,
+      "accounted": 63,
+      "on_time": 63,
+      "jobs": [
+        {
+          "id": "SH0",
+          "role": "shadow",
+          "arrival": 0,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "id": "RA0",
+          "role": "shadow",
+          "arrival": 10,
+          "window": 120,
+          "wait_s": 18.256,
+          "total_s": 46.512,
+          "on_time": true
+        },
+        {
+          "id": "PE0",
+          "role": "pedagogy",
+          "arrival": 0,
+          "window": 600,
+          "wait_s": 56.512,
+          "total_s": 82.373,
+          "on_time": true
+        },
+        {
+          "id": "R1",
+          "role": "research",
+          "arrival": 0,
+          "window": 86400,
+          "wait_s": 82.373,
+          "total_s": 100.622,
+          "on_time": true
+        },
+        {
+          "id": "I0",
+          "role": "research",
+          "arrival": 5,
+          "window": 86400,
+          "wait_s": 95.622,
+          "total_s": 113.871,
+          "on_time": true
+        },
+        {
+          "id": "SH1",
+          "role": "shadow",
+          "arrival": 900,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "id": "RA1",
+          "role": "pedagogy",
+          "arrival": 1710,
+          "window": 600,
+          "wait_s": 0,
+          "total_s": 25.861,
+          "on_time": true
+        },
+        {
+          "id": "SH2",
+          "role": "shadow",
+          "arrival": 1800,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "id": "PE1",
+          "role": "pedagogy",
+          "arrival": 1800,
+          "window": 600,
+          "wait_s": 28.256,
+          "total_s": 54.117,
+          "on_time": true
+        },
+        {
+          "id": "I1",
+          "role": "research",
+          "arrival": 2105,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 18.249,
+          "on_time": true
+        },
+        {
+          "id": "SH3",
+          "role": "shadow",
+          "arrival": 2700,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "id": "RA2",
+          "role": "research",
+          "arrival": 3410,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 18.249,
+          "on_time": true
+        },
+        {
+          "id": "SH4",
+          "role": "shadow",
+          "arrival": 3600,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "id": "PE2",
+          "role": "pedagogy",
+          "arrival": 3600,
+          "window": 600,
+          "wait_s": 28.256,
+          "total_s": 54.117,
+          "on_time": true
+        },
+        {
+          "id": "I2",
+          "role": "research",
+          "arrival": 4205,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 18.249,
+          "on_time": true
+        },
+        {
+          "id": "SH5",
+          "role": "shadow",
+          "arrival": 4500,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "id": "RA3",
+          "role": "quant",
+          "arrival": 5110,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 61.668,
+          "on_time": true
+        },
+        {
+          "id": "SH6",
+          "role": "shadow",
+          "arrival": 5400,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "id": "PE3",
+          "role": "pedagogy",
+          "arrival": 5400,
+          "window": 600,
+          "wait_s": 28.256,
+          "total_s": 54.117,
+          "on_time": true
+        },
+        {
+          "id": "SH7",
+          "role": "shadow",
+          "arrival": 6300,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "id": "I3",
+          "role": "research",
+          "arrival": 6305,
+          "window": 86400,
+          "wait_s": 23.256,
+          "total_s": 41.505,
+          "on_time": true
+        },
+        {
+          "id": "RA4",
+          "role": "shadow",
+          "arrival": 6810,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "id": "SH8",
+          "role": "shadow",
+          "arrival": 7200,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "id": "PE4",
+          "role": "pedagogy",
+          "arrival": 7200,
+          "window": 600,
+          "wait_s": 28.256,
+          "total_s": 54.117,
+          "on_time": true
+        },
+        {
+          "id": "SH9",
+          "role": "shadow",
+          "arrival": 8100,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "id": "I4",
+          "role": "research",
+          "arrival": 8405,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 18.249,
+          "on_time": true
+        },
+        {
+          "id": "RA5",
+          "role": "pedagogy",
+          "arrival": 8510,
+          "window": 600,
+          "wait_s": 0,
+          "total_s": 25.861,
+          "on_time": true
+        },
+        {
+          "id": "SH10",
+          "role": "shadow",
+          "arrival": 9000,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "id": "PE5",
+          "role": "pedagogy",
+          "arrival": 9000,
+          "window": 600,
+          "wait_s": 28.256,
+          "total_s": 54.117,
+          "on_time": true
+        },
+        {
+          "id": "SH11",
+          "role": "shadow",
+          "arrival": 9900,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "id": "RA6",
+          "role": "research",
+          "arrival": 10210,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 18.249,
+          "on_time": true
+        },
+        {
+          "id": "I5",
+          "role": "research",
+          "arrival": 10505,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 18.249,
+          "on_time": true
+        },
+        {
+          "id": "SH12",
+          "role": "shadow",
+          "arrival": 10800,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "id": "PE6",
+          "role": "pedagogy",
+          "arrival": 10800,
+          "window": 600,
+          "wait_s": 28.256,
+          "total_s": 54.117,
+          "on_time": true
+        },
+        {
+          "id": "SH13",
+          "role": "shadow",
+          "arrival": 11700,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "id": "RA7",
+          "role": "quant",
+          "arrival": 11910,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 61.668,
+          "on_time": true
+        },
+        {
+          "id": "SH14",
+          "role": "shadow",
+          "arrival": 12600,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "id": "PE7",
+          "role": "pedagogy",
+          "arrival": 12600,
+          "window": 600,
+          "wait_s": 28.256,
+          "total_s": 54.117,
+          "on_time": true
+        },
+        {
+          "id": "I6",
+          "role": "research",
+          "arrival": 12605,
+          "window": 86400,
+          "wait_s": 49.117,
+          "total_s": 67.366,
+          "on_time": true
+        },
+        {
+          "id": "SH15",
+          "role": "shadow",
+          "arrival": 13500,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "id": "RA8",
+          "role": "shadow",
+          "arrival": 13610,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "id": "SH16",
+          "role": "shadow",
+          "arrival": 14400,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "id": "PE8",
+          "role": "pedagogy",
+          "arrival": 14400,
+          "window": 600,
+          "wait_s": 28.256,
+          "total_s": 54.117,
+          "on_time": true
+        },
+        {
+          "id": "I7",
+          "role": "research",
+          "arrival": 14705,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 18.249,
+          "on_time": true
+        },
+        {
+          "id": "SH17",
+          "role": "shadow",
+          "arrival": 15300,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "id": "RA9",
+          "role": "pedagogy",
+          "arrival": 15310,
+          "window": 600,
+          "wait_s": 18.256,
+          "total_s": 44.117,
+          "on_time": true
+        },
+        {
+          "id": "SH18",
+          "role": "shadow",
+          "arrival": 16200,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "id": "PE9",
+          "role": "pedagogy",
+          "arrival": 16200,
+          "window": 600,
+          "wait_s": 28.256,
+          "total_s": 54.117,
+          "on_time": true
+        },
+        {
+          "id": "I8",
+          "role": "research",
+          "arrival": 16805,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 18.249,
+          "on_time": true
+        },
+        {
+          "id": "RA10",
+          "role": "research",
+          "arrival": 17010,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 18.249,
+          "on_time": true
+        },
+        {
+          "id": "SH19",
+          "role": "shadow",
+          "arrival": 17100,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "id": "SH20",
+          "role": "shadow",
+          "arrival": 18000,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "id": "R2",
+          "role": "research",
+          "arrival": 18000,
+          "window": 86400,
+          "wait_s": 28.256,
+          "total_s": 46.505,
+          "on_time": true
+        },
+        {
+          "id": "RA11",
+          "role": "quant",
+          "arrival": 18710,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 61.668,
+          "on_time": true
+        },
+        {
+          "id": "SH21",
+          "role": "shadow",
+          "arrival": 18900,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "id": "I9",
+          "role": "research",
+          "arrival": 18905,
+          "window": 86400,
+          "wait_s": 23.256,
+          "total_s": 41.505,
+          "on_time": true
+        },
+        {
+          "id": "SH22",
+          "role": "shadow",
+          "arrival": 19800,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "id": "RA12",
+          "role": "shadow",
+          "arrival": 20410,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "id": "SH23",
+          "role": "shadow",
+          "arrival": 20700,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "id": "SH24",
+          "role": "shadow",
+          "arrival": 21600,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "id": "Q1",
+          "role": "quant",
+          "arrival": 21600,
+          "window": 86400,
+          "wait_s": 28.256,
+          "total_s": 89.924,
+          "on_time": true
+        },
+        {
+          "id": "SH25",
+          "role": "shadow",
+          "arrival": 22500,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 28.256,
+          "on_time": true
+        },
+        {
+          "id": "PD",
+          "role": "pedagogy",
+          "arrival": 23400,
+          "window": 600,
+          "wait_s": 0,
+          "total_s": 25.861,
+          "on_time": true
+        }
+      ]
+    },
+    {
+      "multiplier": 2,
+      "required": 63,
+      "accounted": 63,
+      "on_time": 63,
+      "jobs": [
+        {
+          "id": "SH0",
+          "role": "shadow",
+          "arrival": 0,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "id": "RA0",
+          "role": "shadow",
+          "arrival": 10,
+          "window": 120,
+          "wait_s": 46.512,
+          "total_s": 103.024,
+          "on_time": true
+        },
+        {
+          "id": "PE0",
+          "role": "pedagogy",
+          "arrival": 0,
+          "window": 600,
+          "wait_s": 113.024,
+          "total_s": 164.746,
+          "on_time": true
+        },
+        {
+          "id": "R1",
+          "role": "research",
+          "arrival": 0,
+          "window": 86400,
+          "wait_s": 164.746,
+          "total_s": 201.244,
+          "on_time": true
+        },
+        {
+          "id": "I0",
+          "role": "research",
+          "arrival": 5,
+          "window": 86400,
+          "wait_s": 196.244,
+          "total_s": 232.742,
+          "on_time": true
+        },
+        {
+          "id": "SH1",
+          "role": "shadow",
+          "arrival": 900,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "id": "RA1",
+          "role": "pedagogy",
+          "arrival": 1710,
+          "window": 600,
+          "wait_s": 0,
+          "total_s": 51.722,
+          "on_time": true
+        },
+        {
+          "id": "SH2",
+          "role": "shadow",
+          "arrival": 1800,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "id": "PE1",
+          "role": "pedagogy",
+          "arrival": 1800,
+          "window": 600,
+          "wait_s": 56.512,
+          "total_s": 108.234,
+          "on_time": true
+        },
+        {
+          "id": "I1",
+          "role": "research",
+          "arrival": 2105,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 36.498,
+          "on_time": true
+        },
+        {
+          "id": "SH3",
+          "role": "shadow",
+          "arrival": 2700,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "id": "RA2",
+          "role": "research",
+          "arrival": 3410,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 36.498,
+          "on_time": true
+        },
+        {
+          "id": "SH4",
+          "role": "shadow",
+          "arrival": 3600,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "id": "PE2",
+          "role": "pedagogy",
+          "arrival": 3600,
+          "window": 600,
+          "wait_s": 56.512,
+          "total_s": 108.234,
+          "on_time": true
+        },
+        {
+          "id": "I2",
+          "role": "research",
+          "arrival": 4205,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 36.498,
+          "on_time": true
+        },
+        {
+          "id": "SH5",
+          "role": "shadow",
+          "arrival": 4500,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "id": "RA3",
+          "role": "quant",
+          "arrival": 5110,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 123.336,
+          "on_time": true
+        },
+        {
+          "id": "SH6",
+          "role": "shadow",
+          "arrival": 5400,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "id": "PE3",
+          "role": "pedagogy",
+          "arrival": 5400,
+          "window": 600,
+          "wait_s": 56.512,
+          "total_s": 108.234,
+          "on_time": true
+        },
+        {
+          "id": "SH7",
+          "role": "shadow",
+          "arrival": 6300,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "id": "I3",
+          "role": "research",
+          "arrival": 6305,
+          "window": 86400,
+          "wait_s": 51.512,
+          "total_s": 88.01,
+          "on_time": true
+        },
+        {
+          "id": "RA4",
+          "role": "shadow",
+          "arrival": 6810,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "id": "SH8",
+          "role": "shadow",
+          "arrival": 7200,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "id": "PE4",
+          "role": "pedagogy",
+          "arrival": 7200,
+          "window": 600,
+          "wait_s": 56.512,
+          "total_s": 108.234,
+          "on_time": true
+        },
+        {
+          "id": "SH9",
+          "role": "shadow",
+          "arrival": 8100,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "id": "I4",
+          "role": "research",
+          "arrival": 8405,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 36.498,
+          "on_time": true
+        },
+        {
+          "id": "RA5",
+          "role": "pedagogy",
+          "arrival": 8510,
+          "window": 600,
+          "wait_s": 0,
+          "total_s": 51.722,
+          "on_time": true
+        },
+        {
+          "id": "SH10",
+          "role": "shadow",
+          "arrival": 9000,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "id": "PE5",
+          "role": "pedagogy",
+          "arrival": 9000,
+          "window": 600,
+          "wait_s": 56.512,
+          "total_s": 108.234,
+          "on_time": true
+        },
+        {
+          "id": "SH11",
+          "role": "shadow",
+          "arrival": 9900,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "id": "RA6",
+          "role": "research",
+          "arrival": 10210,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 36.498,
+          "on_time": true
+        },
+        {
+          "id": "I5",
+          "role": "research",
+          "arrival": 10505,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 36.498,
+          "on_time": true
+        },
+        {
+          "id": "SH12",
+          "role": "shadow",
+          "arrival": 10800,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "id": "PE6",
+          "role": "pedagogy",
+          "arrival": 10800,
+          "window": 600,
+          "wait_s": 56.512,
+          "total_s": 108.234,
+          "on_time": true
+        },
+        {
+          "id": "SH13",
+          "role": "shadow",
+          "arrival": 11700,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "id": "RA7",
+          "role": "quant",
+          "arrival": 11910,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 123.336,
+          "on_time": true
+        },
+        {
+          "id": "SH14",
+          "role": "shadow",
+          "arrival": 12600,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "id": "PE7",
+          "role": "pedagogy",
+          "arrival": 12600,
+          "window": 600,
+          "wait_s": 56.512,
+          "total_s": 108.234,
+          "on_time": true
+        },
+        {
+          "id": "I6",
+          "role": "research",
+          "arrival": 12605,
+          "window": 86400,
+          "wait_s": 103.234,
+          "total_s": 139.732,
+          "on_time": true
+        },
+        {
+          "id": "SH15",
+          "role": "shadow",
+          "arrival": 13500,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "id": "RA8",
+          "role": "shadow",
+          "arrival": 13610,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "id": "SH16",
+          "role": "shadow",
+          "arrival": 14400,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "id": "PE8",
+          "role": "pedagogy",
+          "arrival": 14400,
+          "window": 600,
+          "wait_s": 56.512,
+          "total_s": 108.234,
+          "on_time": true
+        },
+        {
+          "id": "I7",
+          "role": "research",
+          "arrival": 14705,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 36.498,
+          "on_time": true
+        },
+        {
+          "id": "SH17",
+          "role": "shadow",
+          "arrival": 15300,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "id": "RA9",
+          "role": "pedagogy",
+          "arrival": 15310,
+          "window": 600,
+          "wait_s": 46.512,
+          "total_s": 98.234,
+          "on_time": true
+        },
+        {
+          "id": "SH18",
+          "role": "shadow",
+          "arrival": 16200,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "id": "PE9",
+          "role": "pedagogy",
+          "arrival": 16200,
+          "window": 600,
+          "wait_s": 56.512,
+          "total_s": 108.234,
+          "on_time": true
+        },
+        {
+          "id": "I8",
+          "role": "research",
+          "arrival": 16805,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 36.498,
+          "on_time": true
+        },
+        {
+          "id": "RA10",
+          "role": "research",
+          "arrival": 17010,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 36.498,
+          "on_time": true
+        },
+        {
+          "id": "SH19",
+          "role": "shadow",
+          "arrival": 17100,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "id": "SH20",
+          "role": "shadow",
+          "arrival": 18000,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "id": "R2",
+          "role": "research",
+          "arrival": 18000,
+          "window": 86400,
+          "wait_s": 56.512,
+          "total_s": 93.01,
+          "on_time": true
+        },
+        {
+          "id": "RA11",
+          "role": "quant",
+          "arrival": 18710,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 123.336,
+          "on_time": true
+        },
+        {
+          "id": "SH21",
+          "role": "shadow",
+          "arrival": 18900,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "id": "I9",
+          "role": "research",
+          "arrival": 18905,
+          "window": 86400,
+          "wait_s": 51.512,
+          "total_s": 88.01,
+          "on_time": true
+        },
+        {
+          "id": "SH22",
+          "role": "shadow",
+          "arrival": 19800,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "id": "RA12",
+          "role": "shadow",
+          "arrival": 20410,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "id": "SH23",
+          "role": "shadow",
+          "arrival": 20700,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "id": "SH24",
+          "role": "shadow",
+          "arrival": 21600,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "id": "Q1",
+          "role": "quant",
+          "arrival": 21600,
+          "window": 86400,
+          "wait_s": 56.512,
+          "total_s": 179.848,
+          "on_time": true
+        },
+        {
+          "id": "SH25",
+          "role": "shadow",
+          "arrival": 22500,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 56.512,
+          "on_time": true
+        },
+        {
+          "id": "PD",
+          "role": "pedagogy",
+          "arrival": 23400,
+          "window": 600,
+          "wait_s": 0,
+          "total_s": 51.722,
+          "on_time": true
+        }
+      ]
+    },
+    {
+      "multiplier": 4,
+      "required": 63,
+      "accounted": 63,
+      "on_time": 60,
+      "jobs": [
+        {
+          "id": "SH0",
+          "role": "shadow",
+          "arrival": 0,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "id": "RA0",
+          "role": "shadow",
+          "arrival": 10,
+          "window": 120,
+          "wait_s": 103.024,
+          "total_s": 216.048,
+          "on_time": false
+        },
+        {
+          "id": "PE0",
+          "role": "pedagogy",
+          "arrival": 0,
+          "window": 600,
+          "wait_s": 226.048,
+          "total_s": 329.492,
+          "on_time": true
+        },
+        {
+          "id": "R1",
+          "role": "research",
+          "arrival": 0,
+          "window": 86400,
+          "wait_s": 329.492,
+          "total_s": 402.488,
+          "on_time": true
+        },
+        {
+          "id": "I0",
+          "role": "research",
+          "arrival": 5,
+          "window": 86400,
+          "wait_s": 397.488,
+          "total_s": 470.484,
+          "on_time": true
+        },
+        {
+          "id": "SH1",
+          "role": "shadow",
+          "arrival": 900,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "id": "RA1",
+          "role": "pedagogy",
+          "arrival": 1710,
+          "window": 600,
+          "wait_s": 0,
+          "total_s": 103.444,
+          "on_time": true
+        },
+        {
+          "id": "SH2",
+          "role": "shadow",
+          "arrival": 1800,
+          "window": 120,
+          "wait_s": 13.444,
+          "total_s": 126.468,
+          "on_time": false
+        },
+        {
+          "id": "PE1",
+          "role": "pedagogy",
+          "arrival": 1800,
+          "window": 600,
+          "wait_s": 126.468,
+          "total_s": 229.912,
+          "on_time": true
+        },
+        {
+          "id": "I1",
+          "role": "research",
+          "arrival": 2105,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 72.996,
+          "on_time": true
+        },
+        {
+          "id": "SH3",
+          "role": "shadow",
+          "arrival": 2700,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "id": "RA2",
+          "role": "research",
+          "arrival": 3410,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 72.996,
+          "on_time": true
+        },
+        {
+          "id": "SH4",
+          "role": "shadow",
+          "arrival": 3600,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "id": "PE2",
+          "role": "pedagogy",
+          "arrival": 3600,
+          "window": 600,
+          "wait_s": 113.024,
+          "total_s": 216.468,
+          "on_time": true
+        },
+        {
+          "id": "I2",
+          "role": "research",
+          "arrival": 4205,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 72.996,
+          "on_time": true
+        },
+        {
+          "id": "SH5",
+          "role": "shadow",
+          "arrival": 4500,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "id": "RA3",
+          "role": "quant",
+          "arrival": 5110,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 246.672,
+          "on_time": true
+        },
+        {
+          "id": "SH6",
+          "role": "shadow",
+          "arrival": 5400,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "id": "PE3",
+          "role": "pedagogy",
+          "arrival": 5400,
+          "window": 600,
+          "wait_s": 113.024,
+          "total_s": 216.468,
+          "on_time": true
+        },
+        {
+          "id": "SH7",
+          "role": "shadow",
+          "arrival": 6300,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "id": "I3",
+          "role": "research",
+          "arrival": 6305,
+          "window": 86400,
+          "wait_s": 108.024,
+          "total_s": 181.02,
+          "on_time": true
+        },
+        {
+          "id": "RA4",
+          "role": "shadow",
+          "arrival": 6810,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "id": "SH8",
+          "role": "shadow",
+          "arrival": 7200,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "id": "PE4",
+          "role": "pedagogy",
+          "arrival": 7200,
+          "window": 600,
+          "wait_s": 113.024,
+          "total_s": 216.468,
+          "on_time": true
+        },
+        {
+          "id": "SH9",
+          "role": "shadow",
+          "arrival": 8100,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "id": "I4",
+          "role": "research",
+          "arrival": 8405,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 72.996,
+          "on_time": true
+        },
+        {
+          "id": "RA5",
+          "role": "pedagogy",
+          "arrival": 8510,
+          "window": 600,
+          "wait_s": 0,
+          "total_s": 103.444,
+          "on_time": true
+        },
+        {
+          "id": "SH10",
+          "role": "shadow",
+          "arrival": 9000,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "id": "PE5",
+          "role": "pedagogy",
+          "arrival": 9000,
+          "window": 600,
+          "wait_s": 113.024,
+          "total_s": 216.468,
+          "on_time": true
+        },
+        {
+          "id": "SH11",
+          "role": "shadow",
+          "arrival": 9900,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "id": "RA6",
+          "role": "research",
+          "arrival": 10210,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 72.996,
+          "on_time": true
+        },
+        {
+          "id": "I5",
+          "role": "research",
+          "arrival": 10505,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 72.996,
+          "on_time": true
+        },
+        {
+          "id": "SH12",
+          "role": "shadow",
+          "arrival": 10800,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "id": "PE6",
+          "role": "pedagogy",
+          "arrival": 10800,
+          "window": 600,
+          "wait_s": 113.024,
+          "total_s": 216.468,
+          "on_time": true
+        },
+        {
+          "id": "SH13",
+          "role": "shadow",
+          "arrival": 11700,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "id": "RA7",
+          "role": "quant",
+          "arrival": 11910,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 246.672,
+          "on_time": true
+        },
+        {
+          "id": "SH14",
+          "role": "shadow",
+          "arrival": 12600,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "id": "PE7",
+          "role": "pedagogy",
+          "arrival": 12600,
+          "window": 600,
+          "wait_s": 113.024,
+          "total_s": 216.468,
+          "on_time": true
+        },
+        {
+          "id": "I6",
+          "role": "research",
+          "arrival": 12605,
+          "window": 86400,
+          "wait_s": 211.468,
+          "total_s": 284.464,
+          "on_time": true
+        },
+        {
+          "id": "SH15",
+          "role": "shadow",
+          "arrival": 13500,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "id": "RA8",
+          "role": "shadow",
+          "arrival": 13610,
+          "window": 120,
+          "wait_s": 3.024,
+          "total_s": 116.048,
+          "on_time": true
+        },
+        {
+          "id": "SH16",
+          "role": "shadow",
+          "arrival": 14400,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "id": "PE8",
+          "role": "pedagogy",
+          "arrival": 14400,
+          "window": 600,
+          "wait_s": 113.024,
+          "total_s": 216.468,
+          "on_time": true
+        },
+        {
+          "id": "I7",
+          "role": "research",
+          "arrival": 14705,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 72.996,
+          "on_time": true
+        },
+        {
+          "id": "SH17",
+          "role": "shadow",
+          "arrival": 15300,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "id": "RA9",
+          "role": "pedagogy",
+          "arrival": 15310,
+          "window": 600,
+          "wait_s": 103.024,
+          "total_s": 206.468,
+          "on_time": true
+        },
+        {
+          "id": "SH18",
+          "role": "shadow",
+          "arrival": 16200,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "id": "PE9",
+          "role": "pedagogy",
+          "arrival": 16200,
+          "window": 600,
+          "wait_s": 113.024,
+          "total_s": 216.468,
+          "on_time": true
+        },
+        {
+          "id": "I8",
+          "role": "research",
+          "arrival": 16805,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 72.996,
+          "on_time": true
+        },
+        {
+          "id": "RA10",
+          "role": "research",
+          "arrival": 17010,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 72.996,
+          "on_time": true
+        },
+        {
+          "id": "SH19",
+          "role": "shadow",
+          "arrival": 17100,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "id": "SH20",
+          "role": "shadow",
+          "arrival": 18000,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "id": "R2",
+          "role": "research",
+          "arrival": 18000,
+          "window": 86400,
+          "wait_s": 113.024,
+          "total_s": 186.02,
+          "on_time": true
+        },
+        {
+          "id": "RA11",
+          "role": "quant",
+          "arrival": 18710,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 246.672,
+          "on_time": true
+        },
+        {
+          "id": "SH21",
+          "role": "shadow",
+          "arrival": 18900,
+          "window": 120,
+          "wait_s": 56.672,
+          "total_s": 169.696,
+          "on_time": false
+        },
+        {
+          "id": "I9",
+          "role": "research",
+          "arrival": 18905,
+          "window": 86400,
+          "wait_s": 164.696,
+          "total_s": 237.692,
+          "on_time": true
+        },
+        {
+          "id": "SH22",
+          "role": "shadow",
+          "arrival": 19800,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "id": "RA12",
+          "role": "shadow",
+          "arrival": 20410,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "id": "SH23",
+          "role": "shadow",
+          "arrival": 20700,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "id": "SH24",
+          "role": "shadow",
+          "arrival": 21600,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "id": "Q1",
+          "role": "quant",
+          "arrival": 21600,
+          "window": 86400,
+          "wait_s": 113.024,
+          "total_s": 359.696,
+          "on_time": true
+        },
+        {
+          "id": "SH25",
+          "role": "shadow",
+          "arrival": 22500,
+          "window": 120,
+          "wait_s": 0,
+          "total_s": 113.024,
+          "on_time": true
+        },
+        {
+          "id": "PD",
+          "role": "pedagogy",
+          "arrival": 23400,
+          "window": 600,
+          "wait_s": 0,
+          "total_s": 103.444,
+          "on_time": true
+        }
+      ]
+    }
+  ],
+  "background_then_burst": [
+    {
+      "multiplier": 1,
+      "required": 4,
+      "accounted": 4,
+      "on_time": 4,
+      "jobs": [
+        {
+          "id": "long-Q",
+          "role": "quant",
+          "arrival": 0,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 61.668,
+          "on_time": true
+        },
+        {
+          "id": "S1",
+          "role": "shadow",
+          "arrival": 0.1,
+          "window": 120,
+          "wait_s": 61.568,
+          "total_s": 89.824,
+          "on_time": true
+        },
+        {
+          "id": "S2",
+          "role": "shadow",
+          "arrival": 0.1,
+          "window": 120,
+          "wait_s": 89.824,
+          "total_s": 118.08,
+          "on_time": true
+        },
+        {
+          "id": "P1",
+          "role": "pedagogy",
+          "arrival": 0.1,
+          "window": 600,
+          "wait_s": 118.08,
+          "total_s": 143.941,
+          "on_time": true
+        }
+      ]
+    },
+    {
+      "multiplier": 2,
+      "required": 4,
+      "accounted": 4,
+      "on_time": 2,
+      "jobs": [
+        {
+          "id": "long-Q",
+          "role": "quant",
+          "arrival": 0,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 123.336,
+          "on_time": true
+        },
+        {
+          "id": "S1",
+          "role": "shadow",
+          "arrival": 0.1,
+          "window": 120,
+          "wait_s": 123.236,
+          "total_s": 179.748,
+          "on_time": false
+        },
+        {
+          "id": "S2",
+          "role": "shadow",
+          "arrival": 0.1,
+          "window": 120,
+          "wait_s": 179.748,
+          "total_s": 236.26,
+          "on_time": false
+        },
+        {
+          "id": "P1",
+          "role": "pedagogy",
+          "arrival": 0.1,
+          "window": 600,
+          "wait_s": 236.26,
+          "total_s": 287.982,
+          "on_time": true
+        }
+      ]
+    },
+    {
+      "multiplier": 4,
+      "required": 4,
+      "accounted": 4,
+      "on_time": 2,
+      "jobs": [
+        {
+          "id": "long-Q",
+          "role": "quant",
+          "arrival": 0,
+          "window": 86400,
+          "wait_s": 0,
+          "total_s": 246.672,
+          "on_time": true
+        },
+        {
+          "id": "S1",
+          "role": "shadow",
+          "arrival": 0.1,
+          "window": 120,
+          "wait_s": 246.572,
+          "total_s": 359.596,
+          "on_time": false
+        },
+        {
+          "id": "S2",
+          "role": "shadow",
+          "arrival": 0.1,
+          "window": 120,
+          "wait_s": 359.596,
+          "total_s": 472.62,
+          "on_time": false
+        },
+        {
+          "id": "P1",
+          "role": "pedagogy",
+          "arrival": 0.1,
+          "window": 600,
+          "wait_s": 472.62,
+          "total_s": 576.064,
+          "on_time": true
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "63_accounted": true,
+    "burst_accounted": true
+  },
+  "interpretation": "Priority cannot preempt in-flight long quant/research. Real isolation/capacity probe needed before selecting concurrency/deadlines."
+}

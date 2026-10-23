@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "updated_on": "2026-10-23",
+  "owner_instruction": "Owner reports both inquiries sent personally; awaiting responses only; no automatic sending authorized",
+  "automatic_send_authorized": false,
+  "external_messages_sent": 2,
+  "pending_state_requires_owner_confirmation_of_actual_send": true,
+  "generic_sales_reply_admits_dataset": false,
+  "preparation_waits_for_replies": false,
+  "inquiries": [
+    {
+      "id": "R008-TWELVE-01",
+      "provider": "Twelve Data",
+      "recipient": "support@twelvedata.com",
+      "draft": "planning/research/vendor_inquiries/twelve_data_email_final.txt",
+      "delivery_status": "AWAITING_VENDOR_RESPONSE",
+      "sent": true,
+      "sent_on": null,
+      "sent_evidence": "Owner reports both messages already sent from personal account in current conversation",
+      "reply_status": "NOT_RECEIVED",
+      "dataset_admission": "NOT_ADMITTED",
+      "sent_date_status": "EXACT_SEND_DATE_NOT_STATED_BY_OWNER",
+      "declaration_received_on": "2026-10-23",
+      "clarification_state": "EXTERNAL_CLARIFICATION_PENDING"
+    },
+    {
+      "id": "R008-EODHD-01",
+      "provider": "EODHD",
+      "recipient": "sales@eodhistoricaldata.com",
+      "draft": "planning/research/vendor_inquiries/eodhd_email_final.txt",
+      "delivery_status": "AWAITING_VENDOR_RESPONSE",
+      "sent": true,
+      "sent_on": null,
+      "sent_evidence": "Owner reports both messages already sent from personal account in current conversation",
+      "reply_status": "NOT_RECEIVED",
+      "dataset_admission": "NOT_ADMITTED",
+      "sent_date_status": "EXACT_SEND_DATE_NOT_STATED_BY_OWNER",
+      "declaration_received_on": "2026-10-23",
+      "clarification_state": "EXTERNAL_CLARIFICATION_PENDING"
+    }
+  ],
+  "implementation_locked": true,
+  "target_acceptance_status": "TARGET_ACCEPTANCE_DEFERRED",
+  "confirmation_integrity": "INTEGRITY_UNKNOWN",
+  "delivery_evidence_type": "OWNER_DECLARATION_NOT_MAILBOX_VERIFIED",
+  "declaration_received_on": "2026-10-23"
+}

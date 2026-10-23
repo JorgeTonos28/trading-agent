@@ -1,0 +1,110 @@
+{
+  "scope": "ENGINE_COMPONENT_WITH_SAMPLE_PROJECT_REFERENCES_REMOVED",
+  "source_commit": "f3d841e60dfd010ee5fc293ea893e56952484108",
+  "projects": {
+    "Engine/QuantConnect.Lean.Engine.csproj": {
+      "source_sha256": "21eab24be8c7cd9a7eb62d2a4ebf47d45412be5874311c2da1b00a99e52b6e07",
+      "references": [
+        "AlgorithmFactory/QuantConnect.AlgorithmFactory.csproj",
+        "Algorithm/QuantConnect.Algorithm.csproj",
+        "Api/QuantConnect.Api.csproj",
+        "Brokerages/QuantConnect.Brokerages.csproj",
+        "Compression/QuantConnect.Compression.csproj",
+        "Configuration/QuantConnect.Configuration.csproj",
+        "Indicators/QuantConnect.Indicators.csproj",
+        "Common/QuantConnect.csproj",
+        "Logging/QuantConnect.Logging.csproj"
+      ]
+    },
+    "Logging/QuantConnect.Logging.csproj": {
+      "source_sha256": "32bf7701db7a831dea21b60510c017a7bdeb188198fe20ca1c459894a68d522c",
+      "references": []
+    },
+    "Common/QuantConnect.csproj": {
+      "source_sha256": "eb9dedee7bc48ff6a835905d9f9da23d7a1b7a4dd95875df690258f335844e37",
+      "references": [
+        "Compression/QuantConnect.Compression.csproj",
+        "Configuration/QuantConnect.Configuration.csproj",
+        "Logging/QuantConnect.Logging.csproj"
+      ]
+    },
+    "Configuration/QuantConnect.Configuration.csproj": {
+      "source_sha256": "53fd9ba7fff1bfab32461f28c4f00eaef8c4449a6fa60c3c5aaaea567d7d0b28",
+      "references": [
+        "Logging/QuantConnect.Logging.csproj"
+      ]
+    },
+    "Compression/QuantConnect.Compression.csproj": {
+      "source_sha256": "594ce847872da5e82b7915a3692022059f80cfb4ccab1a3f1ac870b298e39f8d",
+      "references": [
+        "Logging/QuantConnect.Logging.csproj"
+      ]
+    },
+    "Indicators/QuantConnect.Indicators.csproj": {
+      "source_sha256": "a37bdeeaedda72ff7a8ab8b441bf372bce056e38f7b89e6d13dfb48ceafc74c4",
+      "references": [
+        "Common/QuantConnect.csproj",
+        "Logging/QuantConnect.Logging.csproj"
+      ]
+    },
+    "Brokerages/QuantConnect.Brokerages.csproj": {
+      "source_sha256": "84afb8099f7d2b5f21e77a92681777e22da9686fe02105674a5f6b4b9579c494",
+      "references": [
+        "Api/QuantConnect.Api.csproj",
+        "Common/QuantConnect.csproj",
+        "Compression/QuantConnect.Compression.csproj",
+        "Configuration/QuantConnect.Configuration.csproj",
+        "Logging/QuantConnect.Logging.csproj"
+      ]
+    },
+    "Api/QuantConnect.Api.csproj": {
+      "source_sha256": "0e8044d5e3ecc5c0b5a16eef6a2845885ba79a1a490a7d7d20f28e09a5fff1e9",
+      "references": [
+        "Common/QuantConnect.csproj",
+        "Configuration/QuantConnect.Configuration.csproj",
+        "Logging/QuantConnect.Logging.csproj"
+      ]
+    },
+    "Algorithm/QuantConnect.Algorithm.csproj": {
+      "source_sha256": "2be2982dd42bf3a1d43ba20c17a95fd841b8389e4560e7807b4e43bac44f384b",
+      "references": [
+        "Configuration/QuantConnect.Configuration.csproj",
+        "Indicators/QuantConnect.Indicators.csproj",
+        "Common/QuantConnect.csproj",
+        "Logging/QuantConnect.Logging.csproj"
+      ]
+    },
+    "AlgorithmFactory/QuantConnect.AlgorithmFactory.csproj": {
+      "source_sha256": "c859a8c4a514442975ae9cce5fb3ea97da05822fdf218bb6e66480228b28cb35",
+      "references": [
+        "Algorithm/QuantConnect.Algorithm.csproj",
+        "Common/QuantConnect.csproj",
+        "Configuration/QuantConnect.Configuration.csproj",
+        "Logging/QuantConnect.Logging.csproj"
+      ]
+    }
+  },
+  "directories": [
+    "Algorithm",
+    "AlgorithmFactory",
+    "Api",
+    "Brokerages",
+    "Common",
+    "Compression",
+    "Configuration",
+    "Engine",
+    "Indicators",
+    "Logging"
+  ],
+  "dropped_project_references": [
+    {
+      "project": "Engine/QuantConnect.Lean.Engine.csproj",
+      "reference": "..\\Algorithm.CSharp\\QuantConnect.Algorithm.CSharp.csproj"
+    }
+  ],
+  "modified_project_hashes": {
+    "Engine/QuantConnect.Lean.Engine.csproj": "60d09883df20eba7b087b06208fd7defd80eab3022d123474c45837a7234cc8f"
+  },
+  "data_checked_out": false,
+  "strategies_executed": 0
+}

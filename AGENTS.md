@@ -105,13 +105,57 @@ This includes, when relevant:
 - Codex capabilities
 - MCP servers
 - Anthropic financial-services Skills/templates
-- other AI-lab agentic solutions
-- open-source frameworks
+- public Anthropic financial-services Skills, prompts, templates and reference workflows for porting or adaptation into OpenAI/Codex
+- open-source quantitative and technical frameworks outside the agentic AI layer
 - broker APIs
 - financial-data providers
 - quantitative libraries
 
 Do not select technologies simply because they appeared in a tutorial or previous draft.
+
+For R-006/D-020 and D-024 in PAPER V1, investigate the **AI/agentic layer only within OpenAI and Anthropic**. Do not evaluate other AI Labs or third-party agent frameworks/runtimes, including Google ADK, Microsoft Agent Framework, LangGraph and PydanticAI. This restriction does not narrow separate broker, market-data, alternative-data, quantitative-engine, database or infrastructure research.
+
+For PAPER V1, prioritize Tier 0 (capabilities included in the **target individual Plus subscription**, or public reusable assets; current Team capabilities may support research) and Tier 1 (free-limited/free-account or reasonable local open source). Tier 2 includes separately billed OpenAI/Anthropic APIs, Managed Agents, extra subscriptions, enterprise services, premium connectors or incremental spend. Paid alternatives may be researched; contracting, enabling billing or generating incremental spend requires explicit owner approval. Subscription access does not imply API entitlement. See ADR-007, ADR-008 and superseding ADR-013.
+
+ADR-013 supersedes the environment assumptions of ADR-010: `RESEARCH_AI_ENVIRONMENT = ChatGPT Team`; `RESEARCH_HOST = INFOTEP-managed institutional Windows workstation`. This host is research/design only, never the PAPER host. `TARGET_PAPER_AI_ENVIRONMENT = ChatGPT Plus individual`; `TARGET_PAPER_COMPUTE_HOST = owner-administered personal Windows PC`. `FUTURE_LIVE_ENVIRONMENT = UNKNOWN`, to be selected after PAPER. No Plus access or institutional administrative action is requested during Preparation. Preserve Team probe results as behavioral/design evidence; record `AVAILABLE_IN_RESEARCH_AI_ENVIRONMENT`, `AVAILABLE_IN_TARGET_PAPER_PLUS` and `AVAILABLE_ON_TARGET_PAPER_HOST` separately. Current availability never establishes target entitlement, host security or sustained capacity. Legacy environment fields are historical, not aliases granting acceptance.
+
+## Economic policy by project phase
+
+Optimize quality, reliability and capability at the lowest reasonable total cost. Prefer free/open-source/free-tier options when they meet requirements; a material quality, data, performance or availability gap must influence the comparison.
+
+PAPER V1 follows **Zero/Low Incremental Cost First** to demonstrate, measure and learn. LIVE/production follows **Economic Value First**, considering unit economics, expected net benefit, operational reliability, security and scale. Paid services remain valid future candidates; a PAPER budget exclusion is not a permanent architectural rejection. Any contracting or incremental spending requires explicit owner approval.
+
+Skills, prompts, agent templates, reference workflows and methodologies must be free, public, included in existing capabilities, or created/adapted by us. Do not pay specifically to acquire a Skill/template. Runtime, models, data or infrastructure used by it may later justify payment separately.
+
+For every external candidate, record `PAPER_V1_VIABLE_FREE`, `PAPER_V1_COST`, `LIVE_COST`, `FREE_ALTERNATIVE`, `PAID_INCREMENTAL_VALUE` and `ECONOMIC_JUSTIFICATION_REQUIRED`. Include fixed and variable costs, estimated monthly cost and scale assumptions, quality/capability difference, lock-in/exit cost, expected operational benefit and the condition that would justify paying. Keep unknown prices/benefits explicit and dispositions phase-specific. Apply ADR-008 and `planning/economic_scorecard.md` across broker, data, AI/runtime, storage, infrastructure, observability and future capability research.
+
+## Agent Capability Gate
+
+### Research behavior, design gates and target PAPER acceptance
+
+Use Team for entitlement-independent behavioral/comparative probes: Skills versus minimal workflows, PIT, lineage, injection, structured outputs, pedagogy, shadow, authority contracts, repeatability and failure/recovery semantics. Reuse applicable evidence; do not repeat whole discovery in Plus. Native Team probes demonstrate only their captured instance/surface/version.
+
+The active target gate is `planning/research/R-030_target_paper_environment_acceptance_RC0.md`. During Preparation close design/architecture questions, contracts, Build-vs-Reuse, test protocols and critical review. Target-dependent Plus availability/auth/quota, personal-PC filesystem/full-process/IPC/network isolation, bootstrap and smoke acceptance remain deferred **P1 before implementation**, with integrated/sustained operational validation P2 before autonomous PAPER. Do not let those future tests block independent research or claim they passed. Keep separate `design_status`, `target_acceptance_status`, `operational_status`; `AGENTIC_ARCHITECTURE_DESIGN_COMPLETE` never means `PAPER_RUNTIME_ACCEPTED` or READY_FOR_IMPLEMENTATION. A master-plan design checkpoint may retain explicit target obligations; the implementation lock remains until DoR and required target acceptance pass.
+
+ADR-011 option A and RC2 dispositions remain approved design direction: always-on deterministic/local financial core plus automatic event/schedule-driven native Codex jobs, **targeting Plus under ADR-013 and subject to R-030 acceptance**. A deterministic scheduler invokes routine approved jobs without owner approval per job. Intermittent does not mean manual. No production implementation before DoR, no API billing fallback or new financial authority.
+
+R-006/D-020 capability maturity precedes D-024 design closure: coverage, access/license/cost, feasible priority probes, financial-authority/permission contracts, comparative recommendation and independent review. D-020 is DECIDED in approved design dispositions, not target availability. D-024 final permissions/runtime/topology and target acceptance are separate; do not rename genuinely unresolved architecture into future acceptance. Financial contracts independent of technology may continue. Historical Plus/Team gate documents are retained with supersession notes; ADR-010's Team PAPER and exclusively PRE-LIVE Plus assignment is superseded. LIVE runtime/host remain undecided.
+
+### Automated jobs and failure isolation
+
+No job receives broker credentials, direct financial endpoints or authority to create operational intents, modify Champion/risk/allocations, or resume a material financial pause. Tools/handlers use explicit allowlists and fail closed; admission is external to the model. Preserve manifests, snapshots, versions and every attempt. Timeout, quota exhaustion, errors, late or missing output grant no alternative authority; absence is not HOLD. Retry/recovery must not duplicate financial effects. Any mandatory agent-derived Strategy V1 dependency requires an explicit failure contract before strategy approval. ADR-011 does not approve final permissions, implementation or spending.
+
+## Environment Bootstrap, Portability and Agent Packaging Gate
+
+The owner approved the R-006 RC1 shortlist as a **candidate acceptance cohort**, not final selection, runtime topology or freeze of D-020/D-024.
+
+Maintain a repository-contained onboarding route from a fresh environment plus repository to a configured and verified agent environment. See ADR-009, D-037/R-028 and `ONBOARDING.md`. D-024 design closure requires this reproducible route, contracts and explicit acceptance obligations. Target environment acceptance and global Definition of Ready remain separate prerequisites before implementation; no technical acceptance may be claimed from design alone.
+
+Distinguish AI plan and compute host independently as ADR-013 defines. A repository-contained fresh-clone route must reproduce roles/contracts without this chat. Design and read-only/bootstrap research can run in Team; configuring and accepting the operational agent environment requires personal Windows PC and Plus before implementation/PAPER. Team-to-Plus is now a target PAPER transition, not the historical PRE-LIVE-only route. Never transfer credentials, SIDs, installed plugins, authentication, quotas or acceptance automatically via Git. Source policy stays plan-architect / main approved baseline / approved release or tag.
+
+Classify onboarding actions as `AUTOMATED`, `USER_ACTION_REQUIRED`, `UNAVAILABLE`, `OPTIONAL` or `FALLBACK_AVAILABLE`. Account login, credentials, subscriptions, spend and material permissions require the appropriate owner action. Never request or write secrets in Git; sanitize reports and preserve existing user configuration.
+
+Role packages may specialize these global rules but must preserve approved financial authority, preparation lock, governance and economics. Package instructions are not a security boundary. Manual directory use and future programmatic invocation must use the same versioned contracts; one session/project per role is not selected. The Plan Guardian role remains inactive until approved plan freeze.
 
 ## Financial architecture invariant
 
@@ -170,7 +214,102 @@ Continuously check for:
 - execution assumptions
 - unbounded agent authority
 
+## Git and GitHub discipline
+
+### Vendor inquiries — owner delivery policy, 2026-10-23
+
+Current owner declaration: both inquiries have been sent personally; use AWAITING_VENDOR_RESPONSE (external clarification pending), evidence=OWNER_DECLARATION, received 2026-10-23. Exact send date was not supplied: keep it UNKNOWN, distinct from declaration date. No vendor response, license or data admission is implied; no automatic sending permission is granted. The preparation-only/not-sent wording below is historical.
+
+The owner approved preparing the Twelve Data and EODHD inquiries only and will send them personally from personal email. No automatic sending from any account is authorized. Use `planning/research/vendor_inquiries/status.json`: READY_FOR_OWNER_SEND/NOT_SENT until the owner confirms actual sending, then EXTERNAL_CLARIFICATION_PENDING for that inquiry. Never infer delivery from elapsed time. Do not include institutional or private project details. A generic sales response cannot admit a dataset: applicable licensing, coverage, quality and verifiable technical/PIT evidence remain separate gates. Continue independent financial P0/P1 work while clarification is pending; no account, trial, purchase or credential submission is authorized.
+
+GitHub is part of the project's persistent source of truth.
+
+Deployment Source Policy: `plan-architect` is preparation/candidate work; `main` is the stable approved baseline; a versioned approved release/tag is the reproducible deployment snapshot. Record its commit, manifest and acceptance evidence. Candidate probes may use pinned working-branch commits. Do not create/promote a deployment release or merge to main without the required checkpoint/approval.
+
+The active Preparation Program branch is `plan-architect`. The `main` branch represents the latest stable approved baseline and MUST NOT be modified or merged into automatically without an explicit project checkpoint or human approval.
+
+Whenever work produces a **material change** to the project, the change must be:
+
+1. reflected in all affected repository artifacts;
+2. checked for consistency with existing decisions and contracts;
+3. committed to the active branch with a descriptive commit message;
+4. pushed to GitHub before the work is reported as completed.
+
+A material change includes, but is not limited to:
+
+- architecture or system behavior;
+- agent capabilities or authority;
+- autonomy boundaries;
+- risk policy or failure handling;
+- strategy definitions or selection status;
+- data, order, execution or reconciliation contracts;
+- broker or provider decisions;
+- Build-vs-Reuse conclusions;
+- security architecture;
+- project scope;
+- decision status changes;
+- ADR creation or modification;
+- roadmap or master-plan changes;
+- Definition of Ready criteria;
+- planning artifacts that materially affect future implementation.
+
+Minor wording, formatting, typo fixes, or closely related documentation edits may be batched into a later meaningful commit.
+
+Use milestone-oriented commit prefixes such as:
+
+- `planning:`
+- `research:`
+- `decision:`
+- `docs:`
+
+Do not force-push, rewrite shared history, delete branches, merge `plan-architect` into `main`, or modify an approved baseline without explicit authorization when the action could affect project history or governance.
+
+Never commit secrets, API keys, tokens, broker credentials, `.env` contents, private certificates, or other sensitive credentials.
+
+If a material change cannot be pushed successfully, explicitly report that the repository is not synchronized instead of presenting the change as fully completed.
+
+## Autonomous Continuation Rule
+
+During the Preparation Program, do not stop at informational checkpoints when the next valid work item is already defined and does not require human approval.
+
+After completing a research task, probe, document or sub-step:
+
+1. persist the results in the repository;
+2. commit and push material changes;
+3. identify the next highest-priority valid task from the approved preparation sequence;
+4. continue executing it autonomously.
+
+A progress summary alone is not a reason to end the task.
+
+Stop and request owner intervention only when:
+
+- an explicit human-governance decision is required;
+- spending or contracting requires approval;
+- credentials, access, account action or external input from the owner is required;
+- a material change to approved scope/invariants is proposed;
+- evidence produces alternatives whose selection materially changes architecture;
+- a genuine external blocker prevents further useful work;
+- or the planned autonomous work package has actually been completed.
+
+If work can continue in parallel without resolving the blocker, continue the independent work first.
+
+When stopping, state explicitly:
+
+`HUMAN_ACTION_REQUIRED`
+
+and describe the exact decision/input/blocker.
+
+Otherwise continue through the planned work package and only report completion after reaching its defined endpoint.
+
 ## Plan completion
+
+### Approved candidate design checkpoint — 2026-10-13
+
+The owner approved ADR-014/B-RT1 and AGENTIC_ARCHITECTURE_DESIGN_COMPLETE only within its documented capability/role/trust-boundary/integration scope. D-024/D-027/D-037 design_status is DESIGN_DECIDED; TARGET_ACCEPTANCE_DEFERRED and implementation_locked=true remain. PAPER_RUNTIME_ACCEPTED=false. Fundamental Team agentic architecture research is complete unless material new evidence invalidates the design. Do not expand R-006/R-010/R-013 by indefinite refinement; continue financial P0/P1.
+
+One Agent Runner, trusted supervisor/control outside the AI domain, financial core/secrets outside AI, effective per-job isolation/minimal snapshots, allowlists, attempt identity/lifecycle, structured outputs and external admission/audit/versioning are the approved contract. Exact keyring, readonly HOME, restricted-token implementation, desktop, IPC carrier and launch mechanisms are replaceable candidates, not irreversible invariants. Target-compatible replacements must preserve the same trust/authority and follow applicable evidence, change records and human governance; no automatic permission expansion or weakening. R-030 remains deferred to personal Windows/Plus; do not request Plus access or administration on INFOTEP. New privileged services, broader grants, moving supervisor into AI, shared excluded content or routine per-job owner login require reopening material governance.
+
+D-025/026/028/029/034/035 remain financial-demand-dependent transverse design work. Preserve eight synthetic H7 files as documented research residue; do not expand privileges or evade deletion policy to remove them.
 
 The Preparation Program ends only when the project's formal Definition of Ready is satisfied.
 
@@ -183,3 +322,53 @@ That version will be reviewed, frozen, and used as the primary implementation co
 After freeze, this role transitions from **Plan Architect** to **Plan Guardian**.
 
 The Plan Guardian helps Codex execute the approved plan, detects deviations, evaluates proposed changes, and keeps implementation aligned with the frozen architecture.
+
+## Approved candidate S2-B direction — ADR-012
+
+On 2026-10-06 the owner explicitly approved S2-B as the principal candidate direction: one base Windows Agent Runner identity with effective per-job isolation, preserving the technical AI-to-financial-core boundary. Preserve the prior variant proposal and RC1 evidence. Use ADR-012, `planning/08_S2_agent_domain_contract_RC2.md` and `planning/research/R-013_S2_variant_acceptance_RC2.md` as the candidate contracts.
+
+S2-B is approved as a candidate direction, not finally selected or operationally accepted: one restricted Windows Agent Runner outside the financial domain, with technically effective per-job contexts, minimal exports/workspaces/tools, external admission and protected supervisor/auth/persistent state. Role packages do not prescribe OS account or Codex session counts. A shared unconstrained account plus prompts/folder names is insufficient. No account per role is mandatory without evidence of a concrete threat that per-job controls cannot mitigate.
+
+Security isolation and Shadow experimental blinding are separate gates. Prompts, AGENTS, authority=NONE, different usernames or a command-only sandbox do not demonstrate full-process isolation. D-027/D-024 design and target acceptance remain separate under ADR-013; effective financial/process/IPC/network permissions, negative tests, blinding, native auth, reproducibility and operational criteria must pass on the target before their applicable acceptance. Design closure requires its own complete contracts and review. AccessCheck in-memory evidence does not pass those gates.
+
+S2-A remains a conditional alternative based on an observed per-job limitation; use minimal additional trust/visibility domains when justified. S3 remains a formal fallback requiring human reevaluation if S2 fails. S1 is secret-free research only, never an operational PAPER fallback. No silent migration, broader grants or security downgrade.
+
+S2-ADM-01 is DEFERRED / NOT AUTHORIZED and must not be executed or presented as the active administrative request. Administrative changes remain forbidden; the historical owner-administered S2B-ADM-01 authorization is deferred to the target PAPER host below. AppContainer profiles, firewall/system policies and other operational configuration are not authorized. A future concrete gate needs a reviewable diff, positive/negative controls and rollback following the approved S2-B direction. Design, test preparation and disposable non-administrative probes remain allowed. No institutional administrative change or request is permitted under ADR-013. Future target-host administration requires a concrete owner gate and reversal. No production implementation or spending.
+
+### Concrete S2-B laboratory gate — current applicability ADR-013
+
+`planning/research/R-013_S2B_lab_ADM01.md` preserves the owner's 2026-10-06 approval for one temporary standard account/new tree/DACL, synthetic FS tests and transaction-scoped rollback. **Current state: DEFERRED_TO_TARGET_PAPER_HOST, not FAIL or REJECTED. Do not execute or request this lab on the INFOTEP workstation.** Withdraw the previous pending local-account action. The host lacks required privileges and is not operational PAPER; host-specific evidence must be obtained on the personal PC.
+
+Preserve authorization.json, runbook, harness, QA, matrices and source history. Before future target execution, revalidate clone/source, new instance/transaction/SID/path bindings and owner-administered scope. No secrets in chat, commands, logs or Git; the owner uses secure Windows interfaces. No agent elevation or automatic account/ACL/firewall/policy/auth/config installation. No scope expansion, services/tasks, VM or spending without governance. Historical S2-ADM-01 remains DEFERRED/NOT_AUTHORIZED. Runtime/network/process/blinding acceptance remains NOT_TESTED; filesystem PASS alone never accepts S2-B.
+
+## Approved remaining-risk reference — ADR-015
+
+The owner approved R2 conceptually on 2026-10-13: remaining risk from current position value to valid confirmed protection. Preserve entry-based R1 attribution/P&L and independent loss/drawdown/exposure/liquidity/cash/gap/slippage controls. Reduced R2 never creates authority to enlarge losing positions: approved strategy rules, valid signal, a new integral risk evaluation and reconciled reservations are required. Pending/new quantities use conservative p_auth and declared conditional protection. Absent/invalid/unconfirmed protection or crossed stop without verified execution means uncertainty, never zero risk; fail closed, preserve G1+G2 and no G3. Avoid double losses/costs/claims without hiding real exposure. D-035 remains RESEARCHING for final formulas/tests/inputs/parameters; no thresholds, broker/strategy, implementation, spend or target acceptance authorized. Continue financial preparation, no general agentic research round.
+
+## Approved evaluation architecture — ADR-016
+
+Owner approved Q-055/O-B on2026-10-14, conceptual only; D-011 remains RESEARCHING. Preserve MATR proposed windows and admit other candidates only with sufficient coverage/rights/PIT. Direct comparisons require homogeneous periods/benchmarks/costs/calendars/accounting. Register every variant/parameter/experiment/discard; evaluate multiple-testing bias and statistical robustness, not only CAGR/Sharpe. Preregister evidence/sample/regime criteria; insufficient samples yield INSUFFICIENT_EVIDENCE. Include walk-forward, parameter and cost/delay sensitivity where applicable, candidate decision horizon/admissible latency/expiry and freeze before confirmation. 2023–2026-09-30 is PROPOSED_RESERVE/INTEGRITY_UNKNOWN pending exposure ledger/M-11; contaminated reserve requires owner-reviewed prospective alternative before using results. History-deficient candidates remain research/prospective without PIT waiver or informal holdout selection. No Strategy/broker/data/statistical model/parameters or implementation selected by this approval; target acceptance deferred and implementation locked.
+
+## Approved economic objective — ADR-017
+
+Owner approved Q-056/B on2026-10-14, conceptual only: competitive net return plus material risk reduction, never risk minimization regardless of return. Non-inferiority margin must be technically justified, preregistered and owner-approved before relevant results. Include cash/T-bill opportunity cost and additional net return over cash; low exposure alone is not efficiency. Compare exposure/risk appropriately without leverage or shorts. A remains secondary economic analysis; C is a separate operational gate, never economic qualification or promotion. Preregister effects/methods/power/sample/PASS/FAIL/INSUFFICIENT_EVIDENCE; accept NO_STRATEGY_QUALIFIED with reasons if none meets criteria. Do not pick the least bad or relax margins after results. No numeric margin, threshold, Strategy, capital, broker/dataset, implementation or operation approved. D011 remains RESEARCHING; holdout INTEGRITY_UNKNOWN, implementation lock and target deferral preserved. Continue technical formulation/PRICE versus MATR/Form4; seek new owner decisions only for material evidence-backed proposals or genuine governance.
+
+## Approved PRICE–MATR benchmark package — ADR-018
+
+Q-057/K2 is DECIDED for the initial ETF PRICE–MATR cohort only: B-EW6-BH equal initial weights/natural drift, mandatory B-CASH and B-EW6-BH-LAMBDA-REAL, explicit SPY buy-and-hold/SPY-SMA200 secondary and predefined monthly EW6 sensitivity. Exposure equivalence is not risk equivalence: composition/beta/factors and technical limitations must be evaluated; show material SPY opportunity cost. Benchmark policies and as-of accounting must be reproducible. Qualification is conjunctive, with no score compensation; insufficient precision remains INSUFFICIENT_EVIDENCE. Source/model/numeric margins/strategy/broker/capital are not approved. Continue technical work without asking Q056/Q057 again. Holdout INTEGRITY_UNKNOWN, implementation lock and target acceptance deferral remain.
+
+## Approved PRICE–MATR economic utility — ADR-019
+
+Q058/M1 is DECIDED only as ex ante utility for the ETF cohort: δ_NI=0.01 annual CAGR, ε_cash=+0.01 annual net excess after relevant incremental costs, ρ_ES=0.20, q_ES=0.95 using documented daily tail-mass estimand. These values do not prove four years can demonstrate compliance and never adjust to available power. Validate uncertainty/dependence/blocks/multiplicity/effective tails before PASS; E4 checks are not complete validation. Preregister complementary DD/loss/recovery/volatility/gap/extreme guardrails and capital/cost scenarios without retrospective scale choice. UNKNOWN costs/scale block operational economic qualification. Preserve K2 composition/beta/factor limits and distinct evidence states; accept NO_STRATEGY_QUALIFIED, no holdout repair. D011, strategy/method/data/broker/capital/implementation remain unapproved. Continue technical Team work; do not reopen B/K2/M1 without material new evidence. Holdout UNKNOWN, implementation lock and target acceptance deferral remain.
+
+## Approved complementary economic guardrails — ADR-020
+
+Q-059/G-R1 is DECIDED as ex ante preference for PRICE–MATR: no DD deterioration versus full EW6-BH and no daily volatility deterioration versus the admissible K2 exposure mirror. Preserve primary ES95 reduction20%, NI/cash/M1/K2 jointly, and required recovery/underwater/accumulated-loss/gap/slippage/extreme reports. DD needs an explicit estimand, horizon, path treatment and validated uncertainty/applicability before PASS; historical path or generic bootstrap is insufficient. Volatility includes favorable and adverse variability. Relative economic criteria never replace absolute D-031 Risk limits. G-R2 remains unapproved, never automatic fallback; material method impossibility needs evidence and governed proposal before relevant results. Preserve evidence states and NO_STRATEGY_QUALIFIED. No statistical method/data/config/broker/Strategy/F0/implementation accepted. Continue grouped financial P0/P1 checkpoints; holdout INTEGRITY_UNKNOWN, implementation lock and target deferral remain.
+
+## PAPER nominal reference and mandatory cost sensitivity — ADR-021
+
+Owner approved USD10,000 as the ex ante PAPER nominal economic reference. Keep all five sensitivity capitals USD2k/5k/10k/25k/50k and evaluate/report costs at every scale, including all admitted actual/stress models and the prior20hypothetical cells. Unknown costs stay explicit, never zero/omitted; never choose a favorable capital after results. Principal10k does not certify universal viability or silently require PASS at all five. No deposit/funding/LIVE capital/spend/Risk thresholds approved; method/data/Strategy/DoR remain open, holdoutUNKNOWN/implementationlock/targetdeferral.
+
+## Approved conditional drawdown claim — ADR-022
+
+Owner approved Q061/DD-E as G-R1 inferential meaning: expected maximum-drawdown difference versus full EW6-BH under explicit P/model, horizon H, initial state I0 and assumptions; zero deterioration tolerance and valid upper uncertainty bound≤0. This does not establish improvement for most paths or guarantee future losses. Report observed DD, estimated difference distribution, deterioration probability/magnitude and relevant quantiles when reliable; disclose unestimable/ unreliable outputs. Rare extreme improvements hiding deterioration on most paths are a visible material limitation, never unqualified "lower risk". DD-P remains unapproved, no implicit probability threshold. Keep data/parameter/model/MonteCarlo uncertainty separate; generic bootstrap/one path/unvalidated simulation does not admit inference. M1/G-R1/ES/volatility/absolute Risk and human/operational gates remain independent. D011/method/model/sufficiency remain open. Bound further Team DD work and prioritize usable data/broker/backtesting engine/financial rules/Planv1. Preserve UNKNOWN holdout, implementation lock and target deferral.

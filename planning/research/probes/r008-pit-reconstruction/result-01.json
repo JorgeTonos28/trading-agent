@@ -1,0 +1,10 @@
+{
+  "attempt": "01",
+  "status": "ERROR_CAPTURE",
+  "reason": "TypeError: Decimal not JSON serializable",
+  "source_sha256": "1a6194b7d55194f42e74862d8f9a27f3ff9f5a6c74c43e050701f5c0e74d8cd0",
+  "partial_sha256": "9cd3d52fa651349c279d9e46f6326d10c512c2c351d2c38e2442a3613616c7b0",
+  "partial_capture": "result-01.partial.txt",
+  "vendor_calls": 0,
+  "datasets_admitted": 0
+}

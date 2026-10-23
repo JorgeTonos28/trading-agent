@@ -1,0 +1,112 @@
+{
+  "probe": "R028_NATIVE_DISCOVERY_01",
+  "target_plus": "UNKNOWN",
+  "selected": false,
+  "config": {
+    "forced_login_method": "chatgpt",
+    "model_provider": "openai",
+    "features.shell_tool": false,
+    "features.unified_exec": false,
+    "features.multi_agent": false,
+    "features.apps": false,
+    "features.skill_mcp_dependency_install": false,
+    "web_search": "disabled",
+    "mcp_servers": {},
+    "plugins": {},
+    "history.persistence": "none"
+  },
+  "trials": [
+    {
+      "case": "root",
+      "cwd": "repo",
+      "instruction_sources": [
+        "UNPARSED_SOURCE_METADATA"
+      ],
+      "output": null,
+      "status": "METADATA_ONLY_NO_INFERENCE",
+      "instruction_source_keys": []
+    },
+    {
+      "case": "research",
+      "cwd": "repo/agents/research",
+      "instruction_sources": [
+        "UNPARSED_SOURCE_METADATA",
+        "UNPARSED_SOURCE_METADATA"
+      ],
+      "output": null,
+      "status": "METADATA_ONLY_NO_INFERENCE",
+      "instruction_source_keys": []
+    },
+    {
+      "case": "shadow",
+      "cwd": "repo/agents/shadow",
+      "instruction_sources": [
+        "UNPARSED_SOURCE_METADATA",
+        "UNPARSED_SOURCE_METADATA"
+      ],
+      "output": null,
+      "status": "METADATA_ONLY_NO_INFERENCE",
+      "instruction_source_keys": []
+    },
+    {
+      "case": "isolated",
+      "cwd": "isolated-shadow",
+      "instruction_sources": [
+        "UNPARSED_SOURCE_METADATA"
+      ],
+      "output": null,
+      "status": "METADATA_ONLY_NO_INFERENCE",
+      "instruction_source_keys": []
+    }
+  ],
+  "inventories": [
+    {
+      "case": "root",
+      "skills": [
+        {
+          "name": "r028-common",
+          "enabled": true,
+          "scope": "repo"
+        }
+      ]
+    },
+    {
+      "case": "research",
+      "skills": [
+        {
+          "name": "r028-common",
+          "enabled": true,
+          "scope": "repo"
+        },
+        {
+          "name": "r028-local",
+          "enabled": true,
+          "scope": "repo"
+        }
+      ]
+    },
+    {
+      "case": "shadow",
+      "skills": [
+        {
+          "name": "r028-common",
+          "enabled": true,
+          "scope": "repo"
+        }
+      ]
+    },
+    {
+      "case": "isolated",
+      "skills": []
+    }
+  ],
+  "account": {
+    "type": "UNKNOWN",
+    "plan_type": "UNKNOWN",
+    "status": "RPC_READ_FAILED"
+  },
+  "inference_authorized_by_environment_check": false,
+  "cli_version": "codex-cli 0.159.0-alpha.12.1",
+  "model": "gpt-6.1-sol",
+  "source_sha256": "5720df79a84a736a4089e3c268532edfb9afadb4ea263bccef0f793edd444302"
+}

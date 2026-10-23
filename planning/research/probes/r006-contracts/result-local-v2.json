@@ -1,0 +1,258 @@
+{
+  "probe": "R006-CONTRACT-SPINE-01",
+  "protocol_version": "2_typed_reference_semantics",
+  "synthetic": true,
+  "selected": false,
+  "target_plus": "NOT_TESTED",
+  "checks": [
+    {
+      "case": "positive_research",
+      "observed": "ACCEPTED",
+      "expected": "ACCEPTED",
+      "passed": true
+    },
+    {
+      "case": "positive_quant",
+      "observed": "ACCEPTED",
+      "expected": "ACCEPTED",
+      "passed": true
+    },
+    {
+      "case": "positive_shadow",
+      "observed": "ACCEPTED",
+      "expected": "ACCEPTED",
+      "passed": true
+    },
+    {
+      "case": "positive_pedagogy",
+      "observed": "ACCEPTED",
+      "expected": "ACCEPTED",
+      "passed": true
+    },
+    {
+      "case": "positive_failure",
+      "observed": "ACCEPTED",
+      "expected": "ACCEPTED",
+      "passed": true
+    },
+    {
+      "case": "role_selects_own_validator",
+      "observed": "REJECTED_SCHEMA",
+      "expected": "REJECTED_SCHEMA",
+      "passed": true
+    },
+    {
+      "case": "localized_role",
+      "observed": "REJECTED_SCHEMA",
+      "expected": "REJECTED_SCHEMA",
+      "passed": true
+    },
+    {
+      "case": "authority_order",
+      "observed": "REJECTED_SCHEMA",
+      "expected": "REJECTED_SCHEMA",
+      "passed": true
+    },
+    {
+      "case": "operative_mode",
+      "observed": "REJECTED_SCHEMA",
+      "expected": "REJECTED_SCHEMA",
+      "passed": true
+    },
+    {
+      "case": "extra_intent",
+      "observed": "REJECTED_SCHEMA",
+      "expected": "REJECTED_SCHEMA",
+      "passed": true
+    },
+    {
+      "case": "research_portfolio_proposal",
+      "observed": "REJECTED_SCHEMA",
+      "expected": "REJECTED_SCHEMA",
+      "passed": true
+    },
+    {
+      "case": "wrong_snapshot",
+      "observed": "REJECTED_PIT",
+      "expected": "REJECTED_PIT",
+      "passed": true
+    },
+    {
+      "case": "later_asof",
+      "observed": "REJECTED_PIT",
+      "expected": "REJECTED_PIT",
+      "passed": true
+    },
+    {
+      "case": "future_source",
+      "observed": "REJECTED_PIT",
+      "expected": "REJECTED_PIT",
+      "passed": true
+    },
+    {
+      "case": "invented_observed_value",
+      "observed": "REJECTED_LINEAGE",
+      "expected": "REJECTED_LINEAGE",
+      "passed": true
+    },
+    {
+      "case": "wrong_observed_unit",
+      "observed": "REJECTED_LINEAGE",
+      "expected": "REJECTED_LINEAGE",
+      "passed": true
+    },
+    {
+      "case": "duplicate_fact_id",
+      "observed": "REJECTED_LINEAGE",
+      "expected": "REJECTED_LINEAGE",
+      "passed": true
+    },
+    {
+      "case": "wrong_derived_result",
+      "observed": "REJECTED_LINEAGE",
+      "expected": "REJECTED_LINEAGE",
+      "passed": true
+    },
+    {
+      "case": "wrong_derived_unit",
+      "observed": "REJECTED_LINEAGE",
+      "expected": "REJECTED_LINEAGE",
+      "passed": true
+    },
+    {
+      "case": "cyclic_or_unknown_input",
+      "observed": "REJECTED_LINEAGE",
+      "expected": "REJECTED_LINEAGE",
+      "passed": true
+    },
+    {
+      "case": "unknown_formula",
+      "observed": "REJECTED_SCHEMA",
+      "expected": "REJECTED_SCHEMA",
+      "passed": true
+    },
+    {
+      "case": "ambiguous_delta_field",
+      "observed": "REJECTED_SCHEMA",
+      "expected": "REJECTED_SCHEMA",
+      "passed": true
+    },
+    {
+      "case": "close_without_position",
+      "observed": "REJECTED_LINEAGE",
+      "expected": "REJECTED_LINEAGE",
+      "passed": true
+    },
+    {
+      "case": "negative_short_target",
+      "observed": "REJECTED_LINEAGE",
+      "expected": "REJECTED_LINEAGE",
+      "passed": true
+    },
+    {
+      "case": "abstain_with_positions",
+      "observed": "REJECTED_LINEAGE",
+      "expected": "REJECTED_LINEAGE",
+      "passed": true
+    },
+    {
+      "case": "duplicate_priority_or_double_spend",
+      "observed": "REJECTED_LINEAGE",
+      "expected": "REJECTED_LINEAGE",
+      "passed": true
+    },
+    {
+      "case": "sizing_cause_invented",
+      "observed": "REJECTED_LINEAGE",
+      "expected": "REJECTED_LINEAGE",
+      "passed": true
+    },
+    {
+      "case": "outcome_invented",
+      "observed": "REJECTED_LINEAGE",
+      "expected": "REJECTED_LINEAGE",
+      "passed": true
+    },
+    {
+      "case": "read_failure_fabricated_fact",
+      "observed": "REJECTED_PIT",
+      "expected": "REJECTED_PIT",
+      "passed": true
+    },
+    {
+      "case": "known_source_unknown_field",
+      "observed": "REJECTED_PIT",
+      "expected": "REJECTED_PIT",
+      "passed": true
+    },
+    {
+      "case": "unknown_qualified_source",
+      "observed": "REJECTED_PIT",
+      "expected": "REJECTED_PIT",
+      "passed": true
+    },
+    {
+      "case": "qualified_known_field_reference",
+      "observed": "ACCEPTED",
+      "expected": "ACCEPTED",
+      "passed": true
+    },
+    {
+      "case": "on_time",
+      "observed": "ACCEPTED_ON_TIME",
+      "expected": "ACCEPTED_ON_TIME",
+      "passed": true
+    },
+    {
+      "case": "late_kept_not_on_time",
+      "observed": "LATE_RETROSPECTIVE_ONLY",
+      "expected": "LATE_RETROSPECTIVE_ONLY",
+      "passed": true
+    },
+    {
+      "case": "no_output_not_hold",
+      "observed": "NO_OUTPUT",
+      "expected": "NO_OUTPUT",
+      "passed": true
+    },
+    {
+      "case": "different_context",
+      "observed": "UNPAIRED",
+      "expected": "UNPAIRED",
+      "passed": true
+    },
+    {
+      "case": "repeat_delivery",
+      "observed": "DUPLICATE",
+      "expected": "DUPLICATE",
+      "passed": true
+    },
+    {
+      "case": "invalid_json_delivery",
+      "observed": "REJECTED_SCHEMA",
+      "expected": "REJECTED_SCHEMA",
+      "passed": true
+    },
+    {
+      "case": "deterministic_admission_replay",
+      "passed": true,
+      "observed": [
+        "ACCEPTED",
+        "ACCEPTED",
+        "ACCEPTED",
+        "ACCEPTED",
+        "ACCEPTED"
+      ],
+      "expected": [
+        "ACCEPTED",
+        "ACCEPTED",
+        "ACCEPTED",
+        "ACCEPTED",
+        "ACCEPTED"
+      ]
+    }
+  ],
+  "passed": 39,
+  "total": 39,
+  "source_sha256": "9b90c0beaf14099ed448fa9fa7b0e213958859e99dfb3d38cdcb1b384893edb2"
+}

@@ -1,0 +1,49 @@
+{
+  "observed_on": "2026-10-15",
+  "attempt": "QE0-01",
+  "python": "3.14.6",
+  "source_sha256": "c2d8c2b652ffa974342977b0dde9b8ac5b5574ab51ee2b67cea89bf9471d094c",
+  "wheel_sha256": "295b67b127f67429ebb9d937bd11448f930bee697fca6a8e0ec1de343ad3c68c",
+  "rows": [
+    {
+      "id": "ARTIFACT_HASH",
+      "status": "PASS",
+      "detail": "295b67b127f67429ebb9d937bd11448f930bee697fca6a8e0ec1de343ad3c68c"
+    },
+    {
+      "id": "CORE_IMPORT_VERSION",
+      "status": "PASS",
+      "detail": "1.231.0"
+    },
+    {
+      "id": "CORE_COMPONENTS",
+      "status": "ERROR",
+      "detail": {
+        "type": "ModuleNotFoundError",
+        "missing_module": "pytz"
+      }
+    },
+    {
+      "id": "BACKTEST_ENGINE_IMPORT",
+      "status": "ERROR",
+      "detail": {
+        "type": "ModuleNotFoundError",
+        "missing_module": "pytz"
+      }
+    }
+  ],
+  "counts": {
+    "PASS": 2,
+    "FAIL": 0,
+    "ERROR": 2
+  },
+  "scope": "ARTIFACT_AND_COMPONENT_ONLY",
+  "engine_selected": false,
+  "backtest_executed": false,
+  "QP1_10_accepted": false,
+  "history_accessed": false,
+  "strategy_trials": 0,
+  "target_acceptance": "TARGET_ACCEPTANCE_DEFERRED",
+  "implementation_locked": true,
+  "incremental_spend": 0
+}

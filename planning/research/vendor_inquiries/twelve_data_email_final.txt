@@ -1,0 +1,22 @@
+To: support@twelvedata.com
+Subject: Personal-use licensing: ETF research, automated trading, retention and AI processing
+
+Hello Twelve Data team,
+
+I am evaluating market data for a private personal project. Before choosing a product, could you clarify the following separately for each applicable product and plan, including free plans where relevant?
+
+1. Permitted uses: Which plans permit personal research, backtesting, automated paper trading and, potentially later, automated trading using only my own capital? How do you classify these uses? Are non-display, exchange or other additional licenses, declarations or fees required? Please distinguish historical, delayed and real-time data where applicable.
+
+2. Historical coverage: For SPY, QQQ, IWM, EFA, TLT and GLD, which plans provide unadjusted daily OHLCV from each ETF's listing, including 2004 where applicable, plus splits and cash distributions with ex-dividend and payment dates? Please distinguish raw and adjusted fields. Are historical versions, corrections and publication/availability timestamps available for point-in-time backtesting?
+
+3. Storage and retention: Please address separately raw data, derived data, decision-time snapshots, research/backtest results, backups and audit records. What may be stored locally during a subscription, and what may be retained and used after cancellation, expiry or termination? How do sections 12.5 and 16 apply to each category, including any audit exception?
+
+4. Local processing: May my own automated software process licensed data locally for these uses? What caching, retention, access or output restrictions apply?
+
+5. External AI processing: Separately, may I transmit licensed data or limited extracts to an external AI service such as OpenAI/ChatGPT for private analysis? Please distinguish raw data from derived extracts and explain any third-party processing, redistribution, retention or model-training conditions. I do not assume that an individual AI subscription grants these rights.
+
+6. Applicable terms and costs: Please identify the exact products/plans, relevant contractual clauses, upstream-provider restrictions and required fixed or usage-based charges for each use above. If additional written permission is necessary, please explain the process.
+
+This is a preliminary information request only, with no commitment to an account, trial, subscription, purchase or credential submission. Please do not activate any service.
+
+Thank you.

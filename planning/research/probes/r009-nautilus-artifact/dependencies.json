@@ -1,0 +1,160 @@
+{
+  "observed_on": "2026-10-15",
+  "python": "CPython3.14.6_WINDOWS_X64",
+  "license_engine": "LGPL-3.0-or-later",
+  "engine_release": "v1.231.0",
+  "engine_source_commit": "27a8e54e7ac3c57d6cbf8891f0283dfbaee97317",
+  "engine_wheel_source": "https://pypi.org/project/nautilus-trader/1.231.0/",
+  "engine_artifact_provenance": "OFFICIAL_PYPI_SHA_MATCH_NOT_INDEPENDENT_SIGSTORE_VERIFICATION",
+  "distributions": [
+    {
+      "name": "colorama",
+      "version": "0.4.6",
+      "filename": "colorama-0.4.6-py2.py3-none-any.whl",
+      "artifact_sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+      "metadata_sha256": "7baed29eb50c3b29bdb33ff84e3177bf1bc05784f7685ecdcaa4471c7dd810cc",
+      "source": "https://pypi.org/project/colorama/0.4.6/",
+      "installed_to": ".local/r009-nautilus-deps",
+      "global_install": false
+    },
+    {
+      "name": "fsspec",
+      "version": "2026.2.0",
+      "filename": "fsspec-2026.2.0-py3-none-any.whl",
+      "artifact_sha256": "98de475b5cb3bd66bedd5c4679e87b4fdfe1a3bf4d707b151b3c07e58c9a2437",
+      "metadata_sha256": "3f0e9085bc977a0f9e95bd21a563e2411a4078c0ff02927dbdd345a180a7acfb",
+      "source": "https://pypi.org/project/fsspec/2026.2.0/",
+      "installed_to": ".local/r009-nautilus-deps",
+      "global_install": false
+    },
+    {
+      "name": "msgspec",
+      "version": "0.22.0",
+      "filename": "msgspec-0.22.0-cp314-cp314-win_amd64.whl",
+      "artifact_sha256": "749899563d26b211379f142b8ffd7e2d7da149a51717798f0ce994dce50324f0",
+      "metadata_sha256": "81ef03a70570fbb607d1f9458df3d51baeaac3ef3fb597b027adbd343305e24e",
+      "source": "https://pypi.org/project/msgspec/0.22.0/",
+      "installed_to": ".local/r009-nautilus-deps",
+      "global_install": false
+    },
+    {
+      "name": "nautilus_trader",
+      "version": "1.231.0",
+      "filename": "nautilus_trader-1.231.0-cp314-cp314-win_amd64.whl",
+      "artifact_sha256": "295b67b127f67429ebb9d937bd11448f930bee697fca6a8e0ec1de343ad3c68c",
+      "metadata_sha256": "fbf75753dc1ff4497d9bf70ea09a2480b031ece17ad75766ab4807852eaf48f2",
+      "source": "https://pypi.org/project/nautilus_trader/1.231.0/",
+      "installed_to": ".local/r009-nautilus-deps",
+      "global_install": false
+    },
+    {
+      "name": "portion",
+      "version": "2.6.3",
+      "filename": "portion-2.6.3-py3-none-any.whl",
+      "artifact_sha256": "9f5a26de92ff1241c7ba7ab23da0b544e67308187100681512871a50d6d206f1",
+      "metadata_sha256": "1c3f9db081f6f42a40428a4d92938496946be782b343bdf0f1a072e9ab740b1e",
+      "source": "https://pypi.org/project/portion/2.6.3/",
+      "installed_to": ".local/r009-nautilus-deps",
+      "global_install": false
+    },
+    {
+      "name": "pyarrow",
+      "version": "25.0.0",
+      "filename": "pyarrow-25.0.0-cp314-cp314-win_amd64.whl",
+      "artifact_sha256": "2e093efbecb5317372f819228fa4b4e6157eee48d3f0a7b0303705ebf81a7104",
+      "metadata_sha256": "ec5c33ae4ab245a331da32755edf8d2812bba1eb636c5d29f41f139d2fb90a17",
+      "source": "https://pypi.org/project/pyarrow/25.0.0/",
+      "installed_to": ".local/r009-nautilus-deps",
+      "global_install": false
+    },
+    {
+      "name": "pytz",
+      "version": "2026.5",
+      "filename": "pytz-2026.5-py2.py3-none-any.whl",
+      "artifact_sha256": "e658af3757f9e26a9d25dd2aff38335acd92bc9104f890a894b2c1ba28311b03",
+      "metadata_sha256": "4d20d16f6004b1d7f9b01a96f4d3eb462c0c2a8413d9aa878effe50a21535929",
+      "source": "https://pypi.org/project/pytz/2026.5/",
+      "installed_to": ".local/r009-nautilus-deps",
+      "global_install": false
+    },
+    {
+      "name": "sortedcontainers",
+      "version": "2.4.0",
+      "filename": "sortedcontainers-2.4.0-py2.py3-none-any.whl",
+      "artifact_sha256": "a163dcaede0f1c021485e957a39245190e74249897e2ae4b2aa38595db237ee0",
+      "metadata_sha256": "eedf115109e215001e904da0882851beae50b03c0b0161a8b9e74b7cfd679473",
+      "source": "https://pypi.org/project/sortedcontainers/2.4.0/",
+      "installed_to": ".local/r009-nautilus-deps",
+      "global_install": false
+    },
+    {
+      "name": "tqdm",
+      "version": "4.70.1",
+      "filename": "tqdm-4.70.1-py3-none-any.whl",
+      "artifact_sha256": "c293e525e6fef9c20e8728fd4612df02a0aa31bb5fe91ecd93e123b1b7bffa73",
+      "metadata_sha256": "a5da70b966afea3a759716041bad7187f2ece02c22348cf9e7c0a512bbf15f57",
+      "source": "https://pypi.org/project/tqdm/4.70.1/",
+      "installed_to": ".local/r009-nautilus-deps",
+      "global_install": false
+    }
+  ],
+  "reused_numeric_environment_manifest": "../r020-endpoint-screen/dependencies-01.json",
+  "numeric_environment_source_commit": "a0e3d8763b7147fdda4d61a1dbf7dce2ed857f61",
+  "native_guard_is_OS_isolation": false,
+  "full_dependency_environment_accepted": false,
+  "click_required_but_not_installed": true,
+  "new_install_local_only": true,
+  "incremental_spend": 0,
+  "setup_events": [
+    {
+      "stage": "PYTHON_URLOPEN_METADATA",
+      "result": "CONNECTION_RESET_NO_RESPONSE"
+    },
+    {
+      "stage": "POWERSHELL_PUBLIC_METADATA",
+      "result": "SUCCESS_NAUTILUS_VERSION_AND_SHA"
+    },
+    {
+      "stage": "DEPS_BATCH1",
+      "result": "PYTZ_MSGSPEC_VERIFIED_THEN_FETCH_ERROR"
+    },
+    {
+      "stage": "DEPS_BATCH2",
+      "result": "FSSPEC_CLICK_FETCH_ERROR_OTHERS_VERIFIED"
+    },
+    {
+      "stage": "INSTALL_PORTION_FILENAME",
+      "result": "ERROR_NO_INSTALL_CORRECTED_TO_EXISTING_WHEEL"
+    },
+    {
+      "stage": "PUBLIC_PAGE_SOURCE",
+      "result": "FSSPEC_VERIFIED_CLICK_HTTP_ERROR_NO_MORE_CLICK_RETRIES"
+    }
+  ],
+  "attempts": [
+    {
+      "id": "QE0-01",
+      "source_sha256": "c2d8c2b652ffa974342977b0dde9b8ac5b5574ab51ee2b67cea89bf9471d094c",
+      "result_sha256": "87afef222187d48898bd67730b4d42afc49c6139867865e55ac4324780e8ccc2",
+      "launcher_sha256": "ac69d65b0116eda1eb572fd605fe376b9e90c46a00d4a21a7fa4ffaef60d51c0"
+    },
+    {
+      "id": "QE0-02",
+      "source_sha256": "586514e5fde33bdbf64cada87023f6611a03a3d423e7ffd457abc72647213d1d",
+      "result_sha256": "e01b14285c95d3a6655caf995c4a0ec2b980348b9510b69924f5540f6d7d7555",
+      "launcher_sha256": "bba962afb3e73bf2c01dd790b4769dd9dfbeb93e0ad449fc10a08670d2f87253"
+    },
+    {
+      "id": "QE0-03",
+      "source_sha256": "2f040caa9500b71ac3ba22777482bf3c588531830fb58be4252e4124cc4cad28",
+      "result_sha256": "5833c83bf4d51ccefeea3efee365e74495db014cb3630771bf0b75a4d3dd509e",
+      "launcher_sha256": "132da18206b27e89e423f565976cd0387d1fc4323217fa54b85eb6eac812611b"
+    }
+  ],
+  "quantity_rounding_probe": {
+    "id": "QE1-ROUND-01",
+    "source_sha256": "2e7e06d0a64075c3b63bcb93ad412d138b46b0bf982466a777fed448f6485aed",
+    "result_sha256": "c0ccc61922764df9c286351736f32efa7d619bcd6da5308968b25f19eebb84fc",
+    "launcher_sha256": "d969478b96567c5af29964512230646de2be5a5bc242a107be3dc41d2827efc9"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "observed_on": "2026-10-15",
+  "attempt": "QE1-ROUND-01",
+  "source_sha256": "2e7e06d0a64075c3b63bcb93ad412d138b46b0bf982466a777fed448f6485aed",
+  "rows": [
+    {
+      "value": "1.6",
+      "default": 2.0,
+      "floor": 1.0,
+      "pass": true
+    },
+    {
+      "value": "1.5",
+      "default": 2.0,
+      "floor": 1.0,
+      "pass": true
+    },
+    {
+      "value": "2.5",
+      "default": 2.0,
+      "floor": 2.0,
+      "pass": true
+    },
+    {
+      "value": "12.999",
+      "default": 13.0,
+      "floor": 12.0,
+      "pass": true
+    },
+    {
+      "value": ".5",
+      "round_down_rejects_zero": true,
+      "pass": true
+    }
+  ],
+  "pass_count": 5,
+  "total": 5,
+  "scope": "QUANTITY_COMPONENT_NOT_RISK_OR_EXECUTION_ADAPTER",
+  "default_can_exceed_input": true,
+  "Risk_accepted": false,
+  "QP6_accepted": false,
+  "history_accessed": false,
+  "strategy_trials": 0,
+  "backtest_executed": false,
+  "implementation_locked": true,
+  "target_acceptance": "TARGET_ACCEPTANCE_DEFERRED"
+}

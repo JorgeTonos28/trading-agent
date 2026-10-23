@@ -1,0 +1,277 @@
+{
+  "schema_version": "r013-variants-owner-v1",
+  "captured_at": "2026-10-06T12:35:40.689751+00:00",
+  "source_sha256": "0a2e8db519c803190c9ea9b180640cb5921e5793257c493ed26d55991ebd80a4",
+  "source_commit_base": "46cc4a5889747ddfec9731200283f1a94d2b77bd",
+  "environment": "Team research, current developer Windows identity",
+  "configuration_changes": [],
+  "model_calls": 0,
+  "probe_scope": "Win32 token/descriptor AccessCheck only, no process launch or real object ACL enforcement",
+  "limitations": [
+    "Not native Codex compatibility",
+    "Not filesystem/process/network/IPC enforcement",
+    "Not a new Agent Runner or account",
+    "Not audit generation or bootstrap",
+    "No operational security/blinding PASS"
+  ],
+  "owner_observations": [
+    {
+      "actor": "base",
+      "owner_policy": "base_user_owner_default",
+      "requested_right": "READ_CONTROL",
+      "allowed": true,
+      "granted_mask": 131072
+    },
+    {
+      "actor": "base",
+      "owner_policy": "base_user_owner_default",
+      "requested_right": "WRITE_DAC",
+      "allowed": true,
+      "granted_mask": 262144
+    },
+    {
+      "actor": "base",
+      "owner_policy": "base_user_owner_default",
+      "requested_right": "WRITE_OWNER",
+      "allowed": false,
+      "granted_mask": 0
+    },
+    {
+      "actor": "base",
+      "owner_policy": "base_user_owner_explicit_zero_OWNER_RIGHTS",
+      "requested_right": "READ_CONTROL",
+      "allowed": false,
+      "granted_mask": 0
+    },
+    {
+      "actor": "base",
+      "owner_policy": "base_user_owner_explicit_zero_OWNER_RIGHTS",
+      "requested_right": "WRITE_DAC",
+      "allowed": false,
+      "granted_mask": 0
+    },
+    {
+      "actor": "base",
+      "owner_policy": "base_user_owner_explicit_zero_OWNER_RIGHTS",
+      "requested_right": "WRITE_OWNER",
+      "allowed": false,
+      "granted_mask": 0
+    },
+    {
+      "actor": "base",
+      "owner_policy": "SYSTEM_owner_default",
+      "requested_right": "READ_CONTROL",
+      "allowed": false,
+      "granted_mask": 0
+    },
+    {
+      "actor": "base",
+      "owner_policy": "SYSTEM_owner_default",
+      "requested_right": "WRITE_DAC",
+      "allowed": false,
+      "granted_mask": 0
+    },
+    {
+      "actor": "base",
+      "owner_policy": "SYSTEM_owner_default",
+      "requested_right": "WRITE_OWNER",
+      "allowed": false,
+      "granted_mask": 0
+    },
+    {
+      "actor": "restricted_shadow",
+      "owner_policy": "base_user_owner_default",
+      "requested_right": "READ_CONTROL",
+      "allowed": false,
+      "granted_mask": 0
+    },
+    {
+      "actor": "restricted_shadow",
+      "owner_policy": "base_user_owner_default",
+      "requested_right": "WRITE_DAC",
+      "allowed": false,
+      "granted_mask": 0
+    },
+    {
+      "actor": "restricted_shadow",
+      "owner_policy": "base_user_owner_default",
+      "requested_right": "WRITE_OWNER",
+      "allowed": false,
+      "granted_mask": 0
+    },
+    {
+      "actor": "restricted_shadow",
+      "owner_policy": "base_user_owner_explicit_zero_OWNER_RIGHTS",
+      "requested_right": "READ_CONTROL",
+      "allowed": false,
+      "granted_mask": 0
+    },
+    {
+      "actor": "restricted_shadow",
+      "owner_policy": "base_user_owner_explicit_zero_OWNER_RIGHTS",
+      "requested_right": "WRITE_DAC",
+      "allowed": false,
+      "granted_mask": 0
+    },
+    {
+      "actor": "restricted_shadow",
+      "owner_policy": "base_user_owner_explicit_zero_OWNER_RIGHTS",
+      "requested_right": "WRITE_OWNER",
+      "allowed": false,
+      "granted_mask": 0
+    },
+    {
+      "actor": "restricted_shadow",
+      "owner_policy": "SYSTEM_owner_default",
+      "requested_right": "READ_CONTROL",
+      "allowed": false,
+      "granted_mask": 0
+    },
+    {
+      "actor": "restricted_shadow",
+      "owner_policy": "SYSTEM_owner_default",
+      "requested_right": "WRITE_DAC",
+      "allowed": false,
+      "granted_mask": 0
+    },
+    {
+      "actor": "restricted_shadow",
+      "owner_policy": "SYSTEM_owner_default",
+      "requested_right": "WRITE_OWNER",
+      "allowed": false,
+      "granted_mask": 0
+    },
+    {
+      "actor": "restricted_pedagogy",
+      "owner_policy": "base_user_owner_default",
+      "requested_right": "READ_CONTROL",
+      "allowed": false,
+      "granted_mask": 0
+    },
+    {
+      "actor": "restricted_pedagogy",
+      "owner_policy": "base_user_owner_default",
+      "requested_right": "WRITE_DAC",
+      "allowed": false,
+      "granted_mask": 0
+    },
+    {
+      "actor": "restricted_pedagogy",
+      "owner_policy": "base_user_owner_default",
+      "requested_right": "WRITE_OWNER",
+      "allowed": false,
+      "granted_mask": 0
+    },
+    {
+      "actor": "restricted_pedagogy",
+      "owner_policy": "base_user_owner_explicit_zero_OWNER_RIGHTS",
+      "requested_right": "READ_CONTROL",
+      "allowed": false,
+      "granted_mask": 0
+    },
+    {
+      "actor": "restricted_pedagogy",
+      "owner_policy": "base_user_owner_explicit_zero_OWNER_RIGHTS",
+      "requested_right": "WRITE_DAC",
+      "allowed": false,
+      "granted_mask": 0
+    },
+    {
+      "actor": "restricted_pedagogy",
+      "owner_policy": "base_user_owner_explicit_zero_OWNER_RIGHTS",
+      "requested_right": "WRITE_OWNER",
+      "allowed": false,
+      "granted_mask": 0
+    },
+    {
+      "actor": "restricted_pedagogy",
+      "owner_policy": "SYSTEM_owner_default",
+      "requested_right": "READ_CONTROL",
+      "allowed": false,
+      "granted_mask": 0
+    },
+    {
+      "actor": "restricted_pedagogy",
+      "owner_policy": "SYSTEM_owner_default",
+      "requested_right": "WRITE_DAC",
+      "allowed": false,
+      "granted_mask": 0
+    },
+    {
+      "actor": "restricted_pedagogy",
+      "owner_policy": "SYSTEM_owner_default",
+      "requested_right": "WRITE_OWNER",
+      "allowed": false,
+      "granted_mask": 0
+    }
+  ],
+  "owner_observation_count": 27,
+  "owner_scope": "Synthetic descriptor standard-right observations; no supervisor/process/IPC/filesystem test",
+  "source_derived_from": "accesscheck_probe.py attempt02; original preserved",
+  "tests": [
+    {
+      "id": "AC-01-same-base-user",
+      "observed": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "id": "AC-02-restrictions-present",
+      "observed": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "id": "AC-plain-shadow_export",
+      "observed": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "id": "AC-plain-pedagogy_trace",
+      "observed": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "id": "AC-shadow-shadow_export",
+      "observed": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "id": "AC-shadow-pedagogy_trace",
+      "observed": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "id": "AC-shadow-financial_canary",
+      "observed": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "id": "AC-pedagogy-shadow_export",
+      "observed": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "id": "AC-pedagogy-pedagogy_trace",
+      "observed": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "id": "AC-pedagogy-financial_canary",
+      "observed": false,
+      "expected": false,
+      "passed": true
+    }
+  ],
+  "expected_checks": 10,
+  "passed_checks": 10,
+  "status": "PASS_SEMANTIC_SCOPE_ONLY",
+  "cleanup": "Transient handles closed and in-memory SID/descriptors freed; no persistent setup"
+}

@@ -1,0 +1,250 @@
+{
+  "probe": "H4_STABLE_PAIRED_SDK_CLI",
+  "captured_at": "2026-10-05T19:13:11.168282+00:00",
+  "source_sha256": "2145b315c3f2b2b62da04513db77f0202a39fd4931791fc1d0c5f98721709553",
+  "reused_harness_sha256": "e5146a2e0afc738f3e24c8f4c231bd402500fb6f00dd770badca60d69def77e0",
+  "sdk": "0.160.0",
+  "wheel_sha256": "a1245cc0c7d390d22af4920d512ceae8519dee2cf51d8eec56f3899861a8160a",
+  "wheel_size": 149416482,
+  "source_commit": "8982c73410d7acb6d6baf888569ec8128c341bfd",
+  "scope": "two focused Skill/tool regression jobs; no sustained workload, broker, OS isolation or final version selection",
+  "trials": [
+    {
+      "case": "research",
+      "status": "completed",
+      "output": {
+        "schema_version": "r006-spine-1",
+        "role": "RESEARCH_IDEA",
+        "authority": "NONE",
+        "snapshot_id": "SYN-research-v1",
+        "snapshot_hash": "10d0868bc24bf682a2e7cf7879d0e6bdbe8e525e0bdd3ae49bb37d582f01cd04",
+        "decision_at": "2026-09-30T15:00:00Z",
+        "knowledge_asof": "2026-09-30T15:00:00Z",
+        "content_status": "COMPLETE",
+        "procedure_marker": "RESEARCH-CONTRACT-V3",
+        "facts": [
+          {
+            "fact_id": "R1.growth",
+            "source_id": "R1",
+            "field": "growth",
+            "value": "12",
+            "unit": "PERCENT_POINT"
+          }
+        ],
+        "calculations": [],
+        "unknowns": [
+          "Persistencia del crecimiento observado.",
+          "Capacidad predictiva y alpha; el screen sintético no los valida."
+        ],
+        "payload": {
+          "hypothesis": "SYN-A supera el screen toy mínimo de 10 PERCENT_POINT: R1.growth registra 12 PERCENT_POINT y es elegible al corte según CAPTURED_TOY_ELIGIBLE_FROM. Hipótesis por investigar: el crecimiento se mantiene por encima del mínimo en una observación posterior comparable.",
+          "falsifier": "Una observación posterior comparable y elegible con crecimiento inferior a 10 PERCENT_POINT refutaría la hipótesis de persistencia.",
+          "next_test": "En un nuevo snapshot con su propio corte, contrastar una observación sintética posterior comparable contra el mínimo toy de 10 PERCENT_POINT, verificando eligible_from y versión bajo la política suministrada. Mantener excluidas las fuentes futuras o de elegibilidad desconocida; no usar representative_context como evidencia factual.",
+          "evidence_ids": [
+            "R1.growth"
+          ]
+        }
+      },
+      "skill_discovered": true,
+      "instruction_sources": [
+        "REPO\\AGENTS.md",
+        "REPO\\agents\\market-research\\AGENTS.md"
+      ],
+      "effective_model": "gpt-6.1-sol",
+      "provider": "openai",
+      "service_s": 25.119,
+      "tool_trace": [
+        {
+          "tool": "read_evidence",
+          "args": {
+            "bundle": "research"
+          },
+          "allowed": true
+        }
+      ],
+      "item_types": [
+        "userMessage",
+        "agentMessage",
+        "dynamicToolCall",
+        "agentMessage"
+      ],
+      "admission": "ACCEPTED",
+      "checks": {
+        "completed": true,
+        "schema": true,
+        "admitted": true,
+        "skill_marker": true,
+        "tool_allowlist": true,
+        "no_forbidden_items": true,
+        "no_unexpected_request": true
+      },
+      "passed": true
+    },
+    {
+      "case": "shadow",
+      "status": "completed",
+      "output": {
+        "schema_version": "r006-spine-1",
+        "role": "PORTFOLIO_SHADOW",
+        "authority": "NONE",
+        "snapshot_id": "SYN-shadow-v1",
+        "snapshot_hash": "0b6ea0602d973237a1916d5cd6bbfa254837d85e6a0648a38fdd80c53e487f8c",
+        "decision_at": "2026-09-30T15:00:00Z",
+        "knowledge_asof": "2026-09-30T15:00:00Z",
+        "content_status": "COMPLETE",
+        "procedure_marker": "SHADOW-CONTRACT-V2",
+        "facts": [
+          {
+            "fact_id": "S1.cash",
+            "source_id": "S1",
+            "field": "cash",
+            "value": "1000",
+            "unit": "USD"
+          },
+          {
+            "fact_id": "S1.reservation",
+            "source_id": "S1",
+            "field": "reservation",
+            "value": "400",
+            "unit": "USD"
+          },
+          {
+            "fact_id": "S1.target",
+            "source_id": "S1",
+            "field": "target",
+            "value": "2",
+            "unit": "SHARE"
+          },
+          {
+            "fact_id": "S1.price",
+            "source_id": "S1",
+            "field": "price",
+            "value": "50",
+            "unit": "USD_PER_SHARE"
+          },
+          {
+            "fact_id": "S1.current",
+            "source_id": "S1",
+            "field": "current",
+            "value": "0",
+            "unit": "SHARE"
+          }
+        ],
+        "calculations": [
+          {
+            "calculation_id": "available_cash",
+            "formula": "cash_minus_reservations@toy-1",
+            "input_fact_ids": [
+              "S1.cash",
+              "S1.reservation"
+            ],
+            "result": "600",
+            "unit": "USD"
+          },
+          {
+            "calculation_id": "SYN-B.target_notional",
+            "formula": "quantity_times_price@toy-1",
+            "input_fact_ids": [
+              "S1.target",
+              "S1.price"
+            ],
+            "result": "100",
+            "unit": "USD"
+          }
+        ],
+        "unknowns": [
+          "Parámetros de riesgo, protección y costes no suministrados.",
+          "No se suministró una tesis de inversión ni evidencia para validarla."
+        ],
+        "payload": {
+          "mode": "SHADOW",
+          "proposals": [
+            {
+              "instrument_id": "SYN-B",
+              "action": "OPEN",
+              "target_quantity": "2",
+              "target_notional_calculation_id": "SYN-B.target_notional",
+              "priority": 1,
+              "reasons": [
+                "Hipótesis semántica prescrita por el caller: OPEN corresponde a S1.current = 0 y S1.target = 2 como tenencia total objetivo.",
+                "La hipótesis quedaría refutada si la tenencia actual elegible fuese distinta de cero.",
+                "S1.target × S1.price deriva 100 USD; S1.cash − S1.reservation deriva 600 USD disponibles en el ejercicio."
+              ],
+              "source_ids": [
+                "S1"
+              ],
+              "confidence": null
+            }
+          ],
+          "limitations": [
+            "Ejercicio sintético de semántica; no constituye decisión de estrategia, orden ni aprobación de riesgo.",
+            "S1 es elegible al corte indicado; FUTURE está excluida y representative_context no aporta hechos.",
+            "Propuesta independiente sin acceso a la decisión Champion ni ruta a Risk/Execution.",
+            "Los cálculos toy no establecen umbrales de riesgo ni seguridad de protección o costes.",
+            "El marcador acredita recepción del contenido de la Skill, no su eficacia."
+          ]
+        }
+      },
+      "skill_discovered": true,
+      "instruction_sources": [
+        "REPO\\AGENTS.md",
+        "REPO\\agents\\portfolio-manager-shadow\\AGENTS.md"
+      ],
+      "effective_model": "gpt-6.1-sol",
+      "provider": "openai",
+      "service_s": 41.127,
+      "tool_trace": [
+        {
+          "tool": "read_evidence",
+          "args": {
+            "bundle": "shadow"
+          },
+          "allowed": true
+        }
+      ],
+      "item_types": [
+        "userMessage",
+        "agentMessage",
+        "dynamicToolCall",
+        "agentMessage"
+      ],
+      "admission": "ACCEPTED",
+      "checks": {
+        "completed": true,
+        "schema": true,
+        "admitted": true,
+        "skill_marker": true,
+        "tool_allowlist": true,
+        "no_forbidden_items": true,
+        "no_unexpected_request": true
+      },
+      "passed": true
+    }
+  ],
+  "unexpected_requests": [],
+  "config_overrides": {
+    "forced_login_method": "chatgpt",
+    "model_provider": "openai",
+    "features.shell_tool": false,
+    "features.unified_exec": false,
+    "features.multi_agent": false,
+    "features.apps": false,
+    "features.skill_mcp_dependency_install": false,
+    "web_search": "disabled",
+    "mcp_servers": {},
+    "plugins": {},
+    "history.persistence": "none"
+  },
+  "default_bundled_resolver": true,
+  "cli": "codex-cli 0.160.0",
+  "account": {
+    "type": "chatgpt",
+    "plan": "team"
+  },
+  "cleanup": "COMPLETED",
+  "accounting": {
+    "required": 2,
+    "recorded": 2,
+    "passed": 2
+  }
+}

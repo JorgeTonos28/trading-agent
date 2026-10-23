@@ -1,0 +1,7 @@
+# QL1 — compilación del componente Engine sin ejemplos
+
+2026-10-23. Extensión concreta de QL0 antes de selección D023: comprobar si el **componente Engine** puede compilar en ruta OSS local. No launcher, ejecución de algoritmo, backtest ni datos. El csproj Engine referencia Algorithm.CSharp (ejemplos). Para evitar descargar/compilar esos algoritmos y sus estadísticas históricas, el laboratorio elimina **únicamente esas referencias de proyecto** de los csproj necesarios; registra original, patch y hashes. Un éxito sería ENGINE_COMPONENT_WITH_SAMPLE_REFERENCES_REMOVED, no distribución stock completa.
+
+Descubrir referencias .csproj con git show en el mismo pin, sparse checkout sólo directorios necesarios, excluyendo Data/Tests/Algorithm.CSharp. Dependencias públicas y caches .local de QL0; sin Docker/CLI/auth/instalación global. Manifest de directorios/refs eliminadas permite reproducir y juzgar la adaptación. Si se necesita ampliar a muestras/archivos de mercado u otra acción no autorizada, no hacerlo. Restore/build limitados55s por paso y una continuación incremental si hay progreso concreto; sin ocultar intentos.
+
+Compilar source existente es un experimento de viabilidad, no implementación de Trading OS. Output/receipts y source hashes verificables; no framework propio ni función financiera operativa. Warning de dependencia sigue abierto aunque compile. No crear usuarios, servicios, broker adapters activos o config global.

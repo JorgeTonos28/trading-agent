@@ -1,0 +1,108 @@
+{
+  "captured_at": "2026-10-07T17:57:54.461592+00:00",
+  "scope": "SYNTHETIC_FAKE_REQUIREMENTS_ONLY_NOT_ENVIRONMENT_ACCEPTANCE",
+  "source_sha256": "4d11c096de3abbfa9b2bcc9bae3dc0a5e8e0feee4b69430c4717e1ca86f706b1",
+  "schema_sha256": "32157066a4c9bb5a3594356e4a3b5eb43dd03baeb4f45eb86f185d2137f1604a",
+  "cases": [
+    {
+      "id": "B1-positive-FAKE-subset-only",
+      "expected": true,
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "id": "B1-missing-instance",
+      "expected": false,
+      "observed": false,
+      "result": "PASS"
+    },
+    {
+      "id": "B1-missing-fingerprint",
+      "expected": false,
+      "observed": false,
+      "result": "PASS"
+    },
+    {
+      "id": "B1-malformed-UUID",
+      "expected": false,
+      "observed": false,
+      "result": "PASS"
+    },
+    {
+      "id": "B1-cross-instance-test",
+      "expected": false,
+      "observed": false,
+      "result": "PASS"
+    },
+    {
+      "id": "B1-cross-fingerprint-test",
+      "expected": false,
+      "observed": false,
+      "result": "PASS"
+    },
+    {
+      "id": "B1-design-phase-test",
+      "expected": false,
+      "observed": false,
+      "result": "PASS"
+    },
+    {
+      "id": "B1-research-environment-test",
+      "expected": false,
+      "observed": false,
+      "result": "PASS"
+    },
+    {
+      "id": "B1-empty-tests",
+      "expected": false,
+      "observed": false,
+      "result": "PASS"
+    },
+    {
+      "id": "B1-invented-scope",
+      "expected": false,
+      "observed": false,
+      "result": "PASS"
+    },
+    {
+      "id": "B1-missing-refs",
+      "expected": false,
+      "observed": false,
+      "result": "PASS"
+    },
+    {
+      "id": "B1-deferred-status",
+      "expected": false,
+      "observed": false,
+      "result": "PASS"
+    },
+    {
+      "id": "B1-pending-owner-action",
+      "expected": false,
+      "observed": false,
+      "result": "PASS"
+    },
+    {
+      "id": "B1-Team-renamed-PAPER",
+      "expected": false,
+      "observed": false,
+      "result": "PASS"
+    },
+    {
+      "id": "B1-original-v02-schema-remains-valid",
+      "expected": true,
+      "observed": true,
+      "result": "PASS"
+    },
+    {
+      "id": "B1-original-v02-not-current-PAPER",
+      "expected": false,
+      "observed": false,
+      "result": "PASS"
+    }
+  ],
+  "failures": 0,
+  "real_environment_identity_created": false,
+  "paper_runtime_accepted": false,
+  "protected_store_or_authenticity_proven": false
+}

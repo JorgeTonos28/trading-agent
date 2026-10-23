@@ -1,0 +1,53 @@
+{
+  "as_of": "2026-10-23",
+  "source": "https://norgatedata.com/stockmarketpackages.php",
+  "candidate": "NORGATE_US_PLATINUM_PUBLISHED_SCENARIO_NOT_SELECTED",
+  "fixed_USD_per_12_months": "630.00",
+  "amortized_USD_month": "52.50",
+  "monthly_subscription_offer": false,
+  "variable_cost": "UNKNOWN",
+  "tax_FX_integration_other_costs": "UNKNOWN",
+  "nominal_reference_USD": 10000,
+  "all_five_required": true,
+  "historical_results_used": false,
+  "spend_authorized": false,
+  "scenarios": [
+    {
+      "capital_USD": 2000,
+      "fixed_annual_cost_USD": "630.00",
+      "simple_annual_fixed_cost_percent_of_capital": "31.500",
+      "total_operational_cost": "UNKNOWN",
+      "economic_qualification": "NOT_EVALUATED"
+    },
+    {
+      "capital_USD": 5000,
+      "fixed_annual_cost_USD": "630.00",
+      "simple_annual_fixed_cost_percent_of_capital": "12.600",
+      "total_operational_cost": "UNKNOWN",
+      "economic_qualification": "NOT_EVALUATED"
+    },
+    {
+      "capital_USD": 10000,
+      "fixed_annual_cost_USD": "630.00",
+      "simple_annual_fixed_cost_percent_of_capital": "6.300",
+      "total_operational_cost": "UNKNOWN",
+      "economic_qualification": "NOT_EVALUATED"
+    },
+    {
+      "capital_USD": 25000,
+      "fixed_annual_cost_USD": "630.00",
+      "simple_annual_fixed_cost_percent_of_capital": "2.5200",
+      "total_operational_cost": "UNKNOWN",
+      "economic_qualification": "NOT_EVALUATED"
+    },
+    {
+      "capital_USD": 50000,
+      "fixed_annual_cost_USD": "630.00",
+      "simple_annual_fixed_cost_percent_of_capital": "1.2600",
+      "total_operational_cost": "UNKNOWN",
+      "economic_qualification": "NOT_EVALUATED"
+    }
+  ],
+  "not_CAGR": true,
+  "prior_20_hypothetical_cells_retained": true
+}

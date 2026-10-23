@@ -1,0 +1,156 @@
+{
+  "captured_utc": "2026-10-23T15:43:14.449735+00:00",
+  "scope": "SYNTHETIC_CLOCK_LOGIC_NOT_VENDOR_OR_PIT_ACCEPTANCE",
+  "source_sha256": "f19ef18437189c31da64af3e8b8150ad3cad086260f7fa660256cb9f55c9ea6f",
+  "rows": [
+    {
+      "id": "CA01_RECONSTRUCTION_V1",
+      "observed": [
+        "ACTIVE",
+        1
+      ],
+      "expected": [
+        "ACTIVE",
+        1
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "CA01_LATEST_ONLY_CANNOT_RECREATE_OLD",
+      "observed": [
+        "INSUFFICIENT_EVIDENCE",
+        null
+      ],
+      "expected": [
+        "INSUFFICIENT_EVIDENCE",
+        null
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "CA02_OLD_EVENT_UNKNOWN_AVAILABILITY",
+      "observed": [
+        "UNKNOWN_AVAILABILITY",
+        null
+      ],
+      "expected": [
+        "UNKNOWN_AVAILABILITY",
+        null
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "CA03_LOCAL_RECEIPT_NOT_BACKDATED",
+      "observed": [
+        "NO_ELIGIBLE_OBSERVED_RECORD",
+        null
+      ],
+      "expected": [
+        "NO_ELIGIBLE_OBSERVED_RECORD",
+        null
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "CA03_RECONSTRUCTION_WITH_KNOWN_DELAY",
+      "observed": [
+        "ACTIVE",
+        1
+      ],
+      "expected": [
+        "ACTIVE",
+        1
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "CA03_DELAY_AFTER_CUTOFF",
+      "observed": [
+        "NO_EVENT_PROVEN",
+        null
+      ],
+      "expected": [
+        "NO_EVENT_PROVEN",
+        null
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "CA04_ASOF_CANCELLATION",
+      "observed": [
+        "CANCELED",
+        3
+      ],
+      "expected": [
+        "CANCELED",
+        3
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "CA04_PAST_SNAPSHOT_UNCHANGED",
+      "observed": [
+        "ACTIVE",
+        1
+      ],
+      "expected": [
+        "ACTIVE",
+        1
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "CA05_END_EXCLUSIVE",
+      "observed": [
+        1,
+        2
+      ],
+      "expected": [
+        1,
+        2
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "CA06_EX_DATE_RECEIVABLE_NOT_CASH",
+      "observed": {
+        "NAV": "1000",
+        "cash": "0",
+        "receivable": "10"
+      },
+      "expected": {
+        "NAV": "1000",
+        "cash": "0",
+        "receivable": "10"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "CA08_PAY_MOVES_RECEIVABLE_TO_CASH",
+      "observed": "1000",
+      "expected": "1000",
+      "status": "PASS"
+    },
+    {
+      "id": "CA08_ADJUSTED_PLUS_DIVIDEND_DOUBLE_COUNT",
+      "observed": "1010",
+      "expected": "1010",
+      "status": "PASS"
+    }
+  ],
+  "counts": {
+    "PASS": 12,
+    "FAIL": 0,
+    "ERROR": 0
+  },
+  "vendor_calls": 0,
+  "raw_market_data": false,
+  "strategy_trials": 0,
+  "datasets_admitted": 0,
+  "CA07": "NOT_EXECUTED_VENDOR",
+  "CA09": "NOT_EXECUTED_VENDOR",
+  "timezone_DST": "NOT_TESTED",
+  "implementation_locked": true,
+  "target_acceptance": "TARGET_ACCEPTANCE_DEFERRED",
+  "holdout": "INTEGRITY_UNKNOWN"
+}

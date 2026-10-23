@@ -1,0 +1,191 @@
+{
+  "scope": "SYNTHETIC_OFFLINE_DATA_LIBRARY_NOT_BACKTEST",
+  "observed_on": "2026-10-13",
+  "source_sha256": "25b485d013da950fe081c26d1b6e23f2f68b45a95de5dd7165d5ba32f9f98e19",
+  "provider_selected": false,
+  "PIT_proven": false,
+  "fixtures": [
+    {
+      "id": "P_EXCHANGE",
+      "fixture_sha256": "eabf07ca3bfb3729715d8145d106bc05ef027f19b126ce3637128012d18b1867",
+      "mode": "STRUCTURAL_TABLE_ONLY",
+      "full_owner_enrichment_tested": false,
+      "code": "P",
+      "shares": "10",
+      "price": "100",
+      "footnote_id_preserved": true,
+      "form": "4",
+      "transaction_rows": 1,
+      "market_rows": 1,
+      "raw_owner_count": 1,
+      "expected_owner_count": 1,
+      "checks": {
+        "code_preserved": true,
+        "quantity_preserved": true,
+        "footnote_ref_preserved": true,
+        "price_missing_preserved": true,
+        "form_preserved": true,
+        "one_economic_row": true
+      },
+      "status": "PASS_STRUCTURAL"
+    },
+    {
+      "id": "P_PRIVATE",
+      "fixture_sha256": "3d082bb0a736d25507d2f713aca0f0d65479e901d0af987a5bedf23339b5f568",
+      "mode": "STRUCTURAL_TABLE_ONLY",
+      "full_owner_enrichment_tested": false,
+      "code": "P",
+      "shares": "10",
+      "price": "100",
+      "footnote_id_preserved": true,
+      "form": "4",
+      "transaction_rows": 1,
+      "market_rows": 1,
+      "raw_owner_count": 1,
+      "expected_owner_count": 1,
+      "checks": {
+        "code_preserved": true,
+        "quantity_preserved": true,
+        "footnote_ref_preserved": true,
+        "price_missing_preserved": true,
+        "form_preserved": true,
+        "one_economic_row": true
+      },
+      "status": "PASS_STRUCTURAL",
+      "semantic_limit": "P_PRIVATE_INCLUDED_IN_MARKET_TRADES"
+    },
+    {
+      "id": "F_TAX",
+      "fixture_sha256": "c1874126963dd51ba6d47e7ac056499a0acc4755a3b5e2743928a6e4c5996261",
+      "mode": "STRUCTURAL_TABLE_ONLY",
+      "full_owner_enrichment_tested": false,
+      "code": "F",
+      "shares": "10",
+      "price": "100",
+      "footnote_id_preserved": true,
+      "form": "4",
+      "transaction_rows": 1,
+      "market_rows": 0,
+      "raw_owner_count": 1,
+      "expected_owner_count": 1,
+      "checks": {
+        "code_preserved": true,
+        "quantity_preserved": true,
+        "footnote_ref_preserved": true,
+        "price_missing_preserved": true,
+        "form_preserved": true,
+        "one_economic_row": true
+      },
+      "status": "PASS_STRUCTURAL"
+    },
+    {
+      "id": "M_DERIVATIVE",
+      "fixture_sha256": "df13c277a3934096cb4ac138e72849f0ec1df8cbc52719c531b12661500d8e97",
+      "mode": "STRUCTURAL_TABLE_ONLY",
+      "full_owner_enrichment_tested": false,
+      "code": "M",
+      "shares": "10",
+      "price": "100",
+      "footnote_id_preserved": true,
+      "form": "4",
+      "transaction_rows": 1,
+      "market_rows": null,
+      "raw_owner_count": 1,
+      "expected_owner_count": 1,
+      "checks": {
+        "code_preserved": true,
+        "quantity_preserved": true,
+        "footnote_ref_preserved": true,
+        "price_missing_preserved": true,
+        "form_preserved": true,
+        "one_economic_row": true
+      },
+      "status": "PASS_STRUCTURAL"
+    },
+    {
+      "id": "PRICE_MISSING",
+      "fixture_sha256": "c1a004c7be3f8ba0c7da25ec1e5d7619942aeec6768b8ef6dc60f1156d610827",
+      "mode": "STRUCTURAL_TABLE_ONLY",
+      "full_owner_enrichment_tested": false,
+      "code": "P",
+      "shares": "10",
+      "price": null,
+      "footnote_id_preserved": true,
+      "form": "4",
+      "transaction_rows": 1,
+      "market_rows": 1,
+      "raw_owner_count": 1,
+      "expected_owner_count": 1,
+      "checks": {
+        "code_preserved": true,
+        "quantity_preserved": true,
+        "footnote_ref_preserved": true,
+        "price_missing_preserved": true,
+        "form_preserved": true,
+        "one_economic_row": true
+      },
+      "status": "PASS_STRUCTURAL"
+    },
+    {
+      "id": "AMENDMENT",
+      "fixture_sha256": "b71ad3aa9df0d92231c12474c2ed69fece6a4fae2d7017aab8404696c4bcee24",
+      "mode": "STRUCTURAL_TABLE_ONLY",
+      "full_owner_enrichment_tested": false,
+      "code": "P",
+      "shares": "10",
+      "price": "100",
+      "footnote_id_preserved": true,
+      "form": "4/A",
+      "transaction_rows": 1,
+      "market_rows": 1,
+      "raw_owner_count": 1,
+      "expected_owner_count": 1,
+      "checks": {
+        "code_preserved": true,
+        "quantity_preserved": true,
+        "footnote_ref_preserved": true,
+        "price_missing_preserved": true,
+        "form_preserved": true,
+        "one_economic_row": true
+      },
+      "status": "PASS_STRUCTURAL"
+    },
+    {
+      "id": "JOINT_OWNERS",
+      "fixture_sha256": "f4a9c798a236e3d55ae321e31624738e24dc52eddecf5080510fe6ae30d6fae9",
+      "mode": "STRUCTURAL_TABLE_ONLY",
+      "full_owner_enrichment_tested": false,
+      "code": "P",
+      "shares": "10",
+      "price": "100",
+      "footnote_id_preserved": true,
+      "form": "4",
+      "transaction_rows": 1,
+      "market_rows": 1,
+      "raw_owner_count": 2,
+      "expected_owner_count": 2,
+      "checks": {
+        "code_preserved": true,
+        "quantity_preserved": true,
+        "footnote_ref_preserved": true,
+        "price_missing_preserved": true,
+        "form_preserved": true,
+        "one_economic_row": true
+      },
+      "status": "PASS_STRUCTURAL",
+      "semantic_limit": "RAW_OWNERS_2_TABLE_ROW_1_OWNER_ENRICHMENT_NOT_TESTED"
+    }
+  ],
+  "network_guard": "PYTHON_AUDIT_NOT_OS_ISOLATION",
+  "edgartools_version": "5.62.0",
+  "full_factory": {
+    "status": "BLOCKED_OR_ERROR",
+    "error_class": "IdentityNotSetError",
+    "semantic_limit": "FULL_FACTORY_NOT_PROVEN_OFFLINE_NO_ENRICHMENT_STUB_ADDED"
+  },
+  "blocked_events": [
+    "socket.connect"
+  ],
+  "structural_pass": 7,
+  "structural_total": 7
+}

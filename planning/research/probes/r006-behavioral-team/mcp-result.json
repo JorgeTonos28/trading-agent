@@ -1,0 +1,33 @@
+{
+  "probe": "R006-MCP-LOCAL-01",
+  "sdk": "official modelcontextprotocol/python-sdk",
+  "sdk_version": "2.3.0",
+  "license": "MIT",
+  "transport": "stdio",
+  "model_inference": false,
+  "target_Plus_host_integration": "UNKNOWN",
+  "SELECTED": false,
+  "source_sha256": "d7661662eca5660b1cc0b3895ddd83292b537059a81118680eda20409a34cf99",
+  "checks": {
+    "only_read_tool_1": true,
+    "readonly_annotation_1": true,
+    "read_success_1": true,
+    "unknown_order_rejected_1": true,
+    "invalid_bundle_rejected_1": true,
+    "read_failure_surfaced_1": true,
+    "only_read_tool_2": true,
+    "readonly_annotation_2": true,
+    "read_success_2": true,
+    "unknown_order_rejected_2": true,
+    "invalid_bundle_rejected_2": true,
+    "read_failure_surfaced_2": true,
+    "identical_data_after_mock_restart": true
+  },
+  "warnings": [
+    "Tool annotations are hints, not access-control enforcement.",
+    "Mock restart is not runtime/authentication/position recovery.",
+    "SDK pip-target Windows initially required explicit pywin32 path activation."
+  ],
+  "fixture_payload": null,
+  "all_checks_pass": true
+}

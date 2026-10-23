@@ -1,0 +1,358 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "0.2.0-planning"
+    },
+    "environment_kind": {
+      "type": "string",
+      "enum": [
+        "CURRENT_RESEARCH_ENVIRONMENT",
+        "PAPER_RUNTIME_ENVIRONMENT",
+        "FUTURE_LIVE_ENVIRONMENT"
+      ]
+    },
+    "expected_plan": {
+      "type": "string"
+    },
+    "observed_plan": {
+      "type": "string"
+    },
+    "surface": {
+      "type": "string"
+    },
+    "os": {
+      "type": "string"
+    },
+    "captured_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "repo_commit": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "manifest_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "description": "SHA256 of shared/bootstrap_manifest.json Git blob at repo_commit; raw worktree bytes recorded separately"
+    },
+    "instruction_chain": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "package_ids_verified": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "inventory": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "SKILL",
+              "PLUGIN",
+              "APP",
+              "MCP",
+              "LOCAL_TOOL",
+              "DEPENDENCY",
+              "RUNTIME"
+            ]
+          },
+          "detected": {
+            "type": "string",
+            "enum": [
+              "YES",
+              "NO",
+              "UNKNOWN",
+              "NOT_APPLICABLE"
+            ]
+          },
+          "enabled": {
+            "type": "string",
+            "enum": [
+              "YES",
+              "NO",
+              "UNKNOWN",
+              "NOT_APPLICABLE"
+            ]
+          },
+          "callable": {
+            "type": "string",
+            "enum": [
+              "YES",
+              "NO",
+              "UNKNOWN",
+              "NOT_APPLICABLE"
+            ]
+          },
+          "version": {
+            "type": "string"
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "detected",
+          "enabled",
+          "callable",
+          "version",
+          "evidence_refs"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "known_limits": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "action_plan": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "requirement_id": {
+            "type": "string"
+          },
+          "classification": {
+            "type": "string",
+            "enum": [
+              "AUTOMATED",
+              "USER_ACTION_REQUIRED",
+              "UNAVAILABLE",
+              "OPTIONAL",
+              "FALLBACK_AVAILABLE"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "PENDING",
+              "COMPLETED",
+              "BLOCKED",
+              "NOT_APPLICABLE"
+            ]
+          },
+          "instruction": {
+            "type": "string"
+          },
+          "requires_owner_approval": {
+            "type": "boolean"
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "requirement_id",
+          "classification",
+          "status",
+          "instruction",
+          "requires_owner_approval",
+          "evidence_refs"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "selected_fallbacks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "requirement_id": {
+            "type": "string"
+          },
+          "candidate_id": {
+            "type": "string"
+          },
+          "selection_status": {
+            "type": "string",
+            "enum": [
+              "PROPOSED",
+              "SELECTED_NOT_ACCEPTED",
+              "ACCEPTED"
+            ]
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "requirement_id",
+          "candidate_id",
+          "selection_status",
+          "evidence_refs"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "acceptance_tests": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "gate_id": {
+            "type": "string"
+          },
+          "environment_kind": {
+            "type": "string",
+            "enum": [
+              "CURRENT_RESEARCH_ENVIRONMENT",
+              "PAPER_RUNTIME_ENVIRONMENT",
+              "FUTURE_LIVE_ENVIRONMENT"
+            ]
+          },
+          "result": {
+            "type": "string",
+            "enum": [
+              "PASSED",
+              "FAILED",
+              "UNKNOWN",
+              "NOT_TESTED",
+              "NOT_APPLICABLE"
+            ]
+          },
+          "version": {
+            "type": "string"
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "gate_id",
+          "environment_kind",
+          "result",
+          "version",
+          "evidence_refs"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "requirement_results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "required": {
+            "type": "boolean"
+          },
+          "result": {
+            "type": "string",
+            "enum": [
+              "PASSED",
+              "FAILED",
+              "UNKNOWN",
+              "NOT_TESTED",
+              "NOT_APPLICABLE"
+            ]
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "required",
+          "result",
+          "evidence_refs"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "readiness_scope": {
+      "type": "string",
+      "enum": [
+        "PREPARATION_ONBOARDING",
+        "PAPER_AGENT_ENVIRONMENT"
+      ]
+    },
+    "readiness_state": {
+      "type": "string",
+      "enum": [
+        "NOT_ASSESSED",
+        "PARTIAL",
+        "BLOCKED_USER_ACTION",
+        "BLOCKED_FAILED_GATE",
+        "READY_AGENT_ENVIRONMENT"
+      ]
+    },
+    "blocked_by": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "authority": {
+      "const": "NONE"
+    },
+    "implementation_locked": {
+      "const": true
+    }
+  },
+  "required": [
+    "schema_version",
+    "environment_kind",
+    "expected_plan",
+    "observed_plan",
+    "surface",
+    "os",
+    "captured_at",
+    "repo_commit",
+    "manifest_sha256",
+    "instruction_chain",
+    "package_ids_verified",
+    "inventory",
+    "known_limits",
+    "action_plan",
+    "selected_fallbacks",
+    "acceptance_tests",
+    "requirement_results",
+    "readiness_scope",
+    "readiness_state",
+    "blocked_by",
+    "authority",
+    "implementation_locked"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:trading-os:environment-profile:0.2.0-planning",
+  "title": "Sanitized environment observation; not credentials or financial readiness"
+}

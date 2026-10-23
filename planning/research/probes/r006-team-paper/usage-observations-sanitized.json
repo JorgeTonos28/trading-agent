@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-05",
+  "source": "Codex app get_usage_limits read-only",
+  "plan_type": "team",
+  "before_eight_job_probe": {
+    "primary_used_percent": 30,
+    "window_duration_minutes": 10080,
+    "resets_at_unix_seconds": 1791725283,
+    "ordinary_usage_allowed": true
+  },
+  "after_eight_jobs_before_onboarding_completion": {
+    "primary_used_percent": 32,
+    "window_duration_minutes": 10080,
+    "resets_at_unix_seconds": 1791725283,
+    "ordinary_usage_allowed": true,
+    "has_credits": false,
+    "unlimited_credits": false
+  },
+  "account_identifiers_removed": true,
+  "includes_all_shared_account_activity": true,
+  "attribution_to_probe_only_possible": false,
+  "sustained_capacity_proven": false,
+  "api_cost_inferred": false
+}

@@ -1,0 +1,380 @@
+{
+  "probe": "H6_TEMPORAL_DEV_PERSISTENCE",
+  "captured_at": "2026-10-05T19:23:25.049134+00:00",
+  "source_sha256": "b0cca83b491058750592c46fb2f4654813cf4a740880dccf14a0a6b8ad059413",
+  "asset_sha256": "babb65844835045c91fb98930fe10b81de28db80c8c609180473d2c0b18c7589",
+  "license": "MIT CLI v1.9.1",
+  "scope": "loopback dev server, pending workflow without worker, automatic schedule and persistence; no production or Codex scheduler selection",
+  "retrieval_history": [
+    "urllib download failed TLS connection reset WinError10054",
+    "curl verified TLS first connection timed out, retry succeeded"
+  ],
+  "checks": {
+    "listeners_loopback": true,
+    "duplicate_start_rejected": true,
+    "workflow_describable_after_abrupt_restart": true,
+    "schedule_describable_after_restart": true
+  },
+  "commands": [
+    {
+      "args": [
+        "workflow",
+        "start",
+        "--workflow-id",
+        "H6-SYN-JOB",
+        "--type",
+        "SyntheticReadOnlyNoWorker",
+        "--task-queue",
+        "H6-no-worker",
+        "--input",
+        "{\"authority\":\"NONE\"}",
+        "--execution-timeout",
+        "5m",
+        "--fail-existing"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"workflowId\": \"H6-SYN-JOB\",\n  \"runId\": \"01a10d85-756c-780e-a7f4-622ebb446af0\",\n  \"type\": \"SyntheticReadOnlyNoWorker\",\n  \"namespace\": \"default\",\n  \"taskQueue\": \"H6-no-worker\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "workflow",
+        "describe",
+        "--workflow-id",
+        "H6-SYN-JOB"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"executionConfig\": {\n    \"taskQueue\": {\n      \"name\": \"H6-no-worker\",\n      \"kind\": \"TASK_QUEUE_KIND_NORMAL\"\n    },\n    \"workflowExecutionTimeout\": \"300s\",\n    \"workflowRunTimeout\": \"300s\",\n    \"defaultWorkflowTaskTimeout\": \"10s\"\n  },\n  \"workflowExecutionInfo\": {\n    \"execution\": {\n      \"workflowId\": \"H6-SYN-JOB\",\n      \"runId\": \"01a10d85-756c-780e-a7f4-622ebb446af0\"\n    },\n    \"type\": {\n      \"name\": \"SyntheticReadOnlyNoWorker\"\n    },\n    \"startTime\": \"2026-10-05T19:23:32.588527900Z\",\n    \"status\": \"WORKFLOW_EXECUTION_STATUS_RUNNING\",\n    \"historyLength\": \"2\",\n    \"executionTime\": \"2026-10-05T19:23:32.588527900Z\",\n    \"memo\": {},\n    \"searchAttributes\": {},\n    \"autoResetPoints\": {},\n    \"taskQueue\": \"H6-no-worker\",\n    \"stateTransitionCount\": \"1\",\n    \"historySizeBytes\": \"344\",\n    \"rootExecution\": {\n      \"workflowId\": \"H6-SYN-JOB\",\n      \"runId\": \"01a10d85-756c-780e-a7f4-622ebb446af0\"\n    },\n    \"firstRunId\": \"01a10d85-756c-780e-a7f4-622ebb446af0\"\n  },\n  \"pendingWorkflowTask\": {\n    \"state\": \"PENDING_WORKFLOW_TASK_STATE_SCHEDULED\",\n    \"scheduledTime\": \"2026-10-05T19:23:32.590253300Z\",\n    \"originalScheduledTime\": \"2026-10-05T19:23:32.590253300Z\",\n    \"attempt\": 1\n  },\n  \"workflowExtendedInfo\": {\n    \"executionExpirationTime\": \"2026-10-05T19:28:32.589Z\",\n    \"runExpirationTime\": \"2026-10-05T19:28:32.588527900Z\",\n    \"originalStartTime\": \"2026-10-05T19:23:32.588527900Z\",\n    \"requestIdInfos\": {\n      \"57d93766-bc20-46fd-829d-7817ba5a9deb\": {\n        \"eventType\": \"EVENT_TYPE_WORKFLOW_EXECUTION_STARTED\",\n        \"eventId\": \"1\"\n      }\n    }\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "workflow",
+        "start",
+        "--workflow-id",
+        "H6-SYN-JOB",
+        "--type",
+        "SyntheticReadOnlyNoWorker",
+        "--task-queue",
+        "H6-no-worker",
+        "--execution-timeout",
+        "5m",
+        "--fail-existing"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Error: failed starting workflow: Workflow execution is already running. WorkflowId: H6-SYN-JOB, RunId: 01a10d85-756c-780e-a7f4-622ebb446af0.\n"
+    },
+    {
+      "args": [
+        "schedule",
+        "create",
+        "--schedule-id",
+        "H6-SYN-SCHEDULE",
+        "--workflow-id",
+        "H6-AUTO-JOB",
+        "--type",
+        "SyntheticReadOnlyNoWorker",
+        "--task-queue",
+        "H6-no-worker",
+        "--interval",
+        "5s",
+        "--remaining-actions",
+        "1",
+        "--overlap-policy",
+        "BufferAll",
+        "--execution-timeout",
+        "5m",
+        "--catchup-window",
+        "10s"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "schedule",
+        "describe",
+        "--schedule-id",
+        "H6-SYN-SCHEDULE"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"schedule\": {\n    \"spec\": {\n      \"interval\": [\n        {\n          \"interval\": \"5s\",\n          \"phase\": \"0s\"\n        }\n      ],\n      \"jitter\": \"0s\"\n    },\n    \"action\": {\n      \"startWorkflow\": {\n        \"workflowId\": \"H6-AUTO-JOB\",\n        \"workflowType\": {\n          \"name\": \"SyntheticReadOnlyNoWorker\"\n        },\n        \"taskQueue\": {\n          \"name\": \"H6-no-worker\",\n          \"kind\": \"TASK_QUEUE_KIND_NORMAL\"\n        },\n        \"input\": {},\n        \"workflowExecutionTimeout\": \"300s\",\n        \"workflowRunTimeout\": \"0s\",\n        \"workflowTaskTimeout\": \"10s\",\n        \"header\": {}\n      }\n    },\n    \"policies\": {\n      \"overlapPolicy\": \"SCHEDULE_OVERLAP_POLICY_BUFFER_ALL\",\n      \"catchupWindow\": \"10s\"\n    },\n    \"state\": {\n      \"limitedActions\": true\n    }\n  },\n  \"info\": {\n    \"actionCount\": \"1\",\n    \"runningWorkflows\": [\n      {\n        \"workflowId\": \"H6-AUTO-JOB-2026-10-05T19:23:40Z\",\n        \"runId\": \"01a10d85-9295-719d-8a81-490c837b876c\"\n      }\n    ],\n    \"recentActions\": [\n      {\n        \"scheduleTime\": \"2026-10-05T19:23:40Z\",\n        \"actualTime\": \"2026-10-05T19:23:40.058881500Z\",\n        \"startWorkflowResult\": {\n          \"workflowId\": \"H6-AUTO-JOB-2026-10-05T19:23:40Z\",\n          \"runId\": \"01a10d85-9295-719d-8a81-490c837b876c\"\n        },\n        \"startWorkflowStatus\": \"WORKFLOW_EXECUTION_STATUS_RUNNING\"\n      }\n    ],\n    \"createTime\": \"2026-10-05T19:23:35.261340700Z\"\n  },\n  \"conflictToken\": \"AAAAAAAAAAI=\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "workflow",
+        "describe",
+        "--workflow-id",
+        "H6-SYN-JOB"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"executionConfig\": {\n    \"taskQueue\": {\n      \"name\": \"H6-no-worker\",\n      \"kind\": \"TASK_QUEUE_KIND_NORMAL\"\n    },\n    \"workflowExecutionTimeout\": \"300s\",\n    \"workflowRunTimeout\": \"300s\",\n    \"defaultWorkflowTaskTimeout\": \"10s\"\n  },\n  \"workflowExecutionInfo\": {\n    \"execution\": {\n      \"workflowId\": \"H6-SYN-JOB\",\n      \"runId\": \"01a10d85-756c-780e-a7f4-622ebb446af0\"\n    },\n    \"type\": {\n      \"name\": \"SyntheticReadOnlyNoWorker\"\n    },\n    \"startTime\": \"2026-10-05T19:23:32.588527900Z\",\n    \"status\": \"WORKFLOW_EXECUTION_STATUS_RUNNING\",\n    \"historyLength\": \"2\",\n    \"executionTime\": \"2026-10-05T19:23:32.588527900Z\",\n    \"memo\": {},\n    \"searchAttributes\": {},\n    \"autoResetPoints\": {},\n    \"taskQueue\": \"H6-no-worker\",\n    \"stateTransitionCount\": \"1\",\n    \"historySizeBytes\": \"344\",\n    \"rootExecution\": {\n      \"workflowId\": \"H6-SYN-JOB\",\n      \"runId\": \"01a10d85-756c-780e-a7f4-622ebb446af0\"\n    },\n    \"firstRunId\": \"01a10d85-756c-780e-a7f4-622ebb446af0\"\n  },\n  \"pendingWorkflowTask\": {\n    \"state\": \"PENDING_WORKFLOW_TASK_STATE_SCHEDULED\",\n    \"scheduledTime\": \"2026-10-05T19:23:32.590253300Z\",\n    \"originalScheduledTime\": \"2026-10-05T19:23:32.590253300Z\",\n    \"attempt\": 1\n  },\n  \"workflowExtendedInfo\": {\n    \"executionExpirationTime\": \"2026-10-05T19:28:32.589Z\",\n    \"runExpirationTime\": \"2026-10-05T19:28:32.588527900Z\",\n    \"originalStartTime\": \"2026-10-05T19:23:32.588527900Z\",\n    \"requestIdInfos\": {\n      \"57d93766-bc20-46fd-829d-7817ba5a9deb\": {\n        \"eventType\": \"EVENT_TYPE_WORKFLOW_EXECUTION_STARTED\",\n        \"eventId\": \"1\"\n      }\n    }\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "schedule",
+        "describe",
+        "--schedule-id",
+        "H6-SYN-SCHEDULE"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"schedule\": {\n    \"spec\": {\n      \"interval\": [\n        {\n          \"interval\": \"5s\",\n          \"phase\": \"0s\"\n        }\n      ],\n      \"jitter\": \"0s\"\n    },\n    \"action\": {\n      \"startWorkflow\": {\n        \"workflowId\": \"H6-AUTO-JOB\",\n        \"workflowType\": {\n          \"name\": \"SyntheticReadOnlyNoWorker\"\n        },\n        \"taskQueue\": {\n          \"name\": \"H6-no-worker\",\n          \"kind\": \"TASK_QUEUE_KIND_NORMAL\"\n        },\n        \"input\": {},\n        \"workflowExecutionTimeout\": \"300s\",\n        \"workflowRunTimeout\": \"0s\",\n        \"workflowTaskTimeout\": \"10s\",\n        \"header\": {}\n      }\n    },\n    \"policies\": {\n      \"overlapPolicy\": \"SCHEDULE_OVERLAP_POLICY_BUFFER_ALL\",\n      \"catchupWindow\": \"10s\"\n    },\n    \"state\": {\n      \"limitedActions\": true\n    }\n  },\n  \"info\": {\n    \"actionCount\": \"1\",\n    \"runningWorkflows\": [\n      {\n        \"workflowId\": \"H6-AUTO-JOB-2026-10-05T19:23:40Z\",\n        \"runId\": \"01a10d85-9295-719d-8a81-490c837b876c\"\n      }\n    ],\n    \"recentActions\": [\n      {\n        \"scheduleTime\": \"2026-10-05T19:23:40Z\",\n        \"actualTime\": \"2026-10-05T19:23:40.058881500Z\",\n        \"startWorkflowResult\": {\n          \"workflowId\": \"H6-AUTO-JOB-2026-10-05T19:23:40Z\",\n          \"runId\": \"01a10d85-9295-719d-8a81-490c837b876c\"\n        },\n        \"startWorkflowStatus\": \"WORKFLOW_EXECUTION_STATUS_RUNNING\"\n      }\n    ],\n    \"createTime\": \"2026-10-05T19:23:35.261340700Z\"\n  },\n  \"conflictToken\": \"AAAAAAAAAAI=\"\n}\n",
+      "stderr": ""
+    }
+  ],
+  "version": "temporal version 1.9.1 (Server 1.32.0, UI 2.54.1)",
+  "listeners": [
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 49615
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 49614
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 49613
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 49607
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 49606
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 49605
+    }
+  ],
+  "schedule_before_restart": {
+    "schedule": {
+      "spec": {
+        "interval": [
+          {
+            "interval": "5s",
+            "phase": "0s"
+          }
+        ],
+        "jitter": "0s"
+      },
+      "action": {
+        "startWorkflow": {
+          "workflowId": "H6-AUTO-JOB",
+          "workflowType": {
+            "name": "SyntheticReadOnlyNoWorker"
+          },
+          "taskQueue": {
+            "name": "H6-no-worker",
+            "kind": "TASK_QUEUE_KIND_NORMAL"
+          },
+          "input": {},
+          "workflowExecutionTimeout": "300s",
+          "workflowRunTimeout": "0s",
+          "workflowTaskTimeout": "10s",
+          "header": {}
+        }
+      },
+      "policies": {
+        "overlapPolicy": "SCHEDULE_OVERLAP_POLICY_BUFFER_ALL",
+        "catchupWindow": "10s"
+      },
+      "state": {
+        "limitedActions": true
+      }
+    },
+    "info": {
+      "actionCount": "1",
+      "runningWorkflows": [
+        {
+          "workflowId": "H6-AUTO-JOB-2026-10-05T19:23:40Z",
+          "runId": "01a10d85-9295-719d-8a81-490c837b876c"
+        }
+      ],
+      "recentActions": [
+        {
+          "scheduleTime": "2026-10-05T19:23:40Z",
+          "actualTime": "2026-10-05T19:23:40.058881500Z",
+          "startWorkflowResult": {
+            "workflowId": "H6-AUTO-JOB-2026-10-05T19:23:40Z",
+            "runId": "01a10d85-9295-719d-8a81-490c837b876c"
+          },
+          "startWorkflowStatus": "WORKFLOW_EXECUTION_STATUS_RUNNING"
+        }
+      ],
+      "createTime": "2026-10-05T19:23:35.261340700Z"
+    },
+    "conflictToken": "AAAAAAAAAAI="
+  },
+  "workflow_before_restart": {
+    "executionConfig": {
+      "taskQueue": {
+        "name": "H6-no-worker",
+        "kind": "TASK_QUEUE_KIND_NORMAL"
+      },
+      "workflowExecutionTimeout": "300s",
+      "workflowRunTimeout": "300s",
+      "defaultWorkflowTaskTimeout": "10s"
+    },
+    "workflowExecutionInfo": {
+      "execution": {
+        "workflowId": "H6-SYN-JOB",
+        "runId": "01a10d85-756c-780e-a7f4-622ebb446af0"
+      },
+      "type": {
+        "name": "SyntheticReadOnlyNoWorker"
+      },
+      "startTime": "2026-10-05T19:23:32.588527900Z",
+      "status": "WORKFLOW_EXECUTION_STATUS_RUNNING",
+      "historyLength": "2",
+      "executionTime": "2026-10-05T19:23:32.588527900Z",
+      "memo": {},
+      "searchAttributes": {},
+      "autoResetPoints": {},
+      "taskQueue": "H6-no-worker",
+      "stateTransitionCount": "1",
+      "historySizeBytes": "344",
+      "rootExecution": {
+        "workflowId": "H6-SYN-JOB",
+        "runId": "01a10d85-756c-780e-a7f4-622ebb446af0"
+      },
+      "firstRunId": "01a10d85-756c-780e-a7f4-622ebb446af0"
+    },
+    "pendingWorkflowTask": {
+      "state": "PENDING_WORKFLOW_TASK_STATE_SCHEDULED",
+      "scheduledTime": "2026-10-05T19:23:32.590253300Z",
+      "originalScheduledTime": "2026-10-05T19:23:32.590253300Z",
+      "attempt": 1
+    },
+    "workflowExtendedInfo": {
+      "executionExpirationTime": "2026-10-05T19:28:32.589Z",
+      "runExpirationTime": "2026-10-05T19:28:32.588527900Z",
+      "originalStartTime": "2026-10-05T19:23:32.588527900Z",
+      "requestIdInfos": {
+        "57d93766-bc20-46fd-829d-7817ba5a9deb": {
+          "eventType": "EVENT_TYPE_WORKFLOW_EXECUTION_STARTED",
+          "eventId": "1"
+        }
+      }
+    }
+  },
+  "workflow_after_restart": {
+    "executionConfig": {
+      "taskQueue": {
+        "name": "H6-no-worker",
+        "kind": "TASK_QUEUE_KIND_NORMAL"
+      },
+      "workflowExecutionTimeout": "300s",
+      "workflowRunTimeout": "300s",
+      "defaultWorkflowTaskTimeout": "10s"
+    },
+    "workflowExecutionInfo": {
+      "execution": {
+        "workflowId": "H6-SYN-JOB",
+        "runId": "01a10d85-756c-780e-a7f4-622ebb446af0"
+      },
+      "type": {
+        "name": "SyntheticReadOnlyNoWorker"
+      },
+      "startTime": "2026-10-05T19:23:32.588527900Z",
+      "status": "WORKFLOW_EXECUTION_STATUS_RUNNING",
+      "historyLength": "2",
+      "executionTime": "2026-10-05T19:23:32.588527900Z",
+      "memo": {},
+      "searchAttributes": {},
+      "autoResetPoints": {},
+      "taskQueue": "H6-no-worker",
+      "stateTransitionCount": "1",
+      "historySizeBytes": "344",
+      "rootExecution": {
+        "workflowId": "H6-SYN-JOB",
+        "runId": "01a10d85-756c-780e-a7f4-622ebb446af0"
+      },
+      "firstRunId": "01a10d85-756c-780e-a7f4-622ebb446af0"
+    },
+    "pendingWorkflowTask": {
+      "state": "PENDING_WORKFLOW_TASK_STATE_SCHEDULED",
+      "scheduledTime": "2026-10-05T19:23:32.590253300Z",
+      "originalScheduledTime": "2026-10-05T19:23:32.590253300Z",
+      "attempt": 1
+    },
+    "workflowExtendedInfo": {
+      "executionExpirationTime": "2026-10-05T19:28:32.589Z",
+      "runExpirationTime": "2026-10-05T19:28:32.588527900Z",
+      "originalStartTime": "2026-10-05T19:23:32.588527900Z",
+      "requestIdInfos": {
+        "57d93766-bc20-46fd-829d-7817ba5a9deb": {
+          "eventType": "EVENT_TYPE_WORKFLOW_EXECUTION_STARTED",
+          "eventId": "1"
+        }
+      }
+    }
+  },
+  "schedule_after_restart": {
+    "schedule": {
+      "spec": {
+        "interval": [
+          {
+            "interval": "5s",
+            "phase": "0s"
+          }
+        ],
+        "jitter": "0s"
+      },
+      "action": {
+        "startWorkflow": {
+          "workflowId": "H6-AUTO-JOB",
+          "workflowType": {
+            "name": "SyntheticReadOnlyNoWorker"
+          },
+          "taskQueue": {
+            "name": "H6-no-worker",
+            "kind": "TASK_QUEUE_KIND_NORMAL"
+          },
+          "input": {},
+          "workflowExecutionTimeout": "300s",
+          "workflowRunTimeout": "0s",
+          "workflowTaskTimeout": "10s",
+          "header": {}
+        }
+      },
+      "policies": {
+        "overlapPolicy": "SCHEDULE_OVERLAP_POLICY_BUFFER_ALL",
+        "catchupWindow": "10s"
+      },
+      "state": {
+        "limitedActions": true
+      }
+    },
+    "info": {
+      "actionCount": "1",
+      "runningWorkflows": [
+        {
+          "workflowId": "H6-AUTO-JOB-2026-10-05T19:23:40Z",
+          "runId": "01a10d85-9295-719d-8a81-490c837b876c"
+        }
+      ],
+      "recentActions": [
+        {
+          "scheduleTime": "2026-10-05T19:23:40Z",
+          "actualTime": "2026-10-05T19:23:40.058881500Z",
+          "startWorkflowResult": {
+            "workflowId": "H6-AUTO-JOB-2026-10-05T19:23:40Z",
+            "runId": "01a10d85-9295-719d-8a81-490c837b876c"
+          },
+          "startWorkflowStatus": "WORKFLOW_EXECUTION_STATUS_RUNNING"
+        }
+      ],
+      "createTime": "2026-10-05T19:23:35.261340700Z"
+    },
+    "conflictToken": "AAAAAAAAAAI="
+  },
+  "cleanup": "COMPLETED",
+  "process_stopped": true
+}

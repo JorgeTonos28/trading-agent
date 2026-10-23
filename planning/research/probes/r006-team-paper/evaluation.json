@@ -1,0 +1,53 @@
+{
+  "checks": {
+    "eight_recorded": true,
+    "eight_passed": true,
+    "seven_functional_one_control": true,
+    "source_clone_equal": true,
+    "shadow_snapshot_equal": true,
+    "shadow_numeric_signature_equal": true,
+    "restarted": true,
+    "no_unexpected_tools": true,
+    "failure_two_reads": true,
+    "onboarding_completion": true,
+    "six_package_metadata": true,
+    "duplicate_classification_offline": true,
+    "late_classification_offline": true,
+    "nooutput_classification_offline": true,
+    "unpaired_classification_offline": true,
+    "invalid_classification_offline": true
+  },
+  "passed": true,
+  "n_checks": 16,
+  "selected": false,
+  "scope": "bounded feasibility and pinned Team clone; ledger classifier offline, no durable runtime",
+  "functional_jobs": 7,
+  "control_jobs": 1,
+  "schema_admitted": 8,
+  "service_mean_seconds": 30.93,
+  "service_sum_seconds": 247.44,
+  "service_max_seconds": 61.668,
+  "burst_max_total_seconds": 83.113,
+  "shadow_numeric_signature_equal": true,
+  "complete_shadow_proposal_equal": false,
+  "offline_ledger": [
+    {
+      "logical_job": "SYN-OFFLINE-RECOVERY",
+      "original_trial_job": "SYN-JOB-04",
+      "classification": "ACCEPTED_ON_TIME"
+    },
+    {
+      "logical_job": "SYN-OFFLINE-RECOVERY",
+      "original_trial_job": "SYN-JOB-05",
+      "classification": "DUPLICATE"
+    }
+  ],
+  "offline_negatives": {
+    "late": "LATE_RETROSPECTIVE_ONLY",
+    "missing": "NO_OUTPUT",
+    "unpaired": "UNPAIRED",
+    "invalid": "REJECTED_SCHEMA"
+  },
+  "future_Plus": "UNKNOWN_PRELIVE",
+  "profile_schema_valid": true
+}

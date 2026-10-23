@@ -1,0 +1,21 @@
+{
+  "schema_version": "s2b-owner-setup-baseline-v1",
+  "captured_at": "2026-10-06T18:25:21.6987606Z",
+  "transaction_id": "s2b-20261006-a6d74b2b",
+  "gate": "S2B-ADM-01",
+  "current_process_elevated": false,
+  "account_available": true,
+  "parent_exists": false,
+  "root_exists": false,
+  "programdata_reparse": false,
+  "powershell_policies": {
+    "MachinePolicy": "Undefined",
+    "UserPolicy": "Undefined",
+    "Process": "Undefined",
+    "CurrentUser": "Undefined",
+    "LocalMachine": "RemoteSigned"
+  },
+  "observed_surface": "CURRENT_NON_ELEVATED_POWERSHELL_SESSION_NOT_NEW_RUNNER",
+  "configuration_changes": [],
+  "filesystem_acceptance": "NOT_TESTED"
+}
