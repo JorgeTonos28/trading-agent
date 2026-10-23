@@ -1,0 +1,3 @@
+# KD1-D — diagnóstico acotado tras01
+
+01: login guest PASS,6ERROR en parsing, logout solicitado. No se sabe aún si API devuelve error o el parser rechaza CSV válido. No etiquetar como seis datasets fallidos ni cobertura ausente. Ejecutar **una** historySPY con el mismo scope2004 y auth pública; registrar únicamente shape/hashes/código numérico si body es error, sin imprimir/precios/headers/cookies ni persistir raw. Ignorar filas vacías para diagnosticar captura, sin sustituir01. Si error de servicio/auth/red, no reintentos ni cambios de transporte/política; documentar acceso no demostrado, no REJECT. No nuevos endpoints de pago/ajustes ni ampliar fechas.

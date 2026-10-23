@@ -1,0 +1,71 @@
+{
+  "captured_utc": "2026-10-23T17:18:56.410524+00:00",
+  "scope": "PUBLIC_ANONYMOUS_VENDOR_TINY_2004_ACCESS_PROBE_NO_BACKTEST",
+  "source_sha256": "565b51c7c861c102a9cdcae09774606a9130afa353a666eb5898826ed9f728a9",
+  "request_window": [
+    "2004-11-18",
+    "2004-11-24"
+  ],
+  "rows": [
+    {
+      "id": "PUBLIC_GUEST_ACCESS",
+      "status": "PASS",
+      "http_status": 200,
+      "body_code": "200"
+    },
+    {
+      "symbol": "SPY",
+      "status": "ERROR",
+      "error_type": "ValueError",
+      "reason": "NON_CSV_OR_API_BODY_ERROR"
+    },
+    {
+      "symbol": "QQQ",
+      "status": "ERROR",
+      "error_type": "ValueError",
+      "reason": "NON_CSV_OR_API_BODY_ERROR"
+    },
+    {
+      "symbol": "IWM",
+      "status": "ERROR",
+      "error_type": "ValueError",
+      "reason": "NON_CSV_OR_API_BODY_ERROR"
+    },
+    {
+      "symbol": "EFA",
+      "status": "ERROR",
+      "error_type": "ValueError",
+      "reason": "NON_CSV_OR_API_BODY_ERROR"
+    },
+    {
+      "symbol": "TLT",
+      "status": "ERROR",
+      "error_type": "ValueError",
+      "reason": "NON_CSV_OR_API_BODY_ERROR"
+    },
+    {
+      "symbol": "GLD",
+      "status": "ERROR",
+      "error_type": "ValueError",
+      "reason": "NON_CSV_OR_API_BODY_ERROR"
+    }
+  ],
+  "counts": {
+    "PASS": 1,
+    "FAIL": 0,
+    "ERROR": 6
+  },
+  "network_calls": 8,
+  "logout": "REQUESTED_HTTP_200",
+  "private_credentials_used": false,
+  "owner_account_created": false,
+  "spend": 0,
+  "raw_prices_printed_or_committed": false,
+  "market_data_slice_requested": true,
+  "holdout_requested": false,
+  "strategy_trials": 0,
+  "datasets_admitted": 0,
+  "implementation_locked": true,
+  "holdout": "INTEGRITY_UNKNOWN",
+  "target_acceptance": "TARGET_ACCEPTANCE_DEFERRED"
+}

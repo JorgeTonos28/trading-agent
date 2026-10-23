@@ -1,0 +1,13 @@
+# QL2 — componentes nativos LEAN, protocolo previo
+
+2026-10-23. Fuente pinf3d841e60dfd010ee5fc293ea893e56952484108 ya compilada. C# console de laboratorio llama EquityFillModel/SecurityPortfolioManager con símbolo inexistente, precios propios y fechas2030. **Sin Algorithm/Strategy/Launcher/Backtesting.run, dataset real, broker, API, autenticación ni cuenta.** No implementación de TradingOS ni selección automática de motor.
+
+Expectativas independientes: sell-stop95 en bar gapopen90 llena90, no95; stoplimit95/94 en gap90 no llena y puede llenar en bar posterior≥94; bar cuyo end≤ordertime no llena; componente default fullfill qty10 con volume5 expone ausencia de partial/liquidity model; dividendraw10acciones×1 acredita10 inmediatamente; llamada repetida a ApplyDividend acredita otra vez (es API de componente, no prueba de duplicación del engine integrado); adjusted mode no añade ese cash; splitfactor.5 duplica qty y divide entryavg por2. La prueba del dividendo **no modela fecha de pago** ni convierte tal cash en política admisible.
+
+AlwaysOpen/UTC explícitos sólo simplifican fixture, no validan mercadoUSA/DST/holidays. Modelo de compra cash/no leverage donde aplica; no órdenes reales ni shorts. Oráculos de modelo default se distinguen de aceptación del contrato del proyecto: observar fullfill o earlycash no pasa paridad de parciales/paydate. Máximo dos intentos por error de harness, preservando código/capturas/expectativas; no rerun para borrar discrepancia.
+
+Build con .NET10 existente, NuGet público scoped y caches locales ya usados, sin globalinstall/servicios/admin. Runner registra restore/build/run y hashes por intento; stdout completo queda ignored.local, reporte sanitizado sin paths personales. Ningún rendimiento de estrategia, método estadístico, engine o target aceptado.
+
+## Resultado
+
+Intento01 restore/build/run PASS, **9checksPASS/0FAIL/ERROR**. Se observaron los comportamientos preregistrados, incluidos fullfill y cashdividendinmediato **que no satisfacen por sí solos el contrato del proyecto**. No rerun para aumentar cobertura. Split sólo cantidades/entryavg, no órdenesprotectora/settlement/cash-in-lieu; duplicación sólo doble llamada directa, no bug probado delenginecompleto. Metadata UTC/AlwaysOpen noUSAcalendar. [Provenanceposterior](provenance-after-run.json) registra sourcepin/files y artefactos delbuild aún presentes; distingue momento de observación de la captura run. Todo futuro rerun debe comprobar pin y dependencias antes de ejecutar; este driver01 dejó elpin como declaración y su comprobación posterior queda explícita, no promesa de verifierruntime.

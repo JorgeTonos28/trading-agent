@@ -31,3 +31,9 @@ planning/research/probes/r008-pit-reconstruction/*.json -text whitespace=cr-at-e
 planning/research/probes/r008-pit-reconstruction/*.txt -text whitespace=cr-at-eol
 # Immutable failed serialization capture includes its original unfinished space.
 planning/research/probes/r008-pit-reconstruction/result-01.partial.txt -text -whitespace
+planning/research/probes/r009-lean-components/*.py -text whitespace=cr-at-eol
+planning/research/probes/r009-lean-components/*.cs -text whitespace=cr-at-eol
+planning/research/probes/r009-lean-components/*.csproj -text whitespace=cr-at-eol
+planning/research/probes/r009-lean-components/*.json -text whitespace=cr-at-eol
+planning/research/probes/r008-kibot-access/*.py -text whitespace=cr-at-eol
+planning/research/probes/r008-kibot-access/*.json -text whitespace=cr-at-eol

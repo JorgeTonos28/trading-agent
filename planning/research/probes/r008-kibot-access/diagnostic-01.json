@@ -1,0 +1,29 @@
+{
+  "captured_utc": "2026-10-23T17:20:21.987495+00:00",
+  "source_sha256": "182afa24ba8dd2e7ac567692269dcd2905025f613106b281ede74e33e940b8a9",
+  "rows": [
+    {
+      "id": "LOGIN",
+      "status": "PASS",
+      "http": 200,
+      "cookies_count": 0
+    },
+    {
+      "id": "HISTORY_RESPONSE_SHAPE",
+      "http": 200,
+      "bytes": 17,
+      "sha256": "07808a163c97860e328499e52cb92fd3927bd55d6163171ec0060d4c4006bf76",
+      "row_field_count_histogram": {
+        "1": 1
+      },
+      "api_error_code": "401",
+      "has_nonempty_six_column_rows": false,
+      "status": "OBSERVED_NOT_ADMISSION"
+    }
+  ],
+  "raw_saved": false,
+  "prices_output": false,
+  "retry_or_bypass": false,
+  "strategy_trials": 0,
+  "dataset_admitted": false
+}

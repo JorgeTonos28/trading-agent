@@ -1,0 +1,126 @@
+{
+  "captured_utc": "2026-10-23T17:16:38.544908+00:00",
+  "scope": "LEAN_NATIVE_COMPONENT_ONLY_FICTITIOUS",
+  "source_commit": "f3d841e60dfd010ee5fc293ea893e56952484108",
+  "source_hashes": {
+    "Program.cs": "e80fa672eb3011d79ea4f7cfebc6d4fbb6f2391569b8fcb7e39b57a3f72a94c1",
+    "Probe.csproj": "3e8f7d87186eda7a7155f42b29714d32278d91bbb3b7d9c521b6d1c360dfdda3",
+    "run_probe.py": "d4fb3992bbcc00394aa73613c7d7f2d8c0c9b133feaf75a006f8fc9401a795c2"
+  },
+  "steps": [
+    {
+      "label": "restore",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 7.869,
+      "log_sha256": "4716df8325db137f5ac862aa81e88af64aca298dc07f3b3c3b7072937c9885d3",
+      "diagnostics": [
+        "<research-root>\\.local\\lean-source\\Common\\QuantConnect.csproj : warning NU1903: El paquete \"DotNetZip\" 1.16.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-xhg6-9j5j-w4vf [<research-root>\\.local\\ql2-native\\Probe.csproj]",
+        "<research-root>\\.local\\lean-source\\Common\\QuantConnect.csproj : warning NU1904: El paquete \"System.Drawing.Common\" 4.7.0 tiene una vulnerabilidad de gravedad cr\u00c3\u00adtica conocida, https://github.com/advisories/GHSA-rxg9-xrhp-64gj [<research-root>\\.local\\ql2-native\\Probe.csproj]",
+        "<research-root>\\.local\\lean-source\\Compression\\QuantConnect.Compression.csproj : warning NU1903: El paquete \"DotNetZip\" 1.16.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-xhg6-9j5j-w4vf [<research-root>\\.local\\ql2-native\\Probe.csproj]",
+        "<research-root>\\.local\\lean-source\\Compression\\QuantConnect.Compression.csproj : warning NU1904: El paquete \"System.Drawing.Common\" 4.7.0 tiene una vulnerabilidad de gravedad cr\u00c3\u00adtica conocida, https://github.com/advisories/GHSA-rxg9-xrhp-64gj [<research-root>\\.local\\ql2-native\\Probe.csproj]",
+        "<research-root>\\.local\\ql2-native\\Probe.csproj : warning NU1903: El paquete \"DotNetZip\" 1.16.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-xhg6-9j5j-w4vf",
+        "<research-root>\\.local\\ql2-native\\Probe.csproj : warning NU1904: El paquete \"System.Drawing.Common\" 4.7.0 tiene una vulnerabilidad de gravedad cr\u00c3\u00adtica conocida, https://github.com/advisories/GHSA-rxg9-xrhp-64gj"
+      ]
+    },
+    {
+      "label": "build",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 13.536,
+      "log_sha256": "d6d0f8aabc5bfb7dfd4fd03d3abdaa44131a5bf6b0a9713b64c08ac82ef3bda5",
+      "diagnostics": [
+        "<research-root>\\.local\\ql2-native\\Probe.csproj : warning NU1903: El paquete \"DotNetZip\" 1.16.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-xhg6-9j5j-w4vf",
+        "<research-root>\\.local\\ql2-native\\Probe.csproj : warning NU1904: El paquete \"System.Drawing.Common\" 4.7.0 tiene una vulnerabilidad de gravedad cr\u00c3\u00adtica conocida, https://github.com/advisories/GHSA-rxg9-xrhp-64gj",
+        "<research-root>\\.local\\lean-source\\Common\\QuantConnect.csproj : warning NU1903: El paquete \"DotNetZip\" 1.16.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-xhg6-9j5j-w4vf",
+        "<research-root>\\.local\\lean-source\\Common\\QuantConnect.csproj : warning NU1904: El paquete \"System.Drawing.Common\" 4.7.0 tiene una vulnerabilidad de gravedad cr\u00c3\u00adtica conocida, https://github.com/advisories/GHSA-rxg9-xrhp-64gj",
+        "<research-root>\\.local\\lean-source\\Compression\\QuantConnect.Compression.csproj : warning NU1903: El paquete \"DotNetZip\" 1.16.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-xhg6-9j5j-w4vf",
+        "<research-root>\\.local\\lean-source\\Compression\\QuantConnect.Compression.csproj : warning NU1904: El paquete \"System.Drawing.Common\" 4.7.0 tiene una vulnerabilidad de gravedad cr\u00c3\u00adtica conocida, https://github.com/advisories/GHSA-rxg9-xrhp-64gj",
+        "<research-root>\\.local\\ql2-native\\Probe.csproj : warning NU1903: El paquete \"DotNetZip\" 1.16.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-xhg6-9j5j-w4vf",
+        "<research-root>\\.local\\ql2-native\\Probe.csproj : warning NU1904: El paquete \"System.Drawing.Common\" 4.7.0 tiene una vulnerabilidad de gravedad cr\u00c3\u00adtica conocida, https://github.com/advisories/GHSA-rxg9-xrhp-64gj",
+        "<research-root>\\.local\\lean-source\\Common\\QuantConnect.csproj : warning NU1903: El paquete \"DotNetZip\" 1.16.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-xhg6-9j5j-w4vf",
+        "<research-root>\\.local\\lean-source\\Common\\QuantConnect.csproj : warning NU1904: El paquete \"System.Drawing.Common\" 4.7.0 tiene una vulnerabilidad de gravedad cr\u00c3\u00adtica conocida, https://github.com/advisories/GHSA-rxg9-xrhp-64gj",
+        "<research-root>\\.local\\lean-source\\Compression\\QuantConnect.Compression.csproj : warning NU1903: El paquete \"DotNetZip\" 1.16.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-xhg6-9j5j-w4vf",
+        "<research-root>\\.local\\lean-source\\Compression\\QuantConnect.Compression.csproj : warning NU1904: El paquete \"System.Drawing.Common\" 4.7.0 tiene una vulnerabilidad de gravedad cr\u00c3\u00adtica conocida, https://github.com/advisories/GHSA-rxg9-xrhp-64gj"
+      ]
+    },
+    {
+      "label": "run",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 2.009,
+      "log_sha256": "cf194b2c05bd587eaada1d0134992e10ff027e612bd31057532b2ce304f7459b",
+      "diagnostics": []
+    }
+  ],
+  "rows": [
+    {
+      "id": "GAP_STOP_MARKET_PRICE",
+      "observed": "90",
+      "expected": "90",
+      "status": "PASS"
+    },
+    {
+      "id": "GAP_STOP_LIMIT_NO_FILL",
+      "observed": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "id": "STOP_LIMIT_RECOVERS_AFTER_TRIGGER",
+      "observed": "True",
+      "expected": "True",
+      "status": "PASS"
+    },
+    {
+      "id": "NO_FILL_BAR_END_EQUAL_ORDER_TIME",
+      "observed": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "id": "DEFAULT_COMPONENT_FULL_QUANTITY_NOT_VOLUME_CAP",
+      "observed": "-10",
+      "expected": "-10",
+      "status": "PASS"
+    },
+    {
+      "id": "RAW_DIVIDEND_CASH_IMMEDIATE",
+      "observed": "1010",
+      "expected": "1010",
+      "status": "PASS"
+    },
+    {
+      "id": "DUPLICATE_COMPONENT_DIVIDEND_CALL_CREDITS_TWICE",
+      "observed": "1020",
+      "expected": "1020",
+      "status": "PASS"
+    },
+    {
+      "id": "ADJUSTED_MODE_NO_EXTRA_DIVIDEND_CASH",
+      "observed": "1000",
+      "expected": "1000",
+      "status": "PASS"
+    },
+    {
+      "id": "RAW_SPLIT_QUANTITY_AND_AVERAGE",
+      "observed": "20:50.0",
+      "expected": "20:50.0",
+      "status": "PASS"
+    }
+  ],
+  "counts": {
+    "PASS": 9,
+    "FAIL": 0,
+    "ERROR": 0
+  },
+  "strategy_trials": 0,
+  "historical_backtests": 0,
+  "financial_implementation": false,
+  "global_configuration_changed": false,
+  "engine_selected": false,
+  "QP_integrated_accepted": false,
+  "implementation_locked": true,
+  "holdout": "INTEGRITY_UNKNOWN",
+  "target_acceptance": "TARGET_ACCEPTANCE_DEFERRED"
+}

@@ -1,0 +1,39 @@
+{
+  "observed_utc": "2026-10-23T17:33:28.419934+00:00",
+  "timing": "AFTER_RUN_NOT_RUNTIME_ASSEMBLY_ATTESTATION",
+  "source_commit_observed": "f3d841e60dfd010ee5fc293ea893e56952484108",
+  "source_files": {
+    "Common/Orders/Fills/EquityFillModel.cs": {
+      "checkout_sha256": "6278ff527f82cac60918f3bd633bcc8a5078a255d08df8b6be79f0c2c7eb242c",
+      "git_blob_content_sha256": "7f8c0e35eb538f5a63184c9b5ef4b32886e2c7779ccce1e773229a1a1ec18232",
+      "equal_after_EOL_normalization": true
+    },
+    "Common/Orders/Fills/FillModel.cs": {
+      "checkout_sha256": "52d291d950c1f5fc73c4e1a55b58d376a78bd9cecb55f1d2d07e0483691cac63",
+      "git_blob_content_sha256": "725852e144bf1e54160f9cefe9788d163b80facd774b0a684392627bffa710f1",
+      "equal_after_EOL_normalization": true
+    },
+    "Common/Securities/SecurityPortfolioManager.cs": {
+      "checkout_sha256": "1a845ee3b2646d3bda3b60ff00fcf9eb5af683a1e4b2dd70433f4a2c60d9dad5",
+      "git_blob_content_sha256": "a38ddb51a0d7a2b60cff663e74912e0bebb302a09c44bf6bd295980fce26a2bb",
+      "equal_after_EOL_normalization": true
+    },
+    "Common/Securities/Security.cs": {
+      "checkout_sha256": "edcdd121c17ac5b81b3471632d8a0128d4c0bd5b54d410bfdc2dc660041c1786",
+      "git_blob_content_sha256": "d8a514de7d67a6aa3abf72bdf049a0bc098bfbd64576f0926182fc0588a761e9",
+      "equal_after_EOL_normalization": true
+    }
+  },
+  "build_outputs": {
+    "Probe.dll": {
+      "exists": true,
+      "sha256": "51cbaacbe3032a2f24de36868c6dd23ce66281012a79d69cbb1c3048f931245e"
+    },
+    "QuantConnect.Common.dll": {
+      "exists": true,
+      "sha256": "229121f334035a084cdc997fa8c753146402ba8e33b95f7bfb9ddc7bcfa97261"
+    }
+  },
+  "source_declaration_driver_not_preflight_verifier": true,
+  "full_engine_accepted": false
+}
