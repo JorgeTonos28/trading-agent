@@ -198,3 +198,11 @@ K067 conserva integridad UNKNOWN y O-B aprobado sólo conceptual. Riesgos adicio
 - K-095 P1: 10k principal oculta costes de otras escalas o UNKNOWN=0, se interpreta como funding/LIVE aprobado. ADR021 cobertura5obligatoria,20celdas+todosmodelos, scope explícito y no cherry-pickK.
 - K-096 P1: constructor6/6se presenta como engineparity/aceptaciónWindowsPlus o entorno de dependencias completo. QE0scope/import/init, clickfaltante, no QP/backtest/runtimeacceptance.
 - K-097 P1: storageprivado/derivedpermissions implican retención perpetua o compartirrawconIA. AclaracionesR008 pendientes, no vendor elegido; sin mensajes externos sin autorización.
+
+## Riesgos wave09 — fuentes/PIT y entrega
+
+- K-098 P1: latest-only o backfill se usa como conocido en el pasado. CA01–03: versiones, clocks, disponibilidad demostrable, reconstrucción etiquetada; matriz aún NOT_EXECUTED.
+- K-099 P1: fecha de security-master o profundidad global se transfiere a acciones/precios y cambia ventanas. Admisión por componente/período/seis subcards, no datos admitidos.
+- K-100 P1: autoasignación de ISIN/scope amplio consume cuota o modo sin asignar omite datos. Scope explícito y gate antes de llamada, completitud no inferida de respuesta vacía.
+- K-101 P1: preparar correos se interpreta como autorización para enviarlos o se marca pendiente sin envío. AGENTS/ledger: owner delivery, 0envíos, automatic_send_authorized=false; actualizar sólo con evidencia real.
+- K-102 P1: respuesta comercial genérica admite dataset o archivo/IA/terminación por inferencia. Derechos contractuales, cobertura, calidad y evidencia técnica/PIT independientes; sin respuesta específica, no admisión. Investigación no bloqueada globalmente.

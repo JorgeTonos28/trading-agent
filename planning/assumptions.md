@@ -168,3 +168,11 @@ A051 integridad de reserva permanece UNVERIFIED, no resuelta por aprobación O-B
 - A-072 P1 REFUTED por metadata/cota: GLDpuede200sesionesprevias aenero2005; listar18nov2004loimpide. Cobertura real sigueNOT_TESTED.
 - A-073 P1 UNVERIFIED: derechos de dosvendors permiten rawarchive/replaydurable/usoIApersonal. Consultas listas, sin enviar ni asumir permisos por acceso público.
 - A-074 P1 DECIDED_INPUT: referencia nominalPAPER10k y costes evaluados en5escalas porADR021; no fundedcapital o costeactual demostrado.
+
+## Supuestos wave09 — fuentes y comunicación
+
+- A-075 P1 UNVERIFIED: revisión/alta del registro equivalen a disponibilidad al cliente. Separar clocks y backfills por versión; no afirmar PIT por latest-only o por una etiqueta comercial.
+- A-076 P1 UNVERIFIED: una fuente complementaria de acciones cubre desarrollo2005+ o seis ETF por cobertura global. Verificar cada ventana/componente y subcard; no cambiar ventanas.
+- A-077 P1 UNVERIFIED: licencia local o uso interno non-display habilita IA externa/retención post-terminación. Evidencia por producto, plan, uso y seis categorías; respuesta genérica insuficiente.
+- A-078 P1 DECIDED_INPUT: propietario enviará consultas personalmente; preparación aprobada, envío automático NO autorizado. No envío demostrado, no EXTERNAL_CLARIFICATION_PENDING todavía.
+- A-079 P1 UNVERIFIED: petición de lectura no consume asignaciones/cuota ni omite filas. Gate previo de scope/licencia/budget; matriz CA07 sin ejecutar.

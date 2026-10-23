@@ -25,6 +25,6 @@ No hace falta guardar dirección personal, headers privados, tracking, tokens o 
 
 ## Trabajo independiente y admisión
 
-Continuar PRICE–MATR, otras fuentes, PIT, broker/protección, motor/paridad, riesgo y preregistro sin esperar estas respuestas. No se ha probado que falte toda alternativa gratuita. La siguiente wave independiente examina acciones corporativas/PIT de Databento; tampoco selecciona proveedor ni admite datos.
+Continuar PRICE–MATR, otras fuentes, PIT, broker/protección, motor/paridad, riesgo y preregistro sin esperar estas respuestas. No se ha probado que falte toda alternativa gratuita. La [wave independiente](R-008_alternative_actions_PIT_wave05_2026-10-23.md) examina acciones corporativas/PIT de Databento; tampoco selecciona proveedor ni admite datos.
 
 Tras aclaración suficientemente específica: licencia aplicable → cobertura por seis subcards → muestra de desarrollo autorizada → QA cruzada/PIT/replay → evaluación de admisión. Derechos, cobertura, calidad y evidencia técnica verificable son requisitos separados. Cualquier cuenta/login/contrato o gasto conserva su gate. Reserva INTEGRITY_UNKNOWN; implementation_locked=true; TARGET_ACCEPTANCE_DEFERRED.

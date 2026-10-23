@@ -1,10 +1,10 @@
 {
-  "updated_on": "2026-10-15",
+  "updated_on": "2026-10-23",
   "state": "SOURCE_DOCS_ONLY_ALL_CARDS_NOT_ADMITTED",
   "cards": [
     {
       "schema_version": "planning-0.1",
-      "updated_on": "2026-10-14",
+      "updated_on": "2026-10-23",
       "stage": "PREPARATION",
       "implementation_locked": true,
       "financial_authority": "NONE",
@@ -30,7 +30,8 @@
       ],
       "history_accessed": false,
       "evidence_refs": [
-        "../R-008_dataset_admission_wave04_2026-10-15.md"
+        "../R-008_dataset_admission_wave04_2026-10-15.md",
+        "../R-008_alternative_actions_PIT_wave05_2026-10-23.md"
       ],
       "instruments": [
         {
@@ -96,7 +97,23 @@
       ],
       "missing_policy": "EXPLICIT_ABSTENTION_OR_QUARANTINE_NOT_HIDDEN_FORWARD_FILL",
       "feed_and_fill_acceptance": false,
-      "instrument_subcards": "ETF_instrument_admission_RC1.json"
+      "instrument_subcards": "ETF_instrument_admission_RC1.json",
+      "source_component_admission_rule": "LICENSE_COVERAGE_QUALITY_PIT_AND_TECHNICAL_EVIDENCE_SEPARATE_PER_COMPONENT_WINDOW_NO_GENERIC_SALES_ADMISSION",
+      "corporate_action_acceptance_matrix": {
+        "documentation": "../R-008_alternative_actions_PIT_wave05_2026-10-23.md",
+        "case_ids": [
+          "CA01",
+          "CA02",
+          "CA03",
+          "CA04",
+          "CA05",
+          "CA06",
+          "CA07",
+          "CA08",
+          "CA09"
+        ],
+        "status": "NOT_EXECUTED"
+      }
     },
     {
       "schema_version": "planning-0.1",

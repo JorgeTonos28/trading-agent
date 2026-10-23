@@ -46,3 +46,7 @@ X13: E5/E6paths/parameters/MCstatistics ySC0costs/capital sonficticios, no preci
 ## Exposición wave08 — 2026-10-15
 
 X14: búsqueda de metadata deGLD mostró incidentalmente una fila de performance de emisor con fechaJun2026 en snippetSSGA, sin abrir esa página ni usar cifras para hipótesis/params. PáginaGLD principal mostraba metadata y campos deprecios AWAITING. PaperDD menciona ejemplos SP5001950–2013; no datos/figuras descargados para comparación. Registrar solapamiento potencial como exposición incidental, no certifyholdoutintacto. E7/QE0/QE1 sólofixtures,metadata/software/cantidadespropias; ningún retorno/mercadodata real ni estrategia/backtest ejecutados. Nominal10k vino delowner antes de resultados. M11 sigueparcial/INTEGRITY_UNKNOWN.
+
+## Exposición wave09 — 2026-10-23
+
+X15: lectura pública de términos Twelve mostró quotes puntuales en header; búsquedas amplias de documentación incluyeron snippets de terceros con cifras/fechas de mercados potencialmente solapadas con la reserva. No se abrieron esos terceros ni se usaron valores para reglas, márgenes o selección; no se reproducen rendimientos. Documentación Databento incluye ejemplos públicos de acciones corporativas/fechas, no resultados propios ni validación de candidatos. No API ni descarga de muestra/histórico, y ningún resultado PRICE–MATR consultado. Exposición incidental no acredita integridad ni contaminación suficiente; M11 sigue parcial y reserva INTEGRITY_UNKNOWN.
