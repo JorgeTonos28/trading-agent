@@ -110,3 +110,9 @@ Wave10: research/source_cost_scenarios_wave06.json añade escenario publicado No
 ## Actualización wave11 — 2026-10-23
 
 [Sourcecostwave11](research/source_cost_scenarios_wave11.json): guestaccess0 anunciado pero acceso efectivohistorynoestablecido/totalUNKNOWN; paidKibot14/mo reserva, FirstRateupdates59.95/mo opcional+inicialUNKNOWN. Primer año11updates659.45 versus régimen12updates719.40 separados, todos5capitales y20celdas previas. No fee por depositar ni nominal10kautorizafunding.
+
+## 2026-10-28 — Q-062 aprobado y proveedores actualizados
+
+El propietario aprueba Alpaca Paper Only + LEAN source como **familias de diseño PAPER**, IBKR/Nautilus reservas: [ADR-023](decisions/ADR-023-paper-broker-and-backtesting-families.md). B1–B5/QP1–QP10, pin/modelos/protección efectiva/target siguen pendientes; sin cuentas, gasto, implementación o LIVE. B3 no admisible implica no entradas.
+
+[Evidencia comercial](research/R-008_vendor_evidence_and_plan_scope_RC1.md) disponible desde 2026-10-28, fecha real de recepción UNKNOWN y correos originales no inspeccionados. Twelve=VENDOR_INFORMATION_REQUESTED, aclaración del propietario pendiente de envío. EODHD=VENDOR_RESPONSE_RECEIVED / PLAN_SCOPE_CLARIFICATION_PENDING / TECHNICAL_ADMISSION_PENDING; todos los datasets NOT_ADMITTED, raw a IA externa DENY_UNCONFIRMED. Tres precios públicos19.99/29.99/99.99 incorporados a las cinco escalas; se prioriza EOD económico si cumple. No se espera respuesta para avanzar research.

@@ -1,5 +1,5 @@
 schema_version: 1
-updated_on: 2026-10-23
+updated_on: 2026-10-28
 project:
   name: Trading OS
   purpose: auditable_agentic_quantitative_trading_platform
@@ -790,7 +790,7 @@ financial_preparation_wave08:
   incremental_spend: 0
 
 profile_resolution_policy: APPROVAL_BLOCKS_AND_LATEST_DATED_WAVE_SUPERSEDE_HISTORICAL_SNAPSHOTS
-active_financial_checkpoint: financial_preparation_wave11
+active_financial_checkpoint: financial_preparation_wave12
 
 vendor_communication_2026_10_23:
   preparation_approved: true
@@ -928,3 +928,44 @@ financial_preparation_wave11:
   confirmation_integrity: INTEGRITY_UNKNOWN
   actual_incremental_spend: 0
   next_human_decision: Q062_PAPER_BROKER_ENGINE_DESIGN_SELECTION
+
+paper_stack_owner_approval_2026_10_28:
+  question: Q062
+  state: DECIDED_DESIGN_FAMILIES_ONLY
+  adr: planning/decisions/ADR-023-paper-broker-and-backtesting-families.md
+  broker: ALPACA_PAPER_ONLY
+  backtesting: LEAN_SOURCE_LOCAL
+  reserves: [IBKR_TWS, NAUTILUS]
+  commercial_CLI_Cloud_free_assumed: false
+  B1_B5_QP1_QP10_accepted: false
+  B3_not_admissible_blocks_entries: true
+  LIVE_broker_selected: false
+  accounts_spending_implementation_authorized: false
+
+financial_preparation_wave12:
+  updated_on: 2026-10-28
+  phase: OWNER_APPROVAL_VENDOR_EVIDENCE_THEN_FINANCIAL_BINDING_RESEARCH
+  Q062: DECIDED_ADR023_DESIGN_ONLY
+  broker_design_family_selected: true
+  engine_design_family_selected: true
+  broker_technical_acceptance: NOT_ACCEPTED
+  engine_pin_models_parity_acceptance: NOT_ACCEPTED
+  vendor_evidence: planning/research/vendor_inquiries/owner_response_evidence_2026-10-28.json
+  vendor_receipt_dates: UNKNOWN_NOT_STATED
+  Twelve_Data: VENDOR_INFORMATION_REQUESTED_OWNER_FOLLOWUP_NOT_SENT
+  EODHD: VENDOR_RESPONSE_RECEIVED_PLAN_SCOPE_CLARIFICATION_PENDING_TECHNICAL_ADMISSION_PENDING
+  raw_data_external_AI: DENY_UNCONFIRMED
+  licensed_derived_repackaged_reconstructible_external_AI: DENY_UNCONFIRMED_BY_FIELD_USE_DESTINATION
+  cost_scenarios: planning/research/source_cost_scenarios_wave12.json
+  nominal_reference_USD: 10000
+  mandatory_cost_capitals_USD: [2000, 5000, 10000, 25000, 50000]
+  all_cost_models_all_five_scales: true
+  declared_variants: 12
+  executed_strategy_trials: 0
+  datasets_admitted: 0
+  statistical_method_accepted: false
+  implementation_locked: true
+  target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED
+  confirmation_integrity: INTEGRITY_UNKNOWN
+  actual_incremental_spend: 0
+  next_human_decision: NONE_CONTINUE_ALLOWED_FINANCIAL_RESEARCH

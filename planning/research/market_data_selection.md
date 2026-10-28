@@ -64,3 +64,9 @@ Costes obligatorios en5escalas2k/5k/10k/25k/50k y todos modelos admitidos, conse
 ## Actualización wave11 — 2026-10-23
 
 [RetenciónpermanenteRC0](R-008_perpetual_retention_sources_RC0.md) agrega Kibot/FirstRate con derechos restringidos; KD1no recibióCSV, no fuenteadmitida. Twelve/EODHD awaiting; no esperar correos para decidir engine/broker. Docs2026/livefeed/PIT/cash separados.
+
+## 2026-10-28 — Q-062 aprobado y proveedores actualizados
+
+El propietario aprueba Alpaca Paper Only + LEAN source como **familias de diseño PAPER**, IBKR/Nautilus reservas: [ADR-023](../decisions/ADR-023-paper-broker-and-backtesting-families.md). B1–B5/QP1–QP10, pin/modelos/protección efectiva/target siguen pendientes; sin cuentas, gasto, implementación o LIVE. B3 no admisible implica no entradas.
+
+[Evidencia comercial](R-008_vendor_evidence_and_plan_scope_RC1.md) disponible desde 2026-10-28, fecha real de recepción UNKNOWN y correos originales no inspeccionados. Twelve=VENDOR_INFORMATION_REQUESTED, aclaración del propietario pendiente de envío. EODHD=VENDOR_RESPONSE_RECEIVED / PLAN_SCOPE_CLARIFICATION_PENDING / TECHNICAL_ADMISSION_PENDING; todos los datasets NOT_ADMITTED, raw a IA externa DENY_UNCONFIRMED. Tres precios públicos19.99/29.99/99.99 incorporados a las cinco escalas; se prioriza EOD económico si cumple. No se espera respuesta para avanzar research.

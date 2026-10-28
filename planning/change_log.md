@@ -272,3 +272,11 @@ Q061 DECIDED; D011 RESEARCHING/método no admitido. No otra pregunta DD conceptu
 - MasterPlanv1.0RC0 DRAFT/NOTREADY y checkpoint16 consolidan contratos/dependencias. Review crítica acotada confirma scope, sin P0/P1 nuevos; metodología no host-only, targetnoaceptado, mainintacto.
 
 QA wave11: primer arranque del checker no encontró PyYAML en el intérprete por defecto; se utilizó la dependencia local ya existente, sin instalación. La comprobación completa posterior pasó 33/33 checks de coherencia/hash/aritmética, no de aceptación financiera. Redacción del master RC0 y del paquete Q-062 aclarada; capturas/scripts/configuración inmutable conservados.
+
+## 2026-10-28 — Q-062 aprobado y proveedores actualizados
+
+El propietario aprueba Alpaca Paper Only + LEAN source como **familias de diseño PAPER**, IBKR/Nautilus reservas: [ADR-023](decisions/ADR-023-paper-broker-and-backtesting-families.md). B1–B5/QP1–QP10, pin/modelos/protección efectiva/target siguen pendientes; sin cuentas, gasto, implementación o LIVE. B3 no admisible implica no entradas.
+
+[Evidencia comercial](research/R-008_vendor_evidence_and_plan_scope_RC1.md) disponible desde 2026-10-28, fecha real de recepción UNKNOWN y correos originales no inspeccionados. Twelve=VENDOR_INFORMATION_REQUESTED, aclaración del propietario pendiente de envío. EODHD=VENDOR_RESPONSE_RECEIVED / PLAN_SCOPE_CLARIFICATION_PENDING / TECHNICAL_ADMISSION_PENDING; todos los datasets NOT_ADMITTED, raw a IA externa DENY_UNCONFIRMED. Tres precios públicos19.99/29.99/99.99 incorporados a las cinco escalas; se prioriza EOD económico si cumple. No se espera respuesta para avanzar research.
+
+Revisión independiente del hito: sin P0; corregido P1 documental para evitar permiso implícito de envío a IA mediante derivados/reempaquetado/reconstrucción. Almacenamiento local rotulado REPORTED_ALLOWED / PRODUCT_CONTRACT_SCOPE_PENDING. Sin nueva arquitectura o admisión.

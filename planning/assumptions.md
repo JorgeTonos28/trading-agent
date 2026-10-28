@@ -200,3 +200,9 @@ Q061 DECIDED; D011 RESEARCHING/método no admitido. No otra pregunta DD conceptu
 - Paper API no siempre independiente de funding: requirementsTWSactual Profondeada. Depósito no fee ni autorización para mover10k.
 - No exigir campos PDT retirados2026-07-06 en Alpaca; FINRA tiene transición por firma, IBKR régimen aplicableUNKNOWN. Ninguna revisión normativa autoriza leverage.
 - Docehipótesis/0trials,4+6cards noadmitidas, reserveintegrityUNKNOWN, targetdeferred/lock preservados.
+
+## 2026-10-28 — Q-062 aprobado y proveedores actualizados
+
+El propietario aprueba Alpaca Paper Only + LEAN source como **familias de diseño PAPER**, IBKR/Nautilus reservas: [ADR-023](decisions/ADR-023-paper-broker-and-backtesting-families.md). B1–B5/QP1–QP10, pin/modelos/protección efectiva/target siguen pendientes; sin cuentas, gasto, implementación o LIVE. B3 no admisible implica no entradas.
+
+[Evidencia comercial](research/R-008_vendor_evidence_and_plan_scope_RC1.md) disponible desde 2026-10-28, fecha real de recepción UNKNOWN y correos originales no inspeccionados. Twelve=VENDOR_INFORMATION_REQUESTED, aclaración del propietario pendiente de envío. EODHD=VENDOR_RESPONSE_RECEIVED / PLAN_SCOPE_CLARIFICATION_PENDING / TECHNICAL_ADMISSION_PENDING; todos los datasets NOT_ADMITTED, raw a IA externa DENY_UNCONFIRMED. Tres precios públicos19.99/29.99/99.99 incorporados a las cinco escalas; se prioriza EOD económico si cumple. No se espera respuesta para avanzar research.

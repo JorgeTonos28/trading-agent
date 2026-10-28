@@ -96,3 +96,9 @@ Wave10: LEAN source principal condicionado de investigación, Nautilus alternati
 ## Actualización wave11 — 2026-10-23
 
 [EngineRC2](research/R-009_engine_selection_packet_RC2.md), [brokerRC4](research/R-007_PAPER_broker_selection_packet_RC4.md) y Q062 preparan selección de familias: LEANreuse/adapt, SDK/APIswrap; reservasNautilus/IBKR, sin motor propio general/contratos pagados. Source/build/behavior no selección por anticipado.
+
+## 2026-10-28 — Q-062 aprobado y proveedores actualizados
+
+El propietario aprueba Alpaca Paper Only + LEAN source como **familias de diseño PAPER**, IBKR/Nautilus reservas: [ADR-023](decisions/ADR-023-paper-broker-and-backtesting-families.md). B1–B5/QP1–QP10, pin/modelos/protección efectiva/target siguen pendientes; sin cuentas, gasto, implementación o LIVE. B3 no admisible implica no entradas.
+
+[Evidencia comercial](research/R-008_vendor_evidence_and_plan_scope_RC1.md) disponible desde 2026-10-28, fecha real de recepción UNKNOWN y correos originales no inspeccionados. Twelve=VENDOR_INFORMATION_REQUESTED, aclaración del propietario pendiente de envío. EODHD=VENDOR_RESPONSE_RECEIVED / PLAN_SCOPE_CLARIFICATION_PENDING / TECHNICAL_ADMISSION_PENDING; todos los datasets NOT_ADMITTED, raw a IA externa DENY_UNCONFIRMED. Tres precios públicos19.99/29.99/99.99 incorporados a las cinco escalas; se prioriza EOD económico si cumple. No se espera respuesta para avanzar research.

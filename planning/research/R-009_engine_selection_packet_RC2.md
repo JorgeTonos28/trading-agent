@@ -1,5 +1,7 @@
 # D-023 — paquete de selección de motor de backtesting RC2
 
+**Actualización 2026-10-28:** Q-062/A aprobado en ADR-023 como familias de diseño Alpaca Paper Only + LEAN source; la propuesta/pregunta anterior es histórica. Gates técnicos/target abiertos. Twelve/EODHD ya respondieron según resumen del propietario; ver R-008_vendor_evidence_and_plan_scope_RC1.md. No se admite ningún dataset.
+
 2026-10-23. **READY_FOR_DECISION en familia/dirección de stack**, no pin/distribución/modelos admitidos. Propuesta agrupada [Q062](D-021_023_PAPER_stack_decision_RC0.md). No Strategy seleccionada ni histórico ejecutado. Engine financial Risk nativo no reemplaza el Risk del proyecto.
 
 ## Evidencia ejecutable comparada

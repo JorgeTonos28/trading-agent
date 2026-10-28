@@ -2,7 +2,7 @@
 
 **DRAFT_FOR_REVIEW / NOT_FROZEN / NOT_READY_FOR_IMPLEMENTATION.**
 
-Fecha: 2026-10-23. Rama: `plan-architect`. Este documento integra el diseño disponible y sus dependencias. No sustituye silenciosamente la [hoja de ruta v0.2](hoja_de_ruta_sistema_trading_agentes_ia_v0.2.md) ni aprueba las propuestas pendientes. El contrato final será `MASTER_PLAN_v1.0.md` después de revisión, aprobación y freeze.
+Actualización: 2026-10-28. Rama: `plan-architect`. Este documento integra el diseño disponible y sus dependencias. No sustituye silenciosamente la [hoja de ruta v0.2](hoja_de_ruta_sistema_trading_agentes_ia_v0.2.md) ni aprueba las propuestas pendientes. El contrato final será `MASTER_PLAN_v1.0.md` después de revisión, aprobación y freeze.
 
 Se mantienen `implementation_locked=true`, `TARGET_ACCEPTANCE_DEFERRED` y holdout `INTEGRITY_UNKNOWN`.
 
@@ -38,8 +38,8 @@ Security isolation y experimental blinding son objetivos distintos. Keyring, tok
 
 | Capa | Propuesta o alternativas | Dependencia de cierre |
 |---|---|---|
-| Broker PAPER | Q-062 propone **Alpaca Paper Only**; IBKR TWS reserva | Decisión del propietario y B1–B5, incluidos protección, feeds y target |
-| Backtesting | Q-062 propone **LEAN source**; Nautilus reserva/comparador acotado | Familia, pin/dependencias, distribución, modelos y paridad |
+| Broker PAPER | ADR-023 selecciona **Alpaca Paper Only** en diseño; IBKR TWS reserva | B1–B5, incluidos protección, feeds y target |
+| Backtesting | ADR-023 selecciona **LEAN source** local en diseño; Nautilus reserva/comparador acotado | Pin/dependencias, distribución, modelos y paridad |
 | Históricos/actions/cash/quotes | D-022 abierto por producto y rol | Derechos, retención, cobertura, PIT, calidad, pay-date y feed operacional |
 | Workflow/scheduler | Temporal y APScheduler candidatos | D-025: durabilidad, ownership, recovery y coste según demanda D1 |
 | Ledger/storage/audit | Postgres/SQLite; Parquet/DuckDB analíticos; Redis opcional | D-026: atomicidad, durabilidad, restore, permisos y retención |
@@ -63,9 +63,9 @@ Faltan datos/calendario/PIT, orden/TIF/cap, p_auth/freshness, protección parcia
 
 Las [cuatro DataCards](../../planning/research/datacards/financial_dataset_cards_RC0.json) y [seis tarjetas por instrumento](../../planning/research/datacards/ETF_instrument_admission_RC1.json) siguen **NOT_ADMITTED**. Precio raw, acciones corporativas, disponibilidad/recepción/revisión, calendario/identidad y efectivo cumplen roles distintos. Reconstrucción as-of y replay observado se distinguen; latest-version/last-updated no prueban vintage. [Contrato PIT](../../planning/05_data_contract_RC1.md).
 
-Twelve Data/EODHD están AWAITING_VENDOR_RESPONSE por declaración del propietario; fecha exacta no declarada, sin respuesta/licencia inferida. [Kibot/FirstRate](../../planning/research/R-008_perpetual_retention_sources_RC0.md) añaden rutas publicadas de retención permanente. KD1 no recibió barras: diagnóstico body 401 pese al login guest 200. No prueba cobertura ni rechazo global. Norgate conserva la restricción de archivo tras expiración documentada previamente. Ninguna fuente seleccionada.
+Desde2026-10-28 Twelve Data está VENDOR_INFORMATION_REQUESTED; EODHD, VENDOR_RESPONSE_RECEIVED/PLAN_SCOPE_CLARIFICATION_PENDING/TECHNICAL_ADMISSION_PENDING según resumen del propietario. Fechas reales de recepción UNKNOWN; no correo original inspeccionado ni dataset admitido. Priorizar plan EOD19.99 si cumple, sin imponer All-in-One99.99. Ver [evidencia/contratos](../../planning/research/R-008_vendor_evidence_and_plan_scope_RC1.md). [Kibot/FirstRate](../../planning/research/R-008_perpetual_retention_sources_RC0.md) añaden rutas publicadas de retención permanente. KD1 no recibió barras: diagnóstico body 401 pese al login guest 200. No prueba cobertura ni rechazo global. Norgate conserva la restricción de archivo tras expiración documentada previamente. Ninguna fuente seleccionada.
 
-Procesamiento local y envío a IA requieren admisiones separadas. DENY externo por defecto sin derechos demostrados. El núcleo no exige enviar todo el raw al LLM; cada rol recibe sólo campos permitidos. Si falta un campo necesario, se declara la limitación. Llamar snapshot/resultado/backup a un contenido no cambia sus derechos.
+Procesamiento local y envío a IA requieren admisiones separadas. DENY externo por defecto sin derechos demostrados, también para derivados, snapshots o resúmenes licenciados/reempaquetados/reconstruibles; autorización por campo, uso y destino. El núcleo no exige enviar todo el raw al LLM; cada rol recibe sólo campos permitidos. Si falta un campo necesario, se declara la limitación. Llamar snapshot/resultado/backup a un contenido no cambia sus derechos.
 
 ## 7. Órdenes, protección y reconciliación
 
@@ -127,4 +127,4 @@ DoR exige cero P0/P1 abiertos, contratos determinables, evidencias, revisión, a
 
 plan-architect: trabajo candidato. main: baseline estable aprobado. Release/tag aprobado: snapshot reproducible con commit/manifest/evidencia. No merge/tag/promoción automáticos. Cada cambio material actualiza registros, pasa coherencia y se sincroniza con commit/push. Secretos/raw privado fuera de Git; bootstrap sin depender del chat. Freeze aprobado transforma Plan Architect en Plan Guardian; este RC0 no activa esa transición.
 
-**Siguiente decisión: Q-062**, familias broker PAPER/motor. Fuentes/derechos, protección/cash/Risk, métodos/configuración, stack transversal y target siguen abiertos. No reclasificar diseño pendiente como test futuro para forzar cierre.
+**Q-062/A aprobado en [ADR-023](../../planning/decisions/ADR-023-paper-broker-and-backtesting-families.md):** familias broker PAPER/motor seleccionadas en diseño. No CLI/Cloud comerciales asumidos gratis; sin B3 admisible no entradas. Fuentes/derechos, protección/cash/Risk, métodos/configuración, stack transversal y target siguen abiertos. No reclasificar diseño pendiente como test futuro para forzar cierre.

@@ -237,3 +237,7 @@ Q061 DECIDED; D011 RESEARCHING/método no admitido. No otra pregunta DD conceptu
 | RF-W11-5 | P1 | Retención favorable sin pay-date/vintage: no convertir últimosadjustments en as-of, localvsIA separados, costes iniciales/totalUNKNOWN |
 
 No parent/gate operativo aceptado; fuentevalidez y target independientes del consenso de review.
+
+## 2026-10-28 — evidencia y selección de diseño
+
+ADR-023 selecciona familias, no protección/paridad ni operación. Persisten: activación tardía de children, cancel/replace incierto, cash económico confundido con buying power y dependencias vulnerables del pin. EODHD retención/automatización son afirmaciones comerciales reportadas con alcance de plan pendiente; PIT original no disponible, pay-dates variables y precios indicativos. Mitigar por admisión separada por rol, QA de seis ETF, DENY externo para raw y datos de ejecución independientes. Menor precio no concede suficiencia; All-in-One no es requisito por recomendación de ventas. Todos los costes en cinco escalas y UNKNOWN totales preservados.

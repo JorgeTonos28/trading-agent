@@ -31,3 +31,7 @@ No autoriza crear cuentas, solicitar credenciales, modificar host/ACL/firewall, 
 ## Decisión solicitada
 
 ¿Aprueba el propietario **A — Alpaca Paper Only + LEAN source** como selección de diseño PAPER, manteniendo esos gates e IBKR/Nautilus como reservas? Es una decisión de dependencias tecnológicas y operativas, no permiso para investigar ni solicitud de acceso ahora.
+
+## Resultado — 2026-10-28
+
+**Q-062/A DECIDED por el propietario**, [ADR-023](../decisions/ADR-023-paper-broker-and-backtesting-families.md). Alpaca Paper Only + LEAN source seleccionados como familias de diseño; IBKR/Nautilus reservas. La pregunta anterior queda histórica. Se mantienen B1–B5/QP1–QP10 y todas las exclusiones. Investigar ejecución local de fuente, sin asumir gratuidad CLI/Cloud; B3 no admisible bloquea entradas. No aceptación operacional ni elegibilidad LIVE.

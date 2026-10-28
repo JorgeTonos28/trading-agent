@@ -1,5 +1,7 @@
 # Secuencia de Preparation Program — vigencia ADR-013
 
+**Vigencia 2026-10-28:** Q-062/A DECIDED como familias de diseño en ADR-023; no volver a solicitar Q-062. Twelve requiere aclaración; EODHD respondió según resumen del propietario, sin admisión. Ver nota actual al final. Las notas wave11/a249d77 se conservan como historia. Implementación bloqueada, aceptación target diferida y holdout UNKNOWN.
+
 **Vigencia financiera wave11 — 2026-10-23:** [checkpoint16](16_financial_stack_checkpoint_RC0.md) y [MasterPlanRC0](../docs/master/MASTER_PLAN_v1.0_RC0.md), DRAFT/NOT_READY. Q061 DECIDED ADR022; investigación DD actual acotada, método no aceptado. Q062 READY_FOR_DECISION propone seleccionar Alpaca Paper Only + LEAN source como familias de diseño PAPER, sin aceptación de pin/protección/target ni autorización de cuenta/gasto. Datos4+6cards NOT_ADMITTED; vendors AWAITING_VENDOR_RESPONSE. Holdout INTEGRITY_UNKNOWN, implementation_locked=true, TARGET_ACCEPTANCE_DEFERRED. Notas anteriores fechadas conservadas como historia.
 
 **Checkpoint financiero vigente — 2026-10-23:** [readiness RC0](15_financial_design_readiness_RC0.md), [preregistro RC7](research/R-020_preregistration_readiness_RC7.md) y [evidencia ejecutada](research/R-020_financial_probe_findings_2026-10-23.md). Las notas fechadas anteriores se conservan como historia. D035-T1 semántica y D011-T1 grafo corregidos, no cierre de sus parents; D030/D031 diseño P1, pruebas operativas P2. Vendor inquiries AWAITING_VENDOR_RESPONSE por declaración owner, fecha exacta UNKNOWN; no respuestas/autorización. Q061 DECIDED en ADR022; continuar datos/broker/engine y diseño financiero, sin accesoPlus/admin/gasto. Holdout INTEGRITY_UNKNOWN, implementation_locked=true, TARGET_ACCEPTANCE_DEFERRED.
@@ -229,3 +231,9 @@ Q061 DECIDED; D011 RESEARCHING/método no admitido. No otra pregunta DD conceptu
 ## Endpoint wave11 — 2026-10-23
 
 Q061 aprobado/sincronizadoADR022. Ejecutados QL2componentes nativos y KD1/diagnósticoacotado; retenciónperpetua, brokeraccess/PDTactual y enginefamilies comparados; MasterRC0 y checkpoint16 preparados/revisados, no finalPlan. Paquete autónomo llega a Q062 de selección de familias tecnológicas, sin autorización de acceso/gasto o seguridad. Después de decisión: bindings concretos broker/engine/datos y configuración financiera, inputs Risk/cash/costes y stack D1; aplicar respuestas comerciales cuando existan, sin esperar como bloqueo global. No reabrir DD, capital10k o cincoescalas.
+
+## 2026-10-28 — Q-062 aprobado y proveedores actualizados
+
+El propietario aprueba Alpaca Paper Only + LEAN source como **familias de diseño PAPER**, IBKR/Nautilus reservas: [ADR-023](decisions/ADR-023-paper-broker-and-backtesting-families.md). B1–B5/QP1–QP10, pin/modelos/protección efectiva/target siguen pendientes; sin cuentas, gasto, implementación o LIVE. B3 no admisible implica no entradas.
+
+[Evidencia comercial](research/R-008_vendor_evidence_and_plan_scope_RC1.md) disponible desde 2026-10-28, fecha real de recepción UNKNOWN y correos originales no inspeccionados. Twelve=VENDOR_INFORMATION_REQUESTED, aclaración del propietario pendiente de envío. EODHD=VENDOR_RESPONSE_RECEIVED / PLAN_SCOPE_CLARIFICATION_PENDING / TECHNICAL_ADMISSION_PENDING; todos los datasets NOT_ADMITTED, raw a IA externa DENY_UNCONFIRMED. Tres precios públicos19.99/29.99/99.99 incorporados a las cinco escalas; se prioriza EOD económico si cumple. No se espera respuesta para avanzar research.

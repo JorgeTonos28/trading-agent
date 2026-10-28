@@ -4871,3 +4871,7 @@ Research = Team + Windows institucional INFOTEP; target PAPER = Plus individual 
 ## Enmienda de interpretación DD — ADR-022, 2026-10-23
 
 Propietario aprueba Q061/DD-E condicionado, esperanza de máximos DD frente a EW6-BH completo bajo P/H/I0 y supuestos explícitos, tolerancia0/upperbound válido≤0. Aplican siete condiciones de [ADR022](../../planning/decisions/ADR-022-conditional-expected-drawdown-claim.md): distribución/frecuencia/magnitud/cuantiles fiables o UNKNOWN, limitaciones materiales visibles si mejoras raras ocultan mayoría peor; DD-P sin aprobar; incertidumbres diferenciadas y método/aplicabilidad por validar; otros endpoints/Risk/gobierno independientes. Sin Strategy/dato/broker/engine/método/operación aprobados. Priorizar ahora datos/broker/engine/reglas/Planv1; sin DD indefinido. HoldoutUNKNOWN/implementationlock/targetdeferral intactos.
+
+## Registro de aprobación de familias PAPER — 2026-10-28
+
+ADR-023/Q-062 aprobado: Alpaca Paper Only + LEAN source local; IBKR/Nautilus reservas. Es selección de diseño, no aceptación de B1–B5/QP1–QP10, pin, modelos, datos o target; no CLI/Cloud comerciales asumidos gratis. Sin protección B3 admisible no entradas. No operación/cuenta/gasto/implementación ni LIVE. Se conservan implementación bloqueada, target diferido e integridad de holdout desconocida. Evidencia comercial de proveedores y precios se registra por rol, no como admisión de datos.

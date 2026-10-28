@@ -1,5 +1,7 @@
 # D-021 — broker PAPER, acceso real y límites RC4
 
+**Actualización 2026-10-28:** Q-062/A aprobado en ADR-023 como familias de diseño Alpaca Paper Only + LEAN source; la propuesta/pregunta anterior es histórica. Gates técnicos/target abiertos. Twelve/EODHD ya respondieron según resumen del propietario; ver R-008_vendor_evidence_and_plan_scope_RC1.md. No se admite ningún dataset.
+
 2026-10-23. READY_FOR_DECISION de selección **de diseño PAPER**, B1–5/target no aceptados. Recomendación cambia prioridad técnica de la shortlist: **Alpaca Paper Only primero para PAPER zero/lowcost**; IBKR TWS reserva si gates fallan. LIVE completamente abierto. Ninguna cuenta/orden/login/credencial broker solicitada o usada.
 
 ## Comparación y evidencia primaria
