@@ -1,5 +1,5 @@
 {
-  "updated_on": "2026-10-23",
+  "updated_on": "2026-10-28",
   "state": "SIX_NOT_ADMITTED_METADATA_PARTIAL",
   "implementation_locked": true,
   "cards": [
@@ -174,5 +174,7 @@
     }
   ],
   "source_research_not_admission": "../R-008_perpetual_retention_sources_RC0.md",
-  "access_probe_not_admission": "../probes/r008-kibot-access/result-01.json"
+  "access_probe_not_admission": "../probes/r008-kibot-access/result-01.json",
+  "admission_protocol": "../R-008_six_ETF_admission_plan_RC2.md",
+  "rights_qa_actual_history_pending": true
 }

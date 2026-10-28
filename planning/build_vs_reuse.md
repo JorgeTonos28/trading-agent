@@ -102,3 +102,11 @@ Wave10: LEAN source principal condicionado de investigación, Nautilus alternati
 El propietario aprueba Alpaca Paper Only + LEAN source como **familias de diseño PAPER**, IBKR/Nautilus reservas: [ADR-023](decisions/ADR-023-paper-broker-and-backtesting-families.md). B1–B5/QP1–QP10, pin/modelos/protección efectiva/target siguen pendientes; sin cuentas, gasto, implementación o LIVE. B3 no admisible implica no entradas.
 
 [Evidencia comercial](research/R-008_vendor_evidence_and_plan_scope_RC1.md) disponible desde 2026-10-28, fecha real de recepción UNKNOWN y correos originales no inspeccionados. Twelve=VENDOR_INFORMATION_REQUESTED, aclaración del propietario pendiente de envío. EODHD=VENDOR_RESPONSE_RECEIVED / PLAN_SCOPE_CLARIFICATION_PENDING / TECHNICAL_ADMISSION_PENDING; todos los datasets NOT_ADMITTED, raw a IA externa DENY_UNCONFIRMED. Tres precios públicos19.99/29.99/99.99 incorporados a las cinco escalas; se prioriza EOD económico si cumple. No se espera respuesta para avanzar research.
+
+## Wave12 — familias y stack transversal
+
+Alpaca Paper Only WRAP y LEAN source REUSE_AS_IS+ADAPT/WRAP seleccionados sólo en diseño ADR023. Ruta local fuente compilada QL3, sin CLI/Cloud comercial ni pin aceptado. Q063 propone APS3 WRAP+ledger PostgreSQL REUSE_AS_IS/WRAP, Parquet/DuckDB analíticos; Temporal y Redis reservas. No construir scheduler/DB generales. Licencias0 no son coste total0; host/backup/integración/operación/escala UNKNOWN y cinco capitales obligatorios. Ninguna instalación/gasto por la propuesta. Fuentes EODHD por plan/rol bajo aclaración; no All-in-One impuesto ni derivados a IA por transformar raw.
+
+## ZIP/pin LEAN — reuse antes de BUILD
+
+BCL moderno REUSE_AS_IS para extracción con contrato de paths; ProDotNetZip1.19.0 ADAPT candidato público MS-PL, API Ionic.Zip observada, no binario drop-in o versión final elegida. Helper unsafe BCL necesita reparación separada del paquete. QL5 estado=CONTINUATION_INCOMPLETE_OR_FAILED_NO_REMEDIATED_HOST_ACCEPTANCE. Licencia componente0 en cinco capitales; operación/host/integraciónUNKNOWN. No construir codec general ni contratar servicio sin justificar.

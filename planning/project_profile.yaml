@@ -944,7 +944,8 @@ paper_stack_owner_approval_2026_10_28:
 
 financial_preparation_wave12:
   updated_on: 2026-10-28
-  phase: OWNER_APPROVAL_VENDOR_EVIDENCE_THEN_FINANCIAL_BINDING_RESEARCH
+  readiness: planning/17_financial_bindings_and_readiness_RC0.md
+  phase: FINANCIAL_BINDING_PACKAGE_EXECUTED_Q063_DIRECTION_PENDING
   Q062: DECIDED_ADR023_DESIGN_ONLY
   broker_design_family_selected: true
   engine_design_family_selected: true
@@ -968,4 +969,39 @@ financial_preparation_wave12:
   target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED
   confirmation_integrity: INTEGRITY_UNKNOWN
   actual_incremental_spend: 0
-  next_human_decision: NONE_CONTINUE_ALLOWED_FINANCIAL_RESEARCH
+  next_human_decision: Q063_CONDITIONAL_WORKFLOW_STORAGE_DIRECTION
+
+financial_binding_checkpoint_2026_10_28:
+  readiness: planning/17_financial_bindings_and_readiness_RC0.md
+  rule_binding: planning/research/R-020_PRICE_MATR_Alpaca_LEAN_binding_RC3.md
+  broker_binding: planning/research/R-007_Alpaca_protection_reconciliation_RC5.md
+  dataset_admission_protocol: planning/research/R-008_six_ETF_admission_plan_RC2.md
+  local_engine_route: planning/research/R-009_local_source_execution_RC3.md
+  risk_caps_and_inputs: planning/research/R-027_risk_inputs_and_caps_RC4.md
+  audit_observability: planning/research/R-012_PAPER_audit_observability_acceptance_RC2.md
+  Q063_proposal: planning/research/D-025_026_PAPER_workflow_storage_decision_RC0.md
+  Q063: READY_FOR_DECISION_DIRECTION_ONLY
+  transverse_stack_selected: false
+  B3: NOT_ADMITTED_NO_NEW_ENTRIES
+  order_policy_OP_L1: PROPOSED_NOT_APPROVED_OR_EXECUTED
+  D035_T2: MATHEMATICAL_PRECONDITIONS_SPECIFIED_ONLY
+  QL3: MINIMAL_SOURCE_HOST_BUILD_AND_SIX_METADATA_CHECKS_NO_ENGINE_RUN
+  H9: SQLITE_DELETE_FIXTURE_NOT_POSTGRES_POWERLOSS_OR_CAPACITY
+  workload_numeric_envelope_latency_RPO_RTO_retention: P1_BEFORE_STACK_FREEZE_NOT_ACCEPTED
+  parent_DataCards: 4
+  instrument_subcards: 6
+  datasets_admitted: 0
+  strategy_trials: 0
+  implementation_locked: true
+  target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED
+  confirmation_integrity: INTEGRITY_UNKNOWN
+
+lean_pin_audit_2026_10_28:
+  evidence: planning/research/R-009_current_pin_remediation_RC0.md
+  QL4_native_helper_security: FAIL_BOUNDARY_DEMONSTRATED_OWN_LAB_ONLY
+  QL5_attempt01: BUILD_TIMEOUT_NO_SMOKE
+  QL5_attempt02: CONTINUATION_INCOMPLETE_OR_FAILED_NO_REMEDIATED_HOST_ACCEPTANCE
+  remediation_in_isolated_export_only: true
+  original_source_or_production_modified: false
+  pin_accepted: false
+  S2_or_financial_domain_acceptance_proven: false

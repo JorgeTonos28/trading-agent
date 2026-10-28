@@ -1,5 +1,7 @@
 # Research Backlog v0 — 2026-10-01
 
+**Checkpoint vigente 2026-10-28:** [bindings/readiness17](17_financial_bindings_and_readiness_RC0.md). Q-062 DECIDED ADR-023; Q-063 propuesta de dirección condicionada, no stack operacional aceptado. Datos NOT_ADMITTED, cero trials, lock/target/holdout preservados. Las notas anteriores son historia fechada.
+
 **Vigencia 2026-10-28:** Q-062/A DECIDED como familias de diseño en ADR-023; no volver a solicitar Q-062. Twelve requiere aclaración; EODHD respondió según resumen del propietario, sin admisión. Ver nota actual al final. Las notas wave11/a249d77 se conservan como historia. Implementación bloqueada, aceptación target diferida y holdout UNKNOWN.
 
 **Vigencia financiera wave11 — 2026-10-23:** [checkpoint16](16_financial_stack_checkpoint_RC0.md) y [MasterPlanRC0](../docs/master/MASTER_PLAN_v1.0_RC0.md), DRAFT/NOT_READY. Q061 DECIDED ADR022; investigación DD actual acotada, método no aceptado. Q062 READY_FOR_DECISION propone seleccionar Alpaca Paper Only + LEAN source como familias de diseño PAPER, sin aceptación de pin/protección/target ni autorización de cuenta/gasto. Datos4+6cards NOT_ADMITTED; vendors AWAITING_VENDOR_RESPONSE. Holdout INTEGRITY_UNKNOWN, implementation_locked=true, TARGET_ACCEPTANCE_DEFERRED. Notas anteriores fechadas conservadas como historia.
@@ -32,21 +34,21 @@ Prioridad: P0 arquitectura, P1 implementación, P2 paper autónomo, P3 live, P4 
 | R-004 | P0 | D-014 | DECIDED en contrato abstracto: `05_data_contract_RC1.md` y ADR-004 fijan clocks por canal, `eligible_from`, revisiones y ajustes as-of; muestras/delays/proveedor siguen R-021/025/008. |
 | R-005 | P0 | D-016 | DECIDED en alcance: contrato RC1 §5 mapea B0–B7 y §57; traceability requisito→test y umbrales detallados permanecen P1/P2 antes del DoR. |
 | R-006 | P0 | D-020/024 | FUNDAMENTAL DESIGN COMPLETE owner ADR-014 2026-10-13; approved RC2 dispositions. Continuous reuse checks only for new needs/material evidence, no indefinite wave expansion. Target Plus/personal acceptance R-030 deferred. |
-| R-007 | P1 | D-021/030 | MATURE_FOR_DESIGN_SELECTION: RC4/Q062 propone AlpacaPaperOnly frente IBKRProfunding y Tradierreserva. B1–5/target/protección y LIVE separados; sin cuenta/órdenes actuales |
-| R-008 | P1 | D-022 | RESEARCHING: retenciónperpetuaKibot/FirstRate y KD1login200/history401, no datos admitidos. Rutas local/IA separadas, fuentes/actions/paydates/PIT/QA por admitir; vendors awaiting |
-| R-009 | P1 | D-023 | MATURE_FOR_DESIGN_SELECTION: Q062LEANsource recomendado, QL2nine nativecomponentchecks, no Algorithm/backtest. Familia/pin/modelos/dep/paridad/target sin aceptación; Nautilus reserva |
+| R-007 | P1 | D-021/030 | Familias ADR023 DECIDED; RC5 protection/reconciliation con B3-S1 contraejemplos. Ninguna ruta B3 admitida; child partial/replace/cancel/cash/target sin aceptación |
+| R-008 | P1 | D-022 | Respuestas reportadas y precios EODHD3planes/5escalas; EOD19.99 prioridad condicionada. QA DA-S2/S3 propio; seisETF/roles/licencia/PIT/cobertura/pay-date/ejecución NOT_ADMITTED |
+| R-009 | P1 | D-023 | Familia LEAN source ADR023 DECIDED. QL3 preflight/host mínimo build+6metadata checks sin Main/Engine.Run. Ruta local propuesta, pin/deps/modelos/paridad/target no aceptados; Nautilus reserva |
 | R-010 | P1 | D-024 | DESIGN_DECIDED ADR-014 in agentic integration scope. Native mechanism/auth/runtime/host/quota/recovery acceptance R-030 deferred; no new fundamental Team design research. |
-| R-011 | P1 | D-025 | Workflow/recovery 08: eventos/calendario automático, outbox, estados/versiones, leases/expiry/concurrencia, epoch. Temporal baseline investigado, APScheduler/OS alternativos. Probes toy/motor no seleccionan tecnología; integración final pendiente. |
-| R-012 | P1 | D-026 | Storage/audit 08: baseline PostgreSQL/Parquet/DuckDB/Redis, commit durable y immutable evidence, hashes no autenticación, restore/lost receipts. SQLite crash/backup/race solo probe. Motor final/cost/retención por cerrar. |
+| R-011 | P1 | D-025 | Q063 dirección APS3+Postgres frente Temporal+Postgres READY_FOR_DECISION condicionada; H7/H8/H9 scopes distintos. Envelope numérico/latencias/RPO/RTO/retención/config/suficiencia P1 pendientes |
+| R-012 | P1 | D-026 | PostgreSQL C/F propuesto Q063, SQLite3.50.4 DELETE instrumento H9, no WAL aceptado. RECOVERY_GAP bloquea nuevos attempts/receipts; sólo hash no reconstruye. Pin/roles/constraints/restore del motor final pendientes |
 | R-013 | P1 | D-027 | DESIGN_DECIDED security contract S2-B/B-RT1; concrete mechanisms candidates. SI/BL/RB/VP and lab DEFERRED_TO_TARGET_PAPER_HOST; no admin INFOTEP or security PASS. |
-| R-014 | P1 | D-028/029 | Métricas/runbooks/deploy 08 y revisión independiente IR-01–07, remediación documental/probes. H3 cola virtual revela bloqueo no preemptivo, no cuota/capacidad real. Protocolos/operación integrada y full evals pendientes. |
+| R-014 | P1 | D-028/029 | R012RC2 audit durable/telemetría local y matrices de fallos; sin SDK logs inestable como audit crítico. Evals numéricos/SLO/integración/restore/suficiencia pendientes, no suma de PASS |
 | R-015 | P2 | D-030/031/032 | Probes y calibración PAPER: orden siguiente sesión, brackets/stops, fills parciales, incidentes y gate de autonomía. |
 | R-016 | P3 | D-040/041/042 | Broker live, jurisdicción, costos, impuestos/documentación, capital, disaster recovery y gates paper→shadow→live. |
 | R-017 | P4 | D-050 | Investigación **incremental futura** de alpha/Challengers para familias externas que no entren en alcance V1; factibilidad arquitectónica y selección de fuentes V1 se adelantan a R-021/023/025. |
 | R-025 | P1 | D-033/020/022 | RESEARCHING: [wave 01](research/R-025_provider_evidence_wave01_2026-10-07.md) y probe metadata público Quiver sin auth. SEC/Quiver/UW/Capitol/especialistas abiertos; clocks existentes no prueban PIT, rights/historia/coste/utilidad por dataset pendientes. |
 | R-026 | P1 | D-034 | RESEARCHING: contratos RC0 común/shadow especifican schema spine, contexto ciego pareado, targets/linaje, comparador local vs trayectoria acumulativa y métricas. Wave 06 focalizada preregistrada; aislamiento real, simulator/fills/costs/datasets y pre-registro con Strategy V1 siguen abiertos. Reutilizar jsonschema/Decimal en probes y evaluar engine R-009 antes de BUILD. |
 | R-028 | P1 | D-037/020/024/027/029 | DESIGN_DECIDED bootstrap/portability/packages ADR-014; captured Team/fresh-clone research preserved. Target EB/TE acceptance R-030 deferred before implementation. |
-| R-027 | P1 | D-035 | RESEARCHING: RiskRC3, R3 21checks/66estados; D035-T1 semántica cerrada tras crítica. Campos/modelos/solver/txn/params/mapping aún abiertos, no Risk Engine ni thresholds aceptados |
+| R-027 | P1 | D-035 | RC4 caps incrementales/baseline/inputs y R4 900 celdas finitas; D035-T2 contrato acotado. Solver general/transacción/escenarios/modelos/umbrales/mappings no aceptados |
 | R-018 | P4 | D-051 | Opciones/short/leverage/cripto/futuros/regímenes avanzados: investigar solo tras alcance PAPER. |
 | R-029 | P3 | D-039/024/037/040/042 | SUPERSEDED en premisa Team→Plus exclusivamente PRE-LIVE por ADR-013. Ficha/evidencia histórica preservadas. Plus es target PAPER R-030; LIVE UNKNOWN. |
 | R-030 | P1 | D-043/024/027/037 | TARGET_ACCEPTANCE_DEFERRED: contratos diseñados ahora, ejecución personal Windows/Plus antes de implementación, integración/carga P2 antes de PAPER. `research/R-030_target_paper_environment_acceptance_RC0.md`. |
@@ -170,3 +172,11 @@ Q061 DECIDED; D011 RESEARCHING/método no admitido. No otra pregunta DD conceptu
 El propietario aprueba Alpaca Paper Only + LEAN source como **familias de diseño PAPER**, IBKR/Nautilus reservas: [ADR-023](decisions/ADR-023-paper-broker-and-backtesting-families.md). B1–B5/QP1–QP10, pin/modelos/protección efectiva/target siguen pendientes; sin cuentas, gasto, implementación o LIVE. B3 no admisible implica no entradas.
 
 [Evidencia comercial](research/R-008_vendor_evidence_and_plan_scope_RC1.md) disponible desde 2026-10-28, fecha real de recepción UNKNOWN y correos originales no inspeccionados. Twelve=VENDOR_INFORMATION_REQUESTED, aclaración del propietario pendiente de envío. EODHD=VENDOR_RESPONSE_RECEIVED / PLAN_SCOPE_CLARIFICATION_PENDING / TECHNICAL_ADMISSION_PENDING; todos los datasets NOT_ADMITTED, raw a IA externa DENY_UNCONFIRMED. Tres precios públicos19.99/29.99/99.99 incorporados a las cinco escalas; se prioriza EOD económico si cumple. No se espera respuesta para avanzar research.
+
+## Paquete autónomo financiero ejecutado — 2026-10-28
+
+QL3 host mínimo LEAN source; B3-S1 contraejemplos; DA-S2/S3 admisión y unidades; R4 caps900celdas; H9 ledger/restore; contratos de binding/datos/Risk/audit y Q063. Capturas/scripts/hash/scopes en repo. R006/010/013 fundamentales no reabiertos; integración/demanda transversal es trabajo financiero permitido. Ningún dataset/backtest/Strategy/target admitido. Ver readiness17.
+
+## R-009 — pendiente concreto de seguridad de pin
+
+[Auditoría/remediación RC0](research/R-009_current_pin_remediation_RC0.md): QL4 helper overwrite inseguro, BCL alternativo y fork API investigados; QL5 primerbuildtimeout preservado y continuación acotada. No algoritmo/mercado/producción. Completar pin/parches/deps/licencias/regresiones/config/target antes de admisión; no otra investigación agéntica general.

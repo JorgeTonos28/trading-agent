@@ -257,5 +257,8 @@
       "benchmark_selected": null
     }
   ],
-  "vendor_evidence_reference": "../vendor_inquiries/owner_response_evidence_2026-10-28.json"
+  "vendor_evidence_reference": "../vendor_inquiries/owner_response_evidence_2026-10-28.json",
+  "admission_protocol": "../R-008_six_ETF_admission_plan_RC2.md",
+  "fixture_evidence": "../probe_scope_evaluation_2026-10-28.json",
+  "all_source_rows_or_coverage_accepted": false
 }

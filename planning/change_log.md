@@ -280,3 +280,17 @@ El propietario aprueba Alpaca Paper Only + LEAN source como **familias de diseñ
 [Evidencia comercial](research/R-008_vendor_evidence_and_plan_scope_RC1.md) disponible desde 2026-10-28, fecha real de recepción UNKNOWN y correos originales no inspeccionados. Twelve=VENDOR_INFORMATION_REQUESTED, aclaración del propietario pendiente de envío. EODHD=VENDOR_RESPONSE_RECEIVED / PLAN_SCOPE_CLARIFICATION_PENDING / TECHNICAL_ADMISSION_PENDING; todos los datasets NOT_ADMITTED, raw a IA externa DENY_UNCONFIRMED. Tres precios públicos19.99/29.99/99.99 incorporados a las cinco escalas; se prioriza EOD económico si cumple. No se espera respuesta para avanzar research.
 
 Revisión independiente del hito: sin P0; corregido P1 documental para evitar permiso implícito de envío a IA mediante derivados/reempaquetado/reconstrucción. Almacenamiento local rotulado REPORTED_ALLOWED / PRODUCT_CONTRACT_SCOPE_PENDING. Sin nueva arquitectura o admisión.
+
+## 2026-10-28 — bindings financieros y probes ejecutados
+
+Después de72ff6de: QL3 verifica pin/source antes de build y compila host mínimo con Program.cs público;6checks metadata, noMain/Engine.Run, warnings intactos. B3-S1=21expectativas(19calculadas/2marcadores); DA-S2=21 y DA-S3=6 fixtures propios; R4=900celdas/11expectativas(9calculadas/2marcadores). H9=1200jobs/2400propuestas/13expectativas y complemento6 de copia restaurada, no capacity/FSYNC/Postgres/receipt-race; limitaciones originales conservadas. Sin cuenta/datos/strategy/backtest/gasto/admin.
+
+RC3 bindings PRICE–MATR/Alpaca/LEAN, RC5 protección/reconciliación, seisETF QA/admisiónRC2, LEANlocalRC3, RiskRC4 y audit/observabilidadRC2. D035-T2 contrato matemático acotado; parents siguen abiertos. Q063 dirección de stack propuesta, nunca seleccionada por editar. D1 aclara selección de familias condicionada versus full config/suficiencia P1; envelope/RPO/RTO/latencias/retención no desaparecen. Actualizados readiness17/master/registros/cards/bootstrap; holdoutUNKNOWN/lock/targetdeferral intactos. Revisión crítica y QA final antes de publicar.
+
+Revisión independiente final: P1 de coherencia D1/Q063 reparado con distinción dirección condicionada versus configuración/suficiencia P1; no paso de gates por H9. Caps aclarados como uso incremental sobre baseline y presupuesto restante. Precisión DA-S2 TZ/DST NOT_TESTED. No otros P0/P1 materiales que impidan presentar Q063 en ese scope; no aprobación por el revisor.
+
+## 2026-10-28 — auditoría acotada de LEAN antes del checkpoint
+
+QL4 reproduce escape de extract al sibling exclusivamente bajo nuevo lab.local; securityhelperFAIL, no S2/FinancialCore. Fork ProDotNetZip1.19.0 API propia y alternativa BCL probados, sin librería ZIP propia. Auditoría41libraries/7pares/5advisories. QL5 export aislado+transformaciones+restorePASS, primerbuildERROR/TIMEOUT60.396s/no smoke. Continuación02 con hashes/código/expectativas iguales y sólo budget120s: CONTINUATION_INCOMPLETE_OR_FAILED_NO_REMEDIATED_HOST_ACCEPTANCE. No fuente original/producción o captura vieja modificadas. Pin permanece no aceptado; documentar FAIL y límites, no esconderlos en conteoPASS.
+
+QA final65 controles de coherencia PASS (formatos/hashes/estados/aritmética/enlaces), incluidos helperFAIL y buildsERROR como evidencia esperada y preservada. Captura anterior51 se conserva como checkpoint previo. Revisión independiente complementaria verificó hashes02 y propagación sin errores materiales; no aprobación de pin o stack. Q063 permanece única solicitud nueva de dirección condicionada; no acceso/administración/spend/implementación.

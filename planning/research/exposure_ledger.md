@@ -58,3 +58,7 @@ X16: búsqueda pública de documentación/precios/modelos de ejecución mostró 
 ## Exposición wave11 — 2026-10-23
 
 X17: páginas oficialesKibotmuestras/FirstRatecards contienen ejemplos públicos de precios/fechas2026 incluidos potencialmente enreserve y tablas de símbolos; búsquedas amplias incluyeron snippets no solicitados de terceros. No usados para reglas/márgenes/selección ni descargados ejemplos. KD1 pidió sólo2004-11-18–24, login respondió perohistorydiagnóstico401; no precios/bar recibidos o persistidos,0trials. QL2usaFICTION/preciospropios2030, sinAlgorithm/strategy/history. Exposiciónincidentalnoacreditareserveintacta; M11parcial/INTEGRITY_UNKNOWN, no aperturareservada.
+
+## X18 — documentación técnica, 2026-10-28
+
+Consulta pública de pricing/terms/EOD/actions y Alpaca/orders/API puede mostrar ejemplos históricos incidentales, incluso fechas dentro de la reserva propuesta. Se registran como exposición documental; no se descargó un dataset/API de mercado ni se calcularon señales, retornos o rankings. Probes usan registros/precios propios ficticios y fechas2030, sin backtests. No copiar raws de ejemplos al repo. Esta nota no acredita integridad: holdout permanece INTEGRITY_UNKNOWN y M-11 sigue pendiente.

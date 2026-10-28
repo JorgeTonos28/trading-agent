@@ -360,5 +360,10 @@
   "active_rule_binding_clarification": "R-020_rule_binding_completion_RC2.md",
   "clarification_changes_declared_hypotheses": false,
   "latest_native_component_evidence": "probes/r009-lean-components/result-01.json",
-  "latest_source_access_probe": "probes/r008-kibot-access/result-01.json"
+  "latest_source_access_probe": "probes/r008-kibot-access/result-01.json",
+  "financial_binding_research_wave12_refs": [
+    "R-020_PRICE_MATR_Alpaca_LEAN_binding_RC3.md",
+    "probe_scope_evaluation_2026-10-28.json"
+  ],
+  "OP_L1_status": "UNRESOLVED_BINDING_PROPOSAL_NOT_EXECUTED_NOT_SELECTED_FOR_F0"
 }

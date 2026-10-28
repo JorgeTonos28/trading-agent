@@ -1,0 +1,371 @@
+{
+  "captured_utc": "2026-10-28T19:51:55.654568+00:00",
+  "scope": "REPO_HASH_STATE_ARITHMETIC_LINK_AND_CONTRACT_CHECKS_NOT_FINANCIAL_ACCEPTANCE",
+  "source_sha256": "423d7372275c576c371cfdf6483f629c9a287f1fe255b132038325c33ac9f94b",
+  "previous_QA_capture": "planning/research/financial_phase_QA_2026-10-28.json",
+  "comparison_base": "a249d775a3e2613d800ec83dfe5d9daa21e30029",
+  "approval_commit": "72ff6dec24282f08082b4a24b6c0125cd0c8a8f6",
+  "changed_files_checked": 83,
+  "parse_counts": {
+    "json": 21,
+    "yaml": 1,
+    "python_ast": 12
+  },
+  "checks": [
+    {
+      "id": "STRUCTURED_FILES_PARSE",
+      "status": "PASS",
+      "detail": {
+        "counts": {
+          "json": 21,
+          "yaml": 1,
+          "python_ast": 12
+        },
+        "errors": []
+      }
+    },
+    {
+      "id": "QL3_COUNTS_AND_EXPECTATIONS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL3_SOURCE_BYTES",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL3_LOCK_AND_EVIDENCE_LIMITS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "B3-S1_COUNTS_AND_EXPECTATIONS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "B3-S1_SOURCE_BYTES",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "B3-S1_LOCK_AND_EVIDENCE_LIMITS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "DA-S2_COUNTS_AND_EXPECTATIONS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "DA-S2_SOURCE_BYTES",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "DA-S2_LOCK_AND_EVIDENCE_LIMITS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "DA-S3_COUNTS_AND_EXPECTATIONS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "DA-S3_SOURCE_BYTES",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "DA-S3_LOCK_AND_EVIDENCE_LIMITS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "R4_COUNTS_AND_EXPECTATIONS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "R4_SOURCE_BYTES",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "R4_LOCK_AND_EVIDENCE_LIMITS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "H9_COUNTS_AND_EXPECTATIONS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "H9_SOURCE_BYTES",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "H9_LOCK_AND_EVIDENCE_LIMITS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "H9-RESTORE_COUNTS_AND_EXPECTATIONS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "H9-RESTORE_SOURCE_BYTES",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "H9-RESTORE_LOCK_AND_EVIDENCE_LIMITS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL4_COUNTS_AND_EXPECTATIONS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL4_SOURCE_BYTES",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL4_LOCK_AND_EVIDENCE_LIMITS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL5-01_COUNTS_AND_EXPECTATIONS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL5-01_SOURCE_BYTES",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL5-01_LOCK_AND_EVIDENCE_LIMITS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL5-02_COUNTS_AND_EXPECTATIONS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL5-02_SOURCE_BYTES",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL5-02_LOCK_AND_EVIDENCE_LIMITS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL4_SECURITY_FAILURE_NOT_HIDDEN_BY_EXPECTATIONS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL5_FIRST_BUILD_TIMEOUT_NO_SMOKE_PRESERVED",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL5_CONTINUATION_TIMEOUT_NOT_COMPATIBILITY_FAILURE",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL5_CONTINUATION_LINK_TO_ORIGINAL_CAPTURE",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "AUDIT_COUNTS_NOT_INDEPENDENT_VULNERABILITIES",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "SENTINELS_NOT_BROKER_OR_SOLVER_TESTS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "DA_TIMEZONE_SCOPE_NOT_TESTED",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "R4_NINE_HUNDRED_CELLS_NOT_THRESHOLDS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "H9_DELETE_NOT_CAPACITY_OR_POSTGRES",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL3_BUILD_METADATA_NOT_ENGINE_EXECUTION",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL3_LOCAL_DLL_HASHES",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "IMMUTABLE_TWELVE_HYPOTHESES_ZERO_TRIALS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "IMMUTABLE_CONFIG_BYTES",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "FOUR_PARENT_SIX_INSTRUMENT_CARDS_NOT_ADMITTED",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "SIX_REQUIRED_ETF_IDENTITIES",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "PRIOR_COST_MODELS_AND_TWENTY_CELLS_RETAINED",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "SIX_MODELS_ALL_FIVE_CAPITALS_ARITHMETIC",
+      "status": "PASS",
+      "detail": "Component costs only, taxes/FX/operations unknown, not CAGR."
+    },
+    {
+      "id": "EODHD_PUBLIC_PRICES_NOT_SELECTED_OR_BOUGHT",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "VENDOR_DATES_NOT_INVENTED",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "VENDOR_NO_MAIL_ACCESS_CONTACT_OR_ADMISSION",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "DERIVED_RIGHTS_NO_IMPLICIT_CLOUD_PERMISSION",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "INDIVIDUAL_VENDOR_STATES",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "Q062_DESIGN_APPROVED_Q063_ONLY_PROPOSED",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "PROFILE_ACTIVE_READINESS17",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "NO_IMPLEMENTATION_TARGET_METHOD_OR_B3_ACCEPTANCE",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "ECONOMIC_DD_GATES_UNCHANGED",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "WORKLOAD_GATE_SCOPE_NOT_ERASED",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "RISK_BASELINE_REMAINING_BUDGET_EXPLICIT",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "MODIFIED_MARKDOWN_LOCAL_LINKS",
+      "status": "PASS",
+      "detail": {
+        "checked": 432,
+        "missing": []
+      }
+    },
+    {
+      "id": "BOOTSTRAP_CURRENT_ARTIFACTS_EXIST",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "SCOPED_SECRET_MARKERS",
+      "status": "PASS",
+      "detail": {
+        "matched_files": [],
+        "limitation": "Scoped marker scan, not a full security audit."
+      }
+    },
+    {
+      "id": "PLANNING_DOCUMENTATION_ONLY",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "ACTIVE_BRANCH_MAIN_INTACT",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "WORKTREE_WHITESPACE",
+      "status": "PASS",
+      "detail": {
+        "exit_code": 0,
+        "output": ""
+      }
+    }
+  ],
+  "counts": {
+    "PASS": 65,
+    "FAIL": 0,
+    "NOT_CHECKED": 0
+  },
+  "datasets_admitted": 0,
+  "strategy_trials": 0,
+  "B3_accepted": false,
+  "method_accepted": false,
+  "PAPER_runtime_accepted": false,
+  "implementation_locked": true,
+  "target_acceptance": "TARGET_ACCEPTANCE_DEFERRED",
+  "holdout": "INTEGRITY_UNKNOWN",
+  "limitation": "No probe reruns, API calls, dataset rows, trading simulation, administrative action or statistical validation in this check."
+}

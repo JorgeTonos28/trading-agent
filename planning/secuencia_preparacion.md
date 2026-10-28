@@ -1,5 +1,7 @@
 # Secuencia de Preparation Program — vigencia ADR-013
 
+**Checkpoint vigente 2026-10-28:** [bindings/readiness17](17_financial_bindings_and_readiness_RC0.md). Q-062 DECIDED ADR-023; Q-063 propuesta de dirección condicionada, no stack operacional aceptado. Datos NOT_ADMITTED, cero trials, lock/target/holdout preservados. Las notas anteriores son historia fechada.
+
 **Vigencia 2026-10-28:** Q-062/A DECIDED como familias de diseño en ADR-023; no volver a solicitar Q-062. Twelve requiere aclaración; EODHD respondió según resumen del propietario, sin admisión. Ver nota actual al final. Las notas wave11/a249d77 se conservan como historia. Implementación bloqueada, aceptación target diferida y holdout UNKNOWN.
 
 **Vigencia financiera wave11 — 2026-10-23:** [checkpoint16](16_financial_stack_checkpoint_RC0.md) y [MasterPlanRC0](../docs/master/MASTER_PLAN_v1.0_RC0.md), DRAFT/NOT_READY. Q061 DECIDED ADR022; investigación DD actual acotada, método no aceptado. Q062 READY_FOR_DECISION propone seleccionar Alpaca Paper Only + LEAN source como familias de diseño PAPER, sin aceptación de pin/protección/target ni autorización de cuenta/gasto. Datos4+6cards NOT_ADMITTED; vendors AWAITING_VENDOR_RESPONSE. Holdout INTEGRITY_UNKNOWN, implementation_locked=true, TARGET_ACCEPTANCE_DEFERRED. Notas anteriores fechadas conservadas como historia.
@@ -237,3 +239,7 @@ Q061 aprobado/sincronizadoADR022. Ejecutados QL2componentes nativos y KD1/diagn�
 El propietario aprueba Alpaca Paper Only + LEAN source como **familias de diseño PAPER**, IBKR/Nautilus reservas: [ADR-023](decisions/ADR-023-paper-broker-and-backtesting-families.md). B1–B5/QP1–QP10, pin/modelos/protección efectiva/target siguen pendientes; sin cuentas, gasto, implementación o LIVE. B3 no admisible implica no entradas.
 
 [Evidencia comercial](research/R-008_vendor_evidence_and_plan_scope_RC1.md) disponible desde 2026-10-28, fecha real de recepción UNKNOWN y correos originales no inspeccionados. Twelve=VENDOR_INFORMATION_REQUESTED, aclaración del propietario pendiente de envío. EODHD=VENDOR_RESPONSE_RECEIVED / PLAN_SCOPE_CLARIFICATION_PENDING / TECHNICAL_ADMISSION_PENDING; todos los datasets NOT_ADMITTED, raw a IA externa DENY_UNCONFIRMED. Tres precios públicos19.99/29.99/99.99 incorporados a las cinco escalas; se prioriza EOD económico si cumple. No se espera respuesta para avanzar research.
+
+## Orden vigente tras bindings — 2026-10-28
+
+Q063 dirección de stack; después cerrar bindings protectores/cash/order/Risk y admisión de fuentes por rol sin esperar los correos para lo independiente; freeze research/métodos/familia/integridad, selección humana de Strategy y revisión master. R030 personalPlus/PC antes de implementar y P2 integrado antes de PAPER. Datos y B3 no desaparecen por selección tecnológica; no repetir Q062, arquitectura AI o conceptos DD ya aprobados.

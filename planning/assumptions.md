@@ -206,3 +206,7 @@ Q061 DECIDED; D011 RESEARCHING/método no admitido. No otra pregunta DD conceptu
 El propietario aprueba Alpaca Paper Only + LEAN source como **familias de diseño PAPER**, IBKR/Nautilus reservas: [ADR-023](decisions/ADR-023-paper-broker-and-backtesting-families.md). B1–B5/QP1–QP10, pin/modelos/protección efectiva/target siguen pendientes; sin cuentas, gasto, implementación o LIVE. B3 no admisible implica no entradas.
 
 [Evidencia comercial](research/R-008_vendor_evidence_and_plan_scope_RC1.md) disponible desde 2026-10-28, fecha real de recepción UNKNOWN y correos originales no inspeccionados. Twelve=VENDOR_INFORMATION_REQUESTED, aclaración del propietario pendiente de envío. EODHD=VENDOR_RESPONSE_RECEIVED / PLAN_SCOPE_CLARIFICATION_PENDING / TECHNICAL_ADMISSION_PENDING; todos los datasets NOT_ADMITTED, raw a IA externa DENY_UNCONFIRMED. Tres precios públicos19.99/29.99/99.99 incorporados a las cinco escalas; se prioriza EOD económico si cumple. No se espera respuesta para avanzar research.
+
+## Supuestos explícitos wave12
+
+APScheduler+PostgreSQL se propone, no demuestra menor coste total/ingeniería ni suficiencia; workload numérico y PostgreSQL real pendientes. QL3 carga metadata, no ejecuta engine. H9 usa SQLite DELETE3.50.4 y no prueba WAL/FSYNC/power-loss o races de receipt. Rawprice y volume EODHD tienen ajustes distintos; reconstrucción requiere factores completos y QA. Derecho de almacenar reportado no concede derivación/export a IA. OP-L1 es propuesta de binding, no política de Strategy o Risk aprobada. Ningún supuesto concede entrada sin B3.

@@ -241,3 +241,15 @@ No parent/gate operativo aceptado; fuentevalidez y target independientes del con
 ## 2026-10-28 — evidencia y selección de diseño
 
 ADR-023 selecciona familias, no protección/paridad ni operación. Persisten: activación tardía de children, cancel/replace incierto, cash económico confundido con buying power y dependencias vulnerables del pin. EODHD retención/automatización son afirmaciones comerciales reportadas con alcance de plan pendiente; PIT original no disponible, pay-dates variables y precios indicativos. Mitigar por admisión separada por rol, QA de seis ETF, DENY externo para raw y datos de ejecución independientes. Menor precio no concede suficiencia; All-in-One no es requisito por recomendación de ventas. Todos los costes en cinco escalas y UNKNOWN totales preservados.
+
+## Riesgos de binding y stack — 2026-10-28
+
+- P1 B3: parent parcialmente ejecutado con children held o stop dependiente de fill futuro; mitigación no entradas sin política/mapping admisibles, sin TP artificial/emergencia/G3.
+- P1 Data: OHLC raw/volume split-adjusted, value dividend reexpresado, pay-date/vintage faltantes; mitigación unidades/linaje por rol, corroboración y quarantine, no broker cash sintético.
+- P1 Store: restore con receipt perdido y epoch nuevo; mitigación RECOVERY_GAP hasta historia verificable, no repetir job o borrar evidencia. PostgreSQL y target no probados.
+- P1 Dependencias: QL3 conserva advisories; SQLite3.50.4 en rango WAL-reset. No pin admitido por build o toyPASS; fixtures DELETE y fix/versiones/regresión antes de un uso WAL futuro.
+- P1 Workflow: APS no aporta workflow durable; la propuesta requiere ledger/estado/ownership/due-state y criterios de suficiencia P1. Temporal dev server no es fallback operacional.
+
+## P1 — helper de extracción del pin, evidencia QL4
+
+FAIL_BOUNDARY_DEMONSTRATED en Compression.Unzip(overwrite=true), sólo sibling de laboratorio. Es path BCL separado del advisory DotNetZip; un fork del paquete no lo repara por sí solo. QL5 prueba una ruta aislada con source/paquetes y conserva ERROR/TIMEOUT01;02=CONTINUATION_INCOMPLETE_OR_FAILED_NO_REMEDIATED_HOST_ACCEPTANCE. No S2/FinancialCore/host comprometido ni pin aceptado. Reparación/exclusión y regresión/licencia/target son gates previos a admisión, sin producción modificada.

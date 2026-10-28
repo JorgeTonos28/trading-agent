@@ -1,5 +1,7 @@
 # Checkpoint financiero y readiness de Plan v1.0 — RC0
 
+**Estado actual 2026-10-28:** ver [readiness17](17_financial_bindings_and_readiness_RC0.md); este checkpoint conserva historia. Q062 aprobado sólo familias; datos y B3 no admitidos; Q063 propuesta condicionada, sin aceptación o implementación.
+
 2026-10-23. Plan Architect, rama plan-architect. **Diseño financiero aún incompleto; no READY_FOR_IMPLEMENTATION.** Agentic architecture design scoped complete ADR014; no expansión de R006/010/013. implementation_locked=true, TARGET_ACCEPTANCE_DEFERRED, reserva INTEGRITY_UNKNOWN. No dataset admitido/estrategia seleccionada/backtest histórico ejecutado.
 
 ## Cierres técnicos de este paquete

@@ -1,5 +1,7 @@
 # Checkpoint de stack y datos — wave11 RC0
 
+**Estado actual 2026-10-28:** ver [readiness17](17_financial_bindings_and_readiness_RC0.md); este checkpoint conserva historia. Q062 aprobado sólo familias; datos y B3 no admitidos; Q063 propuesta condicionada, sin aceptación o implementación.
+
 **Actualización 2026-10-28:** Q-062/A aprobado en ADR-023 como familias de diseño Alpaca Paper Only + LEAN source; la propuesta/pregunta anterior es histórica. Gates técnicos/target abiertos. Twelve/EODHD ya respondieron según resumen del propietario; ver R-008_vendor_evidence_and_plan_scope_RC1.md. No se admite ningún dataset.
 
 2026-10-23. **NOT_READY_FOR_IMPLEMENTATION**. El [Master Plan RC0](../docs/master/MASTER_PLAN_v1.0_RC0.md) integra el diseño como DRAFT_FOR_REVIEW, sin freeze. Se mantienen implementation_locked=true, TARGET_ACCEPTANCE_DEFERRED y holdout INTEGRITY_UNKNOWN. Sin implementación, backtests de estrategias, cuentas, depósitos ni gasto.
