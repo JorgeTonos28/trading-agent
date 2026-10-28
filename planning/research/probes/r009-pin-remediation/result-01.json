@@ -1,0 +1,73 @@
+{
+  "captured_utc": "2026-10-28T19:41:18.649282+00:00",
+  "scope": "ISOLATED_SOURCE_REMEDIATION_FEASIBILITY_NOT_PRODUCTION_PATCH_OR_PIN_ACCEPTANCE",
+  "source_commit": "f3d841e60dfd010ee5fc293ea893e56952484108",
+  "git_archive_sha256": "dff64a336d0d0536d802af2989b5c5d4c3eb603ad6c984387722c667c022b7c4",
+  "exported_code_files": 2663,
+  "Data_exported": false,
+  "own_source_hashes": {
+    "PatchedHost.csproj": "16f4ebd627571af5a2da41baecef3e6da30de014b02361139e805947d8fe972d",
+    "RemediationSmoke.csproj": "c635f297a10c0dc73f29e90d0d7b02353bcb069adeb6cbbe76a682681fe8b471",
+    "Program.cs": "51bbd8525622cabfac1fc9b22b1b3eb347f5a1b53fc7012904e55b00040524d5",
+    "run_probe.py": "0ac56daa025afa10ddb7893eb240244d2f52f0ef6a2a086d4e257cf7d20d6e8c"
+  },
+  "source_transformations": [
+    {
+      "path": "Compression/QuantConnect.Compression.csproj",
+      "before_sha256": "594ce847872da5e82b7915a3692022059f80cfb4ccab1a3f1ac870b298e39f8d",
+      "after_sha256": "8db219bfa33f877674442f436734a3243ff19cbab1f3cb4b8ecc2850b44b32ed",
+      "diff": "--- a/Compression/QuantConnect.Compression.csproj\n+++ b/Compression/QuantConnect.Compression.csproj\n@@ -29,7 +29,7 @@\n     <Message Text=\"SelectedOptimization $(SelectedOptimization)\" Importance=\"high\" />\n   </Target>\n   <ItemGroup>\n-    <PackageReference Include=\"DotNetZip\" Version=\"1.16.0\" />\n+    <PackageReference Include=\"ProDotNetZip\" Version=\"1.19.0\" />\n     <PackageReference Include=\"SharpZipLib\" Version=\"1.3.3\" />\n   </ItemGroup>\n   <ItemGroup>\n"
+    },
+    {
+      "path": "Compression/Compression.cs",
+      "before_sha256": "ecf75498c113194765afc85b9d1d54cc4541c49f22729c2e52517f9cb7d29d1a",
+      "after_sha256": "345511f70f2a840556c9144725d39c61b04af04d1ffada1b275aef14606759c1",
+      "diff": "--- a/Compression/Compression.cs\n+++ b/Compression/Compression.cs\n@@ -542,29 +542,7 @@\n \n             try\n             {\n-                if (!overwrite)\n-                {\n-                    System.IO.Compression.ZipFile.ExtractToDirectory(zip, directory);\n-                }\n-                else\n-                {\n-                    using (var archive = new ZipArchive(File.OpenRead(zip)))\n-                    {\n-                        foreach (var file in archive.Entries)\n-                        {\n-                            // skip directories\n-                            if (string.IsNullOrEmpty(file.Name)) continue;\n-                            var filepath = Path.Combine(directory, file.FullName);\n-                            if (IsLinux) filepath = filepath.Replace(@\"\\\", \"/\");\n-                            var outputFile = new FileInfo(filepath);\n-                            if (!outputFile.Directory.Exists)\n-                            {\n-                                outputFile.Directory.Create();\n-                            }\n-                            file.ExtractToFile(outputFile.FullName, true);\n-                        }\n-                    }\n-                }\n+                System.IO.Compression.ZipFile.ExtractToDirectory(zip, directory, overwrite);\n \n                 return true;\n             }\n"
+    },
+    {
+      "path": "Engine/QuantConnect.Lean.Engine.csproj",
+      "before_sha256": "21eab24be8c7cd9a7eb62d2a4ebf47d45412be5874311c2da1b00a99e52b6e07",
+      "after_sha256": "60d09883df20eba7b087b06208fd7defd80eab3022d123474c45837a7234cc8f",
+      "diff": "--- a/Engine/QuantConnect.Lean.Engine.csproj\n+++ b/Engine/QuantConnect.Lean.Engine.csproj\n@@ -51,7 +51,6 @@\n     <Compile Include=\"..\\Common\\Properties\\SharedAssemblyInfo.cs\" Link=\"Properties\\SharedAssemblyInfo.cs\" />\n   </ItemGroup>\n   <ItemGroup>\n-    <ProjectReference Include=\"..\\Algorithm.CSharp\\QuantConnect.Algorithm.CSharp.csproj\" />\n     <ProjectReference Include=\"..\\AlgorithmFactory\\QuantConnect.AlgorithmFactory.csproj\" />\n     <ProjectReference Include=\"..\\Algorithm\\QuantConnect.Algorithm.csproj\" />\n     <ProjectReference Include=\"..\\Api\\QuantConnect.Api.csproj\" />\n"
+    }
+  ],
+  "added_targets": "<Project><ItemGroup>\n<PackageReference Include=\"System.Drawing.Common\" Version=\"4.7.2\" />\n<PackageReference Include=\"System.Net.Http.WinHttpHandler\" Version=\"4.5.4\" />\n<PackageReference Include=\"System.ServiceModel.Primitives\" Version=\"4.4.4\" />\n<PackageReference Include=\"System.Private.ServiceModel\" Version=\"4.4.4\" />\n</ItemGroup></Project>",
+  "steps": [
+    {
+      "label": "restore",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 12.584,
+      "raw_log_sha256": "c5c050d74b37a1002ac418f7c05108e412a77c2f51e66fd85d333ee6cc897f79",
+      "diagnostics": []
+    },
+    {
+      "label": "build",
+      "status": "ERROR",
+      "reason": "TIMEOUT",
+      "seconds": 60.396,
+      "partial_log_sha256": "71a90672aa92a76e27de605b5bb61d64a2f28c9dee8bbac991262c56ab76134e"
+    }
+  ],
+  "rows": [],
+  "counts": {
+    "PASS": 0,
+    "FAIL": 0,
+    "ERROR": 0
+  },
+  "resolved_candidate_packages": [
+    "ProDotNetZip/1.19.0",
+    "System.Drawing.Common/4.7.2",
+    "System.Net.Http.WinHttpHandler/4.5.4",
+    "System.Private.ServiceModel/4.4.4",
+    "System.ServiceModel.Primitives/4.4.4"
+  ],
+  "observed_NuGet_audit_warnings_in_host_assets": [],
+  "audit_warning_absence_is_security_proof": false,
+  "full_lean_algorithm_or_broker_parity_accepted": false,
+  "production_checkout_modified": false,
+  "pin_accepted": false,
+  "implementation_locked": true,
+  "holdout": "INTEGRITY_UNKNOWN",
+  "target_acceptance": "TARGET_ACCEPTANCE_DEFERRED"
+}

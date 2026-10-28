@@ -1,0 +1,19 @@
+{
+  "observed_utc": "2026-10-28T18:46:27.824646+00:00",
+  "timing": "AFTER_RUN_NOT_LOADER_ATTESTATION",
+  "outputs": {
+    "LeanLocalSourceHostProbe.dll": "6a81f633604d05f35f60637415d9d7d24b4527829ad9c0aebc97492c857485dd",
+    "LeanMetadataSmoke.dll": "7f7fc5f50e592f379707c3db9aca3eb34e11e833999988fac97fa02ddac46b40",
+    "QuantConnect.Lean.Engine.dll": "a1688bf1381457795b3c7709145e3df4d3d0eebc35198d5818ecea99cd998835",
+    "QuantConnect.Messaging.dll": "c8d925d7a825c11be67177b5a5671fa7a43d9812bfce7c74c38076a3e668e8eb",
+    "QuantConnect.Queues.dll": "9e31487ff9937e6ed6cdd0d351ac3ada77e83238601cb0e24c73931fb412ed5e"
+  },
+  "advisories_observed_in_full_logs": [
+    "GHSA-6xh7-4v2w-36q6",
+    "GHSA-jc8g-xhw5-6x46",
+    "GHSA-p9wx-v264-q34p",
+    "GHSA-rxg9-xrhp-64gj",
+    "GHSA-xhg6-9j5j-w4vf"
+  ],
+  "pin_security_accepted": false
+}

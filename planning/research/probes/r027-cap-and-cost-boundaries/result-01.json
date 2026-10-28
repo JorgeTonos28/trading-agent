@@ -1,0 +1,101 @@
+{
+  "captured_utc": "2026-10-28T18:15:44.090320+00:00",
+  "scope": "FICTITIOUS_BOUNDED_FORMULA_ORACLE_NOT_RISK_IMPLEMENTATION",
+  "source_sha256": "942c66369a48da750408006f76d4db6e08287f30f36ecdf8c149751808463cc7",
+  "rows": [
+    {
+      "id": "MONOTONE_CAPS_VS_EXHAUSTIVE_ORACLE",
+      "observed": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "ZERO_QUANTITY_NO_FIXED_FEE",
+      "observed": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "id": "ONE_ORDER_FEE_NOT_DUPLICATED_BY_LOT_PARTITION",
+      "observed": "0.95",
+      "expected": "0.95",
+      "status": "PASS"
+    },
+    {
+      "id": "FILLED_REMAINDER_EXPOSURE_NOT_EXTRA_CLAIM",
+      "observed": "104",
+      "expected": "104",
+      "status": "PASS"
+    },
+    {
+      "id": "CASH_DEBIT_NOT_REFLECTED_OBLIGATION",
+      "observed": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "id": "CASH_ALREADY_DEBITED_NO_SECOND_DEBIT",
+      "observed": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "id": "PENDING_LIMIT_USES_AUTH_CAP_NOT_FAVOURABLE_MARK",
+      "observed": "6",
+      "expected": "6",
+      "status": "PASS"
+    },
+    {
+      "id": "MARKET_AUTH_IS_NOT_GUARANTEED_CAP",
+      "observed": false,
+      "expected": false,
+      "status": "PASS"
+    },
+    {
+      "id": "SPLIT_REMAINING_RISK_INVARIANCE",
+      "observed": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "id": "LOWER_R2_NOT_A_TOPUP_SIGNAL",
+      "observed": false,
+      "expected": false,
+      "status": "PASS"
+    },
+    {
+      "id": "NONMONOTONE_BINARY_COUNTEREXAMPLE",
+      "observed": {
+        "binary": 1,
+        "oracle": 3
+      },
+      "expected": {
+        "binary": 1,
+        "oracle": 3
+      },
+      "status": "PASS"
+    }
+  ],
+  "monotone_parameter_cells": 900,
+  "mismatches": [],
+  "fictitious_parameters": {
+    "p_auth": "10",
+    "stop": "8",
+    "entry_fixed": "1.25",
+    "exit_fixed": "0.75",
+    "entry_per_share": "0.01",
+    "exit_per_share": "0.02",
+    "gap_loss_per_share": "5"
+  },
+  "counts": {
+    "PASS": 11,
+    "FAIL": 0,
+    "ERROR": 0
+  },
+  "D031_thresholds_approved": false,
+  "real_solver_accepted": false,
+  "broker_or_transactions_accepted": false,
+  "implementation_locked": true,
+  "holdout": "INTEGRITY_UNKNOWN",
+  "target_acceptance": "TARGET_ACCEPTANCE_DEFERRED"
+}

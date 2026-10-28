@@ -1,0 +1,62 @@
+{
+  "captured_utc": "2026-10-28T18:46:26.282452+00:00",
+  "scope": "READ_ACTUAL_RESTORED_FIXTURE_AND_RECOVERY_GATE_NOT_OPERATIONAL_RESTORE",
+  "source_sha256": "1dcbbdc68c3a968e4ea7725b91ff7c0bc5cfe6227ca0ff4f4ef7471947da9539",
+  "rows": [
+    {
+      "id": "ACTUAL_RESTORED_JOB_STATE",
+      "observed": [
+        "RUNNING",
+        1,
+        "a1"
+      ],
+      "expected": [
+        "RUNNING",
+        1,
+        "a1"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "ACTUAL_RESTORED_RECEIPT_ABSENT",
+      "observed": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "id": "ACTUAL_RESTORED_OLD_ENVELOPE_FENCED",
+      "observed": false,
+      "expected": false,
+      "status": "PASS"
+    },
+    {
+      "id": "HASH_ONLY_ACK_NOT_RECOVERY",
+      "observed": "RECOVERY_GAP_BLOCK_ATTEMPTS_AND_ADMISSION",
+      "expected": "RECOVERY_GAP_BLOCK_ATTEMPTS_AND_ADMISSION",
+      "status": "PASS"
+    },
+    {
+      "id": "NO_ANCHORS_NOT_ASSUME_UNSEEN",
+      "observed": "UNKNOWN_HISTORY_BLOCK_ATTEMPTS_AND_ADMISSION",
+      "expected": "UNKNOWN_HISTORY_BLOCK_ATTEMPTS_AND_ADMISSION",
+      "status": "PASS"
+    },
+    {
+      "id": "FULL_VERIFIED_HISTORY_RECONSTRUCTS_OLD_IDENTITY",
+      "observed": "RECONSTRUCT_ORIGINAL_RECEIPT_ONLY_NO_NEW_WINNER",
+      "expected": "RECONSTRUCT_ORIGINAL_RECEIPT_ONLY_NO_NEW_WINNER",
+      "status": "PASS"
+    }
+  ],
+  "counts": {
+    "PASS": 6,
+    "FAIL": 0,
+    "ERROR": 0
+  },
+  "restored_db_read_only": true,
+  "anchor_security_or_auth_proven": false,
+  "PostgreSQL_or_Financial_Core_accepted": false,
+  "implementation_locked": true,
+  "holdout": "INTEGRITY_UNKNOWN",
+  "target_acceptance": "TARGET_ACCEPTANCE_DEFERRED"
+}

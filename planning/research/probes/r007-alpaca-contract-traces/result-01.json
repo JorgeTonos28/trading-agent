@@ -1,0 +1,146 @@
+{
+  "captured_utc": "2026-10-28T18:15:44.570195+00:00",
+  "scope": "FINITE_FICTITIOUS_CONTRACT_COUNTEREXAMPLES_NOT_BROKER_ACCEPTANCE",
+  "source_sha256": "59c947a945d9bbd889b0504d7d85ebe302c4924f51e2f5528674c9c3be42e2c4",
+  "rows": [
+    {
+      "id": "PARTIAL_PARENT_HELD_CHILD",
+      "observed": "UNCERTAIN",
+      "expected": "UNCERTAIN",
+      "status": "PASS"
+    },
+    {
+      "id": "FULL_PARENT_CHILD_ACK_ONLY",
+      "observed": "UNCERTAIN",
+      "expected": "UNCERTAIN",
+      "status": "PASS"
+    },
+    {
+      "id": "ACTIVE_MATCHED_QUANTITY",
+      "observed": "CONFIRMED_FIXTURE_ONLY",
+      "expected": "CONFIRMED_FIXTURE_ONLY",
+      "status": "PASS"
+    },
+    {
+      "id": "PARTIAL_COVERAGE_NOT_ZERO_REMAINING_RISK",
+      "observed": "UNCERTAIN",
+      "expected": "UNCERTAIN",
+      "status": "PASS"
+    },
+    {
+      "id": "CROSSED_STOP_NO_VERIFIED_FILL",
+      "observed": "UNCERTAIN",
+      "expected": "UNCERTAIN",
+      "status": "PASS"
+    },
+    {
+      "id": "PROTECTION_EXPIRY",
+      "observed": "UNCERTAIN",
+      "expected": "UNCERTAIN",
+      "status": "PASS"
+    },
+    {
+      "id": "SPLIT_UNITS_NOT_RECONCILED",
+      "observed": "UNCERTAIN",
+      "expected": "UNCERTAIN",
+      "status": "PASS"
+    },
+    {
+      "id": "PATCH_ACK_IS_NOT_NEW_PROTECTION",
+      "observed": "UNCERTAIN",
+      "expected": "UNCERTAIN",
+      "status": "PASS"
+    },
+    {
+      "id": "OLD_STOP_FILLED_NEW_REJECTED_POSITION_FLAT",
+      "observed": "FLAT_NO_PROTECTION_CLAIM",
+      "expected": "FLAT_NO_PROTECTION_CLAIM",
+      "status": "PASS"
+    },
+    {
+      "id": "OVERLAP_NOT_COVERAGE",
+      "observed": "UNCERTAIN",
+      "expected": "UNCERTAIN",
+      "status": "PASS"
+    },
+    {
+      "id": "G2_SIMPLE_VERIFIED_PENDING_ENTRY",
+      "observed": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "id": "G2_PARTIAL_PARENT_MAY_CANCEL_CHILD",
+      "observed": false,
+      "expected": false,
+      "status": "PASS"
+    },
+    {
+      "id": "G2_UNKNOWN_DEPENDENCY",
+      "observed": false,
+      "expected": false,
+      "status": "PASS"
+    },
+    {
+      "id": "G2_PROTECTOR_NOT_ENTRY",
+      "observed": false,
+      "expected": false,
+      "status": "PASS"
+    },
+    {
+      "id": "FILL_ID_DEDUP",
+      "observed": 6,
+      "expected": 6,
+      "status": "PASS"
+    },
+    {
+      "id": "PENDING_CANCEL_RESERVE_PRESERVED",
+      "observed": 4,
+      "expected": 4,
+      "status": "PASS"
+    },
+    {
+      "id": "CANCEL_CONFIRMED_NOT_ERASE_FILLED",
+      "observed": 10,
+      "expected": 10,
+      "status": "PASS"
+    },
+    {
+      "id": "ONLY_CONFIRMED_REMAINDER_RELEASED",
+      "observed": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "CORRECTION_AFTER_TERMINAL_NEEDS_RECONCILIATION",
+      "observed": false,
+      "expected": false,
+      "status": "PASS"
+    },
+    {
+      "id": "DISCONNECT_NOT_HEALTHY",
+      "observed": false,
+      "expected": false,
+      "status": "PASS"
+    },
+    {
+      "id": "NO_ADMITTED_BROKER_ROUTE_FROM_FIXTURE",
+      "observed": false,
+      "expected": false,
+      "status": "PASS"
+    }
+  ],
+  "counts": {
+    "PASS": 21,
+    "FAIL": 0,
+    "ERROR": 0
+  },
+  "B3_passed": false,
+  "broker_API_invoked": false,
+  "new_entry_dispatch_enabled": false,
+  "unprotected_transition_authorized": false,
+  "G3_or_emergency_financial_write_authorized": false,
+  "implementation_locked": true,
+  "holdout": "INTEGRITY_UNKNOWN",
+  "target_acceptance": "TARGET_ACCEPTANCE_DEFERRED"
+}

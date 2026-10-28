@@ -1,0 +1,148 @@
+{
+  "captured_utc": "2026-10-28T18:15:26.196120+00:00",
+  "scope": "LOCAL_SOURCE_MINIMAL_HOST_BUILD_AND_METADATA_NOT_ENGINE_EXECUTION",
+  "source_commit_preflight": "f3d841e60dfd010ee5fc293ea893e56952484108",
+  "source_manifest_preflight": {
+    "Launcher/Program.cs": {
+      "checkout_sha256": "4325c3c6dd657006eb8661fbf1d0ba903ce6f1bd0409ce087cbcba437a3b6b79",
+      "canonical_blob_content_sha256": "c68ccffee10be30a1c8c3e4467cb88108be1dd052ead3ac206eaa5f14ec43d0d",
+      "equal_after_EOL_normalization": true
+    },
+    "Launcher/QuantConnect.Lean.Launcher.csproj": {
+      "checkout_sha256": "9b7554576f3a88cd120bbaa7d9c2e2a0dd15940d4d3436535df5866841b3420c",
+      "canonical_blob_content_sha256": "f28d2312a4f718a22128c9abe49850aa1b69e39cfc48b4c9dfb4b1f4c161356b",
+      "equal_after_EOL_normalization": true
+    },
+    "Launcher/config.json": {
+      "checkout_sha256": "8218e753e3d91e22dd074c3f414d501a6e5cf2322f3278db99754e6403d5cd89",
+      "canonical_blob_content_sha256": "d8c25c38e873c2354df58271f11b177208d98bb39af9249885f6137f45312658",
+      "equal_after_EOL_normalization": true
+    },
+    "Messaging/QuantConnect.Messaging.csproj": {
+      "checkout_sha256": "a5a12487f31b3954517443ae7f247b9220874115ecf2b38e9efaf0a0535c7735",
+      "canonical_blob_content_sha256": "87e2f325f3a55eda4de8b2a305101ac53182adfadb500b266d30cc73df6db39f",
+      "equal_after_EOL_normalization": true
+    },
+    "Queues/QuantConnect.Queues.csproj": {
+      "checkout_sha256": "64f9c18ea17516148abcc034e49982932d80ee60e66c09676c68f434ce995010",
+      "canonical_blob_content_sha256": "8dbe0cba7429c332dd89b73266619f359ba4f610da685c6ef1e59a766294dbb6",
+      "equal_after_EOL_normalization": true
+    },
+    "Engine/QuantConnect.Lean.Engine.csproj": {
+      "checkout_sha256": "60d09883df20eba7b087b06208fd7defd80eab3022d123474c45837a7234cc8f",
+      "canonical_blob_content_sha256": "21eab24be8c7cd9a7eb62d2a4ebf47d45412be5874311c2da1b00a99e52b6e07",
+      "equal_after_EOL_normalization": false
+    },
+    "Engine/Initializer.cs": {
+      "checkout_sha256": "51cae953f383daf1418f21972d2f1575a689d7c151c1ba7624c3592c079895dc",
+      "canonical_blob_content_sha256": "e4794f23cf92ce20b710e225d4b65bf54e1c6db588cb068949db89b2a8e53595",
+      "equal_after_EOL_normalization": true
+    },
+    "Engine/DataFeeds/DefaultDataProvider.cs": {
+      "checkout_sha256": "fe4ce26d7d12f8423fcea853d9d067ed5d6aa7d63faed67d6c3086b06a5ab3da",
+      "canonical_blob_content_sha256": "1ba57930c5ffa0cc83a4abd5c7b5b9292e77e67570f0ed5efb63b77067fcdbe5",
+      "equal_after_EOL_normalization": true
+    }
+  },
+  "prior_source_patch": "QL1_ENGINE_PROJECT_ONE_UNUSED_ALGORITHM_CSHARP_EXAMPLE_REFERENCE_REMOVED",
+  "project_kind": "LAB_MINIMAL_PROJECT_COMPILES_UNMODIFIED_PUBLIC_LAUNCHER_PROGRAM_NOT_STOCK_SOLUTION",
+  "own_source_hashes": {
+    "LocalSourceHost.csproj": "504446bddb70916a132f417a7110f827c90e66bce2f71dad8a1adf26ee0e6f81",
+    "MetadataSmoke.csproj": "93f643004b4a4e4c9366376857366d3fede1155deced2ce84b1feffe175e52a5",
+    "MetadataSmoke.cs": "66546d6b2d88729525d852819a115e1d50ec6725bedd81e971753ec3f1115375",
+    "run_probe.py": "506597435cbf9806e3ba2f2447e8b98fdf0020ea1e7c23e83de5c4a11dfd6ff1"
+  },
+  "steps": [
+    {
+      "label": "restore",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 15.121,
+      "raw_log_sha256": "51675d80454136f3a7608f47680677094846473d88c806ca38473b7af7d0104c",
+      "diagnostics": [
+        "<research-root>\\.local\\lean-source\\Indicators\\QuantConnect.Indicators.csproj : warning NU1903: El paquete \"DotNetZip\" 1.16.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-xhg6-9j5j-w4vf [<research-root>\\.local\\ql3-local-source\\MetadataSmoke.csproj]",
+        "<research-root>\\.local\\lean-source\\Brokerages\\QuantConnect.Brokerages.csproj : warning NU1903: El paquete \"DotNetZip\" 1.16.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-xhg6-9j5j-w4vf [<research-root>\\.local\\ql3-local-source\\MetadataSmoke.csproj]",
+        "<research-root>\\.local\\lean-source\\Indicators\\QuantConnect.Indicators.csproj : warning NU1904: El paquete \"System.Drawing.Common\" 4.7.0 tiene una vulnerabilidad de gravedad cr\u00edtica conocida, https://github.com/advisories/GHSA-rxg9-xrhp-64gj [<research-root>\\.local\\ql3-local-source\\MetadataSmoke.csproj]",
+        "<research-root>\\.local\\lean-source\\Brokerages\\QuantConnect.Brokerages.csproj : warning NU1904: El paquete \"System.Drawing.Common\" 4.7.0 tiene una vulnerabilidad de gravedad cr\u00edtica conocida, https://github.com/advisories/GHSA-rxg9-xrhp-64gj [<research-root>\\.local\\ql3-local-source\\MetadataSmoke.csproj]",
+        "<research-root>\\.local\\lean-source\\Engine\\QuantConnect.Lean.Engine.csproj : warning NU1903: El paquete \"DotNetZip\" 1.16.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-xhg6-9j5j-w4vf [<research-root>\\.local\\ql3-local-source\\MetadataSmoke.csproj]",
+        "<research-root>\\.local\\lean-source\\Engine\\QuantConnect.Lean.Engine.csproj : warning NU1904: El paquete \"System.Drawing.Common\" 4.7.0 tiene una vulnerabilidad de gravedad cr\u00edtica conocida, https://github.com/advisories/GHSA-rxg9-xrhp-64gj [<research-root>\\.local\\ql3-local-source\\MetadataSmoke.csproj]",
+        "<research-root>\\.local\\lean-source\\Compression\\QuantConnect.Compression.csproj : warning NU1903: El paquete \"DotNetZip\" 1.16.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-xhg6-9j5j-w4vf [<research-root>\\.local\\ql3-local-source\\MetadataSmoke.csproj]",
+        "<research-root>\\.local\\lean-source\\Compression\\QuantConnect.Compression.csproj : warning NU1904: El paquete \"System.Drawing.Common\" 4.7.0 tiene una vulnerabilidad de gravedad cr\u00edtica conocida, https://github.com/advisories/GHSA-rxg9-xrhp-64gj [<research-root>\\.local\\ql3-local-source\\MetadataSmoke.csproj]",
+        "<research-root>\\.local\\lean-source\\Common\\QuantConnect.csproj : warning NU1903: El paquete \"DotNetZip\" 1.16.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-xhg6-9j5j-w4vf [<research-root>\\.local\\ql3-local-source\\MetadataSmoke.csproj]",
+        "<research-root>\\.local\\lean-source\\Common\\QuantConnect.csproj : warning NU1904: El paquete \"System.Drawing.Common\" 4.7.0 tiene una vulnerabilidad de gravedad cr\u00edtica conocida, https://github.com/advisories/GHSA-rxg9-xrhp-64gj [<research-root>\\.local\\ql3-local-source\\MetadataSmoke.csproj]",
+        "<research-root>\\.local\\lean-source\\Api\\QuantConnect.Api.csproj : warning NU1903: El paquete \"DotNetZip\" 1.16.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-xhg6-9j5j-w4vf [<research-root>\\.local\\ql3-local-source\\MetadataSmoke.csproj]",
+        "<research-root>\\.local\\lean-source\\Api\\QuantConnect.Api.csproj : warning NU1904: El paquete \"System.Drawing.Common\" 4.7.0 tiene una vulnerabilidad de gravedad cr\u00edtica conocida, https://github.com/advisories/GHSA-rxg9-xrhp-64gj [<research-root>\\.local\\ql3-local-source\\MetadataSmoke.csproj]"
+      ]
+    },
+    {
+      "label": "build",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 39.962,
+      "raw_log_sha256": "c9b20841ae3fc7704fdcddd3eeb38bdf3efb82a73f54b014a598454d65f1612c",
+      "diagnostics": [
+        "<research-root>\\.local\\ql3-local-source\\MetadataSmoke.csproj : warning NU1903: El paquete \"DotNetZip\" 1.16.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-xhg6-9j5j-w4vf",
+        "<research-root>\\.local\\ql3-local-source\\MetadataSmoke.csproj : warning NU1904: El paquete \"System.Drawing.Common\" 4.7.0 tiene una vulnerabilidad de gravedad cr\u00edtica conocida, https://github.com/advisories/GHSA-rxg9-xrhp-64gj",
+        "<research-root>\\.local\\ql3-local-source\\MetadataSmoke.csproj : warning NU1903: El paquete \"System.Net.Http.WinHttpHandler\" 4.4.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-6xh7-4v2w-36q6",
+        "<research-root>\\.local\\ql3-local-source\\MetadataSmoke.csproj : warning NU1903: El paquete \"System.Private.ServiceModel\" 4.4.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-jc8g-xhw5-6x46",
+        "<research-root>\\.local\\ql3-local-source\\MetadataSmoke.csproj : warning NU1903: El paquete \"System.ServiceModel.Primitives\" 4.4.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-jc8g-xhw5-6x46",
+        "<research-root>\\.local\\ql3-local-source\\LocalSourceHost.csproj : warning NU1903: El paquete \"DotNetZip\" 1.16.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-xhg6-9j5j-w4vf",
+        "<research-root>\\.local\\ql3-local-source\\LocalSourceHost.csproj : warning NU1904: El paquete \"System.Drawing.Common\" 4.7.0 tiene una vulnerabilidad de gravedad cr\u00edtica conocida, https://github.com/advisories/GHSA-rxg9-xrhp-64gj",
+        "<research-root>\\.local\\ql3-local-source\\LocalSourceHost.csproj : warning NU1903: El paquete \"System.Net.Http.WinHttpHandler\" 4.4.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-6xh7-4v2w-36q6",
+        "<research-root>\\.local\\ql3-local-source\\LocalSourceHost.csproj : warning NU1903: El paquete \"System.Private.ServiceModel\" 4.4.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-jc8g-xhw5-6x46",
+        "<research-root>\\.local\\ql3-local-source\\LocalSourceHost.csproj : warning NU1903: El paquete \"System.ServiceModel.Primitives\" 4.4.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-jc8g-xhw5-6x46",
+        "<research-root>\\.local\\lean-source\\Brokerages\\QuantConnect.Brokerages.csproj : warning NU1903: El paquete \"DotNetZip\" 1.16.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-xhg6-9j5j-w4vf",
+        "<research-root>\\.local\\lean-source\\Brokerages\\QuantConnect.Brokerages.csproj : warning NU1904: El paquete \"System.Drawing.Common\" 4.7.0 tiene una vulnerabilidad de gravedad cr\u00edtica conocida, https://github.com/advisories/GHSA-rxg9-xrhp-64gj"
+      ]
+    },
+    {
+      "label": "metadata_smoke",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 0.561,
+      "raw_log_sha256": "03a8f24bdcd87d5ddfd3dc5861be5e729cc6ffe2659208c06e3ce095e1bc1ce0",
+      "diagnostics": []
+    }
+  ],
+  "rows": [
+    {
+      "id": "NATIVE_ENTRYPOINT_COMPILED_NOT_INVOKED",
+      "status": "PASS"
+    },
+    {
+      "id": "TYPE_LOAD_QuantConnect.Lean.Engine.Engine",
+      "status": "PASS"
+    },
+    {
+      "id": "TYPE_LOAD_QuantConnect.Queues.JobQueue",
+      "status": "PASS"
+    },
+    {
+      "id": "TYPE_LOAD_QuantConnect.Messaging.Messaging",
+      "status": "PASS"
+    },
+    {
+      "id": "TYPE_LOAD_QuantConnect.Packets.BacktestNodePacket",
+      "status": "PASS"
+    },
+    {
+      "id": "NO_CLI_ASSEMBLY_REFERENCE",
+      "status": "PASS"
+    }
+  ],
+  "counts": {
+    "PASS": 6,
+    "FAIL": 0,
+    "ERROR": 0
+  },
+  "Launcher_Main_invoked": false,
+  "Engine_Run_invoked": false,
+  "algorithm_or_historical_backtest": false,
+  "CLI_Cloud_account_or_billing_used": false,
+  "market_dataset_read": false,
+  "global_config_changed": false,
+  "pin_or_target_accepted": false,
+  "implementation_locked": true,
+  "target_acceptance": "TARGET_ACCEPTANCE_DEFERRED",
+  "holdout": "INTEGRITY_UNKNOWN"
+}
