@@ -50,3 +50,7 @@
 ## Hallazgo adicional concreto de pin
 
 [Auditoría/remediación LEAN](research/R-009_current_pin_remediation_RC0.md): QL4 securityhelperFAIL dentro del laboratorio propio. Alternativa BCL/fork estudiados; QL5 timeout01 preservado y continuación02=CONTINUATION_INCOMPLETE_OR_FAILED_NO_REMEDIATED_HOST_ACCEPTANCE. Obligación P1 de pin/parches/dependencias/regresión; no sólo test host-specific, no seguridad aceptada ni familia rechazada. Q063 permanece decisión de dirección condicionada, sin modificar esta obligación.
+
+## Checkpoint sustituyente
+
+[Readiness18](18_financial_hardening_checkpoint_RC0.md),2026-10-29, es el estado financiero vigente tras aprobaciónQ063/ADR024. Conservar esta evidencia de wave12 como historia, sin repetir Q063.

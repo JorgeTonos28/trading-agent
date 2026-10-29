@@ -32,3 +32,7 @@ PAPER_V1_VIABLE_FREE=CONDITIONAL; adquisición OSS0 donde aplicable, operación/
 ## Aclaración de alcance incluida en Q-063 — 2026-10-28
 
 El requisito anterior de fijar intensidades/latencias/RPO/RTO/retención antes de seleccionar stack se mantiene para cerrar selección/configuración y suficiencia antes de freeze. [Q-063](D-025_026_PAPER_workflow_storage_decision_RC0.md) solicita ahora sólo dirección de familias/huella condicionada, no declara ese cierre. Esta distinción queda incluida explícitamente en el paquete de gobierno; no se certifica viabilidad operacional por elegir familias ni por H9. El envelope numérico, modelos/fallos/configuración y evidencia de suficiencia siguen P1. No se trasladan a un P2 genérico o sólo al host para aparentar DoR. El roadmap Temporal sigue antecedente candidato, no decisión sustituida automáticamente.
+
+## D2 concreto — 2026-10-29
+
+[EnvelopeD2](R-010_workload_and_durability_envelope_RC1.json) reemplaza UNKNOWN sólo por **targets de ingeniería propuestos**, no suficiencia medida:50jobs/63attempts;3semanales adicionales concentrados en un día para pico53/66,13retries de reserva sin cambio. Lifecycle/PGRC1 fija cortes/permisos/durabilidad. Sin cuota/entitlement/SLA financiero aprobado ni aprobación automática de números; conservar P1 de configuración/suficiencia.

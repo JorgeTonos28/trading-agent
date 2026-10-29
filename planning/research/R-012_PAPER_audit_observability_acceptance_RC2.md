@@ -37,3 +37,7 @@ Severidades operacionales no son prioridades P0–P4 de investigación. Alertas 
 P1 de diseño: mappings/identidades/transacciones, rights/retención, métricas/denominadores, tabla de estados/errores y expected traces, criterios numéricos/actores/restore y revisión. P1 target: motor/pin/drivers/roles/config segura y bootstrap/smoke del mecanismo seleccionado. P2 integrado: órdenes y parciales/recovery, falla entre cada write/dispatch/ack, carga nominal/ráfaga/degradada, power/DB/disk según método seguro y restore de release/DB/blobs con broker más avanzado.
 
 Mantener casos de timeout después de broker fill, duplicate activity, bust/revision tardía, split durante replace, pérdida de recepción, worker con epoch viejo, quota/late, postseal mutation y prohibición de datos a terceros. No todos son host-specific: fixtures/source review ahora; comportamiento real del motor/broker después. No cerrar D-029 por sumar PASS de laboratorios distintos.
+
+## Configuración candidata tras ADR024 — 2026-10-29
+
+[Lifecycle/PGRC1](R-011_bounded_lifecycle_and_PostgreSQL_contract_RC1.md) y [D2](R-010_workload_and_durability_envelope_RC1.json) fijan permisos, settings críticos, tabla de cortes, RPOcrash/disaster y restore a PAUSED, sin garantía real probada. H10 es modelo finito de admisión, no SQL/capacidad. No mover estos pendientes de diseño a P2 genérico ni declarar PostgreSQL duradero por SQLite.

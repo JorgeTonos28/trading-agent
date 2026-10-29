@@ -121,7 +121,7 @@ R-030 debe comprobar en Plus/PC personal: fresh clone, fuente/dependencias, aute
 
 Preparación mantiene registros/invariantes/revisión independiente. F0 de candidatos de investigación no exige Champion previo. Selección/diseño Strategy V1 y freeze de especificación requieren gobierno antes de DoR; promoción operacional después de implementación/validación según gates.
 
-DoR exige cero P0/P1 abiertos, contratos determinables, evidencias, revisión, aprobaciones y aceptación target aplicable. [Checkpoint vigente](../../planning/17_financial_bindings_and_readiness_RC0.md) enumera pendientes; este RC0 no los cierra. B0–B7 después de DoR y master final congelado, respetando milestones/DoD. Ningún plazo reduce rigor ni obliga estrategia ganadora.
+DoR exige cero P0/P1 abiertos, contratos determinables, evidencias, revisión, aprobaciones y aceptación target aplicable. [Checkpoint vigente](../../planning/18_financial_hardening_checkpoint_RC0.md) enumera pendientes; este RC0 no los cierra. B0–B7 después de DoR y master final congelado, respetando milestones/DoD. Ningún plazo reduce rigor ni obliga estrategia ganadora.
 
 ## 16. Fuente de despliegue y gobierno
 
@@ -140,3 +140,15 @@ plan-architect: trabajo candidato. main: baseline estable aprobado. Release/tag 
 ## Q-063 aprobado — 2026-10-29
 
 [ADR-024](../../planning/decisions/ADR-024-bounded-scheduling-and-durable-stores.md) sustituye el estado pendiente de dirección anterior: APScheduler3.x limitado a scheduling/wakeups + PostgreSQL durable, separación C/F y sin SQL agéntico; Temporal reserva. La configuración/suficiencia numérica y durabilidad/seguridad efectiva permanecen P1, no aceptadas por fixtures SQLite. No implementación/target/gasto autorizado.
+
+## Checkpoint financiero vigente — 2026-10-29
+
+[Readiness18](../../planning/18_financial_hardening_checkpoint_RC0.md): ADR024/Q063 dirección aprobada, configuración/suficiencia P1 abiertas. [LifecyclePG](../../planning/research/R-011_bounded_lifecycle_and_PostgreSQL_contract_RC1.md) especifica transacciones/ownership/cortes y backup/restore, [D2](../../planning/research/R-010_workload_and_durability_envelope_RC1.json) propuestas numéricas previas a acceptance. No PostgreSQL/FSYNC/durabilidad/capacidad aceptados por H10/SQLite.
+
+[Q064](../../planning/research/R-007_B3_route_and_policy_decision_RC0.md) pide política de protección: requisito nativo desde primer fill o PF condicionado a perfil posterior. No permiso para estudiar ni excepción operativa; sin B3 no entradas. Ventana expuesta/remainder vivo/cancel-race/riesgo persistente visibles, G1/G2 sin G3. [RiskRC5](../../planning/research/R-027_parameter_and_binding_contract_RC5.md) y R5 especifican fórmulas/rounding/efectos del perfil baseline no aprobado; ninguna estrategia/dato/umbral seleccionado.
+
+Source/compresión tiene causas y reparación candidata contrastadas; pin/modelos/import/seguridad/QP/target no aceptados. Datos4+6cards NOT_ADMITTED, método/selección/integridadM11 y target siguen impidiendo DoR. El master sigue DRAFT_NOT_FROZEN_NOT_READY. No más investigación agéntica fundamental o DD genérico.
+
+### Source LEAN: resultado técnico actual
+
+[RC1remediación](../../planning/research/R-009_current_pin_remediation_RC1.md)/QL8-02: host mínimo source recompilado con ambos paths reparados y retorno legacy,14checks; noEngine.Run/Algorithm. Pin sigue noaceptado por import/callers/deps/licencias/config/QP/target. Preservados QL5timeouts,QL7ERROR/FAIL yQL8/01error del harness. No rechazar familia ni aceptar source original inseguro por simplificar.

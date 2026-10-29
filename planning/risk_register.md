@@ -253,3 +253,14 @@ ADR-023 selecciona familias, no protección/paridad ni operación. Persisten: ac
 ## P1 — helper de extracción del pin, evidencia QL4
 
 FAIL_BOUNDARY_DEMONSTRATED en Compression.Unzip(overwrite=true), sólo sibling de laboratorio. Es path BCL separado del advisory DotNetZip; un fork del paquete no lo repara por sí solo. QL5 prueba una ruta aislada con source/paquetes y conserva ERROR/TIMEOUT01;02=CONTINUATION_INCOMPLETE_OR_FAILED_NO_REMEDIATED_HOST_ACCEPTANCE. No S2/FinancialCore/host comprometido ni pin aceptado. Reparación/exclusión y regresión/licencia/target son gates previos a admisión, sin producción modificada.
+
+## Estado financiero vigente — 2026-10-29
+
+[Checkpoint18](18_financial_hardening_checkpoint_RC0.md): Q063/A DECIDED ADR024; APS3 sólowakeups/PostgreSQL durable, Temporal reserva. Configuración/suficiencia P1 pendientes. LEAN source y reparación de extracción contrastadas con capturas/errores preservados; pin no aceptado. B3 no admitido; Q064 READY_FOR_DECISION de política PF versus cobertura nativa. RiskRC5/lifecyclePG/D2 especificados con pruebas acotadas, no implementación/SQL/Postgres/target. Datos4+6NOT_ADMITTED,12hipótesis/0trials, capital10k/costes5escalas, método noaceptado y holdoutUNKNOWN. R006/010/013 fundamentales no reabiertos.
+
+### Riesgos concretos wave13
+
+- K-057/P1 — Remainder llena mientras el core bloquea nuevas entradas; qty descubierta supera shortfall observado. Control: worst-case reachable fills, reservas hasta cancel confirmado y B3; no permisoPF por registrar riesgo.
+- K-058/P1 — Remediar sólo Unzip deja UnzipToFolder inseguro o cambia shape relativo de callers. Control: QL6finding/QL7limits/QL8contrato, fuente+patches+regresión/import y pin no aceptado.
+- K-059/P1 — Outbox/SQL se confunde con exactly-once externo o commit durable con supervivencia a disco perdido. Control: tabla cortes/RPO separados/PITR/restore/RECOVERY_GAP, PG real pendiente.
+- K-060/P1 — Envelope1event/s crítico consume~24.15GB/año sólo payload; WAL/índices/backup/snapshots crecen más. Control: medir presupuesto/retención/coste/capacidad antes de freeze, no inventar gratuidad operacional.

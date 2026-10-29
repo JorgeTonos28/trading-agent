@@ -217,3 +217,7 @@ El propietario aprueba Alpaca Paper Only + LEAN source como **familias de diseñ
 ## 2026-10-29 — Q-063/A aprobado
 
 [ADR-024](decisions/ADR-024-bounded-scheduling-and-durable-stores.md): dirección condicionada APScheduler3.x acotado + PostgreSQL, Temporal self-hosted reserva. Q063 DECIDED; D025/026 RESEARCHING para especificación/configuración/suficiencia. Scheduler sólo wakeups; ledger durable, permisos efectivos C/F, fallos/recovery/fencing y WAL/fsync/backup/RPO/RTO requieren evidencia. No exactly-once broker por outbox ni aceptación PostgreSQL desde SQLite. Lifecycle finito; escalamiento de complejidad obliga recomparar Temporal. No cuenta/gasto/configuración/implementación. Continúan pin LEAN, B3, bindings/riesgo/datos y readiness, sin esperar proveedores ni target.
+
+## Estado financiero vigente — 2026-10-29
+
+[Checkpoint18](18_financial_hardening_checkpoint_RC0.md): Q063/A DECIDED ADR024; APS3 sólowakeups/PostgreSQL durable, Temporal reserva. Configuración/suficiencia P1 pendientes. LEAN source y reparación de extracción contrastadas con capturas/errores preservados; pin no aceptado. B3 no admitido; Q064 READY_FOR_DECISION de política PF versus cobertura nativa. RiskRC5/lifecyclePG/D2 especificados con pruebas acotadas, no implementación/SQL/Postgres/target. Datos4+6NOT_ADMITTED,12hipótesis/0trials, capital10k/costes5escalas, método noaceptado y holdoutUNKNOWN. R006/010/013 fundamentales no reabiertos.

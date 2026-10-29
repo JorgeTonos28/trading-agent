@@ -1,0 +1,132 @@
+{
+  "recorded_on": "2026-10-29",
+  "scope": "INTERPRETATION_OF_RECORDED_CHECKS_NOT_COMPOSITE_ACCEPTANCE_SCORE",
+  "captures": [
+    {
+      "probe": "QL6",
+      "capture": "probes/r009-remediation-diagnostics/result-01.json",
+      "controller": "run_probe.py",
+      "counts": {
+        "PASS": 8,
+        "FAIL": 0,
+        "ERROR": 0
+      },
+      "step_statuses": [
+        "PASS",
+        "PASS",
+        "PASS"
+      ],
+      "all_scopes_and_failures_preserved": true
+    },
+    {
+      "probe": "QL7-01",
+      "capture": "probes/r009-extraction-repair/result-01.json",
+      "controller": "run_probe.py",
+      "counts": {
+        "PASS": 0,
+        "FAIL": 0,
+        "ERROR": 0
+      },
+      "step_statuses": [
+        "ERROR"
+      ],
+      "all_scopes_and_failures_preserved": true
+    },
+    {
+      "probe": "QL7-02",
+      "capture": "probes/r009-extraction-repair/result-02.json",
+      "controller": "continue_probe.py",
+      "counts": {
+        "PASS": 8,
+        "FAIL": 1,
+        "ERROR": 0
+      },
+      "step_statuses": [
+        "PASS",
+        "PASS",
+        "PASS"
+      ],
+      "all_scopes_and_failures_preserved": true
+    },
+    {
+      "probe": "QL7-03",
+      "capture": "probes/r009-extraction-repair/result-03.json",
+      "controller": "normalized_fixture_probe.py",
+      "counts": {
+        "PASS": 9,
+        "FAIL": 0,
+        "ERROR": 0
+      },
+      "step_statuses": [
+        "PASS",
+        "PASS",
+        "PASS"
+      ],
+      "all_scopes_and_failures_preserved": true
+    },
+    {
+      "probe": "QL8-01",
+      "capture": "probes/r009-contract-preserving-host/result-01.json",
+      "controller": "run_probe.py",
+      "counts": {
+        "PASS": 0,
+        "FAIL": 0,
+        "ERROR": 0
+      },
+      "step_statuses": [
+        "PASS",
+        "ERROR"
+      ],
+      "all_scopes_and_failures_preserved": true
+    },
+    {
+      "probe": "QL8-02",
+      "capture": "probes/r009-contract-preserving-host/result-02.json",
+      "controller": "continue_probe.py",
+      "counts": {
+        "PASS": 14,
+        "FAIL": 0,
+        "ERROR": 0
+      },
+      "step_statuses": [
+        "PASS",
+        "PASS"
+      ],
+      "all_scopes_and_failures_preserved": true
+    },
+    {
+      "probe": "H10",
+      "capture": "probes/r011-admission-cuts/result-01.json",
+      "controller": "probe.py",
+      "counts": {
+        "PASS": 4,
+        "FAIL": 0,
+        "ERROR": 0
+      },
+      "step_statuses": [],
+      "all_scopes_and_failures_preserved": true
+    },
+    {
+      "probe": "R5",
+      "capture": "probes/r027-profile-boundaries/result-01.json",
+      "controller": "probe.py",
+      "counts": {
+        "PASS": 8,
+        "FAIL": 0,
+        "ERROR": 0
+      },
+      "step_statuses": [],
+      "all_scopes_and_failures_preserved": true
+    }
+  ],
+  "QL6_observation_checks_do_not_pass_security": true,
+  "QL7_02_FAIL_is_preserved_lexical_fixture_issue_contrasted_separately": true,
+  "QL8_01_ERROR_is_preserved_omitted_CSharp_harness_not_patch_incompatibility": true,
+  "H10_traces": 840,
+  "H10_PostgreSQL_or_real_concurrency_tested": false,
+  "R5_all_five_capitals_synthetic": true,
+  "pin_or_PostgreSQL_or_B3_or_risk_parameters_accepted": false,
+  "implementation_locked": true,
+  "target_acceptance_status": "TARGET_ACCEPTANCE_DEFERRED",
+  "holdout": "INTEGRITY_UNKNOWN"
+}

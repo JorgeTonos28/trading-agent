@@ -32,3 +32,7 @@ Contrato de trace comparado: inputs/hash/cutoff y transform; señal/target; cand
 ## Estado de admisión y trabajo pendiente
 
 No CONFIG_ADMITTED_FOR_RESEARCH ni F0. Las reglas indicadoras están especificadas; todavía faltan protección B3 y orden/cash/inputs/riesgo/método completos. No se ocultan como sólo R-030: el diseño de mapping se completa en Preparation, la evidencia de cuenta/host en target y la paridad integrada después de implementar. Form4 continúa investigación separada; no obliga All-in-One ni se agrega a estos dos candidatos.
+
+## Binding posterior — 2026-10-29
+
+[RiskRC5](R-027_parameter_and_binding_contract_RC5.md), [Q064](R-007_B3_route_and_policy_decision_RC0.md) y [lifecyclePG](R-011_bounded_lifecycle_and_PostgreSQL_contract_RC1.md) concretan redondeo/raw/ATR/as-of, cantidades alcanzables durante protección y dispatch durable. OP-L1/PF y números siguen propuestas. JSON/hash de las12hipótesis no se modifican para aparentar configuración admitida. No órdenes directas de LEAN/C/LLM, no bar high previo al seal ni cap market ficticio.

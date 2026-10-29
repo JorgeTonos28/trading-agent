@@ -246,11 +246,11 @@
   },
   "latest_source_admission_research": "planning/research/R-008_six_ETF_admission_plan_RC2.md",
   "source_acceptance_cases_status": "CA_S1_SYNTHETIC_COMPONENT_ONLY_NO_VENDOR_ACCEPTANCE",
-  "financial_readiness": "planning/17_financial_bindings_and_readiness_RC0.md",
-  "risk_formula_contract": "planning/research/R-027_risk_inputs_and_caps_RC4.md",
+  "financial_readiness": "planning/18_financial_hardening_checkpoint_RC0.md",
+  "risk_formula_contract": "planning/research/R-027_parameter_and_binding_contract_RC5.md",
   "candidate_rule_bindings": "planning/research/R-020_PRICE_MATR_Alpaca_LEAN_binding_RC3.md",
   "engine_recommendation": "planning/research/R-009_local_source_execution_RC3.md",
-  "next_financial_governance": "Q063_CONDITIONAL_WORKFLOW_STORAGE_DIRECTION",
+  "next_financial_governance": "Q064_POST_FILL_PROTECTION_POLICY_DIRECTION",
   "financial_statistical_method_accepted": false,
   "financial_datasets_admitted": 0,
   "financial_strategy_trials": 0,
@@ -270,10 +270,10 @@
   "licensed_raw_external_AI": "DENY_UNCONFIRMED",
   "licensed_derived_repackaged_reconstructible_external_AI": "DENY_UNCONFIRMED_BY_FIELD_USE_DESTINATION",
   "audit_observability_contract": "planning/research/R-012_PAPER_audit_observability_acceptance_RC2.md",
-  "transverse_stack_selected": false,
+  "transverse_stack_selected": true,
   "broker_B3_accepted": false,
   "financial_configuration_complete": false,
-  "lean_pin_security_evidence": "planning/research/R-009_current_pin_remediation_RC0.md",
+  "lean_pin_security_evidence": "planning/research/R-009_current_pin_remediation_RC1.md",
   "lean_native_archive_helper_security": "FAIL_REQUIRES_REMEDIATION_BEFORE_PIN",
   "workflow_storage_design_direction": {
     "question": "Q063",
@@ -285,5 +285,13 @@
     "configuration_sufficiency_accepted": false,
     "postgres_durability_accepted": false,
     "installation_authorized": false
-  }
+  },
+  "transverse_stack_selection_scope": "CONDITIONAL_DESIGN_DIRECTION_ADR024_NOT_CONFIGURATION_OR_SUFFICIENCY",
+  "workflow_storage_contract": "planning/research/R-011_bounded_lifecycle_and_PostgreSQL_contract_RC1.md",
+  "numerical_workload_envelope": "planning/research/R-010_workload_and_durability_envelope_RC1.json",
+  "numerical_envelope_accepted": false,
+  "postgres_accepted": false,
+  "protection_policy_proposal": "planning/research/R-007_B3_route_and_policy_decision_RC0.md",
+  "lean_repair_candidate_manifest": "planning/research/LEAN_source_repair_candidate_manifest_RC0.json",
+  "lean_source_repair_feasibility": "DEMONSTRATED_MINIMAL_HOST_TWO_PATHS_LEGACY_RETURN_NOT_PIN_ACCEPTANCE"
 }

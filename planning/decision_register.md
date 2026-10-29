@@ -1,6 +1,6 @@
 # Decision Register — inicialización
 
-**Estado vigente 2026-10-29:** Q063/A DECIDED como dirección condicionada ADR024. D025/026 siguen RESEARCHING para configuración/suficiencia; no solicitar otra aprobación de familias. Lock/target/holdout intactos.
+**Estado vigente 2026-10-29:** [checkpoint18](18_financial_hardening_checkpoint_RC0.md). Q063/A DECIDED dirección ADR024, D025/026RESEARCHING configuración/suficiencia; Q064 READY_FOR_DECISION política protectora. Lock/target/holdout intactos.
 
 **Checkpoint anterior 2026-10-28 (Q063 sustituido por ADR024):** [bindings/readiness17](17_financial_bindings_and_readiness_RC0.md). Q-062 DECIDED ADR-023; Q-063 propuesta de dirección condicionada, no stack operacional aceptado. Datos NOT_ADMITTED, cero trials, lock/target/holdout preservados. Las notas anteriores son historia fechada.
 
@@ -54,11 +54,11 @@ Fecha: 2026-10-01. Fuente base: [hoja de ruta v0.2](../docs/master/hoja_de_ruta_
 | D-028 | Observabilidad, alertas, backups y deployment PAPER | P1 | RESEARCHING | R012RC2 separa audit durable/telemetría, actores/runbooks/RECOVERY_GAP; SLO/RPO/RTO/retención numéricos y restore motor final pendientes, sin main/tag automático |
 | D-029 | Acceptance/evals trazables por contrato | P1 | RESEARCHING | Matrices broker/datos/engine/risk/ledger con fixtures y scopes; suite integrada/modelos/pin/criterios por completar. Ni suma de PASS ni marcadores declaran aceptación |
 | D-034 | Esquema detallado, aislamiento y evaluación PIT de `ShadowPortfolioProposal` | P1 | RESEARCHING | ADR-001 fija obligación funcional; contratos RC0 común/shadow especifican caller confiable, snapshots ciegos pareados, target quantity y lineage, estados y comparación local vs trayectoria contrafactual. R-026 conserva gates de aislamiento real/engine/metrics; probes sintéticos no cierran evaluación |
-| D-035 | Controles de riesgo compuestos verificables | P1 | RESEARCHING | R2/RC3+RC4; D035-T1 semántica y D035-T2 precondiciones de caps incrementales especificadas;900 celdas ficticias no calibración/solver real. Inputs/modelos/txns/parámetros D031/mapping pendientes |
+| D-035 | Controles de riesgo compuestos verificables | P1 | RESEARCHING | R2/RC3+RC4+RC5; D035-T1 semántica y D035-T2 precondiciones de caps incrementales especificadas;900 celdas ficticias no calibración/solver real. Inputs/modelos/txns/parámetros D031/mapping pendientes |
 | D-037 | Bootstrap, portability y agent packages | P1 | DECIDED | Ruta/contratos de diseño DESIGN_DECIDED ADR-009/014; fresh clone y aceptación Plus/PC personal R-030 diferidos antes de implementación. Sin dependencia de chat, cuentas/sesiones por rol no impuestas. |
 | D-036 | Política económica por fase y adquisición de Skills/metodologías | P0 | DECIDED | Propietario, 2026-10-02, ADR-008: calidad/fiabilidad/capacidad al menor coste razonable; PAPER zero/low incremental cost first, LIVE economic value/unit economics; Skills/templates gratuitos/incluidos/propios; pagos investigables, aprobación explícita antes de contratar o gastar |
 | D-033 | Proveedores Smart Money/alternative data y clasificación Build vs. Reuse por dataset | P1 | RESEARCHING | R-025; scorecards PIT, API, cobertura, calidad, latencia, licencia y coste; aprobación humana si gasto material |
-| D-030 | Órdenes/protección y ejecución PAPER concreta | P1 | RESEARCHING | RC5: ninguna ruta B3 admitida. Partial/OTO/PATCH/cancel/restore/cash explícitos; OP-L1 propuesta sin umbrales ni nueva tolerancia de desprotección. Integración/fill parity P2 después de diseño |
+| D-030 | Órdenes/protección y ejecución PAPER concreta | P1 | RESEARCHING | Q064 READY_FOR_DECISION de política PF versus cobertura nativa; ninguna ruta B3 admitida. Partial/OTO/PATCH/cancel/restore/cash explícitos; OP-L1 propuesta sin umbrales ni nueva tolerancia de desprotección. Integración/fill parity P2 después de diseño |
 | D-031 | Perfil numérico inicial de riesgo y kill switches | P1 | OPEN | Límites/modelos/freshness/escenarios/acciones de diseño antes de DoR con aprobación humana; calibración/ensayos integrados operacionales P2. Sin umbrales aprobados |
 | D-032 | Ventana y reglas de promoción desde replay a paper autónomo | P2 | OPEN | Métricas, incidentes y procedimiento explícito en DoR |
 | D-038 | Entornos Team/PAPER y Plus PRE-LIVE de ADR-010 | P0 | SUPERSEDED | Supersession parcial ADR-013/D-043: Team/institucional research; Plus/personal PAPER; LIVE UNKNOWN. Deployment Source Policy permanece DECIDED y vigente. Evidencia histórica preservada. |
@@ -219,3 +219,7 @@ Familia ADR023 sigue DECIDED. QL4 demuestra fallo de helper overwrite; requisito
 ## 2026-10-29 — Q-063/A aprobado
 
 [ADR-024](decisions/ADR-024-bounded-scheduling-and-durable-stores.md): dirección condicionada APScheduler3.x acotado + PostgreSQL, Temporal self-hosted reserva. Q063 DECIDED; D025/026 RESEARCHING para especificación/configuración/suficiencia. Scheduler sólo wakeups; ledger durable, permisos efectivos C/F, fallos/recovery/fencing y WAL/fsync/backup/RPO/RTO requieren evidencia. No exactly-once broker por outbox ni aceptación PostgreSQL desde SQLite. Lifecycle finito; escalamiento de complejidad obliga recomparar Temporal. No cuenta/gasto/configuración/implementación. Continúan pin LEAN, B3, bindings/riesgo/datos y readiness, sin esperar proveedores ni target.
+
+## Estado financiero vigente — 2026-10-29
+
+[Checkpoint18](18_financial_hardening_checkpoint_RC0.md): Q063/A DECIDED ADR024; APS3 sólowakeups/PostgreSQL durable, Temporal reserva. Configuración/suficiencia P1 pendientes. LEAN source y reparación de extracción contrastadas con capturas/errores preservados; pin no aceptado. B3 no admitido; Q064 READY_FOR_DECISION de política PF versus cobertura nativa. RiskRC5/lifecyclePG/D2 especificados con pruebas acotadas, no implementación/SQL/Postgres/target. Datos4+6NOT_ADMITTED,12hipótesis/0trials, capital10k/costes5escalas, método noaceptado y holdoutUNKNOWN. R006/010/013 fundamentales no reabiertos.

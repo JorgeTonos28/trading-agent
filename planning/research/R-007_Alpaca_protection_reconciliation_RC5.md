@@ -35,3 +35,7 @@ Dividendo ausente del simulador paper nunca crea cash operativo desde el modelo.
 B1 endpoint/cuenta exclusivamente PAPER y no LIVE; B2 feeds/quotes/clocks/cash/entitlements; B3 secuencias completas parciales/protección/replace/cancel/expiry/actions; B4 costes/dividendos/liquidez y divergencias; B5 stream/disconnect/restart/recovery/carga. Probar positivos y negativos, ninguna corrección manual oculta. Source/config/versiones y trace esperado antes de cada caso; precio stop no garantiza fill.
 
 [B3-S1](probes/r007-alpaca-contract-traces/README.md):21 expectativas PASS de fixtures;19 calculadas y2 marcadores declarativos identificados en la evaluación de scope. No son21 pruebas de broker, ni full reconciliation o B3 PASS. Los contraejemplos precisan el contrato; no autorizan alcanzarlos en operación.
+
+## Siguiente cierre de política — 2026-10-29
+
+[Q064](R-007_B3_route_and_policy_decision_RC0.md) distingue exigencia nativa desde primer fill de PF condicionado. Ni PF ni PROTECTION_PENDING están admitidos hoy. Presupuesto máximo alcanzable incluye todo remainder vivo; G1 no lo detiene. Sin B3 no entradas; no nueva emergencia/G3 por fail-closed.

@@ -790,7 +790,7 @@ financial_preparation_wave08:
   incremental_spend: 0
 
 profile_resolution_policy: APPROVAL_BLOCKS_AND_LATEST_DATED_WAVE_SUPERSEDE_HISTORICAL_SNAPSHOTS
-active_financial_checkpoint: financial_preparation_wave12
+active_financial_checkpoint: financial_preparation_wave13
 
 vendor_communication_2026_10_23:
   preparation_approved: true
@@ -1020,3 +1020,45 @@ workflow_storage_owner_approval_2026_10_29:
   implementation_locked: true
   confirmation_integrity: INTEGRITY_UNKNOWN
   spending_or_configuration_authorized: false
+
+financial_preparation_wave13:
+  updated_on: 2026-10-29
+  readiness: planning/18_financial_hardening_checkpoint_RC0.md
+  Q063: DECIDED_ADR024_CONDITIONAL_DESIGN_DIRECTION
+  Q064: READY_FOR_DECISION_PROTECTION_POLICY_NOT_RESEARCH_PERMISSION
+  protection_policy_proposal: planning/research/R-007_B3_route_and_policy_decision_RC0.md
+  B3: NOT_ADMITTED_NO_NEW_ENTRIES
+  workflow_contract: planning/research/R-011_bounded_lifecycle_and_PostgreSQL_contract_RC1.md
+  numerical_engineering_envelope: planning/research/R-010_workload_and_durability_envelope_RC1.json
+  numerical_envelope_status: PROPOSED_NOT_SUFFICIENCY_OR_OPERATIONAL_SLA
+  postgres_accepted: false
+  D025_D026: RESEARCHING_CONFIGURATION_SUFFICIENCY_ACCEPTANCE
+  risk_bindings: planning/research/R-027_parameter_and_binding_contract_RC5.md
+  D031_numeric_profile_approved: false
+  D035: RESEARCHING_MODELS_MAPPING_SOLVER_TRANSACTION_ACCEPTANCE
+  lean_pin_accepted: false
+  declared_strategy_hypotheses: 12
+  strategy_trials: 0
+  datasets_admitted: 0
+  new_vendor_response_supplied_this_execution: false
+  mailbox_accessed: false
+  nominal_reference_USD: 10000
+  mandatory_cost_capitals_USD: [2000, 5000, 10000, 25000, 50000]
+  implementation_locked: true
+  target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED
+  confirmation_integrity: INTEGRITY_UNKNOWN
+  actual_incremental_spend: 0
+
+lean_source_repair_checkpoint_2026_10_29:
+  dossier: planning/research/R-009_current_pin_remediation_RC1.md
+  manifest: planning/research/LEAN_source_repair_candidate_manifest_RC0.json
+  QL6_build: PASS_MINIMAL_HOST_133_473_SECONDS
+  QL6_second_helper_security: FAIL_BOUNDARY_DEMONSTRATED
+  QL7_01: RESTORE_ERROR_HARNESS_PRESERVED
+  QL7_02: EIGHT_PASS_ONE_FIXTURE_FAIL_PRESERVED
+  QL7_03: NINE_COMPONENT_CHECKS_PASS_NORMALIZED_FIXTURE_NOT_FULL_PIN
+  QL8_01: BUILD_ERROR_OMITTED_CSHARP_NAMESPACE_FILES_PRESERVED
+  QL8_02: MINIMAL_SOURCE_HOST_BUILD_PASS_14_CHECKS_BOTH_REPAIRS_LEGACY_RETURN
+  repair_feasibility: DEMONSTRATED_SCOPE_ONLY
+  pin_security_parity_accepted: false
+  strategy_or_Engine_Run_invoked: false

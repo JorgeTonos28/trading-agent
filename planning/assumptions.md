@@ -210,3 +210,13 @@ El propietario aprueba Alpaca Paper Only + LEAN source como **familias de diseñ
 ## Supuestos explícitos wave12
 
 APScheduler+PostgreSQL se propone, no demuestra menor coste total/ingeniería ni suficiencia; workload numérico y PostgreSQL real pendientes. QL3 carga metadata, no ejecuta engine. H9 usa SQLite DELETE3.50.4 y no prueba WAL/FSYNC/power-loss o races de receipt. Rawprice y volume EODHD tienen ajustes distintos; reconstrucción requiere factores completos y QA. Derecho de almacenar reportado no concede derivación/export a IA. OP-L1 es propuesta de binding, no política de Strategy o Risk aprobada. Ningún supuesto concede entrada sin B3.
+
+## Estado financiero vigente — 2026-10-29
+
+[Checkpoint18](18_financial_hardening_checkpoint_RC0.md): Q063/A DECIDED ADR024; APS3 sólowakeups/PostgreSQL durable, Temporal reserva. Configuración/suficiencia P1 pendientes. LEAN source y reparación de extracción contrastadas con capturas/errores preservados; pin no aceptado. B3 no admitido; Q064 READY_FOR_DECISION de política PF versus cobertura nativa. RiskRC5/lifecyclePG/D2 especificados con pruebas acotadas, no implementación/SQL/Postgres/target. Datos4+6NOT_ADMITTED,12hipótesis/0trials, capital10k/costes5escalas, método noaceptado y holdoutUNKNOWN. R006/010/013 fundamentales no reabiertos.
+
+### Supuestos técnicos wave13
+
+- A-042/P1 — UNVERIFIED: envelopeD2 representa suficiencia de PAPER. Números son targets de ingeniería, no medición ni cuota; validar consumo/bytes/latencia/target antes de aceptación.
+- A-043/P1 — PARTIAL: BCL+fork permiten remediar extracción del pin; QL6/7/8 tienen scopes distintos. Ver capturas, compatibilidad de callers/paths y safety de import antes de admisión.
+- A-044/P1 — UNVERIFIED: un perfil PF puede ser económica y operativamente admisible. Dos efectos externos dejan ventana; presupuesto incluye remainder vivo, watchdog no garantiza cobertura y pausa no elimina pérdida.
