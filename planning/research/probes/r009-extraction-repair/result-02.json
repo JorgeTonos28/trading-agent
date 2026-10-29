@@ -1,0 +1,91 @@
+{
+  "captured_utc": "2026-10-29T12:48:11.725088+00:00",
+  "controller_sha256": "b87ef51699f0652fc69c9c52389c33d1c09f77f536a80ef2a127d005cb736b7b",
+  "first_capture_sha256": "146d3b69b7627881c4e155c0980fac6852c2848e25ce56d413e07cb4a873476f",
+  "scope": "SAME_COMPONENT_FIXTURE_ONLY_APPDATA_LOCALAPPDATA_ADDED_TO_SANITIZED_ENV",
+  "same_code_verified": true,
+  "steps": [
+    {
+      "step": "restore",
+      "status": "PASS",
+      "exit_code": 0,
+      "reason": null,
+      "seconds": 3.349,
+      "log_sha256": "32b1c6fcc8966d1f4b6f8c1f59544c5f780e2bd79ea2148649d9e590ac99b3f0",
+      "diagnostics": []
+    },
+    {
+      "step": "build",
+      "status": "PASS",
+      "exit_code": 0,
+      "reason": null,
+      "seconds": 11.866,
+      "log_sha256": "6bdc44d0b7335f976986d2c403a2494f658726a4d9018e73134be2a9aa615807",
+      "diagnostics": []
+    },
+    {
+      "step": "run",
+      "status": "PASS",
+      "exit_code": 0,
+      "reason": null,
+      "seconds": 0.783,
+      "log_sha256": "596a7f89f1b80b358e6521ac8ba9df466929c79fa9fcacdcf4334d514673ceb1",
+      "diagnostics": [
+        "20261029 12:48:11.538 ERROR:: Compression.Unzip():  System.IO.IOException: Extracting Zip entry would have resulted in a file outside the specified destination directory.",
+        "20261029 12:48:11.554 ERROR:: Compression.UnzipToFolder(): Failure: outFolder: <research-root>\\.local\\ql7-extraction-repair\\smoke\\lab\\bytes\\extract - files: ",
+        "20261029 12:48:11.566 ERROR:: Compression.UnzipToFolder(): Failure: outFolder: <research-root>\\.local\\ql7-extraction-repair\\smoke\\lab\\file\\extract - files: "
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "id": "REPAIR_REJECTS_TRAVERSAL_unzip",
+      "status": "PASS"
+    },
+    {
+      "id": "REPAIR_REJECTS_TRAVERSAL_bytes",
+      "status": "PASS"
+    },
+    {
+      "id": "REPAIR_REJECTS_TRAVERSAL_file",
+      "status": "PASS"
+    },
+    {
+      "id": "NESTED_CONTENT",
+      "status": "PASS"
+    },
+    {
+      "id": "RETURNED_ABSOLUTE_FILE_PATH",
+      "status": "FAIL"
+    },
+    {
+      "id": "BYTE_OVERWRITE_PRESERVED",
+      "status": "PASS"
+    },
+    {
+      "id": "FILE_OVERLOAD_CONTENT_AND_LIST",
+      "status": "PASS"
+    },
+    {
+      "id": "UNZIP_SAFE",
+      "status": "PASS"
+    },
+    {
+      "id": "UNZIP_OVERWRITE",
+      "status": "PASS"
+    }
+  ],
+  "counts": {
+    "PASS": 8,
+    "FAIL": 1,
+    "ERROR": 0
+  },
+  "artifact_sha256": {
+    "component\\bin\\Release\\net10.0\\LeanCompressionRepairProbe.dll": "2c4a763b80181064e98c148d5c76796002b7cfa05b8b809749776dd408680afe",
+    "smoke\\bin\\Release\\net10.0\\Smoke.dll": "ce2f9f76d5c099cec5d790e7eaafce0ecbd190357e49775caac4d7a5ebe61065"
+  },
+  "full_host_or_pin_accepted": false,
+  "implementation_locked": true,
+  "target_acceptance_status": "TARGET_ACCEPTANCE_DEFERRED",
+  "holdout": "INTEGRITY_UNKNOWN"
+}

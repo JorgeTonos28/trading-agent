@@ -1,0 +1,13 @@
+# QL7 — reparación de dos paths ZIP, componente aislado
+
+Protocolo previo 2026-10-29. Reutilizar fuente pública QL5 con su primer parche y fork; copiar `Compression.cs` a árbol nuevo y reemplazar únicamente el bucle de `UnzipToFolder` por `ZipArchive.ExtractToDirectory` BCL. Copiar ZipStreamWriter sin cambios. Registrar diff/hash; no modificar QL5, QL6 o checkout upstream. Compilar un componente mínimo con Logging DLL ya construido, SharpZipLib1.3.3 y ProDotNetZip1.19.0 del cache. No Engine/Main/Algorithm/red/API ni instalación global.
+
+Casos prerregistrados: ambas rutas contra `../sibling-canary.txt` propio deben rechazarlo; safe/nested y overwrite conservan contenido/paths esperados, overload de archivo conserva shape. Native QL5 byte[] de segundo path se contrasta antes mediante DLL compilado para comprobar el fallo si QL6 no alcanza smoke. Todos los canaries son siblings internos al nuevo árbol `.local/ql7-extraction-repair`; ningún path absoluto/UNC/device ni datos ajenos. Restore/build45s cada uno, run20s, un intento. Los checks de observación de fallo se distinguen de los de reparación.
+
+No prueba enlaces/reparse/ZIP-bomb/encryption/encoding adversarial, import completo, todos los callers o pin/target. BCL no convierte extracción en transacción: ante fallo parcial, la carpeta staging entera queda no admitida. Prohibir extract en destino existente o compartido en el contrato de import; links y límites requieren gates adicionales. Cambios de source aquí son experimentales, no implementación del Trading OS.
+
+## Resultado01 y continuación02 prerregistrada
+
+01 falló restore con `Value cannot be null (path1)`, sin build ni casos. El controlador omitió APPDATA/LOCALAPPDATA del entorno mínimo, a diferencia de QL6. Abrir un único intento02 añadiendo exclusivamente esos paths de perfil de laboratorio; mismos código/proyectos/Logging DLL/paquetes/expectativas y budgets45/45/20. Verificar hashes antes. Es corrección del harness, no prueba de incompatibilidad ni autorización global; la causa exacta se considera hipótesis hasta contraste y el resultado01 se preserva.
+
+02: restore/build/run completados;8PASS/1FAIL. Tres negativos de traversal PASS. El check RETURNED_ABSOLUTE_FILE_PATH compara salida normalizada contra expected con slash mixto: posible defecto de fixture, no se elimina. Un intento03 con código de componente idéntico y nuevo árbol normalizará **ambos** paths y exigirá además IsPathFullyQualified, registrando strings/control hash. No cambiar extracción ni otras expectativas. Resultado02 y código originales quedan intactos. Este contraste resuelve sólo esa hipótesis, no acepta pin completo.

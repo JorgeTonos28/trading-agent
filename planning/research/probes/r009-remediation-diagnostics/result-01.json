@@ -1,0 +1,123 @@
+{
+  "captured_utc": "2026-10-29T12:46:19.915839+00:00",
+  "scope": "ISOLATED_SOURCE_HOST_REPACKAGING_AND_EXTRACTION_SCOPE_DIAGNOSTIC_ONLY",
+  "controller_sha256": "d76b0ab53a36f2fc8fdbff4b0e70f827e2bf1ef9d0f10502086ada84f027ec9a",
+  "source_pin": "f3d841e60dfd010ee5fc293ea893e56952484108",
+  "prior_result_sha256": "a954b5ee21070388dcbd97e77622e1630630c5087d94dbb9ef4362e9a208ab0c",
+  "prior_transformation_hashes_verified": true,
+  "source_transformations": [
+    {
+      "path": "Compression/QuantConnect.Compression.csproj",
+      "before_sha256": "594ce847872da5e82b7915a3692022059f80cfb4ccab1a3f1ac870b298e39f8d",
+      "after_sha256": "8db219bfa33f877674442f436734a3243ff19cbab1f3cb4b8ecc2850b44b32ed",
+      "diff": "--- a/Compression/QuantConnect.Compression.csproj\n+++ b/Compression/QuantConnect.Compression.csproj\n@@ -29,7 +29,7 @@\n     <Message Text=\"SelectedOptimization $(SelectedOptimization)\" Importance=\"high\" />\n   </Target>\n   <ItemGroup>\n-    <PackageReference Include=\"DotNetZip\" Version=\"1.16.0\" />\n+    <PackageReference Include=\"ProDotNetZip\" Version=\"1.19.0\" />\n     <PackageReference Include=\"SharpZipLib\" Version=\"1.3.3\" />\n   </ItemGroup>\n   <ItemGroup>\n"
+    },
+    {
+      "path": "Compression/Compression.cs",
+      "before_sha256": "ecf75498c113194765afc85b9d1d54cc4541c49f22729c2e52517f9cb7d29d1a",
+      "after_sha256": "345511f70f2a840556c9144725d39c61b04af04d1ffada1b275aef14606759c1",
+      "diff": "--- a/Compression/Compression.cs\n+++ b/Compression/Compression.cs\n@@ -542,29 +542,7 @@\n \n             try\n             {\n-                if (!overwrite)\n-                {\n-                    System.IO.Compression.ZipFile.ExtractToDirectory(zip, directory);\n-                }\n-                else\n-                {\n-                    using (var archive = new ZipArchive(File.OpenRead(zip)))\n-                    {\n-                        foreach (var file in archive.Entries)\n-                        {\n-                            // skip directories\n-                            if (string.IsNullOrEmpty(file.Name)) continue;\n-                            var filepath = Path.Combine(directory, file.FullName);\n-                            if (IsLinux) filepath = filepath.Replace(@\"\\\", \"/\");\n-                            var outputFile = new FileInfo(filepath);\n-                            if (!outputFile.Directory.Exists)\n-                            {\n-                                outputFile.Directory.Create();\n-                            }\n-                            file.ExtractToFile(outputFile.FullName, true);\n-                        }\n-                    }\n-                }\n+                System.IO.Compression.ZipFile.ExtractToDirectory(zip, directory, overwrite);\n \n                 return true;\n             }\n"
+    },
+    {
+      "path": "Engine/QuantConnect.Lean.Engine.csproj",
+      "before_sha256": "21eab24be8c7cd9a7eb62d2a4ebf47d45412be5874311c2da1b00a99e52b6e07",
+      "after_sha256": "60d09883df20eba7b087b06208fd7defd80eab3022d123474c45837a7234cc8f",
+      "diff": "--- a/Engine/QuantConnect.Lean.Engine.csproj\n+++ b/Engine/QuantConnect.Lean.Engine.csproj\n@@ -51,7 +51,6 @@\n     <Compile Include=\"..\\Common\\Properties\\SharedAssemblyInfo.cs\" Link=\"Properties\\SharedAssemblyInfo.cs\" />\n   </ItemGroup>\n   <ItemGroup>\n-    <ProjectReference Include=\"..\\Algorithm.CSharp\\QuantConnect.Algorithm.CSharp.csproj\" />\n     <ProjectReference Include=\"..\\AlgorithmFactory\\QuantConnect.AlgorithmFactory.csproj\" />\n     <ProjectReference Include=\"..\\Algorithm\\QuantConnect.Algorithm.csproj\" />\n     <ProjectReference Include=\"..\\Api\\QuantConnect.Api.csproj\" />\n"
+    }
+  ],
+  "source_modified_by_this_attempt": false,
+  "packaging_changed_from_QL5": true,
+  "timeout_cause_proven": false,
+  "steps": [
+    {
+      "label": "restore",
+      "status": "PASS",
+      "exit_code": 0,
+      "reason": null,
+      "seconds": 7.573,
+      "log_sha256": "0e5fbb0724624490a780b64fc8f63787ab15c8c2d355b590619b376b0a6c9ffa",
+      "diagnostics": []
+    },
+    {
+      "label": "build",
+      "status": "PASS",
+      "exit_code": 0,
+      "reason": null,
+      "seconds": 133.473,
+      "log_sha256": "7a248d4c477fdc532b3ffee871674ac7d2c5bad3b4649f38259f9f674455c394",
+      "diagnostics": [
+        "<research-root>\\.local\\ql5-pin-remediation\\source\\Api\\Api.cs(666,80): warning CS1658: La declaraci\u00f3n de par\u00e1metros de tipo debe ser un identificador, no un tipo. Vea tambi\u00e9n el error CS0081. [<research-root>\\.local\\ql5-pin-remediation\\source\\Api\\QuantConnect.Api.csproj]",
+        "<research-root>\\.local\\ql5-pin-remediation\\source\\Api\\Api.cs(666,88): warning CS1658: La declaraci\u00f3n de par\u00e1metros de tipo debe ser un identificador, no un tipo. Vea tambi\u00e9n el error CS0081. [<research-root>\\.local\\ql5-pin-remediation\\source\\Api\\QuantConnect.Api.csproj]",
+        "C:\\Program Files\\dotnet\\sdk\\10.0.302\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.targets(308,5): warning NETSDK1206: Se encontraron identificadores en tiempo de ejecuci\u00f3n espec\u00edficos de la versi\u00f3n o espec\u00edficos de la distribuci\u00f3n: win7. Bibliotecas afectadas: System.Private.ServiceModel. En .NET 8.0 y versiones posteriores, los recursos para identificadores en tiempo de ejecuci\u00f3n espec\u00edficos de la versi\u00f3n y de distribuci\u00f3n no se encuentran de forma predeterminada. Consulte https://aka.ms/dotnet/rid-usage para obtener m\u00e1s informaci\u00f3n. [<research-root>\\.local\\ql5-pin-remediation\\source\\Queu",
+        "C:\\Program Files\\dotnet\\sdk\\10.0.302\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.targets(308,5): warning NETSDK1206: Se encontraron identificadores en tiempo de ejecuci\u00f3n espec\u00edficos de la versi\u00f3n o espec\u00edficos de la distribuci\u00f3n: win7. Bibliotecas afectadas: System.Private.ServiceModel. En .NET 8.0 y versiones posteriores, los recursos para identificadores en tiempo de ejecuci\u00f3n espec\u00edficos de la versi\u00f3n y de distribuci\u00f3n no se encuentran de forma predeterminada. Consulte https://aka.ms/dotnet/rid-usage para obtener m\u00e1s informaci\u00f3n. [<research-root>\\.local\\ql6-remediation-diagnostics\\hos",
+        "C:\\Program Files\\dotnet\\sdk\\10.0.302\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.targets(308,5): warning NETSDK1206: Se encontraron identificadores en tiempo de ejecuci\u00f3n espec\u00edficos de la versi\u00f3n o espec\u00edficos de la distribuci\u00f3n: win7. Bibliotecas afectadas: System.Private.ServiceModel. En .NET 8.0 y versiones posteriores, los recursos para identificadores en tiempo de ejecuci\u00f3n espec\u00edficos de la versi\u00f3n y de distribuci\u00f3n no se encuentran de forma predeterminada. Consulte https://aka.ms/dotnet/rid-usage para obtener m\u00e1s informaci\u00f3n. [<research-root>\\.local\\ql6-remediation-diagnostics\\smo",
+        "<research-root>\\.local\\ql5-pin-remediation\\source\\Api\\Api.cs(666,80): warning CS1658: La declaraci\u00f3n de par\u00e1metros de tipo debe ser un identificador, no un tipo. Vea tambi\u00e9n el error CS0081. [<research-root>\\.local\\ql5-pin-remediation\\source\\Api\\QuantConnect.Api.csproj]",
+        "<research-root>\\.local\\ql5-pin-remediation\\source\\Api\\Api.cs(666,88): warning CS1658: La declaraci\u00f3n de par\u00e1metros de tipo debe ser un identificador, no un tipo. Vea tambi\u00e9n el error CS0081. [<research-root>\\.local\\ql5-pin-remediation\\source\\Api\\QuantConnect.Api.csproj]",
+        "C:\\Program Files\\dotnet\\sdk\\10.0.302\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.targets(308,5): warning NETSDK1206: Se encontraron identificadores en tiempo de ejecuci\u00f3n espec\u00edficos de la versi\u00f3n o espec\u00edficos de la distribuci\u00f3n: win7. Bibliotecas afectadas: System.Private.ServiceModel. En .NET 8.0 y versiones posteriores, los recursos para identificadores en tiempo de ejecuci\u00f3n espec\u00edficos de la versi\u00f3n y de distribuci\u00f3n no se encuentran de forma predeterminada. Consulte https://aka.ms/dotnet/rid-usage para obtener m\u00e1s informaci\u00f3n. [<research-root>\\.local\\ql5-pin-remediation\\source\\Queu",
+        "C:\\Program Files\\dotnet\\sdk\\10.0.302\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.targets(308,5): warning NETSDK1206: Se encontraron identificadores en tiempo de ejecuci\u00f3n espec\u00edficos de la versi\u00f3n o espec\u00edficos de la distribuci\u00f3n: win7. Bibliotecas afectadas: System.Private.ServiceModel. En .NET 8.0 y versiones posteriores, los recursos para identificadores en tiempo de ejecuci\u00f3n espec\u00edficos de la versi\u00f3n y de distribuci\u00f3n no se encuentran de forma predeterminada. Consulte https://aka.ms/dotnet/rid-usage para obtener m\u00e1s informaci\u00f3n. [<research-root>\\.local\\ql6-remediation-diagnostics\\hos",
+        "C:\\Program Files\\dotnet\\sdk\\10.0.302\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.targets(308,5): warning NETSDK1206: Se encontraron identificadores en tiempo de ejecuci\u00f3n espec\u00edficos de la versi\u00f3n o espec\u00edficos de la distribuci\u00f3n: win7. Bibliotecas afectadas: System.Private.ServiceModel. En .NET 8.0 y versiones posteriores, los recursos para identificadores en tiempo de ejecuci\u00f3n espec\u00edficos de la versi\u00f3n y de distribuci\u00f3n no se encuentran de forma predeterminada. Consulte https://aka.ms/dotnet/rid-usage para obtener m\u00e1s informaci\u00f3n. [<research-root>\\.local\\ql6-remediation-diagnostics\\smo"
+      ]
+    },
+    {
+      "label": "run",
+      "status": "PASS",
+      "exit_code": 0,
+      "reason": null,
+      "seconds": 1.311,
+      "log_sha256": "f527ee7d83ee0653ff6f065b4b825dc18d3feef7d223ded65699d80b4fbdd6d6",
+      "diagnostics": [
+        "20261029 12:46:19.512 ERROR:: Compression.Unzip():  System.IO.IOException: Extracting Zip entry would have resulted in a file outside the specified destination directory."
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "id": "NATIVE_MAIN_COMPILED_NOT_INVOKED",
+      "status": "PASS"
+    },
+    {
+      "id": "ENGINE_TYPE_LOAD",
+      "status": "PASS"
+    },
+    {
+      "id": "PATCHED_HELPER_DENIES_TRAVERSAL",
+      "status": "PASS"
+    },
+    {
+      "id": "PATCHED_HELPER_SAFE_FILE",
+      "status": "PASS"
+    },
+    {
+      "id": "FORK_API_ROUNDTRIP_WITH_REBUILT_GRAPH",
+      "status": "PASS"
+    },
+    {
+      "id": "FORK_DISTINCT_ASSEMBLY",
+      "status": "PASS"
+    },
+    {
+      "id": "OBSERVE_SECOND_UNREMEDIATED_EXTRACTION_PATH",
+      "status": "PASS"
+    },
+    {
+      "id": "SECOND_CANARY_STILL_INSIDE_OWN_LAB",
+      "status": "PASS"
+    }
+  ],
+  "counts": {
+    "PASS": 8,
+    "FAIL": 0,
+    "ERROR": 0
+  },
+  "second_path_security": "FAIL_BOUNDARY_DEMONSTRATED",
+  "artifact_sha256": {
+    "host\\bin\\Release\\net10.0\\LeanRemediationHostProbe.dll": "b66f1e9e11671a9756dc9a76df689e00350ae8fe41e32064d6288073d35079a2",
+    "smoke\\bin\\Release\\net10.0\\RemediationSmoke.dll": "c0d01f37362452150a14fd2ef58f0033fb1780746ea36a98378c44a5bb0219da"
+  },
+  "pin_accepted": false,
+  "no_engine_or_algorithm_run": true,
+  "no_production_patch": true,
+  "implementation_locked": true,
+  "target_acceptance_status": "TARGET_ACCEPTANCE_DEFERRED",
+  "holdout": "INTEGRITY_UNKNOWN"
+}

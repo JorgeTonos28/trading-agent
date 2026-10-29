@@ -59,3 +59,18 @@ planning/research/probes/r009-pin-remediation/*.cs -text whitespace=cr-at-eol
 planning/research/probes/r009-pin-remediation/*.csproj -text whitespace=cr-at-eol
 planning/research/probes/r009-pin-remediation/*.json -text whitespace=cr-at-eol
 planning/research/probes/wave12_final_consistency_check.py -text whitespace=cr-at-eol
+
+# Wave13 immutable research controllers, expectations and captures.
+planning/research/probes/r009-remediation-diagnostics/*.py -text whitespace=cr-at-eol
+planning/research/probes/r009-remediation-diagnostics/*.json -text whitespace=cr-at-eol
+planning/research/probes/r009-extraction-repair/*.py -text whitespace=cr-at-eol
+planning/research/probes/r009-extraction-repair/*.json -text whitespace=cr-at-eol
+planning/research/probes/r009-extraction-repair/*.cs -text whitespace=cr-at-eol
+planning/research/probes/r009-extraction-repair/*.csproj -text whitespace=cr-at-eol
+planning/research/probes/r009-contract-preserving-host/*.py -text whitespace=cr-at-eol
+planning/research/probes/r009-contract-preserving-host/*.json -text whitespace=cr-at-eol
+planning/research/probes/r011-admission-cuts/*.py -text whitespace=cr-at-eol
+planning/research/probes/r011-admission-cuts/*.json -text whitespace=cr-at-eol
+planning/research/probes/r027-profile-boundaries/*.py -text whitespace=cr-at-eol
+planning/research/probes/r027-profile-boundaries/*.json -text whitespace=cr-at-eol
+planning/research/probes/wave13_consistency_check.py -text whitespace=cr-at-eol

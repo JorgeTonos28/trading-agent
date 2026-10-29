@@ -29,3 +29,7 @@ Todos los resultados originales permanecen; no reescribir el timeout como buildP
 Fijar commit+parches+grafo/deps+SDK+licencias/notices, source review y regresión de data readers/import/compresión; validación de archives/paths/tamaño/links/encoding, modelos/contabilidad y QP aplicables; config/egress y reproducibilidad en target. Resolver el helper inseguro o demostrar exclusión efectiva del path bajo contrato, sin una waiver silenciosa. Paquetes actualizados o cero avisos no pasan este gate. No aceptar riesgo residual material sin gobierno.
 
 ProDotNetZip/BCL: EXISTS=YES; AVAILABLE_IN_RESEARCH=YES para los componentes probados; TARGET_HOST=UNKNOWN; TECHNICALLY_COMPATIBLE=CONDITIONAL; SELECTED=NO. PAPER_V1_VIABLE_FREE=CONDITIONAL; licencia componente0 en las cinco escalas, costes de host/integración/operación totalesUNKNOWN. LIVE_COSTUNKNOWN; FREE_ALTERNATIVE=BCL/SharpZipLib según función; PAID_INCREMENTAL_VALUE=soporte si materialmente justificado; ECONOMIC_JUSTIFICATION_REQUIRED=YES antes de gasto. Nada contratado.
+
+## Evidencia sustituyente — 2026-10-29
+
+[RC1](R-009_current_pin_remediation_RC1.md) demuestra factibilidad de reparación integrada en host mínimo, conservando los timeouts/error/FAIL originales. QL6detectó segundohelperFAIL; QL7componente y QL8/02build+14checks de ambosfixes/retornolegacy, no pin/modelos/seguridad/target aceptados. No usar el estado previo inconcluso como conclusión actual de compilación.

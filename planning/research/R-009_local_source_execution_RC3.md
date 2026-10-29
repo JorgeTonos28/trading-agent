@@ -29,3 +29,7 @@ Build-vs-Reuse: motor REUSE_AS_IS; host/config/import/modelos WRAP/ADAPT. PAPER_
 ## Evidencia adicional antes de admisión del pin
 
 [QL4/QL5 y remediación](R-009_current_pin_remediation_RC0.md): helper de extracción overwrite falla containment dentro del laboratorio propio. Requiere reparación/exclusión probada antes de pin; no rechazo automático de familia. Timeout01 preservado, continuación02 con código igual: CONTINUATION_INCOMPLETE_OR_FAILED_NO_REMEDIATED_HOST_ACCEPTANCE. No waiver ni aceptación global por actualizar paquetes.
+
+## Realización posterior — 2026-10-29
+
+[RemediaciónRC1](R-009_current_pin_remediation_RC1.md) y QL8/02 amplían build de host mínimo con dos paths ZIP reparados y retorno legacy,14checks sinMain/Engine.Run/Algorithm. Fuente+parches+deps candidatos, no solución stock completa ni pin aceptado. No más espera de compilación genérica: gates concretos import/callers/SBOM/QP/config/target.
