@@ -1,0 +1,16 @@
+{
+  "schema_version": "s2b-readonly-preflight-v1",
+  "captured_at": "2026-10-06T18:50:56.2956846Z",
+  "gate": "S2B-ADM-01",
+  "transaction_id": "s2b-20261006-a6d74b2b",
+  "account_state": "ABSENT",
+  "account_disabled": null,
+  "account_transaction_marker_matches": null,
+  "parent_exists": false,
+  "root_exists": false,
+  "current_process_elevated": false,
+  "observed_surface": "CURRENT_OPERATOR_SESSION_NOT_RUNNER",
+  "configuration_changes": [],
+  "filesystem_tests_executed": false,
+  "actual_security_acceptance": "NOT_TESTED"
+}

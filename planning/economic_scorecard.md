@@ -1,0 +1,122 @@
+# Scorecard económico común — ADR-008
+
+> **Vigencia ADR-013 — 2026-10-07:** investigación = Team en workstation Windows institucional INFOTEP; target PAPER = Plus individual en PC personal del propietario; LIVE = UNKNOWN. Se conservan las notas/evidencias anteriores como historia. Team no prueba disponibilidad Plus ni seguridad del host personal. Diseño se resuelve durante Preparation; aceptación target R-030 se difiere antes de implementación/PAPER. S2B-ADM-01 = DEFERRED_TO_TARGET_PAPER_HOST; no acción administrativa institucional pendiente. `implementation_locked=true`.
+
+
+**Antecedente — ADR-010, 2026-10-05:** CURRENT_RESEARCH_ENVIRONMENT=Team; PAPER_RUNTIME_ENVIRONMENT=Team actual; FUTURE_LIVE_ENVIRONMENT=Plus individual candidato. Las cláusulas anteriores que exigían Plus para PAPER/D-020/D-024 quedan parcialmente SUPERSEDED. La evidencia original se conserva; Plus es gate P3 PRE-LIVE (R-029/D-039), sin dependencia para PAPER. Aceptación activa: [Team TP1–7](research/R-006_team_runtime_acceptance_RC0.md). No selección final ni implementación autorizada.
+
+**Lectura:** registros/tablas actuales y esta adenda gobiernan; notas fechadas de hitos previos se conservan como historia, incluidos sus antiguos siguientes pasos Plus.
+
+**Fecha:** 2026-10-02. **Estado:** estructura de investigación; no precios ni presupuestos aprobados. Aplicable a brokers, market/alternative data, modelos/runtimes, conectores, quant, almacenamiento, infraestructura, observabilidad y cualquier capability externa.
+
+## Campos mínimos por candidato y fase
+
+| Campo | Evidencia/interpretación |
+|---|---|
+| `PAPER_V1_VIABLE_FREE` | `YES / NO / PARTIAL / UNKNOWN`: la ruta incluida/gratuita cumple funcionalidad, calidad, licencia, acceso, límites y continuidad requeridos para PAPER; gratuidad comercial por sí sola no prueba viabilidad. |
+| `PAPER_V1_COST` | Coste incremental respecto de suscripciones existentes; fijo, variable y mensual bajo carga PAPER documentada. Desglosar coste total/asignado de suscripción, infraestructura y operación aunque el incremental sea cero. |
+| `LIVE_COST` | Fijo, variable, estimado mensual y costes por escala de operación LIVE, usando fuente/cotización fechada y supuestos explícitos. `UNKNOWN` hasta evidencia. |
+| `FREE_ALTERNATIVE` | Candidato incluido/público/local/free-tier y evidencia de suficiencia; si no existe alternativa razonable, justificarlo por requisitos. |
+| `PAID_INCREMENTAL_VALUE` | Diferencia observable de calidad, fiabilidad, datos, cobertura, latencia, continuidad, seguridad o capacidad; distinguir claim del proveedor, hipótesis y evidencia de probe. |
+| `ECONOMIC_JUSTIFICATION_REQUIRED` | `YES` para cualquier gasto incremental propuesto, contratación o coste LIVE por justificar; indicar disparador, alternativa y dueño humano. `NO` solo para adquisición/uso realmente sin gasto adicional, no exime otras revisiones. |
+
+## Detalle que acompaña a esos seis campos
+
+```yaml
+candidate_id: null
+phase: PAPER_V1_or_LIVE
+layer: methodology_or_runtime_or_data_or_infrastructure
+pricing_source_and_observed_on: UNKNOWN
+currency_and_tax_basis: UNKNOWN
+existing_subscription_entitlement: UNKNOWN
+fixed_cost: UNKNOWN
+variable_cost_units_and_rates: UNKNOWN
+monthly_workload_assumptions: UNKNOWN
+estimated_monthly_cost: UNKNOWN
+scale_scenarios: UNKNOWN
+integration_and_maintenance_effort: UNKNOWN
+lock_in_and_exit_cost: UNKNOWN
+expected_operational_benefit_and_evidence: UNKNOWN
+condition_justifying_payment: UNKNOWN
+spend_approval_reference: NONE
+PAPER_V1_VIABLE_FREE: UNKNOWN
+PAPER_V1_COST: UNKNOWN
+LIVE_COST: UNKNOWN
+FREE_ALTERNATIVE: UNKNOWN
+PAID_INCREMENTAL_VALUE: UNKNOWN
+ECONOMIC_JUSTIFICATION_REQUIRED: YES_if_spend_proposed
+```
+
+Estimar mensual = fijo + suma(unidades × tarifa) + mínimos/fees/add-ons/overages + infraestructura aplicable. Anotar costes iniciales, descuentos/temporales, restricciones free-tier y supuestos; evitar doble contar fees ya incluidos en simulación de trades. Coste humano/mantenimiento se registra por separado si no se monetiza. Para cuotas compartidas Plus, coste incremental cero no implica capacidad ilimitada ni disponibilidad garantizada.
+
+## Economía unitaria y decisión LIVE
+
+Elegir unidades que expliquen el servicio: coste por research run/propuesta shadow/explicación, activo-día o evento utilizable, orden reconciliada, GB retenido, hora operativa. Registrar carga base y escenarios de crecimiento sin inventar escala aprobada. Comparar beneficio **neto de costes** con incertidumbre y sensibilidad: mayor cobertura/calidad puede mejorar investigación sin demostrar alpha; fiabilidad/protección puede justificar gasto por reducción de fallos antes de disponer de evidencia de retorno.
+
+Una recomendación paga debe identificar una condición comprobable (por ejemplo, la alternativa gratuita incumple el requisito de latencia/cobertura/recuperación bajo la carga requerida) y evidenciar la mejora. No fijar ROI mínimo ni precio máximo sin decisión posterior. Investigar está autorizado; activar facturación, contratar o gastar requiere autorización humana explícita bajo ADR-008. Skills/templates tienen coste de adquisición cero como regla independiente de sus dependencias.
+
+## Aplicación documental financiera — 2026-10-07
+
+[Broker/data wave01](research/R-007_008_provider_evidence_wave01_2026-10-07.md) y [Smart Money wave01](research/R-025_provider_evidence_wave01_2026-10-07.md) incorporan los seis campos, precios publicados cuando existen y UNKNOWN explícitos para operación, escala, rights y beneficio. Distinguen datos Alpaca de la suscripción ChatGPT y pago anual de mensual. No presupuesto, contratación, selección ni gasto aprobados. Los scorecards iniciales se conservan fechados; las waves posteriores actualizan evidencia sin convertir claims comerciales en calidad/PIT demostrados.
+
+## Wave financiera02 — 2026-10-13
+
+[Data](research/R-008_market_data_evidence_wave02_2026-10-13.md), [brokers](research/R-007_order_protection_matrix_RC1.md), [engines](research/R-009_backtesting_reuse_RC0.md) y [normalizador SEC](research/R-021_external_dataset_admission_RC1.md) completan seis campos con prices publicados/UNKNOWN. LEAN source libre ≠ CLI gratis; software free ≠ datos/coste operativo incluido. Nuevos servicios sólo estudiados, gasto0; fuente/documentación accesible no prueba entitlement o rights de target.
+
+## Actualización financiera — 2026-10-13, retención y probe E1
+
+[Retención R-008](research/R-008_data_retention_gate_RC1.md): Tiingo Starter REJECT/PAPER_V1_VIABLE_FREE=NO sólo para rol durable. Coste0 no acredita rights; paid CONDITIONAL y alternativas gratis aún no agotadas. [EdgarTools E1](research/R-021_edgartools_findings_2026-10-13.md): licencia0, compatibilidad PARTIAL/ADAPT-WRAP candidato,44deps y mantenimiento/escala UNKNOWN; no fuente seleccionada ni API operativa. Dossiers conservan seis campos económicos/lock-in/condición para pagar. Gasto incremental0.
+
+## Wave04 — primitives y datos temporales
+
+[Métodos OSS](research/R-020_evaluation_protocol_RC2.md) y [broker/data timing](research/R-007_008_timing_evidence_2026-10-14.md) registran seis campos por candidato. statsmodels/arch15deps locales software0/opsUNKNOWN; AlgoTraderPlus99USD/mes sólo referencia no gasto; delayedSIPBasic condicional EOD, no sustituto de Riskfreshness/rights/PIT/history2005. Licencias y mantenimiento por cerrar; costegratuito no criterio de mejoraeconómica ni aceptación operacional.
+
+## Cash y componentes financieros — wave05
+
+[R008 cash](research/R-008_cash_benchmark_admission_RC0.md) registra seis campos económicos: acceso docs0, historia/vintage/modelo/ingeniería UNKNOWN, free alternatives condicionadas y valor incremental de paid total-return/PIT sólo si gap demostrado. No suscripción ni acceso a API contratado. [E3](research/R-020_economic_probe_findings_2026-10-14.md)/[F2](research/R-021_Form4_probe_findings_2026-10-14.md) reutilizan libs/deps ya locales, gasto incremental0; ingeniería, mantenimiento, licencias transitivas/target y LIVEcost aún UNKNOWN. Gratuito no prueba calidad suficiente; ninguna fuente seleccionada.
+
+## Fuentes y utilidad wave06
+
+[R008wave03](research/R-008_sources_evidence_wave03_2026-10-14.md) incorpora EODHD/Twelve/Norgate/Nasdaq con seis campos, fijos/variable/scale/lock-in y diferencias de historia/rights/calidad. Sin cuenta/gasto/provider seleccionado; ni free insuficiencia universal ni paid quality demostrada. [Q058](research/D-011_economic_margins_proposal_RC0.md) muestra F/K ficticio, no budget/capital; overhead se asigna aS, no a referencias pasivas para borrar oportunidad. Runtime/library license0 no opscost0.
+
+## Vigencia M1 — ADR-019, 2026-10-14
+
+[ADR-019](decisions/ADR-019-PRICE-MATR-economic-utility-M1.md): Q058/M1 DECIDED sólo utilidad ex ante ETF PRICE–MATR: δNI1ppCAGR/año, εcash+1ppneto/año, ρES20%, q95. Siete condiciones: no adaptar a potencia, inferencia válida antes dePASS, guardrails complementarias, escala/costes previos sin capital favorable, espejo defendible, estados separados y NO_STRATEGY_QUALIFIED. Números no equivalen a método/datos/Strategy/backtest aceptados; D011RESEARCHING/F0incompleto, reservaUNKNOWN/lock/targetdeferral. Continuar técnica sin reabrir B/K2/M1.
+
+## Escala/costes predefinidos — wave07
+
+[SC0](research/R-020_cost_scale_scenarios_RC0.md)20celdas hipotéticas, fixed/variable/incremental/sunk/oneoff/time separados. Grilla noKoperacional ni budget/gasto aprobados; F0no costosreales0. NI/cashafterops deS; pasivosowncosts. Todaseldas/anchorprevio, no capitalfavorable retrospectivo. M1utilidadaprobada distinta de costos/modelos/operaciónaceptados.
+
+## Vigencia G-R1 — ADR-020, 2026-10-15
+
+[ADR-020](decisions/ADR-020-PRICE-MATR-complementary-guardrails-G-R1.md): Q-059/G-R1 DECIDED en preferencia económica ex ante: no deterioro de DD frente a EW6-BH completo ni de volatilidad diaria frente al espejo K2 admisible. ES95/M1 primario y NI/cash/K2 conjuntos; recuperación/underwater/pérdidas/gaps/slippage/extremos obligatorios. DD exige estimando/horizonte/path/incertidumbre y aplicabilidad válidos; una trayectoria/bootstrap genérico no demuestra futuro. Volatilidad incluye upside/downside. Guardrails relativas no son límites absolutos Risk D-031. G-R2 no aprobado ni fallback. Estados separados y NO_STRATEGY_QUALIFIED; ningún método/dato/broker/Strategy/F0/implementación aceptado. Continuar P0/P1 financieros en checkpoints agrupados; holdout UNKNOWN/lock/targetdeferral.
+
+## Referencia PAPER y cobertura de costes — ADR-021, 2026-10-15
+
+[ADR-021](decisions/ADR-021-PAPER-economic-reference-capital.md): propietario fija nominalUSD10,000 antes de resultados y exige costes evaluados/reportados en las cinco escalasUSD2k/5k/10k/25k/50k, conservando20celdas hipotéticas previas. Todas las fuentes/modelos de coste admitidos se aplican a cada escala; UNKNOWN explícito, no0/omisión ni capital favorable elegido después. Principal10k no prometePASSuniversal ni exigePASSen5como nuevo gate implícito. Sin depósito/funding/capitalLIVE/gasto/risknumbers; costes reales/método/data/Strategy no aceptados. HoldoutUNKNOWN/lock/targetdeferral.
+
+## Wave08 vigente — 2026-10-15
+
+ADR020/G-R1 y ADR021/nominal10k aprobados, sin método/Strategy/engine/broker/datos/Risknumeric aceptados. [RC6](research/R-020_preregistration_readiness_RC6.md), [configEQ3](research/R-020_configuration_completion_RC1.md), [DataCards](research/R-008_dataset_admission_wave04_2026-10-15.md), [brokerRC2](research/R-007_protection_dependency_contract_RC2.md), [RiskRC2](research/R-027_risk_formula_spec_RC2.md) y [engine/QE0](research/R-009_engine_components_wave02_2026-10-15.md) completan este bloque técnico en scope explícito.12declaraciones/0trials,4cards+6subcards NOT_ADMITTED;2nuevasEQ3 son hipótesis con target, no configuración financiera lista.
+
+Investigar DD-E ya está autorizado, sin nueva elección humana por una definición candidata: d_obs reporte, no veto histórico agregado. Fresh/flat de selección/confirmación y carry sólo sensibilidad se fijan antes deF0, no se eligen al ver selección. E7=14/14aritmética no inferencia; QE0=2PASS2ERROR→4PASS1ERROR→6PASS0ERROR sólo componentes/initvacío, sinrun; QE1ROUND=5/5componente no adapter. P1reparados y revisión documentada, no statisticalvalidation/DoR/target.
+
+Costes obligatorios en5escalas2k/5k/10k/25k/50k y todos modelos admitidos, conservando20celdas; principal10k no selecciona celda favorable, UNKNOWN explícito. Derechos/retención/usoIA/historia/calidad aún faltan. [Consultas de proveedor](research/R-008_vendor_clarification_requests_RC0.md) preparadas no enviadas; autorización/remitente personal o envío del propietario requeridos antes de contactar terceros. No declarar bloqueo global dePreparation mientras tareas independientes siguen posibles. HoldoutUNKNOWN/locktrue/targetdeferred, main/release intactos.
+
+## Vigencia técnica wave10 — 2026-10-23
+
+Wave10: research/source_cost_scenarios_wave06.json añade escenario publicado NorgatePlatinum630USD/año en las5escalas; no oferta mensual, totalUNKNOWN, no contratación. Veinte celdas hipotéticas previas preservadas.
+
+## Actualización wave11 — 2026-10-23
+
+[Sourcecostwave11](research/source_cost_scenarios_wave11.json): guestaccess0 anunciado pero acceso efectivohistorynoestablecido/totalUNKNOWN; paidKibot14/mo reserva, FirstRateupdates59.95/mo opcional+inicialUNKNOWN. Primer año11updates659.45 versus régimen12updates719.40 separados, todos5capitales y20celdas previas. No fee por depositar ni nominal10kautorizafunding.
+
+## 2026-10-28 — Q-062 aprobado y proveedores actualizados
+
+El propietario aprueba Alpaca Paper Only + LEAN source como **familias de diseño PAPER**, IBKR/Nautilus reservas: [ADR-023](decisions/ADR-023-paper-broker-and-backtesting-families.md). B1–B5/QP1–QP10, pin/modelos/protección efectiva/target siguen pendientes; sin cuentas, gasto, implementación o LIVE. B3 no admisible implica no entradas.
+
+[Evidencia comercial](research/R-008_vendor_evidence_and_plan_scope_RC1.md) disponible desde 2026-10-28, fecha real de recepción UNKNOWN y correos originales no inspeccionados. Twelve=VENDOR_INFORMATION_REQUESTED, aclaración del propietario pendiente de envío. EODHD=VENDOR_RESPONSE_RECEIVED / PLAN_SCOPE_CLARIFICATION_PENDING / TECHNICAL_ADMISSION_PENDING; todos los datasets NOT_ADMITTED, raw a IA externa DENY_UNCONFIRMED. Tres precios públicos19.99/29.99/99.99 incorporados a las cinco escalas; se prioriza EOD económico si cumple. No se espera respuesta para avanzar research.
+
+## Wave12 — familias y stack transversal
+
+Alpaca Paper Only WRAP y LEAN source REUSE_AS_IS+ADAPT/WRAP seleccionados sólo en diseño ADR023. Ruta local fuente compilada QL3, sin CLI/Cloud comercial ni pin aceptado. Q063 propone APS3 WRAP+ledger PostgreSQL REUSE_AS_IS/WRAP, Parquet/DuckDB analíticos; Temporal y Redis reservas. No construir scheduler/DB generales. Licencias0 no son coste total0; host/backup/integración/operación/escala UNKNOWN y cinco capitales obligatorios. Ninguna instalación/gasto por la propuesta. Fuentes EODHD por plan/rol bajo aclaración; no All-in-One impuesto ni derivados a IA por transformar raw.

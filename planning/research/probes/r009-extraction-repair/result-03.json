@@ -1,0 +1,94 @@
+{
+  "captured_utc": "2026-10-29T12:56:48.345005+00:00",
+  "controller_sha256": "a9a288437264cbe1adb4f3b79f325d82f599a969898ce192f29b86286ce0021b",
+  "source_pin": "f3d841e60dfd010ee5fc293ea893e56952484108",
+  "scope": "ISOLATED_COMPRESSION_COMPONENT_SECOND_PATH_REPAIR_NOT_FULL_ENGINE",
+  "patch_diff": "--- a/Compression.cs\n+++ b/Compression.cs\n@@ -860,28 +860,9 @@\n             {\n                 using var archive = new ZipArchive(dataStream, ZipArchiveMode.Read, leaveOpen: true);\n \n-                foreach (var zipEntry in archive.Entries)\n-                {\n-                    //Ignore Directories\n-                    if (string.IsNullOrEmpty(zipEntry.Name)) continue;\n-\n-                    // Manipulate the output filename here as desired.\n-                    var fullZipToPath = Path.Combine(outFolder, zipEntry.FullName);\n-\n-                    var targetFile = new FileInfo(fullZipToPath);\n-                    if (targetFile.Directory != null && !targetFile.Directory.Exists)\n-                    {\n-                        targetFile.Directory.Create();\n-                    }\n-\n-                    //Save the file name for later:\n-                    files.Add(fullZipToPath);\n-\n-                    //Copy the data in buffer chunks\n-                    using var entryStream = zipEntry.Open();\n-                    using var streamWriter = File.Create(fullZipToPath);\n-                    entryStream.CopyTo(streamWriter);\n-                }\n+                archive.ExtractToDirectory(outFolder, overwriteFiles: true);\n+                files.AddRange(archive.Entries.Where(e => !string.IsNullOrEmpty(e.Name))\n+                    .Select(e => Path.GetFullPath(Path.Combine(outFolder, e.FullName))));\n             }\n             catch\n             {\n",
+  "before_sha256": "345511f70f2a840556c9144725d39c61b04af04d1ffada1b275aef14606759c1",
+  "after_sha256": "3646638b8a19877a39f1434b9c85e5745183ad27cca6c62a4a1149f8941ea436",
+  "logging_dll_sha256": "8156ea8bacd201961a4eeacf44067069e861904f3a69c5dd063b5654274438e9",
+  "steps": [
+    {
+      "step": "restore",
+      "status": "PASS",
+      "exit_code": 0,
+      "reason": null,
+      "seconds": 3.401,
+      "log_sha256": "6f82ca4381984172c21e8ac5c8a04c1fb2567c74e7fa7687a03cd15cc4fb4b1f",
+      "diagnostics": []
+    },
+    {
+      "step": "build",
+      "status": "PASS",
+      "exit_code": 0,
+      "reason": null,
+      "seconds": 14.178,
+      "log_sha256": "33ac87e216adf685ab15e7f7e4e7fb8c35980fdc8646f4131e792933b20a242f",
+      "diagnostics": []
+    },
+    {
+      "step": "run",
+      "status": "PASS",
+      "exit_code": 0,
+      "reason": null,
+      "seconds": 0.603,
+      "log_sha256": "eaeec570dfe260cef7de6249f7116d095712a7b448b8db57904ff01ce0c5f35d",
+      "diagnostics": [
+        "20261029 12:56:48.216 ERROR:: Compression.Unzip():  System.IO.IOException: Extracting Zip entry would have resulted in a file outside the specified destination directory.",
+        "20261029 12:56:48.229 ERROR:: Compression.UnzipToFolder(): Failure: outFolder: <research-root>\\.local\\ql7-extraction-repair-normalized\\smoke\\lab\\bytes\\extract - files: ",
+        "20261029 12:56:48.238 ERROR:: Compression.UnzipToFolder(): Failure: outFolder: <research-root>\\.local\\ql7-extraction-repair-normalized\\smoke\\lab\\file\\extract - files: "
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "id": "REPAIR_REJECTS_TRAVERSAL_unzip",
+      "status": "PASS"
+    },
+    {
+      "id": "REPAIR_REJECTS_TRAVERSAL_bytes",
+      "status": "PASS"
+    },
+    {
+      "id": "REPAIR_REJECTS_TRAVERSAL_file",
+      "status": "PASS"
+    },
+    {
+      "id": "NESTED_CONTENT",
+      "status": "PASS"
+    },
+    {
+      "id": "RETURNED_ABSOLUTE_FILE_PATH",
+      "status": "PASS"
+    },
+    {
+      "id": "BYTE_OVERWRITE_PRESERVED",
+      "status": "PASS"
+    },
+    {
+      "id": "FILE_OVERLOAD_CONTENT_AND_LIST",
+      "status": "PASS"
+    },
+    {
+      "id": "UNZIP_SAFE",
+      "status": "PASS"
+    },
+    {
+      "id": "UNZIP_OVERWRITE",
+      "status": "PASS"
+    }
+  ],
+  "counts": {
+    "PASS": 9,
+    "FAIL": 0,
+    "ERROR": 0
+  },
+  "fixture_expected_and_actual_paths_normalized": true,
+  "prior_02_failure_preserved": true,
+  "full_host_or_pin_accepted": false,
+  "original_exports_modified": false,
+  "no_engine_or_strategy_run": true,
+  "implementation_locked": true,
+  "target_acceptance_status": "TARGET_ACCEPTANCE_DEFERRED",
+  "holdout": "INTEGRITY_UNKNOWN"
+}

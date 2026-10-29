@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "available_for_research_from": "2026-10-28",
+  "recorded_on": "2026-10-28",
+  "evidence_type": "OWNER_PROVIDED_SUMMARY_OF_WRITTEN_VENDOR_RESPONSES",
+  "original_email_or_attachment_inspected": false,
+  "original_email_artifact": null,
+  "actual_vendor_receipt_dates": null,
+  "receipt_date_status": "NOT_STATED_DO_NOT_INFER",
+  "mailbox_accessed": false,
+  "automatic_sending_authorized": false,
+  "Twelve_Data": {
+    "state": "VENDOR_INFORMATION_REQUESTED",
+    "price_or_concrete_terms_offered": false,
+    "requested_fields": [
+      "company_name",
+      "website",
+      "markets",
+      "preferred_delay",
+      "product_description",
+      "display_non_display_storage_uses"
+    ],
+    "owner_context": "STRICTLY_PERSONAL_NO_COMPANY_NO_PUBLIC_WEBSITE",
+    "owner_clarification": "PREPARED_BY_OWNER_CONTENT_NOT_PROVIDED_NOT_SENT_AS_OF_DECLARATION",
+    "dataset_admission": "NOT_ADMITTED"
+  },
+  "EODHD": {
+    "state": [
+      "VENDOR_RESPONSE_RECEIVED",
+      "PLAN_SCOPE_CLARIFICATION_PENDING",
+      "TECHNICAL_ADMISSION_PENDING"
+    ],
+    "recommended_plan": "PERSONAL_ALL_IN_ONE",
+    "quoted_monthly_USD": "99.99",
+    "ETF_coverage_reported": [
+      "SPY",
+      "QQQ",
+      "IWM",
+      "EFA",
+      "TLT",
+      "GLD"
+    ],
+    "reported_confirmations": {
+      "daily_raw_adjusted_and_corporate_actions": "YES_SUBJECT_TO_HISTORICAL_AVAILABILITY",
+      "payment_dates_and_completeness": "MAY_VARY",
+      "full_historical_vintages_original_publication_timestamps_revision_archive": "NOT_PROVIDED",
+      "prices": "MAY_BE_CONSOLIDATED_OR_INDICATIVE_NOT_EXECUTABLE_REPLICATION",
+      "private_local_raw_derived_snapshots_audit_backups": "REPORTED_ALLOWED_PERSONAL_NO_REDISTRIBUTION_PRODUCT_CONTRACT_SCOPE_PENDING",
+      "post_cancellation_retention": "REPORTED_ALLOWED_PERSONAL_NO_REDISTRIBUTION_PRODUCT_SCOPE_PENDING",
+      "automated_research_backtesting_PAPER_own_capital": "REPORTED_ALLOWED_PERSONAL_LICENSE",
+      "additional_commercial_non_display": "REPORTED_NOT_REQUIRED_FOR_DESCRIBED_PERSONAL_USE",
+      "raw_upload_external_cloud_AI": "NOT_CONFIRMED_REQUIRES_FURTHER_REVIEW"
+    },
+    "cheaper_plan_followup": "OWNER_PREPARED_NOT_CONFIRMED_SENT_CONTENT_NOT_PROVIDED",
+    "dataset_admission": "NOT_ADMITTED",
+    "purchase_authorized": false
+  },
+  "invariants": {
+    "implementation_locked": true,
+    "target_acceptance": "TARGET_ACCEPTANCE_DEFERRED",
+    "holdout": "INTEGRITY_UNKNOWN",
+    "datasets_admitted": 0,
+    "actual_spend": 0
+  },
+  "external_AI_data_policy": "DENY_UNCONFIRMED_FOR_LICENSED_RAW_DERIVED_REPACKAGED_OR_RECONSTRUCTIBLE_INFORMATION_UNLESS_PERMISSION_BY_FIELD_USE_DESTINATION"
+}

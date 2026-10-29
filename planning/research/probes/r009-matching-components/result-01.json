@@ -1,0 +1,54 @@
+{
+  "captured_utc": "2026-10-23T15:25:02.505760+00:00",
+  "attempt": "01",
+  "python": "3.14.6",
+  "scope": "NATIVE_MATCHING_COMPONENT_FICTITIOUS_QUOTES_ONLY_NO_STRATEGY",
+  "source_sha256": "05c87ba82eb3bb2c4777aeff6a6c755b2a21975d9b6aac0a21d7392ceca5f9a7",
+  "wheel_sha256": "295b67b127f67429ebb9d937bd11448f930bee697fca6a8e0ec1de343ad3c68c",
+  "rows": [
+    {
+      "id": "GAP_MARKET",
+      "status": "ERROR",
+      "error_type": "InvalidStateTrigger",
+      "error": "INITIALIZED -> FILLED"
+    },
+    {
+      "id": "GAP_LIMIT",
+      "status": "ERROR",
+      "error_type": "InvalidStateTrigger",
+      "error": "INITIALIZED -> FILLED"
+    },
+    {
+      "id": "PATHS",
+      "status": "ERROR",
+      "error_type": "InvalidStateTrigger",
+      "error": "INITIALIZED -> FILLED"
+    },
+    {
+      "id": "LIQUIDITY_FALSE",
+      "status": "ERROR",
+      "error_type": "InvalidStateTrigger",
+      "error": "INITIALIZED -> FILLED"
+    },
+    {
+      "id": "LIQUIDITY_TRUE",
+      "status": "ERROR",
+      "error_type": "InvalidStateTrigger",
+      "error": "INITIALIZED -> FILLED"
+    }
+  ],
+  "traces": {},
+  "counts": {
+    "PASS": 0,
+    "FAIL": 0,
+    "ERROR": 5
+  },
+  "strategy_trials": 0,
+  "historical_backtests": 0,
+  "market_data_accessed": false,
+  "QP1_10_accepted": false,
+  "broker_selected": false,
+  "engine_selected": false,
+  "implementation_locked": true,
+  "target_acceptance": "TARGET_ACCEPTANCE_DEFERRED"
+}

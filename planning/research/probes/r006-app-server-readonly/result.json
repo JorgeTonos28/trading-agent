@@ -1,0 +1,40 @@
+{
+  "probe": "R006-APP-SERVER-READONLY-01",
+  "environment": "CURRENT_RESEARCH_ENVIRONMENT",
+  "AVAILABLE_IN_TARGET_PLUS": "UNKNOWN",
+  "cli_identity_matches_target": "UNKNOWN",
+  "cli_version": "codex-cli 0.159.0-alpha.12.1",
+  "inference_turns_started": 0,
+  "rpc_methods_sent": [
+    "skills/list",
+    "initialize",
+    "initialized",
+    "account/read",
+    "skills/extraRoots/set",
+    "skills/list"
+  ],
+  "raw_account_or_token_data_persisted": false,
+  "persistent_skill_configuration_written": false,
+  "checks": {
+    "preinitialize_rejected": true,
+    "preinitialize_error_code": -32600,
+    "initialize_succeeded": true,
+    "process_local_extra_root_accepted": true,
+    "disposable_skill_discovered": true,
+    "disposable_skill_enabled": true,
+    "discovery_error_count": 0
+  },
+  "skills_list_schema_fields": [
+    "cwds",
+    "forceReload"
+  ],
+  "skill_sha256": "af2bad22ba59dbfbae40eaeeda2541a0a81db61ba6decebfc41b78e4ac62546e",
+  "skills_list_schema_sha256": "1d245374e64c5acc9739dfc68a4fe5114c6c9147af04c480886f1846d2ca6239",
+  "account_read": {
+    "succeeded": true,
+    "account_type": "chatgpt",
+    "observed_plan_type": "team"
+  },
+  "behavior_and_authority_tested": false,
+  "diagnostic_lines_not_persisted": 4
+}

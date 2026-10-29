@@ -1,0 +1,172 @@
+{
+  "scope": "SYNTHETIC_ENDPOINT_SCREEN_NOT_STATISTICAL_ACCEPTANCE",
+  "source_sha256": "4614982f2ae42e0d1a4673b83e47cbe2228433a9b5195d1c31aa533f2c982a7c",
+  "observed_on": "2026-10-14",
+  "checks": [
+    {
+      "id": "NI_POPULATION_BOUNDARY",
+      "status": "PASS"
+    },
+    {
+      "id": "CASH_POPULATION_BOUNDARY",
+      "status": "PASS"
+    },
+    {
+      "id": "ES_POPULATION_BOUNDARY",
+      "status": "PASS"
+    },
+    {
+      "id": "TAIL_POSITIVE_REFERENCE",
+      "status": "PASS"
+    },
+    {
+      "id": "FRACTIONAL_MASS_NO_TIE_OVERCOUNT",
+      "status": "PASS"
+    },
+    {
+      "id": "DRAWDOWN_BASE_NOT_RESET_AT_YEAR",
+      "status": "PASS"
+    },
+    {
+      "id": "RECOVERY_CENSORED_NOT_ZERO",
+      "status": "PASS"
+    },
+    {
+      "id": "CAPTURED_TWO_DGPS_NOT_COVERAGE_PASS",
+      "status": "PASS"
+    }
+  ],
+  "strategy_trials": 0,
+  "method_validated": false,
+  "settings": {
+    "MC": 80,
+    "n": 1008,
+    "burn": 512,
+    "B": 499,
+    "block": 20,
+    "seed": 20261015,
+    "method": "basic",
+    "size": 0.95,
+    "correlation_innovations": 0.8,
+    "population_CAGR": [
+      0.05,
+      0.06,
+      0.04
+    ],
+    "sigma_log_daily": [
+      0.0032308763764893333,
+      0.008,
+      0.004
+    ],
+    "q": 0.95,
+    "annualization_fixture": 252,
+    "margins_not_fitted": true
+  },
+  "population_ES": {
+    "S": 0.006449152453327223,
+    "M": 0.008061440566658917,
+    "target_ratio": 0.8,
+    "boundary_residual": 8.847089727481716e-17
+  },
+  "screen": [
+    {
+      "DGP": "IID_LOGNORMAL",
+      "MC_total": 80,
+      "errors": 0,
+      "endpoint_boundary_rejections": [
+        9,
+        5,
+        4
+      ],
+      "AND_boundary_rejections": 0,
+      "MC_intervals": [
+        {
+          "count": 9,
+          "rate": 0.1125,
+          "Wilson95": [
+            0.060326869466304736,
+            0.2001821809237288
+          ]
+        },
+        {
+          "count": 5,
+          "rate": 0.0625,
+          "Wilson95": [
+            0.026989375670841982,
+            0.13810148767274427
+          ]
+        },
+        {
+          "count": 4,
+          "rate": 0.05,
+          "Wilson95": [
+            0.019613554535544267,
+            0.12162276204643012
+          ]
+        },
+        {
+          "count": 0,
+          "rate": 0.0,
+          "Wilson95": [
+            0.0,
+            0.04581812953552712
+          ]
+        }
+      ]
+    },
+    {
+      "DGP": "AR_LOGNORMAL_04",
+      "MC_total": 80,
+      "errors": 0,
+      "endpoint_boundary_rejections": [
+        7,
+        4,
+        6
+      ],
+      "AND_boundary_rejections": 0,
+      "MC_intervals": [
+        {
+          "count": 7,
+          "rate": 0.0875,
+          "Wilson95": [
+            0.04303200178205986,
+            0.16976795508475
+          ]
+        },
+        {
+          "count": 4,
+          "rate": 0.05,
+          "Wilson95": [
+            0.019613554535544267,
+            0.12162276204643012
+          ]
+        },
+        {
+          "count": 6,
+          "rate": 0.075,
+          "Wilson95": [
+            0.03482524929300512,
+            0.1541201608121929
+          ]
+        },
+        {
+          "count": 0,
+          "rate": 0.0,
+          "Wilson95": [
+            0.0,
+            0.04581812953552712
+          ]
+        }
+      ]
+    }
+  ],
+  "pass_count": 8,
+  "total": 8,
+  "elapsed_seconds": 17.341922600055113,
+  "blocked_network_events": [],
+  "versions": {
+    "numpy": "2.5.4",
+    "arch": "8.0.0",
+    "statsmodels": "0.15.0"
+  }
+}

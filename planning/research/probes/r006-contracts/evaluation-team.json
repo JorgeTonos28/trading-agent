@@ -1,0 +1,186 @@
+{
+  "behavior_probe": "R006-CONTRACT-TEAM-01",
+  "completed_turns": 10,
+  "admitted_v1": 8,
+  "admitted_v2": 10,
+  "full_pass_v2": 10,
+  "post_observation_amendment": "Known source.field citation semantics; v1 retained, no output/prompt overwritten.",
+  "target_plus": "UNKNOWN",
+  "selected": false,
+  "records": [
+    {
+      "case": "research",
+      "variant": "minimal",
+      "checks": {
+        "completed": true,
+        "schema": true,
+        "marker": true,
+        "tools": true,
+        "admission_v2": true,
+        "case": true
+      },
+      "admission_v1": "REJECTED_PIT",
+      "admission_v2": "ACCEPTED",
+      "full_pass_v2": true,
+      "seconds": 25.776
+    },
+    {
+      "case": "research",
+      "variant": "skill",
+      "checks": {
+        "completed": true,
+        "schema": true,
+        "marker": true,
+        "tools": true,
+        "admission_v2": true,
+        "case": true
+      },
+      "admission_v1": "REJECTED_PIT",
+      "admission_v2": "ACCEPTED",
+      "full_pass_v2": true,
+      "seconds": 32.262
+    },
+    {
+      "case": "quant",
+      "variant": "skill",
+      "checks": {
+        "completed": true,
+        "schema": true,
+        "marker": true,
+        "tools": true,
+        "admission_v2": true,
+        "case": true
+      },
+      "admission_v1": "ACCEPTED",
+      "admission_v2": "ACCEPTED",
+      "full_pass_v2": true,
+      "seconds": 51.174
+    },
+    {
+      "case": "quant",
+      "variant": "minimal",
+      "checks": {
+        "completed": true,
+        "schema": true,
+        "marker": true,
+        "tools": true,
+        "admission_v2": true,
+        "case": true
+      },
+      "admission_v1": "ACCEPTED",
+      "admission_v2": "ACCEPTED",
+      "full_pass_v2": true,
+      "seconds": 37.901
+    },
+    {
+      "case": "shadow",
+      "variant": "minimal",
+      "checks": {
+        "completed": true,
+        "schema": true,
+        "marker": true,
+        "tools": true,
+        "admission_v2": true,
+        "case": true
+      },
+      "admission_v1": "ACCEPTED",
+      "admission_v2": "ACCEPTED",
+      "full_pass_v2": true,
+      "seconds": 58.298
+    },
+    {
+      "case": "shadow",
+      "variant": "skill",
+      "checks": {
+        "completed": true,
+        "schema": true,
+        "marker": true,
+        "tools": true,
+        "admission_v2": true,
+        "case": true
+      },
+      "admission_v1": "ACCEPTED",
+      "admission_v2": "ACCEPTED",
+      "full_pass_v2": true,
+      "seconds": 37.228
+    },
+    {
+      "case": "pedagogy",
+      "variant": "skill",
+      "checks": {
+        "completed": true,
+        "schema": true,
+        "marker": true,
+        "tools": true,
+        "admission_v2": true,
+        "case": true
+      },
+      "admission_v1": "ACCEPTED",
+      "admission_v2": "ACCEPTED",
+      "full_pass_v2": true,
+      "seconds": 92.871
+    },
+    {
+      "case": "pedagogy",
+      "variant": "minimal",
+      "checks": {
+        "completed": true,
+        "schema": true,
+        "marker": true,
+        "tools": true,
+        "admission_v2": true,
+        "case": true
+      },
+      "admission_v1": "ACCEPTED",
+      "admission_v2": "ACCEPTED",
+      "full_pass_v2": true,
+      "seconds": 30.919
+    },
+    {
+      "case": "failure",
+      "variant": "minimal",
+      "checks": {
+        "completed": true,
+        "schema": true,
+        "marker": true,
+        "tools": true,
+        "admission_v2": true,
+        "case": true
+      },
+      "admission_v1": "ACCEPTED",
+      "admission_v2": "ACCEPTED",
+      "full_pass_v2": true,
+      "seconds": 19.213
+    },
+    {
+      "case": "failure",
+      "variant": "skill",
+      "checks": {
+        "completed": true,
+        "schema": true,
+        "marker": true,
+        "tools": true,
+        "admission_v2": true,
+        "case": true
+      },
+      "admission_v1": "ACCEPTED",
+      "admission_v2": "ACCEPTED",
+      "full_pass_v2": true,
+      "seconds": 31.816
+    }
+  ],
+  "variants": {
+    "minimal": {
+      "n": 5,
+      "full_pass_v2": 5,
+      "mean_seconds": 34.421,
+      "max_seconds": 58.298
+    },
+    "skill": {
+      "n": 5,
+      "full_pass_v2": 5,
+      "mean_seconds": 49.07,
+      "max_seconds": 92.871
+    }
+  }
+}

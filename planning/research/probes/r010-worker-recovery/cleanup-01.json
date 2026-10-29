@@ -1,0 +1,26 @@
+{
+  "scope": "H7_OWN_TEMP",
+  "cleanup": "BLOCKED_BY_AUTOMATIC_APPROVAL_REVIEW",
+  "rejected_actions": [
+    "RECURSIVE_BOUNDED_TEMP_DELETE",
+    "NONRECURSIVE_EXACT_EIGHT_FILE_MANIFEST_DELETE"
+  ],
+  "stated_reason": "blocked by policy",
+  "state_root_exists_last_observation": true,
+  "synthetic_files_observed": [
+    "entered-1.json",
+    "entered-2.json",
+    "state.db",
+    "state.db-shm",
+    "state.db-wal",
+    "synthetic_receipt.db",
+    "worker-error-1.txt",
+    "worker-error-2.txt"
+  ],
+  "own_processes_stopped": true,
+  "residue_locator": "LOCAL_ONLY_.local/h7-scratch-binding.json",
+  "dependency_assets": "REUSABLE_TEMP_RESEARCH_RESIDUE",
+  "secrets_financial_data_in_fixture": false,
+  "administrative_changes": [],
+  "no_alternative_shell_or_python_delete_attempted": true
+}

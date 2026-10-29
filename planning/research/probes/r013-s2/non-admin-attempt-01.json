@@ -1,0 +1,67 @@
+{
+  "schema_version": "r013-nonadmin-v1",
+  "observed_at": "2026-10-05T19:55:38.597031+00:00",
+  "source_commit": "913cbf137b6b10dddfc427b590f84dc1829c2222",
+  "environment": "Team developer research, same Windows identity",
+  "synthetic_only": true,
+  "admin_changes": [],
+  "model_calls": 0,
+  "checks": [
+    {
+      "id": "NA-01-S1-sibling-read",
+      "observed": "True",
+      "expected": "True",
+      "passed": true,
+      "scope": "Counterexample: separate folder under same developer identity does not protect core canary"
+    },
+    {
+      "id": "NA-02-default-env-inheritance",
+      "observed": "True",
+      "expected": "True",
+      "passed": true,
+      "scope": "Real subprocess env inheritance, synthetic variable only"
+    },
+    {
+      "id": "NA-03-explicit-env-removal",
+      "observed": "False",
+      "expected": "False",
+      "passed": true,
+      "scope": "Real sanitized subprocess; not protection from readable files or inherited handles"
+    },
+    {
+      "id": "NA-04-blind-export-invariance",
+      "observed": true,
+      "expected": true,
+      "passed": true,
+      "scope": "Toy projection invariance under Champion decision mutation; no model/OS blinding proof"
+    },
+    {
+      "id": "NA-05-no-champion-marker",
+      "observed": true,
+      "expected": true,
+      "passed": true,
+      "scope": "Literal leakage scan only, not semantic non-inference"
+    },
+    {
+      "id": "NA-06-allowlist-not-semantic-blinding",
+      "observed": true,
+      "expected": true,
+      "passed": true,
+      "scope": "Counterexample: provenance/dependency graph needed even with stable top-level fields"
+    },
+    {
+      "id": "NA-07-post-seal-mutation-detected",
+      "observed": true,
+      "expected": true,
+      "passed": true,
+      "scope": "External digest detects toy mutation only while digest outside attacker control"
+    }
+  ],
+  "acceptance": {
+    "S2_SECURITY": "NOT_TESTED",
+    "S2_BLINDING_OS": "NOT_TESTED",
+    "semantic_blinding": "NOT_DEMONSTRATED",
+    "scope": "counterexamples and disposable design probes only"
+  },
+  "cleanup": "TemporaryDirectory cleaned"
+}

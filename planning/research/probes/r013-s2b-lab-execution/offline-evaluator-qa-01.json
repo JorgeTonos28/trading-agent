@@ -1,0 +1,87 @@
+{
+  "mode": "OFFLINE_SYNTHETIC_QA_NOT_NATIVE_FS",
+  "checks": [
+    {
+      "id": "PINNED_POLICY_UNCHANGED",
+      "state": "PASS",
+      "scope": "OFFLINE_SOURCE_OR_SYNTHETIC_EVALUATOR_ONLY"
+    },
+    {
+      "id": "PINNED_FS_SOURCE_UNCHANGED",
+      "state": "PASS",
+      "scope": "OFFLINE_SOURCE_OR_SYNTHETIC_EVALUATOR_ONLY"
+    },
+    {
+      "id": "FILESYSTEM_SOURCE_AST_ONLY",
+      "state": "PASS",
+      "scope": "OFFLINE_SOURCE_OR_SYNTHETIC_EVALUATOR_ONLY"
+    },
+    {
+      "id": "UNVERIFIED_EXTERNAL_POSITIVES_CANNOT_PASS",
+      "state": "PASS",
+      "scope": "OFFLINE_SOURCE_OR_SYNTHETIC_EVALUATOR_ONLY"
+    },
+    {
+      "id": "DENIAL_WITH_VERIFIED_SYNTHETIC_POSITIVES_SCOPED",
+      "state": "PASS",
+      "scope": "OFFLINE_SOURCE_OR_SYNTHETIC_EVALUATOR_ONLY"
+    },
+    {
+      "id": "FAILED_OPERATOR_POSITIVE_INVALIDATES_DENIAL",
+      "state": "PASS",
+      "scope": "OFFLINE_SOURCE_OR_SYNTHETIC_EVALUATOR_ONLY"
+    },
+    {
+      "id": "BINDING_MISMATCH_INVALIDATES_DENIAL",
+      "state": "PASS",
+      "scope": "OFFLINE_SOURCE_OR_SYNTHETIC_EVALUATOR_ONLY"
+    },
+    {
+      "id": "MISSING_OR_SHARING_ERROR_2_IS_ERROR",
+      "state": "PASS",
+      "scope": "OFFLINE_SOURCE_OR_SYNTHETIC_EVALUATOR_ONLY"
+    },
+    {
+      "id": "MISSING_OR_SHARING_ERROR_3_IS_ERROR",
+      "state": "PASS",
+      "scope": "OFFLINE_SOURCE_OR_SYNTHETIC_EVALUATOR_ONLY"
+    },
+    {
+      "id": "MISSING_OR_SHARING_ERROR_32_IS_ERROR",
+      "state": "PASS",
+      "scope": "OFFLINE_SOURCE_OR_SYNTHETIC_EVALUATOR_ONLY"
+    },
+    {
+      "id": "FORBIDDEN_GRANT_IS_FAIL_EVEN_WITHOUT_POSITIVES",
+      "state": "PASS",
+      "scope": "OFFLINE_SOURCE_OR_SYNTHETIC_EVALUATOR_ONLY"
+    },
+    {
+      "id": "MISSING_OBSERVATION_IS_NOT_TESTED",
+      "state": "PASS",
+      "scope": "OFFLINE_SOURCE_OR_SYNTHETIC_EVALUATOR_ONLY"
+    },
+    {
+      "id": "DUPLICATE_OBSERVATION_CANNOT_PASS",
+      "state": "PASS",
+      "scope": "OFFLINE_SOURCE_OR_SYNTHETIC_EVALUATOR_ONLY"
+    },
+    {
+      "id": "AGGREGATE_S2B_NEVER_ACCEPTED",
+      "state": "PASS",
+      "scope": "OFFLINE_SOURCE_OR_SYNTHETIC_EVALUATOR_ONLY"
+    }
+  ],
+  "counts": {
+    "PASS": 14,
+    "FAIL": 0
+  },
+  "actual_filesystem_tests_executed": false,
+  "actual_security_acceptance": "NOT_TESTED",
+  "configuration_changes": [],
+  "model_calls": 0,
+  "source_sha256": {
+    "evaluate_filesystem.py": "e8fe4ea6eeaba40844f4f9618a2d733f019c9b00ad51d1117dd1bb2fae3c66ed",
+    "preparation_checks.py": "7156ac9dae4527648ab4720c6395d7cfaf54b528fcbacbcf609ad636d0f598dc"
+  }
+}

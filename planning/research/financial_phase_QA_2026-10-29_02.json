@@ -1,0 +1,342 @@
+{
+  "captured_utc": "2026-10-29T13:13:32.670728+00:00",
+  "scope": "REPOSITORY_EVIDENCE_CONSISTENCY_ONLY_NOT_SECURITY_FINANCIAL_STATISTICAL_OR_POSTGRESQL_ACCEPTANCE",
+  "controller_sha256": "7394c0730d0a702d2ed39ba607b77deabf6d7931d96d4663b42f46c284375f02",
+  "source_parent_commit": "5eed577",
+  "attempt": "02",
+  "checks": [
+    {
+      "id": "STRUCTURED_SOURCE_FILES_PARSE",
+      "status": "PASS",
+      "detail": {
+        "parsed": {
+          "json": 13,
+          "yaml": 1,
+          "python_ast": 9
+        },
+        "errors": []
+      }
+    },
+    {
+      "id": "QL6_COUNTS_RECORDED_EXACTLY",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL6_CONTROLLER_RAW_BYTES",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL6_STEPS_RECORDED_EXACTLY",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL6_LOCK_TARGET_HOLDOUT",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL7-01_COUNTS_RECORDED_EXACTLY",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL7-01_CONTROLLER_RAW_BYTES",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL7-01_STEPS_RECORDED_EXACTLY",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL7-01_LOCK_TARGET_HOLDOUT",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL7-02_COUNTS_RECORDED_EXACTLY",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL7-02_CONTROLLER_RAW_BYTES",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL7-02_STEPS_RECORDED_EXACTLY",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL7-02_LOCK_TARGET_HOLDOUT",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL7-03_COUNTS_RECORDED_EXACTLY",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL7-03_CONTROLLER_RAW_BYTES",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL7-03_STEPS_RECORDED_EXACTLY",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL7-03_LOCK_TARGET_HOLDOUT",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL8-01_COUNTS_RECORDED_EXACTLY",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL8-01_CONTROLLER_RAW_BYTES",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL8-01_STEPS_RECORDED_EXACTLY",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL8-01_LOCK_TARGET_HOLDOUT",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL8-02_COUNTS_RECORDED_EXACTLY",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL8-02_CONTROLLER_RAW_BYTES",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL8-02_STEPS_RECORDED_EXACTLY",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL8-02_LOCK_TARGET_HOLDOUT",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "H10_COUNTS_RECORDED_EXACTLY",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "H10_CONTROLLER_RAW_BYTES",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "H10_STEPS_RECORDED_EXACTLY",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "H10_LOCK_TARGET_HOLDOUT",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "R5_COUNTS_RECORDED_EXACTLY",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "R5_CONTROLLER_RAW_BYTES",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "R5_STEPS_RECORDED_EXACTLY",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "R5_LOCK_TARGET_HOLDOUT",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL6_BUILD_SUCCEEDS_SECURITY_FAILURE_REMAINS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL7_ERROR01_AND_FAIL02_PRESERVED",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL7_NORMALIZATION_CORRECTION_SEPARATE",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL8_HARNESS_ERROR01_NOT_ERASED",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL8_CORRECTION02_ONLY_CSHARP_SOURCE_FILES",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL8_BOTH_REPAIRS_AND_LEGACY_RELATIVE_SHAPE",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "CONTINUATION_REFERENCES_ORIGINAL_CAPTURES",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "LEAN_CANDIDATE_SOURCE_FINGERPRINT_NOT_ACCEPTED_PIN",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL8-02_LOCAL_ARTIFACT_HASHES",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "QL6_LOCAL_ARTIFACT_HASHES",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "H10_FINITE_ORACLE_AND_MUTATIONS_NOT_PG",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "R5_FIVE_SCALES_NO_NUMERIC_PROFILE_APPROVAL",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "D2_PAYLOAD_ARITHMETIC_NOT_TOTAL_STORAGE",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "D2_WEEKLY_EXTRA_DENOMINATOR_EXPLICIT",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "D2_CRASH_DISASTER_RECOVERY_DISTINCT",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "TWELVE_HYPOTHESES_ZERO_STRATEGY_ATTEMPTS",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "RULE_CONFIG_RAW_BYTES_UNCHANGED",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "FOUR_PLUS_SIX_DATACARDS_NOT_ADMITTED",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "VENDOR_COST_MODELS_REMAIN_UNALTERED",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "ALL_COST_MODELS_ALL_FIVE_SCALES",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "VENDOR_NO_NEW_REPLY_SEND_DATE_OR_LICENSE_INVENTED",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "Q063_APPROVAL_SCOPE_PRESERVED",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "CURRENT_READINESS_Q064_NOT_Q063",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "NO_FALSE_DOR_B3_METHOD_OR_TARGET_ACCEPTANCE",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "PF_NOT_YET_ADMITTED_AND_WORST_REACHABLE_REMAINDER_EXPLICIT",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "ECONOMIC_DD_GATES_UNCHANGED",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "LOCAL_MARKDOWN_LINKS_RESOLVE",
+      "status": "PASS",
+      "detail": {
+        "checked": 323,
+        "broken": []
+      }
+    },
+    {
+      "id": "NO_PRIVATE_KEY_BLOCKS_OR_ENV_FILES",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "BRANCH_PLAN_ARCHITECT_MAIN_BASELINES_UNCHANGED",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "DIFF_WHITESPACE_VALID",
+      "status": "PASS",
+      "detail": null
+    }
+  ],
+  "counts": {
+    "PASS": 63,
+    "FAIL": 0,
+    "ERROR": 0
+  },
+  "implementation_locked": true,
+  "target_acceptance_status": "TARGET_ACCEPTANCE_DEFERRED",
+  "holdout": "INTEGRITY_UNKNOWN"
+}

@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-05",
+  "environment": "CURRENT_RESEARCH_ENVIRONMENT_Team",
+  "AVAILABLE_IN_TARGET_PLUS": "UNKNOWN",
+  "SELECTED": false,
+  "probes": {
+    "data": {
+      "catalog_installed": true,
+      "catalog_enabled": true,
+      "optional_dependency_count": 40,
+      "required_dependency_count": 0,
+      "permissions_surface_status": "not_installed",
+      "license_from_local_manifest": "Proprietary",
+      "version_from_local_manifest": "1.0.11"
+    },
+    "developers": {
+      "catalog_installed": false,
+      "status": "enabled",
+      "optional_dependency_count": 1,
+      "permissions_surface_status": "not_installed"
+    }
+  },
+  "actions": {
+    "installations": 0,
+    "connections": 0,
+    "permission_changes": 0,
+    "external_data_reads": 0
+  },
+  "interpretation": "Catalog/dependency and ChatGPT permissions surfaces disagree for Data; scope unresolved, no entitlement or portability inference. Search did not verify a bundled equity/trading tool; results not exhaustive. External third-party agent frameworks not evaluated."
+}

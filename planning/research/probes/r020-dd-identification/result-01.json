@@ -1,0 +1,82 @@
+{
+  "captured_utc": "2026-10-23T15:40:57.098141+00:00",
+  "scope": "EXACT_FICTITIOUS_DD_CLAIM_AND_BOUNDED_MEAN_NOT_STATISTICAL_CALIBRATION",
+  "source_sha256": "203f7d0fabdd0ac19d5f264e27ddb1674e7aa966e950b428f59b37936c731f05",
+  "rows": [
+    {
+      "id": "SAME_EXPECTATION",
+      "observed": [
+        "-1/1000",
+        "-1/1000"
+      ],
+      "expected": [
+        "-1/1000",
+        "-1/1000"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "DIFFERENT_PROBABILITY_OF_DETERIORATION",
+      "observed": [
+        "9/10",
+        "1/10"
+      ],
+      "expected": [
+        "9/10",
+        "1/10"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "VALID_DD_LEVELS",
+      "observed": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "id": "PATH_MDD_REALIZATION",
+      "observed": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "id": "ONE_PATH_BOUND_VACUOUS_EVEN_BEST",
+      "observed": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "N149_MEAN_MINUS_POINT2_NOT_PASS",
+      "observed": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "id": "N150_MEAN_MINUS_POINT2_PASSES_THIS_BOUND",
+      "observed": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "id": "OVERLAPPED_WINDOWS_NOT_ASSUMED_INDEPENDENT",
+      "observed": false,
+      "expected": false,
+      "status": "PASS"
+    }
+  ],
+  "bounds": {
+    "n149": 0.0005272337043039643,
+    "n150": -0.00014230817724358857
+  },
+  "counts": {
+    "PASS": 8,
+    "FAIL": 0,
+    "ERROR": 0
+  },
+  "strategy_trials": 0,
+  "method_accepted": false,
+  "DD_E_approved": false,
+  "holdout": "INTEGRITY_UNKNOWN",
+  "implementation_locked": true,
+  "target_acceptance": "TARGET_ACCEPTANCE_DEFERRED"
+}

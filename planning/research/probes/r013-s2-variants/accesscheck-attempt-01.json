@@ -1,0 +1,25 @@
+{
+  "schema_version": "r013-variants-accesscheck-v1",
+  "captured_at": "2026-10-06T12:17:02.536929+00:00",
+  "source_sha256": "50e0b41b114499dc3ca8c9eab5433d7a3935b99c0f93f37028c0a8b32147b063",
+  "source_commit_base": "46cc4a5889747ddfec9731200283f1a94d2b77bd",
+  "environment": "Team research, current developer Windows identity",
+  "configuration_changes": [],
+  "model_calls": 0,
+  "probe_scope": "Win32 token/descriptor AccessCheck only, no process launch or real object ACL enforcement",
+  "limitations": [
+    "Not native Codex compatibility",
+    "Not filesystem/process/network/IPC enforcement",
+    "Not a new Agent Runner or account",
+    "Not audit generation or bootstrap",
+    "No operational security/blinding PASS"
+  ],
+  "status": "PROBE_ERROR_NOT_SECURITY_FAILURE",
+  "error": {
+    "type": "OSError",
+    "winerror": 5,
+    "operation": "[Errno 5] Create transient restricted token"
+  },
+  "tests": [],
+  "cleanup": "Transient handles closed and in-memory SID/descriptors freed; no persistent setup"
+}

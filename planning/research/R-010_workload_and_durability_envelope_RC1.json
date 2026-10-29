@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "recorded_on": "2026-10-29",
+  "status": "PREREGISTERED_ENGINEERING_TEST_PROPOSAL_NOT_OPERATIONAL_SLA_OR_FINANCIAL_POLICY",
+  "source": "ADR024; EQ3 six ETF/three positions; existing R006 WL-R conservative retained envelope",
+  "agentic_discovery_reopened": false,
+  "universe_instruments": 6,
+  "strategy_max_positions_proposed": 3,
+  "C_nominal": {
+    "required_logical_jobs_per_day": 50,
+    "service_attempt_budget_per_day": 63,
+    "max_attempts_per_job_proposed": 2,
+    "weekly_extra_jobs": 3,
+    "bundle_representative_KiB": 32,
+    "bundle_stress_KiB": 128,
+    "native_active_concurrency_initial_proposal": 1,
+    "job_materialization_scan_seconds": 5,
+    "reason": "Retain existing WL-R50 plus13retry reserve; not a Plus quota claim or automatic daily attempt entitlement"
+  },
+  "C_burst": {
+    "logical_jobs_due_in_60_seconds": 100,
+    "all_required_jobs_accounted": true,
+    "functional_on_time_delivery_claimed": false
+  },
+  "F_critical_ledger_load": {
+    "nominal_events_per_second": 1,
+    "nominal_test_minutes": 30,
+    "burst_events_per_second": 100,
+    "burst_test_seconds": 60,
+    "overload_events_per_second": 1000,
+    "overload_test_seconds": 10,
+    "event_payload_upper_envelope_KiB": 4,
+    "scope": "ENGINEERING_ENVELOPE_FOR_COMMAND_FILL_RISK_AUDIT_NOT_MEASURED_BROKER_RATE_NOT_ALL_RAW_TICKS",
+    "no_drop_or_coalescing_critical_events": true
+  },
+  "latency_targets_proposed": {
+    "nominal_critical_txn_p99_ms": 100,
+    "nominal_critical_txn_max_ms": 1000,
+    "C_job_materialization_from_persisted_due_max_seconds": 10,
+    "post_crash_due_inventory_seconds": 60,
+    "C_lease_seconds": 60,
+    "C_heartbeat_seconds": 10,
+    "C_retry_backoff_seconds": 10,
+    "all_commit_dispatch_deadline_checks_required": true,
+    "not_a_protection_window_or_trading_SLA": true
+  },
+  "agent_role_deadlines_reused_as_test_proposals": {
+    "shadow_seconds_from_snapshot": 120,
+    "pedagogical_event_seconds": 600,
+    "research_quant_hours": 24,
+    "weekly_hours": 48,
+    "daily_report": "Before09:00America/Santo_DomingoNextDay",
+    "late_state_does_not_extend_deadline": true,
+    "mandatory_strategy_agent_dependency": "NONE_SELECTED"
+  },
+  "durability_proposals": {
+    "acknowledged_commit_local_crash_loss_target_count": 0,
+    "disk_disaster_RPO_seconds": 300,
+    "restore_to_PAUSED_diagnostic_RTO_seconds": 3600,
+    "base_backup_hours": 24,
+    "archive_wal_max_unarchived_age_seconds": 300,
+    "archive_timeout_candidate_seconds": 60,
+    "backup_generations_days_minimum_proposal": 30,
+    "separate_failure_domain_copy_required": true,
+    "financial_audit_retention": "UNTIL_VERSIONED_OWNER_DISPOSITION_AND_LEGAL_LICENSE_SCOPE_NO_AUTO_PURGE",
+    "local_disaster_or_powerloss_accepted": false
+  },
+  "pass_criteria_proposed": {
+    "critical_invariants_violations": 0,
+    "unaccounted_required_jobs_or_attempts": 0,
+    "duplicate_admitted_receipts_per_job": 0,
+    "unexplained_lost_commits": 0,
+    "unverified_external_command_replays": 0,
+    "burst_accounting_and_fail_closed": "REQUIRED; latency percentile gates apply only to stated nominal; overload must preserve bounded resources and explicit rejection/pauses",
+    "operational_functional_delivery": "Existing WL-R>=95percent plus100percentaccounting, per-role obligations and no persistent missing Shadow/Pedagogy; not satisfied by placeholders"
+  },
+  "capacity_model": {
+    "sessions_per_year_design_assumption": 252,
+    "session_seconds": 23400,
+    "critical_payload_bytes_per_session_at_nominal": 95846400,
+    "critical_payload_bytes_per_year_at_nominal": 24153292800,
+    "excludes": [
+      "indexes",
+      "WAL",
+      "backups",
+      "snapshots",
+      "outputs",
+      "raw market data",
+      "replication",
+      "OS"
+    ],
+    "measured_sizes": false,
+    "retention_space_and_cost_accepted": false
+  },
+  "pre_freeze_gates_remaining": [
+    "justify_or_revise_envelope_using_broker_input_and_target_measurements_without_financial_results",
+    "exact_versions_driver_config_and_transaction_schema",
+    "resource_storage_budget_and_total_cost_all_five_capitals",
+    "independent_review_and_PostgreSQL_sufficiency_evidence"
+  ],
+  "implementation_locked": true,
+  "target_acceptance_status": "TARGET_ACCEPTANCE_DEFERRED",
+  "holdout": "INTEGRITY_UNKNOWN",
+  "C_weekly_peak": {
+    "weekly_jobs_are_additional_to_daily_50": true,
+    "extra_jobs_concentrated_in_one_day_for_test": 3,
+    "required_logical_jobs_on_that_day": 53,
+    "service_attempt_budget_on_that_day": 66,
+    "retry_reserve_unchanged": 13,
+    "not_an_entitlement_or_quota_claim": true
+  }
+}

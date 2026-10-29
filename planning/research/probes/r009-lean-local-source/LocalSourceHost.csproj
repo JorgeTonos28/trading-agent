@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>LeanLocalSourceHostProbe</AssemblyName>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <StartupObject>QuantConnect.Lean.Launcher.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(LeanSourceRoot)/Launcher/Program.cs" Link="Program.cs" />
+    <ProjectReference Include="$(LeanSourceRoot)/Engine/QuantConnect.Lean.Engine.csproj" />
+    <ProjectReference Include="$(LeanSourceRoot)/Messaging/QuantConnect.Messaging.csproj" />
+    <ProjectReference Include="$(LeanSourceRoot)/Queues/QuantConnect.Queues.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,22 @@
+{
+  "recorded_on": "2026-10-29",
+  "status": "RESEARCH_REPAIR_CANDIDATE_NOT_ACCEPTED_PIN_OR_DEPLOYMENT_RELEASE",
+  "source_pin": "f3d841e60dfd010ee5fc293ea893e56952484108",
+  "source_hash_fingerprint_algorithm": "SHA256_OF_SORTED_COMPACT_JSON_PATH_TO_SHA256_WINDOWS_RELATIVE_PATHS",
+  "source_hash_fingerprint": "4385d3b500e60fb939d0d435f1ead8b4b4fcde769cdc185fdd1626423a7e8bc9",
+  "source_hashes_reference_01": "planning/research/probes/r009-contract-preserving-host/result-01.json",
+  "added_CSharp_hashes_reference_02": "planning/research/probes/r009-contract-preserving-host/result-02.json",
+  "second_patch_sha256": "9de6b8c9b9da08c980a91e8126d6bd1b8d5a3a7981367bc96f745ba1761150c7",
+  "source_files_after_patch": 2664,
+  "probe_controller": "planning/research/probes/r009-contract-preserving-host/continue_probe.py",
+  "minimal_host_build": "PASS",
+  "native_metadata_and_fixture_checks": 14,
+  "no_Engine_Run_Main_or_Algorithm_invoked": true,
+  "full_source_solution_built": false,
+  "patch_policy": "BCL_TWO_PATH_REPAIR_PRESERVE_LEGACY_RELATIVE_OUTPUT_AND_FORK_CANDIDATE",
+  "original_source_modified": false,
+  "pin_security_and_parity_accepted": false,
+  "target_acceptance_status": "TARGET_ACCEPTANCE_DEFERRED",
+  "implementation_locked": true,
+  "holdout": "INTEGRITY_UNKNOWN"
+}

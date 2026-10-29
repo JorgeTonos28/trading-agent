@@ -1,0 +1,53 @@
+{
+  "scope": "DISPOSABLE_H8_NOT_PRODUCTION_LOCKFILE",
+  "packages": [
+    {
+      "name": "APScheduler",
+      "version": "3.11.3",
+      "source_url": "https://files.pythonhosted.org/packages/42/c9/8638db32514dbb9157b3d82680c6faea89283523edf9ed2415ea3884f2ae/apscheduler-3.11.3-py3-none-any.whl",
+      "source_hashes": {
+        "sha256": "bbeb2ec02d23d3c06a6c07ed7f0f3939ada6680eb121fae809a69bb42c537a30"
+      },
+      "license_expression": "UNKNOWN"
+    },
+    {
+      "name": "SQLAlchemy",
+      "version": "2.1.4",
+      "source_url": "https://files.pythonhosted.org/packages/1f/44/311bac6b6ef81e4dfd0287d04900108b1f5c00c9761dd3c0a2b7b9d0f86b/sqlalchemy-2.1.4.tar.gz",
+      "source_hashes": {
+        "sha256": "7bd7ad604487daa7eab8716471c29a7185f17b5287ce73bb7bc79fea050d8cfd"
+      },
+      "license_expression": "MIT"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0",
+      "source_url": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl",
+      "source_hashes": {
+        "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8"
+      },
+      "license_expression": "PSF-2.0"
+    },
+    {
+      "name": "tzlocal",
+      "version": "5.4.4",
+      "source_url": "https://files.pythonhosted.org/packages/9e/a4/017a7a6cbe387d961a688ec31364ae60a5c4e22c96ae9921b79a947c855d/tzlocal-5.4.4-py3-none-any.whl",
+      "source_hashes": {
+        "sha256": "aae09f0126a8a86fa736be266eb4a471380d26a0de3bc14844e7821fee3e2a15"
+      },
+      "license_expression": "MIT"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.5",
+      "source_url": "https://files.pythonhosted.org/packages/94/21/1e5995a1c920cce14e4bffae20c665ec10e7ed03ab25e006cd741092b718/tzdata-2026.5-py2.py3-none-any.whl",
+      "source_hashes": {
+        "sha256": "b683bd1b6659ddcd810ff02ad09ba821d4bf1065072805063eb35c49617905ac"
+      },
+      "license_expression": "UNKNOWN"
+    }
+  ],
+  "global_install": false,
+  "billing": false,
+  "SQLAlchemy_sdist_built_locally": true
+}

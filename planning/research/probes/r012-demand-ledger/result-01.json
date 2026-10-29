@@ -1,0 +1,121 @@
+{
+  "captured_utc": "2026-10-28T18:21:14.985315+00:00",
+  "scope": "SYNTHETIC_LOCAL_LEDGER_WORKLOAD_NOT_SELECTED_ENGINE_OR_OPERATIONAL_ACCEPTANCE",
+  "source_sha256": "edae38c0a5b9dd792c3ede49a5d0acd5f3c523c46c084e8ecf25f65b84117cb0",
+  "sqlite_version": "3.50.4",
+  "journal_mode": "delete",
+  "synchronous": "FULL",
+  "logical_jobs": 1200,
+  "insert_proposals": 2400,
+  "producer_threads": 4,
+  "insertion_elapsed_seconds": 20.14,
+  "performance_gate": "NOT_DEFINED_NOT_PASSED",
+  "rows": [
+    {
+      "id": "LOGICAL_JOBS_DEDUP_CONCURRENT_PROPOSALS",
+      "observed": {
+        "jobs": 1200,
+        "outbox": 1200,
+        "inserted": 1200
+      },
+      "expected": {
+        "jobs": 1200,
+        "outbox": 1200,
+        "inserted": 1200
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "ROLLBACK_JOB_AND_OUTBOX",
+      "observed": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "CAS_FIRST_ATTEMPT",
+      "observed": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "CAS_STALE_GENERATION_REJECTED",
+      "observed": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "STALE_ATTEMPT_NOT_ADMITTED",
+      "observed": "STALE_ATTEMPT",
+      "expected": "STALE_ATTEMPT",
+      "status": "PASS"
+    },
+    {
+      "id": "LATE_OUTPUT_NOT_ADMITTED",
+      "observed": "LATE",
+      "expected": "LATE",
+      "status": "PASS"
+    },
+    {
+      "id": "VALID_OUTPUT_RECEIPT",
+      "observed": "ACCEPTED",
+      "expected": "ACCEPTED",
+      "status": "PASS"
+    },
+    {
+      "id": "DUPLICATE_NOT_SECOND_RECEIPT",
+      "observed": "DUPLICATE",
+      "expected": "DUPLICATE",
+      "status": "PASS"
+    },
+    {
+      "id": "EXACTLY_ONE_RECEIPT_IN_FIXTURE",
+      "observed": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "SQLITE_INTEGRITY",
+      "observed": "ok",
+      "expected": "ok",
+      "status": "PASS"
+    },
+    {
+      "id": "OLD_ATTEMPT_AFTER_RESTORE_NOT_CURRENT",
+      "observed": "STALE_INCARNATION",
+      "expected": "STALE_INCARNATION",
+      "status": "PASS"
+    },
+    {
+      "id": "BACKUP_RECEIPT_GAP_VISIBLE",
+      "observed": {
+        "receipt_missing": true,
+        "anchor_acknowledged": true
+      },
+      "expected": {
+        "receipt_missing": true,
+        "anchor_acknowledged": true
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "RESTORED_SQLITE_INTEGRITY",
+      "observed": "ok",
+      "expected": "ok",
+      "status": "PASS"
+    }
+  ],
+  "counts": {
+    "PASS": 13,
+    "FAIL": 0,
+    "ERROR": 0
+  },
+  "fixture_retained": true,
+  "external_epoch_is_fixture_not_security_boundary": true,
+  "restore_acceptance": "RECOVERY_GAP_DEMONSTRATED_NOT_OPERATIONAL_RECOVERY_ACCEPTED",
+  "WAL_reset_bug_reproduced_or_fixed": false,
+  "PostgreSQL_or_powerloss_or_FSYNC_proven": false,
+  "server_service_admin_or_account_used": false,
+  "implementation_locked": true,
+  "holdout": "INTEGRITY_UNKNOWN",
+  "target_acceptance": "TARGET_ACCEPTANCE_DEFERRED"
+}

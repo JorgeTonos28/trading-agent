@@ -1,0 +1,36 @@
+{
+  "observed_at": "2026-10-05T19:57:00.3995152Z",
+  "source": "Get-NetFirewallProfile ActiveStore, read-only enum string clarification",
+  "profiles": [
+    {
+      "Name": "Domain",
+      "Enabled": "True",
+      "DefaultInboundAction": "Allow",
+      "DefaultOutboundAction": "Allow",
+      "AllowLocalFirewallRules": "False",
+      "LogBlocked": "False",
+      "LogAllowed": "False"
+    },
+    {
+      "Name": "Private",
+      "Enabled": "True",
+      "DefaultInboundAction": "Allow",
+      "DefaultOutboundAction": "Allow",
+      "AllowLocalFirewallRules": "False",
+      "LogBlocked": "False",
+      "LogAllowed": "False"
+    },
+    {
+      "Name": "Public",
+      "Enabled": "True",
+      "DefaultInboundAction": "Block",
+      "DefaultOutboundAction": "Allow",
+      "AllowLocalFirewallRules": "False",
+      "LogBlocked": "False",
+      "LogAllowed": "False"
+    }
+  ],
+  "configuration_changes": [],
+  "policy_origin": "UNKNOWN",
+  "interpretation": "Local rule effectiveness requires verifying policy store/merge; no S2 acceptance"
+}

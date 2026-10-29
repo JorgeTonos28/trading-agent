@@ -1,0 +1,11 @@
+# QL8 — host source con reparación de ambos paths y contrato de retorno
+
+Prerregistro2026-10-29, un intento45srestore/240sbuild/20srun. QL6 demostró build+smoke y segundo helper inseguro. QL7 demostró rechazo de traversal en componente, con ERROR01/FAIL02 conservados y contraste03. Revisión independiente observó cambio innecesario de shape: el parche QL7 devuelve paths absolutos incluso si outFolder era relativo. Este experimento corrige únicamente ese cambio: BCL extrae/valida, lista conserva Path.Combine legacy. No normalizar el retorno de la API; el caller/import debe normalizar para su validación.
+
+Copiar sólo código de QL5 a árbol NUEVO sin bin/obj/Data/.git/enlaces; verificar hashes base contra QL5. Aplicar segundo parche a copia. Host y smoke con obj separados como QL6. Mismos mínimos patched/fork y omisión del proyecto de ejemplos, sin suprimir warnings. Metadata de launcher/engine, forkAPI, nueve casos QL7 y dos casos de path relativo, sin Main/Engine.Run/Algorithm. Todo filesystem nuevo bajo `.local/ql8-contract-preserving-host`; ZIP traversal sólo a sibling propio. No secretos, cuenta, egress de datos o admin.
+
+No demuestra todos los callers ni import/ZIP-bombs/links/encoding/runtime/target; no pin aceptado por cero avisos o build. Conservar intentos anteriores e interpretar éste como integración candidata y shape concreto, no equivalencia global ni solución de toda seguridad. No más campañas de build si este intento queda inconcluso: registrar resultado y gate exacto.
+
+## Error01 y corrección acotada02
+
+01restorePASS/buildERROR: el filtro del harness excluyó cualquier directorio llamado Data, incluyendo **Common/Data, código C# del namespace**, además del Data raíz de datasets que se pretendía excluir. Esto explica los tipos QuantConnect.Data ausentes; no es evidencia de incompatibilidad del parche. Preservar01. Un único02 restaurará únicamente `.cs` omitidos de subdirectorios de código Data, verificados byte/hash desde export público original; ningún archivo de dataset. Comprobar todos los archivos previamente copiados/parcheados sin cambios, repetir build≤240s/run≤20s sin nuevo restore o cambio de expectativas. Registrar archivos añadidos y hashes, source diff/hashes y código del fixture. Ninguna captura01 se modifica. Esto corrige el harness; no nuevas campañas de variantes/dependencias.

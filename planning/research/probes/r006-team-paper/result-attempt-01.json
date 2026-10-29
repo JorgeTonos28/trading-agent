@@ -1,0 +1,85 @@
+{
+  "probe": "R006-TEAM-PAPER-WAVE07",
+  "captured_at": "2026-10-05T18:30:02.334858+00:00",
+  "paper_runtime": "Team",
+  "future_plus": "UNKNOWN_PRELIVE",
+  "selected": false,
+  "sdk_version": "0.160.0",
+  "cli_version": "codex-cli 0.159.0-alpha.12.1",
+  "source_sha256": "7a43dde065d7183af518ce70321cf3ed13d1fbdb402b5d182e89702b549ae3fe",
+  "config_overrides": {
+    "forced_login_method": "chatgpt",
+    "model_provider": "openai",
+    "features.shell_tool": false,
+    "features.unified_exec": false,
+    "features.multi_agent": false,
+    "features.apps": false,
+    "features.skill_mcp_dependency_install": false,
+    "web_search": "disabled",
+    "mcp_servers": {},
+    "plugins": {},
+    "history.persistence": "none"
+  },
+  "source_commit": "c263c891563f5baf06a0e92db8576badcc32d33a",
+  "trials": [
+    {
+      "job_id": "SYN-JOB-01",
+      "case": "research",
+      "variant": "minimal",
+      "output": null,
+      "turn_status": "NOT_STARTED",
+      "payload_bytes": 34036,
+      "snapshot_hash": "10d0868bc24bf682a2e7cf7879d0e6bdbe8e525e0bdd3ae49bb37d582f01cd04",
+      "queue_seconds": 0.0,
+      "manifest": {
+        "source_commit": "c263c891563f5baf06a0e92db8576badcc32d33a",
+        "role": "RESEARCH_IDEA",
+        "schema_sha256": "07bd47787bc7c9ed3472fac7c59fc356e5aa87eeba32b9822395b4ddd2e8e17e",
+        "snapshot_hash": "10d0868bc24bf682a2e7cf7879d0e6bdbe8e525e0bdd3ae49bb37d582f01cd04",
+        "authority": "NONE"
+      }
+    }
+  ],
+  "scope": "8 bounded jobs; no sustained WL-R/quota/security/financial validation",
+  "sdk_default_handler_offline": {
+    "item/commandExecution/requestApproval": {
+      "decision": "accept"
+    },
+    "item/fileChange/requestApproval": {
+      "decision": "accept"
+    }
+  },
+  "explicit_handler_offline": {
+    "item/commandExecution/requestApproval": {
+      "decision": "decline"
+    },
+    "item/fileChange/requestApproval": {
+      "decision": "decline"
+    },
+    "item/tool/call": {
+      "success": false,
+      "contentItems": [
+        {
+          "type": "inputText",
+          "text": "DENIED_BY_TRUSTED_ALLOWLIST"
+        }
+      ]
+    }
+  },
+  "clone_commit": "c263c891563f5baf06a0e92db8576badcc32d33a",
+  "error_class": "TypeError",
+  "error_phase": "harness_or_transport_or_trial; sanitized error, preserve partial records",
+  "native_states": [
+    {
+      "type": "chatgpt",
+      "plan_type": "team"
+    }
+  ],
+  "cleanup": "COMPLETED",
+  "accounting": {
+    "planned": 8,
+    "recorded": 1,
+    "passed": 0,
+    "not_started": 7
+  }
+}

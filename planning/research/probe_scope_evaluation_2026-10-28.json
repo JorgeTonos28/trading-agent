@@ -1,0 +1,91 @@
+{
+  "as_of": "2026-10-28",
+  "purpose": "INTERPRETATION_OF_COMPONENT_EVIDENCE_NOT_ADDITIONAL_TESTS",
+  "captures": [
+    {
+      "probe": "QL3",
+      "capture": "probes/r009-lean-local-source/result-01.json",
+      "reported_PASS": 6,
+      "scope": "BUILD_METADATA_TYPE_LOAD_ONLY_MAIN_ENGINE_NOT_INVOKED"
+    },
+    {
+      "probe": "B3-S1",
+      "capture": "probes/r007-alpaca-contract-traces/result-01.json",
+      "reported_PASS": 21,
+      "computed_fixture_expectations": 19,
+      "declarative_markers": [
+        "CORRECTION_AFTER_TERMINAL_NEEDS_RECONCILIATION",
+        "NO_ADMITTED_BROKER_ROUTE_FROM_FIXTURE"
+      ],
+      "broker_acceptance": false
+    },
+    {
+      "probe": "DA-S2",
+      "capture": "probes/r008-admission-fixtures/result-01.json",
+      "reported_PASS": 21,
+      "scope": "SYNTHETIC_CONTRACT_HELPERS_NOT_VENDOR_QA",
+      "timezone_parse_DST_acceptance": "NOT_TESTED_PROTOCOL_CASE_PENDING"
+    },
+    {
+      "probe": "DA-S3",
+      "capture": "probes/r008-admission-fixtures/volume-units-01.json",
+      "reported_PASS": 6,
+      "scope": "ARITHMETIC_UNIT_CONVERSION_NOT_FACTOR_COMPLETENESS_OR_PIT"
+    },
+    {
+      "probe": "R4",
+      "capture": "probes/r027-cap-and-cost-boundaries/result-01.json",
+      "reported_PASS": 11,
+      "computed_expectations": 9,
+      "monotone_cells": 900,
+      "declarative_markers": [
+        "MARKET_AUTH_IS_NOT_GUARANTEED_CAP",
+        "LOWER_R2_NOT_A_TOPUP_SIGNAL"
+      ],
+      "real_solver_or_policy_accepted": false
+    },
+    {
+      "probe": "H9",
+      "capture": "probes/r012-demand-ledger/result-01.json",
+      "reported_PASS": 13,
+      "scope": "SQLITE_DELETE_FULL_FICTITIOUS_JOBS_NOT_POSTGRES_POWERLOSS_OR_CAPACITY",
+      "limitation": "Epoch check on original ledger; restored copy inspected separately; original source and result preserved",
+      "concurrency_limit": "FOUR_CONCURRENT_PRODUCERS_NOT_FORCED_SAME_KEY_RACE_OR_CONCURRENT_RECEIPTS"
+    },
+    {
+      "probe": "H9-RESTORE",
+      "capture": "probes/r012-demand-ledger/restore-01.json",
+      "reported_PASS": 6,
+      "scope": "ACTUAL_RESTORED_COPY_READ_ONLY_RECOVERY_GATE_FIXTURES_NOT_INTEGRATED_RESTORE"
+    },
+    {
+      "probe": "QL4",
+      "capture": "probes/r009-archive-boundary/result-01.json",
+      "reported_PASS": 6,
+      "scope": "EXPECTATIONS_OBSERVE_NATIVE_HELPER_FAILURE_NOT_SECURITY_PASS",
+      "native_security_verdict": "FAIL_BOUNDARY_DEMONSTRATED",
+      "pin_accepted": false
+    },
+    {
+      "probe": "QL5-01",
+      "capture": "probes/r009-pin-remediation/result-01.json",
+      "reported_PASS": 0,
+      "scope": "RESTORE_PASS_BUILD_TIMEOUT_NO_SMOKE",
+      "step_ERROR_preserved": true,
+      "empty_row_counts_not_success": true
+    },
+    {
+      "probe": "QL5-02",
+      "capture": "probes/r009-pin-remediation/result-02.json",
+      "reported_PASS": 0,
+      "scope": "CONTINUATION_INCOMPLETE_OR_FAILED_NO_REMEDIATED_HOST_ACCEPTANCE",
+      "pin_accepted": false
+    }
+  ],
+  "no_composite_acceptance_score": true,
+  "datasets_admitted": 0,
+  "strategy_trials": 0,
+  "implementation_locked": true,
+  "holdout": "INTEGRITY_UNKNOWN",
+  "target_acceptance": "TARGET_ACCEPTANCE_DEFERRED"
+}

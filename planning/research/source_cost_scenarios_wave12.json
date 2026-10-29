@@ -1,0 +1,345 @@
+{
+  "as_of": "2026-10-28",
+  "scope": "PUBLISHED_COMPONENT_PRICE_SCENARIOS_NOT_OFFERS_ACCEPTED_OR_FULL_OPERATIONAL_COST",
+  "nominal_reference_USD": 10000,
+  "mandatory_capitals_USD": [
+    2000,
+    5000,
+    10000,
+    25000,
+    50000
+  ],
+  "prior_20_hypothetical_cells_retained": true,
+  "models": [
+    {
+      "name": "KIBOT_GUEST_ACCESS",
+      "source": "https://www.kibot.com/api/api-access.html",
+      "monthly_component_price_USD": "0",
+      "hypothetical_12_month_component_cost_USD": "0",
+      "unknown": "UNKNOWN_TOTAL_ACTIONS_PAYDATE_OPERATIONS",
+      "variable_cost": "UNKNOWN",
+      "tax_FX_other_dependencies": "UNKNOWN",
+      "model_selected": false,
+      "scales": [
+        {
+          "capital_USD": 2000,
+          "simple_annual_component_cost_percent": "0",
+          "total_operational_cost": "UNKNOWN",
+          "qualification": "NOT_EVALUATED"
+        },
+        {
+          "capital_USD": 5000,
+          "simple_annual_component_cost_percent": "0",
+          "total_operational_cost": "UNKNOWN",
+          "qualification": "NOT_EVALUATED"
+        },
+        {
+          "capital_USD": 10000,
+          "simple_annual_component_cost_percent": "0",
+          "total_operational_cost": "UNKNOWN",
+          "qualification": "NOT_EVALUATED"
+        },
+        {
+          "capital_USD": 25000,
+          "simple_annual_component_cost_percent": "0",
+          "total_operational_cost": "UNKNOWN",
+          "qualification": "NOT_EVALUATED"
+        },
+        {
+          "capital_USD": 50000,
+          "simple_annual_component_cost_percent": "0",
+          "total_operational_cost": "UNKNOWN",
+          "qualification": "NOT_EVALUATED"
+        }
+      ]
+    },
+    {
+      "name": "KIBOT_EOD_SUBSCRIPTION_RESERVE",
+      "source": "https://www.kibot.com/delivery/data-updates.html",
+      "monthly_component_price_USD": "14",
+      "hypothetical_12_month_component_cost_USD": "168",
+      "unknown": "INITIAL_AND_TOTAL_UNKNOWN",
+      "variable_cost": "UNKNOWN",
+      "tax_FX_other_dependencies": "UNKNOWN",
+      "model_selected": false,
+      "scales": [
+        {
+          "capital_USD": 2000,
+          "simple_annual_component_cost_percent": "8.400",
+          "total_operational_cost": "UNKNOWN",
+          "qualification": "NOT_EVALUATED"
+        },
+        {
+          "capital_USD": 5000,
+          "simple_annual_component_cost_percent": "3.3600",
+          "total_operational_cost": "UNKNOWN",
+          "qualification": "NOT_EVALUATED"
+        },
+        {
+          "capital_USD": 10000,
+          "simple_annual_component_cost_percent": "1.6800",
+          "total_operational_cost": "UNKNOWN",
+          "qualification": "NOT_EVALUATED"
+        },
+        {
+          "capital_USD": 25000,
+          "simple_annual_component_cost_percent": "0.67200",
+          "total_operational_cost": "UNKNOWN",
+          "qualification": "NOT_EVALUATED"
+        },
+        {
+          "capital_USD": 50000,
+          "simple_annual_component_cost_percent": "0.33600",
+          "total_operational_cost": "UNKNOWN",
+          "qualification": "NOT_EVALUATED"
+        }
+      ]
+    },
+    {
+      "name": "FIRST_RATE_ETF_OPTIONAL_UPDATES_RESERVE",
+      "source": "https://firstratedata.com/b/17/etf-complete-historical-intraday",
+      "monthly_component_price_USD": "59.95",
+      "hypothetical_12_month_component_cost_USD": "719.40",
+      "unknown": "INITIAL_PURCHASE_PRICE_UNKNOWN",
+      "variable_cost": "UNKNOWN",
+      "tax_FX_other_dependencies": "UNKNOWN",
+      "model_selected": false,
+      "scales": [
+        {
+          "capital_USD": 2000,
+          "simple_annual_component_cost_percent": "35.9700",
+          "total_operational_cost": "UNKNOWN",
+          "qualification": "NOT_EVALUATED",
+          "first_year_11_month_updates_simple_percent": "32.972500"
+        },
+        {
+          "capital_USD": 5000,
+          "simple_annual_component_cost_percent": "14.38800",
+          "total_operational_cost": "UNKNOWN",
+          "qualification": "NOT_EVALUATED",
+          "first_year_11_month_updates_simple_percent": "13.18900"
+        },
+        {
+          "capital_USD": 10000,
+          "simple_annual_component_cost_percent": "7.19400",
+          "total_operational_cost": "UNKNOWN",
+          "qualification": "NOT_EVALUATED",
+          "first_year_11_month_updates_simple_percent": "6.594500"
+        },
+        {
+          "capital_USD": 25000,
+          "simple_annual_component_cost_percent": "2.877600",
+          "total_operational_cost": "UNKNOWN",
+          "qualification": "NOT_EVALUATED",
+          "first_year_11_month_updates_simple_percent": "2.637800"
+        },
+        {
+          "capital_USD": 50000,
+          "simple_annual_component_cost_percent": "1.438800",
+          "total_operational_cost": "UNKNOWN",
+          "qualification": "NOT_EVALUATED",
+          "first_year_11_month_updates_simple_percent": "1.318900"
+        }
+      ],
+      "twelve_month_price_scope": "STEADY_STATE_RENEWAL_AFTER_INCLUDED_MONTH_NOT_FIRST_YEAR_TOTAL",
+      "first_year_optional_updates_11_month_USD": "659.45",
+      "initial_purchase_and_total": "UNKNOWN"
+    },
+    {
+      "name": "EODHD_EOD_HISTORICAL",
+      "source": "https://eodhd.com/pricing",
+      "public_price_checked_on": "2026-10-28",
+      "monthly_component_price_USD": "19.99",
+      "hypothetical_12_month_component_cost_USD": "239.88",
+      "published_annual_prepaid_component_USD": "199.00",
+      "annual_prepayment_selected": false,
+      "one_month_acquisition_component_USD": "19.99",
+      "one_month_scope": "CONDITIONAL_POST_CANCEL_RIGHTS_AND_STATIC_RESEARCH_NOT_ONGOING_FEED",
+      "unknown": "PLAN_SCOPE_RETENTION_RIGHTS_TECHNICAL_QUALITY_AND_TOTAL_UNKNOWN",
+      "variable_cost": "UNKNOWN",
+      "tax_FX_other_dependencies": "UNKNOWN",
+      "model_selected": false,
+      "PAPER_V1_VIABLE_FREE": "NO_FOR_THIS_PAID_PLAN",
+      "PAPER_V1_COST": "COMPONENT_PUBLIC_TOTAL_UNKNOWN",
+      "LIVE_COST": "UNKNOWN_NOT_SELECTED",
+      "FREE_ALTERNATIVE": "PUBLIC_OR_FREE_SOURCES_NOT_YET_EQUIVALENT_OR_ADMITTED",
+      "PAID_INCREMENTAL_VALUE": "HISTORY_AND_ACTIONS_IF_QUALITY_RIGHTS_AND_COVERAGE_PROVEN",
+      "ECONOMIC_JUSTIFICATION_REQUIRED": true,
+      "scales": [
+        {
+          "capital_USD": 2000,
+          "simple_annual_component_cost_percent": "11.99400",
+          "annual_prepaid_component_cost_percent": "9.9500",
+          "one_month_acquisition_component_cost_percent": "0.999500",
+          "total_operational_cost": "UNKNOWN",
+          "qualification": "NOT_EVALUATED"
+        },
+        {
+          "capital_USD": 5000,
+          "simple_annual_component_cost_percent": "4.797600",
+          "annual_prepaid_component_cost_percent": "3.9800",
+          "one_month_acquisition_component_cost_percent": "0.399800",
+          "total_operational_cost": "UNKNOWN",
+          "qualification": "NOT_EVALUATED"
+        },
+        {
+          "capital_USD": 10000,
+          "simple_annual_component_cost_percent": "2.398800",
+          "annual_prepaid_component_cost_percent": "1.9900",
+          "one_month_acquisition_component_cost_percent": "0.199900",
+          "total_operational_cost": "UNKNOWN",
+          "qualification": "NOT_EVALUATED"
+        },
+        {
+          "capital_USD": 25000,
+          "simple_annual_component_cost_percent": "0.9595200",
+          "annual_prepaid_component_cost_percent": "0.79600",
+          "one_month_acquisition_component_cost_percent": "0.0799600",
+          "total_operational_cost": "UNKNOWN",
+          "qualification": "NOT_EVALUATED"
+        },
+        {
+          "capital_USD": 50000,
+          "simple_annual_component_cost_percent": "0.4797600",
+          "annual_prepaid_component_cost_percent": "0.39800",
+          "one_month_acquisition_component_cost_percent": "0.0399800",
+          "total_operational_cost": "UNKNOWN",
+          "qualification": "NOT_EVALUATED"
+        }
+      ]
+    },
+    {
+      "name": "EODHD_EOD_PLUS_INTRADAY",
+      "source": "https://eodhd.com/pricing",
+      "public_price_checked_on": "2026-10-28",
+      "monthly_component_price_USD": "29.99",
+      "hypothetical_12_month_component_cost_USD": "359.88",
+      "published_annual_prepaid_component_USD": "299.90",
+      "annual_prepayment_selected": false,
+      "one_month_acquisition_component_USD": "29.99",
+      "one_month_scope": "CONDITIONAL_POST_CANCEL_RIGHTS_AND_STATIC_RESEARCH_NOT_ONGOING_FEED",
+      "unknown": "PLAN_SCOPE_RETENTION_RIGHTS_TECHNICAL_QUALITY_AND_TOTAL_UNKNOWN",
+      "variable_cost": "UNKNOWN",
+      "tax_FX_other_dependencies": "UNKNOWN",
+      "model_selected": false,
+      "PAPER_V1_VIABLE_FREE": "NO_FOR_THIS_PAID_PLAN",
+      "PAPER_V1_COST": "COMPONENT_PUBLIC_TOTAL_UNKNOWN",
+      "LIVE_COST": "UNKNOWN_NOT_SELECTED",
+      "FREE_ALTERNATIVE": "PUBLIC_OR_FREE_SOURCES_NOT_YET_EQUIVALENT_OR_ADMITTED",
+      "PAID_INCREMENTAL_VALUE": "HISTORY_AND_ACTIONS_IF_QUALITY_RIGHTS_AND_COVERAGE_PROVEN",
+      "ECONOMIC_JUSTIFICATION_REQUIRED": true,
+      "scales": [
+        {
+          "capital_USD": 2000,
+          "simple_annual_component_cost_percent": "17.99400",
+          "annual_prepaid_component_cost_percent": "14.99500",
+          "one_month_acquisition_component_cost_percent": "1.499500",
+          "total_operational_cost": "UNKNOWN",
+          "qualification": "NOT_EVALUATED"
+        },
+        {
+          "capital_USD": 5000,
+          "simple_annual_component_cost_percent": "7.197600",
+          "annual_prepaid_component_cost_percent": "5.99800",
+          "one_month_acquisition_component_cost_percent": "0.599800",
+          "total_operational_cost": "UNKNOWN",
+          "qualification": "NOT_EVALUATED"
+        },
+        {
+          "capital_USD": 10000,
+          "simple_annual_component_cost_percent": "3.598800",
+          "annual_prepaid_component_cost_percent": "2.99900",
+          "one_month_acquisition_component_cost_percent": "0.299900",
+          "total_operational_cost": "UNKNOWN",
+          "qualification": "NOT_EVALUATED"
+        },
+        {
+          "capital_USD": 25000,
+          "simple_annual_component_cost_percent": "1.4395200",
+          "annual_prepaid_component_cost_percent": "1.199600",
+          "one_month_acquisition_component_cost_percent": "0.1199600",
+          "total_operational_cost": "UNKNOWN",
+          "qualification": "NOT_EVALUATED"
+        },
+        {
+          "capital_USD": 50000,
+          "simple_annual_component_cost_percent": "0.7197600",
+          "annual_prepaid_component_cost_percent": "0.599800",
+          "one_month_acquisition_component_cost_percent": "0.0599800",
+          "total_operational_cost": "UNKNOWN",
+          "qualification": "NOT_EVALUATED"
+        }
+      ]
+    },
+    {
+      "name": "EODHD_ALL_IN_ONE",
+      "source": "https://eodhd.com/pricing",
+      "public_price_checked_on": "2026-10-28",
+      "monthly_component_price_USD": "99.99",
+      "hypothetical_12_month_component_cost_USD": "1199.88",
+      "published_annual_prepaid_component_USD": "999.90",
+      "annual_prepayment_selected": false,
+      "one_month_acquisition_component_USD": "99.99",
+      "one_month_scope": "CONDITIONAL_POST_CANCEL_RIGHTS_AND_STATIC_RESEARCH_NOT_ONGOING_FEED",
+      "unknown": "PLAN_SCOPE_RETENTION_RIGHTS_TECHNICAL_QUALITY_AND_TOTAL_UNKNOWN",
+      "variable_cost": "UNKNOWN",
+      "tax_FX_other_dependencies": "UNKNOWN",
+      "model_selected": false,
+      "PAPER_V1_VIABLE_FREE": "NO_FOR_THIS_PAID_PLAN",
+      "PAPER_V1_COST": "COMPONENT_PUBLIC_TOTAL_UNKNOWN",
+      "LIVE_COST": "UNKNOWN_NOT_SELECTED",
+      "FREE_ALTERNATIVE": "PUBLIC_OR_FREE_SOURCES_NOT_YET_EQUIVALENT_OR_ADMITTED",
+      "PAID_INCREMENTAL_VALUE": "HISTORY_AND_ACTIONS_IF_QUALITY_RIGHTS_AND_COVERAGE_PROVEN",
+      "ECONOMIC_JUSTIFICATION_REQUIRED": true,
+      "scales": [
+        {
+          "capital_USD": 2000,
+          "simple_annual_component_cost_percent": "59.99400",
+          "annual_prepaid_component_cost_percent": "49.99500",
+          "one_month_acquisition_component_cost_percent": "4.999500",
+          "total_operational_cost": "UNKNOWN",
+          "qualification": "NOT_EVALUATED"
+        },
+        {
+          "capital_USD": 5000,
+          "simple_annual_component_cost_percent": "23.997600",
+          "annual_prepaid_component_cost_percent": "19.99800",
+          "one_month_acquisition_component_cost_percent": "1.999800",
+          "total_operational_cost": "UNKNOWN",
+          "qualification": "NOT_EVALUATED"
+        },
+        {
+          "capital_USD": 10000,
+          "simple_annual_component_cost_percent": "11.998800",
+          "annual_prepaid_component_cost_percent": "9.99900",
+          "one_month_acquisition_component_cost_percent": "0.999900",
+          "total_operational_cost": "UNKNOWN",
+          "qualification": "NOT_EVALUATED"
+        },
+        {
+          "capital_USD": 25000,
+          "simple_annual_component_cost_percent": "4.7995200",
+          "annual_prepaid_component_cost_percent": "3.999600",
+          "one_month_acquisition_component_cost_percent": "0.3999600",
+          "total_operational_cost": "UNKNOWN",
+          "qualification": "NOT_EVALUATED"
+        },
+        {
+          "capital_USD": 50000,
+          "simple_annual_component_cost_percent": "2.3997600",
+          "annual_prepaid_component_cost_percent": "1.999800",
+          "one_month_acquisition_component_cost_percent": "0.1999800",
+          "total_operational_cost": "UNKNOWN",
+          "qualification": "NOT_EVALUATED"
+        }
+      ]
+    }
+  ],
+  "spend_authorized": false,
+  "actual_spend": 0,
+  "not_CAGR": true,
+  "prior_evidence": "source_cost_scenarios_wave11.json",
+  "prior_models_preserved": true,
+  "plans_are_not_selected_or_authorized": true,
+  "prices_exclude_unknown_taxes_FX_and_dependencies": true
+}

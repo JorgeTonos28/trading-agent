@@ -1,0 +1,75 @@
+{
+  "observed_on": "2026-10-14",
+  "scope": "SYNTHETIC_COMPONENTS_NOT_DATASET_ADMISSION",
+  "source_sha256": "2a68848ef5ba69ea65068f0a40152dce05148054b05a942f955160b5d177d6ed",
+  "checks": [
+    {
+      "id": "FLAG_MISSING",
+      "status": "PASS"
+    },
+    {
+      "id": "FLAG_ONE",
+      "status": "PASS"
+    },
+    {
+      "id": "FLAG_ZERO",
+      "status": "PASS"
+    },
+    {
+      "id": "FLAG_TRUE",
+      "status": "PASS"
+    },
+    {
+      "id": "FLAG_FALSE",
+      "status": "PASS"
+    },
+    {
+      "id": "FLAG_TRIM_CASE",
+      "status": "PASS"
+    },
+    {
+      "id": "FLAG_EMPTY",
+      "status": "PASS"
+    },
+    {
+      "id": "FLAG_INVALID",
+      "status": "PASS"
+    },
+    {
+      "id": "FLAG_UNKNOWN",
+      "status": "PASS"
+    },
+    {
+      "id": "FULL_MARKUP_TEXT_PRESERVED",
+      "status": "PASS"
+    },
+    {
+      "id": "MISSING_REF_NULL",
+      "status": "PASS"
+    },
+    {
+      "id": "NO_NOTES_EMPTY_NOT_EVIDENCE",
+      "status": "PASS"
+    },
+    {
+      "id": "DUPLICATE_COLLAPSE_OBSERVED",
+      "status": "PASS"
+    }
+  ],
+  "observations": {
+    "duplicate_id_behavior": {
+      "count_after_extract": 1,
+      "retained_text": "FICTITIOUS second"
+    },
+    "missing_invalid_collapsed_to_None": true
+  },
+  "row_plan_status": "UNKNOWN_COMPONENT_PROBE_NOT_ROW_ADJUDICATION",
+  "library_pin": "edgartools5.62.0",
+  "full_factory_executed": false,
+  "blocked_network_events": [
+    "socket.connect"
+  ],
+  "pass_count": 13,
+  "total": 13,
+  "PIT_proven": false
+}

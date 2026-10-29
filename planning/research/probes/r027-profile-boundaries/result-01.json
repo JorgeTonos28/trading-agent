@@ -1,0 +1,115 @@
+{
+  "captured_utc": "2026-10-29T12:58:05.101170+00:00",
+  "controller_sha256": "915a9070265cc9b398d050be95a2ac75b7ca13add1dbf60c46b090720310c20f",
+  "scope": "SYNTHETIC_ARITHMETIC_NOT_RISK_THRESHOLDS_CALIBRATION_OR_BROKER",
+  "baseline_profile_owner_approved": false,
+  "scales": [
+    {
+      "capital_USD": 2000,
+      "target_qty": 6,
+      "exposure_cap_qty": 5,
+      "remaining_risk_cap_qty": 1,
+      "quantity_before_costs": 1,
+      "three_equal_positions_notional": "300",
+      "gross_fraction": "0.15",
+      "baseline_risk_budget_USD": "10.000",
+      "shock_10percent_at_gross_cap75percent_fraction_NAV": "0.0750"
+    },
+    {
+      "capital_USD": 5000,
+      "target_qty": 16,
+      "exposure_cap_qty": 12,
+      "remaining_risk_cap_qty": 4,
+      "quantity_before_costs": 4,
+      "three_equal_positions_notional": "1200",
+      "gross_fraction": "0.24",
+      "baseline_risk_budget_USD": "25.000",
+      "shock_10percent_at_gross_cap75percent_fraction_NAV": "0.0750"
+    },
+    {
+      "capital_USD": 10000,
+      "target_qty": 33,
+      "exposure_cap_qty": 25,
+      "remaining_risk_cap_qty": 8,
+      "quantity_before_costs": 8,
+      "three_equal_positions_notional": "2400",
+      "gross_fraction": "0.24",
+      "baseline_risk_budget_USD": "50.000",
+      "shock_10percent_at_gross_cap75percent_fraction_NAV": "0.0750"
+    },
+    {
+      "capital_USD": 25000,
+      "target_qty": 83,
+      "exposure_cap_qty": 62,
+      "remaining_risk_cap_qty": 20,
+      "quantity_before_costs": 20,
+      "three_equal_positions_notional": "6000",
+      "gross_fraction": "0.24",
+      "baseline_risk_budget_USD": "125.000",
+      "shock_10percent_at_gross_cap75percent_fraction_NAV": "0.0750"
+    },
+    {
+      "capital_USD": 50000,
+      "target_qty": 166,
+      "exposure_cap_qty": 125,
+      "remaining_risk_cap_qty": 41,
+      "quantity_before_costs": 41,
+      "three_equal_positions_notional": "12300",
+      "gross_fraction": "0.246",
+      "baseline_risk_budget_USD": "250.000",
+      "shock_10percent_at_gross_cap75percent_fraction_NAV": "0.0750"
+    }
+  ],
+  "partial_case": {
+    "filled_qty": 10,
+    "p0_running": "94",
+    "desired": "94",
+    "mark": "90",
+    "confirmed_protection": false,
+    "R2_status": "UNCERTAIN"
+  },
+  "rows": [
+    {
+      "id": "ALL_FIVE_CAPITALS_PRESENT",
+      "status": "PASS"
+    },
+    {
+      "id": "PRINCIPAL_10K_IS_EIGHT_SHARES_BEFORE_FEES",
+      "status": "PASS"
+    },
+    {
+      "id": "PRINCIPAL_THREE_FILLS_24PERCENT_NOT_75PERCENT",
+      "status": "PASS"
+    },
+    {
+      "id": "SHOCK_LOSS_NOT_CAPPED_BY_DAILY_TRIGGER",
+      "status": "PASS"
+    },
+    {
+      "id": "PARTIAL_WEIGHTED_AVERAGE_IS_94",
+      "status": "PASS"
+    },
+    {
+      "id": "DESIRED_DOES_NOT_LOOSEN_WHEN_NEW_FILL_LOWER",
+      "status": "PASS"
+    },
+    {
+      "id": "STOP_ALREADY_CROSSED_IMPLIES_UNKNOWN_NOT_ZERO",
+      "status": "PASS"
+    },
+    {
+      "id": "FILL_TO_SEPARATE_STOP_IS_POSITIVE_CAUSAL_WINDOW",
+      "status": "PASS"
+    }
+  ],
+  "counts": {
+    "PASS": 8,
+    "FAIL": 0,
+    "ERROR": 0
+  },
+  "strategy_trials": 0,
+  "datasets_admitted": 0,
+  "implementation_locked": true,
+  "target_acceptance_status": "TARGET_ACCEPTANCE_DEFERRED",
+  "holdout": "INTEGRITY_UNKNOWN"
+}

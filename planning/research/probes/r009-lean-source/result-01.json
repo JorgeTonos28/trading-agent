@@ -1,0 +1,39 @@
+{
+  "captured_utc": "2026-10-23T15:32:43.829487+00:00",
+  "source_sha256": "98c606993b5f7e39ae64af23d7d03af65b317af7a661e15e6a5dde4d89d90442",
+  "source_commit": "f3d841e60dfd010ee5fc293ea893e56952484108",
+  "scope": "COMMON_SOURCE_BUILD_ONLY_NO_LAUNCHER_OR_STRATEGY",
+  "steps": [
+    {
+      "label": "restore",
+      "exit_code": 1,
+      "seconds": 22.632,
+      "status": "ERROR",
+      "diagnostics": [
+        "C:\\Program Files\\dotnet\\sdk\\10.0.302\\NuGet.targets(782,5): error : No se puede analizar el archivo de configuraci\u00c3\u00b3n porque: El elemento de credenciales debe tener un nombre de usuario y una contrase\u00c3\u00b1a., ruta de acceso: \"<research-root>\\.local\\ql0-home\\NuGet.Config\". [<research-root>\\.local\\lean-source\\Compression\\QuantConnect.Compression.csproj]",
+        "C:\\Program Files\\dotnet\\sdk\\10.0.302\\NuGet.targets(782,5): error : No se puede analizar el archivo de configuraci\u00c3\u00b3n porque: El elemento de credenciales debe tener un nombre de usuario y una contrase\u00c3\u00b1a., ruta de acceso: \"<research-root>\\.local\\ql0-home\\NuGet.Config\". [<research-root>\\.local\\lean-source\\Common\\QuantConnect.csproj]",
+        "C:\\Program Files\\dotnet\\sdk\\10.0.302\\NuGet.targets(782,5): error : No se puede analizar el archivo de configuraci\u00c3\u00b3n porque: El elemento de credenciales debe tener un nombre de usuario y una contrase\u00c3\u00b1a., ruta de acceso: \"<research-root>\\.local\\ql0-home\\NuGet.Config\". [<research-root>\\.local\\lean-source\\Configuration\\QuantConnect.Configuration.csproj]",
+        "C:\\Program Files\\dotnet\\sdk\\10.0.302\\NuGet.targets(782,5): error : No se puede analizar el archivo de configuraci\u00c3\u00b3n porque: El elemento de credenciales debe tener un nombre de usuario y una contrase\u00c3\u00b1a., ruta de acceso: \"<research-root>\\.local\\ql0-home\\NuGet.Config\". [<research-root>\\.local\\lean-source\\Logging\\QuantConnect.Logging.csproj]"
+      ],
+      "diagnostic_codes": [],
+      "raw_log_sha256": "87aa0f74d3ad9889256051039f253e39e109fa7b39bb0e1c9b708cb77e8e0969"
+    }
+  ],
+  "source_file_hashes": {
+    "LICENSE": "1c752ade7a9db6c100bf9a9f57225b52e138a92d2cd9dfe71c0af09af85366f7",
+    "Common/QuantConnect.csproj": "b9cb37d3949664d02b5cc6f0270fa1d3a9f02cc464179e45f3b9cdc9123cde28",
+    "Common/Securities/SecurityPortfolioManager.cs": "1a845ee3b2646d3bda3b60ff00fcf9eb5af683a1e4b2dd70433f4a2c60d9dad5",
+    "Compression/QuantConnect.Compression.csproj": "1742074e268631814c650c8614eb68df55eb341401eae016b36a93f2e667b291",
+    "Configuration/QuantConnect.Configuration.csproj": "723ba492dfa341aeb5b74bf85edfebb65fe81e0c3939b9c917185865ede7dd84",
+    "Logging/QuantConnect.Logging.csproj": "475f44b02c19cbcff0f199e745e8f70586332c4d7f3a0dc54ffb65482efa9dce"
+  },
+  "market_data_accessed": false,
+  "history_checked_out": false,
+  "new_global_install": false,
+  "private_feeds": false,
+  "engine_selected": false,
+  "full_engine_built": false,
+  "strategy_trials": 0,
+  "implementation_locked": true,
+  "target_acceptance": "TARGET_ACCEPTANCE_DEFERRED"
+}

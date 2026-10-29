@@ -1,0 +1,15 @@
+{
+  "schema_version": "0.2.0-planning",
+  "profile_type": "EXPECTED_NOT_OBSERVED",
+  "environment_kind": "FUTURE_LIVE_ENVIRONMENT",
+  "plan": "ChatGPT_Plus_individual",
+  "surface": "CANDIDATE_NOT_SELECTED",
+  "capabilities": "OWNER_APPROVED_CANDIDATE_COHORT_NOT_FINAL_SELECTION",
+  "availability": "UNKNOWN_UNTIL_PRELIVE_EVIDENCE",
+  "economic_policy": "ADR008_LIVE_ECONOMIC_VALUE_FIRST",
+  "authority": "NONE",
+  "implementation_locked": true,
+  "native_api_billing_allowed": false,
+  "required_approval_for_extra_spend": true,
+  "decision": "ADR-010_D-038_R029_DEFERRED"
+}

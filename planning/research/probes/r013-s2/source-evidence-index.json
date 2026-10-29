@@ -1,0 +1,54 @@
+{
+  "schema_version": "r013-source-index-v1",
+  "hash_scope": "raw working-tree files at research milestone; Git EOL may differ, use Git blob identity for portable deployment",
+  "source_commit_base": "913cbf1",
+  "files": [
+    {
+      "path": "firewall-enum-clarification-01.json",
+      "raw_worktree_sha256": "444cc1a3283ef7a9b4aff37694f08a5eb68419078761678af47924ab2668e2f4"
+    },
+    {
+      "path": "non-admin-attempt-01.json",
+      "raw_worktree_sha256": "3b5c8e21191fbdad834276d0c2c8acfa282f1ce0e288c22c4a70f189afff8ce9"
+    },
+    {
+      "path": "non-admin-attempt-02.json",
+      "raw_worktree_sha256": "70a4f6d94f572bbc3f890f6e8b629c98272fd293112ba8b2e490665369e78efd"
+    },
+    {
+      "path": "non-admin-attempt-03.json",
+      "raw_worktree_sha256": "4191cbb34fa6d589d8f64be5e8d4166e2778d552acbdda4e6f00a19ac2dcac7e"
+    },
+    {
+      "path": "non_admin_probe.py",
+      "raw_worktree_sha256": "97655f1429f21f0c5957951be871eacbeec305185c8c208c4e277afe54e8db90"
+    },
+    {
+      "path": "non_admin_probe_attempt01_source.py",
+      "raw_worktree_sha256": "a0b9c1a7084003cf3d9d626788b36790cb70559b245345eadf77755346c3c463"
+    },
+    {
+      "path": "non_admin_probe_attempt02_source.py",
+      "raw_worktree_sha256": "866bfbee9f5792decd010657d1706ea8f1d3f7f312fab388a42fd4f839172a34"
+    },
+    {
+      "path": "policy-source-counts-01.json",
+      "raw_worktree_sha256": "92d450724b4985a92caf491d3cb11fcc819af1c1e4072f92cebb45e23e00f12b"
+    },
+    {
+      "path": "preflight-attempt-01.json",
+      "raw_worktree_sha256": "0fabff3150911c3844289b71a02805c03a7338c1e595794c1980a5cf74832dfc"
+    },
+    {
+      "path": "preflight.ps1",
+      "raw_worktree_sha256": "1c73349e7a7182779e8ee8bf3c1e417265a62f979058dfa58727599ed14b3b68"
+    }
+  ],
+  "original_sources_preserved": [
+    "non_admin_probe_attempt01_source.py",
+    "non_admin_probe_attempt02_source.py"
+  ],
+  "active_source": "non_admin_probe.py",
+  "active_result": "non-admin-attempt-03.json",
+  "S2_acceptance": "NOT_TESTED"
+}

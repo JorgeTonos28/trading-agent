@@ -1,0 +1,7 @@
+{
+  "status": "HISTORICAL_SUPERSEDED_EXPECTED_PROFILE",
+  "superseded_by": "ADR-013_D-043",
+  "original_profile": "shared/history/paper_team_expected_ADR010_2026-10-06.json",
+  "active_profile": "shared/paper_plus_personal_profile.json",
+  "observed_team_probe_evidence_unchanged": true
+}

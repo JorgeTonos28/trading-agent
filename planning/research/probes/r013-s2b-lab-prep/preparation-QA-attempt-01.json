@@ -1,0 +1,23 @@
+{
+  "schema_version": "r013-s2b-preparation-QA-v1",
+  "checked_at": "2026-10-06T14:27:03.778059+00:00",
+  "scope": "DOCUMENTS_EVIDENCE_HASHES_AND_AST_ONLY",
+  "base_commit": "b0d6818d057a024bd6fbc2573a8d9bd06c254353",
+  "source_sha256": "ce2a39ad0bfc7ad7cb86fd8e2a78d570bdafc6bd9c5117f37569ca45cf24fb93",
+  "source_state": "PREPARED_NOT_EXECUTED_AST_ONLY",
+  "plan_sha256": "ade0ac46b2967c6f2e5e05df3d3d93b41de7e699ed921ffb78beeb636d02d6c7",
+  "renderer_sha256": "e5058cca5179216a91644e3a6cd0a26ced5afe57c3c7a9d89606794cf1304cb6",
+  "administrative_authorization": false,
+  "configuration_changes": [],
+  "model_calls": 0,
+  "preserved_attempt_source_hashes": true,
+  "focused_semantic_observations": 12,
+  "privilege_observations": 2,
+  "synthetic_descriptors": 15,
+  "fixture_resources": 14,
+  "bootstrap_parents": 1,
+  "filesystem_security_acceptance": "NOT_TESTED",
+  "full_native_acceptance": "NOT_TESTED",
+  "main_baseline_unchanged": true,
+  "profile_lock_and_open_gates": true
+}

@@ -1,0 +1,38 @@
+# R-010–012 — Workflow y storage: comparación de diseño RC1
+
+2026-10-07. Tras ADR-013, investigación independiente en Team; decisiones D-025/026 P1 todavía abiertas. No instalación global, servicios, account setup, LLM billing ni selección automática. [Realización B-RT1](../08_agentic_runtime_realization_RC1.md) define ownership/interface invariantes C/F/J; motor/store exacto no puede alterarlos.
+
+## Workflow
+
+| Candidato | Reutilización y evidencia | Trabajo adicional / límites | Disposición y recomendación |
+|---|---|---|---|
+| Temporal self-host | H6 persistencia/schedule 10/10; H7 worker real pierde proceso, reejecuta Activity y cierra workflow, intento2; fuente y deps pinadas | Servicio endurecido distinto de start-dev, worker trusted C, history/payload acotados, deadline/retries y outbox/ledger C; setup/operación/hardware target todavía no medidos | **WRAP**, mantener favorito de investigación del roadmap; no seleccionar dev server como operacional |
+| APScheduler 3.x + ledger C | H8 6/6 criterios de calendario persistente/restart/misfire y receipt ficticio; documentación oficial niega compartir jobstore entre scheduler processes | Recovery/delivery/fencing/admission/reservas debe proporcionarlos ledger/supervisor C. Calendar solo no satisface workflow durable. H8 no prueba Activity in-flight; 4.x no sustituto implícito | **ADAPT / WRAP** alternativa sencilla; no afirmar equivalente o menos coste total sin medir integración |
+| Windows Task Scheduler + ledger C | Launcher/calendar OS existente | Autostart/jobs finite/recovery y scheduler ownership propios más amplios; tasks administrativos target con gate. No comparte core/credentials | **REFERENCE_ONLY**, no BUILD scheduler general si Temporal/APS cumplen |
+
+La capa es workflow **determinístico**, fuera de la restricción de frameworks AI OpenAI/Anthropic. [Temporal production deployment](https://docs.temporal.io/production-deployment), [self-host](https://docs.temporal.io/self-hosted-guide), [APScheduler FAQ](https://apscheduler.readthedocs.io/en/3.x/faq.html). Referencias oficiales distinguen servicio dev y production; no soporte/continuidad demostrados por H7.
+
+H7: seis criterios conductuales PASS; criterio cleanup PARTIAL, procesos propios detenidos pero revisión automática bloqueó dos formas acotadas de eliminación (`blocked by policy`). **Residuos: ocho archivos sintéticos en TEMP y wheels/deps reutilizables**, locator privado `.local/h7-scratch-binding.json`; sin secretos/datos financieros. No intentar otra shell/Python para eludir rechazo, ni pedir administración institucional. [Resultado](probes/r010-worker-recovery/attempt-01.json), [evaluación](probes/r010-worker-recovery/evaluation-01.json), [cleanup](probes/r010-worker-recovery/cleanup-01.json), [dependencias](probes/r010-worker-recovery/dependencies.json). El primer intento de índice PyPI tuvo read timeouts y luego completó; no versión SDK/CLI operacional elegida.
+
+H7 muestra **at-least-once Activity** (attempts1/2), no exactly-once de efectos. Ledger sintético externo recibió dos submissions y retuvo un receipt. No prueba autenticación Codex/Plus, S2, broker, modelo/PAPER sostenido, power loss o workload financiero. Workflow-task timeout en history no debe contarse como Activity timeout: SDK registra retries internos con detalle limitado en history; attempts1/2 provienen de marcas de Activity.
+
+**Limitación H7 hallada en review:** pwsh que consulta listeners heredó env completo; server/workers sí recibieron allowlist. Contradice el protocolo de env a todos los hijos; no se observó lectura/exposición de secretos y ningún dump de env se publica. Fuente original/result01 conservados; `h7_controller_next.py` corrige helper, NOT_EXECUTED. No aceptar aislamiento/secret-handling desde H7 ni repetir para borrar limitación.
+
+H8 [protocolo](R-010_H8_calendar_comparison_protocol_2026-10-07.md), [fuente](probes/r010-calendar-comparison/calendar_probe.py), [resultado](probes/r010-calendar-comparison/result-01.json): restart en otro proceso recupera callback eligible, expired produce MISSED sin output, tercera instancia sin replay, duplicate receipt denegado. **6/6 en una muestra sintética**, no 6 workloads independientes ni exactamente una ejecución garantizada. SQLite/SQLAlchemy fixture trusted no recibe callable/serialized jobs del modelo. Children env allowlist, bounded, sin servicios ni tasks; fixture retenido intencionalmente `.local/`, deps TEMP. Dependencias/source pinados como evidencia, no stack productivo. H8 y H7 prueban semánticas diferentes; counts no comparan calidad.
+
+## Almacenamiento por finalidad
+
+| Candidato | Encaje y evidencia | Límites / siguiente trabajo | Disposición |
+|---|---|---|---|
+| PostgreSQL para F y ledger C con identidades/stores separados | Transacciones/constraints/roles, WAL y opciones backup/PITR documentados; baseline roadmap | Motor/versiones/licencias/client/deployment/backup por fijar. Config durable no se infiere por nombre; no servicio probado aquí. Separar permisos/schema/DB/canales; agentes sin SQL | **REUSE_AS_IS / WRAP** candidato principal transaccional |
+| SQLite para ledger C local | H1/H2 crash/retry/race/restore toy + H7 unique receipt; stdlib reusable | WAL requiere mismo host, un writer y coordinación; no filesystem remoto ni prueba de power loss. Cache/DB en perfil A accesible a jobs no satisface protección C. DB separadas no atomic cross-store | **REUSE_AS_IS** instrumento de probes; **ADAPT** alternativa operacional por evaluar, no promoción implícita |
+| Parquet snapshots/data y DuckDB analytical reads | Baseline de investigación, adecuados como clases separadas del ledger | Probar schema/PIT/query/volumen/licencia/datasets y retention por proveedor. No motor de órdenes/admission | **REUSE_AS_IS / WRAP** candidatos, investigación R-008/009/012 |
+| Redis/cache | Baseline cache opcional | No autoridad de lease/epoch/receipt; distro/licencia/versiones/beneficio sin decisión. Evitar dependencia obligatoria sin necesidad medida | **REFERENCE_ONLY** reserva en este diseño, no REJECT permanente LIVE |
+
+[SQLite WAL](https://www.sqlite.org/wal.html), [PostgreSQL WAL configuration](https://www.postgresql.org/docs/current/runtime-config-wal.html), [backup](https://www.postgresql.org/docs/current/backup.html). Un writer lento/transactions largos/inputs dataset grandes pueden cambiar elección; requiere benchmark no financiero y workload definido antes de D-026. No decidir con retorno de estrategia visto ex post.
+
+## Economía y evidencia de cierre
+
+Para todos: adquisición OSS documentada/free candidate; PAPER_V1_VIABLE_FREE=CONDITIONAL, PAPER_V1_COST=0 licencias probes + tiempo/hardware/operación UNKNOWN; LIVE_COST fijo/variable/mensual/escala UNKNOWN. FREE_ALTERNATIVE=otras filas con gaps explícitos; PAID_INCREMENTAL_VALUE=managed reliability/ops como hipótesis, no cuantificado; ECONOMIC_JUSTIFICATION_REQUIRED=YES antes de gasto. PostgreSQL/Temporal operacional puede requerir infraestructura adicional aunque software sea gratis; no imponer Docker/WSL/VM al propietario sin comparar/gate.
+
+D-025 siguiente trabajo: workload/cadencia/recovery dependiente de Strategy, costes/mantenibilidad/deployment Windows y política de actor único/callables, antes de selección. H8 completa el probe calendar/restart propuesto, no integración equivalente H7. D-026: DB candidata con transaction/receipt/fencing y backup protection de fixture, benchmark dataset/clocks por R-008/009; elección humana si modifica trust/scope/operación material. Estos items siguen diseñables en Team; host-specific instalación/security final se ejecuta R-030. **No quedan cerrados por esta comparación**.

@@ -1,0 +1,66 @@
+{
+  "captured_utc": "2026-10-28T18:43:24.420184+00:00",
+  "scope": "OWN_SYNTHETIC_UNIT_NORMALIZATION_NOT_PROVIDER_PIT_OR_QUALITY",
+  "source_sha256": "55ad57e03e2148172e22bd1696e53e14eb252abf121a4e502fe7dda87b7bf695",
+  "rows": [
+    {
+      "id": "INVERT_FULL_REEXPRESSION_CHAIN",
+      "observed": "1000",
+      "expected": "1000",
+      "status": "PASS"
+    },
+    {
+      "id": "PARTICIPATION_WRONG_IF_MIX_UNITS",
+      "observed": {
+        "correct": "0.1",
+        "wrong": "0.05"
+      },
+      "expected": {
+        "correct": "0.1",
+        "wrong": "0.05"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "NOTIONAL_LIQUIDITY_WRONG_IF_MIX_UNITS",
+      "observed": {
+        "correct": "20000",
+        "wrong": "40000"
+      },
+      "expected": {
+        "correct": "20000",
+        "wrong": "40000"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "MISSING_FACTOR_NOT_RAW_VOLUME",
+      "observed": "UNKNOWN_INCOMPLETE_NORMALIZATION_CHAIN",
+      "expected": "UNKNOWN_INCOMPLETE_NORMALIZATION_CHAIN",
+      "status": "PASS"
+    },
+    {
+      "id": "NO_FUTURE_SPLIT_IN_PRE_EVENT_FEATURE",
+      "observed": "20",
+      "expected": "20",
+      "status": "PASS"
+    },
+    {
+      "id": "PRE_SPLIT_PRICE_REBASED_AFTER_EVENT",
+      "observed": "10",
+      "expected": "10",
+      "status": "PASS"
+    }
+  ],
+  "counts": {
+    "PASS": 6,
+    "FAIL": 0,
+    "ERROR": 0
+  },
+  "vendor_rows_accessed": 0,
+  "PIT_vintage_or_factor_completeness_verified": false,
+  "datasets_admitted": 0,
+  "implementation_locked": true,
+  "holdout": "INTEGRITY_UNKNOWN",
+  "target_acceptance": "TARGET_ACCEPTANCE_DEFERRED"
+}

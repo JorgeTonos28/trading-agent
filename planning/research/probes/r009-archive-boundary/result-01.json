@@ -1,0 +1,93 @@
+{
+  "captured_utc": "2026-10-28T19:32:56.818279+00:00",
+  "scope": "OWN_LAB_NATIVE_ARCHIVE_BOUNDARY_AND_REUSABLE_FORK_NOT_SECURITY_ACCEPTANCE",
+  "own_source_hashes": {
+    "ArchiveProbe.csproj": "e6742f20a20d67a767dfa861cfc2ee6f25e7236f47a2930b49a7d385680cbd97",
+    "Program.cs": "169532aae4a854392532da8e33cfbeeac2ad849bdbfe28383322ce9b75bbbde5",
+    "run_probe.py": "af22dc9e690898ebd0bee229a1e4cdddfd322d3a1a5f0009eec366ee6b2a2f5b"
+  },
+  "native_source_sha256": "2f9bc6f80b100f2d9a1966a7dd12f32edd5882bceefe479078fb394f9b9cf1f3",
+  "steps": [
+    {
+      "label": "restore",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 8.894,
+      "raw_log_sha256": "e38c5b46f68d3d7e2a2bc4b947d9eee954854a783059d025db0456e4746a7a81",
+      "diagnostics": [
+        "<research-root>\\.local\\lean-source\\Compression\\QuantConnect.Compression.csproj : warning NU1903: El paquete \"DotNetZip\" 1.16.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-xhg6-9j5j-w4vf [<research-root>\\.local\\ql4-archive-boundary\\ArchiveProbe.csproj]",
+        "<research-root>\\.local\\lean-source\\Compression\\QuantConnect.Compression.csproj : warning NU1904: El paquete \"System.Drawing.Common\" 4.7.0 tiene una vulnerabilidad de gravedad cr\u00edtica conocida, https://github.com/advisories/GHSA-rxg9-xrhp-64gj [<research-root>\\.local\\ql4-archive-boundary\\ArchiveProbe.csproj]",
+        "<research-root>\\.local\\ql4-archive-boundary\\ArchiveProbe.csproj : warning NU1903: El paquete \"DotNetZip\" 1.16.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-xhg6-9j5j-w4vf"
+      ]
+    },
+    {
+      "label": "build",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 10.17,
+      "raw_log_sha256": "a226b4c1df0a840b48a94099b60c4b3e2dae9db9d75b9f796c28398602e0f834",
+      "diagnostics": [
+        "<research-root>\\.local\\ql4-archive-boundary\\ArchiveProbe.csproj : warning NU1903: El paquete \"DotNetZip\" 1.16.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-xhg6-9j5j-w4vf",
+        "<research-root>\\.local\\lean-source\\Compression\\QuantConnect.Compression.csproj : warning NU1903: El paquete \"DotNetZip\" 1.16.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-xhg6-9j5j-w4vf",
+        "<research-root>\\.local\\lean-source\\Compression\\QuantConnect.Compression.csproj : warning NU1904: El paquete \"System.Drawing.Common\" 4.7.0 tiene una vulnerabilidad de gravedad cr\u00edtica conocida, https://github.com/advisories/GHSA-rxg9-xrhp-64gj",
+        "<research-root>\\.local\\ql4-archive-boundary\\ArchiveProbe.csproj : warning NU1903: El paquete \"DotNetZip\" 1.16.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-xhg6-9j5j-w4vf",
+        "<research-root>\\.local\\lean-source\\Compression\\QuantConnect.Compression.csproj : warning NU1903: El paquete \"DotNetZip\" 1.16.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-xhg6-9j5j-w4vf",
+        "<research-root>\\.local\\lean-source\\Compression\\QuantConnect.Compression.csproj : warning NU1904: El paquete \"System.Drawing.Common\" 4.7.0 tiene una vulnerabilidad de gravedad cr\u00edtica conocida, https://github.com/advisories/GHSA-rxg9-xrhp-64gj"
+      ]
+    },
+    {
+      "label": "run",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 0.681,
+      "raw_log_sha256": "c7a31f0ddf7934b76b4241554f758100abdccfa68b7204ff4bfa1fe68903b2b0",
+      "diagnostics": [
+        "20261028 19:32:56.629 ERROR:: Compression.Unzip():  System.IO.IOException: Extracting Zip entry would have resulted in a file outside the specified destination directory."
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "id": "OBSERVE_NATIVE_OVERWRITE_BOUNDARY",
+      "status": "PASS"
+    },
+    {
+      "id": "REJECT_TRAVERSAL_native-no-overwrite",
+      "status": "PASS"
+    },
+    {
+      "id": "REJECT_TRAVERSAL_bcl-overwrite",
+      "status": "PASS"
+    },
+    {
+      "id": "FORK_IONIC_API_MEMORY_ROUNDTRIP",
+      "status": "PASS"
+    },
+    {
+      "id": "FORK_ASSEMBLY_IS_DISTINCT",
+      "status": "PASS"
+    },
+    {
+      "id": "CANARY_REMAINS_INSIDE_OWNED_LAB",
+      "status": "PASS"
+    }
+  ],
+  "counts": {
+    "PASS": 6,
+    "FAIL": 0,
+    "ERROR": 0
+  },
+  "native_security_verdict": "FAIL_BOUNDARY_DEMONSTRATED",
+  "fork_package_observed": [
+    "ProDotNetZip/1.19.0"
+  ],
+  "fork_full_lean_compatibility_accepted": false,
+  "production_patch_applied": false,
+  "pin_accepted": false,
+  "no_network_or_licensed_market_API_used_by_test": true,
+  "global_or_OS_permissions_changed": false,
+  "fixture_retained": true,
+  "implementation_locked": true,
+  "holdout": "INTEGRITY_UNKNOWN",
+  "target_acceptance": "TARGET_ACCEPTANCE_DEFERRED"
+}

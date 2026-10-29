@@ -1,0 +1,147 @@
+{
+  "scope": "SYNTHETIC_ENDPOINT_AND_POWER_ILLUSTRATION_NOT_STRATEGY",
+  "observed_on": "2026-10-14",
+  "source_sha256": "742581a51292ae6dae890b2bb257ba2141c1d39cd45eb7c44740fdf65974d144",
+  "strategy_trials_executed": 0,
+  "numeric_margins_approved": false,
+  "checks": [
+    {
+      "id": "PURE_EXPOSURE_MIRROR_EQUALS",
+      "status": "PASS"
+    },
+    {
+      "id": "LOWER_VOL_NOT_INCREMENTAL_EFFICIENCY",
+      "status": "PASS"
+    },
+    {
+      "id": "CASH_ONLY_EXCESS_ZERO",
+      "status": "PASS"
+    },
+    {
+      "id": "CASH_NOT_DOUBLE_COUNTED",
+      "status": "PASS"
+    },
+    {
+      "id": "CASH_OMISSION_CHANGES_RETURN",
+      "status": "PASS"
+    },
+    {
+      "id": "CI_VECTOR_SHAPE",
+      "status": "PASS"
+    },
+    {
+      "id": "CI_LOWER_BOUND_FINITE",
+      "status": "PASS"
+    },
+    {
+      "id": "CI_UPPER_IS_INF_FOR_LOWER_TAIL",
+      "status": "PASS"
+    },
+    {
+      "id": "CI_SEED_REPEATABLE",
+      "status": "PASS"
+    },
+    {
+      "id": "POWER_NORMAL_T_CLOSE_NOT_IDENTICAL",
+      "status": "PASS"
+    },
+    {
+      "id": "TIGHTER_MARGIN_MORE_SAMPLE",
+      "status": "PASS"
+    },
+    {
+      "id": "HIGHER_DIFFERENCE_VARIANCE_MORE_SAMPLE",
+      "status": "PASS"
+    },
+    {
+      "id": "POINT_ESTIMATE_NOT_BOUND",
+      "status": "PASS"
+    },
+    {
+      "id": "CASH_ONLY_CANNOT_PASS",
+      "status": "PASS"
+    },
+    {
+      "id": "EXPOSURE_ONLY_RISK_RATIO_ONE_CANNOT_PASS",
+      "status": "PASS"
+    },
+    {
+      "id": "INVALID_RISK_RATIO_NOT_ZERO",
+      "status": "PASS"
+    },
+    {
+      "id": "INSUFFICIENT_NOT_FAIL",
+      "status": "PASS"
+    },
+    {
+      "id": "POSITIVE_FIXTURE_ALL_AND",
+      "status": "PASS"
+    },
+    {
+      "id": "ALL_INSUFFICIENT_NO_QUALIFIED_REASON_KEPT",
+      "status": "PASS"
+    }
+  ],
+  "CI_scope": "MARGINAL_PRIMITIVE_ONLY_NOT_SIMULTANEOUS_COVERAGE",
+  "power_illustration": {
+    "assumptions": "NORMAL_IID_ANNUAL_EQUAL_TRUE_MEANS_NOT_CAGR_OR_STRATEGY_ESTIMATE",
+    "alpha_one_sided_fixture": 0.025,
+    "power_fixture": 0.8,
+    "grid": [
+      {
+        "margin_annual_pp": 0.5,
+        "annual_diff_sigma_percent": 1.0,
+        "normal_iid_years_at_true_equal_means": 31.395518937396343
+      },
+      {
+        "margin_annual_pp": 0.5,
+        "annual_diff_sigma_percent": 5.0,
+        "normal_iid_years_at_true_equal_means": 784.8879734349085
+      },
+      {
+        "margin_annual_pp": 0.5,
+        "annual_diff_sigma_percent": 10.0,
+        "normal_iid_years_at_true_equal_means": 3139.551893739634
+      },
+      {
+        "margin_annual_pp": 1.0,
+        "annual_diff_sigma_percent": 1.0,
+        "normal_iid_years_at_true_equal_means": 7.848879734349086
+      },
+      {
+        "margin_annual_pp": 1.0,
+        "annual_diff_sigma_percent": 5.0,
+        "normal_iid_years_at_true_equal_means": 196.22199335872713
+      },
+      {
+        "margin_annual_pp": 1.0,
+        "annual_diff_sigma_percent": 10.0,
+        "normal_iid_years_at_true_equal_means": 784.8879734349085
+      },
+      {
+        "margin_annual_pp": 2.0,
+        "annual_diff_sigma_percent": 1.0,
+        "normal_iid_years_at_true_equal_means": 1.9622199335872714
+      },
+      {
+        "margin_annual_pp": 2.0,
+        "annual_diff_sigma_percent": 5.0,
+        "normal_iid_years_at_true_equal_means": 49.05549833968178
+      },
+      {
+        "margin_annual_pp": 2.0,
+        "annual_diff_sigma_percent": 10.0,
+        "normal_iid_years_at_true_equal_means": 196.22199335872713
+      }
+    ],
+    "normal_case_years": 196.22199335872713,
+    "t_independent_annual_observations_case": 198.1513012680401
+  },
+  "dependency_versions": {
+    "arch": "8.0.0",
+    "statsmodels": "0.15.0"
+  },
+  "blocked_network_events": [],
+  "pass_count": 19,
+  "total": 19
+}

@@ -1,0 +1,36 @@
+{
+  "captured_utc": "2026-10-29T12:47:15.880709+00:00",
+  "controller_sha256": "ec24e8a94e7e928fdc52357eb8bae4e7fd059287db243ff3e00cc39d567fb220",
+  "source_pin": "f3d841e60dfd010ee5fc293ea893e56952484108",
+  "scope": "ISOLATED_COMPRESSION_COMPONENT_SECOND_PATH_REPAIR_NOT_FULL_ENGINE",
+  "patch_diff": "--- a/Compression.cs\n+++ b/Compression.cs\n@@ -860,28 +860,9 @@\n             {\n                 using var archive = new ZipArchive(dataStream, ZipArchiveMode.Read, leaveOpen: true);\n \n-                foreach (var zipEntry in archive.Entries)\n-                {\n-                    //Ignore Directories\n-                    if (string.IsNullOrEmpty(zipEntry.Name)) continue;\n-\n-                    // Manipulate the output filename here as desired.\n-                    var fullZipToPath = Path.Combine(outFolder, zipEntry.FullName);\n-\n-                    var targetFile = new FileInfo(fullZipToPath);\n-                    if (targetFile.Directory != null && !targetFile.Directory.Exists)\n-                    {\n-                        targetFile.Directory.Create();\n-                    }\n-\n-                    //Save the file name for later:\n-                    files.Add(fullZipToPath);\n-\n-                    //Copy the data in buffer chunks\n-                    using var entryStream = zipEntry.Open();\n-                    using var streamWriter = File.Create(fullZipToPath);\n-                    entryStream.CopyTo(streamWriter);\n-                }\n+                archive.ExtractToDirectory(outFolder, overwriteFiles: true);\n+                files.AddRange(archive.Entries.Where(e => !string.IsNullOrEmpty(e.Name))\n+                    .Select(e => Path.GetFullPath(Path.Combine(outFolder, e.FullName))));\n             }\n             catch\n             {\n",
+  "before_sha256": "345511f70f2a840556c9144725d39c61b04af04d1ffada1b275aef14606759c1",
+  "after_sha256": "3646638b8a19877a39f1434b9c85e5745183ad27cca6c62a4a1149f8941ea436",
+  "logging_dll_sha256": "8156ea8bacd201961a4eeacf44067069e861904f3a69c5dd063b5654274438e9",
+  "steps": [
+    {
+      "step": "restore",
+      "status": "ERROR",
+      "exit_code": 1,
+      "reason": null,
+      "seconds": 6.789,
+      "log_sha256": "484767e247ea82c562002b757720d41f78973b39fea74737579d60586ff8c65f",
+      "diagnostics": [
+        "C:\\Program Files\\dotnet\\sdk\\10.0.302\\NuGet.targets(198,5): error : Value cannot be null. (Parameter 'path1') [<research-root>\\.local\\ql7-extraction-repair\\smoke\\Smoke.csproj]",
+        "C:\\Program Files\\dotnet\\sdk\\10.0.302\\NuGet.targets(198,5): error :   Value cannot be null. (Parameter 'path1') [<research-root>\\.local\\ql7-extraction-repair\\smoke\\Smoke.csproj]"
+      ]
+    }
+  ],
+  "rows": [],
+  "counts": {
+    "PASS": 0,
+    "FAIL": 0,
+    "ERROR": 0
+  },
+  "full_host_or_pin_accepted": false,
+  "original_exports_modified": false,
+  "no_engine_or_strategy_run": true,
+  "implementation_locked": true,
+  "target_acceptance_status": "TARGET_ACCEPTANCE_DEFERRED",
+  "holdout": "INTEGRITY_UNKNOWN"
+}

@@ -1,0 +1,166 @@
+{
+  "captured_utc": "2026-10-29T12:58:04.655873+00:00",
+  "controller_sha256": "6f1bc6ecabdd12175f6d6c0331aea6d49b1dca1bd352f0e23f164adb6202ab4f",
+  "scope": "FINITE_ABSTRACT_ADMISSION_CUTS_NOT_POSTGRESQL_OR_CAPACITY",
+  "traces": 840,
+  "events_per_trace": 7,
+  "mismatches": [],
+  "mutant_counterexamples": {
+    "no_fence": [
+      {
+        "trace": [
+          "old_expire",
+          "new_claim",
+          "old_output",
+          "new_output",
+          "cancel",
+          "deadline",
+          "restore"
+        ],
+        "expected": [
+          [
+            "old_output",
+            false
+          ],
+          [
+            "new_output",
+            true
+          ]
+        ],
+        "mutated": [
+          [
+            "old_output",
+            true
+          ],
+          [
+            "new_output",
+            false
+          ]
+        ]
+      },
+      {
+        "trace": [
+          "old_expire",
+          "new_claim",
+          "old_output",
+          "new_output",
+          "cancel",
+          "restore",
+          "deadline"
+        ],
+        "expected": [
+          [
+            "old_output",
+            false
+          ],
+          [
+            "new_output",
+            true
+          ]
+        ],
+        "mutated": [
+          [
+            "old_output",
+            true
+          ],
+          [
+            "new_output",
+            false
+          ]
+        ]
+      }
+    ],
+    "no_receipt_unique": [
+      {
+        "trace": [
+          "old_output",
+          "old_expire",
+          "new_claim",
+          "new_output",
+          "cancel",
+          "deadline",
+          "restore"
+        ],
+        "expected": [
+          [
+            "old_output",
+            true
+          ],
+          [
+            "new_output",
+            false
+          ]
+        ],
+        "mutated": [
+          [
+            "old_output",
+            true
+          ],
+          [
+            "new_output",
+            true
+          ]
+        ]
+      },
+      {
+        "trace": [
+          "old_output",
+          "old_expire",
+          "new_claim",
+          "new_output",
+          "cancel",
+          "restore",
+          "deadline"
+        ],
+        "expected": [
+          [
+            "old_output",
+            true
+          ],
+          [
+            "new_output",
+            false
+          ]
+        ],
+        "mutated": [
+          [
+            "old_output",
+            true
+          ],
+          [
+            "new_output",
+            true
+          ]
+        ]
+      }
+    ]
+  },
+  "rows": [
+    {
+      "id": "PREFIX_ORACLE_VS_FINITE_MODEL",
+      "status": "PASS"
+    },
+    {
+      "id": "MUTATION_WITHOUT_FENCING_HAS_COUNTEREXAMPLE",
+      "status": "PASS"
+    },
+    {
+      "id": "MUTATION_WITHOUT_UNIQUE_RECEIPT_HAS_COUNTEREXAMPLE",
+      "status": "PASS"
+    },
+    {
+      "id": "LOST_NOTIFICATIONS_REDISCOVER_SAME_ONE_HUNDRED_JOB_IDS",
+      "status": "PASS"
+    }
+  ],
+  "counts": {
+    "PASS": 4,
+    "FAIL": 0,
+    "ERROR": 0
+  },
+  "SQL_or_broker_or_real_clock_tested": false,
+  "PostgreSQL_accepted": false,
+  "implementation_locked": true,
+  "target_acceptance_status": "TARGET_ACCEPTANCE_DEFERRED",
+  "holdout": "INTEGRITY_UNKNOWN"
+}

@@ -1,0 +1,28 @@
+{
+  "captured_utc": "2026-10-28T19:47:31.629263+00:00",
+  "scope": "CONTINUATION_SAME_SOURCE_ONLY_BUILD_BUDGET_EXTENDED_NO_NEW_RESTORE",
+  "source_sha256": "c537488f7db3167d4e6cea778b9aa0a2ecfb408014cee1bea9b548290d6778d9",
+  "first_capture_sha256": "a954b5ee21070388dcbd97e77622e1630630c5087d94dbb9ef4362e9a208ab0c",
+  "same_code_and_expectations_verified": true,
+  "build_timeout_seconds": 120,
+  "steps": [
+    {
+      "label": "build",
+      "status": "ERROR",
+      "reason": "TIMEOUT",
+      "seconds": 120.144,
+      "partial_log_sha256": "f2846f42466c9e745e1b333aaef366c576c6f6e2c6f7008000524587bf64fb04"
+    }
+  ],
+  "rows": [],
+  "counts": {
+    "PASS": 0,
+    "FAIL": 0,
+    "ERROR": 0
+  },
+  "pin_security_or_full_parity_accepted": false,
+  "production_checkout_modified": false,
+  "implementation_locked": true,
+  "holdout": "INTEGRITY_UNKNOWN",
+  "target_acceptance": "TARGET_ACCEPTANCE_DEFERRED"
+}

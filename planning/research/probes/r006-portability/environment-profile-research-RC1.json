@@ -1,0 +1,188 @@
+{
+  "schema_version": "0.1.0-planning",
+  "environment_kind": "CURRENT_RESEARCH_ENVIRONMENT",
+  "expected_plan": "team_research_only",
+  "observed_plan": "team",
+  "surface": "Codex_native_app_server_via_CLI",
+  "os": "Windows",
+  "captured_at": "2026-10-05T15:17:09.631131+00:00",
+  "repo_commit": "9e0dbedd98c25d0158acf14fd18cc578adf00a7b",
+  "manifest_sha256": "26d4bbb0283e67d326b6a93a14c04434f55b78b06a3a7afaefa9e9c25f198ef6",
+  "instruction_chain": [
+    "AGENTS.md",
+    "agents/onboarding/AGENTS.md"
+  ],
+  "package_ids_verified": [
+    "onboarding",
+    "plan-guardian",
+    "quant-research",
+    "market-research",
+    "portfolio-manager-shadow",
+    "pedagogical"
+  ],
+  "inventory": [
+    {
+      "id": "trading-os-bootstrap",
+      "kind": "SKILL",
+      "detected": "YES",
+      "enabled": "YES",
+      "callable": "UNKNOWN",
+      "version": "0.1.0-planning",
+      "evidence_refs": [
+        "planning/research/probes/r006-portability/result-fresh-clone-attempt-01.json"
+      ]
+    },
+    {
+      "id": "Codex-native-app-server",
+      "kind": "RUNTIME",
+      "detected": "YES",
+      "enabled": "YES",
+      "callable": "YES",
+      "version": "codex-cli 0.159.0-alpha.12.1",
+      "evidence_refs": [
+        "planning/research/probes/r006-portability/result-fresh-clone-attempt-01.json"
+      ]
+    },
+    {
+      "id": "Python",
+      "kind": "LOCAL_TOOL",
+      "detected": "YES",
+      "enabled": "NOT_APPLICABLE",
+      "callable": "YES",
+      "version": "3.14.6",
+      "evidence_refs": [
+        "planning/research/probes/r006-portability/result-fresh-clone-completion-02.json"
+      ]
+    },
+    {
+      "id": "Git",
+      "kind": "LOCAL_TOOL",
+      "detected": "YES",
+      "enabled": "NOT_APPLICABLE",
+      "callable": "YES",
+      "version": "git version 2.47.1.windows.1",
+      "evidence_refs": [
+        "planning/research/probes/r006-portability/result-fresh-clone-completion-02.json"
+      ]
+    },
+    {
+      "id": "PLUGIN_INVENTORY_UNASSESSED_IN_THIS_PROBE",
+      "kind": "PLUGIN",
+      "detected": "UNKNOWN",
+      "enabled": "UNKNOWN",
+      "callable": "UNKNOWN",
+      "version": "UNKNOWN",
+      "evidence_refs": []
+    },
+    {
+      "id": "APP_INVENTORY_UNASSESSED_IN_THIS_PROBE",
+      "kind": "APP",
+      "detected": "UNKNOWN",
+      "enabled": "UNKNOWN",
+      "callable": "UNKNOWN",
+      "version": "UNKNOWN",
+      "evidence_refs": []
+    },
+    {
+      "id": "MCP_INVENTORY_UNASSESSED_IN_THIS_PROBE",
+      "kind": "MCP",
+      "detected": "UNKNOWN",
+      "enabled": "UNKNOWN",
+      "callable": "UNKNOWN",
+      "version": "UNKNOWN",
+      "evidence_refs": []
+    },
+    {
+      "id": "DEPENDENCY_INVENTORY_UNASSESSED_IN_THIS_PROBE",
+      "kind": "DEPENDENCY",
+      "detected": "UNKNOWN",
+      "enabled": "UNKNOWN",
+      "callable": "UNKNOWN",
+      "version": "UNKNOWN",
+      "evidence_refs": []
+    }
+  ],
+  "known_limits": [
+    "target_Plus_quota_UNKNOWN",
+    "fresh_clone_same_machine_not_clean_OS",
+    "only_two_role_smokes",
+    "raw_byte_EOL_differences_classified_separately",
+    "TEMP_lifecycle_failed_in_prior_fixture_smoke_not_recovery_proven"
+  ],
+  "action_plan": [
+    {
+      "id": "target-plus-login",
+      "requirement_id": "plus-identity",
+      "classification": "USER_ACTION_REQUIRED",
+      "status": "PENDING",
+      "instruction": "Open full clone in target individual Plus; official login UI; no credentials to Git",
+      "requires_owner_approval": false,
+      "evidence_refs": []
+    },
+    {
+      "id": "manual-entry",
+      "requirement_id": "sanitized-inventory-actions",
+      "classification": "FALLBACK_AVAILABLE",
+      "status": "COMPLETED",
+      "instruction": "ONBOARDING.md manual preparation entry available; not autonomous operational equivalence",
+      "requires_owner_approval": false,
+      "evidence_refs": [
+        "ONBOARDING.md"
+      ]
+    }
+  ],
+  "selected_fallbacks": [],
+  "acceptance_tests": [
+    {
+      "gate_id": "EB-1",
+      "environment_kind": "CURRENT_RESEARCH_ENVIRONMENT",
+      "result": "PASSED",
+      "version": "local-assets-only-completion-v2",
+      "evidence_refs": [
+        "planning/research/probes/r006-portability/result-fresh-clone-completion-02.json"
+      ]
+    },
+    {
+      "gate_id": "EB-2",
+      "environment_kind": "CURRENT_RESEARCH_ENVIRONMENT",
+      "result": "PASSED",
+      "version": "all-six-metadata-two-observable-smokes-v1",
+      "evidence_refs": [
+        "planning/research/probes/r006-portability/result-fresh-clone-attempt-01.json"
+      ]
+    }
+  ],
+  "requirement_results": [
+    {
+      "id": "clone-integrity",
+      "required": true,
+      "result": "PASSED",
+      "evidence_refs": [
+        "planning/research/probes/r006-portability/result-fresh-clone-completion-02.json"
+      ]
+    },
+    {
+      "id": "global-role-rules",
+      "required": true,
+      "result": "PASSED",
+      "evidence_refs": [
+        "planning/research/probes/r006-portability/result-fresh-clone-attempt-01.json"
+      ]
+    },
+    {
+      "id": "sanitized-inventory-actions",
+      "required": true,
+      "result": "NOT_TESTED",
+      "evidence_refs": []
+    }
+  ],
+  "readiness_scope": "PREPARATION_ONBOARDING",
+  "readiness_state": "PARTIAL",
+  "blocked_by": [
+    "complete_plugins_MCP_permission_inventory_NOT_ASSESSED",
+    "Plus_GP1-7_NOT_EXECUTED",
+    "full_EB_gates_NOT_CLOSED"
+  ],
+  "authority": "NONE",
+  "implementation_locked": true
+}

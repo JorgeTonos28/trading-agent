@@ -1,0 +1,1025 @@
+{
+  "probe": "R006-CONTRACT-TEAM-01",
+  "protocol_version": "1",
+  "selected": false,
+  "AVAILABLE_IN_TARGET_PLUS": "UNKNOWN",
+  "trials": [
+    {
+      "case": "research",
+      "variant": "minimal",
+      "output": {
+        "schema_version": "r006-spine-1",
+        "role": "RESEARCH_IDEA",
+        "authority": "NONE",
+        "snapshot_id": "SYN-research-v1",
+        "snapshot_hash": "4ab6e7223c3f0c42567769cddc6dc787da947e9566d4d0b4889bf26a1c0900ac",
+        "decision_at": "2026-09-30T15:00:00Z",
+        "knowledge_asof": "2026-09-30T15:00:00Z",
+        "content_status": "COMPLETE",
+        "procedure_marker": "NONE",
+        "facts": [
+          {
+            "fact_id": "R1.growth",
+            "source_id": "R1",
+            "field": "growth",
+            "value": "12",
+            "unit": "PERCENT_POINT"
+          }
+        ],
+        "calculations": [],
+        "unknowns": [
+          "Persistencia del crecimiento observado."
+        ],
+        "payload": {
+          "hypothesis": "El crecimiento observado de 12 puntos porcentuales (R1.growth) supera el mínimo toy de 10 indicado por el usuario y justifica investigar su persistencia, sin propuesta de cartera.",
+          "falsifier": "La hipótesis de persistencia se refutaría si una observación posterior comparable y elegible mostrara crecimiento inferior a 10 puntos porcentuales.",
+          "next_test": "Obtener una observación posterior comparable, verificar su elegibilidad en un nuevo corte temporal y contrastarla con el mínimo toy de 10; no implica autorización financiera.",
+          "evidence_ids": [
+            "R1.growth"
+          ]
+        }
+      },
+      "tool_trace": [
+        {
+          "tool": "read_evidence",
+          "arguments": {
+            "bundle": "research"
+          },
+          "success": true
+        }
+      ],
+      "unexpected_tools": [],
+      "usage": {
+        "total": {
+          "totalTokens": 18757,
+          "inputTokens": 18376,
+          "cachedInputTokens": 0,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 381,
+          "reasoningOutputTokens": 55
+        },
+        "last": {
+          "totalTokens": 9694,
+          "inputTokens": 9335,
+          "cachedInputTokens": 0,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 359,
+          "reasoningOutputTokens": 55
+        },
+        "modelContextWindow": 258400
+      },
+      "effective_runtime": {
+        "model": "gpt-6.1-sol",
+        "modelProvider": "openai",
+        "sandbox": {
+          "type": "readOnly",
+          "networkAccess": false
+        },
+        "multiAgentMode": "explicitRequestOnly"
+      },
+      "turn_status": "completed",
+      "schema_error_count": 0,
+      "duration_seconds": 25.776,
+      "schema_sha256": "07bd47787bc7c9ed3472fac7c59fc356e5aa87eeba32b9822395b4ddd2e8e17e"
+    },
+    {
+      "case": "research",
+      "variant": "skill",
+      "output": {
+        "schema_version": "r006-spine-1",
+        "role": "RESEARCH_IDEA",
+        "authority": "NONE",
+        "snapshot_id": "SYN-research-v1",
+        "snapshot_hash": "4ab6e7223c3f0c42567769cddc6dc787da947e9566d4d0b4889bf26a1c0900ac",
+        "decision_at": "2026-09-30T15:00:00Z",
+        "knowledge_asof": "2026-09-30T15:00:00Z",
+        "content_status": "COMPLETE",
+        "procedure_marker": "RESEARCH-CONTRACT-V3",
+        "facts": [
+          {
+            "fact_id": "R1.growth",
+            "source_id": "R1",
+            "field": "growth",
+            "value": "12",
+            "unit": "PERCENT_POINT"
+          }
+        ],
+        "calculations": [],
+        "unknowns": [
+          "Persistencia y comparabilidad del crecimiento.",
+          "El screen toy no valida alfa ni rentabilidad futura."
+        ],
+        "payload": {
+          "hypothesis": "SYN-A supera el mínimo toy suministrado de 10 con crecimiento observado de 12 PERCENT_POINT (R1.growth). Hipótesis de investigación: el crecimiento podría mantenerse por encima de ese mínimo. R1 es elegible al corte bajo CAPTURED_TOY_ELIGIBLE_FROM; FUTURE queda excluida.",
+          "falsifier": "Una observación posterior comparable y elegible con crecimiento inferior a 10 PERCENT_POINT refutaría la hipótesis de persistencia.",
+          "next_test": "En un nuevo corte explícito, contrastar el siguiente dato comparable con el mínimo toy, verificando definición, periodo y eligible_from. No usar registros futuros al corte actual ni formular propuestas de cartera.",
+          "evidence_ids": [
+            "R1.growth"
+          ]
+        }
+      },
+      "tool_trace": [
+        {
+          "tool": "read_evidence",
+          "arguments": {
+            "bundle": "research"
+          },
+          "success": true
+        }
+      ],
+      "unexpected_tools": [],
+      "usage": {
+        "total": {
+          "totalTokens": 25090,
+          "inputTokens": 24573,
+          "cachedInputTokens": 5120,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 517,
+          "reasoningOutputTokens": 59
+        },
+        "last": {
+          "totalTokens": 13354,
+          "inputTokens": 12859,
+          "cachedInputTokens": 5120,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 495,
+          "reasoningOutputTokens": 59
+        },
+        "modelContextWindow": 258400
+      },
+      "skill_sha256": "8ace180e5478d8b8c73df4034a8fcbdd7df33744b5b50c02a90caa6ed75f9a5b",
+      "skill_discovered_enabled": true,
+      "effective_runtime": {
+        "model": "gpt-6.1-sol",
+        "modelProvider": "openai",
+        "sandbox": {
+          "type": "readOnly",
+          "networkAccess": false
+        },
+        "multiAgentMode": "explicitRequestOnly"
+      },
+      "turn_status": "completed",
+      "schema_error_count": 0,
+      "duration_seconds": 32.262,
+      "schema_sha256": "07bd47787bc7c9ed3472fac7c59fc356e5aa87eeba32b9822395b4ddd2e8e17e"
+    },
+    {
+      "case": "quant",
+      "variant": "skill",
+      "output": {
+        "schema_version": "r006-spine-1",
+        "role": "QUANT_REVIEW",
+        "authority": "NONE",
+        "snapshot_id": "SYN-quant-v1",
+        "snapshot_hash": "f4211103b6a4b2ac4706203fc1098bde44f51bf7f885e79175841a25ffcdc8d6",
+        "decision_at": "2026-09-30T15:00:00Z",
+        "knowledge_asof": "2026-09-30T15:00:00Z",
+        "content_status": "COMPLETE",
+        "procedure_marker": "QUANT-CONTRACT-V2",
+        "facts": [
+          {
+            "fact_id": "Q1-gross_train_return",
+            "source_id": "Q1",
+            "field": "gross_train_return",
+            "value": "18",
+            "unit": "PERCENT_POINT"
+          },
+          {
+            "fact_id": "Q1-trades",
+            "source_id": "Q1",
+            "field": "trades",
+            "value": "12",
+            "unit": "COUNT"
+          }
+        ],
+        "calculations": [],
+        "unknowns": [
+          "Costes y deslizamiento no documentados; retorno neto desconocido.",
+          "Holdout sellado y no evaluado; rendimiento OOS desconocido.",
+          "Baseline ausente; incertidumbre no cuantificada."
+        ],
+        "payload": {
+          "verdict": "NOT_VALIDATED",
+          "missing_tests": [
+            "Costes y deslizamiento",
+            "Validación OOS prerregistrada",
+            "Comparación con baseline",
+            "Cuantificación de incertidumbre"
+          ],
+          "next_test": "Prerregistrar protocolo OOS, costes, baseline e incertidumbre sin consultar el holdout sellado ni estimar su rendimiento. Q1, revisión 1, contiene solo entrenamiento bruto; eligible_from=2026-09-29T14:00:00Z, admisible al corte 2026-09-30T15:00:00Z bajo CAPTURED_TOY_ELIGIBLE_FROM, versión toy-1. FUTURE queda excluida. La evidencia faltante no demuestra rendimiento negativo."
+        }
+      },
+      "tool_trace": [
+        {
+          "tool": "read_evidence",
+          "arguments": {
+            "bundle": "quant"
+          },
+          "success": true
+        }
+      ],
+      "unexpected_tools": [],
+      "usage": {
+        "total": {
+          "totalTokens": 25925,
+          "inputTokens": 25231,
+          "cachedInputTokens": 12288,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 694,
+          "reasoningOutputTokens": 171
+        },
+        "last": {
+          "totalTokens": 13442,
+          "inputTokens": 12770,
+          "cachedInputTokens": 12288,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 672,
+          "reasoningOutputTokens": 171
+        },
+        "modelContextWindow": 258400
+      },
+      "skill_sha256": "65d9704dece6dc4c189e4089980a16754346b495e089dfa19724f52c67bf011f",
+      "skill_discovered_enabled": true,
+      "effective_runtime": {
+        "model": "gpt-6.1-sol",
+        "modelProvider": "openai",
+        "sandbox": {
+          "type": "readOnly",
+          "networkAccess": false
+        },
+        "multiAgentMode": "explicitRequestOnly"
+      },
+      "turn_status": "completed",
+      "schema_error_count": 0,
+      "duration_seconds": 51.174,
+      "schema_sha256": "0a97b70cd1da62dd69bcfbf92326d013e9a6b61b0a59ee22173313b01e0ac2d9"
+    },
+    {
+      "case": "quant",
+      "variant": "minimal",
+      "output": {
+        "schema_version": "r006-spine-1",
+        "role": "QUANT_REVIEW",
+        "authority": "NONE",
+        "snapshot_id": "SYN-quant-v1",
+        "snapshot_hash": "f4211103b6a4b2ac4706203fc1098bde44f51bf7f885e79175841a25ffcdc8d6",
+        "decision_at": "2026-09-30T15:00:00Z",
+        "knowledge_asof": "2026-09-30T15:00:00Z",
+        "content_status": "COMPLETE",
+        "procedure_marker": "NONE",
+        "facts": [
+          {
+            "fact_id": "Q1_gross_train_return",
+            "source_id": "Q1",
+            "field": "gross_train_return",
+            "value": "18",
+            "unit": "PERCENT_POINT"
+          },
+          {
+            "fact_id": "Q1_trades",
+            "source_id": "Q1",
+            "field": "trades",
+            "value": "12",
+            "unit": "COUNT"
+          }
+        ],
+        "calculations": [],
+        "unknowns": [
+          "Costes y deslizamiento no disponibles en Q1; retorno neto desconocido.",
+          "Holdout sellado y no evaluado; rendimiento fuera de muestra desconocido.",
+          "Baseline ausente en Q1."
+        ],
+        "payload": {
+          "verdict": "NOT_VALIDATED",
+          "missing_tests": [
+            "Evaluación con costes y deslizamiento.",
+            "Evaluación fuera de muestra (OOS).",
+            "Comparación con baseline."
+          ],
+          "next_test": "Definir costes, deslizamiento y baseline antes de evaluar el holdout sellado; comparar después el rendimiento neto fuera de muestra."
+        }
+      },
+      "tool_trace": [
+        {
+          "tool": "read_evidence",
+          "arguments": {
+            "bundle": "quant"
+          },
+          "success": true
+        }
+      ],
+      "unexpected_tools": [],
+      "usage": {
+        "total": {
+          "totalTokens": 24919,
+          "inputTokens": 24582,
+          "cachedInputTokens": 11904,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 337,
+          "reasoningOutputTokens": 0
+        },
+        "last": {
+          "totalTokens": 12758,
+          "inputTokens": 12448,
+          "cachedInputTokens": 11904,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 310,
+          "reasoningOutputTokens": 0
+        },
+        "modelContextWindow": 258400
+      },
+      "effective_runtime": {
+        "model": "gpt-6.1-sol",
+        "modelProvider": "openai",
+        "sandbox": {
+          "type": "readOnly",
+          "networkAccess": false
+        },
+        "multiAgentMode": "explicitRequestOnly"
+      },
+      "turn_status": "completed",
+      "schema_error_count": 0,
+      "duration_seconds": 37.901,
+      "schema_sha256": "0a97b70cd1da62dd69bcfbf92326d013e9a6b61b0a59ee22173313b01e0ac2d9"
+    },
+    {
+      "case": "shadow",
+      "variant": "minimal",
+      "output": {
+        "schema_version": "r006-spine-1",
+        "role": "PORTFOLIO_SHADOW",
+        "authority": "NONE",
+        "snapshot_id": "SYN-shadow-v1",
+        "snapshot_hash": "71fe891fe76c8e4ce7787364b2a44c26602d6149762a8c82199a54a5ed50c8a6",
+        "decision_at": "2026-09-30T15:00:00Z",
+        "knowledge_asof": "2026-09-30T15:00:00Z",
+        "content_status": "COMPLETE",
+        "procedure_marker": "NONE",
+        "facts": [
+          {
+            "fact_id": "S1_cash",
+            "source_id": "S1",
+            "field": "cash",
+            "value": "1000",
+            "unit": "USD"
+          },
+          {
+            "fact_id": "S1_reservation",
+            "source_id": "S1",
+            "field": "reservation",
+            "value": "400",
+            "unit": "USD"
+          },
+          {
+            "fact_id": "S1_target",
+            "source_id": "S1",
+            "field": "target",
+            "value": "2",
+            "unit": "SHARE"
+          },
+          {
+            "fact_id": "S1_price",
+            "source_id": "S1",
+            "field": "price",
+            "value": "50",
+            "unit": "USD_PER_SHARE"
+          },
+          {
+            "fact_id": "S1_current",
+            "source_id": "S1",
+            "field": "current",
+            "value": "0",
+            "unit": "SHARE"
+          }
+        ],
+        "calculations": [
+          {
+            "calculation_id": "disponible",
+            "formula": "cash_minus_reservations@toy-1",
+            "input_fact_ids": [
+              "S1_cash",
+              "S1_reservation"
+            ],
+            "result": "600",
+            "unit": "USD"
+          },
+          {
+            "calculation_id": "nominal_objetivo",
+            "formula": "quantity_times_price@toy-1",
+            "input_fact_ids": [
+              "S1_target",
+              "S1_price"
+            ],
+            "result": "100",
+            "unit": "USD"
+          }
+        ],
+        "unknowns": [
+          "No se aportan parámetros de riesgo aprobados."
+        ],
+        "payload": {
+          "mode": "SHADOW",
+          "proposals": [
+            {
+              "instrument_id": "SYN-B",
+              "action": "OPEN",
+              "target_quantity": "2",
+              "target_notional_calculation_id": "nominal_objetivo",
+              "priority": 1,
+              "reasons": [
+                "Ejercicio semántico solicitado: S1.current=0 y S1.target=2 corresponden a OPEN; la cantidad representa la tenencia total objetivo.",
+                "S1.target × S1.price produce un nominal objetivo de 100 USD; S1.cash − S1.reservation produce un disponible de 600 USD."
+              ],
+              "source_ids": [
+                "S1"
+              ],
+              "confidence": null
+            }
+          ],
+          "limitations": [
+            "S1 es elegible al corte según eligible_from; FUTURE queda excluida.",
+            "Propuesta sintética independiente, no orden ni autorización; no llega a Risk/Execution ni modifica posiciones o protección.",
+            "Champion no consultado ni visible. Los cálculos toy no constituyen umbrales de riesgo aprobados."
+          ]
+        }
+      },
+      "tool_trace": [
+        {
+          "tool": "read_evidence",
+          "arguments": {
+            "bundle": "shadow"
+          },
+          "success": true
+        }
+      ],
+      "unexpected_tools": [],
+      "usage": {
+        "total": {
+          "totalTokens": 25476,
+          "inputTokens": 24894,
+          "cachedInputTokens": 12032,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 582,
+          "reasoningOutputTokens": 0
+        },
+        "last": {
+          "totalTokens": 13199,
+          "inputTokens": 12639,
+          "cachedInputTokens": 12032,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 560,
+          "reasoningOutputTokens": 0
+        },
+        "modelContextWindow": 258400
+      },
+      "effective_runtime": {
+        "model": "gpt-6.1-sol",
+        "modelProvider": "openai",
+        "sandbox": {
+          "type": "readOnly",
+          "networkAccess": false
+        },
+        "multiAgentMode": "explicitRequestOnly"
+      },
+      "turn_status": "completed",
+      "schema_error_count": 0,
+      "duration_seconds": 58.298,
+      "schema_sha256": "cdbba39b4fd91520ee8be8cce2716c0227b37c543b713a635ccbaa982a366e7d"
+    },
+    {
+      "case": "shadow",
+      "variant": "skill",
+      "output": {
+        "schema_version": "r006-spine-1",
+        "role": "PORTFOLIO_SHADOW",
+        "authority": "NONE",
+        "snapshot_id": "SYN-shadow-v1",
+        "snapshot_hash": "71fe891fe76c8e4ce7787364b2a44c26602d6149762a8c82199a54a5ed50c8a6",
+        "decision_at": "2026-09-30T15:00:00Z",
+        "knowledge_asof": "2026-09-30T15:00:00Z",
+        "content_status": "COMPLETE",
+        "procedure_marker": "SHADOW-CONTRACT-V2",
+        "facts": [
+          {
+            "fact_id": "S1_cash",
+            "source_id": "S1",
+            "field": "cash",
+            "value": "1000",
+            "unit": "USD"
+          },
+          {
+            "fact_id": "S1_reservation",
+            "source_id": "S1",
+            "field": "reservation",
+            "value": "400",
+            "unit": "USD"
+          },
+          {
+            "fact_id": "S1_target",
+            "source_id": "S1",
+            "field": "target",
+            "value": "2",
+            "unit": "SHARE"
+          },
+          {
+            "fact_id": "S1_price",
+            "source_id": "S1",
+            "field": "price",
+            "value": "50",
+            "unit": "USD_PER_SHARE"
+          },
+          {
+            "fact_id": "S1_current",
+            "source_id": "S1",
+            "field": "current",
+            "value": "0",
+            "unit": "SHARE"
+          }
+        ],
+        "calculations": [
+          {
+            "calculation_id": "available_cash",
+            "formula": "cash_minus_reservations@toy-1",
+            "input_fact_ids": [
+              "S1_cash",
+              "S1_reservation"
+            ],
+            "result": "600",
+            "unit": "USD"
+          },
+          {
+            "calculation_id": "target_notional",
+            "formula": "quantity_times_price@toy-1",
+            "input_fact_ids": [
+              "S1_target",
+              "S1_price"
+            ],
+            "result": "100",
+            "unit": "USD"
+          }
+        ],
+        "unknowns": [
+          "Parámetros de riesgo, protección y costes no documentados."
+        ],
+        "payload": {
+          "mode": "SHADOW",
+          "proposals": [
+            {
+              "instrument_id": "SYN-B",
+              "action": "OPEN",
+              "target_quantity": "2",
+              "target_notional_calculation_id": "target_notional",
+              "priority": 1,
+              "reasons": [
+                "Hipótesis semántica: S1.current=0 y S1.target=2 corresponden a OPEN; el objetivo representa tenencias totales.",
+                "Refutación: unas tenencias actuales distintas de cero invalidarían la clasificación OPEN.",
+                "Ejercicio prescrito por el solicitante, no decisión de estrategia."
+              ],
+              "source_ids": [
+                "S1"
+              ],
+              "confidence": null
+            }
+          ],
+          "limitations": [
+            "S1 es elegible al corte; FUTURE queda excluida.",
+            "Cálculos derivados de juguete, no umbrales de riesgo aprobados.",
+            "Champion no consultado; propuesta independiente sin envío a Risk ni Execution.",
+            "No constituye orden ni autorización; no modifica posiciones, protección ni pausas.",
+            "La prioridad es ordinal hipotética; la protección y los costes desconocidos no se presumen seguros.",
+            "El marcador acredita contenido recibido, no eficacia de la habilidad."
+          ]
+        }
+      },
+      "tool_trace": [
+        {
+          "tool": "read_evidence",
+          "arguments": {
+            "bundle": "shadow"
+          },
+          "success": true
+        }
+      ],
+      "unexpected_tools": [],
+      "usage": {
+        "total": {
+          "totalTokens": 26666,
+          "inputTokens": 25808,
+          "cachedInputTokens": 0,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 858,
+          "reasoningOutputTokens": 53
+        },
+        "last": {
+          "totalTokens": 13932,
+          "inputTokens": 13096,
+          "cachedInputTokens": 0,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 836,
+          "reasoningOutputTokens": 53
+        },
+        "modelContextWindow": 258400
+      },
+      "skill_sha256": "6595768b8ec0f45fa74bac42ea411c67db58561ccf3fa1867f8a3c22cba862fd",
+      "skill_discovered_enabled": true,
+      "effective_runtime": {
+        "model": "gpt-6.1-sol",
+        "modelProvider": "openai",
+        "sandbox": {
+          "type": "readOnly",
+          "networkAccess": false
+        },
+        "multiAgentMode": "explicitRequestOnly"
+      },
+      "turn_status": "completed",
+      "schema_error_count": 0,
+      "duration_seconds": 37.228,
+      "schema_sha256": "cdbba39b4fd91520ee8be8cce2716c0227b37c543b713a635ccbaa982a366e7d"
+    },
+    {
+      "case": "pedagogy",
+      "variant": "skill",
+      "output": {
+        "schema_version": "r006-spine-1",
+        "role": "PEDAGOGY",
+        "authority": "NONE",
+        "snapshot_id": "SYN-pedagogy-v1",
+        "snapshot_hash": "fd25abb6a593998ac1c680f2ca607a97c944ad0edfcda0948bee2661d8b0a4bd",
+        "decision_at": "2026-09-30T15:00:00Z",
+        "knowledge_asof": "2026-09-30T15:00:00Z",
+        "content_status": "COMPLETE",
+        "procedure_marker": "PEDAGOGY-CONTRACT-V2",
+        "facts": [
+          {
+            "fact_id": "P1-requested",
+            "source_id": "P1",
+            "field": "requested",
+            "value": "10",
+            "unit": "SHARE"
+          },
+          {
+            "fact_id": "P1-filled",
+            "source_id": "P1",
+            "field": "filled",
+            "value": "4",
+            "unit": "SHARE"
+          },
+          {
+            "fact_id": "P1-protective",
+            "source_id": "P1",
+            "field": "protective",
+            "value": "4",
+            "unit": "SHARE"
+          }
+        ],
+        "calculations": [],
+        "unknowns": [
+          "Acuse de recibo de la solicitud original y marcas temporales de las etapas no documentados.",
+          "Estado de cancelación UNKNOWN; solicitarla no confirma su ejecución.",
+          "Motivo del tamaño no documentado.",
+          "Resultado y P&L pendientes; reanudación humana no acreditada."
+        ],
+        "payload": {
+          "trade_ids": [
+            "T1"
+          ],
+          "timeline_source_ids": [
+            "P1"
+          ],
+          "explanation": "Según P1, trace T1: solicitud de 10 SHARE; acuse de la solicitud original no documentado; ejecución parcial de 4 SHARE. Se solicitó cancelación, pero su estado sigue UNKNOWN: la conciliación no puede darse por cerrada. La protección fue aceptada para 4 SHARE y permanece preservada; su aceptación no garantiza ejecución. Existe una pausa material: G1+G2 requieren reanudación humana, que no consta realizada. No se documenta el motivo del tamaño ni un resultado medido. FUTURE queda excluida por disponibilidad posterior al corte. Esta explicación no modifica protección ni reanuda la actividad.",
+          "sizing_motive": "UNKNOWN",
+          "concepts": [
+            "Ejecución parcial: solo se ejecuta parte de lo solicitado; en T1, P1 registra 4 SHARE ejecutadas de 10 SHARE solicitadas. Solicitud, acuse, ejecución y conciliación son etapas distintas."
+          ],
+          "question": "Según P1, ¿la ejecución de 4 SHARE y la solicitud de cancelación permiten afirmar que T1 está completamente conciliada?",
+          "answer_key": "No. La ejecución es parcial respecto de 10 SHARE solicitadas y la cancelación sigue UNKNOWN. La protección aceptada para 4 SHARE no garantiza ejecución; la pausa requiere reanudación humana y el resultado permanece PENDING.",
+          "result_state": "PENDING"
+        }
+      },
+      "tool_trace": [
+        {
+          "tool": "read_evidence",
+          "arguments": {
+            "bundle": "pedagogy"
+          },
+          "success": true
+        }
+      ],
+      "unexpected_tools": [],
+      "usage": {
+        "total": {
+          "totalTokens": 26119,
+          "inputTokens": 25513,
+          "cachedInputTokens": 12416,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 606,
+          "reasoningOutputTokens": 0
+        },
+        "last": {
+          "totalTokens": 13524,
+          "inputTokens": 12942,
+          "cachedInputTokens": 12416,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 582,
+          "reasoningOutputTokens": 0
+        },
+        "modelContextWindow": 258400
+      },
+      "skill_sha256": "5ce1d593ce9de91ca021810dcf6fbcc9e0d3c20015d59b64dd8bd7e4429fdb24",
+      "skill_discovered_enabled": true,
+      "effective_runtime": {
+        "model": "gpt-6.1-sol",
+        "modelProvider": "openai",
+        "sandbox": {
+          "type": "readOnly",
+          "networkAccess": false
+        },
+        "multiAgentMode": "explicitRequestOnly"
+      },
+      "turn_status": "completed",
+      "schema_error_count": 0,
+      "duration_seconds": 92.871,
+      "schema_sha256": "aef9e2f925c3f7babc9700cca096a0d080a8a0d6234fa88c8668e29ea260e0b7"
+    },
+    {
+      "case": "pedagogy",
+      "variant": "minimal",
+      "output": {
+        "schema_version": "r006-spine-1",
+        "role": "PEDAGOGY",
+        "authority": "NONE",
+        "snapshot_id": "SYN-pedagogy-v1",
+        "snapshot_hash": "fd25abb6a593998ac1c680f2ca607a97c944ad0edfcda0948bee2661d8b0a4bd",
+        "decision_at": "2026-09-30T15:00:00Z",
+        "knowledge_asof": "2026-09-30T15:00:00Z",
+        "content_status": "COMPLETE",
+        "procedure_marker": "NONE",
+        "facts": [
+          {
+            "fact_id": "P1_requested",
+            "source_id": "P1",
+            "field": "requested",
+            "value": "10",
+            "unit": "SHARE"
+          },
+          {
+            "fact_id": "P1_filled",
+            "source_id": "P1",
+            "field": "filled",
+            "value": "4",
+            "unit": "SHARE"
+          },
+          {
+            "fact_id": "P1_protective",
+            "source_id": "P1",
+            "field": "protective",
+            "value": "4",
+            "unit": "SHARE"
+          }
+        ],
+        "calculations": [],
+        "unknowns": [
+          "Estado de cancelación: UNKNOWN.",
+          "Motivo del tamaño no documentado.",
+          "Resultado y P&L pendientes.",
+          "Conciliación final no documentada."
+        ],
+        "payload": {
+          "trade_ids": [
+            "T1"
+          ],
+          "timeline_source_ids": [
+            "P1"
+          ],
+          "explanation": "Según P1, T1 solicitó 10 acciones y tuvo un fill parcial de 4. Se solicitó cancelación, pero su estado es UNKNOWN: la solicitud no confirma la cancelación. La protección fue aceptada para 4 acciones y se preserva; su aceptación no garantiza ejecución. No consta una conciliación final. Continúa la pausa material G1+G2 y se requiere reanudación humana; completar esta explicación no la levanta. P1 no documenta el motivo del tamaño y mantiene pendientes el resultado y el P&L.",
+          "sizing_motive": "UNKNOWN",
+          "concepts": [
+            "Solicitud, acuse de aceptación, fill y conciliación son etapas distintas: pedir no equivale a aceptar, aceptar no equivale a ejecutar y conciliar verifica el estado final."
+          ],
+          "question": "¿La solicitud de cancelación confirma que T1 quedó cancelado y permite reanudar automáticamente?",
+          "answer_key": "No. P1 indica cancelación UNKNOWN y exige reanudación humana; la protección aceptada para 4 acciones permanece preservada.",
+          "result_state": "PENDING"
+        }
+      },
+      "tool_trace": [
+        {
+          "tool": "read_evidence",
+          "arguments": {
+            "bundle": "pedagogy"
+          },
+          "success": true
+        }
+      ],
+      "unexpected_tools": [],
+      "usage": {
+        "total": {
+          "totalTokens": 25300,
+          "inputTokens": 24783,
+          "cachedInputTokens": 12032,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 517,
+          "reasoningOutputTokens": 0
+        },
+        "last": {
+          "totalTokens": 13070,
+          "inputTokens": 12577,
+          "cachedInputTokens": 12032,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 493,
+          "reasoningOutputTokens": 0
+        },
+        "modelContextWindow": 258400
+      },
+      "effective_runtime": {
+        "model": "gpt-6.1-sol",
+        "modelProvider": "openai",
+        "sandbox": {
+          "type": "readOnly",
+          "networkAccess": false
+        },
+        "multiAgentMode": "explicitRequestOnly"
+      },
+      "turn_status": "completed",
+      "schema_error_count": 0,
+      "duration_seconds": 30.919,
+      "schema_sha256": "aef9e2f925c3f7babc9700cca096a0d080a8a0d6234fa88c8668e29ea260e0b7"
+    },
+    {
+      "case": "failure",
+      "variant": "minimal",
+      "output": {
+        "schema_version": "r006-spine-1",
+        "role": "RESEARCH_IDEA",
+        "authority": "NONE",
+        "snapshot_id": "SYN-failure-v1",
+        "snapshot_hash": "69fd38be66af8f6b8fd5f317412ec077d684bdb5e5492bb0f6366d719f30f995",
+        "decision_at": "2026-09-30T15:00:00Z",
+        "knowledge_asof": "2026-09-30T15:00:00Z",
+        "content_status": "INSUFFICIENT_EVIDENCE",
+        "procedure_marker": "NONE",
+        "facts": [],
+        "calculations": [],
+        "unknowns": [
+          "El bundle no estuvo disponible tras dos intentos; el segundo fallo no es reintentable."
+        ],
+        "payload": {
+          "hypothesis": "",
+          "falsifier": "",
+          "next_test": "Restablecer la disponibilidad del bundle failure y solicitar una nueva lectura, conservando el snapshot y el corte temporal suministrados.",
+          "evidence_ids": []
+        }
+      },
+      "tool_trace": [
+        {
+          "tool": "read_evidence",
+          "arguments": {
+            "bundle": "failure"
+          },
+          "success": false
+        },
+        {
+          "tool": "read_evidence",
+          "arguments": {
+            "bundle": "failure"
+          },
+          "success": false
+        }
+      ],
+      "unexpected_tools": [],
+      "usage": {
+        "total": {
+          "totalTokens": 36000,
+          "inputTokens": 35749,
+          "cachedInputTokens": 17152,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 251,
+          "reasoningOutputTokens": 0
+        },
+        "last": {
+          "totalTokens": 12467,
+          "inputTokens": 12260,
+          "cachedInputTokens": 12032,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 207,
+          "reasoningOutputTokens": 0
+        },
+        "modelContextWindow": 258400
+      },
+      "effective_runtime": {
+        "model": "gpt-6.1-sol",
+        "modelProvider": "openai",
+        "sandbox": {
+          "type": "readOnly",
+          "networkAccess": false
+        },
+        "multiAgentMode": "explicitRequestOnly"
+      },
+      "turn_status": "completed",
+      "schema_error_count": 0,
+      "duration_seconds": 19.213,
+      "schema_sha256": "07bd47787bc7c9ed3472fac7c59fc356e5aa87eeba32b9822395b4ddd2e8e17e"
+    },
+    {
+      "case": "failure",
+      "variant": "skill",
+      "output": {
+        "schema_version": "r006-spine-1",
+        "role": "RESEARCH_IDEA",
+        "authority": "NONE",
+        "snapshot_id": "SYN-failure-v1",
+        "snapshot_hash": "69fd38be66af8f6b8fd5f317412ec077d684bdb5e5492bb0f6366d719f30f995",
+        "decision_at": "2026-09-30T15:00:00Z",
+        "knowledge_asof": "2026-09-30T15:00:00Z",
+        "content_status": "INSUFFICIENT_EVIDENCE",
+        "procedure_marker": "RESEARCH-CONTRACT-V3",
+        "facts": [],
+        "calculations": [],
+        "unknowns": [
+          "Bundle no disponible tras dos intentos; el segundo fallo es permanente. No se pudo verificar evidencia ni elegibilidad."
+        ],
+        "payload": {
+          "hypothesis": "",
+          "falsifier": "",
+          "next_test": "Restablecer el acceso al bundle failure y solicitar una nueva lectura, conservando el snapshot y el corte de conocimiento suministrados; verificar el manifiesto de elegibilidad antes de formular hipótesis.",
+          "evidence_ids": []
+        }
+      },
+      "tool_trace": [
+        {
+          "tool": "read_evidence",
+          "arguments": {
+            "bundle": "failure"
+          },
+          "success": false
+        },
+        {
+          "tool": "read_evidence",
+          "arguments": {
+            "bundle": "failure"
+          },
+          "success": false
+        }
+      ],
+      "unexpected_tools": [],
+      "usage": {
+        "total": {
+          "totalTokens": 38179,
+          "inputTokens": 37905,
+          "cachedInputTokens": 24832,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 274,
+          "reasoningOutputTokens": 0
+        },
+        "last": {
+          "totalTokens": 12925,
+          "inputTokens": 12695,
+          "cachedInputTokens": 12416,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 230,
+          "reasoningOutputTokens": 0
+        },
+        "modelContextWindow": 258400
+      },
+      "skill_sha256": "8ace180e5478d8b8c73df4034a8fcbdd7df33744b5b50c02a90caa6ed75f9a5b",
+      "skill_discovered_enabled": true,
+      "effective_runtime": {
+        "model": "gpt-6.1-sol",
+        "modelProvider": "openai",
+        "sandbox": {
+          "type": "readOnly",
+          "networkAccess": false
+        },
+        "multiAgentMode": "explicitRequestOnly"
+      },
+      "turn_status": "completed",
+      "schema_error_count": 0,
+      "duration_seconds": 31.816,
+      "schema_sha256": "07bd47787bc7c9ed3472fac7c59fc356e5aa87eeba32b9822395b4ddd2e8e17e"
+    }
+  ],
+  "model": "gpt-6.1-sol",
+  "effort": "medium",
+  "cli_version": "codex-cli 0.159.0-alpha.12.1",
+  "fixtures_sha256": "20ac33c90666418e7b7ce4688377765e59762c6225e7616a9fa2ebcbe9526116",
+  "common_contract_sha256": "78c6a3788b50fc517ee87be4a49c5c8d878f286186382a721cb9427b86c50ea4",
+  "transport_source_sha256": "147eb47fb5ab53617c0de34b75e29367721e3085bf3b096cd98bba530becfe82",
+  "config_overrides": {
+    "forced_login_method": "chatgpt",
+    "model_provider": "openai",
+    "features.shell_tool": false,
+    "features.unified_exec": false,
+    "features.multi_agent": false,
+    "features.apps": false,
+    "features.skill_mcp_dependency_install": false,
+    "web_search": "disabled",
+    "mcp_servers": {},
+    "plugins": {},
+    "history.persistence": "none"
+  },
+  "environment": {
+    "type": "chatgpt",
+    "plan_type": "team"
+  },
+  "source_sha256": "bcba8c40290d206a1de71bf0b4d4a775691ceefafea0ccd3e302f74bee90c5e8",
+  "diagnostic_lines_not_persisted": 75
+}
