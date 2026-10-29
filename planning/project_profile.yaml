@@ -1,5 +1,5 @@
 schema_version: 1
-updated_on: 2026-10-28
+updated_on: 2026-10-29
 project:
   name: Trading OS
   purpose: auditable_agentic_quantitative_trading_platform
@@ -1005,3 +1005,18 @@ lean_pin_audit_2026_10_28:
   original_source_or_production_modified: false
   pin_accepted: false
   S2_or_financial_domain_acceptance_proven: false
+
+workflow_storage_owner_approval_2026_10_29:
+  question: Q063
+  state: DECIDED_CONDITIONAL_DESIGN_DIRECTION_ONLY
+  adr: planning/decisions/ADR-024-bounded-scheduling-and-durable-stores.md
+  scheduler: APSCHEDULER_3X_BOUNDED_WAKEUPS_ONLY_SINGLE_OWNER
+  durable_store: POSTGRESQL_SEPARATE_TRUSTED_C_F_AUTHORITIES
+  reserve: TEMPORAL_SELF_HOSTED
+  D025: RESEARCHING_CONFIGURATION_AND_SUFFICIENCY
+  D026: RESEARCHING_CONFIGURATION_AND_SUFFICIENCY
+  postgres_accepted: false
+  target_acceptance_status: TARGET_ACCEPTANCE_DEFERRED
+  implementation_locked: true
+  confirmation_integrity: INTEGRITY_UNKNOWN
+  spending_or_configuration_authorized: false

@@ -1,5 +1,7 @@
 # Checkpoint financiero — bindings y stack RC0
 
+**Supersession 2026-10-29:** Q063/A aprobado en ADR024. Este checkpoint conserva evidencia wave12; sus solicitudes Q063 son históricas. Dirección APS3/PostgreSQL decidida; configuración/suficiencia no aceptadas.
+
 2026-10-28. Fuente de estado actual después de a249d77 y ADR-023. **NOT_READY_FOR_IMPLEMENTATION**; implementation_locked=true, TARGET_ACCEPTANCE_DEFERRED, holdout INTEGRITY_UNKNOWN. No cuentas, gasto, datos licenciados, históricos de estrategias o implementación.
 
 ## Cierres y evidencia real

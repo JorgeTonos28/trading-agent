@@ -213,3 +213,7 @@ El propietario aprueba Alpaca Paper Only + LEAN source como **familias de diseñ
 ## Q-063 — dirección workflow/storage, P1
 
 [Propuesta con evidencia/trade-offs](research/D-025_026_PAPER_workflow_storage_decision_RC0.md): A APScheduler3.x acotado + PostgreSQL frente B Temporal self-hosted + PostgreSQL. Recomendación A por workload finito y menor huella de servicios; ledger/admission durable no se elimina. No seleccionar sin propietario; no gasto/configuración. B3 y datos siguen bloqueos reales, no resueltos por esta elección.
+
+## 2026-10-29 — Q-063/A aprobado
+
+[ADR-024](decisions/ADR-024-bounded-scheduling-and-durable-stores.md): dirección condicionada APScheduler3.x acotado + PostgreSQL, Temporal self-hosted reserva. Q063 DECIDED; D025/026 RESEARCHING para especificación/configuración/suficiencia. Scheduler sólo wakeups; ledger durable, permisos efectivos C/F, fallos/recovery/fencing y WAL/fsync/backup/RPO/RTO requieren evidencia. No exactly-once broker por outbox ni aceptación PostgreSQL desde SQLite. Lifecycle finito; escalamiento de complejidad obliga recomparar Temporal. No cuenta/gasto/configuración/implementación. Continúan pin LEAN, B3, bindings/riesgo/datos y readiness, sin esperar proveedores ni target.

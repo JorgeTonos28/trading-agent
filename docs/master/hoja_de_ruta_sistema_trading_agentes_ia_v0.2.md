@@ -4875,3 +4875,7 @@ Propietario aprueba Q061/DD-E condicionado, esperanza de máximos DD frente a EW
 ## Registro de aprobación de familias PAPER — 2026-10-28
 
 ADR-023/Q-062 aprobado: Alpaca Paper Only + LEAN source local; IBKR/Nautilus reservas. Es selección de diseño, no aceptación de B1–B5/QP1–QP10, pin, modelos, datos o target; no CLI/Cloud comerciales asumidos gratis. Sin protección B3 admisible no entradas. No operación/cuenta/gasto/implementación ni LIVE. Se conservan implementación bloqueada, target diferido e integridad de holdout desconocida. Evidencia comercial de proveedores y precios se registra por rol, no como admisión de datos.
+
+## Registro trazable de dirección workflow/storage — 2026-10-29
+
+Propietario aprobó Q063/A, [ADR-024](../../planning/decisions/ADR-024-bounded-scheduling-and-durable-stores.md): APScheduler3.x acotado + PostgreSQL, Temporal reserva. Sustituye únicamente la dirección candidata de familias/huella; no elimina contratos de durabilidad, recuperación, seguridad o gates. Especificación/configuración/suficiencia P1 siguen abiertas; main/lock/target/holdout no cambian.

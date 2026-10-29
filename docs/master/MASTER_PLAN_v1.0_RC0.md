@@ -41,8 +41,8 @@ Security isolation y experimental blinding son objetivos distintos. Keyring, tok
 | Broker PAPER | ADR-023 selecciona **Alpaca Paper Only** en diseño; IBKR TWS reserva | B1–B5, incluidos protección, feeds y target |
 | Backtesting | ADR-023 selecciona **LEAN source** local en diseño; Nautilus reserva/comparador acotado | Pin/dependencias, distribución, modelos y paridad |
 | Históricos/actions/cash/quotes | D-022 abierto por producto y rol | Derechos, retención, cobertura, PIT, calidad, pay-date y feed operacional |
-| Workflow/scheduler | Q-063 propone APScheduler3.x acotado; Temporal reserva alternativa | Dirección condicionada pendiente del propietario; ledger/ownership, envelope y suficiencia D1 P1 |
-| Ledger/storage/audit | Q-063 propone PostgreSQL C/F separados; Parquet/DuckDB analíticos; Redis reserva | Pin/config/atomicidad/roles/restore/retención P1; SQLite sólo instrumento de laboratorio |
+| Workflow/scheduler | ADR-024 aprueba APScheduler3.x acotado; Temporal reserva | Dirección condicionada DECIDED; ledger/ownership, envelope y suficiencia D1 P1 |
+| Ledger/storage/audit | ADR-024 aprueba dirección PostgreSQL C/F separados; Parquet/DuckDB analíticos; Redis reserva | Pin/config/atomicidad/roles/restore/retención P1; SQLite sólo instrumento de laboratorio |
 | Observabilidad/evals | Contratos existentes; productos abiertos | D-028/D-029: SLO, RPO/RTO, suites y recuperación |
 
 Nada se selecciona por aparecer en tabla. No construir un simulador general si una capacidad reutilizable satisface el contrato. No contratar CLI/Cloud/APIs pagas sin aprobación. Evidencia: [Q-062](../../planning/research/D-021_023_PAPER_stack_decision_RC0.md), [broker RC4](../../planning/research/R-007_PAPER_broker_selection_packet_RC4.md), [motor RC2](../../planning/research/R-009_engine_selection_packet_RC2.md), [demanda D1](../../planning/research/R-010_financial_workload_binding_RC0.md).
@@ -129,10 +129,14 @@ plan-architect: trabajo candidato. main: baseline estable aprobado. Release/tag 
 
 **Q-062/A aprobado en [ADR-023](../../planning/decisions/ADR-023-paper-broker-and-backtesting-families.md):** familias broker PAPER/motor seleccionadas en diseño. No CLI/Cloud comerciales asumidos gratis; sin B3 admisible no entradas. Fuentes/derechos, protección/cash/Risk, métodos/configuración, stack transversal y target siguen abiertos. No reclasificar diseño pendiente como test futuro para forzar cierre.
 
-## Checkpoint de dirección pendiente — 2026-10-28
+## Checkpoint histórico de propuesta — 2026-10-28; resuelto ADR024
 
 [Q-063](../../planning/research/D-025_026_PAPER_workflow_storage_decision_RC0.md) presenta APScheduler acotado+PostgreSQL frente a Temporal+PostgreSQL; propuesta de huella/familias, no selección automática o suficiencia. No reabre B-RT1. El master sigue DRAFT/NOT_FROZEN/NOT_READY: datos, B3, Risk/parámetros, configuración/validación/selección Strategy, stack final y target permanecen obligaciones reales.
 
 ## Admisión del pin LEAN — evidencia actual
 
 [Auditoría de fuente/paquetes](../../planning/research/R-009_current_pin_remediation_RC0.md) demostró helper overwrite inseguro en laboratorio propio. Candidatos BCL/fork reutilizables y experimento aislado aportan evidencia, con timeout01 preservado y continuación02=CONTINUATION_INCOMPLETE_OR_FAILED_NO_REMEDIATED_HOST_ACCEPTANCE. El pin exige remediación/exclusión y regresiones/seguridad/licencias/target antes de aceptación; selección de familia o cero avisos NuGet no lo admiten.
+
+## Q-063 aprobado — 2026-10-29
+
+[ADR-024](../../planning/decisions/ADR-024-bounded-scheduling-and-durable-stores.md) sustituye el estado pendiente de dirección anterior: APScheduler3.x limitado a scheduling/wakeups + PostgreSQL durable, separación C/F y sin SQL agéntico; Temporal reserva. La configuración/suficiencia numérica y durabilidad/seguridad efectiva permanecen P1, no aceptadas por fixtures SQLite. No implementación/target/gasto autorizado.

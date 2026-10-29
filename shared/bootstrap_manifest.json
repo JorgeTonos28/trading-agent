@@ -274,5 +274,16 @@
   "broker_B3_accepted": false,
   "financial_configuration_complete": false,
   "lean_pin_security_evidence": "planning/research/R-009_current_pin_remediation_RC0.md",
-  "lean_native_archive_helper_security": "FAIL_REQUIRES_REMEDIATION_BEFORE_PIN"
+  "lean_native_archive_helper_security": "FAIL_REQUIRES_REMEDIATION_BEFORE_PIN",
+  "workflow_storage_design_direction": {
+    "question": "Q063",
+    "adr": "ADR-024",
+    "status": "DECIDED_CONDITIONAL_DIRECTION_ONLY",
+    "scheduler": "APScheduler3.x_bounded_wakeups",
+    "durable_store": "PostgreSQL_separate_C_F_authorities",
+    "reserve": "Temporal_self_hosted",
+    "configuration_sufficiency_accepted": false,
+    "postgres_durability_accepted": false,
+    "installation_authorized": false
+  }
 }

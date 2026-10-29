@@ -180,3 +180,7 @@ QL3 host mínimo LEAN source; B3-S1 contraejemplos; DA-S2/S3 admisión y unidade
 ## R-009 — pendiente concreto de seguridad de pin
 
 [Auditoría/remediación RC0](research/R-009_current_pin_remediation_RC0.md): QL4 helper overwrite inseguro, BCL alternativo y fork API investigados; QL5 primerbuildtimeout preservado y continuación acotada. No algoritmo/mercado/producción. Completar pin/parches/deps/licencias/regresiones/config/target antes de admisión; no otra investigación agéntica general.
+
+## 2026-10-29 — Q-063/A aprobado
+
+[ADR-024](decisions/ADR-024-bounded-scheduling-and-durable-stores.md): dirección condicionada APScheduler3.x acotado + PostgreSQL, Temporal self-hosted reserva. Q063 DECIDED; D025/026 RESEARCHING para especificación/configuración/suficiencia. Scheduler sólo wakeups; ledger durable, permisos efectivos C/F, fallos/recovery/fencing y WAL/fsync/backup/RPO/RTO requieren evidencia. No exactly-once broker por outbox ni aceptación PostgreSQL desde SQLite. Lifecycle finito; escalamiento de complejidad obliga recomparar Temporal. No cuenta/gasto/configuración/implementación. Continúan pin LEAN, B3, bindings/riesgo/datos y readiness, sin esperar proveedores ni target.

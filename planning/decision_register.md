@@ -1,6 +1,8 @@
 # Decision Register — inicialización
 
-**Checkpoint vigente 2026-10-28:** [bindings/readiness17](17_financial_bindings_and_readiness_RC0.md). Q-062 DECIDED ADR-023; Q-063 propuesta de dirección condicionada, no stack operacional aceptado. Datos NOT_ADMITTED, cero trials, lock/target/holdout preservados. Las notas anteriores son historia fechada.
+**Estado vigente 2026-10-29:** Q063/A DECIDED como dirección condicionada ADR024. D025/026 siguen RESEARCHING para configuración/suficiencia; no solicitar otra aprobación de familias. Lock/target/holdout intactos.
+
+**Checkpoint anterior 2026-10-28 (Q063 sustituido por ADR024):** [bindings/readiness17](17_financial_bindings_and_readiness_RC0.md). Q-062 DECIDED ADR-023; Q-063 propuesta de dirección condicionada, no stack operacional aceptado. Datos NOT_ADMITTED, cero trials, lock/target/holdout preservados. Las notas anteriores son historia fechada.
 
 **Vigencia 2026-10-28:** Q-062/A DECIDED como familias de diseño en ADR-023; no volver a solicitar Q-062. Twelve requiere aclaración; EODHD respondió según resumen del propietario, sin admisión. Ver nota actual al final. Las notas wave11/a249d77 se conservan como historia. Implementación bloqueada, aceptación target diferida y holdout UNKNOWN.
 
@@ -46,8 +48,8 @@ Fecha: 2026-10-01. Fuente base: [hoja de ruta v0.2](../docs/master/hoja_de_ruta_
 | D-022 | Datos por rol y validador independiente | P1 | RESEARCHING | EODHD respuesta comercial reportada y precios3planes/5escalas; EOD19.99 prioridad condicionada. Twelve VENDOR_INFORMATION_REQUESTED. Cuatro+seis cards NOT_ADMITTED; derechos/PIT/calidad/pay-date/ejecución pendientes |
 | D-023 | Familia motor: LEAN source local | P1 | DECIDED | ADR-023/Q062: DESIGN_SELECTION_ONLY; Nautilus reserva. Sin CLI/Cloud comerciales asumidos gratis. Pin/deps/modelos/QP1–QP10/paridad/target abiertos |
 | D-024 | Runtime/topología/plugin agéntico PAPER | P1 | DECIDED | ADR-014 aprobado owner 2026-10-13 en scope B-RT1; diseño fundamental DESIGN_DECIDED. Target R-030 TARGET_ACCEPTANCE_DEFERRED, operacional NOT_IMPLEMENTED. Mecanismos/versiones finales requieren aceptación, sin diseño abierto por host-specific. |
-| D-025 | Workflow durable, scheduler y recuperación | P1 | READY_FOR_DECISION | Q063 propone dirección condicionada APS3+ledger PostgreSQL frente Temporal+PostgreSQL; envelope/latencias/RPO/RTO/retención y full config/suficiencia P1 siguen abiertos; sin instalación o aceptación |
-| D-026 | Storage, eventos y audit trail | P1 | READY_FOR_DECISION | Q063 dirección PostgreSQL C/F separados; Parquet/DuckDB analíticos, no Redis obligatorio propuesto. H9 SQLite DELETE sólo instrumento; restore/lost receipts y target/pin/roles/constraints no aceptados |
+| D-025 | Workflow durable, scheduler y recuperación | P1 | RESEARCHING | ADR-024/Q063 A aprobado como dirección condicionada; especificación/configuración/suficiencia pendientes. Historia: Q063 propone dirección condicionada APS3+ledger PostgreSQL frente Temporal+PostgreSQL; envelope/latencias/RPO/RTO/retención y full config/suficiencia P1 siguen abiertos; sin instalación o aceptación |
+| D-026 | Storage, eventos y audit trail | P1 | RESEARCHING | ADR-024/Q063 A aprobado como dirección condicionada; seguridad/durabilidad/configuración/suficiencia pendientes. Historia: Q063 dirección PostgreSQL C/F separados; Parquet/DuckDB analíticos, no Redis obligatorio propuesto. H9 SQLite DELETE sólo instrumento; restore/lost receipts y target/pin/roles/constraints no aceptados |
 | D-027 | Seguridad/permisos y secretos | P1 | DECIDED | Contrato de diseño B-RT1 DESIGN_DECIDED owner ADR-014; permisos efectivos SI/BL/RB/VP NOT_TESTED y target R-030 diferido. Mecanismos candidatos sustituibles con gobierno; lab diferido, no admin INFOTEP. |
 | D-028 | Observabilidad, alertas, backups y deployment PAPER | P1 | RESEARCHING | R012RC2 separa audit durable/telemetría, actores/runbooks/RECOVERY_GAP; SLO/RPO/RTO/retención numéricos y restore motor final pendientes, sin main/tag automático |
 | D-029 | Acceptance/evals trazables por contrato | P1 | RESEARCHING | Matrices broker/datos/engine/risk/ledger con fixtures y scopes; suite integrada/modelos/pin/criterios por completar. Ni suma de PASS ni marcadores declaran aceptación |
@@ -213,3 +215,7 @@ D035-T2 DECIDED sólo contrato matemático: caps/min/búsqueda binaria requieren
 ## D-023 — pin no admitido tras auditoría concreta
 
 Familia ADR023 sigue DECIDED. QL4 demuestra fallo de helper overwrite; requisito P1 de remediación/exclusión probada, no waiver por build. QL5 captura01TIMEOUT y02=CONTINUATION_INCOMPLETE_OR_FAILED_NO_REMEDIATED_HOST_ACCEPTANCE. Source graph/rebuild/fixtures no admiten engine integrado o pin; no se acepta riesgo residual automáticamente. Q063 no cambia este gate.
+
+## 2026-10-29 — Q-063/A aprobado
+
+[ADR-024](decisions/ADR-024-bounded-scheduling-and-durable-stores.md): dirección condicionada APScheduler3.x acotado + PostgreSQL, Temporal self-hosted reserva. Q063 DECIDED; D025/026 RESEARCHING para especificación/configuración/suficiencia. Scheduler sólo wakeups; ledger durable, permisos efectivos C/F, fallos/recovery/fencing y WAL/fsync/backup/RPO/RTO requieren evidencia. No exactly-once broker por outbox ni aceptación PostgreSQL desde SQLite. Lifecycle finito; escalamiento de complejidad obliga recomparar Temporal. No cuenta/gasto/configuración/implementación. Continúan pin LEAN, B3, bindings/riesgo/datos y readiness, sin esperar proveedores ni target.

@@ -42,3 +42,7 @@ Antes de cerrar P1: versión/licencias/SBOM, driver y transacciones/constraints/
 Ambos: PAPER_V1_VIABLE_FREE=CONDITIONAL; licencias OSS0, coste setup/hardware/backup/operación mensual totalUNKNOWN. LIVE_COSTUNKNOWN. FREE_ALTERNATIVE=la otra fila; PAID_INCREMENTAL_VALUE=continuidad/soporte si medidos; ECONOMIC_JUSTIFICATION_REQUIRED=YES. Lock-in A=contratos/SQL/persistencia de jobs; B=workflow history/determinismo/SDK/operación del server. Cinco escalas obligatorias y nada contratado.
 
 **Decisión solicitada:** aprobar A como dirección de diseño PAPER de workflow/storage, manteniendo Temporal como reserva ante complejidad que lo justifique, y PostgreSQL con aislamiento de stores. Es simplificación de servicios, no eliminación de durabilidad. No autoriza instalar/configurar nada, gastar, aceptar target, ejecutar trading o implementar. Si el propietario prefiere B, concretar su despliegue sostenido antes de freeze; no usar dev server como atajo.
+
+## Resolución posterior — 2026-10-29
+
+**Q-063/A DECIDED, dirección condicionada**, por el propietario: [ADR-024](../decisions/ADR-024-bounded-scheduling-and-durable-stores.md). La propuesta precedente se conserva como historia. D-025/D-026 siguen RESEARCHING para contratos/configuración/suficiencia; no requieren repetir la elección de familias. Temporal reserva, no dependencia obligatoria. No instalación/servicio/cuenta/gasto autorizado.
